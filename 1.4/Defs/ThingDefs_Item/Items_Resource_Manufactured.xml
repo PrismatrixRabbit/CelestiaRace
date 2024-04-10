@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="MedicineBase">
+        <defName>MedicineCeles</defName>
+        <label>celestia emergency medicinie </label>
+        <description>A small medicine kit including varieties of compound gel, which use to sterilize,heal wound or just supress disease.</description>
+        <possessionCount>2</possessionCount>
+        <!--<graphicData>
+            <texPath></texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>-->
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <MarketValue>24</MarketValue>
+            <Mass>0.25</Mass>
+            <Flammability>0.5</Flammability>
+            <MedicalPotency>1.2</MedicalPotency>
+            <MedicalQualityMax>1.10</MedicalQualityMax>
+            <DeteriorationRate>1</DeteriorationRate>
+            <WorkToMake>900</WorkToMake>
+        </statBases>
+        <costList>
+            <MedicineHerbal>1</MedicineHerbal>
+            <Neutroamine>1</Neutroamine>
+            <CelesBioGel>2</CelesBioGel>
+        </costList>
+        <!-- TODO BioGel生物凝胶制作材料 -->
+        <recipeMaker>
+            <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+            <workSkill>Intellectual</workSkill>
+            <recipeUsers>
+                <li>Celes_DrugLab</li>
+            </recipeUsers>
+            <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+                <Intellectual>5</Intellectual>
+            </skillRequirements>
+            <bulkRecipeCount>5</bulkRecipeCount>
+        </recipeMaker>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </ThingDef>
+    
+    <ThingDef ParentName="ResourceBase">
+        <defName>CelesBioGel</defName>
+        <label>biogel</label>
+        <description>A highly versatile composite biogel that can be used in the production of various biochemical products.</description>
+        <possessionCount>5</possessionCount>
+        <tickerType>Normal</tickerType>
+        <!--<graphicData>
+            <texPath></texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>-->
+        <stackLimit>60</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>0.05</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>20</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>CelesKeyCard_I</defName>
+        <label>celestia encrypt key card-artillery strike</label>
+        <description>Single-use encrypted key card with stored PIN used to calculate the authorization code to call artillery strike.</description>
+        <possessionCount>2</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Resource/ComponentIndustrial</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Pickup</soundInteract>
+        <soundDrop>Standard_Pickup</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <MarketValue>800</MarketValue>
+            <Mass>0.12</Mass>
+            <Flammability>0.4</Flammability>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </ThingDef>
+</Defs>

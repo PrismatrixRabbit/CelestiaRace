@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- [PAWN_nameDef][PAWN_pronoun][PAWN_possessive] -->
+  <!--============================== 太空生活 ============================-->
+
+  <Celes_Backstory_Space01.title>星铃 旅行爱好者</Celes_Backstory_Space01.title>
+  <!-- EN: celestia traveller -->
+  <Celes_Backstory_Space01.titleShort>旅行爱好者</Celes_Backstory_Space01.titleShort>
+  <!-- EN: traveller -->
+  <Celes_Backstory_Space01.baseDesc>[PAWN_nameDef]有着一艘属于自己的行星际穿梭机，[PAWN_pronoun]用它追求梦想中的生活——自由自在的在母星系的各个星球间穿梭，随心的开拓，欣赏，并记录那些未被人涉足的壮丽奇景。\n\n这样自由的生活唯一的坏处就是，[PAWN_pronoun]只能取得无业游民程度的配给和福利，这让[PAWN_pronoun]不得不偶尔打一点零工来维持生活水平。</Celes_Backstory_Space01.baseDesc>
+  <!-- EN: [PAWN_nameDef] has an interplanetary shuttle of [PAWN_possessive] own, with which [PAWN_pronoun] pursues the life of [PAWN_possessive] dreams - the freedom to travel freely from planet to planet in [PAWN_possessive] home galaxy, pioneering, admiring, and documenting the magnificent wonders of the uncharted landscapes as [PAWN_pronoun] pleases. The only downside to such a free life is that [PAWN_pronoun] can only obtain hobo level rations and benefits, which leaves [PAWN_pronoun] with the occasional odd job to maintain [PAWN_possessive] standard of living. -->
+  
+  <Celes_Backstory_Space02.title>星铃 太空摄影博主</Celes_Backstory_Space02.title>
+  <!-- EN: celestia photography blogger -->
+  <Celes_Backstory_Space02.titleShort>摄影博主</Celes_Backstory_Space02.titleShort>
+  <!-- EN: blogger -->
+  <Celes_Backstory_Space02.baseDesc>[PAWN_nameDef]最开始只是对太空和各星球的景色感到震撼，并偶尔的把旅行中看到的那些景色用全息影像记录下来发在社交平台上。但[PAWN_pronoun]很快发现有许多无法亲自旅行的人们在[PAWN_possessive]全息影像中找到了慰藉，而这些关注又带给[PAWN_pronoun]声誉和继续做下去的动力——精神和物质上的。\n\n于是某一天，[PAWN_nameDef]辞去了原先工作，转而在社交网络上以太空全息摄影大显身手。</Celes_Backstory_Space02.baseDesc>
+  <!-- EN: [PAWN_nameDef] started out simply being amazed by the sights of space and planets, and occasionally posted holograms of the sights [PAWN_pronoun] saw during [PAWN_possessive] travels on social media platforms. But [PAWN_pronoun] soon found that many people who couldn't travel in person found solace in [PAWN_possessive] holograms, and this attention brought [PAWN_pronoun] prestige and motivation to continue doing what [PAWN_pronoun] was doing - both mentally and materially. So one day, [PAWN_nameDef] quit [PAWN_possessive] old job and turned to social networking to make a splash with space holograms. -->
+  
+  <Celes_Backstory_Space03.title>星铃 空间站调酒师</Celes_Backstory_Space03.title>
+  <!-- EN: celestia space station bartender -->
+  <Celes_Backstory_Space03.titleShort>调酒师</Celes_Backstory_Space03.titleShort>
+  <!-- EN: bartender -->
+  <Celes_Backstory_Space03.baseDesc>[PAWN_nameDef]在一个主航线上的普通空间站当调酒师，这个空间站有点像旧时代的高速服务区，只不过它在太空中。\n\n[PAWN_nameDef]为来到这里的人们献上饮品，让酒水洗刷疲惫的肉体和灵魂，是[PAWN_possessive]工作让这个空间站真正变成了安全的避风港。不过更多人只会选择去一旁的自助机来一杯廉价的酒水就是了。</Celes_Backstory_Space03.baseDesc>
+  <!-- EN: [PAWN_nameDef] working as a bartender on a regular space station on the main route that's kind of like an old-timey high-speed service area, except it's in space. \n\n[PAWN_nameDef] serves drinks to those who come here, letting the drink wash away tired bodies and souls, it's [PAWN_possessive] job that really makes this space station a safe haven. But more people would just choose to go to the kiosk on the side for a cheap drink is all. -->
+
+  <Celes_Backstory_Space04.title>星铃 对接港工程师</Celes_Backstory_Space04.title>
+  <!-- EN: celestia docking port engineer -->
+  <Celes_Backstory_Space04.titleShort>星港工程师</Celes_Backstory_Space04.titleShort>
+  <!-- EN: port engineer -->
+  <Celes_Backstory_Space04.baseDesc>在星铃社会，大多数重复单调的工作都已经完全交给机器人，自然也包括飞船在空间站的对接，维护，燃料加注。\n\n除去空间站安保部的活人，[PAWN_nameDef]几乎是对接港唯一一个有机工作人员，[PAWN_possessive]工作在大多数时候只是在一个舒适的房间里监控空间站对接港的工作情况是否正常，然后在剩下的时间远离一切社交和活人专心摸鱼。一些人会责怪[PAWN_possessive]工作太过轻松，但事实上没有人希望[PAWN_pronoun]突然忙起来，因为那往往意味着对接港出现了自动系统无法挽回的重大故障。</Celes_Backstory_Space04.baseDesc>
+  <!-- EN: Most of the repetitive and monotonous tasks in Celestia society had been left entirely to robots, and naturally that included docking, maintenance, and fuelling of ships at the space station. \n\nAside from the living members of the station's security department, [PAWN_nameDef] is pretty much the only organic staff member at the docking port, and [PAWN_possessive] job for the most part is to simply monitor the workings of the station's docking port for proper functioning from a comfortable room, and then spend the rest of [PAWN_possessive] time away from all social interaction and living beings to concentrate on relaxing. Some would blame the [PAWN_possessive] job for being too easy, but the truth was that no one wanted the [PAWN_pronoun] to suddenly get busy, as that often meant that the docking port had experienced a major malfunction in the automated systems that could not be undone.-->
+
+</LanguageData>

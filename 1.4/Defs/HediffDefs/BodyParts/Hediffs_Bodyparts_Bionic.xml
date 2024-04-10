@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Celes_BionicEar</defName>
+        <label>bionic celestia ear</label>
+        <labelNoun>a bionic celestia ear</labelNoun>
+        <description>An installed bionic ear.</description>
+        <descriptionHyperlinks><ThingDef>Celes_BionicEar</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>Celes_BionicEar</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>Celes_BionicEar</defName>
+        <label>bionic celestia ear</label>
+        <description>An advanced artificial ear implant. A collection of invisible subdermal microphones capture sound and transmit it to a biogel nerve interface that links directly with the auditory nerve. It's sensitive enough to hear a cat before you see it, can't be damaged by loud noise, and automatically tunes itself to pick out meaningful sounds in noisy environments.</description>
+        <descriptionHyperlinks><RecipeDef>Celes_InstallBionicEar</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+            <CelesBioGel>1</CelesBioGel>
+        </costList>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>Celes_InstallBionicEar</defName>
+        <label>install celestia bionic ear</label>
+        <description>Install a bionic ear.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_BionicEar</ThingDef>
+            <HediffDef>Celes_BionicEar</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing bionic celestia ear.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_BionicEar</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Celes_BionicEar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Celes_Ear</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Celes_BionicEar</addsHediff>
+    </RecipeDef>
+</Defs>

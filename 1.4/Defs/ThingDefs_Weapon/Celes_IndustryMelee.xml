@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef Name="Celes_EarlyMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
+        <recipeMaker>
+            <researchPrerequisite>Celes_StartWeapon</researchPrerequisite>
+            <recipeUsers Inherit="false">
+                <li>Celes_FueledSmithy</li>
+                <li>Celes_ElectricSmithy</li>
+            </recipeUsers>
+        </recipeMaker>
+        <techLevel>Industrial</techLevel>
+        <weaponTags>
+            <li>Celes_EarlyMelee</li>
+        </weaponTags>
+    </ThingDef>
+
+    <ThingDef Name="Celes_MidMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
+        <recipeMaker>
+            <researchPrerequisite>Celes_Weapon_II</researchPrerequisite>
+            <recipeUsers Inherit="false">
+                <li>Celes_WorkBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <techLevel>Industrial</techLevel>
+        <weaponTags>
+            <li>Celes_MidMelee</li>
+        </weaponTags>
+    </ThingDef>
+    
+    <ThingDef ParentName="Celes_EarlyMeleeBase">
+        <defName>Celes_Hatchet</defName>
+        <label>celestia hatchet</label>
+        <description>A versatile survival hatchet, lightweight and deadly.</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Early/Celes_Hatchet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <costList>
+            <Steel>60</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>0.85</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MeleeHitChance>0.5</MeleeHitChance>
+            <PlantWorkSpeed>1.2</PlantWorkSpeed>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+    
+    <ThingDef ParentName="Celes_MidMeleeBase">
+        <defName>Celes_IceAxe</defName>
+        <label>celestia ice axe</label>
+        <description>Ice axes, extremely lethal weapons, were also used in assassinations.</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Mid/Celes_IceAxe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <costList>
+            <Plasteel>40</Plasteel>
+        </costList>
+        <statBases>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MeleeHitChance>2</MeleeHitChance>
+            <MiningSpeed>2</MiningSpeed>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>adze</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>0.8</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

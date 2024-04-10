@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef Name="Celes_PawnBase" Abstract="True">
+        <race>Celes_Race</race>
+        <defaultFactionType>Celes_Faction</defaultFactionType>
+        <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+        <invNutrition>3</invNutrition>
+        <gearHealthRange>0.8~1.0</gearHealthRange>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <maxGenerationAge>35</maxGenerationAge>
+        <minGenerationAge>16</minGenerationAge>
+        <initialWillRange>15~20</initialWillRange>
+        <initialResistanceRange>8~12</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+                <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+                <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+                <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+    </PawnKindDef>
+
+</Defs>

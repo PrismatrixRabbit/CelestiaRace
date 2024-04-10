@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>{ACS}Celestia Race</name>
+    <author>Alopex Callisto Studio</author>
+    <packageId>team.acs.celestiarace</packageId>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+    <description>
+        They are a race of rabbits from a Shining World genetically engineered laboratory, modified to adapt to low
+        gravity and artificial environments in a space colony specialising in post-apocalyptic combat.For a long time
+        they have lived in all corners of their home galaxy, which is not limited to habitable planets. \nAfter a
+        plague, or rather a devastating catastrophe, that swept through the home system, which they do not wish to
+        reveal, they began to disperse to various worlds ...... or were unlucky enough to crash-land on one, pursuing
+        and hunting a mysterious parasitic creature.
+    </description>
+</ModMetaData>

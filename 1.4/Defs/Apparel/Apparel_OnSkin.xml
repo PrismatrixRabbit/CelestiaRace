@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="Celes_OnSkinBase" ParentName="Celes_ApparelBase" Abstract="True">
+		<statBases>
+			<Mass>0.8</Mass>
+			<EquipDelay>1.8</EquipDelay>
+		</statBases>
+		<apparel>	
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Celes_OnSkin</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>Celes_Apparel_OnSkin</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="Celes_OnSkinBase"><!--测试用 衬衫-->
+	<defName>Celes_Skirt</defName>
+	<label>UniformSkirt</label>
+	<description>currently unavailable</description>
+	<costStuffCount>60</costStuffCount>
+	<stuffCategories>
+	    <li>Fabric</li>
+	</stuffCategories>
+	<graphicData>
+		<texPath>Celes/Apparel/OnSkin/UniformSkirt/UniformSkirt</texPath>
+	</graphicData>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>5400</WorkToMake>
+		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<bodyPartGroups>
+          <li>Torso</li>
+          <li>Shoulders</li>
+        </bodyPartGroups>
+		<wornGraphicPath>Celes/Apparel/OnSkin/UniformSkirt/UniformSkirt</wornGraphicPath>
+		<tags>
+			<li>Celes_Uniform</li>
+		</tags>
+	</apparel>
+	</ThingDef>
+	
+</Defs>

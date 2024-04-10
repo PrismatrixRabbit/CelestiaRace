@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="Celes_ShellBase" ParentName="Celes_ApparelBase" Abstract="True">
+		<statBases>
+			<Mass>0.8</Mass>
+			<EquipDelay>1.8</EquipDelay>
+		</statBases>
+		<apparel>	
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Celes_Shell</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>Celes_Apparel_Shell</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="Celes_ShellBase"><!--测试用 制服外套A-->
+	<defName>Celes_SuitJacketA</defName>
+	<label>celestia suit jacket</label>
+	<description>currently unavailable</description>
+	<costStuffCount>60</costStuffCount>
+	<stuffCategories>
+	    <li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<graphicData>
+		<texPath>Celes/Apparel/Shell/SuitJacketA/SuitJacketA</texPath>
+	</graphicData>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>5400</WorkToMake>
+		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<bodyPartGroups>
+          <li>Torso</li>
+          <li>Shoulders</li>
+        </bodyPartGroups>
+		<wornGraphicPath>Celes/Apparel/Shell/SuitJacketA/SuitJacketA</wornGraphicPath>
+		<tags>
+			<li>Celes_Uniform</li>
+			<li>Celes_UniformShell</li>
+		</tags>
+	</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="Celes_ShellBase"><!--测试用 制服外套B-->
+	<defName>Celes_SuitJacketB</defName>
+	<label>celestia suit jacket cape</label>
+	<description>currently unavailable</description>
+	<costStuffCount>60</costStuffCount>
+	<stuffCategories>
+	    <li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<graphicData>
+		<texPath>Celes/Apparel/Shell/SuitJacketB/SuitJacketB</texPath>
+	</graphicData>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>5400</WorkToMake>
+		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<bodyPartGroups>
+          <li>Torso</li>
+          <li>Shoulders</li>
+        </bodyPartGroups>
+		<wornGraphicPath>Celes/Apparel/Shell/SuitJacketB/SuitJacketB</wornGraphicPath>
+		<tags>
+			<li>Celes_Uniform</li>
+			<li>Celes_UniformShell</li>
+		</tags>
+	</apparel>
+	</ThingDef>
+	
+</Defs>
