@@ -96,8 +96,8 @@
     <ThingDef ParentName="ResourceBase">
         <defName>CelesCloth</defName>
         <label>待命名</label>
-        <description>Produced by Celestia genetically modified plants, organic polymer fibers with special structure have almost the same performance as synthetic fibers, but the producibility is much higher than that of synthetic fibers.</description>
-        <!-- TODO <graphicData>
+        <description>.</description>
+        <!--<graphicData>
             <texPath>Things/Item/Resource/Cloth</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <color>(162,157,152)</color>
@@ -113,6 +113,7 @@
             <Mass>0.02</Mass>
             <Flammability>0.4</Flammability>
             <DeteriorationRate>2.5</DeteriorationRate>
+            <WorkToMake>400</WorkToMake>
         </statBases>
         <burnableByRecipe>true</burnableByRecipe>
         <healthAffectsPrice>false</healthAffectsPrice>
@@ -155,6 +156,184 @@
                 </li>
             </options>
         </colorGeneratorInTraderStock>
+        <costList>
+            <CelesNanoMachine>3</CelesNanoMachine>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>Celes_WorkBench</li>
+            </recipeUsers>
+            <researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+                <Intellectual>6</Intellectual>
+            </skillRequirements>
+            <bulkRecipeCount>5</bulkRecipeCount>
+        </recipeMaker>
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>
-</Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>CelesNanoMachine</defName>
+        <label>celestia nanomachine</label>
+        <description>.</description>
+        <possessionCount>5</possessionCount>
+        <tickerType>Normal</tickerType>
+        <!--<graphicData>
+            <texPath></texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>-->
+        <stackLimit>60</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>0.05</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>20</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>CelesAdvanceCloth</defName>
+        <label>待命名</label>
+        <description>.</description>
+        <!--<graphicData>
+            <texPath>Things/Item/Resource/Cloth</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(162,157,152)</color>
+        </graphicData>-->
+        <statBases>
+            <StuffPower_Armor_Sharp>1.85</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>3</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>28</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>28</StuffPower_Insulation_Heat>
+            <MaxHitPoints>220</MaxHitPoints>
+            <MarketValue>10</MarketValue>
+            <Mass>0.04</Mass>
+            <Flammability>0.4</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>400</WorkToMake>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>30</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Flammability>0.4</Flammability>
+                <MaxHitPoints>3</MaxHitPoints>
+                <Beauty>8</Beauty>
+            </statFactors>
+            <categories>
+                <li>Fabric</li>
+            </categories>
+            <color>(162,157,152)</color>
+            <commonality>1.4</commonality>
+            <allowColorGenerators>true</allowColorGenerators>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <thingCategories>
+            <li>Textiles</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <costList>
+            <CelesCloth>5</CelesCloth>
+            <Plasteel>1</Plasteel>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>Celes_WorkBench</li>
+            </recipeUsers>
+            <researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+                <Intellectual>10</Intellectual>
+            </skillRequirements>
+            <bulkRecipeCount>5</bulkRecipeCount>
+        </recipeMaker>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>CelesSteel</defName>
+        <label>待命名</label>
+        <description>.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Steel</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <statBases>
+            <MarketValue>2.5</MarketValue>
+            <Mass>0.5</Mass>
+            <StuffPower_Armor_Sharp>1.5</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>-3</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>2.5</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+        </statBases>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <!--<slagDef>ChunkSlagSteel</slagDef>-->
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <deepCommonality>4</deepCommonality>
+        <deepCountPerPortion>45</deepCountPerPortion>
+        <deepLumpSizeRange>20~30</deepLumpSizeRange>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <stuffProps>
+            <categories>
+                <li>Metallic</li>
+            </categories>
+            <appearance>Metal</appearance>
+            <commonality>1.00</commonality>
+            <constructEffect>ConstructMetal</constructEffect>
+            <color>(105,105,105)</color>
+            <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            <statFactors>
+                <MaxHitPoints>1</MaxHitPoints>
+                <Beauty>2.5</Beauty>
+                <Flammability>0</Flammability>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <costList>
+            <CelesNanoMachine>1</CelesNanoMachine>
+            <Steel>1</Steel>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>Celes_WorkBench</li>
+            </recipeUsers>
+            <researchPrerequisite>Celes_Weapon_II</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+                <Intellectual>4</Intellectual>
+            </skillRequirements>
+            <bulkRecipeCount>10</bulkRecipeCount>
+        </recipeMaker>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef></Defs>

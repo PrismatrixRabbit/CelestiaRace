@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="PlantBase">
-        <defName>Plant_CelesCloth</defName>
+        <defName>Plant_CelesNano</defName>
         <label>待命名</label>
-        <description>The gene editing products of Celestia are resistant to drought and flood, acid and alkali, and easy to survive, and will produce polymer fiber components with special structure that are easy to peel off in the phloem of the stem.</description>
+        <description>.</description>
         <statBases>
             <MaxHitPoints>185</MaxHitPoints>
             <Nutrition>0.2</Nutrition>
@@ -19,7 +19,7 @@
             <growDays>12</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>CelesCloth</harvestedThingDef>
+            <harvestedThingDef>CelesNanoMachine</harvestedThingDef>
             <harvestYield>10</harvestYield>
             <sowTags>
                 <li>Ground</li>
