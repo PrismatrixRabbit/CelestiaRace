@@ -10,8 +10,8 @@
             <HediffDef>CS6_After</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
-            <texPath>Celes/Drugs/Test</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Celes/Drugs/CS6</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <rotatable>false</rotatable>
         <statBases>

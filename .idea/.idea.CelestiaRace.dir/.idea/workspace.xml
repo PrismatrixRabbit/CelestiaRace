@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Plants/Plants_Resources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Plants/Plants_Resources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/Drugs/CPS-1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/Drugs/CPS-1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/Drugs/CS-12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/Drugs/CS-12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/Drugs/CS-6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/Drugs/CS-6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/Drugs/RS-1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/Drugs/RS-1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/Test.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +76,18 @@
       <workItem from="1715259626491" duration="1096000" />
       <workItem from="1715262082769" duration="1000" />
       <workItem from="1715262137104" duration="61000" />
-      <workItem from="1715262426482" duration="386000" />
+      <workItem from="1715262426482" duration="4545000" />
+      <workItem from="1715424773730" duration="385000" />
     </task>
+    <task id="LOCAL-00001" summary="材料更新">
+      <option name="closed" value="true" />
+      <created>1715268508595</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715268508595</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="材料更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="材料更新" />
   </component>
 </project>
