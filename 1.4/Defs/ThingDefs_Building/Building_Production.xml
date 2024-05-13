@@ -66,6 +66,9 @@
         <researchPrerequisites>
             <li>DrugProduction</li>
         </researchPrerequisites>
+        <recipes>
+            <li>Make_CelesBiogelFromOrganics</li>
+        </recipes>
     </ThingDef>
 
     <ThingDef ParentName="BenchBase">
@@ -297,6 +300,5 @@
 	<researchPrerequisites>
 		<li>Electricity</li>
 	</researchPrerequisites>
-	
 </ThingDef>
 </Defs>

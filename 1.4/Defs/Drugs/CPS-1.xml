@@ -10,8 +10,8 @@
             <HediffDef>CPS1_After</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
-            <texPath>Celes/Drugs/Test</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Celes/Drugs/CPS1</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <rotatable>false</rotatable>
         <statBases>

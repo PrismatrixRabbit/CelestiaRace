@@ -8,8 +8,8 @@
             <HediffDef>RS1_High</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
-            <texPath>Celes/Drugs/Test</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Celes/Drugs/RS1</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <rotatable>false</rotatable>
         <statBases>
