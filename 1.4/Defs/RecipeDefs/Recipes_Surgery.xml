@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <RecipeDef Name="Celes_Surgery" ParentName="SurgeryFlesh" Abstract="True">
+        <recipeUsers>
+            <li>Human</li>
+        </recipeUsers>
+        <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </RecipeDef>
+    
+    
+</Defs>
