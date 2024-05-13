@@ -23,8 +23,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/FTLasteroid/CelestiaRace.git&quot;,
-    &quot;accountId&quot;: &quot;db3d312c-1c8a-4580-bda0-106e92aef97f&quot;
+    &quot;url&quot;: &quot;git@github.com:FTLasteroid/CelestiaRace.git&quot;,
+    &quot;accountId&quot;: &quot;340053f6-aaa0-4210-a076-7ec566c35c47&quot;
   }
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -32,7 +32,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2gEGysspfcm8fwEo6axSCdZ56Sn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,8 +54,8 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\ROG\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\ROG\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\ROG\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\ROG\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
       &quot;C:\\Users\\ROG\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
@@ -74,6 +76,8 @@
       <workItem from="1715262426482" duration="4545000" />
       <workItem from="1715424773730" duration="610000" />
       <workItem from="1715425413532" duration="52000" />
+      <workItem from="1715586156287" duration="4266000" />
+      <workItem from="1715590469290" duration="209000" />
     </task>
     <task id="LOCAL-00001" summary="材料更新">
       <option name="closed" value="true" />
@@ -91,7 +95,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715425212278</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="尘构植入测试">
+      <option name="closed" value="true" />
+      <created>1715586216090</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715586216090</updated>
+    </task>
+    <task id="LOCAL-00004" summary="完善配方限制">
+      <option name="closed" value="true" />
+      <created>1715590056920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715590056920</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +134,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="材料更新" />
     <MESSAGE value="药剂贴图更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="药剂贴图更新" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="尘构植入测试" />
+    <MESSAGE value="完善配方限制" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善配方限制" />
   </component>
 </project>

@@ -398,7 +398,7 @@
                 <relationChanceModifierSibling>0</relationChanceModifierSibling>
             </relationSettings>
             <raceRestriction>
-				
+				<!--测试-->
 				<recipeList>
 					<li>ExtractCelesNanomachine</li>
 					<li>Celes_InstallBionicEar</li>
