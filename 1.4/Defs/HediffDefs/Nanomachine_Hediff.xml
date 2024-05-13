@@ -5,20 +5,20 @@
         <defaultLabelColor>(.80, 0.38, 0.38)</defaultLabelColor>
     </HediffDef>
     <HediffDef ParentName="Celes_NanoHediffBase">
-        <defName>Celes_NanoImplant</defName>
+        <defName>Celes_NanoImplanted</defName>
         <label>celestia nanomachine implant</label>
         <labelNoun>a celestia nanomachine implant</labelNoun>
         <isBad>false</isBad>
         <description>.</description>
         <stages>
             <li>
-                <painOffset>0.20</painOffset>
+                <painOffset>0.40</painOffset>
                 <restFallFactor>2.0</restFallFactor>
                 <hungerRateFactor>2.00</hungerRateFactor>
                 <hediffGivers>
                     <li Class="HediffGiver_Random">
                         <hediff>ChemicalDamageSevere</hediff>
-                        <mtbDays>10</mtbDays>
+                        <mtbDays>14</mtbDays>
                         <partsToAffect>
                             <li>Liver</li>
                             <li>Kidney</li>
@@ -35,8 +35,8 @@
         <comps>
             <li Class="CelesFeature.Celes_CompProperties_Spawner">
                 <requiresPower>true</requiresPower>
-                <thingToSpawn>Chemfuel</thingToSpawn>
-                <spawnCount>75</spawnCount>
+                <thingToSpawn>CelesNanoMachine</thingToSpawn>
+                <spawnCount>2</spawnCount>
                 <spawnIntervalRange><min>600000</min><max>600000</max></spawnIntervalRange>
                 <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
                 <showMessageIfOwned>true</showMessageIfOwned>

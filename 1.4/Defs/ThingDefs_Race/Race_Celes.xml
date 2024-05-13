@@ -374,7 +374,7 @@
                     </value>
                 </li>
             </styleSettings>
-			<!-- 想法你都没写呢替换什么啊！ -->
+			<!-- TODO 想法你都没写呢替换什么啊！ -->
             <!-- <thoughtSettings>
                 <replacerList>
                     <li>
@@ -398,6 +398,26 @@
                 <relationChanceModifierSibling>0</relationChanceModifierSibling>
             </relationSettings>
             <raceRestriction>
+				
+				<recipeList>
+					<li>ExtractCelesNanomachine</li>
+					<li>Celes_InstallBionicEar</li>
+				</recipeList>
+
+				<plantList>
+					<li>Plant_CelesNano</li>
+				</plantList>
+
+				<researchList>
+					<li>
+						<projects>
+							<li>Celes_Weapon_I</li>
+							<li>Celes_Bio_I</li>
+							<li>Celes_Apparel_I</li>
+						</projects>
+					</li>
+				</researchList>
+				
                 <onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes>
                 <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
 
