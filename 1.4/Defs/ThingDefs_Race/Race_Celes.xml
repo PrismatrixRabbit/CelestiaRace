@@ -706,5 +706,9 @@
                 <li>Human</li>
             </hediffGiverSets>
         </race>
+		<recipes>
+			<li>ExtractCelesNanomachine</li>
+			<li>Celes_InstallBionicEar</li>
+		</recipes>
     </AlienRace.ThingDef_AlienRace>
 </Defs>

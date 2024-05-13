@@ -26,6 +26,21 @@
         <skillRequirements>
             <Medicine>10</Medicine>
         </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanomachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CelesNanomachine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
         <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
     </RecipeDef>
 
@@ -45,5 +60,23 @@
         <uiIconThing>HemogenPack</uiIconThing>
         <anesthetize>false</anesthetize>
         <workSkillLearnFactor>2</workSkillLearnFactor>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="Celes_Surgery">
+        <defName>RemoveCelesNanomachine</defName>
+        <label>remove celestia nanomachine infection from infected person</label>
+        <description>.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Removing nanomachine infection.</jobString>
+        <workAmount>1000</workAmount>
+        <removesHediff>Celes_NanoImplanted</removesHediff>
+        <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s nanomachine infection from their body.</successfullyRemovedHediffMessage>
+        <anesthetize>false</anesthetize>
+        <products>
+            <Neutroamine>8</Neutroamine>
+            <CelesNanomachine>8</CelesNanomachine>
+        </products>
+        <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
     </RecipeDef>
 </Defs>
