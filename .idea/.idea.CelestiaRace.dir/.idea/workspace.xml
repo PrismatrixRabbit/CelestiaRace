@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Item/Items_Resource_Stuff.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/RecipeDefs/Recipes_Production.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/RecipeDefs/Recipes_Production.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/HediffDefs/Nanomachine_Hediff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/HediffDefs/Nanomachine_Hediff.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/Surgery/Surgery_implant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/Surgery/Surgery_implant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Race/Race_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Race/Race_Celes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +38,6 @@
   }
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="PerforceDirect.Settings">
-    <option name="CHARSET" value="无" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -73,6 +70,18 @@
     ]
   }
 }</component>
+  <component name="SpaceReviewFiltersPersistance"><![CDATA[{
+  "lastFilter": {
+    "state": "NeedsReview",
+    "reviewer": {
+      "id": "2NJ8Ns4Pbzi7",
+      "fullName": "FTL Asteroid"
+    }
+  }
+}]]></component>
+  <component name="SpaceReviewProjectSettings">
+    <option name="selectedReviewProjectId" value="2BKcBy1xyDrO" />
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -95,7 +104,8 @@
       <workItem from="1715591660128" duration="902000" />
       <workItem from="1715592581982" duration="79000" />
       <workItem from="1715676754000" duration="629000" />
-      <workItem from="1715681781441" duration="7122000" />
+      <workItem from="1715681781441" duration="9537000" />
+      <workItem from="1715696286354" duration="727000" />
     </task>
     <task id="LOCAL-00001" summary="材料更新">
       <option name="closed" value="true" />
@@ -153,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715677371692</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="三种材料的添加">
+      <option name="closed" value="true" />
+      <created>1715695972550</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715695972550</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +200,7 @@
     <MESSAGE value="1" />
     <MESSAGE value="尘构侵染祛除手术更新" />
     <MESSAGE value="尘构侵染更新1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="尘构侵染更新1.1" />
+    <MESSAGE value="三种材料的添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="三种材料的添加" />
   </component>
 </project>

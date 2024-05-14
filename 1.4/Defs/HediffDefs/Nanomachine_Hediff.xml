@@ -35,7 +35,7 @@
         <comps>
             <li Class="CelesFeature.Celes_HediffCompProperties_SpawnOnDeath">
                 <spawnPawn>false</spawnPawn>
-                <spawnThing>CelesNanomachine</spawnThing>
+                <spawnThing>CelesNanoMachine</spawnThing>
                 <spawnCount>10</spawnCount>
             </li>
             <li Class="CelesFeature.Celes_HediffCompProperties_SpawnOnDeath">

@@ -30,7 +30,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>CelesNanomachine</li>
+                        <li>CelesNanoMachine</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -38,14 +38,14 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>CelesNanomachine</li>
+                <li>CelesNanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
         <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
-        <defName>ExtractCelesNanomachine</defName>
+        <defName>ExtractCelesNanoMachine</defName>
         <label>extract celestia nanomachine</label>
         <description>Extract a hemogen pack from the target. The operation will fail to produce a hemogen pack if the target does not have enough blood.\n\nHemogen packs can be administered to others to reduce blood loss or to satiate those who feed on blood.</description>
         <workerClass>Recipe_ExtractHemogen</workerClass>
@@ -55,7 +55,7 @@
         <targetsBodyPart>false</targetsBodyPart>
         <isViolation>true</isViolation>
         <descriptionHyperlinks>
-            <ThingDef>CelesNanomachine</ThingDef>
+            <ThingDef>CelesNanoMachine</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>HemogenPack</uiIconThing>
         <anesthetize>false</anesthetize>
@@ -63,7 +63,7 @@
     </RecipeDef>
     
     <RecipeDef ParentName="Celes_Surgery">
-        <defName>RemoveCelesNanomachine</defName>
+        <defName>RemoveCelesNanoMachine</defName>
         <label>remove celestia nanomachine infection from infected person</label>
         <description>.</description>
         <workerClass>Recipe_RemoveHediff</workerClass>
@@ -74,7 +74,7 @@
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s nanomachine infection from their body.</successfullyRemovedHediffMessage>
         <anesthetize>false</anesthetize>
         <products>
-            <CelesNanomachine>3</CelesNanomachine>
+            <CelesNanoMachine>3</CelesNanoMachine>
         </products>
         <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
     </RecipeDef>

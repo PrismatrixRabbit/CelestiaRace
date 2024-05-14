@@ -400,7 +400,7 @@
             <raceRestriction>
 				<!--测试-->
 				<recipeList>
-					<li>ExtractCelesNanomachine</li>
+					<li>ExtractCelesNanoMachine</li>
 					<li>Celes_InstallBionicEar</li>
 				</recipeList>
 
@@ -707,7 +707,7 @@
             </hediffGiverSets>
         </race>
 		<recipes>
-			<li>ExtractCelesNanomachine</li>
+			<li>ExtractCelesNanoMachine</li>
 			<li>Celes_InstallBionicEar</li>
 		</recipes>
     </AlienRace.ThingDef_AlienRace>
