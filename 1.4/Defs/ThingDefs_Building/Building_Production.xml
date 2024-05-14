@@ -268,7 +268,10 @@
 	<surfaceType>Item</surfaceType>
 	<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	<recipes>
-      <li>ButcherCorpseMechanoid</li>
+        <li>ButcherCorpseMechanoid</li>
+        <li>Make_PositiveMetal</li>
+        <li>Make_NegativeMetal</li>
+        <li>Make_CelesSteel</li>
     </recipes>
 	<inspectorTabs>
 		<li>ITab_Bills</li>

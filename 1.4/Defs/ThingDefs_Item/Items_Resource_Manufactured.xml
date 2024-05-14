@@ -289,7 +289,6 @@
         </statBases>
         <useHitPoints>false</useHitPoints>
         <healthAffectsPrice>false</healthAffectsPrice>
-        <!--<slagDef>ChunkSlagSteel</slagDef>-->
         <thingCategories>
             <li>ResourcesRaw</li>
         </thingCategories>
@@ -311,29 +310,12 @@
             <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
             <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
             <statFactors>
-                <MaxHitPoints>1</MaxHitPoints>
+                <MaxHitPoints>2</MaxHitPoints>
                 <Beauty>2.5</Beauty>
                 <Flammability>0</Flammability>
             </statFactors>
             <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
         </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-        <costList>
-            <CelesNanoMachine>1</CelesNanoMachine>
-            <Steel>1</Steel>
-        </costList>
-        <recipeMaker>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <recipeUsers>
-                <li>Celes_WorkBench</li>
-            </recipeUsers>
-            <researchPrerequisite>Celes_Weapon_II</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>4</Crafting>
-                <Intellectual>4</Intellectual>
-            </skillRequirements>
-            <bulkRecipeCount>10</bulkRecipeCount>
-        </recipeMaker>
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef></Defs>

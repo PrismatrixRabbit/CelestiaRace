@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Item/Items_Resource_Stuff.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/HediffDefs/Nanomachine_Hediff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/HediffDefs/Nanomachine_Hediff.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/RecipeDefs/Recipes_Production.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/RecipeDefs/Recipes_Production.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="XML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,6 +38,9 @@
   }
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="PerforceDirect.Settings">
+    <option name="CHARSET" value="无" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -82,7 +94,8 @@
       <workItem from="1715590681564" duration="124000" />
       <workItem from="1715591660128" duration="902000" />
       <workItem from="1715592581982" duration="79000" />
-      <workItem from="1715676754000" duration="444000" />
+      <workItem from="1715676754000" duration="629000" />
+      <workItem from="1715681781441" duration="7122000" />
     </task>
     <task id="LOCAL-00001" summary="材料更新">
       <option name="closed" value="true" />
@@ -132,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715592518976</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="尘构侵染更新1.1">
+      <option name="closed" value="true" />
+      <created>1715677371692</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715677371692</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +181,7 @@
     <MESSAGE value="完善配方限制" />
     <MESSAGE value="1" />
     <MESSAGE value="尘构侵染祛除手术更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="尘构侵染祛除手术更新" />
+    <MESSAGE value="尘构侵染更新1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="尘构侵染更新1.1" />
   </component>
 </project>

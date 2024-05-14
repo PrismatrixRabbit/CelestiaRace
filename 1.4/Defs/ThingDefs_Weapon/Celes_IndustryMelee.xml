@@ -89,7 +89,7 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
-            <Plasteel>40</Plasteel>
+            <CelesSteel>40</CelesSteel>
         </costList>
         <statBases>
             <WorkToMake>16000</WorkToMake>

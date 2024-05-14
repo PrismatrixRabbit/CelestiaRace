@@ -356,7 +356,7 @@
             <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>60</Steel>
+            <CelesSteel>60</CelesSteel>
             <Chemfuel>25</Chemfuel>
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
@@ -421,7 +421,7 @@
             <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>40</Steel>
+            <CelesSteel>40</CelesSteel>
             <Chemfuel>25</Chemfuel>
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
@@ -506,7 +506,7 @@
             </li>
         </weaponTags>
         <costList>
-            <Steel>80</Steel>
+            <CelesSteel>80</CelesSteel>
             <Chemfuel>45</Chemfuel>
             <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
@@ -568,7 +568,7 @@
             <li>Celes_EarlyWeapon</li>
         </weaponTags>
         <costList>
-            <Steel>140</Steel>
+            <CelesSteel>140</CelesSteel>
             <Chemfuel>20</Chemfuel>
             <ComponentIndustrial>12</ComponentIndustrial>
         </costList>
