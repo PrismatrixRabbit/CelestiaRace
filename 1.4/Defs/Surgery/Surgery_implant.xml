@@ -74,8 +74,7 @@
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s nanomachine infection from their body.</successfullyRemovedHediffMessage>
         <anesthetize>false</anesthetize>
         <products>
-            <Neutroamine>8</Neutroamine>
-            <CelesNanomachine>8</CelesNanomachine>
+            <CelesNanomachine>3</CelesNanomachine>
         </products>
         <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
     </RecipeDef>

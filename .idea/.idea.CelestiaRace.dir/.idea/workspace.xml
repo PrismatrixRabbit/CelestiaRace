@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="" />
+    <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/HediffDefs/Nanomachine_Hediff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/HediffDefs/Nanomachine_Hediff.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +80,9 @@
       <workItem from="1715586156287" duration="4266000" />
       <workItem from="1715590469290" duration="209000" />
       <workItem from="1715590681564" duration="124000" />
+      <workItem from="1715591660128" duration="902000" />
+      <workItem from="1715592581982" duration="79000" />
+      <workItem from="1715676754000" duration="444000" />
     </task>
     <task id="LOCAL-00001" summary="材料更新">
       <option name="closed" value="true" />
@@ -118,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715590772099</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="尘构侵染祛除手术更新">
+      <option name="closed" value="true" />
+      <created>1715592518976</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715592518976</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +159,7 @@
     <MESSAGE value="尘构植入测试" />
     <MESSAGE value="完善配方限制" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="尘构侵染祛除手术更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="尘构侵染祛除手术更新" />
   </component>
 </project>
