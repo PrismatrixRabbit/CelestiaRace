@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/HediffDefs/Nanomachine_Hediff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/HediffDefs/Nanomachine_Hediff.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/Surgery/Surgery_implant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/Surgery/Surgery_implant.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Race/Race_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Race/Race_Celes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,15 +67,15 @@
     ]
   }
 }</component>
-  <component name="SpaceReviewFiltersPersistance"><![CDATA[{
-  "lastFilter": {
-    "state": "NeedsReview",
-    "reviewer": {
-      "id": "2NJ8Ns4Pbzi7",
-      "fullName": "FTL Asteroid"
+  <component name="SpaceReviewFiltersPersistance">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;NeedsReview&quot;,
+    &quot;reviewer&quot;: {
+      &quot;id&quot;: &quot;2NJ8Ns4Pbzi7&quot;,
+      &quot;fullName&quot;: &quot;FTL Asteroid&quot;
     }
   }
-}]]></component>
+}</component>
   <component name="SpaceReviewProjectSettings">
     <option name="selectedReviewProjectId" value="2BKcBy1xyDrO" />
   </component>
@@ -105,7 +102,9 @@
       <workItem from="1715592581982" duration="79000" />
       <workItem from="1715676754000" duration="629000" />
       <workItem from="1715681781441" duration="9537000" />
-      <workItem from="1715696286354" duration="727000" />
+      <workItem from="1715696286354" duration="1204000" />
+      <workItem from="1715697534256" duration="3000" />
+      <workItem from="1715775620575" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="材料更新">
       <option name="closed" value="true" />
@@ -171,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715695972550</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="大小写修正">
+      <option name="closed" value="true" />
+      <created>1715697048636</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715697048636</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +208,7 @@
     <MESSAGE value="尘构侵染祛除手术更新" />
     <MESSAGE value="尘构侵染更新1.1" />
     <MESSAGE value="三种材料的添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="三种材料的添加" />
+    <MESSAGE value="大小写修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="大小写修正" />
   </component>
 </project>
