@@ -6,7 +6,7 @@
         <description>They are a race of rabbits from a Shining World genetically engineered laboratory, modified to adapt to low gravity and artificial environments in a space colony specialising in post-apocalyptic combat.For a long time they have lived in all corners of their home galaxy, which is not limited to habitable planets. \n\n \n\nAfter a plague, or rather a devastating catastrophe, that swept through the home system, which they do not wish to reveal, they began to disperse to various worlds ...... or were unlucky enough to crash-land on one, pursuing and hunting a mysterious parasitic creature.</description>
         <alienRace>
             <generalSettings>
-                <immuneToXenophobia>false</immuneToXenophobia>
+                <immuneToXenophobia>true</immuneToXenophobia>
                 <maleGenderProbability>0</maleGenderProbability><!--要改的-->
                 <minAgeForAdulthood>20</minAgeForAdulthood>
                 <immuneToAge>true</immuneToAge>
