@@ -19,7 +19,7 @@
         <description>description WIP</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+            <texPath>Celes/Weapon/Spacer/Celes_HMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1.2</drawSize>
         </graphicData>
