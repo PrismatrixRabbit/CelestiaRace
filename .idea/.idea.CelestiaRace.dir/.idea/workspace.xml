@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/HediffDefs/Nanomachine_Hediff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/HediffDefs/Nanomachine_Hediff.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/Surgery/Surgery_implant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/Surgery/Surgery_implant.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Race/Race_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Race/Race_Celes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +30,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:FTLasteroid/CelestiaRace.git&quot;,
-    &quot;accountId&quot;: &quot;340053f6-aaa0-4210-a076-7ec566c35c47&quot;
+    &quot;url&quot;: &quot;https://github.com/FTLasteroid/CelestiaRace.git&quot;,
+    &quot;accountId&quot;: &quot;db3d312c-1c8a-4580-bda0-106e92aef97f&quot;
   }
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -64,21 +61,21 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\ROG\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\ROG\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\ROG\\AppData\\Local\\Symbols\\src&quot;
+      &quot;C:\\Users\\96987\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\96987\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\96987\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
-  <component name="SpaceReviewFiltersPersistance"><![CDATA[{
-  "lastFilter": {
-    "state": "NeedsReview",
-    "reviewer": {
-      "id": "2NJ8Ns4Pbzi7",
-      "fullName": "FTL Asteroid"
+  <component name="SpaceReviewFiltersPersistance">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;NeedsReview&quot;,
+    &quot;reviewer&quot;: {
+      &quot;id&quot;: &quot;2NJ8Ns4Pbzi7&quot;,
+      &quot;fullName&quot;: &quot;FTL Asteroid&quot;
     }
   }
-}]]></component>
+}</component>
   <component name="SpaceReviewProjectSettings">
     <option name="selectedReviewProjectId" value="2BKcBy1xyDrO" />
   </component>
@@ -106,6 +103,9 @@
       <workItem from="1715676754000" duration="629000" />
       <workItem from="1715681781441" duration="9537000" />
       <workItem from="1715696286354" duration="727000" />
+      <workItem from="1715771325138" duration="218000" />
+      <workItem from="1715771736473" duration="365000" />
+      <workItem from="1715777434082" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="材料更新">
       <option name="closed" value="true" />

@@ -5,6 +5,8 @@
 		<disallowedTraitsChance>
 		</disallowedTraitsChance>
 		<forcedHediffs>
+			<li>MechlinkImplant</li>
+			<li>Celes_MechlinkRestriction</li>
 		</forcedHediffs> 
 		<bodyTypeMale>Female</bodyTypeMale>
 		<spawnCategories>

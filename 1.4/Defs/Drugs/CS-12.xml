@@ -154,7 +154,7 @@
                 <restFallFactor>2</restFallFactor>
                 <hungerRateFactorOffset>1</hungerRateFactorOffset>
                 <lifeThreatening>true</lifeThreatening>
-                <painOffset>0.85</painOffset>
+                <painOffset>0.4</painOffset>
             </li>
         </stages>
     </HediffDef>
