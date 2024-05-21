@@ -97,12 +97,12 @@
         </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
-            <MeleeHitChance>2</MeleeHitChance>
+            <MeleeHitChance>0.75</MeleeHitChance>
             <MiningSpeed>2</MiningSpeed>
         </equippedStatOffsets>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>12</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
         </recipeMaker>
         <weaponClasses>
@@ -124,6 +124,142 @@
                 </capacities>
                 <power>28</power>
                 <cooldownTime>0.8</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+    
+    <ThingDef ParentName="Celes_MidMeleeBase">
+        <defName>CelesSaberIndustrial</defName>
+        <label>celestia saber</label>
+        <description>.</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Mid/Celes_Saber</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <costList>
+            <CelesSteel>40</CelesSteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MeleeDodgeChance>0.4</MeleeDodgeChance>
+            <MeleeHitChance>0.4</MeleeHitChance>
+            <NegotiationAbility>0.3</NegotiationAbility>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <tools>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>30</power>
+                <cooldownTime>1.0</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>EMP</def>
+                        <amount>4</amount>
+                        <chance>0.4</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>24</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>0.2</armorPenetration>
+                <extraMeleeDamages>
+                    <li>
+                        <def>EMP</def>
+                        <amount>8</amount>
+                        <chance>0.8</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>1.8</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+    
+    <ThingDef ParentName="Celes_MidMeleeBase">
+        <defName>CelesDagger</defName>
+        <label>celestia dagger</label>
+        <description>.</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Mid/Celes_Dagger</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.4</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <costList>
+            <CelesSteel>20</CelesSteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MeleeHitChance>1</MeleeHitChance>
+            <PlantWorkSpeed>0.25</PlantWorkSpeed>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <tools>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.4</cooldownTime>
+                <armorPenetration>0.4</armorPenetration>
+                <extraMeleeDamages>
+                    <li>
+                        <def>EMP</def>
+                        <amount>4</amount>
+                        <chance>0.8</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>0.8</cooldownTime>
+                <armorPenetration>0.1</armorPenetration>
+                <extraMeleeDamages>
+                    <li>
+                        <def>EMP</def>
+                        <amount>4</amount>
+                        <chance>0.4</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>1.8</cooldownTime>
             </li>
         </tools>
     </ThingDef>
