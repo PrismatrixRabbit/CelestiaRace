@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
-    <ThingDef ParentName="BaseMakeableGrenade">
+    <!--<ThingDef ParentName="BaseMakeableGrenade">
         <defName>Celes_GrenadeSlime</defName>
         <label>slime grenades</label>
         <description>.</description>
@@ -58,11 +58,11 @@
         <projectile>
             <explosionRadius>1.1</explosionRadius>
             <damageDef>Extinguish</damageDef>
-            <!-- Use default damage from explosion def -->
+            &lt;!&ndash; Use default damage from explosion def &ndash;&gt;
             <preExplosionSpawnThingDef>Filth_Slime</preExplosionSpawnThingDef>
             <ai_IsIncendiary>true</ai_IsIncendiary>
             <shadowSize>0.6</shadowSize>
             <screenShakeFactor>0.5</screenShakeFactor>
         </projectile>
-    </ThingDef>
+    </ThingDef>-->
 </Defs>
