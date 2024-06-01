@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="" />
+    <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesNanoMachine/CelesNanoMachine_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesNanoMachine/CelesNanoMachine_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesNanoMachine/CelesNanoMachine_c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Weapon/Celes_IndustryGrenade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Weapon/Celes_IndustryGrenade.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,8 +35,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/FTLasteroid/CelestiaRace.git&quot;,
-    &quot;accountId&quot;: &quot;db3d312c-1c8a-4580-bda0-106e92aef97f&quot;
+    &quot;url&quot;: &quot;git@github.com:FTLasteroid/CelestiaRace.git&quot;,
+    &quot;accountId&quot;: &quot;340053f6-aaa0-4210-a076-7ec566c35c47&quot;
   }
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -44,27 +51,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\96987\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\96987\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\96987\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\ROG\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\ROG\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\ROG\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpaceReviewFiltersPersistance">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;NeedsReview&quot;,
@@ -105,6 +113,9 @@
       <workItem from="1715771736473" duration="365000" />
       <workItem from="1715777434082" duration="29000" />
       <workItem from="1715837621656" duration="5723000" />
+      <workItem from="1716285894967" duration="3155000" />
+      <workItem from="1717248915651" duration="1825000" />
+      <workItem from="1717253926658" duration="3150000" />
     </task>
     <task id="LOCAL-00001" summary="材料更新">
       <option name="closed" value="true" />
@@ -178,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715843907289</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="专有启灵装置更新">
+      <option name="closed" value="true" />
+      <created>1715860843499</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715860843499</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +217,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="材料更新" />
     <MESSAGE value="药剂贴图更新" />
@@ -209,6 +229,7 @@
     <MESSAGE value="尘构侵染更新1.1" />
     <MESSAGE value="三种材料的添加" />
     <MESSAGE value="机控中枢及其限制hediff默认生成,移除限制更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="机控中枢及其限制hediff默认生成,移除限制更新" />
+    <MESSAGE value="专有启灵装置更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="专有启灵装置更新" />
   </component>
 </project>

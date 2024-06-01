@@ -59,7 +59,7 @@
             <explosionRadius>1.1</explosionRadius>
             <damageDef>Extinguish</damageDef>
             <!-- Use default damage from explosion def -->
-            <preExplosionSpawnThingDef>Filth_Slime</preExplosionSpawnThingDef>
+            <preExplosionSpawnThingDef>Filth_SlowSlime</preExplosionSpawnThingDef>
             <ai_IsIncendiary>true</ai_IsIncendiary>
             <shadowSize>0.6</shadowSize>
             <screenShakeFactor>0.5</screenShakeFactor>
