@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesNanoMachine/CelesNanoMachine_a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesNanoMachine/CelesNanoMachine_b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesNanoMachine/CelesNanoMachine_c.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Weapon/Celes_IndustryGrenade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Weapon/Celes_IndustryGrenade.xml" afterDir="false" />
+    <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="1">
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesBioGel/CelesBioGel_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesBioGel/CelesBioGel_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesBioGel/CelesBioGel_c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/energy_bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +114,7 @@
       <workItem from="1715837621656" duration="5723000" />
       <workItem from="1716285894967" duration="3155000" />
       <workItem from="1717248915651" duration="1825000" />
-      <workItem from="1717253926658" duration="3150000" />
+      <workItem from="1717253926658" duration="3447000" />
     </task>
     <task id="LOCAL-00001" summary="材料更新">
       <option name="closed" value="true" />
@@ -197,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715860843499</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1">
+      <option name="closed" value="true" />
+      <created>1717257606826</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717257606826</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,12 +231,12 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="尘构植入测试" />
     <MESSAGE value="完善配方限制" />
-    <MESSAGE value="1" />
     <MESSAGE value="尘构侵染祛除手术更新" />
     <MESSAGE value="尘构侵染更新1.1" />
     <MESSAGE value="三种材料的添加" />
     <MESSAGE value="机控中枢及其限制hediff默认生成,移除限制更新" />
     <MESSAGE value="专有启灵装置更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="专有启灵装置更新" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>

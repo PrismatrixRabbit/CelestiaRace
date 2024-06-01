@@ -88,7 +88,7 @@
         <defName>Celes_HEPT</defName>
         <label>high energy plasma bullet</label>
         <graphicData>
-            <texPath>Things/Projectile/Charge_Small</texPath>
+            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>

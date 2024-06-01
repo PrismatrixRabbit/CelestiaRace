@@ -47,11 +47,11 @@
         <description>A highly versatile composite biogel that can be used in the production of various biochemical products.</description>
         <possessionCount>5</possessionCount>
         <tickerType>Normal</tickerType>
-        <!--<graphicData>
-            <texPath></texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+        <graphicData>
+            <texPath>Celes/Item/CelesBioGel</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.85</drawSize>
-        </graphicData>-->
+        </graphicData>
         <stackLimit>60</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>
         <intricate>true</intricate>
