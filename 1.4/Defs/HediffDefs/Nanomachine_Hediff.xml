@@ -43,9 +43,6 @@
                 <spawnThing>Neutroamine</spawnThing>
                 <spawnCount>8</spawnCount>
             </li>
-            <li>
-                <compClass>CelesFeature.Celes_HediffComp_RemoveHediffOnDeath</compClass>
-            </li>
         </comps>
     </HediffDef>
 </Defs>
