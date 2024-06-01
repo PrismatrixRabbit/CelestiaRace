@@ -259,7 +259,7 @@
 						</li>
 					</bodyAddons>
 					
-					<headOffset>(0,0)</headOffset>
+					<headOffset>(0,-0.01)</headOffset>
 					<customDrawSize>(1.0, 1.0)</customDrawSize>
 					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
 					<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
@@ -286,13 +286,23 @@
 									</li>-->
 								<!--天青色-->
 									<li>
-										<weight>70</weight>
+										<weight>35</weight>
 										<only>RGBA(135,196,237)</only>
+									</li>
+								<!--蔚蓝色-->
+									<li>
+										<weight>35</weight>
+										<only>RGBA(112,243,255)</only>
 									</li>
 								<!--血红色-->
 									<li>
-										<weight>30</weight>
-										<only>RGBA(205, 0, 0)</only>
+										<weight>25</weight>
+										<only>RGBA(205,0,0)</only>
+									</li>
+								<!--紫色-->
+									<li>
+										<weight>5</weight>
+										<only>RGBA(128,29,174)</only>
 									</li>
 								</options>
 							</second>
@@ -303,8 +313,18 @@
 								<options>
 								<!--原色-->
 									<li>
-										<weight>20</weight>
+										<weight>5</weight>
 										<only>RGBA(255,255,255)</only>
+									</li>
+								<!--银白-->
+									<li>
+										<weight>10</weight>
+										<only>RGBA(233,231,239)</only>
+									</li>
+								<!--灰蓝-->
+									<li>
+										<weight>10</weight>
+										<only>RGBA(122,184,204)</only>
 									</li>
 								<!--天青-->
 									<li>
@@ -321,14 +341,14 @@
 										<weight>20</weight>
 										<only>RGBA(100,149,237)</only>
 									</li>
-								<!--钢青-->
+								<!--钢青
 									<li>
 										<weight>20</weight>
 										<only>RGBA(70,130,180)</only>
-									</li>
+									</li>-->
 								<!--道奇蓝-->
 									<li>
-										<weight>20</weight>
+										<weight>15</weight>
 										<only>RGBA(30,144,255)</only>
 									</li>
 								</options>

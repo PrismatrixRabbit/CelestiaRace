@@ -8,7 +8,7 @@
 	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 	<categoryTag>Celes_PlayerFaction</categoryTag>
 	<colorSpectrum>
-      <li>(1, 1, 1)</li>
+      <li>(0.58, 0.8, 0.92)</li>
     </colorSpectrum>
     <isPlayer>true</isPlayer>
 	<basicMemberKind>Celes_Colonist</basicMemberKind>
@@ -18,8 +18,8 @@
 	<melaninRange>0</melaninRange>
 	<!--↓↓↓这里等着改↓↓↓-->
 	<!--NameMaker都等我写-->
-	<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-	<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+	<playerInitialSettlementNameMaker>CelesInitialSettlement_Namer</playerInitialSettlementNameMaker>
+	<factionNameMaker>CelesFaction_Namer</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
     <allowedCultures>
 		<li>CelesCulture</li>
@@ -34,7 +34,7 @@
         </categories>
       </li>
     </backstoryFilters>
-	<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath><!--这里要换兔兔的地图标识-->
+	<factionIconPath>Celes/Faction/CelesFaction_Icon</factionIconPath><!--这里要换兔兔的地图标识-->
 	<startingResearchTags>
       <li>ClassicStart</li>
     </startingResearchTags>
@@ -58,7 +58,7 @@
 	<label>celestia pioneer</label>
     <description>A group of celestia pioneers?</description><!--等我写（-->
 	<colorSpectrum>
-      <li>(0,0,0)</li><!--等我改（-->
+      <li>(1, 1, 1)</li><!--等我改（-->
     </colorSpectrum>
 	<categoryTag>Celes_Faction</categoryTag>
 	<pawnSingular>celestia</pawnSingular>
@@ -71,11 +71,11 @@
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
 	<leaderTitle>pioneer commander-in-chief</leaderTitle><!--等我写（-->
-    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <factionIconPath>Celes/Faction/CelesFaction_IconVII</factionIconPath>
     <techLevel>Industrial</techLevel>
 	<!--NameMaker都等我写-->
-    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <factionNameMaker>CelesFaction_Namer</factionNameMaker>
+    <settlementNameMaker>CelesSettlement_Namer</settlementNameMaker>
 	<melaninRange>0</melaninRange>
     <naturalEnemy>false</naturalEnemy>
     <permanentEnemy>false</permanentEnemy>

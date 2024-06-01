@@ -19,8 +19,8 @@
 		</thingCategories>
 	</ThingDef>
 	
-	<ThingDef ParentName="Celes_ShellBase"><!--测试用 制服外套A-->
-	<defName>Celes_SuitJacketA</defName>
+	<ThingDef ParentName="Celes_ShellBase"><!--测试用 制服外套-->
+	<defName>Celes_SuitJacket</defName>
 	<label>celestia suit jacket</label>
 	<description>currently unavailable</description>
 	<costStuffCount>60</costStuffCount>
@@ -29,7 +29,7 @@
 		<li>Leathery</li>
 	</stuffCategories>
 	<graphicData>
-		<texPath>Celes/Apparel/Shell/SuitJacketA/SuitJacketA</texPath>
+		<texPath>Celes/Apparel/Shell/SuitJacket/SuitJacket</texPath>
 	</graphicData>
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
@@ -45,41 +45,7 @@
           <li>Torso</li>
           <li>Shoulders</li>
         </bodyPartGroups>
-		<wornGraphicPath>Celes/Apparel/Shell/SuitJacketA/SuitJacketA</wornGraphicPath>
-		<tags>
-			<li>Celes_Uniform</li>
-			<li>Celes_UniformShell</li>
-		</tags>
-	</apparel>
-	</ThingDef>
-	
-	<ThingDef ParentName="Celes_ShellBase"><!--测试用 制服外套B-->
-	<defName>Celes_SuitJacketB</defName>
-	<label>celestia suit jacket cape</label>
-	<description>currently unavailable</description>
-	<costStuffCount>60</costStuffCount>
-	<stuffCategories>
-	    <li>Fabric</li>
-		<li>Leathery</li>
-	</stuffCategories>
-	<graphicData>
-		<texPath>Celes/Apparel/Shell/SuitJacketB/SuitJacketB</texPath>
-	</graphicData>
-	<statBases>
-		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToMake>5400</WorkToMake>
-		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
-	</statBases>
-	<apparel>
-		<useWornGraphicMask>true</useWornGraphicMask>
-		<developmentalStageFilter>Adult</developmentalStageFilter>
-		<bodyPartGroups>
-          <li>Torso</li>
-          <li>Shoulders</li>
-        </bodyPartGroups>
-		<wornGraphicPath>Celes/Apparel/Shell/SuitJacketB/SuitJacketB</wornGraphicPath>
+		<wornGraphicPath>Celes/Apparel/Shell/SuitJacket/SuitJacket</wornGraphicPath>
 		<tags>
 			<li>Celes_Uniform</li>
 			<li>Celes_UniformShell</li>

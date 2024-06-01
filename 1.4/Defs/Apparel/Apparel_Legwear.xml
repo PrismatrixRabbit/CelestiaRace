@@ -39,7 +39,7 @@
 		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
 	</statBases>
 	<apparel>
-		<useWornGraphicMask>false</useWornGraphicMask>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<developmentalStageFilter>Adult</developmentalStageFilter>
 		<bodyPartGroups>
           <li>Legs</li>
