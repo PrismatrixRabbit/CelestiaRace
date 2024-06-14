@@ -56,8 +56,8 @@
     </RecipeDef>
 
     <RecipeDef>
-        <defName>Make_NegativeMetal</defName>
-        <label>MakeNegativeMetal</label>
+        <defName>Make_NegativeAlloy</defName>
+        <label>MakeNegativeAlloy</label>
         <description>.</description>
         <jobString>.</jobString>
         <workAmount>15000</workAmount>
@@ -83,13 +83,13 @@
             </li>
         </ingredients>
         <products>
-            <Celes_NegativeMetal>50</Celes_NegativeMetal>
+            <Celes_NegativeAlloy>50</Celes_NegativeAlloy>
         </products>
     </RecipeDef>
 
     <RecipeDef>
-        <defName>Make_PositiveMetal</defName>
-        <label>MakePositiveMetal</label>
+        <defName>Make_PositiveAlloy</defName>
+        <label>MakePositiveAlloy</label>
         <description>.</description>
         <jobString>.</jobString>
         <workAmount>15000</workAmount>
@@ -115,13 +115,13 @@
             </li>
         </ingredients>
         <products>
-            <Celes_PositiveMetal>50</Celes_PositiveMetal>
+            <Celes_PositiveAlloy>50</Celes_PositiveAlloy>
         </products>
     </RecipeDef>
 
     <RecipeDef>
-        <defName>Make_CelesSteel</defName>
-        <label>MakeCelesSteel</label>
+        <defName>Make_CelesAlloy</defName>
+        <label>MakeCelesAlloy</label>
         <description>.</description>
         <jobString>.</jobString>
         <workAmount>10000</workAmount>
@@ -147,7 +147,7 @@
             </li>
         </ingredients>
         <products>
-            <CelesSteel>50</CelesSteel>
+            <CelesAlloy>50</CelesAlloy>
         </products>
     </RecipeDef>
 </Defs>
