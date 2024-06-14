@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="ResourceBase">
-        <DefName>Celes_NegativeMetal</DefName>
+        <DefName>Celes_NegativeAlloy</DefName>
         <label>待命名</label>
         <description>.</description>
-        <!--<graphicData>
-            <texPath></texPath>
+        <graphicData>
+            <texPath>Celes/Item/Resource/NegativeAlloy</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-        </graphicData>-->
+        </graphicData>
         <genericMarketSellable>false</genericMarketSellable>
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Metal_Drop</soundDrop>
@@ -73,13 +73,13 @@
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
-        <DefName>Celes_PositiveMetal</DefName>
+        <DefName>Celes_PositiveAlloy</DefName>
         <label>待命名</label>
         <description>.</description>
-        <!--<graphicData>
-            <texPath></texPath>
+        <graphicData>
+            <texPath>Celes/Item/Resource/PositiveAlloy</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-        </graphicData>-->
+        </graphicData>
         <genericMarketSellable>false</genericMarketSellable>
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Metal_Drop</soundDrop>
