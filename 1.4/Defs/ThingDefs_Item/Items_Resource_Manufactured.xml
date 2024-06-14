@@ -267,11 +267,11 @@
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>CelesSteel</defName>
+        <defName>CelesAlloy</defName>
         <label>待命名</label>
         <description>.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/Steel</texPath>
+            <texPath>Celes/Item/Resource/Alloy</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Metal_Drop</soundInteract>
