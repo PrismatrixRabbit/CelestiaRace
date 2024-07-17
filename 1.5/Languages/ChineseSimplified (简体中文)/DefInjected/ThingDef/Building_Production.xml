@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Celes_DrugLab.label>星铃药物合成台</Celes_DrugLab.label>
+  <Celes_DrugLab.description>这是一个懒狗占位符。</Celes_DrugLab.description>
+  
+  <Celes_FueledSmithy.label>星铃锻造台（燃料）</Celes_FueledSmithy.label>
+  <Celes_FueledSmithy.description>这是一个懒狗占位符.</Celes_FueledSmithy.description>
+  
+  <Celes_ElectricSmithy.label>星铃锻造台（电力）</Celes_ElectricSmithy.label>
+  <Celes_ElectricSmithy.description>这是一个懒狗占位符.</Celes_ElectricSmithy.description>
+  
+  <Celes_WorkBench.label>星铃工作台</Celes_WorkBench.label>
+  <Celes_WorkBench.description>这是一个懒狗占位符.</Celes_WorkBench.description>
+
+</LanguageData>
