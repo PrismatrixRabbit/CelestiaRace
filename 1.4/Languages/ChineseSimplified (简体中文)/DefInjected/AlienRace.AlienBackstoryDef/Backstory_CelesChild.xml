@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- [PAWN_nameDef][PAWN_pronoun][PAWN_possessive][PAWN_objective] -->
+  <!--============================== 普通孩童 ============================-->
+
+  <Celes_Backstory_Child01.title>星铃 远日行星孩童</Celes_Backstory_Child01.title>
+  <!-- EN: celestia far planet child-->
+  <Celes_Backstory_Child01.titleShort>远日孩童</Celes_Backstory_Child01.titleShort>
+  <!-- EN: far-planetkid -->
+  <Celes_Backstory_Child01.baseDesc>[PAWN_nameDef]出生在一个远离恒星的空间站，在[PAWN_possessive]眼中，母星系的恒星就像只是一个暗淡的光点。[PAWN_pronoun]被以开拓者为目标教导着，但[PAWN_pronoun]从未放弃对那暗淡光点的好奇。</Celes_Backstory_Child01.baseDesc>
+  <!-- EN: [PAWN_nameDef] was born on a space station far from the stars, and to [PAWN_pronoun], the stars of [PAWN_possessive] home star system looked like nothing more than a bleak point. [PAWN_pronoun] was taught with the goal of being a pioneer, but [PAWN_pronoun] never gave up [PAWN_possessive] curiosity about that faint point of light. -->
+  
+  <Celes_Backstory_Child02.title>星铃 工程师的孩子</Celes_Backstory_Child02.title>
+  <!-- EN: celestia engineer's child-->
+  <Celes_Backstory_Child02.titleShort>工程师之子</Celes_Backstory_Child02.titleShort>
+  <!-- EN: engineerkid -->
+  <Celes_Backstory_Child02.baseDesc>[PAWN_nameDef]被一个工程师家庭培育长大，[PAWN_pronoun]很早的接触到了星铃们在小行星与太空工程建筑中所需要的一些常识，以及更重要的，一种逻辑理性的思维方式。</Celes_Backstory_Child02.baseDesc>
+  <!-- EN: [PAWN_nameDef] was raised by engineers family. [PAWN_pronoun] was exposed early on to some of the common sense Celestias needed in asteroid and space engineering construction, and more importantly, a logical and rational way of thinking. -->
+  
+  <Celes_Backstory_Child03.title>星铃 枪械爱好者</Celes_Backstory_Child03.title>
+  <!-- EN: celestia firearms enthusiasts-->
+  <Celes_Backstory_Child03.titleShort>枪械爱好者</Celes_Backstory_Child03.titleShort>
+  <!-- EN: firearmkid -->
+  <Celes_Backstory_Child03.baseDesc>[PAWN_nameDef]一度被认为具有某些严重的暴力倾向。但事实很快证明，[PAWN_pronoun]只是对这些杀人武器的机械构造格外好奇——它们有着唯一的目的，但它们是如何通过那些无比精巧的机械构造高效且迅速的达成这一目的的？这完全满足了[PAWN_possessive]好奇心。</Celes_Backstory_Child03.baseDesc>
+  <!-- EN: [PAWN_nameDef] was once thought to have some serious violent tendencies. But as it soon turned out, [PAWN_pronoun] was just extraordinarily curious about the mechanics of these murderous weapons - they had a singular purpose, but how did they achieve that purpose efficiently and quickly through those incredibly delicate mechanics? It completely satisfied [PAWN_possessive] curiosity. -->
+  
+  <Celes_Backstory_Child04.title>星铃 不省心的孩子</Celes_Backstory_Child04.title>
+  <!-- EN: celestia troubled child-->
+  <Celes_Backstory_Child04.titleShort>问题儿童</Celes_Backstory_Child04.titleShort>
+  <!-- EN: troubledkid -->
+  <Celes_Backstory_Child04.baseDesc>[PAWN_nameDef]特别能闹麻烦，和同学打架，拆坏别人的东西，一和别人合作就把事情搞得乱七八糟。但[PAWN_pronoun]似乎并不是想要干坏事，[PAWN_pronoun]只是不知道怎么表达自己。</Celes_Backstory_Child04.baseDesc>
+  <!-- EN: [PAWN_nameDef] is especially capable of getting into trouble, fighting with classmates, tearing down other people's stuff, and messing things up when [PAWN_pronoun] works with others. But [PAWN_pronoun] doesn't seem to want to do bad things, [PAWN_pronoun] just doesn't know how to express [PAWN_objective]. -->
+  
+  <!--============================== 特殊孩童 ============================-->
+  
+  <Celes_Backstory_ChildSp01.title>星铃 战术定制对象</Celes_Backstory_ChildSp01.title>
+  <!-- EN: celestia tactical objects-->
+  <Celes_Backstory_ChildSp01.titleShort>战术定制</Celes_Backstory_ChildSp01.titleShort>
+  <!-- EN: tactical -->
+  <Celes_Backstory_ChildSp01.baseDesc>[PAWN_nameDef]有记忆以来，就参与着一个星铃军方的特殊绝密计划。\n\n[PAWN_pronoun]在幼年就展现出[PAWN_pronoun]出众的战术思维与身体强度，并以这样卓越的天赋被选出。野战训练，实战指挥，空间站近距离战斗，极端环境作战，所有的这些训练只为了选出精锐的星铃战士。</Celes_Backstory_ChildSp01.baseDesc>
+  <!-- EN: [PAWN_nameDef] has been involved in a special top secret Celestia military programme for as long as [PAWN_pronoun] can remember.\n\n[PAWN_pronoun] showed [PAWN_possessive] outstanding tactical thinking and physical strength at an early age and was selected for such exceptional talent.Battlefield training, field command, close-quarters combat on space stations, and combat in extreme environments, all of which were trained only to select elite Celestia warriors. -->
+  
+</LanguageData>
