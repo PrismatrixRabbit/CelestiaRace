@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef ParentName="BuildingBase">
+    <!--<ThingDef ParentName="BuildingBase">
         <defName>CelesAntenna</defName>
         <label>celestia antenna</label>
         <description>A mech-band signaling device. When activated, it puts out a powerful mech signal pulse, which will attract an ultra-heavy feral mechanoid to attack with its escorts. If you can defeat it, you can collect special technologies from its corpse. The signal pulse burns out the transmitter, so this building can only be used once.</description>
@@ -55,5 +55,5 @@
         </comps>
         <tickerType>Normal</tickerType>
         <filthLeaving>Filth_MachineBits</filthLeaving>
-    </ThingDef>
+    </ThingDef>-->
 </Defs>
