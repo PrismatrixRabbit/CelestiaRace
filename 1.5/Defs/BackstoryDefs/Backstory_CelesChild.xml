@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef Name="Celes_BaseChildBackstory" Abstract="True">
+		<disallowedTraitsChance>
+		</disallowedTraitsChance>
+		<forcedHediffs>
+			<li>MechlinkImplant</li>
+			<li>Celes_MechlinkRestriction</li>
+		</forcedHediffs> 
+		<spawnCategories>
+			<li>Celes_All</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!--============================== 普通孩童 ============================-->
+	<!--example
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child02</defName>
+		<title>celestia engineer's child</title>
+		<titleShort>engineerkid</titleShort>
+		<baseDesc>[PAWN_nameDef] was raised by engineers family. [PAWN_pronoun] was exposed early on to some of the common sense Celestias needed in asteroid and space engineering construction, and more importantly, a logical and rational way of thinking.</baseDesc>
+		<slot>Childhood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+		</workDisables>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<possessions>
+			<MealFine>3</MealFine>
+		</possessions>
+		<spawnCategories>
+			<li>Celes_General</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>-->
+	
+	
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child01</defName>
+		<title>celestia far planet child</title>
+		<titleShort>far-planetkid</titleShort>
+		<baseDesc>[PAWN_nameDef] was born on a space station far from the stars, and to [PAWN_pronoun], the stars of [PAWN_possessive] home star system looked like nothing more than a bleak point. [PAWN_pronoun] was taught with the goal of being a pioneer, but [PAWN_pronoun] never gave up [PAWN_possessive] curiosity about that faint point of light.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>3</Plants>
+			<Crafting>3</Crafting>
+			<Mining>1</Mining>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_General</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child02</defName>
+		<title>celestia engineer's child</title>
+		<titleShort>engineerkid</titleShort>
+		<baseDesc>[PAWN_nameDef] was raised by engineers family. [PAWN_pronoun] was exposed early on to some of the common sense Celestias needed in asteroid and space engineering construction, and more importantly, a logical and rational way of thinking.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Intellectual>4</Intellectual>
+			<Mining>2</Mining>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_General</li>
+			<li>Celes_Engineer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child03</defName>
+		<title>celestia firearms enthusiasts</title>
+		<titleShort>firearmkid</titleShort>
+		<baseDesc>[PAWN_nameDef] was once thought to have some serious violent tendencies. But as it soon turned out, [PAWN_pronoun] was just extraordinarily curious about the mechanics of these murderous weapons - they had a singular purpose, but how did they achieve that purpose efficiently and quickly through those incredibly delicate mechanics? It completely satisfied [PAWN_possessive] curiosity.</baseDesc>
+		<slot>Childhood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Crafting>3</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_General</li>
+			<li>Celes_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child04</defName>
+		<title>celestia troubled child</title>
+		<titleShort>troubledkid</titleShort>
+		<baseDesc>[PAWN_nameDef] is especially capable of getting into trouble, fighting with classmates, tearing down other people's stuff, and messing things up when [PAWN_pronoun] works with others. But [PAWN_pronoun] doesn't seem to want to do bad things, [PAWN_pronoun] just doesn't know how to express [PAWN_objective].</baseDesc>
+		<slot>Childhood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>4</Melee>
+			<Social>-2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_General</li>
+			<li>Celes_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!--============================== 特殊孩童 ============================-->
+	
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_ChildSp01</defName>
+		<title>celestia tactical objects</title>
+		<titleShort>tactical</titleShort>
+		<baseDesc>[PAWN_nameDef] has been involved in a special top secret Celestia military programme for as long as [PAWN_pronoun] can remember.\n\n[PAWN_pronoun] showed [PAWN_possessive] outstanding tactical thinking and physical strength at an early age and was selected for such exceptional talent.Battlefield training, field command, close-quarters combat on space stations, and combat in extreme environments, all of which were trained only to select elite Celestia warriors.</baseDesc>
+		<slot>Childhood</slot>
+		<!-- <requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Crafting>1</Crafting>
+		</skillGains> -->
+		<spawnCategories>
+			<li>Celes_Special</li>
+			<li>Celes_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+</Defs>

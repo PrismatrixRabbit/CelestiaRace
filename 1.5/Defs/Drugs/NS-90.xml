@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>NS90M</defName>
+        <label>NS-90 central nervous stimulant</label>
+        <description>Weak central nervous system stimulants, low addiction but still high risk of overdose.</description>
+        <descriptionHyperlinks>
+            <HediffDef>NS90_High</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Celes/Drugs/Test</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>400</WorkToMake>
+            <MarketValue>36</MarketValue>
+            <Mass>0.005</Mass>
+        </statBases>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <foodType>Processed</foodType>
+            <joyKind>Chemical</joyKind>
+            <joy>0.20</joy>
+            <baseIngestTicks>650</baseIngestTicks>
+            <nurseable>true</nurseable>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>NS90_High</hediffDef>
+                    <severity>1</severity>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>1.0</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <CelesBioGel>2</CelesBioGel>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>1000</listOrder>
+                <overdoseSeverityOffset>0.10~0.25</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <HediffDef>
+        <defName>NS90_High</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>NS-90 CNS</label>
+        <labelNoun>a NS-90 CNS high</labelNoun>
+        <description>NS-90 is in effect, improving working ability.</description>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>1.2</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>1.5</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <postFactor>1.5</postFactor>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.2</MeditationFocusGain>
+                </statOffsets>
+                <hungerRateFactor>1.1</hungerRateFactor>
+                <restFallFactor>0.6</restFallFactor>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

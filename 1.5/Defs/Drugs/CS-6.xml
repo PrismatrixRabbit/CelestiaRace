@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef ParentName="MakeableDrugBase">
+        <defName>CS6M</defName>
+        <label>CS-6 combat stimulants</label>
+        <description>A synthetic military tactical stimulant that enhances combat effectiveness, but has certain after effects after failure.</description>
+        <descriptionHyperlinks>
+            <HediffDef>CS6_High</HediffDef>
+            <HediffDef>CS6_After</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Celes/Drugs/CS6</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>400</WorkToMake>
+            <MarketValue>60</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <foodType>Processed, Fluid</foodType>
+            <joyKind>Chemical</joyKind>
+            <joy>0.30</joy>
+            <baseIngestTicks>30</baseIngestTicks>
+            <nurseable>true</nurseable>
+            <drugCategory>Hard</drugCategory>
+            <ingestSound>Ingest_Inject</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.18,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Inject {0}</ingestCommandString>
+            <ingestReportString>Injecting {0}</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <chairSearchRadius>0</chairSearchRadius>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>CS6_High</hediffDef>
+                    <severity>0.5</severity>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+                    <offset>0.15</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>2</Neutroamine>
+            <CelesBioGel>1</CelesBioGel>
+            <PsychoidLeaves>8</PsychoidLeaves>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+                <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <HediffDef>
+        <defName>CS6_High</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>CS-6 stimulant is taking effect</label>
+        <labelNoun>CS-6 effect</labelNoun>
+        <description>The active ingredient of CS-6 is working to enhance various combat capabilities and provide sports doping effects.</description>
+        <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0.0</minSeverity>
+                <label>effect almost done.</label>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>CS6_After</hediff>
+                        <mtbDays>0.0001</mtbDays>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <minSeverity>0.01</minSeverity>
+                <label>in effect.</label>
+                <statOffsets>
+                    <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+                    <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+                    <MeleeHitChance>0.25</MeleeHitChance>
+                </statOffsets>
+                <restFallFactor>0</restFallFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.8</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>1.2</postFactor>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.4</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+    
+    <HediffDef>
+        <defName>CS6_After</defName>
+        <label>CS-6 after effect</label>
+        <labelNoun>a CS-6 after effect</labelNoun>
+        <description>after-effects left after CS-6 expiration may cause hunger and fatigue.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <makesSickThought>true</makesSickThought>
+        <lethalSeverity>1.5</lethalSeverity>
+        <tendable>true</tendable>
+        <isBad>true</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>30000~60000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_TendDuration">
+                <baseTendDurationHours>24</baseTendDurationHours>
+                <severityPerDayTended>-1.5</severityPerDayTended>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <vomitMtbDays>0.2</vomitMtbDays>
+                <restFallFactor>2.5</restFallFactor>
+                <hungerRateFactorOffset>1</hungerRateFactorOffset>
+                <capMods>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_RandomDrugEffect">
+                        <hediff>ChemicalDamageSevere</hediff>
+                        <minSeverity>0.50</minSeverity>
+                        <baseMtbDays>120</baseMtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                </hediffGivers>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

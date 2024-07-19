@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <RecipeDef Name="Celes_Surgery" ParentName="SurgeryFlesh" Abstract="True">
+        <recipeUsers>
+            <li>Human</li>
+        </recipeUsers>
+        <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="Celes_Surgery">
+        <defName>Celes_ImplantNanomachine</defName>
+        <label>implant nanomachine</label>
+        <description>.</description>
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <jobString>Implanting nanomachine</jobString>
+        <workAmount>2000</workAmount>
+        <isViolation>true</isViolation>
+        <anesthetize>true</anesthetize>
+        <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+        <addsHediff>Celes_NanoImplanted</addsHediff>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <skillRequirements>
+            <Medicine>10</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CelesNanoMachine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>ExtractCelesNanoMachine</defName>
+        <label>extract celestia nanomachine</label>
+        <description>Extract a hemogen pack from the target. The operation will fail to produce a hemogen pack if the target does not have enough blood.\n\nHemogen packs can be administered to others to reduce blood loss or to satiate those who feed on blood.</description>
+        <workerClass>Recipe_ExtractHemogen</workerClass>
+        <jobString>Extracting hemogen pack.</jobString>
+        <workAmount>500</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <isViolation>true</isViolation>
+        <descriptionHyperlinks>
+            <ThingDef>CelesNanoMachine</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>HemogenPack</uiIconThing>
+        <anesthetize>false</anesthetize>
+        <workSkillLearnFactor>2</workSkillLearnFactor>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="Celes_Surgery">
+        <defName>RemoveCelesNanoMachine</defName>
+        <label>remove celestia nanomachine infection from infected person</label>
+        <description>.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Removing nanomachine infection.</jobString>
+        <workAmount>1000</workAmount>
+        <removesHediff>Celes_NanoImplanted</removesHediff>
+        <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s nanomachine infection from their body.</successfullyRemovedHediffMessage>
+        <anesthetize>false</anesthetize>
+        <products>
+            <CelesNanoMachine>3</CelesNanoMachine>
+        </products>
+        <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+    </RecipeDef>
+</Defs>

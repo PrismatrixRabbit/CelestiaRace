@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef ParentName="MakeableDrugBase">
+        <defName>CPS1M</defName>
+        <label>CPS-1 combat psychic stimulants</label>
+        <description>A synthetic military psy tactical stimulant that enhances combat effectiveness, but has certain after effects after failure.</description>
+        <descriptionHyperlinks>
+            <HediffDef>CPS1_High</HediffDef>
+            <HediffDef>CPS1_After</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Celes/Drugs/CPS1</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>900</WorkToMake>
+            <MarketValue>160</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <foodType>Processed, Fluid</foodType>
+            <joyKind>Chemical</joyKind>
+            <joy>0.30</joy>
+            <baseIngestTicks>40</baseIngestTicks>
+            <nurseable>true</nurseable>
+            <drugCategory>Hard</drugCategory>
+            <ingestSound>Ingest_Inject</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.18, 0, 0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Inject {0}</ingestCommandString>
+            <ingestReportString>Injecting {0}</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <chairSearchRadius>0</chairSearchRadius>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>CPS1_High</hediffDef>
+                    <severity>0.5</severity>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+                    <offset>0.8</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Bio_III</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>2</Neutroamine>
+            <CelesBioGel>2</CelesBioGel>
+            <PsychoidLeaves>8</PsychoidLeaves>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+                <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef>
+        <defName>CPS1_High</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>CPS-1 stimulant is taking effect.</label>
+        <labelNoun>CPS-1 effect</labelNoun>
+        <description>The active ingredient of CPS-1 is working to enhance Psychic power.</description>
+        <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0.0</minSeverity>
+                <label>effect almost done.</label>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>CPS1_After</hediff>
+                        <mtbDays>0.0001</mtbDays>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <minSeverity>0.01</minSeverity>
+                <label>in effect.</label>
+                <statOffsets>
+                    <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+                    <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+                    <MeleeHitChance>0.25</MeleeHitChance>
+                </statOffsets>
+                <painFactor>1.3</painFactor>
+                <restFallFactor>0</restFallFactor>
+                <statFactors>
+                    <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicEntropyGain>
+                    <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.5</PsychicEntropyMax>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">8</MeditationFocusGain>
+                    <PsychicSensitivity>2.5</PsychicSensitivity>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>CPS1_After</defName>
+        <label>CPS-1 after effect</label>
+        <labelNoun>a CPS-1 after effect</labelNoun>
+        <description>after-effects left after CPS-1 expiration may cause hunger and fatigue.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <makesSickThought>true</makesSickThought>
+        <lethalSeverity>1</lethalSeverity>
+        <tendable>true</tendable>
+        <isBad>true</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>1</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>30000~60000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_TendDuration">
+                <baseTendDurationHours>24</baseTendDurationHours>
+                <severityPerDayTended>-1.5</severityPerDayTended>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <vomitMtbDays>0.2</vomitMtbDays>
+                <hungerRateFactor>1.5</hungerRateFactor>
+                <restFallFactor>2.5</restFallFactor>
+                <statFactors>
+                    <MentalBreakThreshold>0.8</MentalBreakThreshold>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.3</setMax>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_RandomDrugEffect">
+                        <hediff>ChemicalDamageSevere</hediff>
+                        <minSeverity>0.50</minSeverity>
+                        <baseMtbDays>120</baseMtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                </hediffGivers>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>
