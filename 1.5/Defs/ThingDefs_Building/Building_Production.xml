@@ -7,7 +7,7 @@
         <description>An electric-powered station for smithing non-mechanical weapons and tools.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
-            <texPath>Celes/Building/Celes_MultifunctionalTab</texPath>
+            <texPath>Celes/Building/Celes_MultifunctionalTab/Celes_MultifunctionalTab</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(3.5,1.5)</drawSize>
             <shadowData>
@@ -83,7 +83,7 @@
         <description>An electric-powered station for smithing non-mechanical weapons and tools.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
-            <texPath>Celes/Building/Celes_TailoringTab</texPath>
+            <texPath>Celes/Building/Celes_TailoringTab/Celes_TailoringTab</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(3.5,1.5)</drawSize>
             <shadowData>
@@ -137,7 +137,6 @@
                 <linkableFacilities>
                     <li>ToolCabinet</li>
                 </linkableFacilities>
-            </li>
             </li>
 			<li Class="CompProperties_Breakdownable"/>
         </comps>
