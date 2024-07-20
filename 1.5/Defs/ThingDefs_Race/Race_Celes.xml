@@ -291,9 +291,6 @@
 									<layerOffset>-0.268</layerOffset>
 								</east>
 							</offsets>
-							<hiddenUnderApparelTag>
-							</hiddenUnderApparelTag>
-							<drawnInBed>true</drawnInBed>
 						</li>
 						<li>              <!--右边耳朵-->
 							<name>celes earR</name>
@@ -360,9 +357,6 @@
 									<layerOffset>-0.268</layerOffset>
 								</east>
 							</offsets>
-							<hiddenUnderApparelTag>
-							</hiddenUnderApparelTag>
-							<drawnInBed>true</drawnInBed>
 						</li>
 					</bodyAddons>
 					
