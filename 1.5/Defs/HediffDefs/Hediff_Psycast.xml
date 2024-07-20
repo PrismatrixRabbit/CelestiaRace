@@ -57,14 +57,14 @@
             <ComponentIndustrial>10</ComponentIndustrial>
         </costList>
         <recipeMaker>
+			<researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_MultifunctionalTab</li>
+			</recipeUsers>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <recipeUsers>
-            <li>Celes_MultifunctionalTab</li>
-        </recipeUsers>
-        <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
     </ThingDef>
 
     <HediffDef MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
