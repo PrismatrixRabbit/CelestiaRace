@@ -157,28 +157,67 @@
             </li>
         </tools>
     </ThingDef>
-    
-    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-        <defName>CelesRelicSword</defName>
-        <label>"The Celestia Dawn"</label>
-        <description>.</description>
-        <graphicData>
-            <texPath>Celes/Weapon/Spacer/Celes_RelicSword</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-		<statBases>
-            <WorkToMake>7000</WorkToMake>
-            <Mass>0.85</Mass>
-        </statBases>
-        <equippedAngleOffset>-65</equippedAngleOffset>
-        <equippedStatOffsets>
-            <NegotiationAbility>1</NegotiationAbility>
-            <SocialImpact>1</SocialImpact>
-            <MeleeDodgeChance>0.6</MeleeDodgeChance>
-            <MeleeHitChance>0.4</MeleeHitChance>
-        </equippedStatOffsets>
-        <techLevel>Ultra</techLevel>
-        <tools>
+	
+	<ThingDef Abstract="True" Name="Celes_UltraMeleeBase" ParentName="BaseWeapon">
+    <techLevel>Ultra</techLevel>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponTags>
+      <li>UltratechMelee</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponMelee</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>Ultratech</li>
+    </weaponClasses>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>CelesRelicSword</defName>
+    <label>"The Celestia Dawn"</label>
+    <description>.</description>
+    <graphicData>
+        <texPath>Celes/Weapon/Spacer/Celes_RelicSword</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <smeltable>false</smeltable>
+	<equippedStatOffsets>
+        <NegotiationAbility>1</NegotiationAbility>
+        <SocialImpact>1</SocialImpact>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <MeleeHitChance>0.4</MeleeHitChance>
+    </equippedStatOffsets>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+		<tools>
             <li>
                 <label>blade</label>
                 <capacities>
@@ -230,5 +269,6 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
-    </ThingDef>
+  </ThingDef>
+  
 </Defs>
