@@ -27,6 +27,10 @@
             <CelesAlloy>40</CelesAlloy>
             <ComponentSpacer>3</ComponentSpacer>
         </costList>
+		<statBases>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>0.85</Mass>
+        </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
             <MeleeDodgeChance>0.4</MeleeDodgeChance>
@@ -96,6 +100,10 @@
             <CelesAlloy>20</CelesAlloy>
             <ComponentSpacer>1</ComponentSpacer>
         </costList>
+		<statBases>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>0.85</Mass>
+        </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
             <MeleeHitChance>1</MeleeHitChance>
@@ -158,6 +166,10 @@
             <texPath>Celes/Weapon/Spacer/Celes_RelicSword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+		<statBases>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>0.85</Mass>
+        </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
             <NegotiationAbility>1</NegotiationAbility>
