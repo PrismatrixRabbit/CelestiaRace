@@ -111,9 +111,6 @@
 		<layers>
 			<li>Celes_Legwear</li>
 		</layers>
-		<tags>
-			<li>Celes_Legwear</li>
-		</tags>
 		<bodyPartGroups>
           <li>Torso</li>
 		  <li>Neck</li>
