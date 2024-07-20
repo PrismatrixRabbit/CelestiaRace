@@ -144,6 +144,10 @@
             <CelesAlloy>40</CelesAlloy>
             <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
+		<statBases>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
             <MeleeDodgeChance>0.4</MeleeDodgeChance>
@@ -213,6 +217,10 @@
             <CelesAlloy>20</CelesAlloy>
             <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
+		<statBases>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
             <MeleeHitChance>1</MeleeHitChance>
