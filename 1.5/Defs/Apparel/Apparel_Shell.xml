@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="Celes_ShellBase" ParentName="Celes_ApparelBase" Abstract="True">
+		<statBases>
+			<Mass>0.8</Mass>
+			<EquipDelay>1.8</EquipDelay>
+		</statBases>
+		<apparel>	
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Celes_Shell</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>Celes_Apparel_Shell</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="Celes_ShellBase"><!--防风大衣-->
+	<defName>Celes_TrenchCoat</defName>
+	<label>TrenchCoat</label>
+	<description>currently unavailable</description>
+	<costStuffCount>60</costStuffCount>
+	<stuffCategories>
+	    <li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<graphicData>
+		<texPath>Celes/Apparel/Shell/TrenchCoat/TrenchCoat</texPath>
+	</graphicData>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>5400</WorkToMake>
+		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<bodyPartGroups>
+          <li>Torso</li>
+          <li>Shoulders</li>
+		  <li>Arms</li>
+        </bodyPartGroups>
+		<wornGraphicPath>Celes/Apparel/Shell/TrenchCoat/TrenchCoat</wornGraphicPath>
+		<tags>
+			<li>Celes_Uniform</li>
+			<li>Celes_UniformShell</li>
+		</tags>
+		<drawData>
+			<dataNorth><layer>40</layer></dataNorth>
+		</drawData>
+	</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="Celes_ShellBase"><!--拓荒大衣-->
+	<defName>Celes_ExploreCoat</defName>
+	<label>ExploreCoat</label>
+	<description>currently unavailable</description>
+	<costStuffCount>60</costStuffCount>
+	<stuffCategories>
+	    <li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<graphicData>
+		<texPath>Celes/Apparel/Shell/ExploreCoat/ExploreCoat</texPath>
+	</graphicData>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>5400</WorkToMake>
+		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<bodyPartGroups>
+          <li>Torso</li>
+		  <li>Neck</li>
+          <li>Shoulders</li>
+		  <li>Arms</li>
+		  <li>Legs</li>
+        </bodyPartGroups>
+		<wornGraphicPath>Celes/Apparel/Shell/ExploreCoat/ExploreCoat</wornGraphicPath>
+		<tags>
+			<li>Celes_Explore</li>
+		</tags>
+		<drawData>
+			<dataNorth><layer>40</layer></dataNorth>
+		</drawData>
+	</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="Celes_ShellBase"><!--军装大衣-->
+	<defName>Celes_MilitaryCoat</defName>
+	<label>MilitaryCoat</label>
+	<description>currently unavailable</description>
+	<costStuffCount>60</costStuffCount>
+	<stuffCategories>
+	    <li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<graphicData>
+		<texPath>Celes/Apparel/Shell/MilitaryCoat/MilitaryCoat</texPath>
+	</graphicData>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>5400</WorkToMake>
+		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<bodyPartGroups>
+          <li>Torso</li>
+		  <li>Neck</li>
+          <li>Shoulders</li>
+		  <li>Arms</li>
+		  <li>Legs</li>
+        </bodyPartGroups>
+		<wornGraphicPath>Celes/Apparel/Shell/MilitaryCoat/MilitaryCoat</wornGraphicPath>
+		<tags>
+			<li>Celes_Military</li>
+		</tags>
+		<drawData>
+			<dataNorth><layer>40</layer></dataNorth>
+		</drawData>
+	</apparel>
+	</ThingDef>
+	
+</Defs>
