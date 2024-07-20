@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="ResourceBase">
-        <DefName>Celes_NegativeAlloy</DefName>
+        <defName>Celes_NegativeAlloy</defName>
         <label>待命名</label>
         <description>.</description>
         <graphicData>
@@ -73,7 +73,7 @@
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
-        <DefName>Celes_PositiveAlloy</DefName>
+        <defName>Celes_PositiveAlloy</defName>
         <label>待命名</label>
         <description>.</description>
         <graphicData>
