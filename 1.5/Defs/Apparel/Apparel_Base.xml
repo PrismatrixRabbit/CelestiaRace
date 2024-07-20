@@ -49,7 +49,7 @@
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<recipeUsers>
-			<li>Celes_WorkBench</li>
+			<li>Celes_MultifunctionalTab</li>
 		</recipeUsers>
 		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 		<defaultIngredientFilter>
