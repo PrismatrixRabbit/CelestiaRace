@@ -266,9 +266,9 @@
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>
 
-    <ThingDef ParentName="ResourceBase">
+    <ThingDef ParentName="ResourceBase"> <!--淬铃合金-->
         <defName>CelesAlloy</defName>
-        <label>待命名</label>
+        <label>Celes Alloy</label>
         <description>.</description>
         <graphicData>
             <texPath>Celes/Item/Resource/Alloy</texPath>
@@ -304,7 +304,7 @@
             <appearance>Metal</appearance>
             <commonality>1.00</commonality>
             <constructEffect>ConstructMetal</constructEffect>
-            <color>(105,105,105)</color>
+            <color>(220,220,245)</color>
             <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
             <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>

@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_NegativeAlloy</defName>
-        <label>待命名</label>
+        <label>"Blackstone" Alloy</label>
         <description>.</description>
         <graphicData>
             <texPath>Celes/Item/Resource/NegativeAlloy</texPath>
@@ -37,7 +37,7 @@
             <commonality>0</commonality>
             <allowedInStuffGeneration>false</allowedInStuffGeneration>
             <constructEffect>ConstructMetal</constructEffect>
-            <color>(100, 80, 80)</color>
+            <color>(55, 55, 55)</color>
             <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
             <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
@@ -74,7 +74,7 @@
 
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_PositiveAlloy</defName>
-        <label>待命名</label>
+        <label>"Warlock" Alloy</label>
         <description>.</description>
         <graphicData>
             <texPath>Celes/Item/Resource/PositiveAlloy</texPath>
@@ -109,7 +109,7 @@
             <commonality>0</commonality>
             <allowedInStuffGeneration>false</allowedInStuffGeneration>
             <constructEffect>ConstructMetal</constructEffect>
-            <color>(100, 80, 80)</color>
+            <color>(210, 190, 220)</color>
             <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
             <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
