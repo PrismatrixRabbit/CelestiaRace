@@ -93,7 +93,7 @@
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_MonoDagger</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1</drawSize>
+            <drawSize>0.8</drawSize>
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
