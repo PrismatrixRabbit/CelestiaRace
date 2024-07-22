@@ -20,7 +20,7 @@
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_MonoSaber</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.5</drawSize>
+            <drawSize>1</drawSize>
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
@@ -93,7 +93,7 @@
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_MonoDagger</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.4</drawSize>
+            <drawSize>1</drawSize>
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
