@@ -9,7 +9,7 @@
             <HediffDef>NS90_High</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
-            <texPath>Celes/Drugs/Test</texPath>
+            <texPath>Celes/Drugs/NS90</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <rotatable>false</rotatable>
