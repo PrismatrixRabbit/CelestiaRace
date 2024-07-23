@@ -30,6 +30,7 @@
 	</stuffCategories>
 	<graphicData>
 		<texPath>Celes/Apparel/Shell/TrenchCoat/TrenchCoat</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
@@ -68,6 +69,7 @@
 	</stuffCategories>
 	<graphicData>
 		<texPath>Celes/Apparel/Shell/ExploreCoat/ExploreCoat</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
@@ -107,6 +109,8 @@
 	</stuffCategories>
 	<graphicData>
 		<texPath>Celes/Apparel/Shell/MilitaryCoat/MilitaryCoat</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>

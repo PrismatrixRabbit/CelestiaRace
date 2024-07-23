@@ -30,6 +30,8 @@
 	</stuffCategories>
 	<graphicData>
 		<texPath>Celes/Apparel/Legwear/KneeHighBlack/KneeHighBlack</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>

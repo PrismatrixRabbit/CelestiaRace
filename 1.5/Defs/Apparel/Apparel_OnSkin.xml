@@ -29,6 +29,7 @@
 	</stuffCategories>
 	<graphicData>
 		<texPath>Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
@@ -50,6 +51,11 @@
 			<li>Celes_Uniform</li>
 		</tags>
 	</apparel>
+	<comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="Celes_OnSkinBase"><!--拓荒防护服-->
@@ -62,6 +68,8 @@
 	</stuffCategories>
 	<graphicData>
 		<texPath>Celes/Apparel/OnSkin/ExploreVest/ExploreVest</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
@@ -97,6 +105,8 @@
 	</stuffCategories>
 	<graphicData>
 		<texPath>Celes/Apparel/OnSkin/MilitaryUniform/MilitaryUniform</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>

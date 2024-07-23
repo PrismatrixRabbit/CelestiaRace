@@ -7,7 +7,7 @@
     <selectable>True</selectable>
     <pathCost>10</pathCost>
     <useHitPoints>True</useHitPoints>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Industrial</techLevel>
     <graphicData>
       <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 	  <drawSize>1.0</drawSize>
@@ -33,16 +33,10 @@
   </ThingDef>
 
 <ThingDef Name="Celes_ApparelBase" ParentName="ApparelBase_Celes" Abstract="True">
-	<graphicData>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
 	<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 	</apparel>
-	<tradeTags>
-      <li>Apparel</li>
-    </tradeTags>
 	<recipeMaker>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
@@ -66,5 +60,84 @@
 		</defaultIngredientFilter>
 	</recipeMaker>
 </ThingDef>
+
+<ThingDef Name="Celes_ArmorMachineableBase" ParentName="ApparelBase_Celes" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>Celes_MultifunctionalTab</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+  
+ <ThingDef Name="Celes_ApparelArmorPowerBase" ParentName="Celes_ArmorMachineableBase" Abstract="True">
+	<techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+	<costList>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>100</Plasteel>
+      <Uranium>20</Uranium>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <!--<defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>-->
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear>
+      <soundRemove>Remove_PowerArmor</soundRemove>
+    </apparel>
+    <!--<comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>-->
+  </ThingDef>
+  
+  
+	<!--<tradeTags>
+      <li>Apparel</li>
+    </tradeTags>
+	<tradeability>Sellable</tradeability>
+	<stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>-->
 
 </Defs>
