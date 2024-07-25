@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--============================== 太空 Special ============================-->
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Special01</defName>
+        <title></title>
+        <titleShort></titleShort>
+        <baseDesc></baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Space</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+</Defs>

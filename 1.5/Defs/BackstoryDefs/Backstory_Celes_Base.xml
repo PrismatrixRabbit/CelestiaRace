@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <AlienRace.AlienBackstoryDef Name="Celes_BaseAdultBackstory" Abstract="True">
+        <disallowedTraitsChance>
+        </disallowedTraitsChance>
+        <forcedHediffs>
+            <li>MechlinkImplant</li>
+            <li>Celes_MechlinkRestriction</li>
+        </forcedHediffs>
+        <bodyTypeMale>Female</bodyTypeMale>
+        <spawnCategories>
+            <li>Celes_All</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef Name="Celes_BaseChildBackstory" Abstract="True">
+        <disallowedTraitsChance>
+        </disallowedTraitsChance>
+        <forcedHediffs>
+            <li>MechlinkImplant</li>
+            <li>Celes_MechlinkRestriction</li>
+        </forcedHediffs>
+        <spawnCategories>
+            <li>Celes_All</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+    
+</Defs>

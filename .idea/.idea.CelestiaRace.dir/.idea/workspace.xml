@@ -4,239 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="1">
-      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesBioGel/CelesBioGel_a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesBioGel/CelesBioGel_b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesBioGel/CelesBioGel_c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/energy_bullet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" afterDir="false" />
+    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="XML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;FTLasteroid&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:FTLasteroid/CelestiaRace.git&quot;,
-    &quot;accountId&quot;: &quot;340053f6-aaa0-4210-a076-7ec566c35c47&quot;
-  }
-}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2gEGysspfcm8fwEo6axSCdZ56Sn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\ROG\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\ROG\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\ROG\\AppData\\Local\\Symbols\\src"
-    ]
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="SpaceReviewFiltersPersistance">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;NeedsReview&quot;,
-    &quot;reviewer&quot;: {
-      &quot;id&quot;: &quot;2NJ8Ns4Pbzi7&quot;,
-      &quot;fullName&quot;: &quot;FTL Asteroid&quot;
-    }
-  }
-}</component>
-  <component name="SpaceReviewProjectSettings">
-    <option name="selectedReviewProjectId" value="2BKcBy1xyDrO" />
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="默认任务">
-      <changelist id="0c71cfaa-2212-4ab6-80db-11f3638d108c" name="更改" comment="" />
-      <created>1715255580348</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1715255580348</updated>
-      <workItem from="1715255581450" duration="4000" />
-      <workItem from="1715255609228" duration="65000" />
-      <workItem from="1715259626491" duration="1096000" />
-      <workItem from="1715262082769" duration="1000" />
-      <workItem from="1715262137104" duration="61000" />
-      <workItem from="1715262426482" duration="4545000" />
-      <workItem from="1715424773730" duration="610000" />
-      <workItem from="1715425413532" duration="52000" />
-      <workItem from="1715586156287" duration="4266000" />
-      <workItem from="1715590469290" duration="209000" />
-      <workItem from="1715590681564" duration="124000" />
-      <workItem from="1715591660128" duration="902000" />
-      <workItem from="1715592581982" duration="79000" />
-      <workItem from="1715676754000" duration="629000" />
-      <workItem from="1715681781441" duration="9537000" />
-      <workItem from="1715696286354" duration="727000" />
-      <workItem from="1715771325138" duration="218000" />
-      <workItem from="1715771736473" duration="365000" />
-      <workItem from="1715777434082" duration="29000" />
-      <workItem from="1715837621656" duration="5723000" />
-      <workItem from="1716285894967" duration="3155000" />
-      <workItem from="1717248915651" duration="1825000" />
-      <workItem from="1717253926658" duration="3447000" />
-    </task>
-    <task id="LOCAL-00001" summary="材料更新">
-      <option name="closed" value="true" />
-      <created>1715268508595</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1715268508595</updated>
-    </task>
-    <task id="LOCAL-00002" summary="药剂贴图更新">
-      <option name="closed" value="true" />
-      <created>1715425212278</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1715425212278</updated>
-    </task>
-    <task id="LOCAL-00003" summary="尘构植入测试">
-      <option name="closed" value="true" />
-      <created>1715586216090</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1715586216090</updated>
-    </task>
-    <task id="LOCAL-00004" summary="完善配方限制">
-      <option name="closed" value="true" />
-      <created>1715590056920</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1715590056920</updated>
-    </task>
-    <task id="LOCAL-00005" summary="1">
-      <option name="closed" value="true" />
-      <created>1715590772099</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1715590772099</updated>
-    </task>
-    <task id="LOCAL-00006" summary="尘构侵染祛除手术更新">
-      <option name="closed" value="true" />
-      <created>1715592518976</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1715592518976</updated>
-    </task>
-    <task id="LOCAL-00007" summary="尘构侵染更新1.1">
-      <option name="closed" value="true" />
-      <created>1715677371692</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1715677371692</updated>
-    </task>
-    <task id="LOCAL-00008" summary="三种材料的添加">
-      <option name="closed" value="true" />
-      <created>1715695972550</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1715695972550</updated>
-    </task>
-    <task id="LOCAL-00009" summary="机控中枢及其限制hediff默认生成,移除限制更新">
-      <option name="closed" value="true" />
-      <created>1715843907289</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1715843907289</updated>
-    </task>
-    <task id="LOCAL-00010" summary="专有启灵装置更新">
-      <option name="closed" value="true" />
-      <created>1715860843499</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1715860843499</updated>
-    </task>
-    <task id="LOCAL-00011" summary="1">
-      <option name="closed" value="true" />
-      <created>1717257606826</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1717257606826</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="材料更新" />
-    <MESSAGE value="药剂贴图更新" />
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="尘构植入测试" />
-    <MESSAGE value="完善配方限制" />
-    <MESSAGE value="尘构侵染祛除手术更新" />
-    <MESSAGE value="尘构侵染更新1.1" />
-    <MESSAGE value="三种材料的添加" />
-    <MESSAGE value="机控中枢及其限制hediff默认生成,移除限制更新" />
-    <MESSAGE value="专有启灵装置更新" />
-    <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
-  </component>
 </project>

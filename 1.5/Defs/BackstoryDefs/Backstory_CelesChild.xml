@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<AlienRace.AlienBackstoryDef Name="Celes_BaseChildBackstory" Abstract="True">
-		<disallowedTraitsChance>
-		</disallowedTraitsChance>
-		<forcedHediffs>
-			<li>MechlinkImplant</li>
-			<li>Celes_MechlinkRestriction</li>
-		</forcedHediffs> 
-		<spawnCategories>
-			<li>Celes_All</li>
-		</spawnCategories>
-	</AlienRace.AlienBackstoryDef>
 	
 	<!--============================== 普通孩童 ============================-->
 	<!--example
