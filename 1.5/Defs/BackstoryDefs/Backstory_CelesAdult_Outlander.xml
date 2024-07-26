@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!--============================== 特殊 Special ============================-->
+    <!--============================== 外域 Outlander ============================-->
     
     <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
-        <defName>Celes_Backstory_Special01</defName>
+        <defName>Celes_Backstory_Outlander01</defName>
         <title></title>
         <titleShort></titleShort>
         <baseDesc></baseDesc>
@@ -12,14 +12,15 @@
         <skillGains>
         </skillGains>
         <spawnCategories>
-            <li>Celes_Special</li>
+            <li>Celes_Outlander</li>
         </spawnCategories>
     </AlienRace.AlienBackstoryDef>
 
-    <!--============================== 蓝灾 BlueFlood ============================-->
-    
+
+    <!--============================== 军事 Military ============================-->
+
     <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
-        <defName>Celes_Backstory_BlueFlood01</defName>
+        <defName>Celes_Backstory_Military01</defName>
         <title></title>
         <titleShort></titleShort>
         <baseDesc></baseDesc>
@@ -27,7 +28,7 @@
         <skillGains>
         </skillGains>
         <spawnCategories>
-            <li>Celes_BlueFlood</li>
+            <li>Celes_Military</li>
         </spawnCategories>
     </AlienRace.AlienBackstoryDef>
 

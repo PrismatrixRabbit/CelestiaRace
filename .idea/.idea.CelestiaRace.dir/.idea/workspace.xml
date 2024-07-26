@@ -4,33 +4,100 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="">
+    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="修改背景">
+      <change afterPath="$PROJECT_DIR$/1.5/Defs/BackstoryDefs/Backstory_CelesAdult_Outlander.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.AlienBackstoryDef/Backstory_CelesAdult_Outlander.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/BackstoryDefs/Backstory_CelesAdult_Special.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/BackstoryDefs/Backstory_CelesAdult_Special.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.AlienBackstoryDef/Backstory_CelesAdult_Space.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.AlienBackstoryDef/Backstory_CelesAdult_Space.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/Strings/Names/Celes_Site.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/Strings/Names/Celes_Site.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="XML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2jj3q90lEzqggkP6FMeEO2Gwr2z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\96987\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\96987\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\96987\\AppData\\Local\\Symbols\\src&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="" />
+      <created>1721886847273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721886847273</updated>
+      <workItem from="1721886848488" duration="20273000" />
+      <workItem from="1721977247308" duration="25753000" />
+    </task>
+    <task id="LOCAL-00001" summary="修改背景">
+      <option name="closed" value="true" />
+      <created>1721915559228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721915559228</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改背景" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改背景" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
 </project>

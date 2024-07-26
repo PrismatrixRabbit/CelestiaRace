@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!--============================== 外域 ============================-->
+
+    <Celes_Backstory_Outlander01.title>星铃 旅行家</Celes_Backstory_Outlander01.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander01.titleShort>旅行家</Celes_Backstory_Outlander01.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander01.baseDesc>[PAWN_nameDef]喜欢四处旅行，而因此获得的探险经验，让[PAWN_pronoun]在开拓与探索荒野上比不少星铃熟练许多，即使[PAWN_pronoun]也没法完全应对边缘世界复杂的生态系统。</Celes_Backstory_Outlander01.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander02.title>星铃 前哨站调酒师</Celes_Backstory_Outlander02.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander02.titleShort>调酒师</Celes_Backstory_Outlander02.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander02.baseDesc>[PAWN_nameDef]在拓荒前哨的酒吧担任调酒师，兼职酿酒师。边缘世界的条件让[PAWN_nameDef]的许多技巧都派不上用场。不过好消息是，这里还是有许多人想找调酒师聊天，即使[PAWN_pronoun]能献上的只有一份凉白开。</Celes_Backstory_Outlander02.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander03.title>星铃 通讯站联络员</Celes_Backstory_Outlander03.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander03.titleShort>联络员</Celes_Backstory_Outlander03.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander03.baseDesc>[PAWN_nameDef]在星铃的中继通讯站操作无线电设备，让星铃的前哨间保持联络。糟糕的电磁环境和劣质的拼凑设备让[PAWN_pronoun]无比羡慕在母星系工作的前辈：据说她们只需要让自动机械维护这些设备，而自己在舒服的房间吃盐渍炸土豆片！</Celes_Backstory_Outlander03.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander04.title>星铃 前哨站护卫</Celes_Backstory_Outlander04.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander04.titleShort>护卫</Celes_Backstory_Outlander04.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander04.baseDesc>[PAWN_nameDef]接受了最基础的训练，在星铃前哨站承担辅助性的安保工作。扑灭火焰，维护秩序，清理虫灾。[PAWN_nameDef]称不上专业，但面对边缘世界的一些小打小闹还是绰绰有余。</Celes_Backstory_Outlander04.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander05.title>星铃 幸运的猎人</Celes_Backstory_Outlander05.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander05.titleShort>猎人</Celes_Backstory_Outlander05.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander05.baseDesc>[PAWN_nameDef]为前哨站猎取野生的动物，这份工作对[PAWN_pronoun]来说几乎全靠运气，[PAWN_pronoun]大概只有一半的机会能带回什么猎物。\n\n但某一次，[PAWN_pronoun]运气极好的遇上了一只流血不止的敲击兽。当[PAWN_pronoun]拖着这只巨兽返回前哨站的时候，所有人都向[PAWN_pronoun]投来了夹杂着羡慕和难以置信的目光。</Celes_Backstory_Outlander05.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander06.title>星铃 隐居的猎人</Celes_Backstory_Outlander06.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander06.titleShort>猎人</Celes_Backstory_Outlander06.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander06.baseDesc>[PAWN_nameDef]逐渐对社交生活感到疲惫，[PAWN_pronoun]最终选择远离人群隐居，依靠自己打猎获取食物，只偶尔的前往聚居地换取必须的物资。\n\n直到某一天，[PAWN_nameDef]好不容易将一只敲击兽伏击至重伤，那只野兽却突然回光返照般加速逃出了[PAWN_possessive]视野。[PAWN_nameDef]突然觉得，还是合作狩猎比较好。</Celes_Backstory_Outlander06.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander07.title>星铃 遗物农夫</Celes_Backstory_Outlander07.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander07.titleShort>农夫</Celes_Backstory_Outlander07.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander07.baseDesc>[PAWN_nameDef]承担着某个星铃前哨站的食物供给任务，但并非依靠劳作，而是依靠知识。[PAWN_pronoun]所在的前哨站刚好有一份从“领航母舰”拆卸下的自动化农业设备，这让[PAWN_pronoun]比起农夫更像一个工程师。只要维持这台自带备用发电设备的自动农场保持最低限度运行，这座前哨站就能同时供给周围数个殖民地的粮食，冗余的能量甚至能额外维持整个前哨站的电力供应。</Celes_Backstory_Outlander07.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander08.title>星铃 农夫</Celes_Backstory_Outlander08.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander08.titleShort>农夫</Celes_Backstory_Outlander08.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander08.baseDesc>边缘世界夸张的生物尺寸让[PAWN_nameDef]的劳动并不如预期的顺利。光是想要制服巨大的啮齿动物都得花不少功夫，更别提面对突然发疯的野生动物与动不动来破坏农田的野蛮人，[PAWN_pronoun]时不时得撸起袖子把这群混蛋赶回老家。</Celes_Backstory_Outlander08.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander09.title>星铃 资深建筑师</Celes_Backstory_Outlander09.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander09.titleShort>建筑师</Celes_Backstory_Outlander09.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander09.baseDesc>[PAWN_nameDef]是前哨站的资深建筑师。[PAWN_pronoun]不仅学习了许多“领航母舰”上留存的建筑方案，还因地制宜的设计并搭建出了许多适合边缘世界的新方案。[PAWN_pronoun]亲历亲为的参与到殖民地的各种建设工作中，并最终和同伴们建设出了自己的新家。</Celes_Backstory_Outlander09.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander10.title>星铃 矿物勘探员</Celes_Backstory_Outlander10.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander10.titleShort>勘探员</Celes_Backstory_Outlander10.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander10.baseDesc>[PAWN_nameDef]为星铃拓荒队搜寻野外矿床痕迹，[PAWN_pronoun]有时会跟随商队一同远行，也有时独身一人前往尚待勘探的区域。一些人相信星铃们会继续生存下去，而[PAWN_pronoun]相信星铃们会将这里建设成另一个闪耀世界，重新发掘出这颗星球潜藏的资源，便是建设这里所需迈出的第一步。</Celes_Backstory_Outlander10.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander11.title>星铃 异星生物烹饪大师</Celes_Backstory_Outlander11.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander11.titleShort>厨师</Celes_Backstory_Outlander11.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander11.baseDesc>多亏了某位不知名前辈在“领航母舰”数据库中留下的异星生物烹饪指南，[PAWN_nameDef]稍微掌握了如何安全的处理边缘世界这些千奇百怪的生物，并尽可能把它们煮的好吃。要让[PAWN_pronoun]说，这些怪东西配上边缘世界这些尚未被人类适应的微生物，怎么解决食物中毒都是一个大问题。</Celes_Backstory_Outlander11.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander12.title>星铃 领航考古学家</Celes_Backstory_Outlander12.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander12.titleShort>考古学家</Celes_Backstory_Outlander12.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander12.baseDesc>搭乘着“领航母舰”来到边缘世界的星铃们不可避免的经历了一个巨大的技术断代，即使母舰上的“自译解通用工业模板”能够从理论和技术上全息地展示星铃的几乎所有技术，但如何真的复现并使用他们仍然是摆在现代星铃面前的一个难题。不知从谁开始，但这些技术如今被称为“领航技术”。\n\n[PAWN_nameDef]便是一位擅长复现与制造领航技术的“考古学家”，跳跃的思维和孤僻的性格让[PAWN_pronoun]稍微有一点交流障碍，但[PAWN_possessive]这种思维却给[PAWN_pronoun]带来了重现领航技术的巨大天赋，加上一点点动手能力，那些尘封的技术于是重见天日。</Celes_Backstory_Outlander12.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander13.title>星铃 怀旧派艺术家</Celes_Backstory_Outlander13.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander13.titleShort>艺术家</Celes_Backstory_Outlander13.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander13.baseDesc>[PAWN_nameDef]总觉得自己有一些艺术天赋，可是从来没有人欣赏自己的杰作。但[PAWN_pronoun]觉得自己只是非常缺乏灵感。一次偶然的机会，[PAWN_pronoun]从“领航母舰”的数据库中看见了一种在母星广为流传的艺术形式……[PAWN_pronoun]开始怀疑到底是自己生不逢时，还是现代星铃的艺术审美严重退步。</Celes_Backstory_Outlander13.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander14.title>星铃 前哨站医生</Celes_Backstory_Outlander14.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander14.titleShort>医生</Celes_Backstory_Outlander14.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander14.baseDesc>[PAWN_nameDef]在星铃的某个前哨站开了一家小诊所，专门医治那些得了大小疾病的拓荒队员和路过的商队，虽然收钱。据[PAWN_pronoun]所说，这些医术都是承袭自家中前辈的“小技巧”，不过也没人知道[PAWN_pronoun]家里究竟有没有这个前辈。</Celes_Backstory_Outlander14.baseDesc>
+    <!-- EN:  -->
+
+    <Celes_Backstory_Outlander15.title>星铃 前哨话事人</Celes_Backstory_Outlander15.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Outlander15.titleShort>领袖</Celes_Backstory_Outlander15.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Outlander15.baseDesc>待写！！！！！！</Celes_Backstory_Outlander15.baseDesc>
+    <!-- EN:  -->
+
+    <!--============================== 军事 ============================-->
+
+    <Celes_Backstory_Military01.title>星铃 先锋小队士兵</Celes_Backstory_Military01.title>
+    <!-- EN: celestia  -->
+    <Celes_Backstory_Military01.titleShort>士兵</Celes_Backstory_Military01.titleShort>
+    <!-- EN:  -->
+    <Celes_Backstory_Military01.baseDesc>[PAWN_nameDef]最初加入星铃军队只是为了报仇，敌对的势力不由分说的在一次突袭中摧毁了[PAWN_pronoun]的家园，于是[PAWN_pronoun]也愤恨的入伍希望报复那些强盗。也有许多人劝阻[PAWN_nameDef]，但在[PAWN_pronoun]真正冷静下来之前，这些话语没办法浇灭[PAWN_possessive]愤怒。</Celes_Backstory_Military01.baseDesc>
+    <!-- EN:  -->
+
+</LanguageData>

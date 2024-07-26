@@ -141,8 +141,8 @@
   <!-- EN: celestia alien-eating gourmet -->
   <Celes_Backstory_Space20.titleShort>异形美食家</Celes_Backstory_Space20.titleShort>
   <!-- EN: gourmet -->
-  <Celes_Backstory_Space20.baseDesc>[PAWN_nameDef]肯定不是第一个吃螃蟹的人，但[PAWN_pronoun]确实是为数不多吃外星生物的人。在星铃的母星上，仍有许多尚未完全探明的外星物种，而那些确认没有毒性或毒性微弱，又足够端上餐桌的外星物种，[PAWN_pronoun]便敢于大胆尝试它们的风味。有时会收获呕吐腹泻，而有时会收获一种全新的未被发现的新奇美味口感。\n\n在[PAWN_pronoun]的职业生涯中，馈赠是鲜有的，但[PAWN_pronoun]也确实发现过一种——油炸面包糠裹虫胶冰淇淋。</Celes_Backstory_Space20.baseDesc>
-  <!-- EN: [PAWN_nameDef] was certainly not the first to eat an aubergine, but [PAWN_pronoun] was certainly one of the few to eat an alien creature. There are still many alien species on Celestia's home planet that have yet to be fully explored, and those that are confirmed to be non-toxic or weakly toxic enough to be served on the table, [PAWN_pronoun] dares to venture into their flavours. Sometimes vomiting and diarrhoea are reaped, while other times a whole new undiscovered novel and delicious taste is harvested. \n\nFeeds are rare in [PAWN_pronoun]'s career, but [PAWN_pronoun] did discover one - fried breadcrumb-coated ice-insectjelly-cream. -->
+  <Celes_Backstory_Space20.baseDesc>[PAWN_nameDef]肯定不是第一个吃螃蟹的人，但[PAWN_pronoun]确实是为数不多吃外星生物的人。在星铃的母星上，仍有许多尚未完全探明的外星物种，而那些确认没有毒性或毒性微弱，又足够端上餐桌的外星物种，[PAWN_pronoun]便敢于大胆尝试它们的风味。有时会收获呕吐腹泻，而有时会收获一种全新的未被发现的新奇美味口感。如果有可能，[PAWN_nameDef]希望哪天能把自己的见闻写成一本厨艺书。\n\n在[PAWN_pronoun]的职业生涯中，馈赠是鲜有的，但[PAWN_pronoun]也确实发现过一种——油炸面包糠裹虫胶冰淇淋。</Celes_Backstory_Space20.baseDesc>
+  <!-- EN: fried breadcrumb-coated ice-insectjelly-cream. -->
 
   <Celes_Backstory_Space21.title>星铃 温室管理员</Celes_Backstory_Space21.title>
   <!-- EN: celestia greenhouse administrator -->
@@ -429,7 +429,7 @@
   <!-- EN: celestia  -->
   <Celes_Backstory_Space61.titleShort>教师</Celes_Backstory_Space61.titleShort>
   <!-- EN:  -->
-  <Celes_Backstory_Space61.baseDesc>[PAWN_nameDef]在一所学校任教。</Celes_Backstory_Space61.baseDesc>
+  <Celes_Backstory_Space61.baseDesc>[PAWN_nameDef]在一所学校任教。旧时代需要十数年习学的基础知识早已不需要教师亲力亲为逐步教导。而[PAWN_nameDef]这样的教师，需要做的则是答疑解惑，将如何运用知识，如何发现探索教授给学生。唯有实践才是研习知识的方法。</Celes_Backstory_Space61.baseDesc>
   <!-- EN:  -->
 
 </LanguageData>
