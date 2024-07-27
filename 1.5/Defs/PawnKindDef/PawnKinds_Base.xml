@@ -10,8 +10,8 @@
         <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
         <maxGenerationAge>35</maxGenerationAge>
         <minGenerationAge>16</minGenerationAge>
-        <initialWillRange>15~20</initialWillRange>
-        <initialResistanceRange>8~12</initialResistanceRange>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>9~20</initialResistanceRange>
         <xenotypeSet>
             <xenotypeChances>
                 <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>

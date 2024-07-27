@@ -8,11 +8,25 @@
   <Celes_Colonist.labelFemale>星铃殖民者</Celes_Colonist.labelFemale>
   <Celes_Colonist.labelFemalePlural>星铃殖民者</Celes_Colonist.labelFemalePlural>
   
-  <Celes_Citizen.label>星铃公民</Celes_Citizen.label>
-  <Celes_Citizen.labelPlural>星铃公民</Celes_Citizen.labelPlural>
-  <Celes_Citizen.labelMale>星铃公民</Celes_Citizen.labelMale>
-  <Celes_Citizen.labelMalePlural>星铃公民</Celes_Citizen.labelMalePlural>
-  <Celes_Citizen.labelFemale>星铃公民</Celes_Citizen.labelFemale>
-  <Celes_Citizen.labelFemalePlural>星铃公民</Celes_Citizen.labelFemalePlural>
+  <Celes_Outlander.label>星铃拓荒者</Celes_Outlander.label>
+  <Celes_Outlander.labelPlural>星铃拓荒者</Celes_Outlander.labelPlural>
+  <Celes_Outlander.labelMale>星铃拓荒者</Celes_Outlander.labelMale>
+  <Celes_Outlander.labelMalePlural>星铃拓荒者</Celes_Outlander.labelMalePlural>
+  <Celes_Outlander.labelFemale>星铃拓荒者</Celes_Outlander.labelFemale>
+  <Celes_Outlander.labelFemalePlural>星铃拓荒者</Celes_Outlander.labelFemalePlural>
+
+  <Celes_Trader.label>星铃行商</Celes_Trader.label>
+  <Celes_Trader.labelPlural>星铃行商</Celes_Trader.labelPlural>
+  <Celes_Trader.labelMale>星铃行商</Celes_Trader.labelMale>
+  <Celes_Trader.labelMalePlural>星铃行商</Celes_Trader.labelMalePlural>
+  <Celes_Trader.labelFemale>星铃行商</Celes_Trader.labelFemale>
+  <Celes_Trader.labelFemalePlural>星铃行商</Celes_Trader.labelFemalePlural>
+
+  <Celes_Scout.label>星铃先锋小队</Celes_Scout.label>
+  <Celes_Scout.labelPlural>星铃先锋小队</Celes_Scout.labelPlural>
+  <Celes_Scout.labelMale>星铃先锋小队</Celes_Scout.labelMale>
+  <Celes_Scout.labelMalePlural>星铃先锋小队</Celes_Scout.labelMalePlural>
+  <Celes_Scout.labelFemale>星铃先锋小队</Celes_Scout.labelFemale>
+  <Celes_Scout.labelFemalePlural>星铃先锋小队</Celes_Scout.labelFemalePlural>
 
 </LanguageData>

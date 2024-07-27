@@ -30,7 +30,7 @@
 	<backstoryFilters>
       <li>
         <categories>
-          <li>Celes_General</li>
+          <li>Celes_Space</li>
         </categories>
       </li>
     </backstoryFilters>
@@ -106,16 +106,22 @@
 	<!--↑↑↑这里等着改↑↑↑-->
 	<backstoryFilters>
       <li>
-        <categories>
-          <li>Celes_General</li>
-        </categories>
-        <commonality>0.95</commonality>
+            <categories>
+                 <li>Celes_Outlander</li>
+            </categories>
+            <commonality>0.75</commonality>
       </li>
       <li>
-        <categories>
-          <li>Celes_Military</li><!--这个留着的意思是背景可以在好几个里面随机，但我目前只写了一个-->
-        </categories>
-        <commonality>0.05</commonality>
+            <categories>
+                <li>Celes_Space</li>
+            </categories>
+            <commonality>0.20</commonality>
+      </li>
+      <li>
+             <categories>
+                  <li>Celes_Military</li><!--这个留着的意思是背景可以在好几个里面随机，但我目前只写了一个-->
+             </categories>
+             <commonality>0.05</commonality>
       </li>
     </backstoryFilters>
 	<!--衣服可能要限制材质？-->
@@ -155,31 +161,31 @@
       <li>
         <kindDef>Combat</kindDef>
         <options>
-          <Celes_Citizen>10</Celes_Citizen>
+          <Celes_Scout>10</Celes_Scout>
         </options>
       </li>
       <li>
         <kindDef>Peaceful</kindDef>
         <options>
-          <Celes_Citizen>10</Celes_Citizen>
+          <Celes_Outlander>10</Celes_Outlander>
         </options>
       </li>
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <Celes_Citizen>1</Celes_Citizen>
+          <Celes_Trader>1</Celes_Trader>
         </traders>
         <carriers>
-          <Celes_Citizen>10</Celes_Citizen>
+          <Celes_Outlander>10</Celes_Outlander>
         </carriers>
         <guards>
-          <Celes_Citizen>10</Celes_Citizen>
+          <Celes_Scout>10</Celes_Scout>
         </guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <Celes_Citizen>10</Celes_Citizen>
+          <Celes_Scout>10</Celes_Scout>
         </options>
       </li>
       <!--<li MayRequire="Ludeon.RimWorld.Ideology">

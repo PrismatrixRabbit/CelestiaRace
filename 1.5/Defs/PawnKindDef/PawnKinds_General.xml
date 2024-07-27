@@ -10,7 +10,7 @@
     <factionLeader>false</factionLeader>
     <apparelMoney>1500~2000</apparelMoney>
     <apparelTags>
-        <li>Celes_Uniform</li>
+        <li>Celes_Explore</li>
     </apparelTags>
     <apparelDisallowTags>
     </apparelDisallowTags>
@@ -18,7 +18,7 @@
     <weaponTags>
     </weaponTags>
     <backstoryCategories>
-        <li>Celes_General</li>
+        <li>Celes_Space</li>
     </backstoryCategories>
     <inventoryOptions>
         <skipChance>0.1</skipChance>
@@ -35,55 +35,128 @@
     </inventoryOptions>
     <defaultFactionType>Celes_PlayerFaction</defaultFactionType>
 </PawnKindDef>
+    
+    <PawnKindDef ParentName="Celes_PawnBase">
+        <defName>Celes_Outlander</defName>
+        <label>celestia outlander</label>
+        <combatPower>45</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>false</isFighter>
+        <factionLeader>true</factionLeader><!--这个要改的-->
+        <gearHealthRange>0.2~2.0</gearHealthRange>
+        <apparelTags>
+            <li>Celes_Uniform</li>
+            <li>Celes_Daily</li>
+        </apparelTags>
+        <apparelMoney>150~500</apparelMoney>
+        <!--<specificApparelRequirements>
+            <li>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <requiredTag>Celes_Pants</requiredTag>
+            </li>
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <requiredTag>Celes_DailyWear</requiredTag>
+            </li>
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <requiredTag>Celes_Underwear</requiredTag>
+            </li>
+        </specificApparelRequirements>-->
+        <apparelDisallowTags>
+        </apparelDisallowTags>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <weaponMoney>400~1000</weaponMoney>
+        <weaponTags>
+            <li>Celes_EarlyRangeWeapon</li>
+        </weaponTags>
+        <backstoryCategories>
+            <li>Celes_Outlander</li>
+        </backstoryCategories>
+        <inventoryOptions>
+            <skipChance>0.25</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>100</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>
+                        <min>20</min>
+                        <max>75</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+    
+    <PawnKindDef ParentName="Celes_PawnBase">
+        <defName>Celes_Trader</defName>
+        <label>celestia trader</label>
+        <trader>true</trader>
+        <combatPower>45</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>false</isFighter>
+        <gearHealthRange>1~1</gearHealthRange>
+        <apparelTags>
+            <li>Celes_Uniform</li>
+            <li>Celes_Daily</li>
+        </apparelTags>
+        <apparelMoney>150~500</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <weaponMoney>400~1000</weaponMoney>
+        <weaponTags>
+            <li>Celes_EarlyRangeWeapon</li>
+        </weaponTags>
+        <backstoryCategories>
+            <li>Celes_Outlander</li>
+        </backstoryCategories>
+        <inventoryOptions>
+            <skipChance>0.25</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>100</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>
+                        <min>20</min>
+                        <max>75</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
 
-<PawnKindDef ParentName="Celes_PawnBase">
-<defName>Celes_Citizen</defName>
-<label>celestia citizen</label>
-<combatPower>60</combatPower>
-<itemQuality>Normal</itemQuality>
-<isFighter>true</isFighter><!--这个要改的-->
-<factionLeader>true</factionLeader><!--这个要改的-->
-<apparelMoney>150~500</apparelMoney>
-<apparelTags>
-     <li>Celes_Uniform</li>
-</apparelTags>
-<!--<specificApparelRequirements>
-    <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <requiredTag>Celes_Pants</requiredTag>
-    </li>
-    <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <requiredTag>Celes_DailyWear</requiredTag>
-    </li>
-    <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <requiredTag>Celes_Underwear</requiredTag>
-    </li>
-</specificApparelRequirements>-->
-<apparelDisallowTags>
-</apparelDisallowTags>
-<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-<weaponMoney>400~1000</weaponMoney>
-<weaponTags>
-    <li>Celes_EarlyRangeWeapon</li>
-</weaponTags>
-<backstoryCategories>
-    <li>Celes_General</li>
-</backstoryCategories>
-<inventoryOptions>
-    <skipChance>0.25</skipChance>
-    <subOptionsChooseOne>
-        <li>
-            <choiceChance>100</choiceChance>
-            <thingDef>Silver</thingDef>
-            <countRange>
-                <min>20</min>
-                <max>75</max>
-            </countRange>
-        </li>
-    </subOptionsChooseOne>
-</inventoryOptions>
-</PawnKindDef>
+    <PawnKindDef ParentName="Celes_PawnBase">
+        <defName>Celes_Scout</defName>
+        <label>celestia vanguard</label>
+        <combatPower>60</combatPower>
+        <itemQuality>Good</itemQuality>
+        <isFighter>true</isFighter>
+        <apparelTags>
+            <li>Celes_Military</li>
+        </apparelTags>
+        <apparelMoney>150~500</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <weaponMoney>400~1000</weaponMoney>
+        <weaponTags>
+            <li>Celes_EarlyRangeWeapon</li>
+        </weaponTags>
+        <backstoryCategories>
+            <li>Celes_Military</li>
+        </backstoryCategories>
+        <inventoryOptions>
+            <skipChance>0.25</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>100</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>
+                        <min>20</min>
+                        <max>75</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <initialWillRange>5~7</initialWillRange>
+        <initialResistanceRange>15~24</initialResistanceRange>
+    </PawnKindDef>
 
 </Defs>

@@ -14,7 +14,7 @@
 			<Medicine></Medicine>
 			<Social></Social>
 			<Intellectual></Intellectual> -->
-	<!--============================== 太空 Space ============================-->
+	<!--============================== 太空 Space 5-25没校对============================-->
 	
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space01</defName>
@@ -79,9 +79,9 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space05</defName>
-		<title></title>
-		<titleShort></titleShort>
-		<baseDesc></baseDesc>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -89,5 +89,733 @@
 			<li>Celes_Space</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
-	
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space06</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space07</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space08</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space09</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space10</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space11</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space12</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space13</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space14</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space15</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space16</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space17</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space18</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space19</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space20</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space21</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space22</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space23</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space24</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space25</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space26</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space27</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space28</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space29</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space30</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space31</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space32</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space33</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space34</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space35</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space36</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space37</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space38</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space39</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space40</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space41</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space42</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space43</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space44</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space45</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space46</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space47</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space48</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space49</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space50</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space51</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space52</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space53</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space54</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space55</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space56</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space57</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space58</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space59</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space60</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+		<defName>Celes_Backstory_Space61</defName>
+		<title>celestia</title>
+		<titleShort>.</titleShort>
+		<baseDesc>.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
 </Defs>

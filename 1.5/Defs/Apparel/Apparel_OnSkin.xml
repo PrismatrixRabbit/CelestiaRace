@@ -49,6 +49,7 @@
 		<wornGraphicPath>Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform</wornGraphicPath>
 		<tags>
 			<li>Celes_Uniform</li>
+			<li>Celes_Daily</li>
 		</tags>
 	</apparel>
 	<comps>

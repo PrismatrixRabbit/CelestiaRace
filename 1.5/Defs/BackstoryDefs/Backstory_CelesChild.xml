@@ -31,7 +31,7 @@
 		<defName>Celes_Backstory_Child01</defName>
 		<title>celestia far planet child</title>
 		<titleShort>far-planetkid</titleShort>
-		<baseDesc>[PAWN_nameDef] was born on a space station far from the stars, and to [PAWN_pronoun], the stars of [PAWN_possessive] home star system looked like nothing more than a bleak point. [PAWN_pronoun] was taught with the goal of being a pioneer, but [PAWN_pronoun] never gave up [PAWN_possessive] curiosity about that faint point of light.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was born on a habitation station far from the stars, and to [PAWN_pronoun], the stars of [PAWN_possessive] home system looked like nothing more than a dim point of light. [PAWN_pronoun] was taught to aim for the pioneer, but [PAWN_pronoun] never gave up [PAWN_possessive] curiosity about that dim point of light.</baseDesc>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Plants>3</Plants>
@@ -39,7 +39,7 @@
 			<Mining>1</Mining>
 		</skillGains>
 		<spawnCategories>
-			<li>Celes_General</li>
+			<li>Celes_Space</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	
@@ -47,7 +47,7 @@
 		<defName>Celes_Backstory_Child02</defName>
 		<title>celestia engineer's child</title>
 		<titleShort>engineerkid</titleShort>
-		<baseDesc>[PAWN_nameDef] was raised by engineers family. [PAWN_pronoun] was exposed early on to some of the common sense Celestias needed in asteroid and space engineering construction, and more importantly, a logical and rational way of thinking.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was the child of an engineer couple, and while in public-upbringing-centre [PAWN_pronoun] also maintained an almost-friendship with his biological parents, which gave [PAWN_pronoun] early exposure to some of the common sense Celestia's needed for asteroid and space engineering construction, as well as, more importantly, a practical and logical and rational thinking way of thinking.</baseDesc>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Construction>4</Construction>
@@ -55,8 +55,7 @@
 			<Mining>2</Mining>
 		</skillGains>
 		<spawnCategories>
-			<li>Celes_General</li>
-			<li>Celes_Engineer</li>
+			<li>Celes_Space</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	
@@ -74,7 +73,8 @@
 			<Crafting>3</Crafting>
 		</skillGains>
 		<spawnCategories>
-			<li>Celes_General</li>
+			<li>Celes_Space</li>
+			<li>Celes_Outlander</li>
 			<li>Celes_Military</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
@@ -94,18 +94,135 @@
 			<Social>-2</Social>
 		</skillGains>
 		<spawnCategories>
-			<li>Celes_General</li>
+			<li>Celes_Space</li>
+			<li>Celes_Outlander</li>
 			<li>Celes_Military</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
-	
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child05</defName>
+		<title>celestia game master</title>
+		<titleShort>game master</titleShort>
+		<baseDesc>As a child, [PAWN_nameDef] was constantly ranked high in the local holographic shooting halls, even at a level that many adults do not possess, which made [PAWN_pronoun] regarded as a little shooting genius from a young age.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child06</defName>
+		<title>celestia museum volunteer</title>
+		<titleShort>volunteer</titleShort>
+		<baseDesc>Since [PAWN_pronoun] was a child, [PAWN_nameDef] has always been curious about things like rocks and geology, and [PAWN_pronoun] not only went to the museum from time to time, but also, at the invitation of the museum's staff, the young [PAWN_nameDef] began to help out with some of the tasks that [PAWN_pronoun] could handle, such as helping to sort the specimens of the ores. PAWN_pronoun] also learnt a lot of practical knowledge.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Mining>4</Mining>
+			<Crafting>2</Crafting>
+			<Social>2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child07</defName>
+		<title>celestia kitchen helper</title>
+		<titleShort>cook-kid</titleShort>
+		<baseDesc>While the other children were still playing around, [PAWN_nameDef] had begun to dive into the kitchen from time to time to watch, and the awkwardness of just watching had naturally turned the spectating into helping with the preparation of ingredients, and then later into helping with the preparation of simple foods. Being a little bit better at something than the other children has helped [PAWN_pronoun] gain a lot of confidence and talkativeness.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Cooking>4</Cooking>
+			<Social>3</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+			<li>Celes_Outlander</li>
+			<li>Celes_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child08</defName>
+		<title>celestia agricultural student</title>
+		<titleShort>student</titleShort>
+		<baseDesc>[PAWN_nameDef] Learned plant production from [PAWN_possessive] mentor. [PAWN_pronoun] quickly learned to judge how to care for plants from their various details, adjusting fertiliser and nutrient ratios to promote growth. At least [PAWN_pronoun] now has a hard time raising seeds straight to death.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>5</Plants>
+			<Social>2</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child09</defName>
+		<title>celestia child painter</title>
+		<titleShort>painterkid</titleShort>
+		<baseDesc>From a young age, [PAWN_nameDef] showed [PAWN_possessive] talent for art, but rather than talent, [PAWN_pronoun] just wanted to be able to record the moments of beauty in [PAWN_possessive] eyes, not the world that adults see, but this one that [PAWN_pronoun] sees.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Artistic>4</Artistic>
+			<Social>-2</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+			<li>Celes_Outlander</li>
+			<li>Celes_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child10</defName>
+		<title>celestia naughty child</title>
+		<titleShort>naughtykid</titleShort>
+		<baseDesc>[PAWN_nameDef] was always no way to be idle, and every chance [PAWN_pronoun] got [PAWN_pronoun] would run off to play somewhere else. [PAWN_pronoun] always felt completely sure that [PAWN_pronoun] could avoid those dangerous things, but unfortunately the adults didn't think so. So, after every injury, [PAWN_pronoun] would always secretly take care of those small wounds by [PAWN_objective].</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Medicine>3</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+			<li>Celes_Outlander</li>
+			<li>Celes_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
+		<defName>Celes_Backstory_Child11</defName>
+		<title>celestia curious child</title>
+		<titleShort>curiouskid</titleShort>
+		<baseDesc>[PAWN_nameDef] showed a great curiosity about the world, and [PAWN_possessive] questions felt like they could never be answered. Since there were always situations where no adult could answer [PAWN_pronoun], [PAWN_nameDef] began to look through the information to answer [PAWN_objective]. But before long, [PAWN_pronoun] ran into a question that [PAWN_pronoun] couldn't answer ...... What exactly are the ‘Four Laws of Thermodynamics’?</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Intellectual>6</Intellectual>
+			<Social>2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>Celes_Space</li>
+			<li>Celes_Outlander</li>
+			<li>Celes_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
 	<!--============================== 特殊孩童 ============================-->
 	
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseChildBackstory">
-		<defName>Celes_Backstory_ChildSp01</defName>
+		<defName>Celes_Backstory_Child_Special01</defName>
 		<title>celestia tactical objects</title>
 		<titleShort>tactical</titleShort>
-		<baseDesc>[PAWN_nameDef] has been involved in a special top secret Celestia military programme for as long as [PAWN_pronoun] can remember.\n\n[PAWN_pronoun] showed [PAWN_possessive] outstanding tactical thinking and physical strength at an early age and was selected for such exceptional talent.Battlefield training, field command, close-quarters combat on space stations, and combat in extreme environments, all of which were trained only to select elite Celestia warriors.</baseDesc>
+		<baseDesc>[PAWN_nameDef] has been involved in a special top secret Celestia military programme for as long as [PAWN_pronoun] can remember.\n\n[PAWN_pronoun] showed [PAWN_possessive] outstanding tactical thinking and physical strength at an early age and was selected for such exceptional talent.Battlefield training, field command, close-quarters combat on space stations, and combat in extreme environments, all of which were trained only to select most elite Celestia warriors.</baseDesc>
 		<slot>Childhood</slot>
 		<!-- <requiredWorkTags>
 			<li>Violent</li>
