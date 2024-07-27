@@ -7,7 +7,7 @@
         <defName>Celes_Backstory_Outlander01</defName>
         <title>celestia traveller</title>
         <titleShort>traveller</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -20,7 +20,7 @@
         <defName>Celes_Backstory_Outlander02</defName>
         <title>celestia outpost bartender</title>
         <titleShort>bartender</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -33,7 +33,7 @@
         <defName>Celes_Backstory_Outlander03</defName>
         <title>celestia station liaison officer</title>
         <titleShort>liaison officer</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -46,7 +46,7 @@
         <defName>Celes_Backstory_Outlander04</defName>
         <title>celestia outpost guard</title>
         <titleShort>guard</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -59,7 +59,7 @@
         <defName>Celes_Backstory_Outlander05</defName>
         <title>celestia lucky hunter</title>
         <titleShort>hunter</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -72,7 +72,7 @@
         <defName>Celes_Backstory_Outlander06</defName>
         <title>celestia reclusive hunter</title>
         <titleShort>hunter</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -85,7 +85,7 @@
         <defName>Celes_Backstory_Outlander07</defName>
         <title>celestia relic farmer</title>
         <titleShort>farmer</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -98,7 +98,7 @@
         <defName>Celes_Backstory_Outlander08</defName>
         <title>celestia farmer</title>
         <titleShort>farmer</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -111,7 +111,7 @@
         <defName>Celes_Backstory_Outlander09</defName>
         <title>celestia senior architect</title>
         <titleShort>architect</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -124,7 +124,7 @@
         <defName>Celes_Backstory_Outlander10</defName>
         <title>celestia mineral prospector</title>
         <titleShort>prospector</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -137,7 +137,7 @@
         <defName>Celes_Backstory_Outlander11</defName>
         <title>celestia alien-creature cooking master</title>
         <titleShort>cook</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -150,7 +150,7 @@
         <defName>Celes_Backstory_Outlander12</defName>
         <title>celestia pilotage-tech archaeologist</title>
         <titleShort>archaeologist</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -163,7 +163,7 @@
         <defName>Celes_Backstory_Outlander13</defName>
         <title>celestia old-school artist</title>
         <titleShort>artist</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -176,7 +176,7 @@
         <defName>Celes_Backstory_Outlander14</defName>
         <title>celestia outpost doctor</title>
         <titleShort>doctor</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -189,7 +189,7 @@
         <defName>Celes_Backstory_Outlander15</defName>
         <title>celestia outpost leader</title>
         <titleShort>leader</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -206,7 +206,7 @@
         <defName>Celes_Backstory_Military01</defName>
         <title>celestia vanguard squad soldier</title>
         <titleShort>vanguard</titleShort>
-        <baseDesc>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</baseDesc>
+        <description>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>

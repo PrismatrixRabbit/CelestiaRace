@@ -20,7 +20,7 @@
 		<defName>Celes_Backstory_Space01</defName>
 		<title>celestia traveller</title>
 		<titleShort>traveller</titleShort>
-		<baseDesc>[PAWN_nameDef] has an interplanetary shuttle of [PAWN_possessive] own, with which [PAWN_pronoun] pursues the life of [PAWN_possessive] dreams - the freedom to travel freely from planet to planet in [PAWN_possessive] home galaxy, pioneering, admiring, and documenting the magnificent wonders of the uncharted landscapes as [PAWN_pronoun] pleases. \n\nThe only downside to such a free life is that [PAWN_pronoun] can only obtain hobo level rations and benefits, which leaves [PAWN_pronoun] with the occasional odd job to maintain [PAWN_possessive] standard of living.</baseDesc>
+		<description>[PAWN_nameDef] has an interplanetary shuttle of [PAWN_possessive] own, with which [PAWN_pronoun] pursues the life of [PAWN_possessive] dreams - the freedom to travel freely from planet to planet in [PAWN_possessive] home galaxy, pioneering, admiring, and documenting the magnificent wonders of the uncharted landscapes as [PAWN_pronoun] pleases. \n\nThe only downside to such a free life is that [PAWN_pronoun] can only obtain hobo level rations and benefits, which leaves [PAWN_pronoun] with the occasional odd job to maintain [PAWN_possessive] standard of living.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<Artistic>3</Artistic>
@@ -36,7 +36,7 @@
 		<defName>Celes_Backstory_Space02</defName>
 		<title>celestia photography blogger</title>
 		<titleShort>blogger</titleShort>
-		<baseDesc>[PAWN_nameDef] started out simply being amazed by the sights of space and planets, and occasionally posted holograms of the sights [PAWN_pronoun] saw during [PAWN_possessive] travels on social media platforms. But [PAWN_pronoun] soon found that many people who couldn't travel in person found solace in [PAWN_possessive]'s holograms, and this attention brought [PAWN_pronoun] prestige and motivation to continue doing what [PAWN_pronoun] was doing - both mentally and materially. So one day, [PAWN_nameDef] quit [PAWN_possessive] old job and turned to social networking to make a splash with space holograms.</baseDesc>
+		<description>[PAWN_nameDef] started out simply being amazed by the sights of space and planets, and occasionally posted holograms of the sights [PAWN_pronoun] saw during [PAWN_possessive] travels on social media platforms. But [PAWN_pronoun] soon found that many people who couldn't travel in person found solace in [PAWN_possessive]'s holograms, and this attention brought [PAWN_pronoun] prestige and motivation to continue doing what [PAWN_pronoun] was doing - both mentally and materially. So one day, [PAWN_nameDef] quit [PAWN_possessive] old job and turned to social networking to make a splash with space holograms.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<Artistic>6</Artistic>
@@ -51,7 +51,7 @@
 		<defName>Celes_Backstory_Space03</defName>
 		<title>celestia space station bartender</title>
 		<titleShort>bartender</titleShort>
-		<baseDesc>[PAWN_nameDef] working as a bartender on a regular space station on the main route that's kind of like an old-timey high-speed service area, except it's in space. \n\n[PAWN_nameDef] serves drinks to those who come here, letting the liquids wash away tired bodies and souls, it's [PAWN_possessive] job that really makes this space station a safe haven. But more people would just choose to go to the kiosk on the side for a cheap drink is all.</baseDesc>
+		<description>[PAWN_nameDef] working as a bartender on a regular space station on the main route that's kind of like an old-timey high-speed service area, except it's in space. \n\n[PAWN_nameDef] serves drinks to those who come here, letting the liquids wash away tired bodies and souls, it's [PAWN_possessive] job that really makes this space station a safe haven. But more people would just choose to go to the kiosk on the side for a cheap drink is all.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<Social>6</Social>
@@ -65,7 +65,7 @@
 		<defName>Celes_Backstory_Space04</defName>
 		<title>celestia docking port engineer</title>
 		<titleShort>port engineer</titleShort>
-		<baseDesc>Most of the repetitive and monotonous tasks in Celestia society had been left entirely to robots, and naturally that included docking, maintenance, and fuelling of ships at the space station.\n\n Aside from the living members of the station's security department, [PAWN_nameDef] is pretty much the only organic staff member at the docking port, and [PAWN_possessive] job for the most part is to simply monitor the workings of the station's docking port for proper functioning from a comfortable room, and then spend the rest of [PAWN_possessive] time away from all social interaction and living beings to concentrate on relaxing. Some would blame the [PAWN_possessive] job for being too easy, but the truth was that no one wanted the [PAWN_pronoun] to suddenly get busy, as that often meant that the docking port had experienced a major malfunction in the automated systems that could not be undone.</baseDesc>
+		<description>Most of the repetitive and monotonous tasks in Celestia society had been left entirely to robots, and naturally that included docking, maintenance, and fuelling of ships at the space station.\n\n Aside from the living members of the station's security department, [PAWN_nameDef] is pretty much the only organic staff member at the docking port, and [PAWN_possessive] job for the most part is to simply monitor the workings of the station's docking port for proper functioning from a comfortable room, and then spend the rest of [PAWN_possessive] time away from all social interaction and living beings to concentrate on relaxing. Some would blame the [PAWN_possessive] job for being too easy, but the truth was that no one wanted the [PAWN_pronoun] to suddenly get busy, as that often meant that the docking port had experienced a major malfunction in the automated systems that could not be undone.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<Construction>2</Construction>
@@ -81,7 +81,7 @@
 		<defName>Celes_Backstory_Space05</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -94,7 +94,7 @@
 		<defName>Celes_Backstory_Space06</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -107,7 +107,7 @@
 		<defName>Celes_Backstory_Space07</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -120,7 +120,7 @@
 		<defName>Celes_Backstory_Space08</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -133,7 +133,7 @@
 		<defName>Celes_Backstory_Space09</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -146,7 +146,7 @@
 		<defName>Celes_Backstory_Space10</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -159,7 +159,7 @@
 		<defName>Celes_Backstory_Space11</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -172,7 +172,7 @@
 		<defName>Celes_Backstory_Space12</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -185,7 +185,7 @@
 		<defName>Celes_Backstory_Space13</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -198,7 +198,7 @@
 		<defName>Celes_Backstory_Space14</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -211,7 +211,7 @@
 		<defName>Celes_Backstory_Space15</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -224,7 +224,7 @@
 		<defName>Celes_Backstory_Space16</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -237,7 +237,7 @@
 		<defName>Celes_Backstory_Space17</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -250,7 +250,7 @@
 		<defName>Celes_Backstory_Space18</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -263,7 +263,7 @@
 		<defName>Celes_Backstory_Space19</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -276,7 +276,7 @@
 		<defName>Celes_Backstory_Space20</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -289,7 +289,7 @@
 		<defName>Celes_Backstory_Space21</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -302,7 +302,7 @@
 		<defName>Celes_Backstory_Space22</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -315,7 +315,7 @@
 		<defName>Celes_Backstory_Space23</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -328,7 +328,7 @@
 		<defName>Celes_Backstory_Space24</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -341,7 +341,7 @@
 		<defName>Celes_Backstory_Space25</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -354,7 +354,7 @@
 		<defName>Celes_Backstory_Space26</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -367,7 +367,7 @@
 		<defName>Celes_Backstory_Space27</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -380,7 +380,7 @@
 		<defName>Celes_Backstory_Space28</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -393,7 +393,7 @@
 		<defName>Celes_Backstory_Space29</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -406,7 +406,7 @@
 		<defName>Celes_Backstory_Space30</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -419,7 +419,7 @@
 		<defName>Celes_Backstory_Space31</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -432,7 +432,7 @@
 		<defName>Celes_Backstory_Space32</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -445,7 +445,7 @@
 		<defName>Celes_Backstory_Space33</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -458,7 +458,7 @@
 		<defName>Celes_Backstory_Space34</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -471,7 +471,7 @@
 		<defName>Celes_Backstory_Space35</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -484,7 +484,7 @@
 		<defName>Celes_Backstory_Space36</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -497,7 +497,7 @@
 		<defName>Celes_Backstory_Space37</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -510,7 +510,7 @@
 		<defName>Celes_Backstory_Space38</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -523,7 +523,7 @@
 		<defName>Celes_Backstory_Space39</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -536,7 +536,7 @@
 		<defName>Celes_Backstory_Space40</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -549,7 +549,7 @@
 		<defName>Celes_Backstory_Space41</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -562,7 +562,7 @@
 		<defName>Celes_Backstory_Space42</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -575,7 +575,7 @@
 		<defName>Celes_Backstory_Space43</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -588,7 +588,7 @@
 		<defName>Celes_Backstory_Space44</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -601,7 +601,7 @@
 		<defName>Celes_Backstory_Space45</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -614,7 +614,7 @@
 		<defName>Celes_Backstory_Space46</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -627,7 +627,7 @@
 		<defName>Celes_Backstory_Space47</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -640,7 +640,7 @@
 		<defName>Celes_Backstory_Space48</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -653,7 +653,7 @@
 		<defName>Celes_Backstory_Space49</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -666,7 +666,7 @@
 		<defName>Celes_Backstory_Space50</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -679,7 +679,7 @@
 		<defName>Celes_Backstory_Space51</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -692,7 +692,7 @@
 		<defName>Celes_Backstory_Space52</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -705,7 +705,7 @@
 		<defName>Celes_Backstory_Space53</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -718,7 +718,7 @@
 		<defName>Celes_Backstory_Space54</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -731,7 +731,7 @@
 		<defName>Celes_Backstory_Space55</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -744,7 +744,7 @@
 		<defName>Celes_Backstory_Space56</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -757,7 +757,7 @@
 		<defName>Celes_Backstory_Space57</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -770,7 +770,7 @@
 		<defName>Celes_Backstory_Space58</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -783,7 +783,7 @@
 		<defName>Celes_Backstory_Space59</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -796,7 +796,7 @@
 		<defName>Celes_Backstory_Space60</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>
@@ -809,7 +809,7 @@
 		<defName>Celes_Backstory_Space61</defName>
 		<title>celestia</title>
 		<titleShort>.</titleShort>
-		<baseDesc>.</baseDesc>
+		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 		</skillGains>

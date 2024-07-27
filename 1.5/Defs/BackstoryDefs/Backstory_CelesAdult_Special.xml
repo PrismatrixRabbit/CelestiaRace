@@ -7,7 +7,7 @@
         <defName>Celes_Backstory_Special01</defName>
         <title>celestia detective</title>
         <titleShort>detective</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -20,7 +20,7 @@
         <defName>Celes_Backstory_Special02</defName>
         <title>celestia psychologist</title>
         <titleShort>psychologist</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -33,7 +33,7 @@
         <defName>Celes_Backstory_Special03</defName>
         <title>celestia recorder</title>
         <titleShort>recorder</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -46,7 +46,7 @@
         <defName>Celes_Backstory_Special04</defName>
         <title>celestia archotech contacter</title>
         <titleShort>contacter</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -59,7 +59,7 @@
         <defName>Celes_Backstory_Special05</defName>
         <title>celestia ecologist</title>
         <titleShort>ecologist</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -72,7 +72,7 @@
         <defName>Celes_Backstory_Special06</defName>
         <title>celestia pacesetter</title>
         <titleShort>pacesetter</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -85,7 +85,7 @@
         <defName>Celes_Backstory_Special07</defName>
         <title>celestia spaceship engineer</title>
         <titleShort>spaceship engineer</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -98,7 +98,7 @@
         <defName>Celes_Backstory_Special08</defName>
         <title>celestia deep-space doctor</title>
         <titleShort>deep-space doctor</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -111,7 +111,7 @@
         <defName>Celes_Backstory_Special09</defName>
         <title>celestia the silent squad</title>
         <titleShort>silent squad</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -126,7 +126,7 @@
         <defName>Celes_Backstory_BlueFlood01</defName>
         <title>celestia blueflood survivor</title>
         <titleShort>survivor</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
@@ -139,7 +139,7 @@
         <defName>Celes_Backstory_BlueFlood02</defName>
         <title>celestia blueflood survivor</title>
         <titleShort>survivor</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Childhood</slot>
         <skillGains>
         </skillGains>
@@ -152,7 +152,7 @@
         <defName>Celes_Backstory_BlueFlood03</defName>
         <title>celestia poor endeavourer</title>
         <titleShort>endeavourer</titleShort>
-        <baseDesc>.</baseDesc>
+        <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
         </skillGains>
