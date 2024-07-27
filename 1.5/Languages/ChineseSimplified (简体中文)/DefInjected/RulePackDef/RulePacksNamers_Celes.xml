@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <NamerPerson_Celes.rulePack.rulesStrings.0>name->[Celes_FirstName] [Celes_LastName]</NamerPerson_Celes.rulePack.rulesStrings.0>
+  <NamerPerson_Celes.rulePack.rulesStrings.0>r_name->[Celes_Name] [Celes_Surname]</NamerPerson_Celes.rulePack.rulesStrings.0>
 
 
 </LanguageData>

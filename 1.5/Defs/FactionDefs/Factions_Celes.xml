@@ -157,13 +157,23 @@
 	<!--这里抄了原版-->
 	<pawnGroupMakers>
 		<!-- 注释掉的是这个需要的pawn我们没写 -->
-		<!-- Normal fights, standard mix -->
-      <li>
-        <kindDef>Combat</kindDef>
-        <options>
-          <Celes_Scout>10</Celes_Scout>
-        </options>
-      </li>
+		<!-- Normal -->
+        <li>
+            <kindDef>Combat</kindDef>
+            <commonality>100</commonality>
+            <options>
+                <Celes_Scout>10</Celes_Scout>
+            </options>
+        </li>
+        <!-- Normal-2 -->
+        <li>
+            <kindDef>Combat</kindDef>
+            <commonality>30</commonality>
+            <options>
+                <Celes_Scout>10</Celes_Scout>
+                <Celes_Outlander>5</Celes_Outlander>
+            </options>
+        </li>
       <li>
         <kindDef>Peaceful</kindDef>
         <options>

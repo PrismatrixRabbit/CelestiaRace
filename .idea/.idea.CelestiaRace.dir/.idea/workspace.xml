@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="修改背景" />
+    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="1.5背景语法修正" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +68,7 @@
       <updated>1721886847273</updated>
       <workItem from="1721886848488" duration="20273000" />
       <workItem from="1721977247308" duration="26287000" />
+      <workItem from="1722073538059" duration="20037000" />
     </task>
     <task id="LOCAL-00001" summary="修改背景">
       <option name="closed" value="true" />
@@ -93,7 +94,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722015842551</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改背景">
+      <option name="closed" value="true" />
+      <created>1722093077067</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722093077067</updated>
+    </task>
+    <task id="LOCAL-00005" summary="派系领袖问题">
+      <option name="closed" value="true" />
+      <created>1722095861154</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722095861154</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1.5背景语法修正">
+      <option name="closed" value="true" />
+      <created>1722098100181</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722098100181</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +128,9 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改背景" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改背景" />
+    <MESSAGE value="派系领袖问题" />
+    <MESSAGE value="1.5背景语法修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.5背景语法修正" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -7,7 +7,6 @@
     <combatPower>20</combatPower>
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
-    <factionLeader>false</factionLeader>
     <apparelMoney>1500~2000</apparelMoney>
     <apparelTags>
         <li>Celes_Explore</li>
