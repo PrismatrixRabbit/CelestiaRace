@@ -9,7 +9,7 @@
         <stages>
             <li>
                 <statFactors>
-                    <MechBandwidth>0.3</MechBandwidth>
+                    <MechBandwidth>0.35</MechBandwidth>
                 </statFactors>
             </li>
         </stages>
