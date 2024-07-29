@@ -3,7 +3,7 @@
 
     <CelesFeature.AidOptionDef>
         <defName>TestOption_Drop</defName>
-        <label>空投</label>
+        <label>申请白银</label>
         <cooldown>120</cooldown>        <!-- 冷却 -->
         <requests>            <!-- 需要物资 -->
             <Silver>50</Silver>
@@ -23,7 +23,7 @@
 
     <CelesFeature.AidOptionDef>
         <defName>TestOption_Aid</defName>
-        <label>支援</label>
+        <label>申请劳工</label>
         <cooldown>120</cooldown>        <!-- 冷却 -->
         <requests>            <!-- 需要物资 -->
             <Silver>50</Silver>
@@ -36,7 +36,7 @@
                     <favorCost>4</favorCost>
                     <pawnKindDef>Celes_Outlander</pawnKindDef>
                     <pawnCount>4</pawnCount>
-                    <aidDurationDays>4</aidDurationDays>
+                    <aidDurationDays>2</aidDurationDays>
                     <targetingRange>44.9</targetingRange>
                     <targetingRequireLOS>false</targetingRequireLOS>
                 </aidParameter>
