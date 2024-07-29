@@ -55,4 +55,24 @@
             </li>
         </ingredients>
     </RecipeDef>
+    
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>Celes_FieldAidRestrict</defName>
+        <description>Celestia Command has added restrictions to the Field Support Team to avoid risks to the mechlink.</description>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.0625</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MechBandwidth>-6</MechBandwidth>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
 </Defs>
