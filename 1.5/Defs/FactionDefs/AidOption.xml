@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <CelesFeature.AidOptionDef>
+        <defName>TestOption_Drop</defName>
+        <label>空投</label>
+        <cooldown>120</cooldown>        <!-- 冷却 -->
+        <requests>            <!-- 需要物资 -->
+            <Silver>50</Silver>
+        </requests>
+        <effects>            <!-- 效果 -->
+            <li Class="CelesFeature.AidEffect_Drop">
+                <things>                    <!-- 随机抽一组来生成 -->
+                    <li>
+                        <Silver>50</Silver>
+                    </li>
+                </things>
+                <dropPod>ActiveDropPodMechanoid</dropPod>                <!-- 填空投仓的def -->
+                <faller>DropPodIncomingMechanoid</faller>                <!-- 填skyfaller -->
+            </li>
+        </effects>
+    </CelesFeature.AidOptionDef>
+
+    <CelesFeature.AidOptionDef>
+        <defName>TestOption_Aid</defName>
+        <label>支援</label>
+        <cooldown>120</cooldown>        <!-- 冷却 -->
+        <requests>            <!-- 需要物资 -->
+            <Silver>50</Silver>
+        </requests>
+        <effects>            <!-- 效果 -->
+            <li Class="CelesFeature.AidEffect_Quest">
+                <def>Permit_CallLaborers</def>
+                <faction>Celes_Faction</faction>                <!-- 呼叫的派系 -->
+                <aidParameter>                    <!-- 来的人的参数 -->
+                    <favorCost>4</favorCost>
+                    <pawnKindDef>Celes_Outlander</pawnKindDef>
+                    <pawnCount>4</pawnCount>
+                    <aidDurationDays>4</aidDurationDays>
+                    <targetingRange>44.9</targetingRange>
+                    <targetingRequireLOS>false</targetingRequireLOS>
+                </aidParameter>
+            </li>
+        </effects>
+    </CelesFeature.AidOptionDef>
+
+    <CelesFeature.TradeOptionDef>
+        <defName>TradeOption_Goodwill</defName>
+        <label>TradeOption</label>
+        <tradeType>GoodWill</tradeType>        <!-- 交易类型 -->
+        <goodwillRequest>10~20</goodwillRequest>
+        <rewards>            <!-- 交易物资 -->
+            <Silver>50</Silver>
+        </rewards>
+        <dropPod>ActiveDropPodMechanoid</dropPod>        <!-- 填空投仓的def -->
+        <faller>DropPodIncomingMechanoid</faller>        <!-- 填skyfaller -->
+    </CelesFeature.TradeOptionDef>
+
+    <CelesFeature.TradeOptionDef>
+        <defName>TradeOption_Small</defName>
+        <label>TradeOption</label>
+        <tradeType>Small</tradeType>        <!-- 交易类型 -->
+        <requests>            <!-- 需要物资 -->
+            <Silver>10</Silver>
+        </requests>
+        <rewards>            <!-- 交易物资 -->
+            <Silver>50</Silver>
+        </rewards>
+        <dropPod>ActiveDropPodMechanoid</dropPod>        <!-- 填空投仓的def -->
+        <faller>DropPodIncomingMechanoid</faller>        <!-- 填skyfaller -->
+    </CelesFeature.TradeOptionDef>
+
+    <CelesFeature.TradeOptionDef>
+        <defName>TradeOption_Big</defName>
+        <label>TradeOption</label>
+        <tradeType>Big</tradeType>        <!-- 交易类型 -->
+        <requests>            <!-- 需要物资 -->
+            <Silver>100</Silver>
+        </requests>
+        <rewards>            <!-- 交易物资 -->
+            <Silver>500</Silver>
+        </rewards>
+        <dropPod>ActiveDropPodMechanoid</dropPod>        <!-- 填空投仓的def -->
+        <faller>DropPodIncomingMechanoid</faller>        <!-- 填skyfaller -->
+    </CelesFeature.TradeOptionDef>
+
+
+</Defs>

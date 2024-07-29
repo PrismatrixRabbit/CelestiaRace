@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="1.5背景语法修正" />
+    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="派系语法修正">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +71,8 @@
       <workItem from="1721886848488" duration="20273000" />
       <workItem from="1721977247308" duration="26287000" />
       <workItem from="1722073538059" duration="20037000" />
+      <workItem from="1722098396522" duration="1466000" />
+      <workItem from="1722100109239" duration="175000" />
     </task>
     <task id="LOCAL-00001" summary="修改背景">
       <option name="closed" value="true" />
@@ -118,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722098100181</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="派系语法修正">
+      <option name="closed" value="true" />
+      <created>1722099871843</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722099871843</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +142,8 @@
     <MESSAGE value="修改背景" />
     <MESSAGE value="派系领袖问题" />
     <MESSAGE value="1.5背景语法修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.5背景语法修正" />
+    <MESSAGE value="派系语法修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="派系语法修正" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

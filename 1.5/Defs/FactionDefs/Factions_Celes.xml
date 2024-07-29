@@ -228,6 +228,20 @@
       </li>-->
     </pawnGroupMakers>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <modExtensions>
+        <li Class="CelesFeature.ModExtension_Aid">
+            <greetWords>
+                <li>
+                    <key>-50~50</key>                        <!-- 好感度区间，如果派系的好感度在这个词条下找不到则不会显示支援 -->
+                    <value>GreetI</value>
+                </li>
+                <li>
+                    <key>50~100</key>                        <!-- 好感度区间，如果派系的好感度在这个词条下找不到则不会显示支援 -->
+                    <value>GreetII</value>
+                </li>
+            </greetWords>
+        </li>
+    </modExtensions>
 </FactionDef>
 
 </Defs>

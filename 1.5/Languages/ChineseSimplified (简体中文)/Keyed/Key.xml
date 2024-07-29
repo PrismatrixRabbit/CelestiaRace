@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <Celes_Aid>支援</Celes_Aid>
+
+  <GoodwillRequest>{0}好感</GoodwillRequest>
+  <TradeOption>{0}换{1}</TradeOption>
+
+  <Celes_TradeGreet>交易界面</Celes_TradeGreet>
+  <Celes_Trade>交易</Celes_Trade>
+
+  <GreetI>当前好感度：{0}，白银：{1}</GreetI>
+
+  <GreetII>当前好感度：{0}，白银：{1}，目前高好感度</GreetII>
+
+  <Cekes_LackRequests>缺少需求物资</Cekes_LackRequests>
+  <Cekes_InCooldown>冷却中({0}天)</Cekes_InCooldown>
+
+</LanguageData>
