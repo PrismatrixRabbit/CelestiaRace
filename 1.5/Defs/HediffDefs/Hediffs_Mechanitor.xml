@@ -8,9 +8,9 @@
         <isBad>false</isBad>
         <stages>
             <li>
-                <statOffsets>
-                    <MechBandwidth>-4</MechBandwidth>
-                </statOffsets>
+                <statFactors>
+                    <MechBandwidth>0.35</MechBandwidth>
+                </statFactors>
             </li>
         </stages>
     </HediffDef>
@@ -55,4 +55,24 @@
             </li>
         </ingredients>
     </RecipeDef>
+
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>Celes_FieldAidRestrict</defName>
+        <description>Celestia Command has added restrictions to the Field Support Team to avoid risks to the mechlink.</description>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.0625</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <MechBandwidth>0</MechBandwidth>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
 </Defs>
