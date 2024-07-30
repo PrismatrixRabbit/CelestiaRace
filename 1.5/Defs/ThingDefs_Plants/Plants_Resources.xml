@@ -8,10 +8,10 @@
             <MaxHitPoints>185</MaxHitPoints>
             <Nutrition>0.2</Nutrition>
         </statBases>
-        <!--<graphicData>
+        <graphicData>
             <texPath>Things/Plant/CottonPlant</texPath>
             <graphicClass>Graphic_Random</graphicClass>
-        </graphicData>-->
+        </graphicData>
         <selectable>true</selectable>
         <pathCost>14</pathCost>
         <ingestible/>

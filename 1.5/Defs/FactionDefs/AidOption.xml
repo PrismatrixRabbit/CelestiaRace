@@ -2,12 +2,13 @@
 <Defs>
 
     <CelesFeature.AidOptionDef>
-        <defName>TestOption_Drop</defName>
+        <defName>Option_Drop01</defName>
         <label>申请白银</label>
         <cooldown>120</cooldown>        <!-- 冷却 -->
         <requests>            <!-- 需要物资 -->
             <Silver>50</Silver>
         </requests>
+        <isDrop>true</isDrop>
         <effects>            <!-- 效果 -->
             <li Class="CelesFeature.AidEffect_Drop">
                 <things>                    <!-- 随机抽一组来生成 -->
@@ -22,21 +23,46 @@
     </CelesFeature.AidOptionDef>
 
     <CelesFeature.AidOptionDef>
-        <defName>TestOption_Aid</defName>
-        <label>申请劳工</label>
-        <cooldown>120</cooldown>        <!-- 冷却 -->
+        <defName>Option_Aid01</defName>
+        <label>request celestia field construction team</label>
+        <cooldown>300000</cooldown>        <!-- 冷却 -->
         <requests>            <!-- 需要物资 -->
             <Silver>50</Silver>
         </requests>
+        <isDrop>false</isDrop>
         <effects>            <!-- 效果 -->
             <li Class="CelesFeature.AidEffect_Quest">
-                <def>Permit_CallLaborers</def>
+                <def>Celes_Permit_CallLaborers</def>
                 <faction>Celes_Faction</faction>                <!-- 呼叫的派系 -->
                 <aidParameter>                    <!-- 来的人的参数 -->
                     <favorCost>4</favorCost>
                     <pawnKindDef>Celes_Outlander</pawnKindDef>
                     <pawnCount>4</pawnCount>
                     <aidDurationDays>2</aidDurationDays>
+                    <targetingRange>44.9</targetingRange>
+                    <targetingRequireLOS>false</targetingRequireLOS>
+                </aidParameter>
+            </li>
+        </effects>
+    </CelesFeature.AidOptionDef>
+
+    <CelesFeature.AidOptionDef>
+        <defName>Option_Aid02</defName>
+        <label>request celestia vanguard squad</label>
+        <cooldown>300000</cooldown>        <!-- 冷却 -->
+        <requests>            <!-- 需要物资 -->
+            <Silver>50</Silver>
+        </requests>
+        <isDrop>false</isDrop>
+        <effects>            <!-- 效果 -->
+            <li Class="CelesFeature.AidEffect_Quest">
+                <def>Celes_Permit_CallForces</def>
+                <faction>Celes_Faction</faction>                <!-- 呼叫的派系 -->
+                <aidParameter>                    <!-- 来的人的参数 -->
+                    <favorCost>4</favorCost>
+                    <pawnKindDef>Celes_Scout</pawnKindDef>
+                    <pawnCount>4</pawnCount>
+                    <aidDurationDays>1</aidDurationDays>
                     <targetingRange>44.9</targetingRange>
                     <targetingRequireLOS>false</targetingRequireLOS>
                 </aidParameter>

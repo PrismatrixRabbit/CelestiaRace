@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Helper pawns -->
+    <ThoughtDef>
+        <defName>Celes_OnDuty</defName>
+        <durationDays>25</durationDays>
+        <stackLimit>1</stackLimit>
+        <showBubble>true</showBubble>
+        <stages>
+            <li>
+                <label>on duty</label>
+                <description>I have a job to do.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    
+</Defs>

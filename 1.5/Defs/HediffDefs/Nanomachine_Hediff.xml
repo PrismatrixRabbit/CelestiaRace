@@ -38,11 +38,6 @@
                 <spawnThing>CelesNanoMachine</spawnThing>
                 <spawnCount>10</spawnCount>
             </li>
-            <li Class="CelesFeature.Celes_HediffCompProperties_SpawnOnDeath">
-                <spawnPawn>false</spawnPawn>
-                <spawnThing>Neutroamine</spawnThing>
-                <spawnCount>8</spawnCount>
-            </li>
         </comps>
     </HediffDef>
 </Defs>
