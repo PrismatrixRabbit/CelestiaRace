@@ -67,7 +67,7 @@
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
         <weaponMoney>400~1000</weaponMoney>
         <weaponTags>
-            <li>Celes_EarlyRangeWeapon</li>
+            <li>Celes_EarlyWeapon</li>
         </weaponTags>
         <backstoryCategories>
             <li>Celes_Outlander</li>
@@ -101,9 +101,9 @@
         </apparelTags>
         <apparelMoney>150~500</apparelMoney>
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-        <weaponMoney>400~1000</weaponMoney>
+        <weaponMoney>750~10000</weaponMoney>
         <weaponTags>
-            <li>Celes_EarlyRangeWeapon</li>
+            <li>Celes_MidWeapon</li>
         </weaponTags>
         <backstoryCategories>
             <li>Celes_Outlander</li>
@@ -132,11 +132,11 @@
         <apparelTags>
             <li>Celes_Military</li>
         </apparelTags>
-        <apparelMoney>150~500</apparelMoney>
+        <apparelMoney>150~5000</apparelMoney>
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-        <weaponMoney>400~1000</weaponMoney>
+        <weaponMoney>750~100000</weaponMoney>
         <weaponTags>
-            <li>Celes_EarlyRangeWeapon</li>
+            <li>Celes_MidWeapon</li>
         </weaponTags>
         <backstoryCategories>
             <li>Celes_Military</li>

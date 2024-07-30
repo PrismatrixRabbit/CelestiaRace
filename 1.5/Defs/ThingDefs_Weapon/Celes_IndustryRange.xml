@@ -235,7 +235,7 @@
                 <warmupTime>0.2</warmupTime>
                 <range>25.9</range>
                 <soundCast>Shot_Revolver</soundCast>
-                <soundCastTail>Guntail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
@@ -296,9 +296,7 @@
             <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
         </statBases>
         <weaponTags>
-            <li>
-                Celes_EarlyWeapon
-            </li>
+            <li>Celes_EarlyWeapon</li>
         </weaponTags>
         <costList>
             <Steel>40</Steel>
@@ -359,6 +357,9 @@
             <AccuracyLong>0.25</AccuracyLong>
             <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
         </statBases>
+        <weaponTags>
+            <li>Celes_MidWeapon</li>
+        </weaponTags>
         <costList>
             <CelesAlloy>60</CelesAlloy>
             <Chemfuel>25</Chemfuel>
@@ -425,6 +426,9 @@
             <AccuracyLong>0.50</AccuracyLong>
             <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
         </statBases>
+        <weaponTags>
+            <li>Celes_MidWeapon</li>
+        </weaponTags>
         <costList>
             <CelesAlloy>40</CelesAlloy>
             <Chemfuel>25</Chemfuel>
@@ -507,9 +511,7 @@
             <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
         </statBases>
         <weaponTags>
-            <li>
-                Celes_MidWeapon
-            </li>
+            <li>Celes_MidWeapon</li>
         </weaponTags>
         <costList>
             <CelesAlloy>80</CelesAlloy>
@@ -572,7 +574,7 @@
             <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
         </statBases>
         <weaponTags>
-            <li>Celes_EarlyWeapon</li>
+            <li>Celes_MidWeapon</li>
         </weaponTags>
         <costList>
             <CelesAlloy>140</CelesAlloy>
