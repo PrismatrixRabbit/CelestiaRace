@@ -4,25 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="１.５外勤部文本更新">
-      <change afterPath="$PROJECT_DIR$/1.5/Defs/QuestScriptDef/Celes_Scripts_Permits.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.5/Defs/ThoughtDefs/Thoughts_Memory_Misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/FactionDef/AidOption.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/QuestScriptDef/Celes_Scripts_Permits.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml" afterDir="false" />
+    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="修啊修bug">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.4/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Assemblies/CelesFeature.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/FactionDefs/AidOption.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/FactionDefs/AidOption.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/FactionDefs/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/FactionDefs/Factions_Celes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Nanomachine_Hediff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Nanomachine_Hediff.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_General.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_General.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Plants/Plants_Resources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Plants/Plants_Resources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_IndustryGrenade.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.AlienBackstoryDef/Backstory_CelesAdult_Space.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.AlienBackstoryDef/Backstory_CelesAdult_Space.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/Keyed/Key.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/Keyed/Key.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About/About.xml" beforeDir="false" afterPath="$PROJECT_DIR$/About/About.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +75,9 @@
       <workItem from="1722239973955" duration="2931000" />
       <workItem from="1722249721796" duration="766000" />
       <workItem from="1722260459737" duration="3759000" />
-      <workItem from="1722316191919" duration="15201000" />
+      <workItem from="1722316191919" duration="16096000" />
+      <workItem from="1722333019548" duration="6000" />
+      <workItem from="1722344164925" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="修改背景">
       <option name="closed" value="true" />
@@ -174,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722265751562</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修啊修bug">
+      <option name="closed" value="true" />
+      <created>1722332250439</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722332250439</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +182,8 @@
     <MESSAGE value="派系语法修正" />
     <MESSAGE value="派系支援" />
     <MESSAGE value="１.５外勤部文本更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="１.５外勤部文本更新" />
+    <MESSAGE value="修啊修bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修啊修bug" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
