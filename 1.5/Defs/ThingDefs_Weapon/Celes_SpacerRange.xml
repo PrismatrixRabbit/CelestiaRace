@@ -54,7 +54,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Celes_HEPT</defaultProjectile>
+                <defaultProjectile>CelesBullet_medium_energy</defaultProjectile>
                 <warmupTime>1.0</warmupTime>
                 <range>40.9</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
@@ -144,7 +144,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Celes_HEPT</defaultProjectile>
+                <defaultProjectile>CelesBullet_small_energy</defaultProjectile>
                 <warmupTime>1.0</warmupTime>
                 <range>40.9</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
@@ -216,7 +216,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Celes_HEPT</defaultProjectile>
+                <defaultProjectile>CelesBullet_big_energy</defaultProjectile>
                 <warmupTime>1.0</warmupTime>
                 <range>40.9</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
@@ -338,7 +338,7 @@
             <AccuracyShort>0.75</AccuracyShort>
             <AccuracyMedium>0.65</AccuracyMedium>
             <AccuracyLong>0.55</AccuracyLong>
-            <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>12.00</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
@@ -360,14 +360,25 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Celes_HEPT</defaultProjectile>
-                <warmupTime>1.0</warmupTime>
+                <defaultProjectile>CelesBullet_Launcher</defaultProjectile>
+                <warmupTime>4.0</warmupTime>
                 <range>40.9</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <burstShotCount>3</burstShotCount>
+                <burstShotCount>2</burstShotCount>
+                <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+                <ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
+                <ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
+                <minRange>2.9</minRange>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                    <canTargetPawns>ture</canTargetPawns>
+                </targetParams>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
+                <soundAiming>HellsphereCannon_Aiming</soundAiming>
             </li>
         </verbs>
         <tools>
@@ -389,5 +400,102 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>CelesBullet_small_energy</defName>
+        <label>light energy bullet</label>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <armorPenetrationBase>0.2</armorPenetrationBase>
+            <stoppingPower>0.6</stoppingPower>
+            <speed>70</speed>
+            <extraDamages>
+                <li>
+                    <def>EMP</def>
+                    <amount>2</amount>
+                    <chance>1</chance>
+                </li>
+                <li>
+                    <def>Burn</def>
+                    <amount>4</amount>
+                    <chance>1</chance>
+                </li>
+            </extraDamages>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>CelesBullet_medium_energy</defName>
+        <label>medium energy bullet</label>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+                <damageDef>Bullet</damageDef>
+                <damageAmountBase>14</damageAmountBase>
+                <speed>80</speed>
+                <armorPenetrationBase>0.5</armorPenetrationBase>
+                <stoppingPower>1.2</stoppingPower>
+            <extraDamages>
+                <li>
+                    <def>EMP</def>
+                    <amount>8</amount>
+                    <chance>1</chance>
+                </li>
+                <li>
+                    <def>Burn</def>
+                    <amount>6</amount>
+                    <chance>1</chance>
+                </li>
+            </extraDamages>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>CelesBullet_big_energy</defName>
+        <label>massive energy bullet</label>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <speed>90</speed>
+            <armorPenetrationBase>0.6</armorPenetrationBase>
+            <stoppingPower>1.8</stoppingPower>
+            <extraDamages>
+                <li>
+                    <def>EMP</def>
+                    <amount>8</amount>
+                    <chance>1</chance>
+                </li>
+                <li>
+                    <def>Burn</def>
+                    <amount>10</amount>
+                    <chance>1</chance>
+                </li>
+            </extraDamages>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>CelesBullet_Launcher</defName>
+        <label>celestia energy launcher bullet</label>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+            <damageDef>Vaporize</damageDef>
+            <speed>85</speed>
+            <explosionRadius>2.9</explosionRadius>
+            <screenShakeFactor>0.5</screenShakeFactor>
+        </projectile>
     </ThingDef>
 </Defs>
