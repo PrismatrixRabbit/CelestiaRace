@@ -38,9 +38,9 @@
         <ingredients>
             <li>
                 <filter>
-                    <categories>
+                    <thingDefs>
                         <li>Celes_B</li>
-                    </categories>
+                    </thingDefs>
                 </filter>
                 <count>1</count>
             </li>
