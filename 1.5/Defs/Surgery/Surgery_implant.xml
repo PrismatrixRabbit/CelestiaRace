@@ -3,12 +3,12 @@
     
     <RecipeDef Name="Celes_Surgery" ParentName="SurgeryFlesh" Abstract="True">
         <recipeUsers>
-            <li>Human</li>
+            <li>Celes_Race</li>
         </recipeUsers>
         <developmentalStageFilter>Child, Adult</developmentalStageFilter>
     </RecipeDef>
     
-    <RecipeDef ParentName="Celes_Surgery">
+    <RecipeDef ParentName="SurgeryFlesh">
         <defName>Celes_ImplantNanomachine</defName>
         <label>implant nanomachine</label>
         <description>.</description>

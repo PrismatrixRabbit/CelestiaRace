@@ -373,7 +373,7 @@
                 <minRange>2.9</minRange>
                 <targetParams>
                     <canTargetLocations>true</canTargetLocations>
-                    <canTargetPawns>ture</canTargetPawns>
+                    <canTargetPawns>true</canTargetPawns>
                 </targetParams>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
