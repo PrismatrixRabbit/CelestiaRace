@@ -71,7 +71,7 @@
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
 	<leaderTitle>pioneer commander-in-chief</leaderTitle><!--等我写（-->
-    <factionIconPath>Celes/Faction/CelesFaction_IconVII</factionIconPath><!--派系图标丢了-->
+    <factionIconPath>Celes/Faction/CelesFactionVII_Icon</factionIconPath><!--派系图标丢了-->
     <techLevel>Industrial</techLevel>
 	<!--NameMaker都等我写-->
     <factionNameMaker>CelesFaction_Namer</factionNameMaker>

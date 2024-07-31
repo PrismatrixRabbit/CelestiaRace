@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <HediffDef ParentName="ImplantHediffBase">
+    <HediffDef ParentName="DiseaseBase">
         <defName>Celes_MechlinkRestriction</defName>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
         <label>celestia mechlink restriction</label>
         <description>.</description>
-        <descriptionShort>..</descriptionShort>
         <isBad>false</isBad>
+        <descriptionHyperlinks><ThingDef>Celes_MechlinkAuthorization</ThingDef></descriptionHyperlinks>
         <stages>
             <li>
                 <statFactors>
@@ -19,6 +20,7 @@
         <defName>Celes_MechlinkAuthorization</defName>
         <label>celestia mechlink restriction remove authorization</label>
         <description>.</description>
+        <descriptionHyperlinks><RecipeDef>RemoveCelesMechlinkRestriction</RecipeDef></descriptionHyperlinks>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Beauty>-2</Beauty>
@@ -37,6 +39,10 @@
         <defName>RemoveCelesMechlinkRestriction</defName>
         <label>remove celestia mechlink restriction</label>
         <description>.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_MechlinkAuthorization</ThingDef>
+            <HediffDef>Celes_MechlinkRestriction</HediffDef>
+        </descriptionHyperlinks>
         <workerClass>Recipe_RemoveHediff</workerClass>
         <jobString>Removing mechlink restriction.</jobString>
         <workAmount>1000</workAmount>
