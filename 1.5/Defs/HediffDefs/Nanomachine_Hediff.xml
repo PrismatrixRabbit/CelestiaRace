@@ -5,38 +5,127 @@
         <defaultLabelColor>(.80, 0.38, 0.38)</defaultLabelColor>
     </HediffDef>
     <HediffDef ParentName="Celes_NanoHediffBase">
-        <defName>Celes_NanoImplanted</defName>
-        <label>celestia nanomachine implant</label>
-        <labelNoun>a celestia nanomachine implant</labelNoun>
+        <defName>Celes_NanoImplanted_I</defName>
+        <label>celestia nanomachine implant I</label>
+        <labelNoun>stage I nanomachine implant</labelNoun>
         <isBad>false</isBad>
+        <initialSeverity>0.1</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>0.5</maxSeverity>
         <description>.</description>
         <stages>
             <li>
-                <painOffset>0.40</painOffset>
-                <restFallFactor>2.0</restFallFactor>
-                <hungerRateFactor>2.00</hungerRateFactor>
-                <hediffGivers>
-                    <li Class="HediffGiver_Random">
-                        <hediff>ChemicalDamageSevere</hediff>
-                        <mtbDays>14</mtbDays>
-                        <partsToAffect>
-                            <li>Liver</li>
-                            <li>Kidney</li>
-                            <li>Lung</li>
-                            <li>Stomach</li>
-                            <li>Heart</li>
-                            <li>Brain</li>
-                        </partsToAffect>
-                        <countToAffect>1</countToAffect>
+                <minSeverity>0.01</minSeverity>
+                <painOffsets>0.2</painOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.2</offset>
                     </li>
-                </hediffGivers>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.25</minSeverity>
+                <painOffsets>0.2</painOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                </capMods>
             </li>
         </stages>
         <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.4</severityPerDay>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_NanoImplanted_II</targetHediff>
+            </li>
+        </comps>
+    </HediffDef>
+    
+    <HediffDef>
+        <defName>Celes_NanoImplanted_II</defName>
+        <label>celestia nanomachine implant II</label>
+        <labelNoun>stage II nanomachine implant</labelNoun>
+        <isBad>true</isBad>
+        <initialSeverity>0.5</initialSeverity>
+        <minSeverity>0.5</minSeverity>
+        <maxSeverity>0.9</maxSeverity>
+        <description>.</description>
+        <stages>
+            <li>
+                <minSeverity>0.5</minSeverity>
+                <painOffsets>0.6</painOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.5</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.5</severityPerDay>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_NanoImplanted_III</targetHediff>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Celes_NanoImplanted_III</defName>
+        <label>celestia nanomachine implant III</label>
+        <labelNoun>stage III nanomachine implant</labelNoun>
+        <isBad>true</isBad>
+        <initialSeverity>0.9</initialSeverity>
+        <minSeverity>0.9</minSeverity>
+        <maxSeverity>1</maxSeverity>
+        <lethalSeverity>1</lethalSeverity>
+        <description>.</description>
+        <stages>
+            <li>
+                <minSeverity>0.9</minSeverity>
+                <painOffsets>0.6</painOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.5</severityPerDay>
+            </li>
             <li Class="CelesFeature.Celes_HediffCompProperties_SpawnOnDeath">
                 <spawnPawn>false</spawnPawn>
-                <spawnThing>CelesNanoMachine</spawnThing>
-                <spawnCount>10</spawnCount>
+                <spawnThing>Celes_B</spawnThing>
+                <spawnCount>1</spawnCount>
             </li>
         </comps>
     </HediffDef>
