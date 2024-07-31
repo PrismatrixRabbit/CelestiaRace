@@ -533,6 +533,9 @@
 					<li>ExtractCelesNanoMachine</li>
 					<li>Celes_InstallBionicEar</li>
 				</recipeList>
+				
+				<blackRecipeList>
+				</blackRecipeList>
 
 				<plantList>
 					<li>Plant_CelesNano</li>

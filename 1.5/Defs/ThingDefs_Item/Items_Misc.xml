@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef ParentName="ResourceBase">
+        <defName>Celes_B</defName>
+        <label>感染的尸体!</label>
+        <description>.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/CelesBioGel</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>1</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>0.05</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <tradeability>None</tradeability>
+    </ThingDef>
+
+    <RecipeDef>
+        <defName>ButcherCeles_B</defName>
+        <label>ButcherCeles_B</label>
+        <description>Shred a dead mechanoid to try to salvage usable material.</description>
+        <jobString>Shredding mechanoid.</jobString>
+        <workAmount>300</workAmount>
+        <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+        <workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <efficiencyStat>ButcheryMechanoidEfficiency</efficiencyStat>
+        <effectWorking>ButcherMechanoid</effectWorking>
+        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Celes_B</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Celes_B</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <CelesNanoMachine>50</CelesNanoMachine>
+            <Neutroamine>50</Neutroamine>
+        </products>
+        <displayPriority>0</displayPriority>
+    </RecipeDef>
+    
+</Defs>

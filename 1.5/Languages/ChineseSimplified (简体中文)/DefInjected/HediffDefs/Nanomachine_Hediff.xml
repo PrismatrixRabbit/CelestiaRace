@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <Celes_NanoImplanted_I.label>侵入性尘构感染</Celes_NanoImplanted_I.label>
+    <Celes_NanoImplanted_I.description>过量的尘构物质被强行注射入个体体内，这些纳米机械会试图自我复制并填补与增强机体运动能力与感官能力，但也会不可避免的触发炎症反应造成疼痛和高度疲劳。注意，基因中缺少尘构抑制序列的个体将无法抑制尘构复制导致失控增殖！</Celes_NanoImplanted_I.description>
+    <Celes_NanoImplanted_I.stages.0.label>增殖期</Celes_NanoImplanted_I.stages.0.label>
+    <Celes_NanoImplanted_I.stages.1.label>活性期</Celes_NanoImplanted_I.stages.1.label>
+
+    <Celes_NanoImplanted_II.label>侵入性尘构感染 过度复制</Celes_NanoImplanted_II.label>
+    <Celes_NanoImplanted_II.description>过量的尘构物质已被强行注射入个体体内，仍在试图增强个体机能，但因为个体基因中缺少尘构抑制序列而失控增殖。尘构并没有失控，只是这个机体没有抑制检测。我们可以通过强行抽出患者体内的过量尘构并输入化学物质来抑制失控，并作为副产物获取一些尘构和中性胺，但这意味着极高的死亡率……又或许，我们可以放任尘构利用这些有机物。但无论如何，这将是抑制尘构复制的最后机会！</Celes_NanoImplanted_II.description>
+    <Celes_NanoImplanted_II.stages.0.label>超活性期</Celes_NanoImplanted_II.stages.0.label>
+    <Celes_NanoImplanted_II.stages.1.label>失控前期</Celes_NanoImplanted_II.stages.1.label>
+
+    <Celes_NanoImplanted_III.label>侵入性尘构感染 失控复制</Celes_NanoImplanted_III.label>
+    <Celes_NanoImplanted_III.description>过量的尘构物质已被强行注射入个体体内，并因为个体基因中缺少尘构抑制序列而完全失控增殖并无法阻止。尘构并没有失控，只是这个机体没有抑制检测。尘构物质会分解利用这具躯体的所有物质来自我复制，该躯体的脑机能也已经高度受损，表现出生命体征仅仅因为尘构在试图维持和增强该个体。理论上只有另一种纳米修复能医治该个体……除非我们不想＂医治＂它？</Celes_NanoImplanted_III.description>
+    <Celes_NanoImplanted_III.stages.0.label>失控后期</Celes_NanoImplanted_III.stages.0.label>
+
+    <Celes_ImplantNanomachine.label>侵入性尘构植入</Celes_ImplantNanomachine.label>
+    <Celes_ImplantNanomachine.description>向个体植入过量的侵入性增强尘构，该行为对星铃通常具有有限的损伤和一定的机体增强。但注意，基因中缺少尘构抑制序列的个体将无法抑制尘构复制导致失控增殖！</Celes_ImplantNanomachine.description>
+    <Celes_ImplantNanomachine.jobString>侵入性尘构植入</Celes_ImplantNanomachine.jobString>
+
+    <RemoveCelesNanoMachine_I.label>侵入性尘构关机</RemoveCelesNanoMachine_I.label>
+    <RemoveCelesNanoMachine_I.description>通过化学药物抑制尘构自我增殖机能，关闭体内所有活性尘构物质，并促使其转化为可被机体自然分解的有机物。</RemoveCelesNanoMachine_I.description>
+    <RemoveCelesNanoMachine_I.jobString>侵入性尘构关机</RemoveCelesNanoMachine_I.jobString>
+    <RemoveCelesNanoMachine_I.successfullyRemovedHediffMessage>{0}已经成功关闭{1}体内所有尘构物质，这些物质随后会自发无害化。</RemoveCelesNanoMachine_I.successfullyRemovedHediffMessage>
+
+    <RemoveCelesNanoMachine_II.label>侵入性尘构抑制</RemoveCelesNanoMachine_II.label>
+    <RemoveCelesNanoMachine_II.description>抽出患者体内的过量尘构并输入化学物质来抑制尘构失控增殖，关闭部分活性尘构物质，并取出尘构及其转化产物——中性胺，注意，这意味着极高的死亡率，并且不能停机全部过量尘构。</RemoveCelesNanoMachine_II.description>
+    <RemoveCelesNanoMachine_II.jobString>侵入性尘构抑制</RemoveCelesNanoMachine_II.jobString>
+    <RemoveCelesNanoMachine_II.successfullyRemovedHediffMessage>{0}已经成功抑制{1}体内的过量尘构物质，但仍需进一步手术来关停尘构。</RemoveCelesNanoMachine_II.successfullyRemovedHediffMessage>
+
+    <RemoveCelesNanoMachine_III.label>劣化控制论增强</RemoveCelesNanoMachine_III.label>
+    <RemoveCelesNanoMachine_III.description>这是最后一个办法。通过重设尘构指令，并将一个次级人格核心和重度尘构感染者的脑组织之间建立直接连接，我们可以让尘构填补该个体的组织并在机械与生物之间传递信息流。星铃称之为＂劣化控制论增强＂，但称其为＂尘构行尸化＂显然更为恰当。\n\n这个个体会变得难以情绪崩溃，并获得机体运动能力的强化，但它也会难以学习知识，并无法再从事复杂工作和研究工作。</RemoveCelesNanoMachine_III.description>
+    <RemoveCelesNanoMachine_III.jobString>劣化控制论增强</RemoveCelesNanoMachine_III.jobString>
+    <RemoveCelesNanoMachine_III.successfullyRemovedHediffMessage>{0}已经成功对{1}进行劣化控制论增强，{1}不会再痛苦。</RemoveCelesNanoMachine_III.successfullyRemovedHediffMessage>
+
+    <Celes_NanoImplanted_IV.label>劣化控制论增强</Celes_NanoImplanted_IV.label>
+    <Celes_NanoImplanted_IV.description>这个个体已经变得难以情绪崩溃，并获得机体运动能力的强化，但它也会难以学习知识，并无法再从事复杂工作和研究工作。</Celes_NanoImplanted_IV.description>
+    
+</LanguageData>
