@@ -1,45 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef ParentName="MedicineBase">
-        <defName>MedicineCeles</defName>
-        <label>celestia emergency medicinie </label>
-        <description>A small medicine kit including varieties of compound gel, which use to sterilize,heal wound or just supress disease.</description>
-        <possessionCount>2</possessionCount>
-        <!--<graphicData>
-            <texPath></texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.85</drawSize>
-        </graphicData>-->
-        <techLevel>Industrial</techLevel>
-        <statBases>
-            <MarketValue>24</MarketValue>
-            <Mass>0.25</Mass>
-            <Flammability>0.5</Flammability>
-            <MedicalPotency>1.2</MedicalPotency>
-            <MedicalQualityMax>1.10</MedicalQualityMax>
-            <DeteriorationRate>1</DeteriorationRate>
-            <WorkToMake>900</WorkToMake>
-        </statBases>
-        <costList>
-            <MedicineHerbal>1</MedicineHerbal>
-            <Neutroamine>1</Neutroamine>
-            <CelesBioGel>2</CelesBioGel>
-        </costList>
-        <recipeMaker>
-            <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-            <workSkill>Intellectual</workSkill>
-            <recipeUsers>
-                <li>DrugLab</li>
-            </recipeUsers>
-            <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>4</Crafting>
-                <Intellectual>5</Intellectual>
-            </skillRequirements>
-            <bulkRecipeCount>5</bulkRecipeCount>
-        </recipeMaker>
-        <allowedArchonexusCount>10</allowedArchonexusCount>
-    </ThingDef>
     
     <ThingDef ParentName="ResourceBase">
         <defName>CelesBioGel</defName>
@@ -48,7 +8,7 @@
         <possessionCount>5</possessionCount>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Celes/Item/CelesBioGel</texPath>
+            <texPath>Celes/Item/Resource/CelesBioGel</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.85</drawSize>
         </graphicData>
@@ -68,40 +28,13 @@
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>CelesKeyCard_I</defName>
-        <label>celestia encrypt key card-artillery strike</label>
-        <description>Single-use encrypted key card with stored PIN used to calculate the authorization code to call artillery strike.</description>
-        <possessionCount>2</possessionCount>
-        <graphicData>
-            <texPath>Things/Item/Resource/ComponentIndustrial</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-        </graphicData>
-        <soundInteract>Standard_Pickup</soundInteract>
-        <soundDrop>Standard_Pickup</soundDrop>
-        <stackLimit>50</stackLimit>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-            <MarketValue>800</MarketValue>
-            <Mass>0.12</Mass>
-            <Flammability>0.4</Flammability>
-        </statBases>
-        <intricate>true</intricate>
-        <thingCategories>
-            <li>Manufactured</li>
-        </thingCategories>
-        <allowedArchonexusCount>10</allowedArchonexusCount>
-    </ThingDef>
-
-    <ThingDef ParentName="ResourceBase">
         <defName>CelesCloth</defName>
         <label>待命名</label>
         <description>.</description>
-        <!--<graphicData>
-            <texPath>Things/Item/Resource/Cloth</texPath>
+        <graphicData>
+            <texPath>Celes/Item/Resource/CelesCloth</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-            <color>(162,157,152)</color>
-        </graphicData>-->
+        </graphicData>
         <statBases>
             <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
@@ -126,7 +59,7 @@
             <categories>
                 <li>Fabric</li>
             </categories>
-            <color>(162,157,152)</color>
+            <color>(180,220,240)</color>
             <commonality>1.4</commonality>
             <allowColorGenerators>true</allowColorGenerators>
             <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
@@ -182,7 +115,7 @@
         <possessionCount>5</possessionCount>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Celes/Item/CelesNanoMachine</texPath>
+            <texPath>Celes/Item/Resource/CelesNanoMachine</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.85</drawSize>
         </graphicData>
@@ -318,4 +251,33 @@
         </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>80</allowedArchonexusCount>
-    </ThingDef></Defs>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>Celes_IndustrialChips</defName>
+        <label>component</label>
+        <description>Miscellaneous gears, capacitors, circuit boards, tubes, wheels, sensors, wires, chips, processors, and other electronic and industrial parts. Necessary for assembling complex machines or electronics.</description>
+        <possessionCount>2</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Resource/ComponentIndustrial</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>32</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0.6</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </ThingDef>
+
+</Defs>

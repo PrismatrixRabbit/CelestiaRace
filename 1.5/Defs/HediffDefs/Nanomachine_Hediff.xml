@@ -168,7 +168,7 @@
             </li>
             <li Class="CelesFeature.Celes_HediffCompProperties_SpawnOnDeath">
                 <spawnPawn>false</spawnPawn>
-                <spawnThing>Celes_B</spawnThing>
+                <spawnThing>Celes_NanoCrystallisedCorpse</spawnThing>
                 <spawnCount>1</spawnCount>
             </li>
             <li Class="HediffCompProperties_Discoverable">

@@ -4,10 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="修啊修bug">
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Hediffs_Mechanitor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Hediffs_Mechanitor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/Surgery/Surgery_implant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/Surgery/Surgery_implant.xml" afterDir="false" />
+    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="翻译修正">
+      <change afterPath="$PROJECT_DIR$/1.5/Defs/ResearchProjectDefs/ResearchProjectTagDefs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_Utility.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/CelesKeyCard/CelesKeyCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/Celes_NanoCrystallisedCorpse/Celes_NanoCrystallisedCorpse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/MedicineCeles/MedicineCeles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/Resource/CelesCloth/CelesCloth_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/Resource/CelesCloth/CelesCloth_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Item/Resource/CelesCloth/CelesCloth_c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/FactionDefs/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/FactionDefs/Factions_Celes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Nanomachine_Hediff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Nanomachine_Hediff.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ResearchProjectDefs/CelesResearchProjects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ResearchProjectDefs/CelesResearchProjects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_Misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Race/Race_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Race/Race_Celes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_IndustryMelee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_IndustryMelee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.AlienBackstoryDef/Backstory_CelesAdult_Outlander.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.AlienBackstoryDef/Backstory_CelesAdult_Outlander.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ResearchProjectDef/CelesResearchProjects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ResearchProjectDef/CelesResearchProjects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ResearchTabDef/CelesResearchProjects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ResearchTabDef/CelesResearchProjects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/CelesBioGel/CelesBioGel_a.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Item/Resource/CelesBioGel/CelesBioGel_a.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/CelesBioGel/CelesBioGel_b.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Item/Resource/CelesBioGel/CelesBioGel_b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/CelesBioGel/CelesBioGel_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Item/Resource/CelesBioGel/CelesBioGel_c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/CelesNanoMachine/CelesNanoMachine_a.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Item/Resource/CelesNanoMachine/CelesNanoMachine_a.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/CelesNanoMachine/CelesNanoMachine_b.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Item/Resource/CelesNanoMachine/CelesNanoMachine_b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/CelesNanoMachine/CelesNanoMachine_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Item/Resource/CelesNanoMachine/CelesNanoMachine_c.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +103,8 @@
       <workItem from="1722333019548" duration="6000" />
       <workItem from="1722344164925" duration="999000" />
       <workItem from="1722349719393" duration="1953000" />
-      <workItem from="1722412259712" duration="7692000" />
+      <workItem from="1722412259712" duration="32217000" />
+      <workItem from="1722488833951" duration="18102000" />
     </task>
     <task id="LOCAL-00001" summary="修改背景">
       <option name="closed" value="true" />
@@ -195,7 +218,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722420284542</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="纳米感染,">
+      <option name="closed" value="true" />
+      <created>1722454619436</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722454619436</updated>
+    </task>
+    <task id="LOCAL-00016" summary="翻译修正">
+      <option name="closed" value="true" />
+      <created>1722456001162</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722456001162</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +250,9 @@
     <MESSAGE value="派系支援" />
     <MESSAGE value="１.５外勤部文本更新" />
     <MESSAGE value="修啊修bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修啊修bug" />
+    <MESSAGE value="纳米感染," />
+    <MESSAGE value="翻译修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="翻译修正" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

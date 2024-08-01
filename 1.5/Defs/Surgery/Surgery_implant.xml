@@ -8,7 +8,7 @@
         <developmentalStageFilter>Child, Adult</developmentalStageFilter>
     </RecipeDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
+    <RecipeDef ParentName="Celes_Surgery">
         <defName>ExtractCelesNanoMachine</defName>
         <label>extract celestia nanomachine</label>
         <description>Extract a hemogen pack from the target. The operation will fail to produce a hemogen pack if the target does not have enough blood.\n\nHemogen packs can be administered to others to reduce blood loss or to satiate those who feed on blood.</description>
@@ -24,6 +24,9 @@
         <uiIconThing>CelesNanoMachine</uiIconThing>
         <anesthetize>false</anesthetize>
         <workSkillLearnFactor>2</workSkillLearnFactor>
+        <products>
+            <CelesNanoMachine>2</CelesNanoMachine>
+        </products>
     </RecipeDef>
     
 </Defs>

@@ -4,8 +4,55 @@
     <ResearchTabDef>
         <defName>Celes_ResearchTab</defName>
         <label>celestia research</label>
+        <generalTitle>celestia research projects</generalTitle>
+        <generalDescription>.</generalDescription>
     </ResearchTabDef>
-    
+
+    <ResearchProjectDef>
+        <defName>Celes_MainTech_I</defName>
+        <label>Celes_MainTech_I</label>
+        <description>.</description>
+        <baseCost>300</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <prerequisites>
+        </prerequisites>
+        <researchViewX>0</researchViewX>
+        <researchViewY>2.4</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+            <li>Celes_ClassicStart</li>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_MainTech_II</defName>
+        <label>Celes_MainTech_II</label>
+        <description>.</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_MainTech_I</li>
+            <li>MicroelectronicsBasics</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2.4</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_MainTech_III</defName>
+        <label>Celes_MainTech_III</label>
+        <description>.</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <hiddenPrerequisites>
+            <li>Celes_MainTech_II</li>
+        </hiddenPrerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>2.4</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
     <ResearchProjectDef>
         <defName>Celes_Apparel_I</defName>
         <label>celestia basic apparel permission</label>
@@ -13,8 +60,10 @@
         <baseCost>300</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
+            <li>Celes_MainTech_I</li>
+            <li>Electricity</li>
         </prerequisites>
-        <researchViewX>0</researchViewX>
+        <researchViewX>1</researchViewX>
         <researchViewY>0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -28,8 +77,8 @@
         <prerequisites>
             <li>Celes_Apparel_I</li>
         </prerequisites>
-        <researchViewX>1</researchViewX>
-        <researchViewY>0.3</researchViewY>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -43,9 +92,26 @@
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_Apparel_II</li>
+            <li>Celes_Cloth</li>
         </prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>0.3</researchViewY>
+        <researchViewX>3</researchViewX>
+        <researchViewY>0.4</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Apparel_III_a</defName>
+        <label>celestia specialized apparel permission</label>
+        <description>Level 3 Celestia apparel production permission, authorised by celestia government</description>
+        <baseCost>800</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Apparel_II</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>0</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -55,31 +121,120 @@
         <defName>Celes_Apparel_IV</defName>
         <label>celestia military apparel permission</label>
         <description>Level 4 Celestia apparel production permission, authorised by celestia government</description>
-        <baseCost>1200</baseCost>
+        <baseCost>1500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_Apparel_III</li>
+            <li>Celes_AdvancedCloth</li>
+            <li>Celes_Manufactory_II</li>
         </prerequisites>
-        <researchViewX>3</researchViewX>
-        <researchViewY>0.3</researchViewY>
+        <researchViewX>5</researchViewX>
+        <researchViewY>0.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
     </ResearchProjectDef>
-    
+
     <ResearchProjectDef>
-        <defName>Celes_StartWeapon</defName>
-        <label>celestia starter weapon permission</label>
-        <description>celestia starter weapon production permission, authorised bby celestia government.</description>
-        <baseCost>250</baseCost>
+        <defName>Celes_Apparel_V</defName>
+        <label>celestia military apparel permission</label>
+        <description>Level 4 Celestia apparel production permission, authorised by celestia government</description>
+        <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
+            <li>Celes_Apparel_IV</li>
         </prerequisites>
-        <researchViewX>0</researchViewX>
-        <researchViewY>1.3</researchViewY>
+        <researchViewX>6</researchViewX>
+        <researchViewY>0.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
     </ResearchProjectDef>
-    
+
+    <ResearchProjectDef>
+        <defName>Celes_Cloth</defName>
+        <label>celestia military apparel permission</label>
+        <description>Level 4 Celestia apparel production permission, authorised by celestia government</description>
+        <baseCost>1200</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Apparel_I</li>
+            <li>Celes_Manufactory_I</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0.6</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_AdvancedCloth</defName>
+        <label>celestia military apparel permission</label>
+        <description>Level 4 Celestia apparel production permission, authorised by celestia government</description>
+        <baseCost>1200</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_MainTech_II</li>
+            <li>Celes_Cloth</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>0.6</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Manufactory_I</defName>
+        <label>celestia early weapon permission</label>
+        <description>celestia early weapon production permission, authorised by celestia government.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_MainTech_I</li>
+            <li>Machining</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1.2</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Manufactory_II</defName>
+        <label>celestia early weapon permission</label>
+        <description>celestia early weapon production permission, authorised by celestia government.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_MainTech_II</li>
+            <li>Celes_Manufactory_I</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>1.2</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Manufactory_II_a</defName>
+        <label>celestia early weapon permission</label>
+        <description>celestia early weapon production permission, authorised by celestia government.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Manufactory_II</li>
+        </prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>0.9</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
     <ResearchProjectDef>
         <defName>Celes_Weapon_I</defName>
         <label>celestia early weapon permission</label>
@@ -87,10 +242,10 @@
         <baseCost>1000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_StartWeapon</li>
+            <li>Celes_Manufactory_I</li>
         </prerequisites>
-        <researchViewX>1</researchViewX>
-        <researchViewY>1.3</researchViewY>
+        <researchViewX>2</researchViewX>
+        <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -105,8 +260,8 @@
         <prerequisites>
             <li>Celes_Weapon_I</li>
         </prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>1.3</researchViewY>
+        <researchViewX>3</researchViewX>
+        <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -118,9 +273,12 @@
         <description>celestia late weapon production permission, authorised by celestia government.</description>
         <baseCost>1500</baseCost>
         <techLevel>Spacer</techLevel>
-        <prerequisites><li>Celes_Weapon_II</li></prerequisites>
-        <researchViewX>3</researchViewX>
-        <researchViewY>1.3</researchViewY>
+        <prerequisites>
+            <li>Celes_Manufactory_II</li>
+            <li>Celes_Weapon_II</li>
+        </prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -132,9 +290,11 @@
         <description>celestia experimental weapon production permission, authorised by celestia government.</description>
         <baseCost>2000</baseCost>
         <techLevel>Spacer</techLevel>
-        <prerequisites><li>Celes_Weapon_III</li></prerequisites>
-        <researchViewX>4</researchViewX>
-        <researchViewY>1.3</researchViewY>
+        <prerequisites>
+            <li>Celes_Weapon_III</li>
+        </prerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -146,9 +306,12 @@
         <description>celestia elementary biochemical products production permission, authorised by celestia central research institute.</description>
         <baseCost>800</baseCost>
         <techLevel>Industrial</techLevel>
-        <prerequisites><li>MedicineProduction</li></prerequisites>
-        <researchViewX>0</researchViewX>
-        <researchViewY>2.3</researchViewY>
+        <prerequisites>
+            <li>Celes_MainTech_I</li>
+            <li>MedicineProduction</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -159,8 +322,8 @@
         <baseCost>1000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites><li>Celes_Bio_I</li></prerequisites>
-        <researchViewX>1</researchViewX>
-        <researchViewY>2.3</researchViewY>
+        <researchViewX>3</researchViewX>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -170,9 +333,12 @@
         <description>celestia late biochemical products production permission, authorised by celestia central research institute.</description>
         <baseCost>1000</baseCost>
         <techLevel>Industrial</techLevel>
-        <prerequisites><li>Celes_Bio_II</li></prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>2.3</researchViewY>
+        <prerequisites>
+            <li>Celes_MainTech_II</li>
+            <li>Celes_Bio_II</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -183,8 +349,33 @@
         <baseCost>1000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites><li>Celes_Bio_III</li></prerequisites>
-        <researchViewX>3</researchViewX>
-        <researchViewY>2.3</researchViewY>
+        <researchViewX>5</researchViewX>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_NanoImplant_I</defName>
+        <label>celestia experimental biochemical project</label>
+        <description>celestia experimental biochemical products production permission, authorised by celestia central research institute.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites><li>Celes_Bio_III</li></prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>3</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_NanoImplant_II</defName>
+        <label>celestia experimental biochemical project</label>
+        <description>celestia experimental biochemical products production permission, authorised by celestia central research institute.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites><li>Celes_NanoImplant_I</li></prerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>3</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
 </Defs>

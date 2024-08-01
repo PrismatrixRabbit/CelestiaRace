@@ -2,13 +2,13 @@
 <Defs>
     
     <ThingDef ParentName="ResourceBase">
-        <defName>Celes_B</defName>
+        <defName>Celes_NanoCrystallisedCorpse</defName>
         <label>感染的尸体!</label>
         <description>.</description>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Celes/Item/CelesBioGel</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Celes/Item/Celes_NanoCrystallisedCorpse/Celes_NanoCrystallisedCorpse</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
             <drawSize>0.85</drawSize>
         </graphicData>
         <stackLimit>1</stackLimit>
@@ -20,12 +20,15 @@
             <Mass>0.05</Mass>
             <Flammability>0.2</Flammability>
         </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
         <tradeability>None</tradeability>
     </ThingDef>
 
     <RecipeDef>
-        <defName>ButcherCeles_B</defName>
-        <label>ButcherCeles_B</label>
+        <defName>ButcherCeles_NanoCrystallisedCorpse</defName>
+        <label>ButcherCeles_NanoCrystallisedCorpse</label>
         <description>Shred a dead mechanoid to try to salvage usable material.</description>
         <jobString>Shredding mechanoid.</jobString>
         <workAmount>300</workAmount>
@@ -39,16 +42,16 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Celes_B</li>
+                        <li>Celes_NanoCrystallisedCorpse</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
-            <categories>
-                <li>Celes_B</li>
-            </categories>
+            <thingDefs>
+                <li>Celes_NanoCrystallisedCorpse</li>
+            </thingDefs>
         </fixedIngredientFilter>
         <products>
             <CelesNanoMachine>50</CelesNanoMachine>

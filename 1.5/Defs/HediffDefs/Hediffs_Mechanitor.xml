@@ -37,7 +37,7 @@
         </graphicData>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
+    <RecipeDef ParentName="Celes_Surgery">
         <defName>RemoveCelesMechlinkRestriction</defName>
         <label>remove celestia mechlink restriction</label>
         <description>.</description>
