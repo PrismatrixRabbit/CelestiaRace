@@ -7,10 +7,10 @@
   <!-- EN: Unlock Celestia tech items by decoding the symbols and words in Celestia tech to unlock the most basic equipment for the Rimworld environment. -->
   
   <Celes_MainTech_II.label>尘构技术解译</Celes_MainTech_II.label>
-  <Celes_MainTech_II.description>尘构技术解译。</Celes_MainTech_II.description>
+  <Celes_MainTech_II.description>破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。</Celes_MainTech_II.description>
 
   <Celes_MainTech_III.label>尘构重编程(WIP)</Celes_MainTech_III.label>
-  <Celes_MainTech_III.description>尘构重编程。</Celes_MainTech_III.description>
+  <Celes_MainTech_III.description>尘构重编程，绝赞制作中。</Celes_MainTech_III.description>
 
   <Celes_Apparel_I.label>星铃制衣标准</Celes_Apparel_I.label>
   <Celes_Apparel_I.description>星铃日常服装许可。</Celes_Apparel_I.description>

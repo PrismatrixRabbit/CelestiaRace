@@ -96,6 +96,16 @@
 			<dataNorth><layer>40</layer></dataNorth>
 		</drawData>
 	</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_MainTech_I</researchPrerequisite>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>CraftingSpot</li>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>200</displayPriority>
+		</recipeMaker>
 	</ThingDef>
 	
 	<ThingDef ParentName="Celes_ShellBase"><!--军装大衣-->

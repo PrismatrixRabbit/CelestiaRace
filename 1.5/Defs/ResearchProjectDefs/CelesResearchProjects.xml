@@ -10,8 +10,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_MainTech_I</defName>
-        <label>Celes_MainTech_I</label>
-        <description>.</description>
+        <label>Decoding Celestia technical language</label>
+        <description>Unlock Celestia tech items by decoding the symbols and words in Celestia tech to unlock the most basic equipment for the Rimworld environment.</description>
         <baseCost>300</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>

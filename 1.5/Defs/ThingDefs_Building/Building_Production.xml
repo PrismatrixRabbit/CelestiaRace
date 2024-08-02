@@ -72,8 +72,7 @@
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites>
-            <li>Smithing</li>
-            <li>Electricity</li>
+            <li>Celes_Manufactory_I</li>
         </researchPrerequisites>
     </ThingDef>
     
@@ -146,7 +145,7 @@
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>ComplexClothing</li>
-			<li>Electricity</li>
+			<li>Celes_Apparel_I</li>
 		</researchPrerequisites>
     </ThingDef>
 	
