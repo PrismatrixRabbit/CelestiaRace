@@ -2,8 +2,10 @@
 <LanguageData>
   
   <Celes_MainTech_I.label>解码星铃技术语言</Celes_MainTech_I.label>
-  <Celes_MainTech_I.description>通过解码星铃技术中的符号与文字。</Celes_MainTech_I.description>
-
+  <!-- EN: Decoding Celestia technical language -->
+  <Celes_MainTech_I.description>通过解码星铃技术中的符号与文字来开启星铃科技项目，解锁最基础的装备以适应边缘世界环境。</Celes_MainTech_I.description>
+  <!-- EN: Unlock Celestia tech items by decoding the symbols and words in Celestia tech to unlock the most basic equipment for the Rimworld environment. -->
+  
   <Celes_MainTech_II.label>尘构技术解译</Celes_MainTech_II.label>
   <Celes_MainTech_II.description>尘构技术解译。</Celes_MainTech_II.description>
 

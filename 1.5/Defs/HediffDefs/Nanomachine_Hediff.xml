@@ -452,7 +452,7 @@
         <defName>Celes_ImplantNanomachine_ForCeles</defName>
         <label>implant nanomachine</label>
         <description>.</description>
-        <workerClass>CelesFeature.Celes_Recipe_AddHediff</workerClass>
+        <workerClass>Recipe_AddHediff</workerClass>
         <jobString>Implanting nanomachine</jobString>
         <workAmount>2000</workAmount>
         <hideBodyPartNames>true</hideBodyPartNames>
