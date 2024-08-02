@@ -528,12 +528,10 @@
                 <relationChanceModifierSibling>0</relationChanceModifierSibling>
             </relationSettings>
             <raceRestriction>
-				<!--测试-->
 				<recipeList>
 				</recipeList>
 				
 				<blackRecipeList>
-					<li>ExtractHemogenPack</li>
 				</blackRecipeList>
 
 				<plantList>

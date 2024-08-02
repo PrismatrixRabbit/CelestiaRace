@@ -17,5 +17,12 @@
 
     <Celes_NanoImplanted_IV.label>劣化控制论增强</Celes_NanoImplanted_IV.label>
     <Celes_NanoImplanted_IV.description>这个个体已经变得难以情绪崩溃，并获得机体运动能力的强化，但它也会难以学习知识，并无法再从事复杂工作和研究工作。</Celes_NanoImplanted_IV.description>
+
+    <!-- ========== 星铃部分 ========== -->
+
+    <Celes_NanoImplanted_ForCeles.label>侵入性尘构感染</Celes_NanoImplanted_ForCeles.label>
+    <Celes_NanoImplanted_ForCeles.description>过量的尘构物质被强行注射入个体体内，这些纳米机械会试图自我复制并填补与增强机体运动能力与感官能力，但也会不可避免的触发炎症反应造成疼痛和高度疲劳。</Celes_NanoImplanted_ForCeles.description>
+    <Celes_NanoImplanted_ForCeles.stages.0.label>增殖期</Celes_NanoImplanted_ForCeles.stages.0.label>
+    <Celes_NanoImplanted_ForCeles.stages.1.label>活性期</Celes_NanoImplanted_ForCeles.stages.1.label>
     
 </LanguageData>

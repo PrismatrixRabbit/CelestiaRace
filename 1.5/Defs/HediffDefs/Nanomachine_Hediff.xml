@@ -108,6 +108,20 @@
                         <offset>-0.15</offset>
                     </li>
                 </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>37</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>ChemicalDamageSevere</hediff>
+                        <mtbDays>37</mtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                </hediffGivers>
             </li>
             <li>
                 <label>minor</label>
@@ -174,6 +188,16 @@
             <li Class="HediffCompProperties_Discoverable">
                 <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
             </li>
+            <li Class="HediffCompProperties_RemoveIfOtherHediff">
+                <hediffs>
+                    <li>Celes_NanoImplanted_IV</li>
+                </hediffs>
+                <stages>0~</stages>
+                <mtbHours>0</mtbHours>
+                <message>{0} is no longer .</message>
+                <messageType>SilentInput</messageType>
+                <onlyMessageForColonistsOrPrisoners>true</onlyMessageForColonistsOrPrisoners>
+            </li>
         </comps>
     </HediffDef>
 
@@ -181,7 +205,7 @@
         <defName>Celes_ImplantNanomachine</defName>
         <label>implant nanomachine</label>
         <description>.</description>
-        <workerClass>Recipe_AddHediff</workerClass>
+        <workerClass>CelesFeature.Celes_Recipe_AddHediff</workerClass>
         <jobString>Implanting nanomachine</jobString>
         <workAmount>2000</workAmount>
         <hideBodyPartNames>true</hideBodyPartNames>
@@ -243,7 +267,6 @@
         <hideBodyPartNames>true</hideBodyPartNames>
         <targetsBodyPart>false</targetsBodyPart>
         <removesHediff>Celes_NanoImplanted_II</removesHediff>
-        <addsHediff>Celes_NanoImplanted_I</addsHediff>
         <skillRequirements>
             <Medicine>4</Medicine>
         </skillRequirements>
@@ -278,15 +301,14 @@
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
-        <defName>RemoveCelesNanoMachine_III</defName>
+        <defName>Celes_DegradedCyberneticSurgery</defName>
         <label>remove celestia nanomachine infection from infected person</label>
         <description>.</description>
-        <workerClass>Recipe_RemoveHediff</workerClass>
+        <workerClass>CelesFeature.Celes_DegradedCyberneticSurgery</workerClass>
         <jobString>Removing nanomachine infection.</jobString>
         <workAmount>2500</workAmount>
         <hideBodyPartNames>true</hideBodyPartNames>
         <targetsBodyPart>false</targetsBodyPart>
-        <removesHediff>Celes_NanoImplanted_III</removesHediff>
         <addsHediff>Celes_NanoImplanted_IV</addsHediff>
         <skillRequirements>
             <Medicine>6</Medicine>
@@ -294,7 +316,6 @@
         </skillRequirements>
         <surgerySuccessChanceFactor>0.66</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.5</deathOnFailedSurgeryChance>
-        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s nanomachine infection from their body.</successfullyRemovedHediffMessage>
         <isViolation>true</isViolation>
         <anesthetize>true</anesthetize>
         <ingredients>
@@ -337,6 +358,8 @@
                 <disabledWorkTags>
                     <li>Intellectual</li>
                     <li>ManualSkilled</li>
+                    <li>Artistic</li>
+                    <li>Animals</li>
                 </disabledWorkTags>
                 <capMods>
                     <li>
@@ -364,5 +387,121 @@
             </li>
         </comps>
     </HediffDef>
+    
+    <!-- ========== 星铃部分 ========== -->
+
+    <HediffDef ParentName="Celes_NanoHediffBase">
+        <defName>Celes_NanoImplanted_ForCeles</defName>
+        <label>celestia nanomachine implant I</label>
+        <description>.</description>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>0.5</maxSeverity>
+        <stages>
+            <li>
+                <label>minor</label>
+                <minSeverity>0.001</minSeverity>
+                <painOffset>0.1</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>minor</label>
+                <minSeverity>0.08</minSeverity>
+                <painOffset>0.1</painOffset>
+                <statOffsets>
+                    <RestFallRateFactor>0.5</RestFallRateFactor>
+                </statOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.16</severityPerDay>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <RecipeDef ParentName="Celes_Surgery">
+        <defName>Celes_ImplantNanomachine_ForCeles</defName>
+        <label>implant nanomachine</label>
+        <description>.</description>
+        <workerClass>CelesFeature.Celes_Recipe_AddHediff</workerClass>
+        <jobString>Implanting nanomachine</jobString>
+        <workAmount>2000</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <isViolation>true</isViolation>
+        <anesthetize>false</anesthetize>
+        <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+        <addsHediff>Celes_NanoImplanted_ForCeles</addsHediff>
+        <skillRequirements>
+            <Medicine>6</Medicine>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CelesNanoMachine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Celes_Surgery">
+        <defName>RemoveCelesNanoMachine_ForCeles</defName>
+        <label>remove celestia nanomachine infection from infected person</label>
+        <description>.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Removing nanomachine infection.</jobString>
+        <workAmount>500</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <removesHediff>Celes_NanoImplanted_ForCeles</removesHediff>
+        <skillRequirements>
+            <Medicine>4</Medicine>
+        </skillRequirements>
+        <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s nanomachine infection from their body.</successfullyRemovedHediffMessage>
+        <isViolation>false</isViolation>
+        <anesthetize>false</anesthetize>
+        <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+    </RecipeDef>
     
 </Defs>
