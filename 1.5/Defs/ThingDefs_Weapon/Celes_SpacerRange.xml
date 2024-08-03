@@ -491,8 +491,9 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
         </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
         <projectile>
-            <damageDef>Vaporize</damageDef>
+            <damageDef>Bomb</damageDef>
             <speed>85</speed>
             <explosionRadius>2.9</explosionRadius>
             <screenShakeFactor>0.5</screenShakeFactor>
