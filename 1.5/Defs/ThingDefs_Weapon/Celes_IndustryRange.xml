@@ -3,7 +3,6 @@
     
     <ThingDef Name="Celes_EarlyGunBase" ParentName="BaseMakeableGun" Abstract="True">
         <recipeMaker>
-            <researchPrerequisite>Celes_Weapon_I</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>Celes_MultifunctionalTab</li>
             </recipeUsers>
@@ -15,7 +14,6 @@
     
     <ThingDef Name="Celes_MidGunBase" ParentName="BaseMakeableGun" Abstract="True">
         <recipeMaker>
-            <researchPrerequisite>Celes_Weapon_II</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>Celes_MultifunctionalTab</li>
             </recipeUsers>
@@ -57,6 +55,10 @@
             <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <researchPrerequisite>
+                <li>Celes_Weapon_I</li>
+                <li>Gunsmithing</li>
+            </researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
@@ -140,6 +142,10 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <researchPrerequisite>
+                <li>Celes_Weapon_I</li>
+                <li>Gunsmithing</li>
+            </researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
@@ -223,6 +229,10 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <researchPrerequisite>
+                <li>Celes_Weapon_I</li>
+                <li>Gunsmithing</li>
+            </researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
@@ -303,6 +313,15 @@
             <WoodLog>65</WoodLog>
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
+        <recipeMaker>
+            <researchPrerequisite>
+                <li>Celes_Weapon_I</li>
+                <li>Gunsmithing</li>
+            </researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
@@ -366,6 +385,10 @@
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <researchPrerequisite>
+                <li>Celes_Weapon_II</li>
+                <li>GasOperation</li>
+            </researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -435,6 +458,10 @@
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <researchPrerequisite>
+                <li>Celes_Weapon_II</li>
+                <li>PrecisionRifling</li>
+            </researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -518,6 +545,15 @@
             <Chemfuel>45</Chemfuel>
             <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
+        <recipeMaker>
+            <researchPrerequisite>
+                <li>Celes_Weapon_II</li>
+                <li>PrecisionRifling</li>
+            </researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
@@ -582,8 +618,12 @@
             <ComponentIndustrial>12</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <researchPrerequisite>
+                <li>Celes_Weapon_II</li>
+                <li>PrecisionRifling</li>
+            </researchPrerequisite>
             <skillRequirements>
-                <Crafting>10</Crafting>
+                <Crafting>8</Crafting>
             </skillRequirements>
         </recipeMaker>
         <verbs>

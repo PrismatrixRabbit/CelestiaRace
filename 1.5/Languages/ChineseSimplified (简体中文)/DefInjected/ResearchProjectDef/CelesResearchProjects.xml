@@ -7,55 +7,52 @@
   <!-- EN: Unlock Celestia tech items by decoding the symbols and words in Celestia tech to unlock the most basic equipment for the Rimworld environment. -->
   
   <Celes_MainTech_II.label>尘构技术解译</Celes_MainTech_II.label>
-  <Celes_MainTech_II.description>破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。</Celes_MainTech_II.description>
+  <Celes_MainTech_II.description>破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。/n/n解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。</Celes_MainTech_II.description>
 
-  <Celes_MainTech_III.label>尘构重编程(WIP)</Celes_MainTech_III.label>
+  <Celes_MainTech_III.label>尘构重编程(即将推出)</Celes_MainTech_III.label>
   <Celes_MainTech_III.description>尘构重编程，绝赞制作中。</Celes_MainTech_III.description>
 
   <Celes_Apparel_I.label>星铃制衣标准</Celes_Apparel_I.label>
-  <Celes_Apparel_I.description>星铃日常服装许可。</Celes_Apparel_I.description>
+  <Celes_Apparel_I.description>在复杂衣物的基础上，进一步解析贴合星铃体型的制衣标准。解锁适用于星铃复杂衣物，比如防风大衣，夏装背心等。</Celes_Apparel_I.description>
 
   <Celes_Apparel_II.label>星铃日常服装</Celes_Apparel_II.label>
-  <Celes_Apparel_II.description>星铃日常服装许可。</Celes_Apparel_II.description>
+  <Celes_Apparel_II.description>允许制作星铃社会常见的各种日常服装，例如各种制服和丝袜。这些衣物开始必须在星铃缝纫台上制作。</Celes_Apparel_II.description>
 
-  <Celes_Apparel_III.label>先锋小队制服</Celes_Apparel_III.label>
-  <Celes_Apparel_III.description>星铃专业服装许可。</Celes_Apparel_III.description>
+  <Celes_Apparel_III.label>拓荒军事制服</Celes_Apparel_III.label>
+  <Celes_Apparel_III.description>研究星铃拓荒队的军事服装，这种制服款式曾经是星铃海军陆战队的军装，如今则广泛的用于星铃先锋小队中。</Celes_Apparel_III.description>
 
   <Celes_Apparel_III_a.label>星铃专业服装</Celes_Apparel_III_a.label>
-  <Celes_Apparel_III_a.description>星铃专业服装许可。</Celes_Apparel_III_a.description>
+  <Celes_Apparel_III_a.description>研究星铃拓荒队的专业服装，这些衣物大多是＂领航计划＂时期为了适应未知星球环境开发的特化服装，被用于各式特殊场景。</Celes_Apparel_III_a.description>
 
-  <Celes_Apparel_IV.label>星铃动力突击盔甲</Celes_Apparel_IV.label>
-  <Celes_Apparel_IV.description>星铃军用服装许可。</Celes_Apparel_IV.description>
+  <Celes_Apparel_IV.label>星铃动力突击装甲</Celes_Apparel_IV.label>
+  <Celes_Apparel_IV.description>解锁星铃动力突击盔甲，在太空活动防护服的基础上，结合一部分曾用于星铃外环星域治安部队的技术制作出属于星铃的动力突击装甲。\n\n真正用于星铃海军的标准动力装甲已经难以复刻，但这种装甲也足够面对边缘世界的冲突烈度。</Celes_Apparel_IV.description>
 
-  <Celes_Apparel_V.label>北冕座项目</Celes_Apparel_V.label>
-  <Celes_Apparel_V.description>星铃军用服装许可。</Celes_Apparel_V.description>
+  <Celes_Apparel_V.label>北冕座项目(即将推出)</Celes_Apparel_V.label>
+  <Celes_Apparel_V.description>北冕座项目，绝赞制作中，我和你说这就是雷神锤Mark V。</Celes_Apparel_V.description>
 
-  <Celes_Cloth.label>星铃织物</Celes_Cloth.label>
-  <Celes_Cloth.description>星铃专业服装许可。</Celes_Cloth.description>
-
-  <Celes_AdvancedCloth.label>星铃纳米织物</Celes_AdvancedCloth.label>
-  <Celes_AdvancedCloth.description>星铃军用服装许可。</Celes_AdvancedCloth.description>
+  <Celes_AdvancedCloth.label>尘构调用:微观纤维重组</Celes_AdvancedCloth.label>
+  <Celes_AdvancedCloth.description>解锁制作「尘化丝绸」，一种利用尘构重组微观纤维结构制成的高强度布料。</Celes_AdvancedCloth.description>
   
   <Celes_Manufactory_I.label>星铃加工标准</Celes_Manufactory_I.label>
-  <Celes_Manufactory_I.description>星铃专业服装许可。</Celes_Manufactory_I.description>
+  <Celes_Manufactory_I.description>解锁建造「星铃加工台」，针对星铃的加工标准设计的特殊制造台，用于制造各式星铃装备。</Celes_Manufactory_I.description>
 
-  <Celes_Manufactory_II.label>淬铃合金</Celes_Manufactory_II.label>
-  <Celes_Manufactory_II.description>星铃军用服装许可。</Celes_Manufactory_II.description>
+  <Celes_Manufactory_II.label>尘构调用:晶体结构重构</Celes_Manufactory_II.label>
+  <Celes_Manufactory_II.description>解锁制作「淬铃合金」，一种利用尘构重组金属晶格结构制成的特种合金。</Celes_Manufactory_II.description>
 
   <Celes_Manufactory_II_a.label>灵能专业化合金</Celes_Manufactory_II_a.label>
-  <Celes_Manufactory_II_a.description>星铃早期武器许可。</Celes_Manufactory_II_a.description>
+  <Celes_Manufactory_II_a.description>解锁「黑石合金」与「灵化合金」，对灵能反应具有特殊性质的两种合金。</Celes_Manufactory_II_a.description>
 
   <Celes_Weapon_I.label>星铃拓荒武器</Celes_Weapon_I.label>
-  <Celes_Weapon_I.description>星铃中期武器许可。</Celes_Weapon_I.description>
+  <Celes_Weapon_I.description>依照星铃标准设计拓荒武器，允许制作拓荒冰镐，并改良简单枪械。\n\n这些设计据说是源于最初的星铃从母星带来的古董文物，但没有人能证实亦或证伪。</Celes_Weapon_I.description>
 
   <Celes_Weapon_II.label>星铃古典武器</Celes_Weapon_II.label>
-  <Celes_Weapon_II.description>星铃中期武器许可。</Celes_Weapon_II.description>
+  <Celes_Weapon_II.description>按照星铃武器规范和弹药口径设计的古典武器，允许制作星铃制式军刀等武器，并改良精准步枪。\n\n这种古典的武器仍然用于星铃拓荒队的先锋小队中，或者被配发给前哨站居民防身，它们的历史却已经无从追溯。</Celes_Weapon_II.description>
 
   <Celes_Weapon_III.label>星铃制式武器</Celes_Weapon_III.label>
-  <Celes_Weapon_III.description>星铃后期武器许可。</Celes_Weapon_III.description>
+  <Celes_Weapon_III.description>解锁制作发射高能极化粒子束的星铃制式枪械,并制作标准款制式军刀。</Celes_Weapon_III.description>
   
   <Celes_Weapon_IV.label>星铃试验性武器</Celes_Weapon_IV.label>
-  <Celes_Weapon_IV.description>星铃试验性武器许可。</Celes_Weapon_IV.description>
+  <Celes_Weapon_IV.description>将旧时代飞船维修工具做试验性改造。</Celes_Weapon_IV.description>
   
   <Celes_Bio_I.label>星铃生化标准</Celes_Bio_I.label>
   <Celes_Bio_I.description>星铃初级生化许可。</Celes_Bio_I.description>

@@ -3,7 +3,6 @@
     
     <ThingDef Name="Celes_EarlyMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
         <recipeMaker>
-            <researchPrerequisite>Celes_MainTech_I</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>Celes_MultifunctionalTab</li>
             </recipeUsers>
@@ -16,7 +15,6 @@
 
     <ThingDef Name="Celes_MidMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
         <recipeMaker>
-            <researchPrerequisite>Celes_Weapon_II</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>Celes_MultifunctionalTab</li>
             </recipeUsers>
@@ -51,6 +49,10 @@
             <PlantWorkSpeed>1.2</PlantWorkSpeed>
         </equippedStatOffsets>
         <recipeMaker>
+            <researchPrerequisite>
+                <li>Celes_MainTech_I</li>
+                <li>Smithing</li>
+            </researchPrerequisite>
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
@@ -102,6 +104,10 @@
             <MiningSpeed>2</MiningSpeed>
         </equippedStatOffsets>
         <recipeMaker>
+            <researchPrerequisite>
+                <li>Celes_Weapon_I</li>
+                <li>Gunsmithing</li>
+            </researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
@@ -155,6 +161,7 @@
             <NegotiationAbility>0.3</NegotiationAbility>
         </equippedStatOffsets>
         <recipeMaker>
+            <researchPrerequisite>Celes_Weapon_II</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -227,6 +234,7 @@
             <PlantWorkSpeed>0.25</PlantWorkSpeed>
         </equippedStatOffsets>
         <recipeMaker>
+            <researchPrerequisite>Celes_Weapon_II</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>

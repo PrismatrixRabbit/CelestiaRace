@@ -18,7 +18,9 @@
 			<li>Celes_Apparel_OnSkin</li>
 		</thingCategories>
 	</ThingDef>
-	
+
+	<!-- ========== 日常服装 ========= -->
+
 	<ThingDef ParentName="Celes_OnSkinBase"><!--文职制服-->
 	<defName>Celes_CivilianUniform</defName>
 	<label>CivilianUniform</label>
@@ -52,13 +54,71 @@
 			<li>Celes_Daily</li>
 		</tags>
 	</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>305</displayPriority>
+		</recipeMaker>
 	<comps>
       <li>
         <compClass>CompColorable</compClass>
       </li>
     </comps>
 	</ThingDef>
-	
+
+	<!-- ========== 军事服装 ========= -->
+
+	<ThingDef ParentName="Celes_OnSkinBase"><!--星铃军装-->
+		<defName>Celes_MilitaryUniform</defName>
+		<label>MilitaryUniform</label>
+		<description>currently unavailable</description>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Celes/Apparel/OnSkin/MilitaryUniform/MilitaryUniform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>5400</WorkToMake>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<layers>
+				<li>Celes_Legwear</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/OnSkin/MilitaryUniform/MilitaryUniform</wornGraphicPath>
+			<tags>
+				<li>Celes_Military</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>315</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ========== 专业服装 ========= -->
+
 	<ThingDef ParentName="Celes_OnSkinBase"><!--拓荒防护服-->
 	<defName>Celes_ExploreVest</defName>
 	<label>ExploreVest</label>
@@ -94,46 +154,13 @@
 			<li>Celes_Explore</li>
 		</tags>
 	</apparel>
-	</ThingDef>
-	
-	<ThingDef ParentName="Celes_OnSkinBase"><!--星铃军装-->
-	<defName>Celes_MilitaryUniform</defName>
-	<label>MilitaryUniform</label>
-	<description>currently unavailable</description>
-	<costStuffCount>60</costStuffCount>
-	<stuffCategories>
-	    <li>Fabric</li>
-	</stuffCategories>
-	<graphicData>
-		<texPath>Celes/Apparel/OnSkin/MilitaryUniform/MilitaryUniform</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-	</graphicData>
-	<statBases>
-		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToMake>5400</WorkToMake>
-		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
-	</statBases>
-	<apparel>
-		<useWornGraphicMask>true</useWornGraphicMask>
-		<developmentalStageFilter>Adult</developmentalStageFilter>
-		<layers>
-			<li>Celes_Legwear</li>
-		</layers>
-		<bodyPartGroups>
-          <li>Torso</li>
-		  <li>Neck</li>
-          <li>Shoulders</li>
-		  <li>Arms</li>
-		  <li>Legs</li>
-        </bodyPartGroups>
-		<wornGraphicPath>Celes/Apparel/OnSkin/MilitaryUniform/MilitaryUniform</wornGraphicPath>
-		<tags>
-			<li>Celes_Military</li>
-		</tags>
-	</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_III_a</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>320</displayPriority>
+		</recipeMaker>
 	</ThingDef>
 	
 </Defs>
