@@ -66,7 +66,6 @@
         <description>.</description>
         <jobString>.</jobString>
         <workAmount>15000</workAmount>
-        <workSpeedStat>SmeltingSpeed</workSpeedStat>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -108,7 +107,6 @@
         <description>.</description>
         <jobString>.</jobString>
         <workAmount>15000</workAmount>
-        <workSpeedStat>SmeltingSpeed</workSpeedStat>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -150,7 +148,6 @@
         <description>.</description>
         <jobString>.</jobString>
         <workAmount>10000</workAmount>
-        <workSpeedStat>SmeltingSpeed</workSpeedStat>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

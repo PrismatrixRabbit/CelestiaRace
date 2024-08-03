@@ -360,6 +360,7 @@
                 <defaultProjectile>CelesBullet_Launcher</defaultProjectile>
                 <warmupTime>4.0</warmupTime>
                 <range>40.9</range>
+                <forcedMissRadius>1.9</forcedMissRadius>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
                 <burstShotCount>2</burstShotCount>
                 <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>

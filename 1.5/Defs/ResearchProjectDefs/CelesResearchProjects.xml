@@ -302,7 +302,7 @@
         <defName>Celes_Weapon_IV</defName>
         <label>celestia experimental weapon permission</label>
         <description>celestia experimental weapon production permission, authorised by celestia government.</description>
-        <baseCost>2000</baseCost>
+        <baseCost>5000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
@@ -329,7 +329,7 @@
             <li>MedicineProduction</li>
         </prerequisites>
         <researchViewX>1</researchViewX>
-        <researchViewY>3.6</researchViewY>
+        <researchViewY>3</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -345,7 +345,7 @@
             <li>MedicineProduction</li>
         </prerequisites>
         <researchViewX>3</researchViewX>
-        <researchViewY>3.6</researchViewY>
+        <researchViewY>3</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -353,14 +353,14 @@
         <defName>Celes_Bio_III</defName>
         <label>celestia late biochemical project</label>
         <description>celestia late biochemical products production permission, authorised by celestia central research institute.</description>
-        <baseCost>1000</baseCost>
+        <baseCost>1500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_MainTech_II</li>
             <li>Celes_Bio_II</li>
         </prerequisites>
         <researchViewX>4</researchViewX>
-        <researchViewY>3.6</researchViewY>
+        <researchViewY>3</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -368,7 +368,7 @@
         <defName>Celes_Bio_IV</defName>
         <label>celestia experimental biochemical project</label>
         <description>celestia experimental biochemical products production permission, authorised by celestia central research institute.</description>
-        <baseCost>1000</baseCost>
+        <baseCost>2000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
@@ -376,7 +376,7 @@
         </requiredResearchFacilities>
         <prerequisites><li>Celes_Bio_III</li></prerequisites>
         <researchViewX>5</researchViewX>
-        <researchViewY>3.6</researchViewY>
+        <researchViewY>3</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -384,15 +384,21 @@
         <defName>Celes_NanoImplant_I</defName>
         <label>celestia experimental biochemical project</label>
         <description>celestia experimental biochemical products production permission, authorised by celestia central research institute.</description>
-        <baseCost>1000</baseCost>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+        </descriptionHyperlinks>
+        <baseCost>2000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
-        <prerequisites><li>Celes_Bio_III</li></prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>3</researchViewY>
+        <prerequisites>
+            <li>Celes_MainTech_II</li>
+            <li>Celes_Bio_III</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -400,15 +406,18 @@
         <defName>Celes_NanoImplant_II</defName>
         <label>celestia experimental biochemical project</label>
         <description>celestia experimental biochemical products production permission, authorised by celestia central research institute.</description>
-        <baseCost>1000</baseCost>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_DegradedCyberneticSurgery</RecipeDef>
+        </descriptionHyperlinks>
+        <baseCost>3500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
         <prerequisites><li>Celes_NanoImplant_I</li></prerequisites>
-        <researchViewX>6</researchViewX>
-        <researchViewY>3</researchViewY>
+        <researchViewX>5</researchViewX>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 

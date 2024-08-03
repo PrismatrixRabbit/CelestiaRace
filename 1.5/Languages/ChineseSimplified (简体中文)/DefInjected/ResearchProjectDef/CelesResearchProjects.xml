@@ -52,7 +52,7 @@
   <Celes_Weapon_III.description>解锁制作发射高能极化粒子束的星铃制式枪械,并允许制作制式单分子军刀等武器。\n\n这些武器曾被星铃海军淘汰百年有余，但边缘世界的工业暂不支持海军制式武器的生产，于是这些可堪一用的粒子束武器便也成为拓荒队的标配。</Celes_Weapon_III.description>
   
   <Celes_Weapon_IV.label>星铃试验性武器</Celes_Weapon_IV.label>
-  <Celes_Weapon_IV.description>允许制造磁重联加速器与放射性高能等离子发射器，这种武器源于对旧时代飞船维修工具的试验性改造，但其确实足以。</Celes_Weapon_IV.description>
+  <Celes_Weapon_IV.description>允许制造磁重联加速器与放射性高能等离子发射器，这种武器源于对旧时代飞船维修工具的试验性改造，并能爆发出夸张的杀伤力。</Celes_Weapon_IV.description>
   
   <Celes_Bio_I.label>星铃生化标准</Celes_Bio_I.label>
   <Celes_Bio_I.description>星铃初级生化许可。</Celes_Bio_I.description>
@@ -66,7 +66,7 @@
   <Celes_Bio_IV.label>星铃试验性药物</Celes_Bio_IV.label>
   <Celes_Bio_IV.description>星铃试验性生化许可。</Celes_Bio_IV.description>
 
-  <Celes_NanoImplant_I.label>侵入性纳米植入</Celes_NanoImplant_I.label>
+  <Celes_NanoImplant_I.label>尘构调用:侵入性植入</Celes_NanoImplant_I.label>
   <Celes_NanoImplant_I.description>星铃高级生化许可。</Celes_NanoImplant_I.description>
 
   <Celes_NanoImplant_II.label>信息论改造</Celes_NanoImplant_II.label>

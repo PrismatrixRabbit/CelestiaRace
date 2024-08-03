@@ -205,6 +205,9 @@
         <defName>Celes_ImplantNanomachine</defName>
         <label>implant nanomachine</label>
         <description>.</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_ImplantNanomachine</HediffDef>
+        </descriptionHyperlinks>
         <workerClass>CelesFeature.Celes_Recipe_AddHediff</workerClass>
         <jobString>Implanting nanomachine</jobString>
         <workAmount>2000</workAmount>
@@ -234,7 +237,8 @@
                 <li>CelesNanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+        <researchPrerequisite>Celes_NanoImplant_I</researchPrerequisite>
+        <uiIconThing>CelesNanoMachine</uiIconThing>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
@@ -254,7 +258,7 @@
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s nanomachine infection from their body.</successfullyRemovedHediffMessage>
         <isViolation>false</isViolation>
         <anesthetize>false</anesthetize>
-        <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+        <researchPrerequisite>Celes_NanoImplant_I</researchPrerequisite>
     </RecipeDef>
     
     <RecipeDef ParentName="SurgeryFlesh">
@@ -297,7 +301,7 @@
             <CelesNanoMachine>10</CelesNanoMachine>
             <Neutroamine>10</Neutroamine>
         </products>
-        <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+        <researchPrerequisite>Celes_NanoImplant_I</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
@@ -336,7 +340,8 @@
                 <li>MedicineHerbal</li>
             </disallowedThingDefs>
         </fixedIngredientFilter>
-        <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+        <researchPrerequisite>Celes_NanoImplant_II</researchPrerequisite>
+        <uiIconThing>CelesNanoMachine</uiIconThing>
     </RecipeDef>
 
     <HediffDef ParentName="Celes_NanoHediffBase">
@@ -481,7 +486,7 @@
                 <li>CelesNanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+        <researchPrerequisite>Celes_NanoImplant_I</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="Celes_Surgery">
@@ -501,7 +506,7 @@
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s nanomachine infection from their body.</successfullyRemovedHediffMessage>
         <isViolation>false</isViolation>
         <anesthetize>false</anesthetize>
-        <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+        <researchPrerequisite>Celes_NanoImplant_I</researchPrerequisite>
     </RecipeDef>
     
 </Defs>
