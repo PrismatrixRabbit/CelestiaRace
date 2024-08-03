@@ -12,6 +12,11 @@
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <allowMixingIngredients>true</allowMixingIngredients>
         <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <workSkill>Medicine</workSkill>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+        <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
         <ingredients>
             <li>
                 <filter>
@@ -64,6 +69,16 @@
         <workSpeedStat>SmeltingSpeed</workSpeedStat>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_MultifunctionalTab</li>
+        </recipeUsers>
+        <researchPrerequisite>Celes_Manufactory_II_a</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
         <ingredients>
             <li>
                 <filter>
@@ -96,6 +111,16 @@
         <workSpeedStat>SmeltingSpeed</workSpeedStat>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_MultifunctionalTab</li>
+        </recipeUsers>
+        <researchPrerequisite>Celes_Manufactory_II_a</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
         <ingredients>
             <li>
                 <filter>
@@ -128,6 +153,16 @@
         <workSpeedStat>SmeltingSpeed</workSpeedStat>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_MultifunctionalTab</li>
+        </recipeUsers>
+        <researchPrerequisite>Celes_Manufactory_II</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
         <ingredients>
             <li>
                 <filter>

@@ -173,19 +173,6 @@
             <Plasteel>1</Plasteel>
             <CelesNanoMachine>3</CelesNanoMachine>
         </costList>
-        <recipeMaker>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <recipeUsers>
-                <li>Celes_MultifunctionalTab</li>
-            </recipeUsers>
-            <researchPrerequisite>Celes_Manufactory_II</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>8</Crafting>
-                <Intellectual>10</Intellectual>
-            </skillRequirements>
-            <bulkRecipeCount>5</bulkRecipeCount>
-        </recipeMaker>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>

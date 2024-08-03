@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="xiu bug" />
+    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="修科技树">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/RecipeDefs/Recipes_Production.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/RecipeDefs/Recipes_Production.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_Resource_Manufactured.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_IndustryMelee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_IndustryMelee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +88,7 @@
       <workItem from="1722488833951" duration="18102000" />
       <workItem from="1722533125807" duration="8098000" />
       <workItem from="1722611136459" duration="1224000" />
+      <workItem from="1722696558997" duration="11590000" />
     </task>
     <task id="LOCAL-00001" summary="修改背景">
       <option name="closed" value="true" />
@@ -218,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722541703800</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="修科技树">
+      <option name="closed" value="true" />
+      <created>1722708801689</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1722708801689</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +242,17 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改背景" />
     <MESSAGE value="派系领袖问题" />
@@ -237,7 +264,8 @@
     <MESSAGE value="纳米感染," />
     <MESSAGE value="翻译修正" />
     <MESSAGE value="xiu bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="xiu bug" />
+    <MESSAGE value="修科技树" />
+    <option name="LAST_COMMIT_MESSAGE" value="修科技树" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
