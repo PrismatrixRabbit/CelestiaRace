@@ -9,6 +9,12 @@
         <defName>Celes_NanoImplanted_I</defName>
         <label>celestia nanomachine implant I</label>
         <description>.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <RecipeDef>RemoveCelesNanoMachine_I</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_II</HediffDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
         <isBad>false</isBad>
         <initialSeverity>0.001</initialSeverity>
         <minSeverity>0</minSeverity>
@@ -74,6 +80,12 @@
         <defName>Celes_NanoImplanted_II</defName>
         <label>celestia nanomachine implant II</label>
         <description>stage II nanomachine implant</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <RecipeDef>RemoveCelesNanoMachine_II</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_I</HediffDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
         <isBad>true</isBad>
         <initialSeverity>0.5</initialSeverity>
         <minSeverity>0.5</minSeverity>
@@ -155,6 +167,13 @@
         <defName>Celes_NanoImplanted_III</defName>
         <label>celestia nanomachine implant III</label>
         <description>stage III nanomachine implant</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <RecipeDef>Celes_DegradedCyberneticSurgery</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_I</HediffDef>
+            <HediffDef>Celes_NanoImplanted_II</HediffDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
         <isBad>true</isBad>
         <initialSeverity>0.9</initialSeverity>
         <minSeverity>0.9</minSeverity>
@@ -206,7 +225,9 @@
         <label>implant nanomachine</label>
         <description>.</description>
         <descriptionHyperlinks>
-            <HediffDef>Celes_ImplantNanomachine</HediffDef>
+            <HediffDef>Celes_NanoImplanted_I</HediffDef>
+            <HediffDef>Celes_NanoImplanted_II</HediffDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
         </descriptionHyperlinks>
         <workerClass>CelesFeature.Celes_Recipe_AddHediff</workerClass>
         <jobString>Implanting nanomachine</jobString>
@@ -245,6 +266,9 @@
         <defName>RemoveCelesNanoMachine_I</defName>
         <label>remove celestia nanomachine infection from infected person</label>
         <description>.</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_NanoImplanted_I</HediffDef>
+        </descriptionHyperlinks>
         <workerClass>Recipe_RemoveHediff</workerClass>
         <jobString>Removing nanomachine infection.</jobString>
         <workAmount>500</workAmount>
@@ -265,6 +289,9 @@
         <defName>RemoveCelesNanoMachine_II</defName>
         <label>remove celestia nanomachine infection from infected person</label>
         <description>.</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_NanoImplanted_II</HediffDef>
+        </descriptionHyperlinks>
         <workerClass>Recipe_RemoveHediff</workerClass>
         <jobString>Removing nanomachine infection.</jobString>
         <workAmount>1500</workAmount>
@@ -308,6 +335,10 @@
         <defName>Celes_DegradedCyberneticSurgery</defName>
         <label>remove celestia nanomachine infection from infected person</label>
         <description>.</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+            <HediffDef>Celes_NanoImplanted_IV</HediffDef>
+        </descriptionHyperlinks>
         <workerClass>CelesFeature.Celes_DegradedCyberneticSurgery</workerClass>
         <jobString>Removing nanomachine infection.</jobString>
         <workAmount>2500</workAmount>
@@ -348,6 +379,9 @@
         <defName>Celes_NanoImplanted_IV</defName>
         <label>celestia nanomachine implant IV</label>
         <description>stage IV nanomachine implant</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_DegradedCyberneticSurgery</RecipeDef>
+        </descriptionHyperlinks>
         <isBad>false</isBad>
         <initialSeverity>0.99</initialSeverity>
         <minSeverity>0.9</minSeverity>
@@ -399,6 +433,10 @@
         <defName>Celes_NanoImplanted_ForCeles</defName>
         <label>celestia nanomachine implant I</label>
         <description>.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine_ForCeles</RecipeDef>
+            <RecipeDef>RemoveCelesNanoMachine_ForCeles</RecipeDef>
+        </descriptionHyperlinks>
         <isBad>false</isBad>
         <initialSeverity>0.001</initialSeverity>
         <minSeverity>0</minSeverity>
@@ -457,6 +495,9 @@
         <defName>Celes_ImplantNanomachine_ForCeles</defName>
         <label>implant nanomachine</label>
         <description>.</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_NanoImplanted_ForCeles</HediffDef>
+        </descriptionHyperlinks>
         <workerClass>Recipe_AddHediff</workerClass>
         <jobString>Implanting nanomachine</jobString>
         <workAmount>2000</workAmount>
@@ -493,6 +534,9 @@
         <defName>RemoveCelesNanoMachine_ForCeles</defName>
         <label>remove celestia nanomachine infection from infected person</label>
         <description>.</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_NanoImplanted_ForCeles</HediffDef>
+        </descriptionHyperlinks>
         <workerClass>Recipe_RemoveHediff</workerClass>
         <jobString>Removing nanomachine infection.</jobString>
         <workAmount>500</workAmount>
