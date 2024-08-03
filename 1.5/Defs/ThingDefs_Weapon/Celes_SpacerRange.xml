@@ -85,7 +85,7 @@
         </tools>
     </ThingDef>
 	
-    <ThingDef Class="CelesFeature.ThingDef_RadiationBullet" ParentName="BaseBullet">
+    <ThingDef ParentName="BaseBullet">
         <defName>Celes_HEPT</defName>
         <label>high energy plasma bullet</label>
         <graphicData>
@@ -93,14 +93,11 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-            <damageDef>Burn</damageDef>
+            <damageDef>Celes_BulletRadiation</damageDef>
             <damageAmountBase>18</damageAmountBase>
             <armorPenetrationBase>0.4</armorPenetrationBase>
             <speed>80</speed>
         </projectile>
-        <addHediffChance>100</addHediffChance>
-        <hediffToAdd>CelesRadiation</hediffToAdd>
-        <thingClass>CelesFeature.Projectile_RadiationBullet</thingClass>
     </ThingDef>
 	
 	<ThingDef ParentName="Celes_SpacerGunBase">
@@ -218,9 +215,9 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_big_energy</defaultProjectile>
                 <warmupTime>1.0</warmupTime>
-                <range>40.9</range>
+                <range>74.9</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <burstShotCount>3</burstShotCount>
+                <burstShotCount>1</burstShotCount>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -269,7 +266,7 @@
             <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
+            <researchPrerequisite>Celes_Weapon_IV</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -341,7 +338,7 @@
             <RangedWeapon_Cooldown>12.00</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
+            <researchPrerequisite>Celes_Weapon_IV</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -409,7 +406,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-            <damageDef>Burn</damageDef>
+            <damageDef>Celes_Particle</damageDef>
             <damageAmountBase>6</damageAmountBase>
             <armorPenetrationBase>0.2</armorPenetrationBase>
             <stoppingPower>0.6</stoppingPower>
@@ -417,13 +414,8 @@
             <extraDamages>
                 <li>
                     <def>EMP</def>
-                    <amount>2</amount>
-                    <chance>1</chance>
-                </li>
-                <li>
-                    <def>Burn</def>
-                    <amount>4</amount>
-                    <chance>1</chance>
+                    <amount>20</amount>
+                    <chance>0.8</chance>
                 </li>
             </extraDamages>
         </projectile>
@@ -436,7 +428,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-                <damageDef>Bullet</damageDef>
+                <damageDef>Celes_Particle</damageDef>
                 <damageAmountBase>14</damageAmountBase>
                 <speed>80</speed>
                 <armorPenetrationBase>0.5</armorPenetrationBase>
@@ -444,13 +436,8 @@
             <extraDamages>
                 <li>
                     <def>EMP</def>
-                    <amount>8</amount>
-                    <chance>1</chance>
-                </li>
-                <li>
-                    <def>Burn</def>
-                    <amount>6</amount>
-                    <chance>1</chance>
+                    <amount>20</amount>
+                    <chance>0.8</chance>
                 </li>
             </extraDamages>
         </projectile>
@@ -472,12 +459,7 @@
             <extraDamages>
                 <li>
                     <def>EMP</def>
-                    <amount>8</amount>
-                    <chance>1</chance>
-                </li>
-                <li>
-                    <def>Burn</def>
-                    <amount>10</amount>
+                    <amount>40</amount>
                     <chance>1</chance>
                 </li>
             </extraDamages>
@@ -496,7 +478,6 @@
             <damageDef>Bomb</damageDef>
             <speed>85</speed>
             <explosionRadius>2.9</explosionRadius>
-            <screenShakeFactor>0.5</screenShakeFactor>
         </projectile>
     </ThingDef>
 </Defs>

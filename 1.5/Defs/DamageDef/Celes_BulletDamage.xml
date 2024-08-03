@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <DamageDef ParentName="Bullet">
+        <defName>Celes_BulletRadiation</defName>
+        <label>radiation bullet</label>
+        <additionalHediffs>
+            <li>
+                <hediff>CelesRadiation</hediff>
+                <severityPerDamageDealt>0.003</severityPerDamageDealt>
+                <inverseStatScaling>true</inverseStatScaling>
+                <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+        <impactSoundType>Bullet</impactSoundType>
+    </DamageDef>
+
+    <DamageDef ParentName="Bullet">
+        <defName>Celes_Particle</defName>
+        <label>particle beam</label>
+        <additionalHediffs>
+            <li>
+                <hediff>Burn</hediff>
+                <severityPerDamageDealt>0.5</severityPerDamageDealt>
+                <inverseStatScaling>true</inverseStatScaling>
+                <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+        <impactSoundType>Bullet</impactSoundType>
+    </DamageDef>
+</Defs>
