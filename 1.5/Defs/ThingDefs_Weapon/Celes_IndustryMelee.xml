@@ -3,7 +3,7 @@
     
     <ThingDef Name="Celes_EarlyMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
         <recipeMaker>
-            <researchPrerequisite>Celes_StartWeapon</researchPrerequisite>
+            <researchPrerequisite>Celes_MainTech_I</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>Celes_MultifunctionalTab</li>
             </recipeUsers>

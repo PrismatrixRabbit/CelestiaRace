@@ -1,43 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  
+  <Celes_MainTech_I.label>解码星铃技术语言</Celes_MainTech_I.label>
+  <!-- EN: Decoding Celestia technical language -->
+  <Celes_MainTech_I.description>通过解码星铃技术中的符号与文字来开启星铃科技项目，解锁最基础的装备以适应边缘世界环境。</Celes_MainTech_I.description>
+  <!-- EN: Unlock Celestia tech items by decoding the symbols and words in Celestia tech to unlock the most basic equipment for the Rimworld environment. -->
+  
+  <Celes_MainTech_II.label>尘构技术解译</Celes_MainTech_II.label>
+  <Celes_MainTech_II.description>破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。</Celes_MainTech_II.description>
 
-  <Celes_Apparel_I.label>星铃基础服装许可</Celes_Apparel_I.label>
-  <Celes_Apparel_I.description>星铃基础服装许可。</Celes_Apparel_I.description>
+  <Celes_MainTech_III.label>尘构重编程(WIP)</Celes_MainTech_III.label>
+  <Celes_MainTech_III.description>尘构重编程，绝赞制作中。</Celes_MainTech_III.description>
 
-  <Celes_Apparel_II.label>星铃日常服装许可</Celes_Apparel_II.label>
+  <Celes_Apparel_I.label>星铃制衣标准</Celes_Apparel_I.label>
+  <Celes_Apparel_I.description>星铃日常服装许可。</Celes_Apparel_I.description>
+
+  <Celes_Apparel_II.label>星铃日常服装</Celes_Apparel_II.label>
   <Celes_Apparel_II.description>星铃日常服装许可。</Celes_Apparel_II.description>
 
-  <Celes_Apparel_III.label>星铃专业服装许可</Celes_Apparel_III.label>
+  <Celes_Apparel_III.label>先锋小队制服</Celes_Apparel_III.label>
   <Celes_Apparel_III.description>星铃专业服装许可。</Celes_Apparel_III.description>
-  
-  <Celes_Apparel_IV.label>星铃军用服装许可</Celes_Apparel_IV.label>
+
+  <Celes_Apparel_III_a.label>星铃专业服装</Celes_Apparel_III_a.label>
+  <Celes_Apparel_III_a.description>星铃专业服装许可。</Celes_Apparel_III_a.description>
+
+  <Celes_Apparel_IV.label>星铃动力突击盔甲</Celes_Apparel_IV.label>
   <Celes_Apparel_IV.description>星铃军用服装许可。</Celes_Apparel_IV.description>
 
-  <Celes_StartWeapon.label>星铃初始武器许可</Celes_StartWeapon.label>
-  <Celes_StartWeapon.description>星铃初始武器许可。</Celes_StartWeapon.description>
-  
-  <Celes_Weapon_I.label>星铃早期武器许可</Celes_Weapon_I.label>
-  <Celes_Weapon_I.description>星铃早期武器许可。</Celes_Weapon_I.description>
+  <Celes_Apparel_V.label>北冕座项目</Celes_Apparel_V.label>
+  <Celes_Apparel_V.description>星铃军用服装许可。</Celes_Apparel_V.description>
 
-  <Celes_Weapon_II.label>星铃中期武器许可</Celes_Weapon_II.label>
+  <Celes_Cloth.label>星铃织物</Celes_Cloth.label>
+  <Celes_Cloth.description>星铃专业服装许可。</Celes_Cloth.description>
+
+  <Celes_AdvancedCloth.label>星铃纳米织物</Celes_AdvancedCloth.label>
+  <Celes_AdvancedCloth.description>星铃军用服装许可。</Celes_AdvancedCloth.description>
+  
+  <Celes_Manufactory_I.label>星铃加工标准</Celes_Manufactory_I.label>
+  <Celes_Manufactory_I.description>星铃专业服装许可。</Celes_Manufactory_I.description>
+
+  <Celes_Manufactory_II.label>淬铃合金</Celes_Manufactory_II.label>
+  <Celes_Manufactory_II.description>星铃军用服装许可。</Celes_Manufactory_II.description>
+
+  <Celes_Manufactory_II_a.label>灵能专业化合金</Celes_Manufactory_II_a.label>
+  <Celes_Manufactory_II_a.description>星铃早期武器许可。</Celes_Manufactory_II_a.description>
+
+  <Celes_Weapon_I.label>星铃拓荒武器</Celes_Weapon_I.label>
+  <Celes_Weapon_I.description>星铃中期武器许可。</Celes_Weapon_I.description>
+
+  <Celes_Weapon_II.label>星铃古典武器</Celes_Weapon_II.label>
   <Celes_Weapon_II.description>星铃中期武器许可。</Celes_Weapon_II.description>
 
-  <Celes_Weapon_III.label>星铃后期武器许可</Celes_Weapon_III.label>
+  <Celes_Weapon_III.label>星铃制式武器</Celes_Weapon_III.label>
   <Celes_Weapon_III.description>星铃后期武器许可。</Celes_Weapon_III.description>
   
-  <Celes_Weapon_IV.label>星铃试验性武器许可</Celes_Weapon_IV.label>
+  <Celes_Weapon_IV.label>星铃试验性武器</Celes_Weapon_IV.label>
   <Celes_Weapon_IV.description>星铃试验性武器许可。</Celes_Weapon_IV.description>
   
-  <Celes_Bio_I.label>星铃初级生化许可</Celes_Bio_I.label>
+  <Celes_Bio_I.label>星铃生化标准</Celes_Bio_I.label>
   <Celes_Bio_I.description>星铃初级生化许可。</Celes_Bio_I.description>
 
-  <Celes_Bio_II.label>星铃中级生化许可</Celes_Bio_II.label>
+  <Celes_Bio_II.label>星铃作战药物</Celes_Bio_II.label>
   <Celes_Bio_II.description>星铃中级生化许可。</Celes_Bio_II.description>
 
-  <Celes_Bio_III.label>星铃高级生化许可</Celes_Bio_III.label>
+  <Celes_Bio_III.label>星铃灵能药物</Celes_Bio_III.label>
   <Celes_Bio_III.description>星铃高级生化许可。</Celes_Bio_III.description>
   
-  <Celes_Bio_IV.label>星铃试验性生化许可</Celes_Bio_IV.label>
+  <Celes_Bio_IV.label>星铃试验性药物</Celes_Bio_IV.label>
   <Celes_Bio_IV.description>星铃试验性生化许可。</Celes_Bio_IV.description>
+
+  <Celes_NanoImplant_I.label>侵入性纳米植入</Celes_NanoImplant_I.label>
+  <Celes_NanoImplant_I.description>星铃高级生化许可。</Celes_NanoImplant_I.description>
+
+  <Celes_NanoImplant_II.label>信息论改造</Celes_NanoImplant_II.label>
+  <Celes_NanoImplant_II.description>星铃试验性生化许可。</Celes_NanoImplant_II.description>
 
 </LanguageData>

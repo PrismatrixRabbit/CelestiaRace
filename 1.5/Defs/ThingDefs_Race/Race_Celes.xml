@@ -528,25 +528,23 @@
                 <relationChanceModifierSibling>0</relationChanceModifierSibling>
             </relationSettings>
             <raceRestriction>
-				<!--测试-->
 				<recipeList>
-					<li>ExtractCelesNanoMachine</li>
-					<li>Celes_InstallBionicEar</li>
 				</recipeList>
+				
+				<blackRecipeList>
+				</blackRecipeList>
 
 				<plantList>
 					<li>Plant_CelesNano</li>
 				</plantList>
 
-				<researchList>
+				<!--<researchList>
 					<li>
 						<projects>
-							<li>Celes_Weapon_I</li>
-							<li>Celes_Bio_I</li>
-							<li>Celes_Apparel_I</li>
+							<li>Celes_MainTech_I</li>
 						</projects>
 					</li>
-				</researchList>
+				</researchList>-->
 				
                 <onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes>
                 <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
@@ -843,9 +841,6 @@
                 <li>Human</li>
             </hediffGiverSets>
         </race>
-		<recipes>
-			<li>ExtractCelesNanoMachine</li>
-			<li>Celes_InstallBionicEar</li>
-		</recipes>
+		
     </AlienRace.ThingDef_AlienRace>
 </Defs>

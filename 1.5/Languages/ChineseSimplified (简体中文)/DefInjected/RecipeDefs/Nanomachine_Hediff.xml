@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <Celes_ImplantNanomachine.label>侵入性尘构植入</Celes_ImplantNanomachine.label>
+    <Celes_ImplantNanomachine.description>向个体植入过量的侵入性增强尘构，该行为对星铃通常具有有限的损伤和一定的机体增强。但注意，基因中缺少尘构抑制序列的个体将无法抑制尘构复制导致失控增殖！</Celes_ImplantNanomachine.description>
+    <Celes_ImplantNanomachine.jobString>侵入性尘构植入</Celes_ImplantNanomachine.jobString>
+
+    <RemoveCelesNanoMachine_I.label>侵入性尘构关机</RemoveCelesNanoMachine_I.label>
+    <RemoveCelesNanoMachine_I.description>通过化学药物抑制尘构自我增殖机能，关闭体内所有活性尘构物质，并促使其转化为可被机体自然分解的有机物。</RemoveCelesNanoMachine_I.description>
+    <RemoveCelesNanoMachine_I.jobString>侵入性尘构关机</RemoveCelesNanoMachine_I.jobString>
+    <RemoveCelesNanoMachine_I.successfullyRemovedHediffMessage>{0}已经成功关闭{1}体内所有尘构物质，这些物质随后会自发无害化。</RemoveCelesNanoMachine_I.successfullyRemovedHediffMessage>
+
+    <RemoveCelesNanoMachine_II.label>侵入性尘构抑制</RemoveCelesNanoMachine_II.label>
+    <RemoveCelesNanoMachine_II.description>强行抽出患者体内的过量尘构并输入化学物质来抑制尘构失控增殖，关闭活性尘构物质，并取出尘构及其转化产物——中性胺，注意，这意味着极高的死亡率。</RemoveCelesNanoMachine_II.description>
+    <RemoveCelesNanoMachine_II.jobString>侵入性尘构抑制</RemoveCelesNanoMachine_II.jobString>
+    <RemoveCelesNanoMachine_II.successfullyRemovedHediffMessage>{0}已经成功抑制{1}体内的过量尘构物质，但仍需进一步手术来关停尘构。</RemoveCelesNanoMachine_II.successfullyRemovedHediffMessage>
+
+    <Celes_DegradedCyberneticSurgery.label>劣化控制论增强</Celes_DegradedCyberneticSurgery.label>
+    <Celes_DegradedCyberneticSurgery.description>这是最后一个办法。通过重设尘构指令，并将一个次级人格核心和重度尘构感染者的脑组织之间建立直接连接，我们可以让尘构填补该个体的组织并在机械与生物之间传递信息流。星铃称之为＂劣化控制论增强＂，但称其为＂尘构行尸化＂显然更为恰当。\n\n这个个体会变得难以情绪崩溃，并获得机体运动能力的强化，但它也会难以学习知识，并无法再从事复杂工作和研究工作。</Celes_DegradedCyberneticSurgery.description>
+    <Celes_DegradedCyberneticSurgery.jobString>劣化控制论增强</Celes_DegradedCyberneticSurgery.jobString>
+
+    <!-- ========== 星铃部分 ========== -->
+
+    <Celes_ImplantNanomachine_ForCeles.label>侵入性尘构植入</Celes_ImplantNanomachine_ForCeles.label>
+    <Celes_ImplantNanomachine_ForCeles.description>向个体植入过量的侵入性增强尘构，该行为对星铃通常具有有限的损伤和一定的机体增强。</Celes_ImplantNanomachine_ForCeles.description>
+    <Celes_ImplantNanomachine_ForCeles.jobString>侵入性尘构植入</Celes_ImplantNanomachine_ForCeles.jobString>
+
+    <RemoveCelesNanoMachine_ForCeles.label>侵入性尘构关机</RemoveCelesNanoMachine_ForCeles.label>
+    <RemoveCelesNanoMachine_ForCeles.description>通过化学药物抑制尘构自我增殖机能，关闭体内所有活性尘构物质，并促使其转化为可被机体自然分解的有机物。</RemoveCelesNanoMachine_ForCeles.description>
+    <RemoveCelesNanoMachine_ForCeles.jobString>侵入性尘构关机</RemoveCelesNanoMachine_ForCeles.jobString>
+    <RemoveCelesNanoMachine_ForCeles.successfullyRemovedHediffMessage>{0}已经成功关闭{1}体内所有尘构物质，这些物质随后会自发无害化。</RemoveCelesNanoMachine_ForCeles.successfullyRemovedHediffMessage>
+    
+</LanguageData>

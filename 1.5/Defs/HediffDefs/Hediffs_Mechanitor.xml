@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <HediffDef ParentName="DiseaseBase">
+    <HediffDef>
         <defName>Celes_MechlinkRestriction</defName>
+        <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+        <initialSeverity>0.001</initialSeverity>
         <label>celestia mechlink restriction</label>
         <description>.</description>
         <isBad>false</isBad>
@@ -46,10 +48,16 @@
         <workerClass>Recipe_RemoveHediff</workerClass>
         <jobString>Removing mechlink restriction.</jobString>
         <workAmount>1000</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <isViolation>false</isViolation>
+        <targetsBodyPart>false</targetsBodyPart>
         <removesHediff>Celes_MechlinkRestriction</removesHediff>
-        <surgerySuccessChanceFactor>1000</surgerySuccessChanceFactor>
+        <surgerySuccessChanceFactor>10</surgerySuccessChanceFactor>
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s mechlink restriction from their body.</successfullyRemovedHediffMessage>
         <anesthetize>false</anesthetize>
+        <skillRequirements>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
         <ingredients>
             <li>
                 <filter>
@@ -60,6 +68,11 @@
                 <count>1</count>
             </li>
         </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Celes_MechlinkAuthorization</li>
+            </thingDefs>
+        </fixedIngredientFilter>
     </RecipeDef>
 
     <HediffDef ParentName="ImplantHediffBase">

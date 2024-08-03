@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="修啊修bug" />
+    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="xiu bug" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +77,10 @@
       <workItem from="1722333019548" duration="6000" />
       <workItem from="1722344164925" duration="999000" />
       <workItem from="1722349719393" duration="1953000" />
-      <workItem from="1722412259712" duration="3076000" />
+      <workItem from="1722412259712" duration="32217000" />
+      <workItem from="1722488833951" duration="18102000" />
+      <workItem from="1722533125807" duration="8098000" />
+      <workItem from="1722611136459" duration="1224000" />
     </task>
     <task id="LOCAL-00001" summary="修改背景">
       <option name="closed" value="true" />
@@ -183,7 +186,39 @@
       <option name="project" value="LOCAL" />
       <updated>1722418897009</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="修啊修bug">
+      <option name="closed" value="true" />
+      <created>1722420284542</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722420284542</updated>
+    </task>
+    <task id="LOCAL-00015" summary="纳米感染,">
+      <option name="closed" value="true" />
+      <created>1722454619436</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722454619436</updated>
+    </task>
+    <task id="LOCAL-00016" summary="翻译修正">
+      <option name="closed" value="true" />
+      <created>1722456001162</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722456001162</updated>
+    </task>
+    <task id="LOCAL-00017" summary="xiu bug">
+      <option name="closed" value="true" />
+      <created>1722541703800</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722541703800</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +234,10 @@
     <MESSAGE value="派系支援" />
     <MESSAGE value="１.５外勤部文本更新" />
     <MESSAGE value="修啊修bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修啊修bug" />
+    <MESSAGE value="纳米感染," />
+    <MESSAGE value="翻译修正" />
+    <MESSAGE value="xiu bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="xiu bug" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

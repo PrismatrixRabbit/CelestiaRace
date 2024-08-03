@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="MedicineBase">
+        <defName>MedicineCeles</defName>
+        <label>celestia emergency medicinie </label>
+        <description>A small medicine kit including varieties of compound gel, which use to sterilize,heal wound or just supress disease.</description>
+        <possessionCount>2</possessionCount>
+        <graphicData>
+            <texPath>Celes/Item/MedicineCeles</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <MarketValue>24</MarketValue>
+            <Mass>0.25</Mass>
+            <Flammability>0.5</Flammability>
+            <MedicalPotency>1.2</MedicalPotency>
+            <MedicalQualityMax>1.10</MedicalQualityMax>
+            <DeteriorationRate>1</DeteriorationRate>
+            <WorkToMake>900</WorkToMake>
+        </statBases>
+        <costList>
+            <MedicineHerbal>1</MedicineHerbal>
+            <Neutroamine>1</Neutroamine>
+            <CelesBioGel>2</CelesBioGel>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+            <workSkill>Intellectual</workSkill>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+                <Intellectual>5</Intellectual>
+            </skillRequirements>
+            <bulkRecipeCount>5</bulkRecipeCount>
+        </recipeMaker>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="MealBase">
+        <defName>CelesMRE</defName>
+        <label>packaged survival meal</label>
+        <description>A high-quality packaged meal, manufactured for use in survival situations. While it never rots, it can still deteriorate if left outside. Great for traveling.</description>
+        <graphicData>
+            <texPath>Things/Item/Meal/SurvivalPack</texPath>
+            <graphicClass>Graphic_MealVariants</graphicClass>
+        </graphicData>
+        <statBases>
+            <DeteriorationRate>0.25</DeteriorationRate>
+            <MarketValue>24</MarketValue>
+            <Mass>0.3</Mass>
+            <WorkToMake>450</WorkToMake>
+            <Nutrition>0.9</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>MealSimple</preferability>
+            <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+            <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+        <allowedArchonexusCount>40</allowedArchonexusCount>
+    </ThingDef>
+    
+    <ThingDef ParentName="ResourceBase">
+        <defName>CelesKeyCard</defName>
+        <label>celestia encrypt key card-artillery strike</label>
+        <description>Single-use encrypted key card with stored PIN used to calculate the authorization code to call artillery strike.</description>
+        <possessionCount>2</possessionCount>
+        <graphicData>
+            <texPath>Celes/Item/CelesKeyCard/CelesKeyCard</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Pickup</soundInteract>
+        <soundDrop>Standard_Pickup</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <MarketValue>800</MarketValue>
+            <Mass>0.12</Mass>
+            <Flammability>0.4</Flammability>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef Name="Celes_STCResourceBase" ParentName="ResourceBase" Abstract="True">
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>10</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <MarketValue>500</MarketValue>
+            <Mass>1</Mass>
+            <Flammability>0.25</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <isTechHediff>true</isTechHediff>
+    </ThingDef>
+
+    <ThingDef ParentName="Celes_STCResourceBase">
+        <defName>Celes_STC</defName>
+        <label>Self-explanatory Technology Core</label>
+        <description>A mechanoid-band synchronization micro-organ. It is necessary to produce certain advanced types of mechanoids and equipment.\n\nA mechanitor can study this chip to help unlock higher tiers of mechtech research.</description>
+        <graphicData>
+            <texPath>Celes/Item/CelesKeyCard/CelesKeyCard</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Flammability>0</Flammability>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_CompAnalyzableUnlockResearch">
+                <analysisID>1383328672</analysisID>
+                <requiresMechanitor>false</requiresMechanitor>
+
+                <!-- Analyzable -->
+
+                <analysisDurationHours>0.5</analysisDurationHours>
+                <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+                <completedLetterLabel>Signal chip studied: {RESEARCH} unlocked</completedLetterLabel>
+                <completedLetter>By studying the signal chip, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+                <completedLetterDef>PositiveEvent</completedLetterDef>
+
+                <!-- Interactable -->
+
+                <activateTexPath>UI/Icons/Study</activateTexPath>
+
+                <activateLabelString>Analyze...</activateLabelString>
+                <activateDescString>Analyze the signal chip.</activateDescString>
+                <jobString>Analyze signal chip</jobString>
+                <guiLabelString>Choose who should analyze this</guiLabelString>
+                <inspectString>Can be analyzed by a colonist.</inspectString>
+
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+                </targetingParameters>
+            </li>
+        </comps>
+    </ThingDef>
+    
+</Defs>
