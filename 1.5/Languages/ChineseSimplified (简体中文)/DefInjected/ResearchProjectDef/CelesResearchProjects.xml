@@ -66,11 +66,8 @@
   <Celes_Bio_IV.label>高危试验性药物</Celes_Bio_IV.label>
   <Celes_Bio_IV.description>星铃试验性生化许可。</Celes_Bio_IV.description>
 
-  <Celes_Prosthesis_I.label>星铃简单义体\n(即将推出)</Celes_Prosthesis_I.label>
-  <Celes_Prosthesis_I.description>星铃高级生化许可。</Celes_Prosthesis_I.description>
-
-  <Celes_Prosthesis_II.label>尘构调用:活械转译\n(即将推出)</Celes_Prosthesis_II.label>
-  <Celes_Prosthesis_II.description>星铃试验性生化许可。</Celes_Prosthesis_II.description>
+  <Celes_Prosthesis_I.label>尘构调用:活械转译\n(即将推出)</Celes_Prosthesis_I.label>
+  <Celes_Prosthesis_I.description>星铃试验性生化许可。</Celes_Prosthesis_I.description>
 
   <Celes_NanoImplant_I.label>尘构调用:侵入性植入</Celes_NanoImplant_I.label>
   <Celes_NanoImplant_I.description>星铃高级生化许可。</Celes_NanoImplant_I.description>
