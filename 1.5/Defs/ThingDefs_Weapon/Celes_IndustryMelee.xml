@@ -106,7 +106,6 @@
         <recipeMaker>
             <researchPrerequisites>
                 <li>Celes_Weapon_I</li>
-                <li>Gunsmithing</li>
             </researchPrerequisites>
             <skillRequirements>
                 <Crafting>6</Crafting>

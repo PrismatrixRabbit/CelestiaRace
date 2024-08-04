@@ -40,7 +40,7 @@
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
                     <hediffDef>CPS1_High</hediffDef>
-                    <severity>0.5</severity>
+                    <severity>1</severity>
                 </li>
                 <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
                     <offset>0.8</offset>
@@ -79,7 +79,7 @@
         <isBad>false</isBad>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-1</severityPerDay>
+                <severityPerDay>-3</severityPerDay>
                 <showHoursToRecover>true</showHoursToRecover>
             </li>
         </comps>
@@ -131,9 +131,9 @@
                 <severityPerDay>1</severityPerDay>
                 <showHoursToRecover>true</showHoursToRecover>
             </li>
-            <li Class="HediffCompProperties_Disappears">
+            <!--<li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>30000~60000</disappearsAfterTicks>
-            </li>
+            </li>-->
             <li Class="HediffCompProperties_TendDuration">
                 <baseTendDurationHours>24</baseTendDurationHours>
                 <severityPerDayTended>-1.5</severityPerDayTended>
@@ -161,14 +161,6 @@
                         <setMax>0.3</setMax>
                     </li>
                 </capMods>
-                <hediffGivers>
-                    <li Class="HediffGiver_RandomDrugEffect">
-                        <hediff>ChemicalDamageSevere</hediff>
-                        <minSeverity>0.50</minSeverity>
-                        <baseMtbDays>120</baseMtbDays>
-                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
-                    </li>
-                </hediffGivers>
             </li>
         </stages>
     </HediffDef>

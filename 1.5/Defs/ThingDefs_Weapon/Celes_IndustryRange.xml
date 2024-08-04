@@ -12,11 +12,17 @@
         </weaponTags>
     </ThingDef>
     
-    <ThingDef Name="Celes_MidGunBase" ParentName="BaseMakeableGun" Abstract="True">
+    <ThingDef Name="Celes_MidGunBase" ParentName="BaseGunWithQuality" Abstract="True">
         <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
             <recipeUsers Inherit="false">
                 <li>Celes_MultifunctionalTab</li>
             </recipeUsers>
+            <displayPriority>210</displayPriority>
         </recipeMaker>
         <weaponTags>
             <li>

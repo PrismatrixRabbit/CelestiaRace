@@ -22,11 +22,9 @@
         <techLevel>Industrial</techLevel>
         <ingestible>
             <foodType>Processed</foodType>
-            <joyKind>Chemical</joyKind>
-            <joy>0.10</joy>
             <baseIngestTicks>650</baseIngestTicks>
             <nurseable>true</nurseable>
-            <drugCategory>Hard</drugCategory>
+            <drugCategory>Medical</drugCategory>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
                     <hediffDef>IASHigh</hediffDef>
@@ -58,7 +56,6 @@
         <label>IAS-2 immunoagonist stimulants</label>
         <description>immunoagonist stimulants-induced immunity to certain illnesses. This only blocks new infections; it does nothing for those who are already infected, even if their infection is dormant.</description>
         <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-        <scenarioCanAdd>true</scenarioCanAdd>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>
         <comps>

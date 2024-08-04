@@ -6,7 +6,8 @@
         <label>NS-90 central nervous stimulant</label>
         <description>Weak central nervous system stimulants, low addiction but still high risk of overdose.</description>
         <descriptionHyperlinks>
-            <HediffDef>NS90_High</HediffDef>
+            <HediffDef>Celes_NS90_High</HediffDef>
+            <HediffDef>Celes_NerveStimulateTolerance</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Celes/Drugs/NS90</texPath>
@@ -21,19 +22,24 @@
         <techLevel>Industrial</techLevel>
         <ingestible>
             <foodType>Processed</foodType>
-            <joyKind>Chemical</joyKind>
-            <joy>0.20</joy>
             <baseIngestTicks>650</baseIngestTicks>
             <nurseable>true</nurseable>
-            <drugCategory>Medical</drugCategory>
+            <drugCategory>Hard</drugCategory>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>NS90_High</hediffDef>
-                    <severity>1</severity>
+                    <hediffDef>Celes_NS90_High</hediffDef>
+                    <severity>0.34</severity>
+                    <toleranceChemical>Celes_NerveStimulate</toleranceChemical>
                 </li>
                 <li Class="IngestionOutcomeDoer_OffsetNeed">
                     <need>Rest</need>
                     <offset>1.0</offset>
+                </li>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>Celes_NerveStimulateTolerance</hediffDef>
+                    <severity>0.225</severity>
+                    <divideByBodySize>true</divideByBodySize>
+                    <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
                 </li>
             </outcomeDoers>
         </ingestible>
@@ -48,30 +54,31 @@
         </costList>
         <comps>
             <li Class="CompProperties_Drug">
+                <chemical>Celes_NerveStimulate</chemical>
+                <addictiveness>0</addictiveness>
                 <listOrder>1000</listOrder>
-                <overdoseSeverityOffset>0.10~0.25</overdoseSeverityOffset>
             </li>
         </comps>
     </ThingDef>
     
     <HediffDef>
-        <defName>NS90_High</defName>
+        <defName>Celes_NS90_High</defName>
         <hediffClass>Hediff_High</hediffClass>
         <label>NS-90 CNS</label>
         <labelNoun>a NS-90 CNS high</labelNoun>
         <description>NS-90 is in effect, improving working ability.</description>
         <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-        <scenarioCanAdd>true</scenarioCanAdd>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-1</severityPerDay>
+                <severityPerDay>-0.66</severityPerDay>
                 <showHoursToRecover>true</showHoursToRecover>
             </li>
         </comps>
         <stages>
             <li>
+                <label>minor</label>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -91,8 +98,138 @@
                     <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.2</MeditationFocusGain>
                 </statOffsets>
                 <hungerRateFactor>1.1</hungerRateFactor>
-                <restFallFactor>0.6</restFallFactor>
+                <statFactors>
+                    <RestFallRateFactor>0.6</RestFallRateFactor>
+                </statFactors>
+            </li>
+            <li>
+                <label>minor</label>
+                <minSeverity>0.35</minSeverity>
+                <painOffset>0.30</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>1.1</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>1.3</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <postFactor>1.3</postFactor>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.1</MeditationFocusGain>
+                </statOffsets>
+                <hungerRateFactor>1.5</hungerRateFactor>
+                <statFactors>
+                    <RestFallRateFactor>0.8</RestFallRateFactor>
+                </statFactors>
+            </li>
+            <li>
+                <label>minor</label>
+                <minSeverity>0.70</minSeverity>
+                <painOffset>0.80</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>1.1</postFactor>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.1</MeditationFocusGain>
+                </statOffsets>
+                <hungerRateFactor>2</hungerRateFactor>
             </li>
         </stages>
     </HediffDef>
+    
+    <ThoughtDef>
+        <defName>Celes_NS90_High</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>Celes_NS90_High</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>high on yayo</label>
+                <description>Feeling pumped! Let's do this!</description>
+                <baseMoodEffect>7</baseMoodEffect>
+            </li>
+            <li>
+                <label>high on yayo</label>
+                <description>Feeling pumped! Let's do this!</description>
+                <baseMoodEffect>7</baseMoodEffect>
+            </li>
+            <li>
+                <label>high on yayo</label>
+                <description>Feeling pumped! Let's do this!</description>
+                <baseMoodEffect>7</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    
+    <ChemicalDef>
+        <defName>Celes_NerveStimulate</defName>
+        <label>Celes_NerveStimulate</label>
+        <addictionHediff>Celes_NerveStimulateAddiction</addictionHediff>
+        <toleranceHediff>Celes_NerveStimulateTolerance</toleranceHediff>
+        <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+        <!--<geneToleranceBuildupFactorResist>0.5</geneToleranceBuildupFactorResist>
+        <geneToleranceBuildupFactorImmune>0</geneToleranceBuildupFactorImmune>
+        <geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
+        <geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>-->
+    </ChemicalDef>
+
+    <HediffDef ParentName="AddictionBase">
+        <defName>Celes_NerveStimulateAddiction</defName>
+        <label>wake-up addiction</label>
+        <description>.</description>
+        <hediffClass>Hediff_Addiction</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="DrugToleranceBase">
+        <defName>Celes_NerveStimulateTolerance</defName>
+        <label>Celes_NerveStimulateTolerance</label>
+        <description>.</description>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.15</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_DrugEffectFactor">
+                <chemical>Celes_NerveStimulate</chemical>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>Celes_NerveStimulateTolerance</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>Celes_NerveStimulateTolerance</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>high on yayo</label>
+                <description>Feeling pumped! Let's do this!</description>
+                <baseMoodEffect>-7</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
 </Defs>

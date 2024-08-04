@@ -69,6 +69,7 @@
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
                 <severityPerDay>0.16</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
             </li>
             <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
                 <targetHediff>Celes_NanoImplanted_II</targetHediff>
@@ -120,20 +121,6 @@
                         <offset>-0.15</offset>
                     </li>
                 </capMods>
-                <hediffGivers>
-                    <li Class="HediffGiver_Random">
-                        <hediff>Dementia</hediff>
-                        <mtbDays>37</mtbDays>
-                        <partsToAffect>
-                            <li>Brain</li>
-                        </partsToAffect>
-                    </li>
-                    <li Class="HediffGiver_Random">
-                        <hediff>ChemicalDamageSevere</hediff>
-                        <mtbDays>37</mtbDays>
-                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
-                    </li>
-                </hediffGivers>
             </li>
             <li>
                 <label>minor</label>
@@ -153,6 +140,7 @@
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
                 <severityPerDay>0.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
             </li>
             <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
                 <targetHediff>Celes_NanoImplanted_III</targetHediff>
@@ -198,6 +186,7 @@
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
                 <severityPerDay>0.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
             </li>
             <li Class="CelesFeature.Celes_HediffCompProperties_SpawnOnDeath">
                 <spawnPawn>false</spawnPawn>
@@ -258,7 +247,9 @@
                 <li>CelesNanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <researchPrerequisite>Celes_NanoImplant_I</researchPrerequisite>
+        <researchPrerequisites>
+            <li>Celes_NanoImplant_I</li>
+        </researchPrerequisites>
         <uiIconThing>CelesNanoMachine</uiIconThing>
     </RecipeDef>
 
@@ -282,7 +273,9 @@
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s nanomachine infection from their body.</successfullyRemovedHediffMessage>
         <isViolation>false</isViolation>
         <anesthetize>false</anesthetize>
-        <researchPrerequisite>Celes_NanoImplant_I</researchPrerequisite>
+        <researchPrerequisites>
+            <li>Celes_NanoImplant_I</li>
+        </researchPrerequisites>
     </RecipeDef>
     
     <RecipeDef ParentName="SurgeryFlesh">
@@ -328,7 +321,9 @@
             <CelesNanoMachine>10</CelesNanoMachine>
             <Neutroamine>10</Neutroamine>
         </products>
-        <researchPrerequisite>Celes_NanoImplant_I</researchPrerequisite>
+        <researchPrerequisites>
+            <li>Celes_NanoImplant_I</li>
+        </researchPrerequisites>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
@@ -371,7 +366,9 @@
                 <li>MedicineHerbal</li>
             </disallowedThingDefs>
         </fixedIngredientFilter>
-        <researchPrerequisite>Celes_NanoImplant_II</researchPrerequisite>
+        <researchPrerequisites>
+            <li>Celes_NanoImplant_II</li>
+        </researchPrerequisites>
         <uiIconThing>CelesNanoMachine</uiIconThing>
     </RecipeDef>
 
@@ -487,6 +484,7 @@
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
                 <severityPerDay>0.16</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
             </li>
         </comps>
     </HediffDef>
@@ -527,7 +525,9 @@
                 <li>CelesNanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <researchPrerequisite>Celes_NanoImplant_I</researchPrerequisite>
+        <researchPrerequisites>
+            <li>Celes_NanoImplant_I</li>
+        </researchPrerequisites>
     </RecipeDef>
 
     <RecipeDef ParentName="Celes_Surgery">
@@ -550,7 +550,9 @@
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s nanomachine infection from their body.</successfullyRemovedHediffMessage>
         <isViolation>false</isViolation>
         <anesthetize>false</anesthetize>
-        <researchPrerequisite>Celes_NanoImplant_I</researchPrerequisite>
+        <researchPrerequisites>
+            <li>Celes_NanoImplant_I</li>
+        </researchPrerequisites>
     </RecipeDef>
     
 </Defs>
