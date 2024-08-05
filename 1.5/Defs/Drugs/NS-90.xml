@@ -75,6 +75,11 @@
                 <severityPerDay>-0.66</severityPerDay>
                 <showHoursToRecover>true</showHoursToRecover>
             </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_NS90_After</targetHediff>
+                <chanceToJump>0.5</chanceToJump>
+                <minToJump>true</minToJump>
+            </li>
         </comps>
         <stages>
             <li>
@@ -96,7 +101,7 @@
                 </capMods>
                 <statOffsets>
                     <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
-                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.2</MeditationFocusGain>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.4</MeditationFocusGain>
                 </statOffsets>
                 <hungerRateFactor>1.1</hungerRateFactor>
                 <statFactors>
@@ -123,8 +128,8 @@
                     </li>
                 </capMods>
                 <statOffsets>
-                    <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
-                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.1</MeditationFocusGain>
+                    <WorkSpeedGlobal>0.6</WorkSpeedGlobal>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.2</MeditationFocusGain>
                 </statOffsets>
                 <hungerRateFactor>1.5</hungerRateFactor>
                 <statFactors>
@@ -134,18 +139,36 @@
             <li>
                 <label>minor</label>
                 <minSeverity>0.70</minSeverity>
-                <painOffset>0.80</painOffset>
-                <socialFightChanceFactor>3.0</socialFightChanceFactor>
+                <painOffset>0.75</painOffset>
+                <socialFightChanceFactor>5.0</socialFightChanceFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
                         <postFactor>1.1</postFactor>
                     </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>1.1</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <postFactor>1.1</postFactor>
+                    </li>
                 </capMods>
                 <statOffsets>
-                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.1</MeditationFocusGain>
+                    <WorkSpeedGlobal>0.4</WorkSpeedGlobal>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.2</MeditationFocusGain>
                 </statOffsets>
-                <hungerRateFactor>2</hungerRateFactor>
+                <hungerRateFactor>3</hungerRateFactor>
+                <statFactors>
+                    <RestFallRateFactor>0</RestFallRateFactor>
+                </statFactors>
+                <mentalStateGivers>
+                    <li>
+                        <mentalState>Berserk</mentalState>
+                        <mtbDays>0.9</mtbDays>
+                    </li>
+                </mentalStateGivers>
             </li>
         </stages>
     </HediffDef>
@@ -223,6 +246,49 @@
         <defName>Celes_NerveStimulateTolerance</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
         <hediff>Celes_NerveStimulateTolerance</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>high on yayo</label>
+                <description>Feeling pumped! Let's do this!</description>
+                <baseMoodEffect>-7</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>Celes_NS90_After</defName>
+        <label>Celes_NS90_After</label>
+        <description>.</description>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>15000~150000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <vomitMtbDays>0.3</vomitMtbDays>
+                <painFactor>0.1</painFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.9</postFactor>
+                    </li>
+                </capMods>
+                <hungerRateFactor>1.5</hungerRateFactor>
+                <statFactors>
+                    <RestFallRateFactor>2</RestFallRateFactor>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>Celes_NS90_After</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>Celes_NS90_After</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>

@@ -78,47 +78,47 @@
 
   <Celes_Weapon_III.label>星铃制式武器</Celes_Weapon_III.label>
   <!-- EN: Celestia standard-issue weapons -->
-  <Celes_Weapon_III.description>解锁制作发射高能极化粒子束星铃制式枪械,并允许制作制式单分子军刀等武器，这些武器附带的高能辐射会对目标体表严重烧伤，并干扰机械体的运作。\n\n这些武器曾被星铃海军淘汰百年有余，但边缘世界的工业暂不支持海军制式武器的生产，于是这些可堪一用的粒子束武器便也成为拓荒队的标配。</Celes_Weapon_III.description>
-  <!-- EN:  -->
+  <Celes_Weapon_III.description>解锁制作发射高能极化粒子束的星铃制式枪械，这些武器附带的高能辐射会对目标体表严重烧伤，并干扰机械体的运作。并允许制作制式单分子军刀等武器。\n\n这些武器曾被星铃海军淘汰百年有余，但边缘世界的工业暂不支持海军制式武器的生产，于是这些可堪一用的粒子束武器便也成为拓荒队的标配。</Celes_Weapon_III.description>
+  <!-- EN: Unlocks the crafting of Celestia standard firearms that emit high-energy polarised particle beams; the high-energy radiation attached to these weapons burns the target's body surface severely and interferes with the functioning of mechanics. It also allows the crafting of weapons such as Celestia standard monomolecular sabre. \n\nThese weapons had been phased out by the Celestia Navy for more than a century, but industry on the Rimworld did not support the production of naval weapons for the time being, and so these serviceable particle beam weapons became the standard for Celestia's pioneering teams as well. -->
   
-  <Celes_Weapon_IV.label>星铃试验性武器</Celes_Weapon_IV.label>
-  <!-- EN:  -->
+  <Celes_Weapon_IV.label>试验性改造武器</Celes_Weapon_IV.label>
+  <!-- EN: experimental modified weapons -->
   <Celes_Weapon_IV.description>允许制造磁重联加速器与放射性高能等离子发射器，这种武器源于对旧时代飞船维修工具的试验性改造，但能爆发出夸张的杀伤力。</Celes_Weapon_IV.description>
-  <!-- EN:  -->
+  <!-- EN: Allows for the manufacture of magnetic reconnection accelerators and radioactive high-energy plasma emitters, weapons derived from experimental modifications of old-time ship repair tools, but capable of bursting with exaggerated lethality. -->
   
   <Celes_Bio_I.label>星铃生化标准</Celes_Bio_I.label>
-  <!-- EN:  -->
+  <!-- EN: Celestia biochemical standard -->
   <Celes_Bio_I.description>同步星铃的制药技术，从有机质中提取生物酶凝胶。解锁制作星铃基础药物，例如可以预防感染，瘟疫等疾病的「IAS-2免疫增强剂」与提供额外工作效率但带来疲劳的「NS-90神经兴奋剂」。</Celes_Bio_I.description>
-  <!-- EN:  -->
+  <!-- EN: Synchronise Celestia's pharmaceutical technology by extracting bio-enzyme gels from organic matter. Unlock Celestia's basic medicines, such as IAS-2 immune-activating stimulants, which prevents infections and plagues, and NS-90 nervous stimulants, which provides extra efficiency but causes fatigue. -->
 
   <Celes_Bio_II.label>星铃作战药物</Celes_Bio_II.label>
-  <!-- EN:  -->
+  <!-- EN: Celestia combat medication -->
   <Celes_Bio_II.description>进一步解析星铃生化科技，解锁制作星铃作战药物：短暂激发组织活性的「CS-6作战增强剂」与加快伤口愈合的「CS-12作战止血剂」。请注意,这些药物以过载细胞活性为代价,具有相当致命的副作用。</Celes_Bio_II.description>
-  <!-- EN:  -->
+  <!-- EN: Further analysis of Celestia's biochemical technology unlocks the creation of Celestia's combat drugs: CS-6 combat stimulants, which briefly stimulates tissue activity, and CS-12 combat hemostat, which accelerates wound healing. Please note that these drugs have deadly side effects at the cost of overloading cellular activity. -->
 
   <Celes_Bio_III.label>尘构调用:灵能制药</Celes_Bio_III.label>
-  <!-- EN:  -->
+  <!-- EN: Dust-Mech Call:Psychic Pharmaceuticals -->
   <Celes_Bio_III.description>解锁制作「CPS-12作战灵能强化剂」，通过直接摄入特殊编码的尘构物质大幅强化使用者的精神力。</Celes_Bio_III.description>
-  <!-- EN:  -->
+  <!-- EN: Unlocks the crafting of "CPS-12 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances. -->
   
   <Celes_Bio_IV.label>高危试验性药物</Celes_Bio_IV.label>
-  <!-- EN:  -->
-  <Celes_Bio_IV.description>解锁制作「RS-1试验性强化剂」，通过利用尘构对路西法合剂的指令进行修正，得到的一种危险高效的最终手段。</Celes_Bio_IV.description>
-  <!-- EN:  -->
+  <!-- EN: High-risk experimental medicines -->
+  <Celes_Bio_IV.description>解锁制作「RS-1试验性强化剂」，通过利用尘构对路西法合剂的指令进行覆写，得到的一种危险高效的最终手段。\n\n利用尘构对路西法合剂的覆写和过载确实解决了这种纳米机械混合物在协调能力上的缺陷,但也让这种药物变得更不稳定——这便体现在RS-1高概率的昏迷与心脏病副作用上。</Celes_Bio_IV.description>
+  <!-- EN: Unlocks the crafting of "RS-1 Experimental Stimulants", a dangerously efficient final resort obtained by overriding the commands of Luciferium using Dust-Mech. \n\nThe overwriting and overloading of Luciferium using Dust-Mech did solve the nano-mechanical mixture's shortcomings in co-ordination ability, but it also made the drug more unstable - which then manifested itself in RS-1's high probability of coma and heart attack side effects. -->
 
   <Celes_Prosthesis_I.label>尘构调用:活械转译\n(即将推出)</Celes_Prosthesis_I.label>
-  <!-- EN:  -->
+  <!-- EN: Dust-Mech Call:Signal Transcoding(WIP) -->
   <Celes_Prosthesis_I.description>活械转译技术也在做呢，别急别急。</Celes_Prosthesis_I.description>
-  <!-- EN:  -->
+  <!-- EN: Dust-Mech Call:Signal Transcoding(WIP) -->
 
   <Celes_NanoImplant_I.label>尘构调用:侵入性植入</Celes_NanoImplant_I.label>
-  <!-- EN:  -->
+  <!-- EN: Dust-Mech Call:Invasive Implantation -->
   <Celes_NanoImplant_I.description>解锁「侵入性尘构植入」手术，一种利用尘构物质取代部分身体机能的极端强化手段，大多数时候对星铃的副作用处于可控范围。\n\n星铃的自译解技术核心是这么说的……但上面没有说对星铃之外的种族会有什么副作用。</Celes_NanoImplant_I.description>
-  <!-- EN:  -->
+  <!-- EN: Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's Self-explanatory Technology Core says so ...... but it doesn't say what side effects it would have on races other than Celestia. -->
 
   <Celes_NanoImplant_II.label>劣化信息论改造</Celes_NanoImplant_II.label>
-  <!-- EN:  -->
-  <Celes_NanoImplant_II.description>解锁「劣化信息论改造」手术，这种改造一般运用于意外被尘构高度同化的生物，配方已经针对边缘世界的物资进行针对性调整。\n\n这种技术被技术监管委员会限定只能用于未开化动物，但事实上只需要修改一个＂＋＂号就能用于人类。在边缘世界，人类和动物似乎并不是那么泾渭分明。</Celes_NanoImplant_II.description>
-  <!-- EN:  -->
+  <!-- EN: degraded cybernetic modification -->
+  <Celes_NanoImplant_II.description>解锁「劣化信息论改造」手术，这种改造一般运用于意外被尘构高度同化的生物，配方已经针对边缘世界的物资进行针对性调整。\n\n这种技术被技术监管委员会限定只能用于未开化动物，但事实上只需要修改一个"+"号就能用于人类。在边缘世界，人类和动物似乎并不是那么泾渭分明。</Celes_NanoImplant_II.description>
+  <!-- EN: Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct. -->
 
 </LanguageData>

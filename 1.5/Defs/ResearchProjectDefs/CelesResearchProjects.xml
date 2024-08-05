@@ -279,8 +279,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_III</defName>
-        <label>celestia late weapon permission</label>
-        <description>celestia late weapon production permission, authorised by celestia government.</description>
+        <label>Celestia standard-issue weapons</label>
+        <description>Unlocks the crafting of Celestia standard firearms that emit high-energy polarised particle beams; the high-energy radiation attached to these weapons burns the target's body surface severely and interferes with the functioning of mechanics. It also allows the crafting of weapons such as Celestia standard monomolecular sabre. \n\nThese weapons had been phased out by the Celestia Navy for more than a century, but industry on the Rimworld did not support the production of naval weapons for the time being, and so these serviceable particle beam weapons became the standard for Celestia's pioneering teams as well.</description>
         <baseCost>3500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -300,8 +300,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_IV</defName>
-        <label>celestia experimental weapon permission</label>
-        <description>celestia experimental weapon production permission, authorised by celestia government.</description>
+        <label>experimental modified weapons</label>
+        <description>Allows for the manufacture of magnetic reconnection accelerators and radioactive high-energy plasma emitters, weapons derived from experimental modifications of old-time ship repair tools, but capable of bursting with exaggerated lethality.</description>
         <baseCost>5000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -320,8 +320,8 @@
     
     <ResearchProjectDef>
         <defName>Celes_Bio_I</defName>
-        <label>celestia elementary biochemical project</label>
-        <description>celestia elementary biochemical products production permission, authorised by celestia central research institute.</description>
+        <label>Celestia biochemical standard</label>
+        <description>Synchronise Celestia's pharmaceutical technology by extracting bio-enzyme gels from organic matter. Unlock Celestia's basic medicines, such as IAS-2 immune-activating stimulants, which prevents infections and plagues, and NS-90 nervous stimulants, which provides extra efficiency but causes fatigue.</description>
         <baseCost>1500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -335,8 +335,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Bio_II</defName>
-        <label>celestia middel biochemical project</label>
-        <description>celestia middel biochemical products production permission, authorised by celestia central research institute.</description>
+        <label>Celestia combat medication</label>
+        <description>Further analysis of Celestia's biochemical technology unlocks the creation of Celestia's combat drugs: CS-6 combat stimulants, which briefly stimulates tissue activity, and CS-12 combat hemostat, which accelerates wound healing. Please note that these drugs have deadly side effects at the cost of overloading cellular activity.</description>
         <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -351,8 +351,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Bio_III</defName>
-        <label>celestia late biochemical project</label>
-        <description>celestia late biochemical products production permission, authorised by celestia central research institute.</description>
+        <label>Dust-Mech Call:Psychic Pharmaceuticals</label>
+        <description>Unlocks the crafting of "CPS-12 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances.</description>
         <baseCost>2500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -370,8 +370,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Bio_IV</defName>
-        <label>celestia experimental biochemical project</label>
-        <description>celestia experimental biochemical products production permission, authorised by celestia central research institute.</description>
+        <label>High-risk experimental medicines</label>
+        <description>Unlocks the crafting of "RS-1 Experimental Stimulants", a dangerously efficient final resort obtained by overriding the commands of Luciferium using Dust-Mech. \n\nThe overwriting and overloading of Luciferium using Dust-Mech did solve the nano-mechanical mixture's shortcomings in co-ordination ability, but it also made the drug more unstable - which then manifested itself in RS-1's high probability of coma and heart attack side effects.</description>
         <baseCost>3500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -386,8 +386,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Prosthesis_I</defName>
-        <label>celestia elementary biochemical project</label>
-        <description>celestia elementary biochemical products production permission, authorised by celestia central research institute.</description>
+        <label>Dust-Mech Call:Signal Transcoding(WIP)</label>
+        <description>Dust-Mech Call:Signal Transcoding(WIP)</description>
         <baseCost>2000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -407,8 +407,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_NanoImplant_I</defName>
-        <label>celestia experimental biochemical project</label>
-        <description>celestia experimental biochemical products production permission, authorised by celestia central research institute.</description>
+        <label>Dust-Mech Call:Invasive Implantation</label>
+        <description>Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's Self-explanatory Technology Core says so ...... but it doesn't say what side effects it would have on races other than Celestia.</description>
         <descriptionHyperlinks>
             <RecipeDef>Celes_ImplantNanomachine_ForCeles</RecipeDef>
             <HediffDef>Celes_NanoImplanted_ForCeles</HediffDef>
@@ -432,8 +432,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_NanoImplant_II</defName>
-        <label>celestia experimental biochemical project</label>
-        <description>celestia experimental biochemical products production permission, authorised by celestia central research institute.</description>
+        <label>degraded cybernetic modification</label>
+        <description>Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct.</description>
         <descriptionHyperlinks>
             <RecipeDef>Celes_DegradedCyberneticSurgery</RecipeDef>
             <HediffDef>Celes_NanoImplanted_IV</HediffDef>
