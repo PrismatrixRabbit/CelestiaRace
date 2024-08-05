@@ -7,72 +7,118 @@
   <!-- EN: Unlock Celestia tech items by decoding the symbols and words in Celestia tech to unlock the most basic equipment for the Rimworld environment. -->
   
   <Celes_MainTech_II.label>尘构技术解译</Celes_MainTech_II.label>
-  <Celes_MainTech_II.description>破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。/n/n解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。</Celes_MainTech_II.description>
+  <!-- EN: Dust-Mech technical interpretation -->
+  <Celes_MainTech_II.description>破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。\n\n&lt;color=#87cefa&gt;＂尘构，学名适应性纳米校正系统(Adaptive Nano Calibration System)，即ANCS。是由星铃文明研发的，基于控制论的增强纳米机械。尘构能够融合不同的生物与生物，生物与机械，并且充当媒介在其中获取，传递，并处理信息流，在与智能结合的情况下，具有高度的适应性。＂————解析自星铃自译解技术核心&lt;/color&gt;</Celes_MainTech_II.description>
+  <!-- EN: Decipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.\n\n"The Dust-Mech, known as the Adaptive Nano Calibration System, or ANCS, is a cybernetic-based augmented nanomachine developed by the Celestia civilisation. The Dust-Mech is capable of fusing different organisms with organisms, and organisms with machinery, and acts as a medium in which to acquire, transmit, and process information flows, and is highly adaptable when combined with intelligence. " - Parsed from Celestia's Self-explanatory Technology Core -->
 
   <Celes_MainTech_III.label>尘构重编程(即将推出)</Celes_MainTech_III.label>
+  <!-- EN: Dust-Mech reprogramming(WIP) -->
   <Celes_MainTech_III.description>尘构重编程，绝赞制作中。</Celes_MainTech_III.description>
+  <!-- EN: Dust-Mech reprogramming(WIP) -->
 
   <Celes_Apparel_I.label>星铃制衣标准</Celes_Apparel_I.label>
+  <!-- EN: Celestia clothing standards -->
   <Celes_Apparel_I.description>在复杂衣物的基础上，进一步解析贴合星铃体型的制衣标准。解锁适用于星铃复杂衣物，比如防风大衣，夏装背心等。</Celes_Apparel_I.description>
+  <!-- EN: Based on complex clothing,further parsing the clothing standards which fit Celestia's body type. Unlock complex clothing for Celestia, such as trench coats, summer vests, and more. -->
 
   <Celes_Apparel_II.label>星铃日常服装</Celes_Apparel_II.label>
-  <Celes_Apparel_II.description>允许制作星铃社会常见的各种日常服装，例如各种制服和丝袜。这些衣物开始必须在星铃缝纫台上制作。</Celes_Apparel_II.description>
+  <!-- EN: Celestia daily clothing -->
+  <Celes_Apparel_II.description>允许制作星铃社会常见的各种日常服装款式，例如各种制服和丝袜。这些衣物开始必须在星铃缝纫台上制作。</Celes_Apparel_II.description>
+  <!-- EN: Allows for the creation of a variety of daily clothing styles common to Celestia society, such as various uniforms and stockings. These garments must be made on the Celestia tailoring tab to begin with. -->
 
   <Celes_Apparel_III.label>拓荒军事制服</Celes_Apparel_III.label>
+  <!-- EN: pioneer military uniforms -->
   <Celes_Apparel_III.description>研究星铃拓荒队的军事服装，这种制服款式曾经是星铃海军陆战队的军装，如今则广泛的用于星铃先锋小队中。</Celes_Apparel_III.description>
+  <!-- EN: Study the military clothing of the Celestia Pioneers, a uniform style that was once the uniform of the Celestia Marines and is now widely used in the Celestia Vanguard Squad. -->
 
   <Celes_Apparel_III_a.label>星铃专业服装</Celes_Apparel_III_a.label>
+  <!-- EN: Celestia professional clothing -->
   <Celes_Apparel_III_a.description>研究星铃拓荒队的专业服装，这些衣物大多是＂领航计划＂时期为了适应未知星球环境开发的特化服装，被用于各式特殊场景。</Celes_Apparel_III_a.description>
+  <!-- EN: Study Celestia's professional clothing, most of which was developed during The Navigator Programme to adapt to unknown planetary environments and was used in a variety of special scenarios. -->
 
   <Celes_Apparel_IV.label>星铃动力突击装甲</Celes_Apparel_IV.label>
+  <!-- EN: Celestia power assault armour -->
   <Celes_Apparel_IV.description>解锁星铃动力突击盔甲，在太空活动防护服的基础上，结合一部分曾用于星铃外环星域治安部队的技术制作出属于星铃的动力突击装甲。\n\n真正用于星铃海军的标准动力装甲在边缘世界难以制造，但这种装甲也足够面对边缘世界的冲突烈度。</Celes_Apparel_IV.description>
+  <!-- EN: Unlocking the Celestia Power Assault Armour, based on the IEVA suits, combines a portion of the technology once used for the security forces of Celestia's Outer Rim domains to create a power assault armour that belongs to Celestia. \n\nThe standard power armour that was really used for Celestia's navy is difficult to make in the Rimworld, but this armour is also sufficient to face the intensity of conflict in the Rimworld. -->
 
   <Celes_Apparel_V.label>北冕座项目(即将推出)</Celes_Apparel_V.label>
+  <!-- EN: Corona Borealis Programme(WIP) -->
   <Celes_Apparel_V.description>北冕座项目，绝赞制作中，我和你说这就是雷神锤Mark V。</Celes_Apparel_V.description>
+  <!-- EN: Corona Borealis Programme(WIP) -->
 
   <Celes_AdvancedCloth.label>尘构调用:纤维重组</Celes_AdvancedCloth.label>
+  <!-- EN: Dust-Mech Call:Fibre Recombination -->
   <Celes_AdvancedCloth.description>解锁制作「尘化丝绸」，一种利用尘构重组微观纤维结构制成的高强度布料。</Celes_AdvancedCloth.description>
+  <!-- EN: Unlocks the crafting of "Dust-Mech Silk", a high-strength fabric made using Dust-Mech to reorganise microscopic fibre structures. -->
   
   <Celes_Manufactory_I.label>星铃加工标准</Celes_Manufactory_I.label>
+  <!-- EN: Celestia processing standard -->
   <Celes_Manufactory_I.description>解锁建造「星铃加工台」，针对星铃的加工标准设计的特殊制造台，用于制造各式星铃装备。</Celes_Manufactory_I.description>
+  <!-- EN: Unlock the "Celestia multifunctional tab", a special manufacturing station designed for Celestia's processing standard, used to manufacture various types of Celestia equipment. -->
 
   <Celes_Manufactory_II.label>尘构调用:晶格重构</Celes_Manufactory_II.label>
+  <!-- EN: Dust-Mech Call:Lattice Reconstruction -->
   <Celes_Manufactory_II.description>解锁制作「淬铃合金」，一种利用尘构重组金属晶格结构制成的特种合金。</Celes_Manufactory_II.description>
+  <!-- EN: Unlocks the crafting of "Chime Alloy", a special alloy made by using Dust-Mech to reconfigure the lattice structure of metals. -->
 
   <Celes_Manufactory_II_a.label>灵能专业化合金</Celes_Manufactory_II_a.label>
+  <!-- EN: psychic specialised alloy -->
   <Celes_Manufactory_II_a.description>解锁「黑石合金」与「灵化合金」，对灵能反应具有特殊性质的两种合金。</Celes_Manufactory_II_a.description>
+  <!-- EN: Unlock "Blackstone Alloy" and "Warlock Alloy", two alloys with special properties for psychic energy reactions. -->
 
   <Celes_Weapon_I.label>星铃拓荒武器</Celes_Weapon_I.label>
+  <!-- EN: Celestia pioneer weapons -->
   <Celes_Weapon_I.description>依照星铃标准设计拓荒武器，允许制作拓荒冰镐，并改良简单枪械。\n\n这些设计据说是源于最初的星铃从母星带来的古董文物，但没有人能证实亦或证伪。</Celes_Weapon_I.description>
+  <!-- EN: Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese designs are said to have originated from antique artefacts brought by the original Celestia from its home planet, but no one has been able to confirm or disprove this. -->
 
   <Celes_Weapon_II.label>星铃古典武器</Celes_Weapon_II.label>
+  <!-- EN: Celestia classical weapons -->
   <Celes_Weapon_II.description>按照星铃武器规范和弹药口径设计的古典武器，允许制作拓荒军刀等武器，并改良精准步枪。\n\n这种古典的武器仍然用于星铃拓荒队的先锋小队中，或者被配发给前哨站居民防身，它们的历史却已经无从追溯。</Celes_Weapon_II.description>
+  <!-- EN: Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThese classical weapons are still used in Celestia Pathfinder pioneer squads or are issued to outpost residents for self-defence; their history can no longer be traced. -->
 
   <Celes_Weapon_III.label>星铃制式武器</Celes_Weapon_III.label>
-  <Celes_Weapon_III.description>解锁制作发射高能极化粒子束的星铃制式枪械,并允许制作制式单分子军刀等武器。\n\n这些武器曾被星铃海军淘汰百年有余，但边缘世界的工业暂不支持海军制式武器的生产，于是这些可堪一用的粒子束武器便也成为拓荒队的标配。</Celes_Weapon_III.description>
+  <!-- EN: Celestia standard-issue weapons -->
+  <Celes_Weapon_III.description>解锁制作发射高能极化粒子束星铃制式枪械,并允许制作制式单分子军刀等武器，这些武器附带的高能辐射会对目标体表严重烧伤，并干扰机械体的运作。\n\n这些武器曾被星铃海军淘汰百年有余，但边缘世界的工业暂不支持海军制式武器的生产，于是这些可堪一用的粒子束武器便也成为拓荒队的标配。</Celes_Weapon_III.description>
+  <!-- EN:  -->
   
   <Celes_Weapon_IV.label>星铃试验性武器</Celes_Weapon_IV.label>
+  <!-- EN:  -->
   <Celes_Weapon_IV.description>允许制造磁重联加速器与放射性高能等离子发射器，这种武器源于对旧时代飞船维修工具的试验性改造，但能爆发出夸张的杀伤力。</Celes_Weapon_IV.description>
+  <!-- EN:  -->
   
   <Celes_Bio_I.label>星铃生化标准</Celes_Bio_I.label>
-  <Celes_Bio_I.description>同步星铃的制药技术，解锁星铃基础药物，例如可以预防感染，瘟疫等疾病的「IAS-2免疫增强剂」与提供额外工作效率但带来疲劳的「NS-90神经兴奋剂」。</Celes_Bio_I.description>
+  <!-- EN:  -->
+  <Celes_Bio_I.description>同步星铃的制药技术，从有机质中提取生物酶凝胶。解锁制作星铃基础药物，例如可以预防感染，瘟疫等疾病的「IAS-2免疫增强剂」与提供额外工作效率但带来疲劳的「NS-90神经兴奋剂」。</Celes_Bio_I.description>
+  <!-- EN:  -->
 
   <Celes_Bio_II.label>星铃作战药物</Celes_Bio_II.label>
-  <Celes_Bio_II.description>星铃中级生化许可。</Celes_Bio_II.description>
+  <!-- EN:  -->
+  <Celes_Bio_II.description>进一步解析星铃生化科技，解锁制作星铃作战药物：短暂激发组织活性的「CS-6作战增强剂」与加快伤口愈合的「CS-12作战止血剂」。请注意,这些药物以过载细胞活性为代价,具有相当致命的副作用。</Celes_Bio_II.description>
+  <!-- EN:  -->
 
   <Celes_Bio_III.label>尘构调用:灵能制药</Celes_Bio_III.label>
-  <Celes_Bio_III.description>星铃高级生化许可。</Celes_Bio_III.description>
+  <!-- EN:  -->
+  <Celes_Bio_III.description>解锁制作「CPS-12作战灵能强化剂」，通过直接摄入特殊编码的尘构物质大幅强化使用者的精神力。</Celes_Bio_III.description>
+  <!-- EN:  -->
   
   <Celes_Bio_IV.label>高危试验性药物</Celes_Bio_IV.label>
-  <Celes_Bio_IV.description>星铃试验性生化许可。</Celes_Bio_IV.description>
+  <!-- EN:  -->
+  <Celes_Bio_IV.description>解锁制作「RS-1试验性强化剂」，通过利用尘构对路西法合剂的指令进行修正，得到的一种危险高效的最终手段。</Celes_Bio_IV.description>
+  <!-- EN:  -->
 
   <Celes_Prosthesis_I.label>尘构调用:活械转译\n(即将推出)</Celes_Prosthesis_I.label>
-  <Celes_Prosthesis_I.description>星铃试验性生化许可。</Celes_Prosthesis_I.description>
+  <!-- EN:  -->
+  <Celes_Prosthesis_I.description>活械转译技术也在做呢，别急别急。</Celes_Prosthesis_I.description>
+  <!-- EN:  -->
 
   <Celes_NanoImplant_I.label>尘构调用:侵入性植入</Celes_NanoImplant_I.label>
-  <Celes_NanoImplant_I.description>星铃高级生化许可。</Celes_NanoImplant_I.description>
+  <!-- EN:  -->
+  <Celes_NanoImplant_I.description>解锁「侵入性尘构植入」手术，一种利用尘构物质取代部分身体机能的极端强化手段，大多数时候对星铃的副作用处于可控范围。\n\n星铃的自译解技术核心是这么说的……但上面没有说对星铃之外的种族会有什么副作用。</Celes_NanoImplant_I.description>
+  <!-- EN:  -->
 
-  <Celes_NanoImplant_II.label>信息论改造</Celes_NanoImplant_II.label>
-  <Celes_NanoImplant_II.description>星铃试验性生化许可。</Celes_NanoImplant_II.description>
+  <Celes_NanoImplant_II.label>劣化信息论改造</Celes_NanoImplant_II.label>
+  <!-- EN:  -->
+  <Celes_NanoImplant_II.description>解锁「劣化信息论改造」手术，这种改造一般运用于意外被尘构高度同化的生物，配方已经针对边缘世界的物资进行针对性调整。\n\n这种技术被技术监管委员会限定只能用于未开化动物，但事实上只需要修改一个＂＋＂号就能用于人类。在边缘世界，人类和动物似乎并不是那么泾渭分明。</Celes_NanoImplant_II.description>
+  <!-- EN:  -->
 
 </LanguageData>

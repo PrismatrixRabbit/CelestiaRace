@@ -126,6 +126,7 @@
                 <label>minor</label>
                 <minSeverity>0.805</minSeverity>
                 <painOffset>0.80</painOffset>
+                <lifeThreatening>true</lifeThreatening>
                 <statOffsets>
                     <RestFallRateFactor>1</RestFallRateFactor>
                 </statOffsets>
@@ -135,6 +136,36 @@
                         <setMax>0.1</setMax>
                     </li>
                 </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_RandomDrugEffect">
+                        <hediff>ChemicalDamageSevere</hediff>
+                        <severityToMtbDaysCurve>
+                            <points>
+                                <li>(0.80, 1)</li>
+                                <li>(0.90, 0.5)</li>
+                            </points>
+                        </severityToMtbDaysCurve>
+                        <partsToAffect>
+                        <li>Liver</li>
+                        <li>Kidney</li>
+                        <li>Lung</li>
+                        <li>Stomach</li>
+                        <li>Heart</li>
+                    </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_RandomDrugEffect">
+                        <hediff>Dementia</hediff>
+                        <severityToMtbDaysCurve>
+                            <points>
+                                <li>(0.80, 1)</li>
+                                <li>(0.90, 0.5)</li>
+                            </points>
+                        </severityToMtbDaysCurve>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
             </li>
         </stages>
         <comps>
@@ -172,6 +203,7 @@
                 <label>minor</label>
                 <minSeverity>0.9</minSeverity>
                 <painOffset>0.80</painOffset>
+                <lifeThreatening>true</lifeThreatening>
                 <statOffsets>
                     <RestFallRateFactor>1</RestFallRateFactor>
                 </statOffsets>
@@ -181,6 +213,36 @@
                         <setMax>0.1</setMax>
                     </li>
                 </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_RandomDrugEffect">
+                        <hediff>ChemicalDamageSevere</hediff>
+                        <severityToMtbDaysCurve>
+                            <points>
+                                <li>(0.90, 0.5)</li>
+                                <li>(1.00, 0.4)</li>
+                            </points>
+                        </severityToMtbDaysCurve>
+                        <partsToAffect>
+                            <li>Liver</li>
+                            <li>Kidney</li>
+                            <li>Lung</li>
+                            <li>Stomach</li>
+                            <li>Heart</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_RandomDrugEffect">
+                        <hediff>Dementia</hediff>
+                        <severityToMtbDaysCurve>
+                            <points>
+                                <li>(0.90, 0.5)</li>
+                                <li>(1.00, 0.4)</li>
+                            </points>
+                        </severityToMtbDaysCurve>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
             </li>
         </stages>
         <comps>
@@ -247,9 +309,9 @@
                 <li>CelesNanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <researchPrerequisites>
+        <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
-        </researchPrerequisites>
+        </researchPrerequisite>
         <uiIconThing>CelesNanoMachine</uiIconThing>
     </RecipeDef>
 
@@ -273,9 +335,9 @@
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s nanomachine infection from their body.</successfullyRemovedHediffMessage>
         <isViolation>false</isViolation>
         <anesthetize>false</anesthetize>
-        <researchPrerequisites>
+        <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
-        </researchPrerequisites>
+        </researchPrerequisite>
     </RecipeDef>
     
     <RecipeDef ParentName="SurgeryFlesh">
@@ -321,9 +383,9 @@
             <CelesNanoMachine>10</CelesNanoMachine>
             <Neutroamine>10</Neutroamine>
         </products>
-        <researchPrerequisites>
+        <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
-        </researchPrerequisites>
+        </researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">

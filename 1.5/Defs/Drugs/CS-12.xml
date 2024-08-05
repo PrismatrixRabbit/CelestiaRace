@@ -23,8 +23,6 @@
         <ingestible>
             <ingestSound>Ingest_Inject</ingestSound>
             <foodType>Processed</foodType>
-            <joyKind>Chemical</joyKind>
-            <joy>0.50</joy>
             <baseIngestTicks>650</baseIngestTicks>
             <nurseable>true</nurseable>
             <drugCategory>Hard</drugCategory>
@@ -40,10 +38,7 @@
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
                     <hediffDef>CS12_High</hediffDef>
-                    <severity>1</severity>
-                </li>
-                <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-                    <offset>0.15</offset>
+                    <severity>0.5</severity>
                 </li>
             </outcomeDoers>
         </ingestible>
@@ -79,7 +74,7 @@
         <isBad>false</isBad>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-8</severityPerDay>
+                <severityPerDay>-4</severityPerDay>
                 <showHoursToRecover>true</showHoursToRecover>
             </li>
         </comps>
@@ -97,11 +92,29 @@
             <li>
                 <minSeverity>0.001</minSeverity>
                 <label>Effecting.</label>
-                <painFactor>0</painFactor>
+                <painFactor>0.5</painFactor>
+                <totalBleedFactor>0.3</totalBleedFactor>
+                <statFactors>
+                    <InjuryHealingFactor>1.5</InjuryHealingFactor>
+                </statFactors>
+            </li>
+            <li>
+                <minSeverity>0.501</minSeverity>
+                <label>Effecting.</label>
+                <painFactor>0.2</painFactor>
                 <totalBleedFactor>0</totalBleedFactor>
                 <statFactors>
                     <InjuryHealingFactor>2.5</InjuryHealingFactor>
                 </statFactors>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>HeartAttack</hediff>
+                        <mtbDays>1</mtbDays>
+                        <partsToAffect>
+                            <li>Heart</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
             </li>
         </stages>
     </HediffDef>

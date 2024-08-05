@@ -20,8 +20,6 @@
         <techLevel>Industrial</techLevel>
         <ingestible>
             <foodType>Processed, Fluid</foodType>
-            <joyKind>Chemical</joyKind>
-            <joy>0.50</joy>
             <nurseable>true</nurseable>
             <drugCategory>Hard</drugCategory>
             <baseIngestTicks>40</baseIngestTicks>
@@ -38,12 +36,19 @@
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
                     <hediffDef>RS1_High</hediffDef>
-                    <severity>1</severity>
+                    <severity>0.5</severity>
                 </li>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <chance>0.5</chance>
-                    <hediffDef>HeartAttack</hediffDef>
-                    <severity>0.8</severity>
+                    <chance>0.33</chance>
+                    <hediffDef>Celes_RS1Stun</hediffDef>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>1.0</offset>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Food</need>
+                    <offset>1.0</offset>
                 </li>
             </outcomeDoers>
         </ingestible>
@@ -65,62 +70,100 @@
             </li>
         </comps>
     </ThingDef>
-    <!-- TODO 赌博针随机生效机制 -->
+    
     <HediffDef>
         <defName>RS1_High</defName>
         <label>RS-1 effecting</label>
-        <labelNoun>a RS-1 high</labelNoun>
         <description>.</description>
         <hediffClass>Hediff_High</hediffClass>
         <maxSeverity>1</maxSeverity>
         <isBad>false</isBad>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-0.5</severityPerDay>
+                <severityPerDay>-1</severityPerDay>
                 <showHoursToRecover>true</showHoursToRecover>
-            </li>   
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>HeartAttack</targetHediff>
+                <chanceToJump>0.6</chanceToJump>
+                <minToJump>true</minToJump>
+            </li>
         </comps>
         <stages>
             <li>
+                <painFactor>0.5</painFactor>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <socialFightChanceFactor>5.0</socialFightChanceFactor>
                 <capMods>
                     <li>
-                        <capacity>Breathing</capacity>
-                        <offset>1</offset>
-                    </li>
-                    <li>
                         <capacity>Consciousness</capacity>
-                        <offset>1.5</offset>
+                        <offset>0.20</offset>
                     </li>
                     <li>
-                        <capacity>BloodPumping</capacity>
-                        <offset>1</offset>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.30</offset>
                     </li>
                     <li>
                         <capacity>Moving</capacity>
-                        <offset>1</offset>
+                        <offset>0.30</offset>
                     </li>
                     <li>
                         <capacity>Sight</capacity>
-                        <offset>1</offset>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>1.00</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.20</offset>
                     </li>
                     <li>
                         <capacity>Metabolism</capacity>
-                        <offset>1</offset>
+                        <offset>0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>0.20</offset>
                     </li>
                 </capMods>
-                <painFactor>0</painFactor>
-                <totalBleedFactor>0</totalBleedFactor>
                 <statOffsets>
-                    <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
-                    <ShootingAccuracyPawn>1</ShootingAccuracyPawn>
-                    <MeleeHitChance>1</MeleeHitChance>
+                    <WorkSpeedGlobal>-0.50</WorkSpeedGlobal>
+                    <ShootingAccuracyPawn>7</ShootingAccuracyPawn>
+                    <MeleeHitChance>7</MeleeHitChance>
                     <MeleeDPS>2</MeleeDPS>
                 </statOffsets>
                 <statFactors>
-                    <AimingDelayFactor>0.2</AimingDelayFactor>
-                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <AimingDelayFactor>0.66</AimingDelayFactor>
+                    <InjuryHealingFactor>1.5</InjuryHealingFactor>
                 </statFactors>
             </li>
         </stages>
     </HediffDef>
+    
+    <HediffDef ParentName="DiseaseBase">
+        <defName>Celes_RS1Stun</defName>
+        <label>Celes_RS1Stun</label>
+        <description>.</description>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>60000~150000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <vomitMtbDays>0.3</vomitMtbDays>
+                <painFactor>0.8</painFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.15</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+    
 </Defs>

@@ -26,8 +26,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_MainTech_II</defName>
-        <label>Celes_MainTech_II</label>
-        <description>.</description>
+        <label>Dust-Mech technical interpretation</label>
+        <description>Decipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.\n\n&lt;color=#87cefa&gt;"The Dust-Mech, known as the Adaptive Nano Calibration System, or ANCS, is a cybernetic-based augmented nanomachine developed by the Celestia civilisation. The Dust-Mech is capable of fusing different organisms with organisms, and organisms with machinery, and acts as a medium in which to acquire, transmit, and process information flows, and is highly adaptable when combined with intelligence. " - Parsed from Celestia's Self-explanatory Technology Core.&lt;/color&gt;</description>
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -35,6 +35,9 @@
             <li>Celes_MainTech_I</li>
             <li>AdvancedFabrication</li>
         </prerequisites>
+        <requiredAnalyzed>
+            <li>Celes_STC_MainTech_II</li>
+        </requiredAnalyzed>
         <researchViewX>3</researchViewX>
         <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
@@ -42,8 +45,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_MainTech_III</defName>
-        <label>Celes_MainTech_III</label>
-        <description>.</description>
+        <label>Dust-Mech reprogramming(WIP)</label>
+        <description>Dust-Mech reprogramming(WIP)</description>
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -57,8 +60,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_I</defName>
-        <label>celestia basic apparel permission</label>
-        <description>Level 1 Celestia apparel production permission, authorised by celestia government</description>
+        <label>Celestia clothing standards</label>
+        <description>Based on complex clothing,further parsing the clothing standards which fit Celestia's body type. Unlock complex clothing for Celestia, such as trench coats, summer vests, and more.</description>
         <baseCost>100</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -72,8 +75,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_II</defName>
-        <label>celestia daily apparel permission</label>
-        <description>Level 2 Celestia apparel production permission, authorised by celestia government</description>
+        <label>Celestia daily wear</label>
+        <description>Allows for the creation of a variety of daily clothing styles common to Celestia society, such as various uniforms and stockings. These garments must be made on the Celestia tailoring tab to begin with.</description>
         <baseCost>300</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -88,8 +91,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_III</defName>
-        <label>celestia specialized apparel permission</label>
-        <description>Level 3 Celestia apparel production permission, authorised by celestia government</description>
+        <label>pioneer military uniforms</label>
+        <description>Study the military clothing of the Celestia Pioneers, a uniform style that was once the uniform of the Celestia Marines and is now widely used in the Celestia Vanguard Squad.</description>
         <baseCost>1400</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -106,8 +109,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_III_a</defName>
-        <label>celestia specialized apparel permission</label>
-        <description>Level 3 Celestia apparel production permission, authorised by celestia government</description>
+        <label>Celestia professional clothing</label>
+        <description>Study Celestia's professional clothing, most of which was developed during The Navigator Programme to adapt to unknown planetary environments and was used in a variety of special scenarios.</description>
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -122,8 +125,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_IV</defName>
-        <label>celestia military apparel permission</label>
-        <description>Level 4 Celestia apparel production permission, authorised by celestia government</description>
+        <label>Celestia power assault armour</label>
+        <description>Unlocking the Celestia Power Assault Armour, based on the IEVA suits, combines a portion of the technology once used for the security forces of Celestia's Outer Rim domains to create a power assault armour that belongs to Celestia. \n\nThe standard power armour that was really used for Celestia's navy is difficult to make in the Rimworld, but this armour is also sufficient to face the intensity of conflict in the Rimworld.</description>
         <baseCost>6000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -144,8 +147,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_V</defName>
-        <label>celestia military apparel permission</label>
-        <description>Level 4 Celestia apparel production permission, authorised by celestia government</description>
+        <label>Corona Borealis Programme(WIP)</label>
+        <description>Corona Borealis Programme(WIP)</description>
         <baseCost>10000</baseCost>
         <techLevel>Ultra</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -155,9 +158,6 @@
         <prerequisites>
             <li>Celes_Apparel_IV</li>
         </prerequisites>
-        <requiredAnalyzed>
-            <li>Celes_STC</li>
-        </requiredAnalyzed>
         <researchViewX>6</researchViewX>
         <researchViewY>0</researchViewY>
         <tab>Celes_ResearchTab</tab>
@@ -167,8 +167,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_AdvancedCloth</defName>
-        <label>celestia military apparel permission</label>
-        <description>Level 4 Celestia apparel production permission, authorised by celestia government</description>
+        <label>Dust-Mech Call:Fibre Recombination</label>
+        <description>Unlocks the crafting of "Dust-Mech Silk", a high-strength fabric made using Dust-Mech to reorganise microscopic fibre structures.</description>
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -188,9 +188,9 @@
 
     <ResearchProjectDef>
         <defName>Celes_Manufactory_I</defName>
-        <label>celestia early weapon permission</label>
-        <description>celestia early weapon production permission, authorised by celestia government.</description>
-        <baseCost>1000</baseCost>
+        <label>Celestia processing standard</label>
+        <description>Unlock the "Celestia multifunctional tab", a special manufacturing station designed for Celestia's processing standard, used to manufacture various types of Celestia equipment.</description>
+        <baseCost>100</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_MainTech_I</li>
@@ -205,8 +205,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Manufactory_II</defName>
-        <label>celestia early weapon permission</label>
-        <description>celestia early weapon production permission, authorised by celestia government.</description>
+        <label>Dust-Mech Call:Lattice Reconstruction</label>
+        <description>Unlocks the crafting of "Chime Alloy", a special alloy made by using Dust-Mech to reconfigure the lattice structure of metals.</description>
         <baseCost>1000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -226,8 +226,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Manufactory_II_a</defName>
-        <label>celestia early weapon permission</label>
-        <description>celestia early weapon production permission, authorised by celestia government.</description>
+        <label>psychic specialised alloy</label>
+        <description>Unlock "Blackstone Alloy" and "Warlock Alloy", two alloys with special properties for psychic energy reactions.</description>
         <baseCost>1000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -246,8 +246,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_I</defName>
-        <label>celestia early weapon permission</label>
-        <description>celestia early weapon production permission, authorised by celestia government.</description>
+        <label>Celestia pioneer weapons</label>
+        <description>Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese designs are said to have originated from antique artefacts brought by the original Celestia from its home planet, but no one has been able to confirm or disprove this.</description>
         <baseCost>300</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -262,8 +262,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_II</defName>
-        <label>celestia middel weapon permission</label>
-        <description>celestia middel weapon production permission, authorised by celestia government.</description>
+        <label>Celestia classical weapons</label>
+        <description>Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThese classical weapons are still used in Celestia Pathfinder pioneer squads or are issued to outpost residents for self-defence; their history can no longer be traced.</description>
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -322,7 +322,7 @@
         <defName>Celes_Bio_I</defName>
         <label>celestia elementary biochemical project</label>
         <description>celestia elementary biochemical products production permission, authorised by celestia central research institute.</description>
-        <baseCost>2000</baseCost>
+        <baseCost>1500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_MainTech_I</li>
@@ -337,7 +337,7 @@
         <defName>Celes_Bio_II</defName>
         <label>celestia middel biochemical project</label>
         <description>celestia middel biochemical products production permission, authorised by celestia central research institute.</description>
-        <baseCost>1000</baseCost>
+        <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
@@ -353,7 +353,7 @@
         <defName>Celes_Bio_III</defName>
         <label>celestia late biochemical project</label>
         <description>celestia late biochemical products production permission, authorised by celestia central research institute.</description>
-        <baseCost>1500</baseCost>
+        <baseCost>2500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
@@ -372,7 +372,7 @@
         <defName>Celes_Bio_IV</defName>
         <label>celestia experimental biochemical project</label>
         <description>celestia experimental biochemical products production permission, authorised by celestia central research institute.</description>
-        <baseCost>2000</baseCost>
+        <baseCost>3500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
@@ -389,7 +389,11 @@
         <label>celestia elementary biochemical project</label>
         <description>celestia elementary biochemical products production permission, authorised by celestia central research institute.</description>
         <baseCost>2000</baseCost>
-        <techLevel>Industrial</techLevel>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+        <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
         <prerequisites>
             <li>Celes_MainTech_II</li>
         </prerequisites>
