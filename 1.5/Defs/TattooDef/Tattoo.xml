@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <StyleItemCategoryDef>
+        <defName>Celes_TattooStyle</defName>
+        <label>celestia Tattoo style</label>
+    </StyleItemCategoryDef>
+
+    <TattooDef>
+        <defName>Celes_Component</defName>
+        <label>celestia Component Tattoo</label>
+        <texPath>Celes/Tattoo/Component/Component</texPath>
+        <tattooType>Body</tattooType>
+        <category>Celes_Style</category>
+        <styleTags>
+            <li>Celes_TattooBodyStyle</li>
+        </styleTags>
+    </TattooDef>
+
+    <TattooDef>
+        <defName>Celes_TattooNull</defName>
+        <label>celestia Null Tattoo</label>
+        <texPath>Celes/Hair/Null/Null</texPath>
+        <tattooType>Face</tattooType>
+        <category>Celes_Style</category>
+        <noGraphic>true</noGraphic>
+        <styleTags>
+            <li>Celes_TattooFaceStyle</li>
+        </styleTags>
+    </TattooDef>
+
+</Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_CivilianUniform.label>星铃文职制服</Celes_CivilianUniform.label>
+    <!-- EN: celestia civilian uniform -->
+    <Celes_CivilianUniform.description>一件相对正式的文员制服套装，包含白色衬衫与包臀裙，附带一条可爱的短领带。\n\n这种衣物大多没有采用高弹性面料，于是对于一部分星铃来说，如何扣上胸口的扣子而不崩开就成了一个小问题。不过奇怪的是，穿着这种制服时洽谈好像确实莫名的会有更高的成功率，尤其是做伸展运动后。</Celes_CivilianUniform.description>
+    <!-- EN: A relatively formal clerk's uniform suit consisting of a white shirt with a wrap-around skirt, accompanied by a cute short tie. \n\n Most of this type of clothing didn't use highly elasticated fabrics, so for a portion of Celestia, it became a bit of a problem to button up the chest without it falling apart. Oddly enough, though, negotiating while wearing this uniform did seem to inexplicably have a higher success rate, especially after stretching exercises. -->
+
+    <Celes_MilitaryUniform.label>星铃夏季军装</Celes_MilitaryUniform.label>
+    <!-- EN: celestia military uniform -->
+    <Celes_MilitaryUniform.description>参照星铃海军制服设计的高温环境军装，删减了许多针对太空环境的设计，同时也作为星铃军人正装的内衬。\n\n＂沿袭了来自星铃海军军装的戗驳领双排扣设计，兼顾稳重，威严与优雅。高弹性面料在凸显军人刚硬曲线的同时丝毫不会影响到身体敏捷……＂大多数介绍都是这么解释拓荒队军装的来历，但其中的用词似乎……有点违心。</Celes_MilitaryUniform.description>
+    <!-- EN: Designed with reference to Celestia's naval uniforms for high temperature environments and also serve as a liner for Celestia's military formal wear. Though, many of the designs for the space environment have been cut. \n\n"The knock-down collar and double-breasted design from Celestia's naval uniforms combines stability, majesty and elegance. Highly elastic fabric highlights the HARD curves of the soldier while not affecting physical agility in the slightest ......" This is how most introductions explain the origins of the pioneer military uniform, but the wording used in it seems ...... to be a bit counterintuitive. -->
+
+    <Celes_ExploreVest.label>星铃拓荒防护服</Celes_ExploreVest.label>
+    <!-- EN: celestia explore vest -->
+    <Celes_ExploreVest.description>一件对躯干提供重点防护的防护服装，减弱穿戴者所受的生化与放射性威胁，在一定程度上增加了星铃拓荒小队的效率与泛用。\n\n在＂领航计划＂初期的设计中，这种防护服应当额外携带吗啡注射器，盖格计数器，附带头部防具与夜视仪，甚至集成一个智能终端并内置人工智能。但设计局最终以边缘世界难以提供足够的资源量产为理由削减了这些功能。</Celes_ExploreVest.description>
+    <!-- EN: A protective suit that provides focused protection to the torso, reducing the wearer's exposure to biochemical and radiological threats, and increasing the Celestia Pilot Team's efficiency and versatility to a certain extent. \n\nIn the initial design of The Navigator Programme, the suit was supposed to carry a morphine injector, a Geiger counter, head protection and night vision, and even a smart terminal with built-in artificial intelligence. However, the design bureau eventually cut these features on the grounds that the Rimworld would have difficulty in providing sufficient resources for mass production. -->
+
+</LanguageData>

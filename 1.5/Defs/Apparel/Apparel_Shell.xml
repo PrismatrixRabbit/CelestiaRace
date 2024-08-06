@@ -23,8 +23,8 @@
 	
 	<ThingDef ParentName="Celes_ShellBase"><!--拓荒大衣-->
 	<defName>Celes_ExploreCoat</defName>
-	<label>ExploreCoat</label>
-	<description>currently unavailable</description>
+	<label>celestia explore coat</label>
+	<description>An easy-to-fabricate loose-fitting coat that comes with plenty of hanging straps and elasticated bands to suit a variety of conditions, a design that even rock-knocking natives could barely emulate. \n\nThis coat was designed to provide the most basic clothing protection in situations where there was a high lack of tools around. But so little attention has been devoted to this situation as an alternate alternative that the coat seems to have so much extra and unnecessary structure - so much that it could be passed off as popular fashion by the Celestia.</description>
 	<costStuffCount>60</costStuffCount>
 	<stuffCategories>
 	    <li>Fabric</li>
@@ -75,8 +75,8 @@
 
 	<ThingDef ParentName="Celes_ShellBase"><!--防风大衣-->
 		<defName>Celes_TrenchCoat</defName>
-		<label>TrenchCoat</label>
-		<description>currently unavailable</description>
+		<label>celestia windproof coat</label>
+		<description>A windproof coat which used to protect against hot winds, coarse sand and intense sunlight is widely popular in Celestia society. \n\n.</description>
 		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -127,8 +127,8 @@
 
 	<ThingDef ParentName="Celes_ShellBase"><!--军装大衣-->
 	<defName>Celes_MilitaryCoat</defName>
-	<label>MilitaryCoat</label>
-	<description>currently unavailable</description>
+	<label>celestia military coat</label>
+	<description>Designed with reference to Celestia's naval uniforms for low temperature environments and also serve as an outerwear for Celestia's military formal wear. Though, many of the designs for the space environment have been cut.\n\n Full of enthusiasm is the opportunity for many Celestia to enlist in the army, and the second is probably a handsome uniform. And in fact belongs to the Celestia Navy establishment of the pioneering team, naturally followed this gift from space.</description>
 	<costStuffCount>60</costStuffCount>
 	<stuffCategories>
 	    <li>Fabric</li>

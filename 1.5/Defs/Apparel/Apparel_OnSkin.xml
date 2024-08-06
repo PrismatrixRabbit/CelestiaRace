@@ -23,8 +23,8 @@
 
 	<ThingDef ParentName="Celes_OnSkinBase"><!--文职制服-->
 	<defName>Celes_CivilianUniform</defName>
-	<label>CivilianUniform</label>
-	<description>currently unavailable</description>
+	<label>celestia civilian uniform</label>
+	<description>A relatively formal clerk's uniform suit consisting of a white shirt with a wrap-around skirt, accompanied by a cute short tie. \n\n Most of this type of clothing didn't use highly elasticated fabrics, so for a portion of Celestia, it became a bit of a problem to button up the chest without it falling apart. Oddly enough, though, negotiating while wearing this uniform did seem to inexplicably have a higher success rate, especially after stretching exercises.</description>
 	<costStuffCount>60</costStuffCount>
 	<stuffCategories>
 	    <li>Fabric</li>
@@ -54,6 +54,9 @@
 			<li>Celes_Daily</li>
 		</tags>
 	</apparel>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
 			<recipeUsers>
@@ -72,8 +75,8 @@
 
 	<ThingDef ParentName="Celes_OnSkinBase"><!--星铃军装-->
 		<defName>Celes_MilitaryUniform</defName>
-		<label>MilitaryUniform</label>
-		<description>currently unavailable</description>
+		<label>celestia military uniform</label>
+		<description>Designed with reference to Celestia's naval uniforms for high temperature environments and also serve as a liner for Celestia's military formal wear. Though, many of the designs for the space environment have been cut. \n\n"The knock-down collar and double-breasted design from Celestia's naval uniforms combines stability, majesty and elegance. Highly elastic fabric highlights the HARD curves of the soldier while not affecting physical agility in the slightest ......" This is how most introductions explain the origins of the pioneer military uniform, but the wording used in it seems ...... to be a bit counterintuitive.</description>
 		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -121,8 +124,8 @@
 
 	<ThingDef ParentName="Celes_OnSkinBase"><!--拓荒防护服-->
 	<defName>Celes_ExploreVest</defName>
-	<label>ExploreVest</label>
-	<description>currently unavailable</description>
+	<label>celestia explore vest</label>
+	<description>A protective suit that provides focused protection to the torso, reducing the wearer's exposure to biochemical and radiological threats, and increasing the Celestia Pilot Team's efficiency and versatility to a certain extent. \n\nIn the initial design of The Navigator Programme, the suit was supposed to carry a morphine injector, a Geiger counter, head protection and night vision, and even a smart terminal with built-in artificial intelligence. However, the design bureau eventually cut these features on the grounds that the Rimworld would have difficulty in providing sufficient resources for mass production.</description>
 	<costStuffCount>60</costStuffCount>
 	<stuffCategories>
 	    <li>Fabric</li>

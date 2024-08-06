@@ -494,7 +494,11 @@
                 <li>
                     <key>TattooDef</key>
                     <value>
-                        <hasStyle>false</hasStyle>
+                        <hasStyle>true</hasStyle>
+						<styleTags>
+							<li>Celes_TattooBodyStyle</li>
+							<li>Celes_TattooFaceStyle</li>
+						</styleTags>
                     </value>
                 </li>
                 <li>
@@ -528,6 +532,12 @@
                 <relationChanceModifierSibling>0</relationChanceModifierSibling>
             </relationSettings>
             <raceRestriction>
+
+				<apparelList>
+					<li>Celes_KneeHighBlack</li>
+					<li>Celes_StockingBlack</li>
+				</apparelList>
+				
 				<recipeList>
 				</recipeList>
 				

@@ -16,9 +16,13 @@
     <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
     <weaponTags>
     </weaponTags>
-    <backstoryCategories>
-        <li>Celes_Space</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+                <li>Celes_Space</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
     <inventoryOptions>
         <skipChance>0.1</skipChance>
         <subOptionsChooseOne>
@@ -69,9 +73,13 @@
         <weaponTags>
             <li>Celes_EarlyWeapon</li>
         </weaponTags>
-        <backstoryCategories>
-            <li>Celes_Outlander</li>
-        </backstoryCategories>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Celes_Outlander</li>
+                </categories>
+            </li>
+        </backstoryFilters>
         <inventoryOptions>
             <skipChance>0.25</skipChance>
             <subOptionsChooseOne>
@@ -105,9 +113,13 @@
         <weaponTags>
             <li>Celes_MidWeapon</li>
         </weaponTags>
-        <backstoryCategories>
-            <li>Celes_Outlander</li>
-        </backstoryCategories>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Celes_Outlander</li>
+                </categories>
+            </li>
+        </backstoryFilters>
         <inventoryOptions>
             <skipChance>0.25</skipChance>
             <subOptionsChooseOne>
@@ -138,9 +150,13 @@
         <weaponTags>
             <li>Celes_MidWeapon</li>
         </weaponTags>
-        <backstoryCategories>
-            <li>Celes_Military</li>
-        </backstoryCategories>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Celes_Military</li>
+                </categories>
+            </li>
+        </backstoryFilters>
         <inventoryOptions>
             <skipChance>0.25</skipChance>
             <subOptionsChooseOne>

@@ -1,19 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+    
     <StyleItemCategoryDef>
-        <defName>Celestia_Style</defName>
+        <defName>Celes_Style</defName>
         <label>celestia hair style</label>
     </StyleItemCategoryDef>
 
-
     <HairDef>
-        <defName>Celestia_Null</defName>
+        <defName>Celes_HairNull</defName>
         <label>celestia hair style</label>
         <hairGender>Any</hairGender>
-        <texPath>Celestia/Hair/Null/Null</texPath>
-        <category>Celestia_Style</category>
+        <texPath>Celes/Hair/Null/Null</texPath>
+        <category>Celes_Style</category>
+        <noGraphic>true</noGraphic>
         <styleTags>
-            <li>Celestia_Style</li>
+            <li>Celes_Style</li>
         </styleTags>
     </HairDef>
+    
 </Defs>

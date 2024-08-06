@@ -24,8 +24,8 @@
 
 	<ThingDef ParentName="Celes_LegwearBase"><!--过膝袜黑-->
 	<defName>Celes_KneeHighBlack</defName>
-	<label>celestia black knee-high sock</label>
-	<description>currently unavailable</description>
+	<label>celestia black knee-high stocking</label>
+	<description>A pair of black knee-high stockings that fit Celestia's figure, balancing warmth and aesthetics, often used to match a variety of outfits. \n\nBut the truth is that if it wasn't made of a stretchy material like Dust-Mech silk or synthetic fibres, it would just be a pair of slightly longer and opaque socks.</description>
 	<costStuffCount>60</costStuffCount>
 	<stuffCategories>
 	    <li>Fabric</li>
@@ -65,14 +65,14 @@
 
 	<ThingDef ParentName="Celes_LegwearBase"><!--长筒袜黑-->
 		<defName>Celes_StockingBlack</defName>
-		<label>celestia black stocking</label>
-		<description>currently unavailable</description>
+		<label>celestia black thigh-high stocking</label>
+		<description>A pair of black thigh-high stocking that fit Celestia's figure, showing off legs more while keeping warm, often used to match a variety of outfits. \n\nThis style of thigh-high stocking is widely praised, but until a certain fashion designer adjusts the knitting density of the cuffs, the outer side of this style is always prone to accidental slippage, while the inner side tends to irritate the base of the thigh in friction.</description>
 		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
 		<graphicData>
-			<texPath>Celes/Apparel/Legwear/StockingBlack/StockingBlack</texPath>
+			<texPath>Celes/Apparel/Legwear/KneeHighBlack/KneeHighBlack</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -89,7 +89,47 @@
 			<bodyPartGroups>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Celes/Apparel/Legwear/StockingBlack/StockingBlack</wornGraphicPath>
+			<wornGraphicPath>Celes/Apparel/Legwear/KneeHighBlack/KneeHighBlack</wornGraphicPath>
+			<tags>
+				<li>Celes_Daily</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>306</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="Celes_LegwearBase"><!--连裤袜黑-->
+		<defName>Celes_TightBlack</defName>
+		<label>celestia black tight</label>
+		<description>A pair of black tight that fit Celestia's figure, completely wrapped around the lower body, often used to match a variety of outfits. \n\nQuite a classic stocking style, it was said that the museums on the home planet had even once exhibited pantyhose from Earth. Many Celestia even like to simply wear this style of stockings as trousers, after all, as long as the blouse is loose enough no one can tell.</description>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Celes/Apparel/Legwear/TightBlack/TightBlack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>5400</WorkToMake>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/Legwear/TightBlack/TightBlack</wornGraphicPath>
 			<tags>
 				<li>Celes_Daily</li>
 			</tags>
@@ -101,6 +141,56 @@
 			</recipeUsers>
 			<displayPriority>307</displayPriority>
 		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="Celes_ArmorMachineableBase"><!--轻型腿甲-->
+		<defName>Celes_LightLegArmour</defName>
+		<label>celestia light leg armour</label>
+		<description>A pair of knee-high, ballistic boots with thigh-length composite textile material, sufficient to protect Celestia's lower limbs as much as possible in a light suit. \n\nThis lightweight leg armour is derived from Celestia IEVA clothing's Gravity Boots, a device often used to simulate gravity while maximising the user's dexterity, dampen shock and fall, and provide armour protection against small space debris. Nowadays, this structure has been localised and modified by the Celestia Pioneers to act as bulletproof trousers.</description>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Celes/Apparel/Legwear/LightLegArmour/LightLegArmour</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>0.8</Mass>
+			<EquipDelay>1.8</EquipDelay>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>5400</WorkToMake>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<layers>
+				<li>Celes_Legwear</li>
+			</layers>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/Legwear/LightLegArmour/LightLegArmour</wornGraphicPath>
+			<tags>
+				<li>Celes_Legwear</li>
+				<li>Celes_Military</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_MultifunctionalTab</li>
+			</recipeUsers>
+			<displayPriority>307</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Legwear</li>
+		</thingCategories>
 	</ThingDef>
 
 </Defs>
