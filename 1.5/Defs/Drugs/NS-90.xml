@@ -2,9 +2,9 @@
 <Defs>
     
     <ThingDef ParentName="MakeableDrugPillBase">
-        <defName>NS90M</defName>
-        <label>NS-90 central nervous stimulant</label>
-        <description>Weak central nervous system stimulants, low addiction but still high risk of overdose.</description>
+        <defName>Celes_NS90M</defName>
+        <label>NS-90 nervous stimulants</label>
+        <description>A modified synthetic stimulant that quickly restores the user's resting value and reduces the need for sleep, allowing the user to concentrate more on work. \n\nCompared to wake-up, NS-90 is not addictive, but it is highly tolerable and brings on pain and hunger. Overdose can lead to severe headaches and violent tendencies ...... but it does increase productivity more, use with caution.</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_NS90_High</HediffDef>
             <HediffDef>Celes_NerveStimulateTolerance</HediffDef>
@@ -84,6 +84,7 @@
         <stages>
             <li>
                 <label>minor</label>
+                <painOffset>0.10</painOffset>
                 <socialFightChanceFactor>2.0</socialFightChanceFactor>
                 <capMods>
                     <li>

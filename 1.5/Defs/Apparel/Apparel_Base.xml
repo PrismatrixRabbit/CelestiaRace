@@ -111,10 +111,6 @@
         <li>Arms</li>
         <li>Legs</li>
       </bodyPartGroups>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
       <!--<defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>-->

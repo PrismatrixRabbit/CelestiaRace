@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="Celes_ArmorMachineableBase"><!--战术背心-->
+        <defName>Celes_TacticalVest</defName>
+        <label>Celes_TacticalVest</label>
+        <description>.</description>
+        <costStuffCount>60</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <graphicData>
+            <texPath>Celes/Apparel/Middle/TacticalVest/TacticalVest</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <statBases>
+            <Mass>0.8</Mass>
+            <EquipDelay>1.8</EquipDelay>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>5400</WorkToMake>
+            <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Celes/Apparel/Middle/TacticalVest/TacticalVest</wornGraphicPath>
+            <tags>
+                <li>Celes_Middle</li>
+                <li>Celes_Military</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
+            <recipeUsers>
+                <li>Celes_MultifunctionalTab</li>
+            </recipeUsers>
+            <displayPriority>307</displayPriority>
+        </recipeMaker>
+        <thingCategories>
+            <li>Celes_Apparel_Middle</li>
+        </thingCategories>
+    </ThingDef>
+
+</Defs>

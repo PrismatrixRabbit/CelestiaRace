@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>Celes_LeaderTitleMaker_Pioneer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->pioneer commander-in-chief</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

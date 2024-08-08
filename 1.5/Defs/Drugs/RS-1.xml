@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="MakeableDrugBase">
-        <defName>RS1M</defName>
-        <label>RS-1 experimental compound injection</label>
-        <description>Experimental compound injections can greatly improve the body's ability and may cause extremely serious side effects.</description>
+        <defName>Celes_RS1M</defName>
+        <label>RS-1 Experimental Stimulants</label>
+        <description>A synthetic Dust-Mech agent that drastically and comprehensively strengthens the user's body, making it a powerful and unrivalled war machine. Note, however, that the ingestion of RS-1 is accompanied by a high probability of coma and cardiac side effects. \n\nThe drug is essentially a Luciferium that has been tweaked with instructions, and by using the Dust-Mech to override and overload the instructions of the Luciferian concoction, the developers of RS-1 have managed to solve the nanomachine mixture's deficiencies in co-ordination and difficulty in expelling from the body, but with that comes a high degree of instability due to the cross-influence of the Dust-Mech and Luciferium.</description>
         <descriptionHyperlinks>
             <HediffDef>RS1_High</HediffDef>
         </descriptionHyperlinks>

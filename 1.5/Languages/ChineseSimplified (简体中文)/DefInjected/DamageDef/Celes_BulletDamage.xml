@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <Celes_BulletRadiation.label>放射性等离子射弹</Celes_BulletRadiation.label>
+    <!-- EN: radioactive plasma projectile -->
+    <Celes_BulletRadiation.deathMessage>{0}被枪射杀了。</Celes_BulletRadiation.deathMessage>
+
+    <Celes_Particle.label>极化粒子束射弹</Celes_Particle.label>
+    <!-- EN: polarised particle projectile -->
+    <Celes_Particle.deathMessage>{0}被枪射杀了。</Celes_Particle.deathMessage>
+
+</LanguageData>

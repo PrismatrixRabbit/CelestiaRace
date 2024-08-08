@@ -34,9 +34,10 @@
         </categories>
       </li>
     </backstoryFilters>
-	<factionIconPath>Celes/Faction/CelesFaction_Icon</factionIconPath><!--这里要换兔兔的地图标识-->
+	<factionIconPath>Celes/Faction/CelesFaction_Icon</factionIconPath>
 	<startingResearchTags>
       <li>ClassicStart</li>
+      <li>Celes_ClassicStart</li>
     </startingResearchTags>
     <startingTechprintsResearchTags>
       <li>ClassicStart</li>
@@ -72,8 +73,8 @@
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
 	<leaderTitle>pioneer commander-in-chief</leaderTitle><!--等我写（-->
-    <factionIconPath>Celes/Faction/CelesFactionVII_Icon</factionIconPath><!--派系图标丢了-->
-    <techLevel>Industrial</techLevel>
+    <factionIconPath>Celes/Faction/CelesFactionVII_Icon</factionIconPath>
+    <techLevel>Spacer</techLevel>
 	<!--NameMaker都等我写-->
     <factionNameMaker>CelesFaction_Namer</factionNameMaker>
     <settlementNameMaker>CelesSettlement_Namer</settlementNameMaker>
@@ -84,20 +85,25 @@
 	<!--↓↓↓这里等着改↓↓↓-->
 	<!--什么异种啊文化啊戒律啊麻烦死了先占位-->
 	<requiredMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
     </requiredMemes>
 	<!-- 这是白名单和黑名单，不能共用，到时候再按需自取 -->
-    <!-- <allowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+    <allowedMemes>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
     </allowedMemes>
-	<disallowedMemes>
+    <!-- <disallowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
     </disallowedMemes> -->
 	<structureMemeWeights>
-      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
     </structureMemeWeights>
     <disallowedPrecepts>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
     </disallowedPrecepts>
 	<xenotypeSet>
       <xenotypeChances>

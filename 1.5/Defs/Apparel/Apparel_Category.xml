@@ -12,7 +12,13 @@
 		<label>celestia onskin</label>
 		<parent>Celes_Apparel</parent>
 	</ThingCategoryDef>
-	
+
+	<ThingCategoryDef>
+		<defName>Celes_Apparel_Middle</defName>
+		<label>celestia middle</label>
+		<parent>Celes_Apparel</parent>
+	</ThingCategoryDef>
+
 	<ThingCategoryDef>
 		<defName>Celes_Apparel_Shell</defName>
 		<label>celestia shell</label>

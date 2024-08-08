@@ -2,11 +2,11 @@
 <Defs>
     
     <ThingDef ParentName="MakeableDrugBase">
-        <defName>CPS1M</defName>
+        <defName>Celes_CPS1M</defName>
         <label>CPS-1 combat psychic stimulants</label>
-        <description>A synthetic military psy tactical stimulant that enhances combat effectiveness, but has certain after effects after failure.</description>
+        <description>A synthetic Dust-Mech preparation used to enhance the user's psychic combat abilities and directly increase psyfocus.CPS-1 inherits Celestia's usual cellular activity overload from its combat drugs, and its aftereffects are somewhat lethal. \n\nBy overactivating the nerves, the user will feel pain more easily, but will also be able to dissipate neural heat and gather psyfocus more quickly. As a side effect, the user will also be more focused in combat, but overfocused and sensitive nerves slow down daily tasks.</description>
         <descriptionHyperlinks>
-            <HediffDef>CPS1_High</HediffDef>
+            <HediffDef>Celes_CPS1_High</HediffDef>
             <HediffDef>CPS1_After</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
@@ -39,7 +39,7 @@
             <chairSearchRadius>0</chairSearchRadius>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>CPS1_High</hediffDef>
+                    <hediffDef>Celes_CPS1_High</hediffDef>
                     <severity>1</severity>
                 </li>
                 <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
@@ -68,7 +68,7 @@
     </ThingDef>
 
     <HediffDef>
-        <defName>CPS1_High</defName>
+        <defName>Celes_CPS1_High</defName>
         <hediffClass>Hediff_High</hediffClass>
         <label>CPS-1 stimulant is taking effect.</label>
         <labelNoun>CPS-1 effect</labelNoun>

@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="MakeableDrugBase">
-        <defName>IAS2M</defName>
+        <defName>Celes_IAS2M</defName>
         <label>IAS-2 immunoagonist stimulants</label>
         <description>A drug for preventing varieties infections before they take hold. Blocks cancer, infection, malaria, sleeping sickness, plague. Must be taken every five days to remain effective.\n\nThis drug only prevents new infections. It does not cure existing infections - even those that are not yet discovered.</description>
         <possessionCount>10</possessionCount>
@@ -53,8 +53,8 @@
     <HediffDef>
         <defName>IASHigh</defName>
         <hediffClass>Hediff_High</hediffClass>
-        <label>IAS-2 immunoagonist stimulants</label>
-        <description>immunoagonist stimulants-induced immunity to certain illnesses. This only blocks new infections; it does nothing for those who are already infected, even if their infection is dormant.</description>
+        <label>IAS-2 immune-activating stimulants</label>
+        <description>An improved synthetic drug that comprehensively boosts the immune function of the user and maintains special drugs in the bloodstream. Blocks the transmission of diseases such as malaria, sleeping sickness, and plague, inhibits wound infections, and is toxic to the larvae and eggs of all types of parasites. \n\n Note: This drug, like penicillin, cannot cure diseases already contracted, but can only be used for prevention.</description>
         <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>
@@ -74,6 +74,7 @@
                     <li>SleepingSickness</li>
                     <li>Plague</li>
                     <li>MuscleParasites</li>
+                    <li>GutWorms</li>
                     <li>WoundInfection</li>
                     <li>Flu</li>
                 </makeImmuneTo>

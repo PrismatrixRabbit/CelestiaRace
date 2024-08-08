@@ -2,9 +2,9 @@
 <Defs>
     
     <ThingDef ParentName="MakeableDrugBase">
-        <defName>CS6M</defName>
+        <defName>Celes_CS6M</defName>
         <label>CS-6 combat stimulants</label>
-        <description>A synthetic military tactical stimulant that enhances combat effectiveness, but has certain after effects after failure.</description>
+        <description>A synthetic chemical agent used to fully enhance the user's combat abilities and briefly suppress the user's need to sleep. Note that CS-6 achieves organic enhancement by overloading cellular activity, and its after-effects are somewhat lethal. \n\nThis compound agent, in addition to activating the nervous system, has a certain degree of strengthening and overloading of all systems of the body, and the long-term use of this kind of overdrafting drug will drastically reduce life expectancy. There is no doubt that overdose of this drug is quite dangerous.</description>
         <descriptionHyperlinks>
             <HediffDef>CS6_High</HediffDef>
             <HediffDef>CS6_After</HediffDef>
