@@ -6,7 +6,7 @@
         <label>IAS-2 immunoagonist stimulants</label>
         <description>A drug for preventing varieties infections before they take hold. Blocks cancer, infection, malaria, sleeping sickness, plague. Must be taken every five days to remain effective.\n\nThis drug only prevents new infections. It does not cure existing infections - even those that are not yet discovered.</description>
         <possessionCount>10</possessionCount>
-        <descriptionHyperlinks><HediffDef>IASHigh</HediffDef></descriptionHyperlinks>
+        <descriptionHyperlinks><HediffDef>Celes_IASHigh</HediffDef></descriptionHyperlinks>
         <graphicData>
             <texPath>Celes/Drugs/IAS2</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -27,7 +27,7 @@
             <drugCategory>Medical</drugCategory>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>IASHigh</hediffDef>
+                    <hediffDef>Celes_IASHigh</hediffDef>
                     <severity>1.0</severity>
                 </li>
             </outcomeDoers>
@@ -51,10 +51,10 @@
     </ThingDef>
 
     <HediffDef>
-        <defName>IASHigh</defName>
+        <defName>Celes_IASHigh</defName>
         <hediffClass>Hediff_High</hediffClass>
         <label>IAS-2 immune-activating stimulants</label>
-        <description>An improved synthetic drug that comprehensively boosts the immune function of the user and maintains special drugs in the bloodstream. Blocks the transmission of diseases such as malaria, sleeping sickness, and plague, inhibits wound infections, and is toxic to the larvae and eggs of all types of parasites. \n\n Note: This drug, like penicillin, cannot cure diseases already contracted, but can only be used for prevention.</description>
+        <description>The IAS-2 chemicals flowing through the bloodstream are preventing disease from occurring, but this does not stop the disease that has already occurred.</description>
         <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>

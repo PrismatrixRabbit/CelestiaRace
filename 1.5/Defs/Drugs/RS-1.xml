@@ -5,7 +5,9 @@
         <label>RS-1 Experimental Stimulants</label>
         <description>A synthetic Dust-Mech agent that drastically and comprehensively strengthens the user's body, making it a powerful and unrivalled war machine. Note, however, that the ingestion of RS-1 is accompanied by a high probability of coma and cardiac side effects. \n\nThe drug is essentially a Luciferium that has been tweaked with instructions, and by using the Dust-Mech to override and overload the instructions of the Luciferian concoction, the developers of RS-1 have managed to solve the nanomachine mixture's deficiencies in co-ordination and difficulty in expelling from the body, but with that comes a high degree of instability due to the cross-influence of the Dust-Mech and Luciferium.</description>
         <descriptionHyperlinks>
-            <HediffDef>RS1_High</HediffDef>
+            <HediffDef>Celes_RS1_High</HediffDef>
+            <HediffDef>Celes_RS1Stun</HediffDef>
+            <HediffDef>HeartAttack</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Celes/Drugs/RS1</texPath>
@@ -35,7 +37,7 @@
             <chairSearchRadius>0</chairSearchRadius>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>RS1_High</hediffDef>
+                    <hediffDef>Celes_RS1_High</hediffDef>
                     <severity>0.5</severity>
                 </li>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
@@ -72,9 +74,9 @@
     </ThingDef>
     
     <HediffDef>
-        <defName>RS1_High</defName>
+        <defName>Celes_RS1_High</defName>
         <label>RS-1 effecting</label>
-        <description>.</description>
+        <description>The reprogrammed Luciferium in the body is improving the host's bodily functions across the board and will be nullified by Dust-Mech decomposition after some time.</description>
         <hediffClass>Hediff_High</hediffClass>
         <maxSeverity>1</maxSeverity>
         <isBad>false</isBad>
@@ -144,8 +146,13 @@
     
     <HediffDef ParentName="DiseaseBase">
         <defName>Celes_RS1Stun</defName>
-        <label>Celes_RS1Stun</label>
-        <description>.</description>
+        <label>stress shock</label>
+        <description>The unstable Luciferium caused the user's body to go into a harmless state of protective shock, which would take at least a day to recover from.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_RS1M</ThingDef>
+            <HediffDef>Celes_RS1_High</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>60000~150000</disappearsAfterTicks>

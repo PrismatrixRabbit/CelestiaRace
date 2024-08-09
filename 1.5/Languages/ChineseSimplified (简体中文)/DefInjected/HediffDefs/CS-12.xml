@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_CS12_High.label>CS-12作战止血剂</Celes_CS12_High.label>
+    <Celes_CS12_High.labelNoun>CS-12效果</Celes_CS12_High.labelNoun>
+    <Celes_CS12_High.description>流淌在血液中的CS-12化学物质正在提高使用者的止血愈合能力。</Celes_CS12_High.description>
+    <!-- EN: The CS-12 chemicals flowing in the bloodstream was increasing the user's haemostatic and healing capacity. -->
+    <Celes_CS12_High.stages.1.label>过量</Celes_CS12_High.stages.1.label>
+
+    <Celes_CS12_After.label>CS-12后效应</Celes_CS12_After.label>
+    <Celes_CS12_After.labelNoun>CS-12后效应</Celes_CS12_After.labelNoun>
+    <Celes_CS12_After.description>机体正在由CS-12导致的细胞活性过载中恢复，缺乏合适的治疗可能导致死亡。</Celes_CS12_After.description>
+    <!-- EN: The organism is recovering from an overload of cellular activity caused by CS-12, and lack of appropriate treatment may lead to death. -->
+    <Celes_CS12_After.stages.1.label>致命</Celes_CS12_After.stages.1.label>
+
+</LanguageData>

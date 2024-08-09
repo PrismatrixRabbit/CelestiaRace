@@ -39,8 +39,10 @@
                 <label>minor</label>
                 <minSeverity>0.08</minSeverity>
                 <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.75</totalBleedFactor>
                 <statOffsets>
                     <RestFallRateFactor>0.5</RestFallRateFactor>
+                    <InjuryHealingFactor>1.5</InjuryHealingFactor>
                 </statOffsets>
                 <capMods>
                     <li>
@@ -96,8 +98,10 @@
                 <label>minor</label>
                 <minSeverity>0.5</minSeverity>
                 <painOffset>0.55</painOffset>
+                <totalBleedFactor>0.75</totalBleedFactor>
                 <statOffsets>
                     <RestFallRateFactor>1</RestFallRateFactor>
+                    <InjuryHealingFactor>1.5</InjuryHealingFactor>
                 </statOffsets>
                 <capMods>
                     <li>
@@ -127,8 +131,10 @@
                 <minSeverity>0.805</minSeverity>
                 <painOffset>0.80</painOffset>
                 <lifeThreatening>true</lifeThreatening>
+                <totalBleedFactor>0.75</totalBleedFactor>
                 <statOffsets>
                     <RestFallRateFactor>1</RestFallRateFactor>
+                    <InjuryHealingFactor>1.5</InjuryHealingFactor>
                 </statOffsets>
                 <capMods>
                     <li>
@@ -191,7 +197,6 @@
             <RecipeDef>Celes_DegradedCyberneticSurgery</RecipeDef>
             <HediffDef>Celes_NanoImplanted_I</HediffDef>
             <HediffDef>Celes_NanoImplanted_II</HediffDef>
-            <HediffDef>Celes_NanoImplanted_III</HediffDef>
         </descriptionHyperlinks>
         <isBad>true</isBad>
         <initialSeverity>0.9</initialSeverity>
@@ -204,8 +209,10 @@
                 <minSeverity>0.9</minSeverity>
                 <painOffset>0.80</painOffset>
                 <lifeThreatening>true</lifeThreatening>
+                <totalBleedFactor>0.5</totalBleedFactor>
                 <statOffsets>
                     <RestFallRateFactor>1</RestFallRateFactor>
+                    <InjuryHealingFactor>2.0</InjuryHealingFactor>
                 </statOffsets>
                 <capMods>
                     <li>
@@ -449,9 +456,14 @@
             <li>
                 <minSeverity>0.9</minSeverity>
                 <hungerRateFactorOffset>-0.25</hungerRateFactorOffset>
+                <painFactor>0.1</painFactor>
+                <totalBleedFactor>0.5</totalBleedFactor>
                 <statOffsets>
                     <RestFallRateFactor>-0.9</RestFallRateFactor>
                     <GlobalLearningFactor>-0.5</GlobalLearningFactor>
+                    <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+                    <InjuryHealingFactor>5.0</InjuryHealingFactor>
                 </statOffsets>
                 <disabledWorkTags>
                     <li>Intellectual</li>
@@ -520,8 +532,10 @@
                 <label>minor</label>
                 <minSeverity>0.08</minSeverity>
                 <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.75</totalBleedFactor>
                 <statOffsets>
                     <RestFallRateFactor>0.5</RestFallRateFactor>
+                    <InjuryHealingFactor>1.5</InjuryHealingFactor>
                 </statOffsets>
                 <capMods>
                     <li>

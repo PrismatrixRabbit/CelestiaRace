@@ -7,7 +7,7 @@
         <description>A synthetic Dust-Mech preparation used to enhance the user's psychic combat abilities and directly increase psyfocus.CPS-1 inherits Celestia's usual cellular activity overload from its combat drugs, and its aftereffects are somewhat lethal. \n\nBy overactivating the nerves, the user will feel pain more easily, but will also be able to dissipate neural heat and gather psyfocus more quickly. As a side effect, the user will also be more focused in combat, but overfocused and sensitive nerves slow down daily tasks.</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_CPS1_High</HediffDef>
-            <HediffDef>CPS1_After</HediffDef>
+            <HediffDef>Celes_CPS1_After</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Celes/Drugs/CPS1</texPath>
@@ -72,9 +72,8 @@
         <hediffClass>Hediff_High</hediffClass>
         <label>CPS-1 stimulant is taking effect.</label>
         <labelNoun>CPS-1 effect</labelNoun>
-        <description>The active ingredient of CPS-1 is working to enhance Psychic power.</description>
+        <description>The CPS-1 Dust-Mech substance flowing in the bloodstream was increasing the user's psychic combat ability.</description>
         <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
-        <scenarioCanAdd>true</scenarioCanAdd>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>
         <comps>
@@ -82,21 +81,13 @@
                 <severityPerDay>-3</severityPerDay>
                 <showHoursToRecover>true</showHoursToRecover>
             </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_CPS1_After</targetHediff>
+                <minToJump>true</minToJump>
+            </li>
         </comps>
         <stages>
             <li>
-                <minSeverity>0.0</minSeverity>
-                <label>effect almost done.</label>
-                <hediffGivers>
-                    <li Class="HediffGiver_Random">
-                        <hediff>CPS1_After</hediff>
-                        <mtbDays>0.0001</mtbDays>
-                    </li>
-                </hediffGivers>
-            </li>
-            <li>
-                <minSeverity>0.01</minSeverity>
-                <label>in effect.</label>
                 <statOffsets>
                     <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
                     <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
@@ -111,17 +102,42 @@
                     <PsychicSensitivity>2.5</PsychicSensitivity>
                 </statFactors>
             </li>
+            <li>
+                <minSeverity>0.51</minSeverity>
+                <label>overdose</label>
+                <statOffsets>
+                    <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+                    <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+                    <MeleeHitChance>0.25</MeleeHitChance>
+                </statOffsets>
+                <painFactor>1.3</painFactor>
+                <restFallFactor>0</restFallFactor>
+                <statFactors>
+                    <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicEntropyGain>
+                    <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.5</PsychicEntropyMax>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">8</MeditationFocusGain>
+                    <PsychicSensitivity>2.5</PsychicSensitivity>
+                </statFactors>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>HeartAttack</hediff>
+                        <mtbDays>1</mtbDays>
+                        <partsToAffect>
+                            <li>Heart</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
+            </li>
         </stages>
     </HediffDef>
 
     <HediffDef>
-        <defName>CPS1_After</defName>
+        <defName>Celes_CPS1_After</defName>
         <label>CPS-1 after effect</label>
         <labelNoun>a CPS-1 after effect</labelNoun>
-        <description>after-effects left after CPS-1 expiration may cause hunger and fatigue.</description>
+        <description>The organism is recovering from an overload of cellular activity caused by CPS-1, and lack of appropriate treatment may lead to death.</description>
         <hediffClass>Hediff_High</hediffClass>
         <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
-        <scenarioCanAdd>true</scenarioCanAdd>
         <makesSickThought>true</makesSickThought>
         <lethalSeverity>1</lethalSeverity>
         <tendable>true</tendable>
@@ -130,6 +146,9 @@
             <li Class="HediffCompProperties_SeverityPerDay">
                 <severityPerDay>1</severityPerDay>
                 <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="HediffCompProperties_Discoverable">
+                <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
             </li>
             <!--<li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>30000~60000</disappearsAfterTicks>
@@ -141,6 +160,31 @@
         </comps>
         <stages>
             <li>
+                <vomitMtbDays>0.2</vomitMtbDays>
+                <hungerRateFactor>1.5</hungerRateFactor>
+                <restFallFactor>2.5</restFallFactor>
+                <statFactors>
+                    <MentalBreakThreshold>0.8</MentalBreakThreshold>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.3</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.80</minSeverity>
+                <label>dangerous</label>
+                <lifeThreatening>true</lifeThreatening>
                 <vomitMtbDays>0.2</vomitMtbDays>
                 <hungerRateFactor>1.5</hungerRateFactor>
                 <restFallFactor>2.5</restFallFactor>

@@ -3,8 +3,8 @@
     
     <RecipeDef>
         <defName>Make_CelesBiogelFromOrganics</defName>
-        <label>make celestia biogel from organics</label>
-        <description>Make a batch of celestia biogel by extracting elements from organic feedstocks.</description>
+        <label>make celestia bio-enzyme gel from organics</label>
+        <description>Make a batch of celestia bio-enzyme gel by extracting elements from organic feedstocks.</description>
         <jobString>Refining biogel from organics.</jobString>
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>

@@ -4,7 +4,7 @@
 <FactionDef ParentName="PlayerFactionBase">
 	<defName>Celes_PlayerFaction</defName>
 	<label>Celestia new outpost</label>
-	<description>A celestia new outpost~</description><!--等我写（-->
+	<description>An outpost formed by Celestia who had recently arrived on the planet.</description>
 	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 	<categoryTag>Celes_PlayerFaction</categoryTag>
 	<colorSpectrum>
@@ -58,7 +58,7 @@
 <FactionDef ParentName="FactionBase">
 	<defName>Celes_Faction</defName>
 	<label>celestia pioneer</label>
-    <description>A group of celestia pioneers?</description><!--等我写（-->
+    <description>A group of Celestia who arrived on the planet some decades ago, a mix of Celestia's Seventh Fleet Navy and the Pioneers of the Aurora Generation ship. They possess many advanced and unique technologies, but are not proud of them. Most of the time, Celestia does not use their advanced weaponry, possibly because they have experienced some sort of technological regression, but it seems to be a habit they have developed against some sort of enemy. They still maintain some sort of technological production line, as if they had prepared for it beforehand, and are even actively and steadily restoring and recreating technology that has been lost. \n\n For the most part, they treat people kindly, happy to exchange haves and have-nots and form alliances with other factions, even if the other party is a stranger. But they also have no qualms about giving their enemies a heavy blow back. \n\n In recent times, Celestia had begun to support her friends with supplies and personnel. Contacting their field departments through the communication desk, they can exchange anything if you contribute.</description><!--等我写（-->
 	<colorSpectrum>
       <li>(1, 1, 1)</li><!--等我改（-->
     </colorSpectrum>

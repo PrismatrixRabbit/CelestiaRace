@@ -6,8 +6,8 @@
         <label>CS-12 combat hemostat</label>
         <description>A synthetic chemical agent used to transiently inhibit the user's nociceptive nerves, activate the body's healing mechanisms, and inhibit bleeding through multiple pathways. Note that CS-12 achieves organic enhancement by overloading cellular activity, and its after-effects are somewhat lethal. \n\nThe risks of overdosing on CS-12 are so great that the synthetic formulas used by Celestia pioneers make it fundamentally difficult to synthesise high concentrations of CS-12. But even so, continuous injections of CS-12 still carry a not inconsiderable risk.</description>
         <descriptionHyperlinks>
-            <HediffDef>CS12_High</HediffDef>
-            <HediffDef>CS12_After</HediffDef>
+            <HediffDef>Celes_CS12_High</HediffDef>
+            <HediffDef>Celes_CS12_After</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Celes/Drugs/CS12</texPath>
@@ -37,7 +37,7 @@
             <chairSearchRadius>0</chairSearchRadius>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>CS12_High</hediffDef>
+                    <hediffDef>Celes_CS12_High</hediffDef>
                     <severity>0.5</severity>
                 </li>
             </outcomeDoers>
@@ -63,13 +63,12 @@
     </ThingDef>
 
     <HediffDef>
-        <defName>CS12_High</defName>
+        <defName>Celes_CS12_High</defName>
         <hediffClass>Hediff_High</hediffClass>
         <label>CS-12 stimulant is taking effect.</label>
         <labelNoun>CS-12 effect</labelNoun>
-        <description>The active ingredient of CS-12 is working to enhance various combat capabilities and provide sports doping effects.</description>
+        <description>The CS-12 chemicals flowing in the bloodstream was increasing the user's haemostatic and healing capacity.</description>
         <defaultLabelColor>(1 ,1 ,1)</defaultLabelColor>
-        <scenarioCanAdd>true</scenarioCanAdd>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>
         <comps>
@@ -77,21 +76,13 @@
                 <severityPerDay>-4</severityPerDay>
                 <showHoursToRecover>true</showHoursToRecover>
             </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_CS12_After</targetHediff>
+                <minToJump>true</minToJump>
+            </li>
         </comps>
         <stages>
             <li>
-                <minSeverity>0.00</minSeverity>
-                <label>Effect almost done</label>
-                <hediffGivers>
-                    <li Class="HediffGiver_Random">
-                        <hediff>CS12_After</hediff>
-                        <mtbDays>0.0001</mtbDays>
-                    </li>
-                </hediffGivers>
-            </li>
-            <li>
-                <minSeverity>0.001</minSeverity>
-                <label>Effecting.</label>
                 <painFactor>0.5</painFactor>
                 <totalBleedFactor>0.3</totalBleedFactor>
                 <statFactors>
@@ -100,7 +91,7 @@
             </li>
             <li>
                 <minSeverity>0.501</minSeverity>
-                <label>Effecting.</label>
+                <label>overdose</label>
                 <painFactor>0.2</painFactor>
                 <totalBleedFactor>0</totalBleedFactor>
                 <statFactors>
@@ -120,10 +111,10 @@
     </HediffDef>
 
     <HediffDef>
-        <defName>CS12_After</defName>
+        <defName>Celes_CS12_After</defName>
         <label>CS-12 after effect</label>
         <labelNoun>a CS-12 after effect</labelNoun>
-        <description>after effect of CS-12 causing fatigue and repair body causing hungry.</description>
+        <description>The organism is recovering from an overload of cellular activity caused by CS-12, and lack of appropriate treatment may lead to death.</description>
         <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
         <hediffClass>Hediff_High</hediffClass>
         <makesSickThought>true</makesSickThought>
@@ -159,15 +150,23 @@
                     </li>
                 </capMods>
             </li>
-            
             <li>
-                <vomitMtbDays>0.3</vomitMtbDays>
-                <minSeverity>0.70</minSeverity>
+                <minSeverity>0.80</minSeverity>
                 <label>dangerous</label>
-                <restFallFactor>2</restFallFactor>
-                <hungerRateFactorOffset>1</hungerRateFactorOffset>
                 <lifeThreatening>true</lifeThreatening>
-                <painOffset>0.4</painOffset>
+                <vomitMtbDays>0.2</vomitMtbDays>
+                <restFallFactor>2.5</restFallFactor>
+                <hungerRateFactorOffset>1.5</hungerRateFactorOffset>
+                <capMods>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <setMax>0.8</setMax>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                </capMods>
             </li>
         </stages>
     </HediffDef>

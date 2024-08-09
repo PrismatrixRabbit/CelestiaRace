@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_FakeEar.label>假兔耳</Celes_FakeEar.label>
+    <Celes_FakeEar.description>一个用于星铃的用布做的假兔耳，包括一个人工耳蜗和铁丝制成的布料外框。并不能恢复星铃复杂的听力系统，布做的耳朵看着也非常糟糕，但总比完全失聪要好。</Celes_FakeEar.description>
+    <!-- EN: A fake rabbit ear made of cloth for Celestia, including a cochlear implant and a fabric outer frame made of wire. It doesn't restore Celestia's complex hearing system, and the ear made of cloth looks pretty bad, but it's better than being completely deaf. -->
+
+    <Celes_BionicEar.label>仿生兔耳</Celes_BionicEar.label>
+    <Celes_BionicEar.description>一个用于星铃的先进人造仿生兔耳，模仿了星铃高度复杂的耳朵。其内置的大多数组件都用于还原星铃复杂的灵能共振听力，并能自动抵抗噪音环境，精准感知和识别有效声音，但总体来看只是略微优于星铃原生的耳朵。</Celes_BionicEar.description>
+    <!-- EN: An advanced artificial bionic rabbit ear for Celestia that mimics Celestia's highly complex ears. Most of its built-in components are used to restore Celestia's complex psychic resonance hearing, and it automatically resists noisy environments and accurately senses and recognises valid sounds, but overall it is only marginally superior to Celestia's native ears. -->
+
+</LanguageData>

@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="修文案汉化，装备部分">
-      <change afterPath="$PROJECT_DIR$/1.5/Defs/RulePacks/RulePacks_LeaderTitles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/DamageDef/Celes_BulletDamage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/CultureDefs/Cultures.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/CultureDefs/Cultures.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/DamageDef/Celes_BulletDamage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/DamageDef/Celes_BulletDamage.xml" afterDir="false" />
+    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="修文案汉化，药物部分，剩余hediff未汉化">
+      <change afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/CS-6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Defs/Drugs/CPS-1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/Drugs/CPS-1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/FactionDefs/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/FactionDefs/Factions_Celes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/CultureDef/Cultures.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/CultureDef/Cultures.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/CPS-1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/CPS-1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/Drugs/CS-6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/Drugs/CS-6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/CPS-1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/CPS-1.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +91,7 @@
       <workItem from="1722870374895" duration="5237000" />
       <workItem from="1722921761626" duration="15200000" />
       <workItem from="1722944488832" duration="13260000" />
-      <workItem from="1723104502895" duration="12837000" />
+      <workItem from="1723104502895" duration="22270000" />
     </task>
     <task id="LOCAL-00001" summary="修改背景">
       <option name="closed" value="true" />
@@ -274,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722961067139</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="修文案汉化，药物部分，剩余hediff未汉化">
+      <option name="closed" value="true" />
+      <created>1723141255378</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1723141255378</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +309,8 @@
     <MESSAGE value="xiu bug" />
     <MESSAGE value="修科技树" />
     <MESSAGE value="修文案汉化，装备部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="修文案汉化，装备部分" />
+    <MESSAGE value="修文案汉化，药物部分，剩余hediff未汉化" />
+    <option name="LAST_COMMIT_MESSAGE" value="修文案汉化，药物部分，剩余hediff未汉化" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -352,7 +352,7 @@
     <ResearchProjectDef>
         <defName>Celes_Bio_III</defName>
         <label>Dust-Mech Call:Psychic Pharmaceuticals</label>
-        <description>Unlocks the crafting of "CPS-12 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances.</description>
+        <description>Unlocks the crafting of "CPS-1 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances.</description>
         <baseCost>2500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>

@@ -98,8 +98,8 @@
 
   <Celes_Bio_III.label>尘构调用:灵能制药</Celes_Bio_III.label>
   <!-- EN: Dust-Mech Call:Psychic Pharmaceuticals -->
-  <Celes_Bio_III.description>解锁制作「CPS-12作战灵能强化剂」，通过直接摄入特殊编码的尘构物质大幅强化使用者的精神力。</Celes_Bio_III.description>
-  <!-- EN: Unlocks the crafting of "CPS-12 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances. -->
+  <Celes_Bio_III.description>解锁制作「CPS-1作战灵能强化剂」，通过直接摄入特殊编码的尘构物质大幅强化使用者的精神力。</Celes_Bio_III.description>
+  <!-- EN: Unlocks the crafting of "CPS-1 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances. -->
   
   <Celes_Bio_IV.label>高危试验性药物</Celes_Bio_IV.label>
   <!-- EN: High-risk experimental medicines -->

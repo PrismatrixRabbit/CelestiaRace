@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ========== 假耳朵 ========= -->
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Celes_FakeEar</defName>
+        <label>fake celestia ear</label>
+        <labelNoun>a fake celestia ear</labelNoun>
+        <description>One for Celestia, already fitted fake rabbit ears made of cloth, including a cochlear implant and a fabric outer frame made of wire. It doesn't restore Celestia's complex hearing system, and the ear made of cloth looks pretty bad, but it's better than being completely deaf.</description>
+        <descriptionHyperlinks><ThingDef>Celes_FakeEar</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>Celes_FakeEar</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>0.65</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PawnBeauty>-1</PawnBeauty>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartProstheticMakeableBase">
+        <defName>Celes_FakeEar</defName>
+        <label>fake celestia ear</label>
+        <description>A fake rabbit ear made of cloth for Celestia, including a cochlear implant and a fabric outer frame made of wire. It doesn't restore Celestia's complex hearing system, and the ear made of cloth looks pretty bad, but it's better than being completely deaf.</description>
+        <descriptionHyperlinks><RecipeDef>Celes_InstallFakeEar</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Cloth>20</Cloth>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+        <defName>Celes_InstallFakeEar</defName>
+        <label>install celestia fake ear</label>
+        <description>Install a fake ear.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_FakeEar</ThingDef>
+            <HediffDef>Celes_FakeEar</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing fake celestia ear.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_FakeEar</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Celes_FakeEar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Celes_Ear</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Celes_FakeEar</addsHediff>
+    </RecipeDef>
+
+    <!-- ========== 仿生耳 ========= -->
+    
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Celes_BionicEar</defName>
+        <label>bionic celestia ear</label>
+        <labelNoun>a bionic celestia ear</labelNoun>
+        <description>An advanced artificial bionic rabbit ear for Celestia that mimics Celestia's highly complex ears. Most of its built-in components are used to restore Celestia's complex psychic resonance hearing, and it automatically resists noisy environments and accurately senses and recognises valid sounds, but overall it is only marginally superior to Celestia's native ears.</description>
+        <descriptionHyperlinks><ThingDef>Celes_BionicEar</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>Celes_BionicEar</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.1</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>Celes_BionicEar</defName>
+        <label>bionic celestia ear</label>
+        <description>An advanced artificial ear implant. A collection of invisible subdermal microphones capture sound and transmit it to a biogel nerve interface that links directly with the auditory nerve. It's sensitive enough to hear a cat before you see it, can't be damaged by loud noise, and automatically tunes itself to pick out meaningful sounds in noisy environments.</description>
+        <descriptionHyperlinks><RecipeDef>Celes_InstallBionicEar</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+            <CelesBioGel>1</CelesBioGel>
+        </costList>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>Celes_InstallBionicEar</defName>
+        <label>install celestia bionic ear</label>
+        <description>Install a bionic ear.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_BionicEar</ThingDef>
+            <HediffDef>Celes_BionicEar</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing bionic celestia ear.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_BionicEar</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Celes_BionicEar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Celes_Ear</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Celes_BionicEar</addsHediff>
+    </RecipeDef>
+    
+</Defs>

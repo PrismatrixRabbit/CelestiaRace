@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <Celes_MechlinkAuthorization.label>民用机控限制骇入器</Celes_MechlinkAuthorization.label>
+    <!-- EN: civilian mechlink restriction hacker -->
+    <Celes_MechlinkAuthorization.description>利用在边缘世界发现的机控中枢，结合尘构机械制成的骇入器。用于强行解除星铃被设置于硬件层面的机控限制，并更新为星铃标准机控。</Celes_MechlinkAuthorization.description>
+    <!-- EN: A hacker made using a mechlink hub found in the Rimworld, combined with Dust-Mech. Used to forcibly disarm Celestia's mechlink restrictions that were set at the hardware level, and updated to Celestia standard mechlink. -->
+    
+</LanguageData>

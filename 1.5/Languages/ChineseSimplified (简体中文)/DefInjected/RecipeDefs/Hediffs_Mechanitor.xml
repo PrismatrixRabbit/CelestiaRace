@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <RemoveCelesMechlinkRestriction.label>民用机控解限</RemoveCelesMechlinkRestriction.label>
+    <!-- EN: civilian mechlink de-restrictor　-->
+    <RemoveCelesMechlinkRestriction.description>利用尘构机械强行移除星铃机控中枢的民用限制，并更新为标准星铃机控。</RemoveCelesMechlinkRestriction.description>
+    <!-- EN: Use Dust-Mech machinery to forcibly remove the civilian limitations of the Celestia mechlink hub and update it to a standard Celestia mechlink.　-->
+    <RemoveCelesMechlinkRestriction.jobString>解除民用机控限制中</RemoveCelesMechlinkRestriction.jobString>
+    <!-- EN: Removing civilian mechlink restriction　-->
+    
+</LanguageData>

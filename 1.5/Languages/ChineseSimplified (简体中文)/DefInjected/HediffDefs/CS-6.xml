@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_CS6_High.label>CS-6作战增强剂</Celes_CS6_High.label>
+    <Celes_CS6_High.labelNoun>CS-6效果</Celes_CS6_High.labelNoun>
+    <Celes_CS6_High.description>流淌在血液中的CS-6化学物质正在提高使用者的作战能力。</Celes_CS6_High.description>
+    <!-- EN: The CS-6 chemicals flowing in the bloodstream was increasing the user's combat ability. -->
+    <Celes_CS6_High.stages.1.label>过量</Celes_CS6_High.stages.1.label>
+
+    <Celes_CS6_After.label>CS-6后效应</Celes_CS6_After.label>
+    <Celes_CS6_After.labelNoun>CS-6后效应</Celes_CS6_After.labelNoun>
+    <Celes_CS6_After.description>机体正在由CS-6导致的细胞活性过载中恢复，缺乏合适的治疗可能导致死亡。</Celes_CS6_After.description>
+    <!-- EN: The organism is recovering from an overload of cellular activity caused by CS-6, and lack of appropriate treatment may lead to death. -->
+    <Celes_CS6_After.stages.1.label>致命</Celes_CS6_After.stages.1.label>
+
+</LanguageData>

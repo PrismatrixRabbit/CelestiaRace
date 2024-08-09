@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_InstallFakeEar.label>安装假兔耳</Celes_InstallFakeEar.label>
+    <Celes_InstallFakeEar.description>安装一个假兔耳。</Celes_InstallFakeEar.description>
+    <Celes_InstallFakeEar.jobString>安装假兔耳中</Celes_InstallFakeEar.jobString>
+
+    <Celes_InstallBionicEar.label>安装仿生兔耳</Celes_InstallBionicEar.label>
+    <Celes_InstallBionicEar.description>安装一个仿生兔耳。</Celes_InstallBionicEar.description>
+    <Celes_InstallBionicEar.jobString>安装仿生兔耳中</Celes_InstallBionicEar.jobString>
+
+</LanguageData>

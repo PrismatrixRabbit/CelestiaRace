@@ -6,8 +6,8 @@
         <label>CS-6 combat stimulants</label>
         <description>A synthetic chemical agent used to fully enhance the user's combat abilities and briefly suppress the user's need to sleep. Note that CS-6 achieves organic enhancement by overloading cellular activity, and its after-effects are somewhat lethal. \n\nThis compound agent, in addition to activating the nervous system, has a certain degree of strengthening and overloading of all systems of the body, and the long-term use of this kind of overdrafting drug will drastically reduce life expectancy. There is no doubt that overdose of this drug is quite dangerous.</description>
         <descriptionHyperlinks>
-            <HediffDef>CS6_High</HediffDef>
-            <HediffDef>CS6_After</HediffDef>
+            <HediffDef>Celes_CS6_High</HediffDef>
+            <HediffDef>Celes_CS6_After</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Celes/Drugs/CS6</texPath>
@@ -37,7 +37,7 @@
             <chairSearchRadius>0</chairSearchRadius>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>CS6_High</hediffDef>
+                    <hediffDef>Celes_CS6_High</hediffDef>
                     <severity>0.5</severity>
                 </li>
                 <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
@@ -66,13 +66,12 @@
     </ThingDef>
     
     <HediffDef>
-        <defName>CS6_High</defName>
+        <defName>Celes_CS6_High</defName>
         <hediffClass>Hediff_High</hediffClass>
         <label>CS-6 stimulant is taking effect</label>
         <labelNoun>CS-6 effect</labelNoun>
-        <description>The active ingredient of CS-6 is working to enhance various combat capabilities and provide sports doping effects.</description>
+        <description>The CS-6 chemicals flowing in the bloodstream was increasing the user's combat ability.</description>
         <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
-        <scenarioCanAdd>true</scenarioCanAdd>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>
         <comps>
@@ -80,21 +79,13 @@
                 <severityPerDay>-1.5</severityPerDay>
                 <showHoursToRecover>true</showHoursToRecover>
             </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_CS6_After</targetHediff>
+                <minToJump>true</minToJump>
+            </li>
         </comps>
         <stages>
             <li>
-                <minSeverity>0.0</minSeverity>
-                <label>effect almost done.</label>
-                <hediffGivers>
-                    <li Class="HediffGiver_Random">
-                        <hediff>CS6_After</hediff>
-                        <mtbDays>0.0001</mtbDays>
-                    </li>
-                </hediffGivers>
-            </li>
-            <li>
-                <minSeverity>0.01</minSeverity>
-                <label>in effect.</label>
                 <statOffsets>
                     <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
                     <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
@@ -126,7 +117,7 @@
             </li>
             <li>
                 <minSeverity>0.51</minSeverity>
-                <label>in effect.</label>
+                <label>overdose</label>
                 <statOffsets>
                     <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
                     <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
@@ -169,15 +160,14 @@
     </HediffDef>
     
     <HediffDef>
-        <defName>CS6_After</defName>
+        <defName>Celes_CS6_After</defName>
         <label>CS-6 after effect</label>
         <labelNoun>a CS-6 after effect</labelNoun>
-        <description>after-effects left after CS-6 expiration may cause hunger and fatigue.</description>
+        <description>The organism is recovering from an overload of cellular activity caused by CS-6, and lack of appropriate treatment may lead to death.</description>
         <hediffClass>Hediff_High</hediffClass>
         <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
-        <scenarioCanAdd>true</scenarioCanAdd>
         <makesSickThought>true</makesSickThought>
-        <lethalSeverity>1.5</lethalSeverity>
+        <lethalSeverity>1</lethalSeverity>
         <tendable>true</tendable>
         <isBad>true</isBad>
         <comps>
@@ -195,6 +185,25 @@
         </comps>
         <stages>
             <li>
+                <vomitMtbDays>0.2</vomitMtbDays>
+                <restFallFactor>2.5</restFallFactor>
+                <hungerRateFactorOffset>1</hungerRateFactorOffset>
+                <socialFightChanceFactor>3.0</socialFightChanceFactor>
+                <capMods>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.80</minSeverity>
+                <label>dangerous</label>
+                <lifeThreatening>true</lifeThreatening>
                 <vomitMtbDays>0.2</vomitMtbDays>
                 <restFallFactor>2.5</restFallFactor>
                 <hungerRateFactorOffset>1</hungerRateFactorOffset>

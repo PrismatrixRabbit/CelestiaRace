@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+    <!-- <ThingDef MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
         <defName>CelesPsychicActivator_I</defName>
         <label>celestia psylink activator</label>
         <description>.</description>
@@ -80,7 +80,7 @@
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
         <isBad>false</isBad>
         <priceImpact>true</priceImpact>
-        <initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
+        <initialSeverity>1</initialSeverity> 
         <minSeverity>0</minSeverity>
         <maxSeverity>6</maxSeverity>
         <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
@@ -181,5 +181,5 @@
             <li Class="CompProperties_UseEffectDestroySelf" />
             <li Class="CompProperties_Forbiddable"/>
         </comps>
-    </ThingDef>
+    </ThingDef> -->
 </Defs>
