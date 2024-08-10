@@ -3,8 +3,8 @@
 
     <ThingDef ParentName="BenchBase">
         <defName>Celes_MultifunctionalTab</defName>
-        <label>celes multifunctional tab</label>
-        <description>An electric-powered station for smithing non-mechanical weapons and tools.</description>
+        <label>Celestia multifunctional tab</label>
+        <description>Multifunctional tab for assembling and disassembling various Celestia equipment, such as Celestia's advanced firearms and defences, all made to Celestia's specifications.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Celes/Building/Celes_MultifunctionalTab/Celes_MultifunctionalTab</texPath>
@@ -78,8 +78,8 @@
     
     <ThingDef ParentName="BenchBase">
         <defName>Celes_TailoringTab</defName>
-        <label>celes tailoring tab</label>
-        <description>An electric-powered station for smithing non-mechanical weapons and tools.</description>
+        <label>Celestia tailoring tab</label>
+        <description>A Celestia tailoring tab with a range of sewing tools, all manufactured to Celestia standards for sewing Celestia clothing. Works at 50% of its usual speed when there is no power.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Celes/Building/Celes_TailoringTab/Celes_TailoringTab</texPath>

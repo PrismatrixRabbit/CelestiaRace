@@ -27,8 +27,8 @@
     
     <ThingDef ParentName="Celes_EarlyMeleeBase">
         <defName>Celes_Hatchet</defName>
-        <label>celestia hatchet</label>
-        <description>A versatile survival hatchet, lightweight and deadly.</description>
+        <label>Celestia pioneering hatchet</label>
+        <description>A modern design topiary hand axe, ergonomic yet lightweight and durable. The killing power is not outstanding, but the superior construction can be easily used for harvesting crops and cutting down trees.</description>
         <graphicData>
             <texPath>Celes/Weapon/Early/Celes_Hatchet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -82,8 +82,8 @@
     
     <ThingDef ParentName="Celes_MidMeleeBase">
         <defName>Celes_IceAxe</defName>
-        <label>celestia ice axe</label>
-        <description>Ice axes, extremely lethal weapons, were also used in assassinations.</description>
+        <label>Celestia pioneering ice axe</label>
+        <description>A modern design pioneering ice axe, ergonomic yet lightweight and durable. It can help the user to climb mountain crags more easily, and can be used in extreme cases to aid in mineral gathering. Also, it hurts quite a bit to hit.</description>
         <graphicData>
             <texPath>Celes/Weapon/Mid/Celes_IceAxe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -136,8 +136,8 @@
     
     <ThingDef ParentName="Celes_MidMeleeBase">
         <defName>CelesSaberIndustrial</defName>
-        <label>celestia saber</label>
-        <description>.</description>
+        <label>Celestia pioneering saber</label>
+        <description>A classic saber, looking imposing and atmospheric, often held for use by Celestia outpost officers. But this weapon is no looker. When actually used in combat, this weapon can also be deadly in the right hands.</description>
         <graphicData>
             <texPath>Celes/Weapon/Mid/Celes_Saber</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -210,8 +210,8 @@
     
     <ThingDef ParentName="Celes_MidMeleeBase">
         <defName>CelesDagger</defName>
-        <label>celestia dagger</label>
-        <description>.</description>
+        <label>Celestia pioneering dagger</label>
+        <description>A classical dagger, both an everyday tool and a lethal weapon, is widely used by Celestia.</description>
         <graphicData>
             <texPath>Celes/Weapon/Mid/Celes_Dagger</texPath>
             <graphicClass>Graphic_Single</graphicClass>

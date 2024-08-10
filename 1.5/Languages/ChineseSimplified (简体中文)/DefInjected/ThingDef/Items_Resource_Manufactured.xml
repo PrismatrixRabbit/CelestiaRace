@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <MedicineCeles.label>星铃应急药物</MedicineCeles.label>
-  <MedicineCeles.description>这是一个懒狗占位符。</MedicineCeles.description>
-  
-  <CelesBioGel.label>星铃生物凝胶</CelesBioGel.label>
-  <CelesBioGel.description>这是一个懒狗占位符。</CelesBioGel.description>
+  <CelesBioGel.label>生物酶凝胶</CelesBioGel.label>
+  <!-- EN: bio-enzyme gels -->
+  <CelesBioGel.description>从有机质中提取的效用性生物酶凝胶，可用于制作星铃的各种特殊药物。</CelesBioGel.description>
+  <!-- EN: A potent bio-enzyme gel extracted from organic matter is used to make Celestia's various specialised medicines. -->
+
+  <CelesNanoMachine.label>尘构物质</CelesNanoMachine.label>
+  <!-- EN: the Dust-Mech -->
+  <CelesNanoMachine.description>一种强大而高度可控的可编程纳米机器，是星铃文明的根基之一，运用广泛。但在边缘世界这样物资缺乏的地方，尘构物质并不能随心所欲的塑造世界。</CelesNanoMachine.description>
+  <!-- EN: A powerful and highly controllable programmable nanomachine, one of the roots of Celestia's civilisation, used extensively. But in places like the Rimworld, where supplies are scarce, Dust-Mech matter does not shape the world as it pleases. -->
+
+  <CelesAdvanceCloth.label>尘化丝绸</CelesAdvanceCloth.label>
+  <!-- EN: Dust-Mech Silk -->
+  <CelesAdvanceCloth.description>一种利用尘构重组微观纤维结构制成的高强度布料。配方对边缘世界的环境进行了适配，用于制作各式星铃先进衣物。</CelesAdvanceCloth.description>
+  <!-- EN: A high-strength fabric made using Dust-Mech to reconfigure microscopic fibre structures. The formula is adapted to the environment of the Rimworld and is used to make all types of Celestia advanced clothing. -->
+
+  <CelesAlloy.label>淬铃合金</CelesAlloy.label>
+  <!-- EN: Chime Alloy -->
+  <CelesAlloy.description>一种利用尘构重组金属晶格结构制成的特种合金，用于制作各式星铃器械，并能转化为两种灵能敏感的合金。虽然在母星系不被瞧得上，但易于制造的特性让它在边缘世界的星铃拓荒队手中大放异彩。</CelesAlloy.description>
+  <!-- EN: A special alloy made using Dust-Mech to reconfigure the structure of the metal lattice, it is used to make all manner of Celestia instruments and can be converted into two psychically sensitive alloys. Though not looked upon favourably in the home system, its ease of manufacture has made it a hit in the hands of Celestia pioneers on the Rimworld. -->
+
+  <Celes_IndustrialChips.label>星铃工业芯片</Celes_IndustrialChips.label>
+  <!-- EN: Celestia industrial chips -->
+  <Celes_IndustrialChips.description>一种被星铃广泛运用的芯片，在我们手中只能用于制造某些星铃装置，但星铃拓荒队似乎对此有很大的需求。</Celes_IndustrialChips.description>
+  <!-- EN: A chip that is widely used by Celestia, and in our hands can only be used to make certain Celestia devices, but there seems to be a great demand for it from the Celestia Toppers. -->
 
 </LanguageData>

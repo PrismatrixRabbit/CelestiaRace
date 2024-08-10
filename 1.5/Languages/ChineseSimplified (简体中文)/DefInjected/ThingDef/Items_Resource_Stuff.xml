@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_NegativeAlloy.label>黯辉合金</Celes_NegativeAlloy.label>
+    <!-- EN: Dull-L Alloy -->
+    <Celes_NegativeAlloy.description>由淬铃合金转化而成的，压制灵能的特殊合金。作为装备可以降低使用者的心灵敏感度，但似乎还有别的用途。</Celes_NegativeAlloy.description>
+    <!-- EN: A special alloy converted from Chime Alloy that suppresses psychic energy. When use into equipment it can reduce the user's psychic sensitivity, but it seems to have other uses. -->
+
+    <Celes_PositiveAlloy.label>灵尘合金</Celes_PositiveAlloy.label>
+    <!-- EN: Psi-dust Alloy -->
+    <Celes_PositiveAlloy.description>由淬铃合金转化而成的，激发灵能的特殊合金。作为装备可以提高使用者的心灵敏感度，但似乎还有别的用途。</Celes_PositiveAlloy.description>
+    <!-- EN: A special alloy converted from Chime Alloy that stimulates psychic energy. When use into equipment it can increase the user's psychic sensitivity, but it seems to have other uses. -->
+
+</LanguageData>

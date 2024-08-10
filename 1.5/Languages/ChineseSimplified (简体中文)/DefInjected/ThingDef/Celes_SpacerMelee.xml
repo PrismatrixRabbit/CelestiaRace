@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <CelesSaberSpacer.label>星铃制式单分子军刀</CelesSaberSpacer.label>
+    <!-- EN:   -->
+    <CelesSaberSpacer.description>一把星铃制式标准的单分子军刀</CelesSaberSpacer.description>
+    <!-- EN:   -->
+    
+    <CelesMonoDagger.label>星铃制式单分子匕首</CelesMonoDagger.label>
+    <!-- EN:   -->
+    <CelesMonoDagger.description>一把星铃制式标准的单分子匕首</CelesMonoDagger.description>
+    <!-- EN:   -->
+
+    <CelesRelicSword.label>＂黎明＂</CelesRelicSword.label>
+    <!-- EN:   -->
+    <CelesRelicSword.description>一把来自星铃母星的古老武器，可能是星铃海军标配的等离子体长剑。</CelesRelicSword.description>
+    <!-- EN:   -->
+
+</LanguageData>

@@ -2,8 +2,8 @@
 <Defs>
     <ThingDef ParentName="PlantBase">
         <defName>Plant_CelesNano</defName>
-        <label>待命名</label>
-        <description>.</description>
+        <label>crystal orchid</label>
+        <description>Crystal Orchid, scientific name Dust-Mech Regeneration Plant. A genetically modified plant that is highly symbiotic with Dust-Mech for the production of Dust-Mech substances, its seed packets are placed into almost all Celestia emergency survival kits as one of the sources of Dust-Mech substances for extreme situations, and possibly the only source of Dust-Mech for those who do not want to risk serious blood loss. \n\nIts special and interesting life cycle and extremely high mineral requirements make it require a long growing time and a very high fertility requirement for the land, almost exclusively in hydroponic tanks and fertile soil. Please be careful not to let the cold snap destroy these crops.</description>
         <statBases>
             <MaxHitPoints>185</MaxHitPoints>
             <Nutrition>0.2</Nutrition>
@@ -26,6 +26,9 @@
                 <li>Hydroponic</li>
             </sowTags>
             <sowMinSkill>6</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>Celes_MainTech_II</li>
+            </sowResearchPrerequisites>
             <topWindExposure>0.1</topWindExposure>
             <immatureGraphicPath>Things/Plant/CottonPlant_Immature</immatureGraphicPath>
             <visualSizeRange>0.3~1.05</visualSizeRange>

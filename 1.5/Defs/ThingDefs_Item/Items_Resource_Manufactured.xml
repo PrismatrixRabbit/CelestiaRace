@@ -3,8 +3,8 @@
     
     <ThingDef ParentName="ResourceBase">
         <defName>CelesBioGel</defName>
-        <label>biogel</label>
-        <description>A highly versatile composite biogel that can be used in the production of various biochemical products.</description>
+        <label>bio-enzyme gels</label>
+        <description>A potent bio-enzyme gel extracted from organic matter is used to make Celestia's various specialised medicines.</description>
         <possessionCount>5</possessionCount>
         <tickerType>Normal</tickerType>
         <graphicData>
@@ -29,8 +29,8 @@
 
     <ThingDef ParentName="ResourceBase">
         <defName>CelesNanoMachine</defName>
-        <label>celestia nanomachine</label>
-        <description>.</description>
+        <label>the Dust-Mech</label>
+        <description>A powerful and highly controllable programmable nanomachine, one of the roots of Celestia's civilisation, used extensively. But in places like the Rimworld, where supplies are scarce, Dust-Mech matter does not shape the world as it pleases.</description>
         <possessionCount>5</possessionCount>
         <tickerType>Normal</tickerType>
         <graphicData>
@@ -55,8 +55,8 @@
 
     <ThingDef ParentName="ResourceBase">
         <defName>CelesAdvanceCloth</defName>
-        <label>尘化丝绸</label>
-        <description>.</description>
+        <label>Dust-Mech Silk</label>
+        <description>A high-strength fabric made using Dust-Mech to reconfigure microscopic fibre structures. The formula is adapted to the environment of the Rimworld and is used to make all types of Celestia advanced clothing.</description>
         <graphicData>
             <texPath>Celes/Item/Resource/CelesCloth</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -120,8 +120,8 @@
 
     <ThingDef ParentName="ResourceBase"> <!--淬铃合金-->
         <defName>CelesAlloy</defName>
-        <label>Celes Alloy</label>
-        <description>.</description>
+        <label>Chime Alloy</label>
+        <description>A special alloy made using Dust-Mech to reconfigure the structure of the metal lattice, it is used to make all manner of Celestia instruments and can be converted into two psychically sensitive alloys. Though not looked upon favourably in the home system, its ease of manufacture has made it a hit in the hands of Celestia pioneers on the Rimworld.</description>
         <graphicData>
             <texPath>Celes/Item/Resource/Alloy</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -179,8 +179,8 @@
 
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_IndustrialChips</defName>
-        <label>component</label>
-        <description>Miscellaneous gears, capacitors, circuit boards, tubes, wheels, sensors, wires, chips, processors, and other electronic and industrial parts. Necessary for assembling complex machines or electronics.</description>
+        <label>Celestia industrial chips</label>
+        <description>A chip that is widely used by Celestia, and in our hands can only be used to make certain Celestia devices, but there seems to be a great demand for it from the Celestia Toppers.</description>
         <possessionCount>2</possessionCount>
         <graphicData>
             <texPath>Things/Item/Resource/ComponentIndustrial</texPath>
@@ -201,6 +201,24 @@
         <thingCategories>
             <li>Manufactured</li>
         </thingCategories>
+        <costList>
+            <Steel>5</Steel>
+            <Plasteel>1</Plasteel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>Celes_MultifunctionalTab</li>
+            </recipeUsers>
+            <researchPrerequisite>Celes_Manufactory_I</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+                <Intellectual>10</Intellectual>
+            </skillRequirements>
+            <bulkRecipeCount>5</bulkRecipeCount>
+        </recipeMaker>
         <allowedArchonexusCount>10</allowedArchonexusCount>
     </ThingDef>
 

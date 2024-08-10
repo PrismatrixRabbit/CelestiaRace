@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_Spacer_Rifle.label>星铃制式突击步枪</Celes_Spacer_Rifle.label>
+    <!-- EN:   -->
+    <Celes_Spacer_Rifle.description>一把星铃制式标准的突击步枪。使用标准星铃能量仓，发射中型极化粒子束射弹。</Celes_Spacer_Rifle.description>
+    <!-- EN:   -->
+
+    <Celes_HEPT.label>放射性高能等离子体</Celes_HEPT.label>
+    <!-- EN:   -->
+
+    <Celes_Spacer_SMG.label>星铃制式冲锋枪</Celes_Spacer_SMG.label>
+    <!-- EN:   -->
+    <Celes_Spacer_SMG.description>一把老式构型的栓动步枪，射程远而精准，但射速堪忧。使用标准星铃能量仓，发射小型极化粒子束射弹。</Celes_Spacer_SMG.description>
+    <!-- EN:   -->
+
+    <Celes_Spacer_SniperRifle.label>星铃拓荒栓动步枪</Celes_Spacer_SniperRifle.label>
+    <!-- EN:   -->
+    <Celes_Spacer_SniperRifle.description>一把老式构型的栓动步枪，射程远而精准，使用标准星铃能量仓，发射大型极化粒子束射弹。</Celes_Spacer_SniperRifle.description>
+    <!-- EN:   -->
+
+    <Celes_Spacer_HMG.label>放射性高能等离子发射器</Celes_Spacer_HMG.label>
+    <!-- EN:   -->
+    <Celes_Spacer_HMG.description>一把试验性改造的放射性高能等离子发射器。使用标准星铃能量仓。</Celes_Spacer_HMG.description>
+    <!-- EN:   -->
+
+    <Celes_Spacer_Launcher.label>磁重联加速器</Celes_Spacer_Launcher.label>
+    <!-- EN:   -->
+    <Celes_Spacer_Launcher.description>一把试验性改造的磁重联加速器。使用标准星铃能量仓。</Celes_Spacer_Launcher.description>
+    <!-- EN:   -->
+
+    <CelesBullet_small_energy.label>小型极化粒子束射弹</CelesBullet_small_energy.label>
+    <!-- EN:   -->
+
+    <CelesBullet_medium_energy.label>中型极化粒子束射弹</CelesBullet_medium_energy.label>
+    <!-- EN:   -->
+
+    <CelesBullet_big_energy.label>大型极化粒子束射弹</CelesBullet_big_energy.label>
+    <!-- EN:   -->
+
+    <CelesBullet_Launcher.label>磁重联等离子体</CelesBullet_Launcher.label>
+    <!-- EN:   -->
+
+</LanguageData>

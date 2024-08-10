@@ -2,8 +2,8 @@
 <Defs>
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_NegativeAlloy</defName>
-        <label>"Blackstone" Alloy</label>
-        <description>.</description>
+        <label>Dull-L Alloy</label>
+        <description>A special alloy converted from Chime Alloy that suppresses psychic energy. When use into equipment it can reduce the user's psychic sensitivity, but it seems to have other uses.</description>
         <graphicData>
             <texPath>Celes/Item/Resource/NegativeAlloy</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -74,8 +74,8 @@
 
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_PositiveAlloy</defName>
-        <label>"Warlock" Alloy</label>
-        <description>.</description>
+        <label>Psi-dust Alloy</label>
+        <description>A special alloy converted from Chime Alloy that stimulates psychic energy. When use into equipment it can increase the user's psychic sensitivity, but it seems to have other uses.</description>
         <graphicData>
             <texPath>Celes/Item/Resource/PositiveAlloy</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>

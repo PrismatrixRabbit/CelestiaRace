@@ -8,7 +8,7 @@
 
     <TattooDef>
         <defName>Celes_Component</defName>
-        <label>celestia Component Tattoo</label>
+        <label>Celestia Body Mechanisms</label>
         <texPath>Celes/Tattoo/Component/Component</texPath>
         <tattooType>Body</tattooType>
         <category>Celes_Style</category>
@@ -19,7 +19,7 @@
 
     <TattooDef>
         <defName>Celes_TattooNull</defName>
-        <label>celestia Null Tattoo</label>
+        <label>Celestia Face Mechanisms</label>
         <texPath>Celes/Hair/Null/Null</texPath>
         <tattooType>Face</tattooType>
         <category>Celes_Style</category>

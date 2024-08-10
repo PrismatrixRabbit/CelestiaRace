@@ -3,8 +3,8 @@
     
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_NanoCrystallisedCorpse</defName>
-        <label>感染的尸体!</label>
-        <description>.</description>
+        <label>Dust-Mech crystalline corpse</label>
+        <description>For some reason, human corpses that have been almost completely transformed by Dust-Mech have initial state Dust-Mech on them that has crystallised and can be dismantled for recycling and to produce neutral amines as a by-product.</description>
         <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Celes/Item/Celes_NanoCrystallisedCorpse/Celes_NanoCrystallisedCorpse</texPath>
@@ -29,8 +29,11 @@
     <RecipeDef>
         <defName>ButcherCeles_NanoCrystallisedCorpse</defName>
         <label>ButcherCeles_NanoCrystallisedCorpse</label>
-        <description>Shred a dead mechanoid to try to salvage usable material.</description>
-        <jobString>Shredding mechanoid.</jobString>
+        <description>Disassembling the body, which has been almost completely transformed by Dust-Mech crystals, with some of the flesh and blood tissues that may still be active, is done with caution.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_NanoCrystallisedCorpse</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>dismantling Dust-Mech crystalline corpse</jobString>
         <workAmount>300</workAmount>
         <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
         <workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
@@ -57,6 +60,13 @@
             <CelesNanoMachine>50</CelesNanoMachine>
             <Neutroamine>50</Neutroamine>
         </products>
+        <recipeUsers>
+            <li>Celes_MultifunctionalTab</li>
+            <li>TableMachining</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_II</li>
+        </researchPrerequisites>
         <displayPriority>0</displayPriority>
     </RecipeDef>
     

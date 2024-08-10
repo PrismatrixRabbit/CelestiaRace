@@ -1,10 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Celes_Hatchet.label>星铃手斧</Celes_Hatchet.label>
-  <Celes_Hatchet.description>这是一个懒狗占位符。</Celes_Hatchet.description>
+  <Celes_Hatchet.label>星铃拓荒手斧</Celes_Hatchet.label>
+  <!-- EN: Celestia pioneering hatchet  -->
+  <Celes_Hatchet.description>一把现代化设计的拓荒手斧，符合人体工学而轻便耐用。杀伤力并不出众，但胜在其上的结构可以很方便的用于收获作物和砍树。</Celes_Hatchet.description>
+  <!-- EN: A modern design topiary hand axe, ergonomic yet lightweight and durable. The killing power is not outstanding, but the superior construction can be easily used for harvesting crops and cutting down trees.  -->
   
-  <Celes_IceAxe.label>星铃冰镐</Celes_IceAxe.label>
-  <Celes_IceAxe.description>这是一个懒狗占位符。</Celes_IceAxe.description>
+  <Celes_IceAxe.label>星铃拓荒冰镐</Celes_IceAxe.label>
+  <!-- EN: Celestia pioneering ice axe -->
+  <Celes_IceAxe.description>一把现代化设计的拓荒冰镐，符合人体工学而轻便耐用。可以帮助使用者更方便的攀爬山岳峭壁，极端情况下也能用于辅助采集矿物。另外，打人挺疼。</Celes_IceAxe.description>
+  <!-- EN: A modern design pioneering ice axe, ergonomic yet lightweight and durable. It can help the user to climb mountain crags more easily, and can be used in extreme cases to aid in mineral gathering. Also, it hurts quite a bit to hit.  -->
+
+  <CelesSaberIndustrial.label>星铃拓荒军刀</CelesSaberIndustrial.label>
+  <!-- EN: Celestia pioneering saber -->
+  <CelesSaberIndustrial.description>一把古典的军刀，看着威风而大气，常常被星铃前哨站官员持用。但这把武器可不是样子货。当真正用于战斗时，这把武器也能在合适的人手中发挥致命的威力。</CelesSaberIndustrial.description>
+  <!-- EN: A classic saber, looking imposing and atmospheric, often held for use by Celestia outpost officers. But this weapon is no looker. When actually used in combat, this weapon can also be deadly in the right hands.  -->
+
+  <CelesDagger.label>星铃拓荒匕首</CelesDagger.label>
+  <!-- EN: Celestia pioneering dagger  -->
+  <CelesDagger.description>一把古典的匕首，既是日常工具也是致命武器，被星铃们广泛的使用。</CelesDagger.description>
+  <!-- EN: A classical dagger, both an everyday tool and a lethal weapon, is widely used by Celestia.  -->
 
 </LanguageData>

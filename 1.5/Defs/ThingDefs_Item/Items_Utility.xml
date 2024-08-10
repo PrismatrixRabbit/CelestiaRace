@@ -3,8 +3,8 @@
 
     <ThingDef ParentName="MedicineBase">
         <defName>MedicineCeles</defName>
-        <label>celestia emergency medicinie </label>
-        <description>A small medicine kit including varieties of compound gel, which use to sterilize,heal wound or just supress disease.</description>
+        <label>Celestia emergency medicine</label>
+        <description>An advanced set of emergency medicines for The Navigator Programme, possibly from a distant Celestia home planet, containing a vast array of nanomachines and advanced instruments that would be difficult to replicate on the Rimworld, would be all that is needed to treat a large number of diseases.</description>
         <possessionCount>2</possessionCount>
         <graphicData>
             <texPath>Celes/Item/MedicineCeles</texPath>
@@ -44,8 +44,8 @@
 
     <ThingDef ParentName="MealBase">
         <defName>CelesMRE</defName>
-        <label>packaged survival meal</label>
-        <description>A high-quality packaged meal, manufactured for use in survival situations. While it never rots, it can still deteriorate if left outside. Great for traveling.</description>
+        <label>Celestia MRE</label>
+        <description>An extremely high quality individual ration, probably from the distant home planet of Celestia, processed and encapsulated using some technology unknown to the Rimworld, non-perishable and with a good flavour. It was originally planned to be widely used by Celestia's pioneering teams for long term exploration, but for some reason it is less common nowadays.</description>
         <graphicData>
             <texPath>Things/Item/Meal/SurvivalPack</texPath>
             <graphicClass>Graphic_MealVariants</graphicClass>
@@ -69,8 +69,8 @@
     
     <ThingDef ParentName="ResourceBase">
         <defName>CelesKeyCard</defName>
-        <label>celestia encrypt key card-artillery strike</label>
-        <description>Single-use encrypted key card with stored PIN used to calculate the authorization code to call artillery strike.</description>
+        <label>Pioneer Key</label>
+        <description>A single-use quantum key authorised by the Celestia Pioneers is made in the form of a small card for ease of understanding and is distributed anonymously. The card signifies the holder's contribution to the Celestia Pioneers, and only friends of the Celestia Pioneers can exchange it for valid support.</description>
         <possessionCount>2</possessionCount>
         <graphicData>
             <texPath>Celes/Item/CelesKeyCard/CelesKeyCard</texPath>
@@ -116,8 +116,8 @@
 
     <ThingDef ParentName="Celes_STCResourceBase">
         <defName>Celes_STC_MainTech_II</defName>
-        <label>Self-explanatory Technology Core</label>
-        <description>A mechanoid-band synchronization micro-organ. It is necessary to produce certain advanced types of mechanoids and equipment.\n\nA mechanitor can study this chip to help unlock higher tiers of mechtech research.</description>
+        <label>Self-explanatory Technology Core(Dust-Mech technical interpretation)</label>
+        <description>This is a Self-explanatory Technology Core from Celestia's research project "Dust-Mech technical interpretation". \n\nAn extremely advanced technological teaching device from Celestia's "The Navigator Programme" known as the "Self-explanatory Technology Core", with a variety of different forms, but most of them have a variety of obvious interfaces. Extremely rare in the Rimworld, most of them seem to be strictly guarded by Celestia's pioneering team. \n\nFrom brain links to holographic projections, the device is designed to explain Celestia's technology to any intelligent biological individual and guide him in putting it into practice. And strangely, some of the swarm-thinking creatures are unable to use and understand the knowledge taught by this device. It is unclear for what reason Celestia created this device, but it does help the user unlock further Celestia technology. \n\nDust-Mech technical interpretation\n\nDecipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.</description>
         <graphicData>
             <texPath>Celes/Item/CelesKeyCard/CelesKeyCard</texPath>
             <graphicClass>Graphic_Single</graphicClass>

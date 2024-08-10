@@ -3,9 +3,9 @@
     
     <RecipeDef>
         <defName>Make_CelesBiogelFromOrganics</defName>
-        <label>make celestia bio-enzyme gel from organics</label>
-        <description>Make a batch of celestia bio-enzyme gel by extracting elements from organic feedstocks.</description>
-        <jobString>Refining biogel from organics.</jobString>
+        <label>extractable bio-enzyme gel</label>
+        <description>Extraction of an effective bio-enzyme gel from organic matter.</description>
+        <jobString>Extracting bio-enzyme gel from organics.</jobString>
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
         <workAmount>2500</workAmount>
@@ -59,12 +59,12 @@
             <CelesBioGel>20</CelesBioGel>
         </products>
     </RecipeDef>
-
+    
     <RecipeDef>
-        <defName>Make_NegativeAlloy</defName>
-        <label>MakeNegativeAlloy</label>
-        <description>.</description>
-        <jobString>.</jobString>
+        <defName>Celes_Make_NegativeAlloy</defName>
+        <label>convert Dull-L Alloy</label>
+        <description>Using eltex as a raw material, the Dust-Mech is used to transform the Chime Alloy into the Dull-L Alloy that suppresses psychic energy.</description>
+        <jobString>converting Dull-L Alloy</jobString>
         <workAmount>15000</workAmount>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
@@ -102,10 +102,10 @@
     </RecipeDef>
 
     <RecipeDef>
-        <defName>Make_PositiveAlloy</defName>
-        <label>MakePositiveAlloy</label>
-        <description>.</description>
-        <jobString>.</jobString>
+        <defName>Celes_Make_PositiveAlloy</defName>
+        <label>convert Psi-dust Alloy</label>
+        <description>Using the Dust-Mech, convert the Chime Alloy to the Psi-dust Alloy that inspires psychic energy.</description>
+        <jobString>converting Psi-dust Alloy</jobString>
         <workAmount>15000</workAmount>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
@@ -144,9 +144,9 @@
 
     <RecipeDef>
         <defName>Make_CelesAlloy</defName>
-        <label>MakeCelesAlloy</label>
-        <description>.</description>
-        <jobString>.</jobString>
+        <label>reconstruct Chime Alloy</label>
+        <description>Using Dust-Mech to reconstruct Rimworld's native materials into Chime Alloy.</description>
+        <jobString>reconstructing Chime Alloy</jobString>
         <workAmount>10000</workAmount>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>

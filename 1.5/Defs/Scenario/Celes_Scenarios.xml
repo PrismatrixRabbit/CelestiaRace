@@ -4,15 +4,23 @@
 
   <ScenarioDef>
 	<defName>Celes_Scenarios</defName>
-    <label>celestia crashlanded</label>
-    <description>just classic.</description>
+    <label>Celestia on the ground.</label>
+    <description>As pioneers of The Navigator Programme, you aboard the Polaris should have been awakened to the dawn of a new world by intelligent machinery, or at least by the crew of this generational ship. Instead, you were pulled out of your hibernation pods by marines claiming to be from Celestia's Seventh Fleet, amidst the burning smell of organic matter and machinery. With their help, the two of you were able to hitch a ride on an escape pod from the ship. Looking back at a moment before you entered the atmosphere, you saw the Generation ship, wreathed in crystalline blue light, fade away in a flash of fire like a nova. \n&lt;color=#3d3e3f&gt;"ERROR: Unable to get instance, self-maintenance system away from ...... is online, CLUSTER has taken over Polaris." &lt;/color&gt;</description>
     <scenario>
-      <summary>Three crashlanded celestias - the classic RimWorld experience in some way.</summary>
+      <summary>Two Celestia who suffered an accident and were forced to land in this Rimworld.</summary>
       <playerFaction>
         <def>PlayerFaction</def>
         <factionDef>Celes_PlayerFaction</factionDef>
       </playerFaction>
       <parts>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Bad news, crash reporting. \n\nThe two of you escaped the fragmented Polaris, separated from the other pioneers, and landed on a strange and unknown Rimworld. Much of the ship's wreckage has been reduced to meteors in the atmosphere, while the rest has continued to fall around you. \n\nIt's time to formulate a plan on how to survive in this barren land.</text>
+          <textKey>GameStartDialog</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
 
         <!-- Config pages -->
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
@@ -107,14 +115,6 @@
           <def>ScatterThingsAnywhere</def>
           <thingDef>Steel</thingDef>
           <count>720</count>
-        </li>
-        
-        <!-- Game start dialog -->
-        <li Class="ScenPart_GameStartDialog">
-          <def>GameStartDialog</def>
-          <text>bad news,crash reporting.</text>
-		  <textKey>GameStartDialog</textKey>
-          <closeSound>GameStartSting</closeSound>
         </li>
         
       </parts>

@@ -10,10 +10,10 @@
 
     <RecipeDef ParentName="Celes_Surgery">
         <defName>ExtractCelesNanoMachine</defName>
-        <label>extract celestia nanomachine</label>
-        <description>Extract a hemogen pack from the target. The operation will fail to produce a hemogen pack if the target does not have enough blood.\n\nHemogen packs can be administered to others to reduce blood loss or to satiate those who feed on blood.</description>
+        <label>Separate Dust-Mech from Blood</label>
+        <description>Celestia's blood is filled with Dust-Mech substances that constantly maintain their bodies, and some of them are in an initial state where they have not yet been instructed to reproduce themselves. \n\nThe purpose of this procedure is to isolate these initial state Dust-Mech substances while extracting Celestia's blood. This is an emergency option in extreme cases.Without enough blood, it is impossible to isolate enough Dust-Mech to be self-sustaining.</description>
         <workerClass>Recipe_ExtractHemogen</workerClass>
-        <jobString>Extracting hemogen pack.</jobString>
+        <jobString>Separating Dust-Mech from Blood.</jobString>
         <workAmount>500</workAmount>
         <hideBodyPartNames>true</hideBodyPartNames>
         <targetsBodyPart>false</targetsBodyPart>
@@ -27,6 +27,9 @@
         <products>
             <CelesNanoMachine>2</CelesNanoMachine>
         </products>
+        <researchPrerequisites>
+            <li>Celes_MainTech_II</li>
+        </researchPrerequisites>
     </RecipeDef>
     
 </Defs>
