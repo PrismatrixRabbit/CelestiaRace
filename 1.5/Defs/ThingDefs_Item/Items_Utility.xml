@@ -47,7 +47,7 @@
         <label>Celestia MRE</label>
         <description>An extremely high quality individual ration, probably from the distant home planet of Celestia, processed and encapsulated using some technology unknown to the Rimworld, non-perishable and with a good flavour. It was originally planned to be widely used by Celestia's pioneering teams for long term exploration, but for some reason it is less common nowadays.</description>
         <graphicData>
-            <texPath>Things/Item/Meal/SurvivalPack</texPath>
+            <texPath>Celes/Item/MRE</texPath>
             <graphicClass>Graphic_MealVariants</graphicClass>
         </graphicData>
         <statBases>
@@ -73,7 +73,7 @@
         <description>A single-use quantum key authorised by the Celestia Pioneers is made in the form of a small card for ease of understanding and is distributed anonymously. The card signifies the holder's contribution to the Celestia Pioneers, and only friends of the Celestia Pioneers can exchange it for valid support.</description>
         <possessionCount>2</possessionCount>
         <graphicData>
-            <texPath>Celes/Item/CelesKeyCard/CelesKeyCard</texPath>
+            <texPath>Celes/Item/CelesKeyCard</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Standard_Pickup</soundInteract>
@@ -119,7 +119,7 @@
         <label>Self-explanatory Technology Core(Dust-Mech technical interpretation)</label>
         <description>This is a Self-explanatory Technology Core from Celestia's research project "Dust-Mech technical interpretation". \n\nAn extremely advanced technological teaching device from Celestia's "The Navigator Programme" known as the "Self-explanatory Technology Core", with a variety of different forms, but most of them have a variety of obvious interfaces. Extremely rare in the Rimworld, most of them seem to be strictly guarded by Celestia's pioneering team. \n\nFrom brain links to holographic projections, the device is designed to explain Celestia's technology to any intelligent biological individual and guide him in putting it into practice. And strangely, some of the swarm-thinking creatures are unable to use and understand the knowledge taught by this device. It is unclear for what reason Celestia created this device, but it does help the user unlock further Celestia technology. \n\nDust-Mech technical interpretation\n\nDecipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.</description>
         <graphicData>
-            <texPath>Celes/Item/CelesKeyCard/CelesKeyCard</texPath>
+            <texPath>Celes/Item/Celes_STC/Celes_STC</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>

@@ -58,7 +58,7 @@
         <label>Dust-Mech Silk</label>
         <description>A high-strength fabric made using Dust-Mech to reconfigure microscopic fibre structures. The formula is adapted to the environment of the Rimworld and is used to make all types of Celestia advanced clothing.</description>
         <graphicData>
-            <texPath>Celes/Item/Resource/CelesCloth</texPath>
+            <texPath>Celes/Item/Resource/AdvanceCloth</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -128,6 +128,8 @@
         </graphicData>
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
             <MarketValue>2.5</MarketValue>
             <Mass>0.5</Mass>
@@ -139,11 +141,9 @@
             <SharpDamageMultiplier>2.5</SharpDamageMultiplier>
             <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
         </statBases>
-        <useHitPoints>false</useHitPoints>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <deepCommonality>4</deepCommonality>
-        <deepCountPerPortion>45</deepCountPerPortion>
-        <deepLumpSizeRange>20~30</deepLumpSizeRange>
+        <deepCommonality>0</deepCommonality>
+        <deepCountPerPortion>0</deepCountPerPortion>
+        <deepLumpSizeRange>0~0</deepLumpSizeRange>
         <burnableByRecipe>false</burnableByRecipe>
         <smeltable>true</smeltable>
         <stuffProps>
@@ -183,7 +183,7 @@
         <description>A chip that is widely used by Celestia, and in our hands can only be used to make certain Celestia devices, but there seems to be a great demand for it from the Celestia Toppers.</description>
         <possessionCount>2</possessionCount>
         <graphicData>
-            <texPath>Things/Item/Resource/ComponentIndustrial</texPath>
+            <texPath>Celes/Item/IndustrialChips</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Metal_Drop</soundInteract>

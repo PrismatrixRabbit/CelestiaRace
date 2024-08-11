@@ -49,7 +49,7 @@
             <DeteriorationRate>0</DeteriorationRate>
         </statBases>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/Mechlink</texPath>
+            <texPath>Celes/Item/MechlinkAuthorization/MechlinkAuthorization</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>0.65</drawSize>
         </graphicData>

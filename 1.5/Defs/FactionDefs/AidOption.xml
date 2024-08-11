@@ -4,9 +4,9 @@
     <CelesFeature.AidOptionDef>
         <defName>Option_Drop01</defName>
         <label>申请白银</label>
-        <cooldown>120</cooldown>        <!-- 冷却 -->
+        <cooldown>300000</cooldown>        <!-- 冷却 -->
         <requests>            <!-- 需要物资 -->
-            <Silver>50</Silver>
+            <CelesKeyCard>1</CelesKeyCard>
         </requests>
         <isDrop>true</isDrop>
         <effects>            <!-- 效果 -->
@@ -27,7 +27,7 @@
         <label>request celestia field construction team</label>
         <cooldown>300000</cooldown>        <!-- 冷却 -->
         <requests>            <!-- 需要物资 -->
-            <Silver>50</Silver>
+            <CelesKeyCard>1</CelesKeyCard>
         </requests>
         <isDrop>false</isDrop>
         <effects>            <!-- 效果 -->
@@ -74,9 +74,9 @@
         <defName>TradeOption_Goodwill</defName>
         <label>TradeOption</label>
         <tradeType>GoodWill</tradeType>        <!-- 交易类型 -->
-        <goodwillRequest>10~20</goodwillRequest>
+        <goodwillRequest>45~55</goodwillRequest>
         <rewards>            <!-- 交易物资 -->
-            <Silver>50</Silver>
+            <CelesKeyCard>1</CelesKeyCard>
         </rewards>
         <dropPod>ActiveDropPodMechanoid</dropPod>        <!-- 填空投仓的def -->
         <faller>DropPodIncomingMechanoid</faller>        <!-- 填skyfaller -->
@@ -87,10 +87,11 @@
         <label>TradeOption</label>
         <tradeType>Small</tradeType>        <!-- 交易类型 -->
         <requests>            <!-- 需要物资 -->
-            <Silver>10</Silver>
+            <Silver>1</Silver>
+            <CelesKeyCard>5</CelesKeyCard>
         </requests>
         <rewards>            <!-- 交易物资 -->
-            <Silver>50</Silver>
+            <CelesKeyCard>5</CelesKeyCard>
         </rewards>
         <dropPod>ActiveDropPodMechanoid</dropPod>        <!-- 填空投仓的def -->
         <faller>DropPodIncomingMechanoid</faller>        <!-- 填skyfaller -->
@@ -102,6 +103,20 @@
         <tradeType>Big</tradeType>        <!-- 交易类型 -->
         <requests>            <!-- 需要物资 -->
             <Silver>100</Silver>
+        </requests>
+        <rewards>            <!-- 交易物资 -->
+            <CelesKeyCard>500</CelesKeyCard>
+        </rewards>
+        <dropPod>ActiveDropPodMechanoid</dropPod>        <!-- 填空投仓的def -->
+        <faller>DropPodIncomingMechanoid</faller>        <!-- 填skyfaller -->
+    </CelesFeature.TradeOptionDef>
+
+    <CelesFeature.TradeOptionDef>
+        <defName>TradeOption_Back</defName>
+        <label>TradeOption</label>
+        <tradeType>Back</tradeType>        <!-- 交易类型 -->
+        <requests>            <!-- 需要物资 -->
+            <CelesKeyCard>100</CelesKeyCard>
         </requests>
         <rewards>            <!-- 交易物资 -->
             <Silver>500</Silver>
