@@ -15,8 +15,8 @@
 
     <ThingDef ParentName="Celes_SpacerMeleeBase">
         <defName>CelesSaberSpacer</defName>
-        <label>celestia mono saber</label>
-        <description>.</description>
+        <label>Celestia standard mono saber</label>
+        <description>A Celestia standard mono saber, a redesign of the classic model. Uses a fairly lethal monomolecular blade, with an additional short burst of EMP damage when attacking.</description>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_MonoSaber</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -44,34 +44,34 @@
         </recipeMaker>
         <tools>
             <li>
-                <label>edge</label>
-                <capacities>
-                    <li>Cut</li>
-                </capacities>
-                <power>30</power>
-                <cooldownTime>1.0</cooldownTime>
-                <armorPenetration>0.95</armorPenetration>
-                <extraMeleeDamages>
-                    <li>
-                        <def>EMP</def>
-                        <amount>8</amount>
-                        <chance>0.4</chance>
-                    </li>
-                </extraMeleeDamages>
-            </li>
-            <li>
                 <label>point</label>
                 <capacities>
                     <li>Stab</li>
                 </capacities>
-                <power>24</power>
-                <cooldownTime>1.8</cooldownTime>
-                <armorPenetration>1</armorPenetration>
+                <power>18</power>
+                <cooldownTime>1.6</cooldownTime>
+                <armorPenetration>0.90</armorPenetration>
                 <extraMeleeDamages>
                     <li>
                         <def>EMP</def>
-                        <amount>8</amount>
-                        <chance>0.8</chance>
+                        <amount>12</amount>
+                        <chance>0.6</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.6</cooldownTime>
+                <armorPenetration>0.90</armorPenetration>
+                <extraMeleeDamages>
+                    <li>
+                        <def>EMP</def>
+                        <amount>12</amount>
+                        <chance>0.4</chance>
                     </li>
                 </extraMeleeDamages>
             </li>
@@ -80,16 +80,17 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>13</power>
-                <cooldownTime>1.8</cooldownTime>
+                <power>12</power>
+                <cooldownTime>1.6</cooldownTime>
+                <armorPenetration>0.20</armorPenetration>
             </li>
         </tools>
     </ThingDef>
 
     <ThingDef ParentName="Celes_SpacerMeleeBase">
         <defName>CelesMonoDagger</defName>
-        <label>celestia mono dagger</label>
-        <description>.</description>
+        <label>Celestia standard mono dagger</label>
+        <description>A Celestia standard mono dagger, a redesign of the classic model. Uses a fairly lethal monomolecular blade, with an additional short burst of EMP damage when attacking.</description>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_MonoDagger</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -120,9 +121,9 @@
                 <capacities>
                     <li>Stab</li>
                 </capacities>
-                <power>18</power>
-                <cooldownTime>1.4</cooldownTime>
-                <armorPenetration>0.9</armorPenetration>
+                <power>15</power>
+                <cooldownTime>1.5</cooldownTime>
+                <armorPenetration>0.90</armorPenetration>
                 <extraMeleeDamages>
                     <li>
                         <def>EMP</def>
@@ -136,9 +137,9 @@
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>20</power>
-                <cooldownTime>0.8</cooldownTime>
-                <armorPenetration>0.95</armorPenetration>
+                <power>10</power>
+                <cooldownTime>1.0</cooldownTime>
+                <armorPenetration>0.90</armorPenetration>
                 <extraMeleeDamages>
                     <li>
                         <def>EMP</def>
@@ -152,8 +153,9 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>13</power>
-                <cooldownTime>1.8</cooldownTime>
+                <power>12</power>
+                <cooldownTime>1.6</cooldownTime>
+                <armorPenetration>0.20</armorPenetration>
             </li>
         </tools>
     </ThingDef>
@@ -197,14 +199,14 @@
 
   <ThingDef ParentName="MeleeWeaponUltratech">
     <defName>CelesRelicSword</defName>
-    <label>"The Celestia Dawn"</label>
-    <description>.</description>
+    <label>"The Dawn"</label>
+    <description>An ancient weapon from Celestia's home planet, probably the standard plasma longsword of the Celestia Navy, with a deadly single-molecule blade encased in hot plasma. Known today as "The Dawn" for its morale-boosting qualities, the technology to make it has likely been lost.</description>
     <graphicData>
         <texPath>Celes/Weapon/Spacer/Celes_RelicSword</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Interact_MonoSword</soundInteract>
-    <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+    <soundInteract>Interact_PlasmaSword</soundInteract>
+    <meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <relicChance>3</relicChance>
     <smeltable>false</smeltable>
@@ -219,17 +221,17 @@
     </weaponClasses>
 		<tools>
             <li>
-                <label>blade</label>
+                <label>point</label>
                 <capacities>
-                    <li>Cut</li>
+                    <li>Stab</li>
                 </capacities>
-                <power>31</power>
+                <power>23</power>
                 <cooldownTime>1.6</cooldownTime>
-                <armorPenetration>0.8</armorPenetration>
+                <armorPenetration>0.95</armorPenetration>
                 <extraMeleeDamages>
                     <li>
                         <def>Flame</def>
-                        <amount>10</amount>
+                        <amount>5</amount>
                         <chance>1</chance>
                     </li>
                     <li>
@@ -240,17 +242,17 @@
                 </extraMeleeDamages>
             </li>
             <li>
-                <label>point</label>
+                <label>blade</label>
                 <capacities>
-                    <li>Stab</li>
+                    <li>Cut</li>
                 </capacities>
-                <power>27</power>
+                <power>26</power>
                 <cooldownTime>1.8</cooldownTime>
-                <armorPenetration>0.85</armorPenetration>
+                <armorPenetration>0.95</armorPenetration>
                 <extraMeleeDamages>
                     <li>
                         <def>Flame</def>
-                        <amount>10</amount>
+                        <amount>5</amount>
                         <chance>1</chance>
                     </li>
                     <li>
@@ -266,7 +268,8 @@
                     <li>Blunt</li>
                 </capacities>
                 <power>12</power>
-                <cooldownTime>2</cooldownTime>
+                <cooldownTime>1.6</cooldownTime>
+                <armorPenetration>0.25</armorPenetration>
             </li>
         </tools>
   </ThingDef>

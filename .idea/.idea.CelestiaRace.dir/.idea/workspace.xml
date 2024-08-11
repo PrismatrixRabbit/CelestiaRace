@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="修文案汉化，汉化至配方部分,未完成" />
+    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="修文案汉化，汉化至武器部分，未完成，已完成一半．剩余背景故事与随机名．贴图等待更新．">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Celes_SpacerMelee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Celes_SpacerMelee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Celes_SpacerRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Celes_SpacerRange.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,6 +92,8 @@
       <workItem from="1722944488832" duration="13260000" />
       <workItem from="1723104502895" duration="22270000" />
       <workItem from="1723189251034" duration="22813000" />
+      <workItem from="1723288442561" duration="22214000" />
+      <workItem from="1723354314690" duration="1917000" />
     </task>
     <task id="LOCAL-00001" summary="修改背景">
       <option name="closed" value="true" />
@@ -289,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723223320155</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="修文案汉化，汉化至武器部分，未完成，已完成一半．剩余背景故事与随机名．贴图等待更新．">
+      <option name="closed" value="true" />
+      <created>1723315188898</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1723315188898</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +337,8 @@
     <MESSAGE value="修文案汉化，装备部分" />
     <MESSAGE value="修文案汉化，药物部分，剩余hediff未汉化" />
     <MESSAGE value="修文案汉化，汉化至配方部分,未完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="修文案汉化，汉化至配方部分,未完成" />
+    <MESSAGE value="修文案汉化，汉化至武器部分，未完成，已完成一半．剩余背景故事与随机名．贴图等待更新．" />
+    <option name="LAST_COMMIT_MESSAGE" value="修文案汉化，汉化至武器部分，未完成，已完成一半．剩余背景故事与随机名．贴图等待更新．" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

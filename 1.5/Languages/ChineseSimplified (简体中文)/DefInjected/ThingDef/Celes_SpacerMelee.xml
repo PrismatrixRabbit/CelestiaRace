@@ -2,18 +2,36 @@
 <LanguageData>
 
     <CelesSaberSpacer.label>星铃制式单分子军刀</CelesSaberSpacer.label>
-    <!-- EN:   -->
-    <CelesSaberSpacer.description>一把星铃制式标准的单分子军刀</CelesSaberSpacer.description>
-    <!-- EN:   -->
+    <!-- EN: Celestia standard mono saber  -->
+    <CelesSaberSpacer.description>一把星铃制式标准的单分子军刀，对古典款军刀的重设计。使用相当致命的单分子刀刃，在攻击时会额外附带短暂的EMP伤害。</CelesSaberSpacer.description>
+    <!-- EN: A Celestia standard mono saber, a redesign of the classic model. Uses a fairly lethal monomolecular blade, with an additional short burst of EMP damage when attacking.  -->
+    <CelesMonoDagger.tools.0.label>刀尖</CelesMonoDagger.tools.0.label>
+    <!-- EN: point  -->
+    <CelesMonoDagger.tools.1.label>刀刃</CelesMonoDagger.tools.1.label>
+    <!-- EN: edge  -->
+    <CelesMonoDagger.tools.2.label>刀柄</CelesMonoDagger.tools.2.label>
+    <!-- EN: handle  -->
     
     <CelesMonoDagger.label>星铃制式单分子匕首</CelesMonoDagger.label>
-    <!-- EN:   -->
-    <CelesMonoDagger.description>一把星铃制式标准的单分子匕首</CelesMonoDagger.description>
-    <!-- EN:   -->
+    <!-- EN: Celestia standard mono dagger  -->
+    <CelesMonoDagger.description>一把星铃制式标准的单分子匕首，对古典款匕首的重设计。使用相当致命的单分子刀刃，在攻击时会额外附带短暂的EMP伤害。</CelesMonoDagger.description>
+    <!-- EN: A Celestia standard mono dagger, a redesign of the classic model. Uses a fairly lethal monomolecular blade, with an additional short burst of EMP damage when attacking.  -->
+    <CelesMonoDagger.tools.0.label>刀尖</CelesMonoDagger.tools.0.label>
+    <!-- EN: point  -->
+    <CelesMonoDagger.tools.1.label>刀刃</CelesMonoDagger.tools.1.label>
+    <!-- EN: edge  -->
+    <CelesMonoDagger.tools.2.label>刀柄</CelesMonoDagger.tools.2.label>
+    <!-- EN: handle  -->
 
-    <CelesRelicSword.label>＂黎明＂</CelesRelicSword.label>
-    <!-- EN:   -->
-    <CelesRelicSword.description>一把来自星铃母星的古老武器，可能是星铃海军标配的等离子体长剑。</CelesRelicSword.description>
-    <!-- EN:   -->
+    <CelesRelicSword.label>“黎明”</CelesRelicSword.label>
+    <!-- EN: "The Dawn"  -->
+    <CelesRelicSword.description>一把来自星铃母星的古老武器，可能是星铃海军标配的等离子体长剑，在高温等离子体内包裹的是致命的单分子刀刃。因为这种武器如今对士气的鼓舞而被称为“黎明”，其制造技术很可能已经遗失。</CelesRelicSword.description>
+    <!-- EN: An ancient weapon from Celestia's home planet, probably the standard plasma longsword of the Celestia Navy, with a deadly single-molecule blade encased in hot plasma. Known today as "The Dawn" for its morale-boosting qualities, the technology to make it has likely been lost.  -->
+    <CelesRelicSword.tools.0.label>剑尖</CelesRelicSword.tools.0.label>
+    <!-- EN: point  -->
+    <CelesRelicSword.tools.1.label>剑刃</CelesRelicSword.tools.1.label>
+    <!-- EN: blade  -->
+    <CelesRelicSword.tools.2.label>剑柄</CelesRelicSword.tools.2.label>
+    <!-- EN: handle  -->
 
 </LanguageData>

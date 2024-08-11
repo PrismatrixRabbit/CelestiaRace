@@ -3,10 +3,22 @@
     
     <Celes_BulletRadiation.label>放射性等离子射弹</Celes_BulletRadiation.label>
     <!-- EN: radioactive plasma projectile -->
-    <Celes_BulletRadiation.deathMessage>{0}被枪射杀了。</Celes_BulletRadiation.deathMessage>
+    <Celes_BulletRadiation.deathMessage>{0}被高能等离子体射杀了。</Celes_BulletRadiation.deathMessage>
+    <!-- EN: {0} shot by high-energy plasma. -->
 
     <Celes_Particle.label>极化粒子束射弹</Celes_Particle.label>
     <!-- EN: polarised particle projectile -->
-    <Celes_Particle.deathMessage>{0}被枪射杀了。</Celes_Particle.deathMessage>
+    <Celes_Particle.deathMessage>{0}被极化粒子束射杀了。</Celes_Particle.deathMessage>
+    <!-- EN: {0} was shot by a polarised particle. -->
 
+    <Celes_MassiveParticle.label>聚能极化粒子束射弹</Celes_MassiveParticle.label>
+    <!-- EN: massive polarised particle projectile -->
+    <Celes_MassiveParticle.deathMessage>{0}被极化粒子束射杀了。</Celes_MassiveParticle.deathMessage>
+    <!-- EN: {0} was shot by a polarised particle. -->
+    
+    <Celes_MRPlasma.label>磁重联等离子体</Celes_MRPlasma.label>
+    <!-- EN: magnetic reconnection plasma -->
+    <Celes_MRPlasma.deathMessage>{0}被高能等离子体炸死了。</Celes_MRPlasma.deathMessage>
+    <!-- EN: {0} has died in a high-energy plasma explosion. -->
+    
 </LanguageData>

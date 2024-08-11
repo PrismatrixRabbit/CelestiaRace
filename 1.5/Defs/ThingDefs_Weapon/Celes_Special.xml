@@ -2,8 +2,8 @@
 <Defs>
     <ThingDef ParentName="OrbitalUtilityBase">
         <defName>CelesArtilleryTargeter</defName>
-        <label>artillery strike targeter</label>
-        <description>description WIP</description>
+        <label>Celestia Pioneer artillery strike targeter</label>
+        <description>Celestia Pioneer artillery strike targeter, used to guide one over-the-horizon fire coverage from the Celestia Navy.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponSpecial/OrbitalTargeterBombardment/OrbitalTargeterBombardment</texPath>
             <drawSize>(0.7,0.7)</drawSize>

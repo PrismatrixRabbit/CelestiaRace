@@ -74,8 +74,8 @@
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>18</power>
-                <cooldownTime>1</cooldownTime>
+                <power>8</power>
+                <cooldownTime>1.2</cooldownTime>
             </li>
         </tools>
     </ThingDef>
@@ -120,7 +120,7 @@
                 <capacities>
                     <li>Poke</li>
                 </capacities>
-                <power>10</power>
+                <power>9</power>
                 <cooldownTime>2</cooldownTime>
             </li>
             <li>
@@ -128,7 +128,7 @@
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>28</power>
+                <power>6</power>
                 <cooldownTime>0.8</cooldownTime>
             </li>
         </tools>
@@ -167,35 +167,22 @@
         </recipeMaker>
         <tools>
             <li>
-                <label>edge</label>
-                <capacities>
-                    <li>Cut</li>
-                </capacities>
-                <power>30</power>
-                <cooldownTime>1.0</cooldownTime>
-                <extraMeleeDamages>
-                    <li>
-                        <def>EMP</def>
-                        <amount>4</amount>
-                        <chance>0.4</chance>
-                    </li>
-                </extraMeleeDamages>
-            </li>
-            <li>
                 <label>point</label>
                 <capacities>
                     <li>Stab</li>
                 </capacities>
-                <power>24</power>
-                <cooldownTime>1.8</cooldownTime>
-                <armorPenetration>0.2</armorPenetration>
-                <extraMeleeDamages>
-                    <li>
-                        <def>EMP</def>
-                        <amount>8</amount>
-                        <chance>0.8</chance>
-                    </li>
-                </extraMeleeDamages>
+                <power>21</power>
+                <cooldownTime>2.4</cooldownTime>
+                <armorPenetration>0.33</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>21</power>
+                <cooldownTime>2.4</cooldownTime>
+                <armorPenetration>0.33</armorPenetration>
             </li>
             <li>
                 <label>handle</label>
@@ -204,6 +191,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>0.15</armorPenetration>
             </li>
         </tools>
     </ThingDef>
@@ -244,32 +232,18 @@
                 <capacities>
                     <li>Stab</li>
                 </capacities>
-                <power>18</power>
-                <cooldownTime>1.4</cooldownTime>
-                <armorPenetration>0.4</armorPenetration>
-                <extraMeleeDamages>
-                    <li>
-                        <def>EMP</def>
-                        <amount>4</amount>
-                        <chance>0.8</chance>
-                    </li>
-                </extraMeleeDamages>
+                <power>12</power>
+                <cooldownTime>1.5</cooldownTime>
+                <armorPenetration>0.25</armorPenetration>
             </li>
             <li>
                 <label>edge</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>20</power>
-                <cooldownTime>0.8</cooldownTime>
-                <armorPenetration>0.1</armorPenetration>
-                <extraMeleeDamages>
-                    <li>
-                        <def>EMP</def>
-                        <amount>4</amount>
-                        <chance>0.4</chance>
-                    </li>
-                </extraMeleeDamages>
+                <power>8</power>
+                <cooldownTime>1.0</cooldownTime>
+                <armorPenetration>0.25</armorPenetration>
             </li>
             <li>
                 <label>handle</label>
@@ -278,6 +252,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>0.15</armorPenetration>
             </li>
         </tools>
     </ThingDef>

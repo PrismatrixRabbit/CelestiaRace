@@ -15,8 +15,8 @@
     
     <ThingDef ParentName="Celes_SpacerGunBase">
         <defName>Celes_Spacer_Rifle</defName>
-        <label>Celes_Spacer_Rifle</label>
-        <description>description WIP</description>
+        <label>Celestia standard assault rifle</label>
+        <description>A Celestia standard assault rifle with a balanced rate of fire and improved accuracy, widely used by Celestia's frontal military forces. Uses a standard Celestia energy chamber and fires medium polarised particle projectile. \n\n A true Celestia weapon, each of its rounds carries a high penetration and energy density that can cause considerable damage to both soft and hard targets, quickly suppressing and disrupting the enemy's shield systems, and even enough to disrupt the internal circuitry of a mechanical body.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_ChargeRifle</texPath>
@@ -27,10 +27,10 @@
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
             <WorkToMake>45000</WorkToMake>
-            <Mass>4.6</Mass>
-            <AccuracyTouch>0.55</AccuracyTouch>
+            <Mass>5.0</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
             <AccuracyShort>0.75</AccuracyShort>
-            <AccuracyMedium>0.65</AccuracyMedium>
+            <AccuracyMedium>0.60</AccuracyMedium>
             <AccuracyLong>0.55</AccuracyLong>
             <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
         </statBases>
@@ -56,8 +56,8 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_medium_energy</defaultProjectile>
                 <warmupTime>1.0</warmupTime>
-                <range>40.9</range>
-                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <range>34.9</range>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <burstShotCount>3</burstShotCount>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
@@ -87,39 +87,47 @@
 	
     <ThingDef ParentName="BaseBullet">
         <defName>Celes_HEPT</defName>
-        <label>high energy plasma bullet</label>
+        <label>radioactive high energy plasma</label>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
             <damageDef>Celes_BulletRadiation</damageDef>
-            <damageAmountBase>18</damageAmountBase>
-            <armorPenetrationBase>0.4</armorPenetrationBase>
-            <speed>80</speed>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.75</armorPenetrationBase>
+            <stoppingPower>0.9</stoppingPower>
+            <speed>120</speed>
+            <extraDamages>
+                <li>
+                    <def>Burn</def>
+                    <amount>7</amount>
+                    <chance>1</chance>
+                </li>
+            </extraDamages>
         </projectile>
     </ThingDef>
 	
 	<ThingDef ParentName="Celes_SpacerGunBase">
         <defName>Celes_Spacer_SMG</defName>
-        <label>Celes_Spacer_SMG</label>
-        <description>description WIP</description>
+        <label>Celestia standard submachine gun</label>
+        <description>A Celestia-standard submachine gun, extremely fast but close-range, often used as a PDW for civilians. uses a standard Celestia energy chamber and fires light polarised particle projectile. \n\n "Even in the event of an emergency, please try not to use it indoors or in a confined area. Have a nice day."</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_ChargeSMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1</drawSize>
+            <drawSize>0.9</drawSize>
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
             <WorkToMake>45000</WorkToMake>
-            <Mass>4.6</Mass>
-            <AccuracyTouch>0.55</AccuracyTouch>
-            <AccuracyShort>0.75</AccuracyShort>
-            <AccuracyMedium>0.65</AccuracyMedium>
-            <AccuracyLong>0.55</AccuracyLong>
-            <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.90</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.30</AccuracyMedium>
+            <AccuracyLong>0.15</AccuracyLong>
+            <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
@@ -142,10 +150,10 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_small_energy</defaultProjectile>
-                <warmupTime>1.0</warmupTime>
-                <range>40.9</range>
-                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <burstShotCount>3</burstShotCount>
+                <warmupTime>0.5</warmupTime>
+                <range>19.9</range>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <burstShotCount>5</burstShotCount>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -174,24 +182,24 @@
 	
 	<ThingDef ParentName="Celes_SpacerGunBase">
         <defName>Celes_Spacer_SniperRifle</defName>
-        <label>Celes_Spacer_SniperRifle</label>
-        <description>description WIP</description>
+        <label>Celestia standard sniper rifle</label>
+        <description>A Celestia standard sniper rifle with long range and accuracy, devastatingly powerful, often disabling enemies with just one shot, but also too bulky itself for field combat in fact. Uses a standard Celestia energy chamber to fire heavy polarised particle projectile. \n\n An artefact of violent aesthetics, its polarised particle is encased in a small amount of positrons, which can additionally cause exaggerated damage to buildings. However, its intent seems to be the complete annihilation of hostile targets so that they never return.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_ChargeSniperRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1</drawSize>
+            <drawSize>1.15</drawSize>
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
             <WorkToMake>45000</WorkToMake>
-            <Mass>4.6</Mass>
-            <AccuracyTouch>0.55</AccuracyTouch>
-            <AccuracyShort>0.75</AccuracyShort>
-            <AccuracyMedium>0.65</AccuracyMedium>
-            <AccuracyLong>0.55</AccuracyLong>
-            <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+            <Mass>10.0</Mass>
+            <AccuracyTouch>0.35</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.87</AccuracyMedium>
+            <AccuracyLong>0.92</AccuracyLong>
+            <RangedWeapon_Cooldown>3.70</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
@@ -206,6 +214,9 @@
             <Plasteel>80</Plasteel>
             <ComponentSpacer>5</ComponentSpacer>
         </costList>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+        </equippedStatOffsets>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
@@ -214,8 +225,8 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_big_energy</defaultProjectile>
-                <warmupTime>1.0</warmupTime>
-                <range>74.9</range>
+                <warmupTime>5.2</warmupTime>
+                <range>47.9</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>Shot_ChargeRifle</soundCast>
@@ -246,8 +257,8 @@
 	
 	<ThingDef ParentName="Celes_SpacerGunBase">
         <defName>Celes_Spacer_HMG</defName>
-        <label>Celes_Spacer_HMG</label>
-        <description>description WIP</description>
+        <label>radioactive high-energy plasma emitter</label>
+        <description>An experimentally modified radioactive high-energy plasma emitter capable of spewing out a rather terrifying radioactive plasma mass that brings severe radiation sickness on top of burning enemies. Uses standard Celestia energy chamber.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_HMG</texPath>
@@ -258,12 +269,12 @@
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
             <WorkToMake>45000</WorkToMake>
-            <Mass>4.6</Mass>
-            <AccuracyTouch>0.55</AccuracyTouch>
-            <AccuracyShort>0.75</AccuracyShort>
-            <AccuracyMedium>0.65</AccuracyMedium>
-            <AccuracyLong>0.55</AccuracyLong>
-            <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+            <Mass>10.0</Mass>
+            <AccuracyTouch>0.20</AccuracyTouch>
+            <AccuracyShort>0.25</AccuracyShort>
+            <AccuracyMedium>0.25</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>5.3</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_IV</researchPrerequisite>
@@ -278,6 +289,9 @@
             <Plasteel>80</Plasteel>
             <ComponentSpacer>5</ComponentSpacer>
         </costList>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.25</MoveSpeed>
+        </equippedStatOffsets>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
@@ -286,10 +300,10 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Celes_HEPT</defaultProjectile>
-                <warmupTime>1.0</warmupTime>
-                <range>40.9</range>
-                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <burstShotCount>3</burstShotCount>
+                <warmupTime>2.5</warmupTime>
+                <range>31.9</range>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <burstShotCount>10</burstShotCount>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -318,8 +332,8 @@
 	
 	<ThingDef ParentName="Celes_SpacerGunBase">
         <defName>Celes_Spacer_Launcher</defName>
-        <label>Celes_Spacer_Launcher</label>
-        <description>description WIP</description>
+        <label>magnetic reconnection accelerator</label>
+        <description>An experimental modified magnetic reconnection accelerator, or "coronal emitter" as it is called, which emits a highly destructive, high-energy plasma jet through the magnetic reconnection effect, with intense heat and explosions that don't even have a chance of producing a flame. Uses standard Celestia energy chamber.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_Launcher</texPath>
@@ -330,12 +344,12 @@
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
             <WorkToMake>45000</WorkToMake>
-            <Mass>4.6</Mass>
+            <Mass>10.0</Mass>
             <AccuracyTouch>0.55</AccuracyTouch>
             <AccuracyShort>0.75</AccuracyShort>
             <AccuracyMedium>0.65</AccuracyMedium>
             <AccuracyLong>0.55</AccuracyLong>
-            <RangedWeapon_Cooldown>12.00</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>7.3</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_IV</researchPrerequisite>
@@ -350,6 +364,9 @@
             <Plasteel>80</Plasteel>
             <ComponentSpacer>5</ComponentSpacer>
         </costList>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.25</MoveSpeed>
+        </equippedStatOffsets>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
@@ -358,17 +375,17 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_Launcher</defaultProjectile>
-                <warmupTime>4.0</warmupTime>
-                <range>40.9</range>
+                <warmupTime>8.5</warmupTime>
+                <range>39.9</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
                 <burstShotCount>2</burstShotCount>
                 <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
                 <ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
                 <ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
                 <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
                 <ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
-                <minRange>2.9</minRange>
+                <minRange>4.9</minRange>
                 <targetParams>
                     <canTargetLocations>true</canTargetLocations>
                     <canTargetPawns>true</canTargetPawns>
@@ -399,19 +416,20 @@
             </li>
         </tools>
     </ThingDef>
+    
     <ThingDef ParentName="BaseBullet">
         <defName>CelesBullet_small_energy</defName>
-        <label>light energy bullet</label>
+        <label>light polarised particle projectile</label>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
             <damageDef>Celes_Particle</damageDef>
-            <damageAmountBase>6</damageAmountBase>
-            <armorPenetrationBase>0.2</armorPenetrationBase>
-            <stoppingPower>0.6</stoppingPower>
-            <speed>70</speed>
+            <damageAmountBase>5</damageAmountBase>
+            <armorPenetrationBase>0.4</armorPenetrationBase>
+            <stoppingPower>0.9</stoppingPower>
+            <speed>90</speed>
             <extraDamages>
                 <li>
                     <def>EMP</def>
@@ -421,19 +439,20 @@
             </extraDamages>
         </projectile>
     </ThingDef>
+    
     <ThingDef ParentName="BaseBullet">
         <defName>CelesBullet_medium_energy</defName>
-        <label>medium energy bullet</label>
+        <label>medium polarised particle projectile</label>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
                 <damageDef>Celes_Particle</damageDef>
-                <damageAmountBase>14</damageAmountBase>
-                <speed>80</speed>
-                <armorPenetrationBase>0.5</armorPenetrationBase>
-                <stoppingPower>1.2</stoppingPower>
+                <damageAmountBase>12</damageAmountBase>
+                <speed>90</speed>
+                <armorPenetrationBase>0.4</armorPenetrationBase>
+                <stoppingPower>0.9</stoppingPower>
             <extraDamages>
                 <li>
                     <def>EMP</def>
@@ -446,17 +465,17 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>CelesBullet_big_energy</defName>
-        <label>massive energy bullet</label>
+        <label>massive polarised particle projectile</label>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>20</damageAmountBase>
-            <speed>90</speed>
-            <armorPenetrationBase>0.6</armorPenetrationBase>
-            <stoppingPower>1.8</stoppingPower>
+            <damageDef>Celes_MassiveParticle</damageDef>
+            <damageAmountBase>42</damageAmountBase>
+            <speed>120</speed>
+            <armorPenetrationBase>0.5</armorPenetrationBase>
+            <stoppingPower>3.0</stoppingPower>
             <extraDamages>
                 <li>
                     <def>EMP</def>
@@ -466,9 +485,10 @@
             </extraDamages>
         </projectile>
     </ThingDef>
+    
     <ThingDef ParentName="BaseBullet">
         <defName>CelesBullet_Launcher</defName>
-        <label>celestia energy launcher bullet</label>
+        <label>magnetic reconnection plasma</label>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/energy_bulletb</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -476,8 +496,8 @@
         </graphicData>
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
-            <damageDef>Bomb</damageDef>
-            <speed>85</speed>
+            <damageDef>Celes_MRPlasma</damageDef>
+            <speed>65</speed>
             <explosionRadius>2.9</explosionRadius>
         </projectile>
     </ThingDef>

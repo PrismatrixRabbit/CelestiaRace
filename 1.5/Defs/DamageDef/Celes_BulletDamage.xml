@@ -3,10 +3,11 @@
     <DamageDef ParentName="Bullet">
         <defName>Celes_BulletRadiation</defName>
         <label>radioactive plasma projectile</label>
+        <deathMessage>{0} was shot by high-energy plasma.</deathMessage>
         <additionalHediffs>
             <li>
                 <hediff>CelesRadiation</hediff>
-                <severityPerDamageDealt>0.003</severityPerDamageDealt>
+                <severityPerDamageDealt>0.005</severityPerDamageDealt>
                 <inverseStatScaling>true</inverseStatScaling>
                 <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
             </li>
@@ -17,6 +18,7 @@
     <DamageDef ParentName="Bullet">
         <defName>Celes_Particle</defName>
         <label>polarised particle projectile</label>
+        <deathMessage>{0} was shot by a polarised particle.</deathMessage>
         <additionalHediffs>
             <li>
                 <hediff>Burn</hediff>
@@ -26,5 +28,42 @@
             </li>
         </additionalHediffs>
         <impactSoundType>Bullet</impactSoundType>
+        <buildingDamageFactorImpassable>3</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>1.5</buildingDamageFactorPassable>
+        <plantDamageFactor>3</plantDamageFactor>
     </DamageDef>
+    
+    <DamageDef ParentName="Bullet">
+        <defName>Celes_MassiveParticle</defName>
+        <label>massive polarised particle projectile</label>
+        <deathMessage>{0} was shot by a polarised particle.</deathMessage>
+        <additionalHediffs>
+            <li>
+                <hediff>Burn</hediff>
+                <severityPerDamageDealt>0.75</severityPerDamageDealt>
+                <inverseStatScaling>true</inverseStatScaling>
+                <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+        <impactSoundType>Bullet</impactSoundType>
+        <buildingDamageFactorImpassable>8</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>4</buildingDamageFactorPassable>
+        <plantDamageFactor>3</plantDamageFactor>
+    </DamageDef>
+    
+    <DamageDef ParentName="Bomb">
+        <defName>Celes_MRPlasma</defName>
+        <label>magnetic reconnection plasma</label>
+        <deathMessage>{0} has died in a high-energy plasma explosion.</deathMessage>
+        <defaultDamage>60</defaultDamage>
+        <defaultStoppingPower>0.5</defaultStoppingPower>
+        <defaultArmorPenetration>0.50</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+        <plantDamageFactor>4</plantDamageFactor>
+        <corpseDamageFactor>0.5</corpseDamageFactor>
+        <explosionColorCenter>(0.25, 0.98, 1)</explosionColorCenter>
+        <explosionColorEdge>(0.8, 1, 1)</explosionColorEdge>
+    </DamageDef>
+    
 </Defs>

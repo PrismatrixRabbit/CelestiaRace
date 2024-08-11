@@ -5,7 +5,7 @@
         <hediffClass>HediffWithComps</hediffClass>
         <label>radioactive plasma exposure</label>
         <labelNoun>radioactive plasma exposure.</labelNoun>
-        <description>The aftermath of exposure to some kind of Celestia's radioactive plasma weapon, with generalised pain with occasional burns that require medication to heal slowly.</description>
+        <description>The aftermath of exposure to some kind of Celestia's radioactive plasma weapon, with generalised pain with occasional burns that require medication to heal slowly. \n\nAnd in the case of mechanical bodies, this internal irradiation amounts to some kind of slow and long-lasting EMP that gradually reduces the enemy's data-processing capabilities.</description>
         <isBad>true</isBad>
         <maxSeverity>1</maxSeverity>
         <tendable>true</tendable>
@@ -44,7 +44,7 @@
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <postFactor>0.5</postFactor>
+                        <postFactor>0.45</postFactor>
                     </li>
                 </capMods>
                 <hediffGivers>
@@ -67,7 +67,7 @@
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <postFactor>0.3</postFactor>
+                        <setMax>0.10</setMax>
                     </li>
                 </capMods>
                 <hediffGivers>
@@ -90,7 +90,7 @@
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <setMax>0.15</setMax>
+                        <setMax>0.10</setMax>
                     </li>
                 </capMods>
                 <hediffGivers>
