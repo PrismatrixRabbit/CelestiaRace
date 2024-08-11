@@ -88,7 +88,6 @@
         <tradeType>Small</tradeType>        <!-- 交易类型 -->
         <requests>            <!-- 需要物资 -->
             <Silver>1</Silver>
-            <CelesKeyCard>5</CelesKeyCard>
         </requests>
         <rewards>            <!-- 交易物资 -->
             <CelesKeyCard>5</CelesKeyCard>

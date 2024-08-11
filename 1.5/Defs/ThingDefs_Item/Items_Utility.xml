@@ -74,7 +74,7 @@
         <possessionCount>2</possessionCount>
         <graphicData>
             <texPath>Celes/Item/CelesKeyCard</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Pickup</soundInteract>
         <soundDrop>Standard_Pickup</soundDrop>
