@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <NamerPerson_Celes.rulePack.rulesStrings.0>r_name->[Celes_Name] [Celes_Surname]</NamerPerson_Celes.rulePack.rulesStrings.0>
-
+  <CelesFaction_Namer.rulePack.rulesStrings.0>r_name->星铃第七舰队拓荒队</CelesFaction_Namer.rulePack.rulesStrings.0>
+  <CelesFaction_Namer.rulePack.rulesStrings.1>r_name->“极光”联合拓荒队</CelesFaction_Namer.rulePack.rulesStrings.1>
 
 </LanguageData>

@@ -40,7 +40,8 @@
 		<defName>CelesFaction_Namer</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->Celestia's 7th Fleet Outposts</li>
+				<li>r_name->Celestia's 7th Fleet Pioneer</li>
+				<li>r_name->"Aurora" United Pioneer</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -65,12 +66,7 @@
 		<defName>CelesInitialSettlement_Namer</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->Riverside Camp</li>
-				<li>r_name->Valley Camp</li>
-				<li>r_name->Riverside Outpost</li>
-				<li>r_name->Valley Outpost</li>
-				<li>r_name->Riverside Node</li>
-				<li>r_name->Valley Node</li>
+				<li>r_name->[Celes_Position][Celes_Site]</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
