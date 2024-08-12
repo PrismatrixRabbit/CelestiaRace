@@ -25,8 +25,8 @@
         <!-- Config pages -->
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
           <def>ConfigPage_ConfigureStartingPawns</def>
-          <pawnCount>3</pawnCount>
-          <pawnChoiceCount>8</pawnChoiceCount>
+          <pawnCount>2</pawnCount>
+          <pawnChoiceCount>6</pawnChoiceCount>
         </li>
 
         <!-- Player starting stuff spawn method-->
@@ -56,13 +56,13 @@
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>MealSurvivalPack</thingDef><!-- 这个肯定要换星铃军粮的 -->
-          <count>50</count>
+          <thingDef>CelesMRE</thingDef><!-- 这个肯定要换星铃军粮的 -->
+          <count>40</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>MedicineIndustrial</thingDef><!-- 这个也肯定要换星铃药物的 -->
-          <count>30</count>
+          <thingDef>MedicineCeles</thingDef><!-- 这个也肯定要换星铃药物的 -->
+          <count>15</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -72,36 +72,31 @@
 		<!-- 这下面也肯定要换星铃武器和防具的 -->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Gun_BoltActionRifle</thingDef>
+          <thingDef>Celes_Mid_SAssault</thingDef>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Gun_Revolver</thingDef>
+          <thingDef>CelesDagger</thingDef>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>MeleeWeapon_Knife</thingDef>
-          <stuff>Plasteel</stuff>
+          <thingDef>Celes_TacticalVest</thingDef>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Apparel_FlakPants</thingDef>
+          <thingDef>Celes_LightLegArmour</thingDef>
         </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>Apparel_FlakVest</thingDef>
-        </li>
-        <li Class="ScenPart_StartingThing_Defined">
+        <!-- <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Apparel_AdvancedHelmet</thingDef>
           <stuff>Plasteel</stuff>
-        </li>
+        </li> -->
 
         <!-- Scatter some things near player start -->
         <li Class="ScenPart_ScatterThingsNearPlayerStart">
           <def>ScatterThingsNearPlayerStart</def>
           <thingDef>Steel</thingDef>
-          <count>500</count>
+          <count>400</count>
         </li>
 
         <!-- Scatter some things anywhere -->

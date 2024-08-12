@@ -167,7 +167,7 @@
                         <li>CelesNanoMachine</li>
                     </thingDefs>
                 </filter>
-                <count>2</count>
+                <count>1</count>
             </li>
             <li>
                 <filter>
@@ -175,11 +175,11 @@
                         <li>Steel</li>
                     </thingDefs>
                 </filter>
-                <count>50</count>
+                <count>60</count>
             </li>
         </ingredients>
         <products>
-            <CelesAlloy>50</CelesAlloy>
+            <CelesAlloy>40</CelesAlloy>
         </products>
     </RecipeDef>
 </Defs>

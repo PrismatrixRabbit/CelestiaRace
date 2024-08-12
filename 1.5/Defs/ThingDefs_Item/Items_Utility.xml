@@ -9,19 +9,19 @@
         <graphicData>
             <texPath>Celes/Item/MedicineCeles</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.85</drawSize>
+            <drawSize>0.95</drawSize>
         </graphicData>
         <techLevel>Industrial</techLevel>
         <statBases>
-            <MarketValue>24</MarketValue>
-            <Mass>0.25</Mass>
-            <Flammability>0.5</Flammability>
-            <MedicalPotency>1.2</MedicalPotency>
+            <MarketValue>35</MarketValue>
+            <Mass>0.5</Mass>
+            <Flammability>0.7</Flammability>
+            <MedicalPotency>1.5</MedicalPotency>
             <MedicalQualityMax>1.10</MedicalQualityMax>
-            <DeteriorationRate>1</DeteriorationRate>
-            <WorkToMake>900</WorkToMake>
+            <DeteriorationRate>2.0</DeteriorationRate>
+            <!-- <WorkToMake>900</WorkToMake> -->
         </statBases>
-        <costList>
+        <!-- <costList>
             <MedicineHerbal>1</MedicineHerbal>
             <Neutroamine>1</Neutroamine>
             <CelesBioGel>2</CelesBioGel>
@@ -38,7 +38,7 @@
                 <Intellectual>5</Intellectual>
             </skillRequirements>
             <bulkRecipeCount>5</bulkRecipeCount>
-        </recipeMaker>
+        </recipeMaker> -->
         <allowedArchonexusCount>10</allowedArchonexusCount>
     </ThingDef>
 

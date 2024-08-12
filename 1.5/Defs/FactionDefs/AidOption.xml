@@ -37,7 +37,7 @@
                 <aidParameter>                    <!-- 来的人的参数 -->
                     <favorCost>4</favorCost>
                     <pawnKindDef>Celes_Outlander</pawnKindDef>
-                    <pawnCount>4</pawnCount>
+                    <pawnCount>3</pawnCount>
                     <aidDurationDays>2</aidDurationDays>
                     <targetingRange>44.9</targetingRange>
                     <targetingRequireLOS>false</targetingRequireLOS>
@@ -51,7 +51,7 @@
         <label>request celestia vanguard squad</label>
         <cooldown>300000</cooldown>        <!-- 冷却 -->
         <requests>            <!-- 需要物资 -->
-            <Silver>50</Silver>
+            <CelesKeyCard>3</CelesKeyCard>
         </requests>
         <isDrop>false</isDrop>
         <effects>            <!-- 效果 -->
@@ -61,7 +61,7 @@
                 <aidParameter>                    <!-- 来的人的参数 -->
                     <favorCost>4</favorCost>
                     <pawnKindDef>Celes_Scout</pawnKindDef>
-                    <pawnCount>4</pawnCount>
+                    <pawnCount>3</pawnCount>
                     <aidDurationDays>1</aidDurationDays>
                     <targetingRange>44.9</targetingRange>
                     <targetingRequireLOS>false</targetingRequireLOS>
@@ -87,7 +87,7 @@
         <label>TradeOption</label>
         <tradeType>Small</tradeType>        <!-- 交易类型 -->
         <requests>            <!-- 需要物资 -->
-            <Silver>1</Silver>
+            <Silver>1000</Silver>
         </requests>
         <rewards>            <!-- 交易物资 -->
             <CelesKeyCard>5</CelesKeyCard>
@@ -101,10 +101,10 @@
         <label>TradeOption</label>
         <tradeType>Big</tradeType>        <!-- 交易类型 -->
         <requests>            <!-- 需要物资 -->
-            <Silver>100</Silver>
+            <Celes_IndustrialChips>10</Celes_IndustrialChips>
         </requests>
         <rewards>            <!-- 交易物资 -->
-            <CelesKeyCard>500</CelesKeyCard>
+            <CelesKeyCard>5</CelesKeyCard>
         </rewards>
         <dropPod>ActiveDropPodMechanoid</dropPod>        <!-- 填空投仓的def -->
         <faller>DropPodIncomingMechanoid</faller>        <!-- 填skyfaller -->
@@ -115,10 +115,10 @@
         <label>TradeOption</label>
         <tradeType>Back</tradeType>        <!-- 交易类型 -->
         <requests>            <!-- 需要物资 -->
-            <CelesKeyCard>100</CelesKeyCard>
+            <CelesKeyCard>5</CelesKeyCard>
         </requests>
         <rewards>            <!-- 交易物资 -->
-            <Silver>500</Silver>
+            <Celes_STC_MainTech_II>1</Celes_STC_MainTech_II>
         </rewards>
         <dropPod>ActiveDropPodMechanoid</dropPod>        <!-- 填空投仓的def -->
         <faller>DropPodIncomingMechanoid</faller>        <!-- 填skyfaller -->
