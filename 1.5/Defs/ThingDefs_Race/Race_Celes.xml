@@ -229,7 +229,7 @@
 						<li>              <!--左边耳朵-->
 							<name>celes earL</name>
 							<userCustomizable>false</userCustomizable>
-							<path>Celes/Addon/Ear/CelesEarL</path>
+							<path>Celes/Addon/Ear/EarL/CelesEarL</path>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
 							<colorChannel>hair</colorChannel>
@@ -295,7 +295,7 @@
 						<li>              <!--右边耳朵-->
 							<name>celes earR</name>
 							<userCustomizable>false</userCustomizable>
-							<path>Celes/Addon/Ear/CelesEarR</path>
+							<path>Celes/Addon/Ear/EarR/CelesEarR</path>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
 							<colorChannel>hair</colorChannel>
@@ -303,6 +303,7 @@
 							<drawSize>1</drawSize>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<alignWithHead>true</alignWithHead>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<conditions>
 							<BodyPart>
 								<bodyPartLabel>right ear</bodyPartLabel>

@@ -4,8 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="修文案汉化，剩余背景故事及随机名．材料平衡性等待调整．&#10;修了bug">
+    <list default="true" id="14840d86-8798-4af5-ad9e-ba6fefe8486d" name="更改" comment="瞎填了几个随机名，剩余背景故事．材料平衡性等待调整">
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_south.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_south.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CelestiaRace.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Race/Race_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Race/Race_Celes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarL_east.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_east.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarL_eastm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_eastm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarL_north.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_north.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarL_northm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_northm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarL_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarL_southm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_southm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarL_west.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_west.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarL_westm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_westm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarR_east.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_east.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarR_eastm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_eastm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarR_north.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_north.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarR_northm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_northm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarR_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarR_southm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_southm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarR_west.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_west.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/CelesEarR_westm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_westm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_east.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_east.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_eastm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_eastm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_south.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_south.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_southm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_southm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/MilitaryCoat/MilitaryCoat_Female_south.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +119,8 @@
       <workItem from="1723354314690" duration="1917000" />
       <workItem from="1723366219187" duration="29663000" />
       <workItem from="1723400177186" duration="222000" />
+      <workItem from="1723477546876" duration="2374000" />
+      <workItem from="1723554527227" duration="3056000" />
     </task>
     <task id="LOCAL-00001" summary="修改背景">
       <option name="closed" value="true" />
@@ -327,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723400386542</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="瞎填了几个随机名，剩余背景故事．材料平衡性等待调整">
+      <option name="closed" value="true" />
+      <created>1723480257276</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1723480257276</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +400,8 @@
     <MESSAGE value="修文案汉化，武器平衡性及文案．贴图等待更新．" />
     <MESSAGE value="修文案汉化，剩余背景故事及随机名．材料平衡性等待调整．" />
     <MESSAGE value="修文案汉化，剩余背景故事及随机名．材料平衡性等待调整．&#10;修了bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修文案汉化，剩余背景故事及随机名．材料平衡性等待调整．&#10;修了bug" />
+    <MESSAGE value="瞎填了几个随机名，剩余背景故事．材料平衡性等待调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="瞎填了几个随机名，剩余背景故事．材料平衡性等待调整" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
