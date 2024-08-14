@@ -14,9 +14,6 @@
 				<li>Celes_Shell</li>
 			</tags>
 		</apparel>
-		<thingCategories>
-			<li>Celes_Apparel_Shell</li>
-		</thingCategories>
 	</ThingDef>
 	
 	<!-- ========== 技术标准 ========= -->
@@ -69,6 +66,9 @@
 			</recipeUsers>
 			<displayPriority>300</displayPriority>
 		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
 	</ThingDef>
 
 	<!-- ========== 制衣标准 ========= -->
@@ -119,6 +119,9 @@
 			</recipeUsers>
 			<displayPriority>301</displayPriority>
 		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
 	</ThingDef>
 
 	<!-- ========== 日常服装 ========= -->
@@ -171,6 +174,9 @@
 			</recipeUsers>
 			<displayPriority>316</displayPriority>
 		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Military</li>
+		</thingCategories>
 	</ThingDef>
 	
 </Defs>

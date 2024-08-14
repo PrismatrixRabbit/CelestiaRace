@@ -21,7 +21,7 @@
             <Flammability>0.2</Flammability>
         </statBases>
         <thingCategories>
-            <li>ItemsMisc</li>
+            <li>CorpsesHumanlike</li>
         </thingCategories>
         <tradeability>None</tradeability>
     </ThingDef>

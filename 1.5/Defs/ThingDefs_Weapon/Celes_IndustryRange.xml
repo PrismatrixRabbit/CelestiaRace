@@ -10,6 +10,9 @@
         <weaponTags>
             <li>Celes_EarlyWeapon</li>
         </weaponTags>
+        <thingCategories Inherit="false">
+            <li>Celes_WeaponsRanged</li>
+        </thingCategories>
     </ThingDef>
     
     <ThingDef Name="Celes_MidGunBase" ParentName="BaseGunWithQuality" Abstract="True">
@@ -25,10 +28,11 @@
             <displayPriority>210</displayPriority>
         </recipeMaker>
         <weaponTags>
-            <li>
-                Celes_MidWeapon
-            </li>
+            <li>Celes_MidWeapon</li>
         </weaponTags>
+        <thingCategories Inherit="false">
+            <li>Celes_WeaponsRanged</li>
+        </thingCategories>
     </ThingDef>
     
     <ThingDef ParentName="Celes_EarlyGunBase">

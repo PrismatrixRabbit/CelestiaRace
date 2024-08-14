@@ -14,9 +14,6 @@
 				<li>Celes_OnSkin</li>
 			</tags>
 		</apparel>
-		<thingCategories>
-			<li>Celes_Apparel_OnSkin</li>
-		</thingCategories>
 	</ThingDef>
 
 	<!-- ========== 日常服装 ========= -->
@@ -69,6 +66,9 @@
         <compClass>CompColorable</compClass>
       </li>
     </comps>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
 	</ThingDef>
 
 	<!-- ========== 军事服装 ========= -->
@@ -96,9 +96,6 @@
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<developmentalStageFilter>Adult</developmentalStageFilter>
-			<layers>
-				<li>Celes_Legwear</li>
-			</layers>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
@@ -118,6 +115,9 @@
 			</recipeUsers>
 			<displayPriority>315</displayPriority>
 		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Military</li>
+		</thingCategories>
 	</ThingDef>
 
 	<!-- ========== 专业服装 ========= -->
@@ -150,7 +150,6 @@
 		  <li>Neck</li>
           <li>Shoulders</li>
 		  <li>Arms</li>
-		  <li>Legs</li>
         </bodyPartGroups>
 		<wornGraphicPath>Celes/Apparel/OnSkin/ExploreVest/ExploreVest</wornGraphicPath>
 		<tags>
@@ -164,6 +163,9 @@
 			</recipeUsers>
 			<displayPriority>320</displayPriority>
 		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
 	</ThingDef>
 
 	<!-- ========== 动力装甲 ========= -->
@@ -190,7 +192,6 @@
 			<layers>
 				<li>OnSkin</li>
 				<li>Middle</li>
-				<li>Celes_Legwear</li>
 			</layers>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -209,7 +210,7 @@
 			<displayPriority>307</displayPriority>
 		</recipeMaker>
 		<thingCategories>
-			<li>Celes_Apparel_OnSkin</li>
+			<li>Celes_Apparel_Military</li>
 		</thingCategories>
 	</ThingDef>
 

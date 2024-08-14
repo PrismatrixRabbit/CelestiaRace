@@ -8,16 +8,13 @@
 		</statBases>
 		<apparel>	
 			<layers>
-				<li>Celes_Legwear</li>
+				<li>OnSkin</li>
 			</layers>
 			<tags>
 				<li>Celes_Legwear</li>
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
-		<thingCategories>
-			<li>Celes_Apparel_Legwear</li>
-		</thingCategories>
 	</ThingDef>
 
 	<!-- ========== 日常服装 ========= -->
@@ -61,6 +58,9 @@
 			</recipeUsers>
 			<displayPriority>306</displayPriority>
 		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="Celes_LegwearBase"><!--长筒袜黑-->
@@ -101,6 +101,9 @@
 			</recipeUsers>
 			<displayPriority>306</displayPriority>
 		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="Celes_LegwearBase"><!--连裤袜黑-->
@@ -141,6 +144,9 @@
 			</recipeUsers>
 			<displayPriority>307</displayPriority>
 		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="Celes_ArmorMachineableBase"><!--轻型腿甲-->
@@ -163,7 +169,7 @@
 		</statBases>
 		<apparel>
 			<layers>
-				<li>Celes_Legwear</li>
+				<li>OnSkin</li>
 			</layers>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -190,7 +196,7 @@
 			<displayPriority>307</displayPriority>
 		</recipeMaker>
 		<thingCategories>
-			<li>Celes_Apparel_Legwear</li>
+			<li>Celes_Apparel_Military</li>
 		</thingCategories>
 	</ThingDef>
 

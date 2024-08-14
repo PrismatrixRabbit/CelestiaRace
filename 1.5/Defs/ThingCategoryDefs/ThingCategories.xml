@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ========== 星铃武器 ========== -->
+
+    <ThingCategoryDef>
+        <defName>Celes_Weapons</defName>
+        <label>celestia weapons</label>
+        <parent>Weapons</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>Celes_WeaponsMelee</defName>
+        <label>celestia melee weapons</label>
+        <parent>Celes_Weapons</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>Celes_WeaponsRanged</defName>
+        <label>celestia ranged weapons</label>
+        <parent>Celes_Weapons</parent>
+    </ThingCategoryDef>
+
+    <!-- ========== 星铃衣物 ========== -->
+    
+    <ThingCategoryDef>
+        <defName>Celes_Apparel</defName>
+        <label>celestia apparel</label>
+        <parent>Apparel</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>Celes_Apparel_Daily</defName>
+        <label>celestia daily apparel</label>
+        <parent>Celes_Apparel</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>Celes_Apparel_Military</defName>
+        <label>celestia military apparel</label>
+        <parent>Celes_Apparel</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>Celes_Apparel_Hat</defName>
+        <label>celestia hat</label>
+        <parent>Celes_Apparel</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>Celes_Apparel_Misc</defName>
+        <label>celestia apparel misc</label>
+        <parent>Celes_Apparel</parent>
+    </ThingCategoryDef>
+
+</Defs>

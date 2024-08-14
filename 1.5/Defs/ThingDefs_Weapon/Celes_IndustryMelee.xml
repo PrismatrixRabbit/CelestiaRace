@@ -11,6 +11,9 @@
         <weaponTags>
             <li>Celes_EarlyMelee</li>
         </weaponTags>
+        <thingCategories Inherit="false">
+            <li>Celes_WeaponsMelee</li>
+        </thingCategories>
     </ThingDef>
 
     <ThingDef Name="Celes_MidMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
@@ -23,6 +26,9 @@
         <weaponTags>
             <li>Celes_MidMelee</li>
         </weaponTags>
+        <thingCategories Inherit="false">
+            <li>Celes_WeaponsMelee</li>
+        </thingCategories>
     </ThingDef>
     
     <ThingDef ParentName="Celes_EarlyMeleeBase">

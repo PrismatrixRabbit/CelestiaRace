@@ -11,6 +11,9 @@
         <weaponTags>
             <li>Celes_SpacerMelee</li>
         </weaponTags>
+        <thingCategories Inherit="false">
+            <li>Celes_WeaponsMelee</li>
+        </thingCategories>
     </ThingDef>
 
     <ThingDef ParentName="Celes_SpacerMeleeBase">
