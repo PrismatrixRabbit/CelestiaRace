@@ -43,7 +43,8 @@
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<developmentalStageFilter>Adult</developmentalStageFilter>
 		<bodyPartGroups>
-          <li>Legs</li>
+			<li>Legs</li>
+			<li>Feet</li>
         </bodyPartGroups>
 		<wornGraphicPath>Celes/Apparel/Legwear/KneeHighBlack/KneeHighBlack</wornGraphicPath>
 		<tags>
@@ -88,6 +89,7 @@
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>Legs</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Celes/Apparel/Legwear/KneeHighBlack/KneeHighBlack</wornGraphicPath>
 			<tags>
@@ -131,6 +133,7 @@
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>Legs</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Celes/Apparel/Legwear/TightBlack/TightBlack</wornGraphicPath>
 			<tags>
@@ -176,6 +179,7 @@
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>Legs</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Celes/Apparel/Legwear/LightLegArmour/LightLegArmour</wornGraphicPath>
 			<tags>

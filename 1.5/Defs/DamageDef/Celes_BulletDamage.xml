@@ -46,8 +46,8 @@
             </li>
         </additionalHediffs>
         <impactSoundType>Bullet</impactSoundType>
-        <buildingDamageFactorImpassable>8</buildingDamageFactorImpassable>
-        <buildingDamageFactorPassable>4</buildingDamageFactorPassable>
+        <buildingDamageFactorImpassable>6</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>3</buildingDamageFactorPassable>
         <plantDamageFactor>3</plantDamageFactor>
     </DamageDef>
     

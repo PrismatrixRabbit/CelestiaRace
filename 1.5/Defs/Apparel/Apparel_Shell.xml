@@ -18,60 +18,109 @@
 	
 	<!-- ========== 技术标准 ========= -->
 	
-	<ThingDef ParentName="Celes_ShellBase"><!--拓荒大衣-->
-	<defName>Celes_ExploreCoat</defName>
-	<label>celestia explore coat</label>
-	<description>An easy-to-fabricate loose-fitting coat that comes with plenty of hanging straps and elasticated bands to suit a variety of conditions, a design that even rock-knocking natives could barely emulate. \n\nThis coat was designed to provide the most basic clothing protection in situations where there was a high lack of tools around. But so little attention has been devoted to this situation as an alternate alternative that the coat seems to have so much extra and unnecessary structure - so much that it could be passed off as popular fashion by the Celestia.</description>
-	<costStuffCount>60</costStuffCount>
-	<stuffCategories>
-	    <li>Fabric</li>
-		<li>Leathery</li>
-	</stuffCategories>
-	<graphicData>
-		<texPath>Celes/Apparel/Shell/ExploreCoat/ExploreCoat</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<statBases>
-		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToMake>5400</WorkToMake>
-		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
-	</statBases>
-	<apparel>
-		<useWornGraphicMask>true</useWornGraphicMask>
-		<developmentalStageFilter>Adult</developmentalStageFilter>
-		<bodyPartGroups>
-          <li>Torso</li>
-		  <li>Neck</li>
-          <li>Shoulders</li>
-		  <li>Arms</li>
-		  <li>Legs</li>
-        </bodyPartGroups>
-		<wornGraphicPath>Celes/Apparel/Shell/ExploreCoat/ExploreCoat</wornGraphicPath>
-		<tags>
-			<li>Celes_Explore</li>
-		</tags>
-		<drawData>
-			<dataNorth><layer>40</layer></dataNorth>
-		</drawData>
-	</apparel>
+	<!-- ========== 制衣标准 ========= -->
+
+	<ThingDef ParentName="Celes_ShellBase"><!--防尘大衣-->
+		<defName>Celes_SummerCoat</defName>
+		<label>Celes_SummerCoat</label>
+		<description>.</description>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Celes/Apparel/Shell/SummerCoat/SummerCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>5400</WorkToMake>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/Shell/SummerCoat/SummerCoat</wornGraphicPath>
+			<tags>
+				<li>Celes_Daily</li>
+			</tags>
+			<drawData>
+				<dataNorth><layer>40</layer></dataNorth>
+			</drawData>
+		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>Celes_MainTech_I</researchPrerequisite>
+			<researchPrerequisite>Celes_Apparel_I</researchPrerequisite>
 			<recipeUsers>
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
-				<li>CraftingSpot</li>
 				<li>Celes_TailoringTab</li>
 			</recipeUsers>
-			<displayPriority>300</displayPriority>
+			<displayPriority>301</displayPriority>
 		</recipeMaker>
 		<thingCategories>
 			<li>Celes_Apparel_Daily</li>
 		</thingCategories>
 	</ThingDef>
-
-	<!-- ========== 制衣标准 ========= -->
+	
+	<ThingDef ParentName="Celes_ShellBase"><!--风雪大衣-->
+		<defName>Celes_WinterCoat</defName>
+		<label>Celes_WinterCoat</label>
+		<description>.</description>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Celes/Apparel/Shell/WinterCoat/WinterCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>5400</WorkToMake>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/Shell/WinterCoat/WinterCoat</wornGraphicPath>
+			<tags>
+				<li>Celes_Daily</li>
+			</tags>
+			<drawData>
+				<dataNorth><layer>40</layer></dataNorth>
+			</drawData>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_I</researchPrerequisite>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>301</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<!-- ========== 日常服装 ========= -->
 
 	<ThingDef ParentName="Celes_ShellBase"><!--防风大衣-->
 		<defName>Celes_TrenchCoat</defName>
@@ -111,10 +160,8 @@
 			</drawData>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>Celes_Apparel_I</researchPrerequisite>
+			<researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
 			<recipeUsers>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
 				<li>Celes_TailoringTab</li>
 			</recipeUsers>
 			<displayPriority>301</displayPriority>
@@ -124,7 +171,108 @@
 		</thingCategories>
 	</ThingDef>
 
-	<!-- ========== 日常服装 ========= -->
+	<!-- ========== 专业服装 ========= -->
+
+	<ThingDef ParentName="Celes_ShellBase"><!--拓荒大衣-->
+	<defName>Celes_ExploreCoat</defName>
+	<label>celestia explore coat</label>
+	<description>An easy-to-fabricate loose-fitting coat that comes with plenty of hanging straps and elasticated bands to suit a variety of conditions, a design that even rock-knocking natives could barely emulate. \n\nThis coat was designed to provide the most basic clothing protection in situations where there was a high lack of tools around. But so little attention has been devoted to this situation as an alternate alternative that the coat seems to have so much extra and unnecessary structure - so much that it could be passed off as popular fashion by the Celestia.</description>
+	<costStuffCount>60</costStuffCount>
+	<stuffCategories>
+	    <li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<graphicData>
+		<texPath>Celes/Apparel/Shell/ExploreCoat/ExploreCoat</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>5400</WorkToMake>
+		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<bodyPartGroups>
+          <li>Torso</li>
+		  <li>Neck</li>
+          <li>Shoulders</li>
+		  <li>Arms</li>
+		  <li>Legs</li>
+        </bodyPartGroups>
+		<wornGraphicPath>Celes/Apparel/Shell/ExploreCoat/ExploreCoat</wornGraphicPath>
+		<tags>
+			<li>Celes_Explore</li>
+		</tags>
+		<drawData>
+			<dataNorth><layer>40</layer></dataNorth>
+		</drawData>
+	</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_III_a</researchPrerequisite>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>CraftingSpot</li>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>300</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="Celes_ShellBase"><!--实验大衣-->
+		<defName>Celes_LabCoat</defName>
+		<label>Celes_LabCoat</label>
+		<description>.</description>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Celes/Apparel/Shell/LabCoat/LabCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>5400</WorkToMake>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/Shell/LabCoat/LabCoat</wornGraphicPath>
+			<tags>
+				<li>Celes_Daily</li>
+			</tags>
+			<drawData>
+				<dataNorth><layer>40</layer></dataNorth>
+			</drawData>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_III_a</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>301</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
+	</ThingDef>
 
 	<!-- ========== 军事服装 ========= -->
 

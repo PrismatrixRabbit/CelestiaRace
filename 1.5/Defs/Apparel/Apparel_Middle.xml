@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!-- ========== 专业服装 ========= -->
+
+    <ThingDef ParentName="Celes_ArmorMachineableBase"><!--厨房围裙-->
+        <defName>Celes_KitchenApron</defName>
+        <label>Celes_KitchenApron</label>
+        <description>.</description>
+        <graphicData>
+            <texPath>Celes/Apparel/Middle/KitchenApron/KitchenApron</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+        <statBases>
+            <Mass>0.8</Mass>
+            <EquipDelay>1.8</EquipDelay>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>5400</WorkToMake>
+            <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Celes/Apparel/Middle/KitchenApron/KitchenApron</wornGraphicPath>
+            <tags>
+                <li>Celes_Middle</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Apparel_III_a</researchPrerequisite>
+            <recipeUsers>
+                <li>Celes_TailoringTab</li>
+            </recipeUsers>
+            <displayPriority>307</displayPriority>
+        </recipeMaker>
+        <thingCategories>
+            <li>Celes_Apparel_Daily</li>
+        </thingCategories>
+    </ThingDef>
+
+	<!-- ========== 军事服装 ========= -->
+
     <ThingDef ParentName="Celes_ArmorMachineableBase"><!--战术背心-->
         <defName>Celes_TacticalVest</defName>
         <label>Celes_TacticalVest</label>
@@ -51,5 +104,51 @@
             <li>Celes_Apparel_Military</li>
         </thingCategories>
     </ThingDef>
+
+	<!-- ========== 动力装甲 ========= -->
+	
+	<ThingDef ParentName="Celes_ApparelArmorPowerBase"><!--轻型动力甲-->
+		<defName>Celes_LightPowerArmour</defName>
+		<label>Celes_LightPowerArmour</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Celes/Apparel/Middle/LightPowerArmour/LightPowerArmour</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>0.8</Mass>
+			<EquipDelay>1.8</EquipDelay>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>5400</WorkToMake>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+			</layers>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<wornGraphicPath>Celes/Apparel/Middle/LightPowerArmour/LightPowerArmour</wornGraphicPath>
+			<tags>
+				<li>Celes_OnSkin</li>
+				<li>Celes_Military</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_IV</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_MultifunctionalTab</li>
+			</recipeUsers>
+			<displayPriority>307</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Military</li>
+		</thingCategories>
+	</ThingDef>
 
 </Defs>

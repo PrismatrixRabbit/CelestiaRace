@@ -109,7 +109,9 @@
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
+		<li>Hands</li>
         <li>Legs</li>
+		<li>Feet</li>
       </bodyPartGroups>
       <!--<defaultOutfitTags>
         <li>Soldier</li>
