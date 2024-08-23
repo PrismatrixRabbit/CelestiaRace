@@ -114,10 +114,73 @@
         <isTechHediff>true</isTechHediff>
     </ThingDef>
 
-    <ThingDef ParentName="Celes_STCResourceBase">
+	<ThingDef ParentName="Celes_STCResourceBase">
+		<defName>Celes_STCLock</defName>
+		<label>Unresolved Self-explanatory Technology Core</label>
+		<description>This is a Self-explanatory Technology Core from Celestia's research project "Dust-Mech technical interpretation". \n\nAn extremely advanced technological teaching device from Celestia's "The Navigator Programme" known as the "Self-explanatory Technology Core", with a variety of different forms, but most of them have a variety of obvious interfaces. Extremely rare in the Rimworld, most of them seem to be strictly guarded by Celestia's pioneering team. \n\nFrom brain links to holographic projections, the device is designed to explain Celestia's technology to any intelligent biological individual and guide him in putting it into practice. And strangely, some of the swarm-thinking creatures are unable to use and understand the knowledge taught by this device. It is unclear for what reason Celestia created this device, but it does help the user unlock further Celestia technology. </description>
+		<descriptionHyperlinks>
+			<ThingDef>Celes_STC_MainTech_II</ThingDef>
+			<RecipeDef>Parse_CelesSTC_MainTech_II</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Celes/Item/Celes_STCLock/Celes_STCLock</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>Parse_CelesSTC_MainTech_II</defName>
+		<label>Dust-Mech technical interpretation</label>
+		<description>Dust-Mech technical interpretation</description>
+		<jobString>Dust-Mech technical interpretation</jobString>
+		<uiIconThing>Celes_STC_MainTech_II</uiIconThing>
+		<workAmount>10000</workAmount>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>Celes_MultifunctionalTab</li>
+		</recipeUsers>
+		<researchPrerequisite>Celes_MainTech_I</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Celes_STCLock</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Celes_IndustrialChips</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Celes_STC_MainTech_II>1</Celes_STC_MainTech_II>
+		</products>
+	</RecipeDef>
+
+	<ThingDef ParentName="Celes_STCResourceBase">
         <defName>Celes_STC_MainTech_II</defName>
         <label>Self-explanatory Technology Core(Dust-Mech technical interpretation)</label>
         <description>This is a Self-explanatory Technology Core from Celestia's research project "Dust-Mech technical interpretation". \n\nAn extremely advanced technological teaching device from Celestia's "The Navigator Programme" known as the "Self-explanatory Technology Core", with a variety of different forms, but most of them have a variety of obvious interfaces. Extremely rare in the Rimworld, most of them seem to be strictly guarded by Celestia's pioneering team. \n\nFrom brain links to holographic projections, the device is designed to explain Celestia's technology to any intelligent biological individual and guide him in putting it into practice. And strangely, some of the swarm-thinking creatures are unable to use and understand the knowledge taught by this device. It is unclear for what reason Celestia created this device, but it does help the user unlock further Celestia technology. \n\nDust-Mech technical interpretation\n\nDecipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Celes_STCLock</ThingDef>
+			<RecipeDef>Parse_CelesSTC_MainTech_II</RecipeDef>
+		</descriptionHyperlinks>
         <graphicData>
             <texPath>Celes/Item/Celes_STC/Celes_STC</texPath>
             <graphicClass>Graphic_Single</graphicClass>

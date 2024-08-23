@@ -3,8 +3,8 @@
 
 	<ThingDef Name="Celes_OnSkinBase" ParentName="Celes_ApparelBase" Abstract="True">
 		<statBases>
-			<Mass>0.8</Mass>
-			<EquipDelay>1.8</EquipDelay>
+			<Mass>0.3</Mass>
+			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<apparel>	
 			<layers>
@@ -16,40 +16,13 @@
 		</apparel>
 	</ThingDef>
 
-	<!-- ========== 制衣标准 ========= -->
-
-	<ThingDef ParentName="Celes_OnSkinBase"><!--夏装背心-->
-	<defName>Celes_SummerVest</defName>
-	<label>Celes_SummerVest</label>
-	<description>.</description>
-	<costStuffCount>60</costStuffCount>
-	<stuffCategories>
-	    <li>Fabric</li>
-	</stuffCategories>
-	<graphicData>
-		<texPath>Celes/Apparel/OnSkin/SummerVest/SummerVest</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<statBases>
-		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToMake>5400</WorkToMake>
-		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
-	</statBases>
-	<apparel>
-		<useWornGraphicMask>true</useWornGraphicMask>
-		<developmentalStageFilter>Adult</developmentalStageFilter>
-		<bodyPartGroups>
-          <li>Torso</li>
-          <li>Shoulders</li>
-		  <li>Arms</li>
-        </bodyPartGroups>
-		<wornGraphicPath>Celes/Apparel/OnSkin/SummerVest/SummerVest</wornGraphicPath>
-		<tags>
-			<li>Celes_Daily</li>
-		</tags>
-	</apparel>
+	<ThingDef Name="Celes_OnSkin_I" ParentName="Celes_OnSkinBase" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<apparel>
+			<tags>
+				<li>Celes_Daily</li>
+			</tags>
+		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>Celes_Apparel_I</researchPrerequisite>
 			<recipeUsers>
@@ -59,23 +32,166 @@
 			</recipeUsers>
 			<displayPriority>305</displayPriority>
 		</recipeMaker>
-	<comps>
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
-    </comps>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
 		<thingCategories>
 			<li>Celes_Apparel_Daily</li>
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="Celes_OnSkinBase"><!--冬装毛衣-->
+	<ThingDef Name="Celes_OnSkin_II" ParentName="Celes_OnSkinBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<apparel>
+			<tags>
+				<li>Celes_Daily</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>307</displayPriority>
+		</recipeMaker>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="Celes_OnSkin_III_a" ParentName="Celes_OnSkinBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_III_a</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>309</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="Celes_OnSkin_III" ParentName="Celes_OnSkinBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>311</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ========== 技术标准 ========= -->
+
+	<ThingDef ParentName="Celes_OnSkinBase">
+		<!--蔽身短袍-->
+		<defName>Celes_Tribal</defName>
+		<label>celestia primordial robe</label>
+		<description>A primitive set of clothing that looks very outdated, but at least provides basic insulation. \n\n.</description>
+		<graphicData>
+			<texPath>Celes/Apparel/OnSkin/Tribal/Tribal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1500</WorkToMake>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/OnSkin/Tribal/Tribal</wornGraphicPath>
+			<tags>
+				<li>Celes_Tribal</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_MainTech_I</researchPrerequisite>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>307</displayPriority>
+		</recipeMaker>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>Celes_Apparel_Daily</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- ========== 制衣标准 ========= -->
+
+	<ThingDef ParentName="Celes_OnSkin_I">
+		<!--夏装背心-->
+		<defName>Celes_SummerVest</defName>
+		<label>celestia singlet</label>
+		<description>A cool and sheltered set of short tank top hotpants for hot weather, but don't expect it to offer much protection. \n\n.</description>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Celes/Apparel/OnSkin/SummerVest/SummerVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.2</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1500</WorkToMake>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.08</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/OnSkin/SummerVest/SummerVest</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="Celes_OnSkin_I"><!--冬装毛衣-->
 	<defName>Celes_WinterSweater</defName>
-	<label>Celes_WinterSweater</label>
-	<description>.</description>
-	<costStuffCount>60</costStuffCount>
+	<label>celestia turtleneck sweater</label>
+	<description>A warm, padded turtleneck sweater for warding off cold weather, with cut-out shoulders that actually have a piece of fabric ripped out to cover them on the inside. \n\n.</description>
+	<costStuffCount>45</costStuffCount>
 	<stuffCategories>
 	    <li>Fabric</li>
+		<li>Leathery</li>
 	</stuffCategories>
 	<graphicData>
 		<texPath>Celes/Apparel/OnSkin/WinterSweater/WinterSweater</texPath>
@@ -83,50 +199,31 @@
 	</graphicData>
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToMake>5400</WorkToMake>
-		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		<WorkToMake>2,700</WorkToMake>
+		<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
 	</statBases>
 	<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<developmentalStageFilter>Adult</developmentalStageFilter>
 		<bodyPartGroups>
-          <li>Torso</li>
-          <li>Shoulders</li>
-		  <li>Arms</li>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
         </bodyPartGroups>
 		<wornGraphicPath>Celes/Apparel/OnSkin/WinterSweater/WinterSweater</wornGraphicPath>
-		<tags>
-			<li>Celes_Daily</li>
-		</tags>
 	</apparel>
-		<recipeMaker>
-			<researchPrerequisite>Celes_Apparel_I</researchPrerequisite>
-			<recipeUsers>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-				<li>Celes_TailoringTab</li>
-			</recipeUsers>
-			<displayPriority>305</displayPriority>
-		</recipeMaker>
-	<comps>
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
-    </comps>
-		<thingCategories>
-			<li>Celes_Apparel_Daily</li>
-		</thingCategories>
 	</ThingDef>
 
 	<!-- ========== 日常服装 ========= -->
 
-	<ThingDef ParentName="Celes_OnSkinBase"><!--文职制服-->
+	<ThingDef ParentName="Celes_OnSkin_II"><!--文职制服-->
 	<defName>Celes_CivilianUniform</defName>
 	<label>celestia civilian uniform</label>
 	<description>A relatively formal clerk's uniform suit consisting of a white shirt with a wrap-around skirt, accompanied by a cute short tie. \n\n Most of this type of clothing didn't use highly elasticated fabrics, so for a portion of Celestia, it became a bit of a problem to button up the chest without it falling apart. Oddly enough, though, negotiating while wearing this uniform did seem to inexplicably have a higher success rate, especially after stretching exercises.</description>
-	<costStuffCount>60</costStuffCount>
+	<costStuffCount>45</costStuffCount>
 	<stuffCategories>
 	    <li>Fabric</li>
 	</stuffCategories>
@@ -136,66 +233,61 @@
 	</graphicData>
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToMake>5400</WorkToMake>
-		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		<WorkToMake>3600</WorkToMake>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.26</StuffEffectMultiplierInsulation_Heat>
 	</statBases>
 	<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<developmentalStageFilter>Adult</developmentalStageFilter>
 		<bodyPartGroups>
-          <li>Torso</li>
-          <li>Shoulders</li>
-		  <li>Arms</li>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
         </bodyPartGroups>
 		<wornGraphicPath>Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform</wornGraphicPath>
 		<tags>
 			<li>Celes_Uniform</li>
-			<li>Celes_Daily</li>
 		</tags>
 	</apparel>
 		<equippedStatOffsets>
 			<SocialImpact>0.2</SocialImpact>
 		</equippedStatOffsets>
-		<recipeMaker>
-			<researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
-			<recipeUsers>
-				<li>Celes_TailoringTab</li>
-			</recipeUsers>
-			<displayPriority>305</displayPriority>
-		</recipeMaker>
-	<comps>
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
-    </comps>
-		<thingCategories>
-			<li>Celes_Apparel_Daily</li>
-		</thingCategories>
 	</ThingDef>
 
 	<!-- ========== 专业服装 ========= -->
 
-	<ThingDef ParentName="Celes_OnSkinBase"><!--拓荒防护服-->
+	<ThingDef ParentName="Celes_OnSkin_III_a"><!--拓荒防护服-->
 	<defName>Celes_ExploreVest</defName>
 	<label>celestia explore vest</label>
 	<description>A protective suit that provides focused protection to the torso, reducing the wearer's exposure to biochemical and radiological threats, and increasing the Celestia Pilot Team's efficiency and versatility to a certain extent. \n\nIn the initial design of The Navigator Programme, the suit was supposed to carry a morphine injector, a Geiger counter, head protection and night vision, and even a smart terminal with built-in artificial intelligence. However, the design bureau eventually cut these features on the grounds that the Rimworld would have difficulty in providing sufficient resources for mass production.</description>
-	<costStuffCount>60</costStuffCount>
-	<stuffCategories>
-	    <li>Fabric</li>
-	</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
 	<graphicData>
 		<texPath>Celes/Apparel/OnSkin/ExploreVest/ExploreVest</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<statBases>
-		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToMake>5400</WorkToMake>
-		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		<Mass>2.0</Mass>
+		<MaxHitPoints>150</MaxHitPoints>
+		<WorkToMake>7200</WorkToMake>
+		<Flammability>0.2</Flammability>
+		<!-- <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.20</ArmorRating_Heat> -->
+		<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>1.00</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>3</EquipDelay>
 	</statBases>
 	<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -211,59 +303,10 @@
 			<li>Celes_Explore</li>
 		</tags>
 	</apparel>
-		<recipeMaker>
-			<researchPrerequisite>Celes_Apparel_III_a</researchPrerequisite>
-			<recipeUsers>
-				<li>Celes_TailoringTab</li>
-			</recipeUsers>
-			<displayPriority>320</displayPriority>
-		</recipeMaker>
-		<thingCategories>
-			<li>Celes_Apparel_Daily</li>
-		</thingCategories>
-	</ThingDef>
-
-	<ThingDef ParentName="Celes_OnSkinBase"><!--古典礼服-->
-	<defName>Celes_ClassicalGown</defName>
-	<label>Celes_ClassicalGown</label>
-	<description>.</description>
-	<costStuffCount>60</costStuffCount>
-	<stuffCategories>
-	    <li>Fabric</li>
-	</stuffCategories>
-	<graphicData>
-		<texPath>Celes/Apparel/OnSkin/ClassicalGown/ClassicalGown</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-	</graphicData>
-	<statBases>
-		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToMake>5400</WorkToMake>
-		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
-	</statBases>
-	<apparel>
-		<useWornGraphicMask>true</useWornGraphicMask>
-		<developmentalStageFilter>Adult</developmentalStageFilter>
-		<bodyPartGroups>
-          <li>Torso</li>
-		  <li>Neck</li>
-          <li>Shoulders</li>
-		  <li>Arms</li>
-        </bodyPartGroups>
-		<wornGraphicPath>Celes/Apparel/OnSkin/ClassicalGown/ClassicalGown</wornGraphicPath>
-		<tags>
-			<li>Celes_Gown</li>
-		</tags>
-	</apparel>
-		<recipeMaker>
-			<researchPrerequisite>Celes_Apparel_III_a</researchPrerequisite>
-			<recipeUsers>
-				<li>Celes_TailoringTab</li>
-			</recipeUsers>
-			<displayPriority>320</displayPriority>
-		</recipeMaker>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.05</PainShockThreshold>
+			<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
 		<thingCategories>
 			<li>Celes_Apparel_Daily</li>
 		</thingCategories>
@@ -271,25 +314,31 @@
 
 	<!-- ========== 军事服装 ========= -->
 
-	<ThingDef ParentName="Celes_OnSkinBase"><!--星铃军装-->
+	<ThingDef ParentName="Celes_OnSkin_III"><!--星铃军装-->
 		<defName>Celes_MilitaryUniform</defName>
 		<label>celestia military uniform</label>
 		<description>Designed with reference to Celestia's naval uniforms for high temperature environments and also serve as a liner for Celestia's military formal wear. Though, many of the designs for the space environment have been cut. \n\n"The knock-down collar and double-breasted design from Celestia's naval uniforms combines stability, majesty and elegance. Highly elastic fabric highlights the HARD curves of the soldier while not affecting physical agility in the slightest ......" This is how most introductions explain the origins of the pioneer military uniform, but the wording used in it seems ...... to be a bit counterintuitive.</description>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
 		<graphicData>
 			<texPath>Celes/Apparel/OnSkin/MilitaryUniform/MilitaryUniform</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>5400</WorkToMake>
-			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<Mass>2.0</Mass>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<StuffEffectMultiplierArmor>0.40</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.33</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -306,15 +355,62 @@
 				<li>Celes_Military</li>
 			</tags>
 		</apparel>
-		<recipeMaker>
-			<researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
-			<recipeUsers>
-				<li>Celes_TailoringTab</li>
-			</recipeUsers>
-			<displayPriority>315</displayPriority>
-		</recipeMaker>
+		<equippedStatOffsets>
+			<MoveSpeed>0.12</MoveSpeed>
+			<RangedCooldownFactor>-0.1</RangedCooldownFactor>
+		</equippedStatOffsets>
 		<thingCategories>
 			<li>Celes_Apparel_Military</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- ========== 特殊服装 ========= -->
+
+	<ThingDef ParentName="ApparelBase_Celes">
+		<!--古典礼服-->
+		<defName>Celes_ClassicalGown</defName>
+		<label>celestia classical gown</label>
+		<description>A set of classical gowns originating from celestia's home planet, not yet actualised so the description is missing. \n\n.</description>
+		<techLevel>Spacer</techLevel>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>Celes/Apparel/OnSkin/ClassicalGown/ClassicalGown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<EquipDelay>1.5</EquipDelay>
+			<MaxHitPoints>300</MaxHitPoints>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.33</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.33</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/OnSkin/ClassicalGown/ClassicalGown</wornGraphicPath>
+			<tags>
+				<li>Celes_OnSkin</li>
+				<li>Celes_Gown</li>
+			</tags>
+		</apparel>
+		<equippedStatOffsets>
+			<PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+			<PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+		<thingCategories>
+			<li>Celes_Apparel_Misc</li>
 		</thingCategories>
 	</ThingDef>
 

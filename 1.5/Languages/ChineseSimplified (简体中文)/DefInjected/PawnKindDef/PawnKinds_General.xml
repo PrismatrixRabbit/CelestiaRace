@@ -1,32 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Celes_Colonist.label>星铃殖民者</Celes_Colonist.label>
-  <Celes_Colonist.labelPlural>星铃殖民者</Celes_Colonist.labelPlural>
-  <Celes_Colonist.labelMale>星铃殖民者</Celes_Colonist.labelMale>
-  <Celes_Colonist.labelMalePlural>星铃殖民者</Celes_Colonist.labelMalePlural>
-  <Celes_Colonist.labelFemale>星铃殖民者</Celes_Colonist.labelFemale>
-  <Celes_Colonist.labelFemalePlural>星铃殖民者</Celes_Colonist.labelFemalePlural>
-  
-  <Celes_Outlander.label>星铃拓荒者</Celes_Outlander.label>
-  <Celes_Outlander.labelPlural>星铃拓荒者</Celes_Outlander.labelPlural>
-  <Celes_Outlander.labelMale>星铃拓荒者</Celes_Outlander.labelMale>
-  <Celes_Outlander.labelMalePlural>星铃拓荒者</Celes_Outlander.labelMalePlural>
-  <Celes_Outlander.labelFemale>星铃拓荒者</Celes_Outlander.labelFemale>
-  <Celes_Outlander.labelFemalePlural>星铃拓荒者</Celes_Outlander.labelFemalePlural>
+	<Celes_Colonist.label>星铃殖民者</Celes_Colonist.label>
+	<Celes_Colonist.labelPlural>星铃殖民者</Celes_Colonist.labelPlural>
+	<Celes_Colonist.labelMale>星铃殖民者</Celes_Colonist.labelMale>
+	<Celes_Colonist.labelMalePlural>星铃殖民者</Celes_Colonist.labelMalePlural>
+	<Celes_Colonist.labelFemale>星铃殖民者</Celes_Colonist.labelFemale>
+	<Celes_Colonist.labelFemalePlural>星铃殖民者</Celes_Colonist.labelFemalePlural>
 
-  <Celes_Trader.label>星铃行商</Celes_Trader.label>
-  <Celes_Trader.labelPlural>星铃行商</Celes_Trader.labelPlural>
-  <Celes_Trader.labelMale>星铃行商</Celes_Trader.labelMale>
-  <Celes_Trader.labelMalePlural>星铃行商</Celes_Trader.labelMalePlural>
-  <Celes_Trader.labelFemale>星铃行商</Celes_Trader.labelFemale>
-  <Celes_Trader.labelFemalePlural>星铃行商</Celes_Trader.labelFemalePlural>
+	<Celes_Outlander.label>星铃拓荒者</Celes_Outlander.label>
+	<Celes_Outlander.labelPlural>星铃拓荒者</Celes_Outlander.labelPlural>
+	<Celes_Outlander.labelMale>星铃拓荒者</Celes_Outlander.labelMale>
+	<Celes_Outlander.labelMalePlural>星铃拓荒者</Celes_Outlander.labelMalePlural>
+	<Celes_Outlander.labelFemale>星铃拓荒者</Celes_Outlander.labelFemale>
+	<Celes_Outlander.labelFemalePlural>星铃拓荒者</Celes_Outlander.labelFemalePlural>
 
-  <Celes_Scout.label>星铃先锋小队</Celes_Scout.label>
-  <Celes_Scout.labelPlural>星铃先锋小队</Celes_Scout.labelPlural>
-  <Celes_Scout.labelMale>星铃先锋小队</Celes_Scout.labelMale>
-  <Celes_Scout.labelMalePlural>星铃先锋小队</Celes_Scout.labelMalePlural>
-  <Celes_Scout.labelFemale>星铃先锋小队</Celes_Scout.labelFemale>
-  <Celes_Scout.labelFemalePlural>星铃先锋小队</Celes_Scout.labelFemalePlural>
+	<Celes_OutlanderLeader.label>星铃拓荒领袖</Celes_OutlanderLeader.label>
+	<Celes_OutlanderLeader.labelPlural>星铃拓荒领袖</Celes_OutlanderLeader.labelPlural>
+	<Celes_OutlanderLeader.labelMale>星铃拓荒领袖</Celes_OutlanderLeader.labelMale>
+	<Celes_OutlanderLeader.labelMalePlural>星铃拓荒领袖</Celes_OutlanderLeader.labelMalePlural>
+	<Celes_OutlanderLeader.labelFemale>星铃拓荒领袖</Celes_OutlanderLeader.labelFemale>
+	<Celes_OutlanderLeader.labelFemalePlural>星铃拓荒领袖</Celes_OutlanderLeader.labelFemalePlural>
+
+	<Celes_Trader.label>星铃行商</Celes_Trader.label>
+	<Celes_Trader.labelPlural>星铃行商</Celes_Trader.labelPlural>
+	<Celes_Trader.labelMale>星铃行商</Celes_Trader.labelMale>
+	<Celes_Trader.labelMalePlural>星铃行商</Celes_Trader.labelMalePlural>
+	<Celes_Trader.labelFemale>星铃行商</Celes_Trader.labelFemale>
+	<Celes_Trader.labelFemalePlural>星铃行商</Celes_Trader.labelFemalePlural>
+
+	<Celes_ArmedExplorer.label>星铃武装拓荒队员</Celes_ArmedExplorer.label>
+	<Celes_ArmedExplorer.labelPlural>星铃武装拓荒队员</Celes_ArmedExplorer.labelPlural>
+	<Celes_ArmedExplorer.labelMale>星铃武装拓荒队员</Celes_ArmedExplorer.labelMale>
+	<Celes_ArmedExplorer.labelMalePlural>星铃武装拓荒队员</Celes_ArmedExplorer.labelMalePlural>
+	<Celes_ArmedExplorer.labelFemale>星铃武装拓荒队员</Celes_ArmedExplorer.labelFemale>
+	<Celes_ArmedExplorer.labelFemalePlural>星铃武装拓荒队员</Celes_ArmedExplorer.labelFemalePlural>
+
+	<Celes_ArmedExplorerSniper.label>星铃武装拓荒神射手</Celes_ArmedExplorerSniper.label>
+	<Celes_ArmedExplorerSniper.labelPlural>星铃武装拓荒神射手</Celes_ArmedExplorerSniper.labelPlural>
+	<Celes_ArmedExplorerSniper.labelMale>星铃武装拓荒神射手</Celes_ArmedExplorerSniper.labelMale>
+	<Celes_ArmedExplorerSniper.labelMalePlural>星铃武装拓荒神射手</Celes_ArmedExplorerSniper.labelMalePlural>
+	<Celes_ArmedExplorerSniper.labelFemale>星铃武装拓荒神射手</Celes_ArmedExplorerSniper.labelFemale>
+	<Celes_ArmedExplorerSniper.labelFemalePlural>星铃武装拓荒神射手</Celes_ArmedExplorerSniper.labelFemalePlural>
+
+	<Celes_Scout.label>星铃先锋</Celes_Scout.label>
+	<Celes_Scout.labelPlural>星铃先锋</Celes_Scout.labelPlural>
+	<Celes_Scout.labelMale>星铃先锋</Celes_Scout.labelMale>
+	<Celes_Scout.labelMalePlural>星铃先锋</Celes_Scout.labelMalePlural>
+	<Celes_Scout.labelFemale>星铃先锋</Celes_Scout.labelFemale>
+	<Celes_Scout.labelFemalePlural>星铃先锋</Celes_Scout.labelFemalePlural>
+
+	<Celes_ScoutSniper.label>星铃先锋狙击手</Celes_ScoutSniper.label>
+	<Celes_ScoutSniper.labelPlural>星铃先锋狙击手</Celes_ScoutSniper.labelPlural>
+	<Celes_ScoutSniper.labelMale>星铃先锋狙击手</Celes_ScoutSniper.labelMale>
+	<Celes_ScoutSniper.labelMalePlural>星铃先锋狙击手</Celes_ScoutSniper.labelMalePlural>
+	<Celes_ScoutSniper.labelFemale>星铃先锋狙击手</Celes_ScoutSniper.labelFemale>
+	<Celes_ScoutSniper.labelFemalePlural>星铃先锋狙击手</Celes_ScoutSniper.labelFemalePlural>
+
+	<Celes_ScoutMelee.label>星铃先锋近卫</Celes_ScoutMelee.label>
+	<Celes_ScoutMelee.labelPlural>星铃先锋近卫</Celes_ScoutMelee.labelPlural>
+	<Celes_ScoutMelee.labelMale>星铃先锋近卫</Celes_ScoutMelee.labelMale>
+	<Celes_ScoutMelee.labelMalePlural>星铃先锋近卫</Celes_ScoutMelee.labelMalePlural>
+	<Celes_ScoutMelee.labelFemale>星铃先锋近卫</Celes_ScoutMelee.labelFemale>
+	<Celes_ScoutMelee.labelFemalePlural>星铃先锋近卫</Celes_ScoutMelee.labelFemalePlural>
+
+	<Celes_Elite.label>星铃海军陆战队步兵</Celes_Elite.label>
+	<Celes_Elite.labelPlural>星铃海军陆战队步兵</Celes_Elite.labelPlural>
+	<Celes_Elite.labelMale>星铃海军陆战队步兵</Celes_Elite.labelMale>
+	<Celes_Elite.labelMalePlural>星铃海军陆战队步兵</Celes_Elite.labelMalePlural>
+	<Celes_Elite.labelFemale>星铃海军陆战队步兵</Celes_Elite.labelFemale>
+	<Celes_Elite.labelFemalePlural>星铃海军陆战队步兵</Celes_Elite.labelFemalePlural>
+
+	<Celes_EliteSniper.label>星铃海军陆战队狙击手</Celes_EliteSniper.label>
+	<Celes_EliteSniper.labelPlural>星铃海军陆战队狙击手</Celes_EliteSniper.labelPlural>
+	<Celes_EliteSniper.labelMale>星铃海军陆战队狙击手</Celes_EliteSniper.labelMale>
+	<Celes_EliteSniper.labelMalePlural>星铃海军陆战队狙击手</Celes_EliteSniper.labelMalePlural>
+	<Celes_EliteSniper.labelFemale>星铃海军陆战队狙击手</Celes_EliteSniper.labelFemale>
+	<Celes_EliteSniper.labelFemalePlural>星铃海军陆战队狙击手</Celes_EliteSniper.labelFemalePlural>
+
+	<Celes_EliteSupport.label>星铃海军陆战队支援兵</Celes_EliteSupport.label>
+	<Celes_EliteSupport.labelPlural>星铃海军陆战队支援兵</Celes_EliteSupport.labelPlural>
+	<Celes_EliteSupport.labelMale>星铃海军陆战队支援兵</Celes_EliteSupport.labelMale>
+	<Celes_EliteSupport.labelMalePlural>星铃海军陆战队支援兵</Celes_EliteSupport.labelMalePlural>
+	<Celes_EliteSupport.labelFemale>星铃海军陆战队支援兵</Celes_EliteSupport.labelFemale>
+	<Celes_EliteSupport.labelFemalePlural>星铃海军陆战队支援兵</Celes_EliteSupport.labelFemalePlural>
+
+	<Celes_EliteMelee.label>星铃海军陆战队近卫</Celes_EliteMelee.label>
+	<Celes_EliteMelee.labelPlural>星铃海军陆战队近卫</Celes_EliteMelee.labelPlural>
+	<Celes_EliteMelee.labelMale>星铃海军陆战队近卫</Celes_EliteMelee.labelMale>
+	<Celes_EliteMelee.labelMalePlural>星铃海军陆战队近卫</Celes_EliteMelee.labelMalePlural>
+	<Celes_EliteMelee.labelFemale>星铃海军陆战队近卫</Celes_EliteMelee.labelFemale>
+	<Celes_EliteMelee.labelFemalePlural>星铃海军陆战队近卫</Celes_EliteMelee.labelFemalePlural>
 
 </LanguageData>

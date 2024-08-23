@@ -374,9 +374,9 @@
 								</east>
 							</offsets>
 						</li>
-						<li>
+						<!-- <li> -->
 							<!--特殊衣物前景-->
-							<path>Celes/Apparel/Null/Null</path>
+						<!-- <path>Celes/Apparel/Null/Null</path>
 							<bodyPart>Head</bodyPart>
 							<inFrontOfBody>true</inFrontOfBody>
 							<colorChannel>Blank</colorChannel>
@@ -415,7 +415,7 @@
 							<hiddenUnderApparelTag>
 							</hiddenUnderApparelTag>
 							<drawnInBed>true</drawnInBed>
-							</li>
+						</li> -->
 					</bodyAddons>
 
 					<headOffset>(0,-0.01)</headOffset>
@@ -606,7 +606,6 @@
 				</blackRecipeList>
 
 				<plantList>
-					<li>Plant_CelesNano</li>
 				</plantList>
 
 				<!--<researchList>

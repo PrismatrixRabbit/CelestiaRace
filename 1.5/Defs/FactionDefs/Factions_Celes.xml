@@ -65,7 +65,7 @@
 	<categoryTag>Celes_Faction</categoryTag>
 	<pawnSingular>celestia</pawnSingular>
     <pawnsPlural>celestias</pawnsPlural>
-	<listOrderPriority>30</listOrderPriority><!--这个可能小了要改，原版30，kiiro是240-->
+	<listOrderPriority>50</listOrderPriority><!--这个可能小了要改，原版30，kiiro是240-->
 	<settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
 	<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
@@ -151,7 +151,7 @@
     <baseTraderKinds>
       <li>Celes_Base_Pioneer_Standard</li>
     </baseTraderKinds>
-	<allowedArrivalTemperatureRange>-15~40</allowedArrivalTemperatureRange>
+	<allowedArrivalTemperatureRange>-45~50</allowedArrivalTemperatureRange>
 	<maxPawnCostPerTotalPointsCurve>
       <points>
         <li>(0,35)</li>
@@ -164,27 +164,61 @@
 	<!--这里抄了原版-->
 	<pawnGroupMakers>
 		<!-- 注释掉的是这个需要的pawn我们没写 -->
-		<!-- Normal -->
+		<!-- 拓荒队突袭 -->
         <li>
             <kindDef>Combat</kindDef>
             <commonality>100</commonality>
             <options>
-                <Celes_Scout>10</Celes_Scout>
+				<Celes_ArmedExplorer>10</Celes_ArmedExplorer>
+				<Celes_ArmedExplorerSniper>3</Celes_ArmedExplorerSniper>
+				<Celes_OutlanderLeader>1</Celes_OutlanderLeader>
             </options>
         </li>
-        <!-- Normal-2 -->
+        <!-- 先锋突袭 -->
         <li>
             <kindDef>Combat</kindDef>
-            <commonality>30</commonality>
+            <commonality>66</commonality>
             <options>
                 <Celes_Scout>10</Celes_Scout>
-                <Celes_Outlander>5</Celes_Outlander>
+				<Celes_ScoutMelee>5</Celes_ScoutMelee>
+				<Celes_ScoutSniper>3</Celes_ScoutSniper>
             </options>
         </li>
+		<!-- 陆战队突袭-普通 -->
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>22</commonality>
+			<options>
+				<Celes_Elite>10</Celes_Elite>
+				<Celes_EliteSniper>3</Celes_EliteSniper>
+				<Celes_EliteSupport>3</Celes_EliteSupport>
+				<Celes_OutlanderLeader>1</Celes_OutlanderLeader>
+			</options>
+		</li>
+		<!-- 陆战队突袭-压制性火力 -->
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>6</commonality>
+			<options>
+				<Celes_Elite>5</Celes_Elite>
+				<Celes_EliteSniper>5</Celes_EliteSniper>
+				<Celes_EliteSupport>5</Celes_EliteSupport>
+			</options>
+		</li>
+		<!-- 陆战队突袭-近卫突袭 -->
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>5</commonality>
+			<options>
+				<Celes_Elite>10</Celes_Elite>
+				<Celes_EliteMelee>10</Celes_EliteMelee>
+			</options>
+		</li>
       <li>
         <kindDef>Peaceful</kindDef>
         <options>
-          <Celes_Outlander>10</Celes_Outlander>
+			<Celes_Outlander>10</Celes_Outlander>
+			<Celes_ArmedExplorer>3</Celes_ArmedExplorer>
         </options>
       </li>
       <li>
@@ -196,13 +230,19 @@
           <Celes_Outlander>10</Celes_Outlander>
         </carriers>
         <guards>
-          <Celes_Scout>10</Celes_Scout>
+			<Celes_ArmedExplorer>10</Celes_ArmedExplorer>
+			<Celes_Scout>10</Celes_Scout>
         </guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <Celes_Scout>10</Celes_Scout>
+			<Celes_Outlander>10</Celes_Outlander>
+			<Celes_Scout>10</Celes_Scout>
+			<Celes_ScoutMelee>5</Celes_ScoutMelee>
+			<Celes_Elite>10</Celes_Elite>
+			<Celes_EliteSniper>3</Celes_EliteSniper>
+			<Celes_EliteSupport>3</Celes_EliteSupport>
         </options>
       </li>
       <!--<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -235,6 +275,9 @@
       </li>-->
     </pawnGroupMakers>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	<disallowedRaidAgeRestrictions>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+	</disallowedRaidAgeRestrictions>
     <modExtensions>
         <li Class="CelesFeature.ModExtension_Aid">
             <greetWords>

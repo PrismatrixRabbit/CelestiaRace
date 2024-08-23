@@ -164,7 +164,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>CelesNanoMachine</li>
+                        <li>CelesNanoMachineCrystal</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -182,4 +182,54 @@
             <CelesAlloy>40</CelesAlloy>
         </products>
     </RecipeDef>
+
+	<RecipeDef>
+		<defName>Make_CelesAdvanceCloth</defName>
+		<label>reorganise Dust-Mech Silk</label>
+		<description>Using Dust-Mech to reorganise Rimworld's native materials into Dust-Mech Silk.</description>
+		<jobString>reorganising Dust-Mech Silk</jobString>
+		<workAmount>10000</workAmount>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>Celes_TailoringTab</li>
+		</recipeUsers>
+		<researchPrerequisite>Celes_AdvancedCloth</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+			<Intellectual>10</Intellectual>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CelesNanoMachineCrystal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<CelesAdvanceCloth>20</CelesAdvanceCloth>
+		</products>
+	</RecipeDef>
+	
 </Defs>

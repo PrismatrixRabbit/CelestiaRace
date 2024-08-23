@@ -10,10 +10,6 @@
             <texPath>Celes/Building/Celes_MultifunctionalTab/Celes_MultifunctionalTab</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(3.5,1.5)</drawSize>
-            <shadowData>
-                <volume>(2.8, 0.35, 0.59)</volume>
-                <offset>(0, 0, 0.08)</offset>
-            </shadowData>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
@@ -21,19 +17,20 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
         <costList>
             <Steel>100</Steel>
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
-        <constructEffect>ConstructWood</constructEffect>
         <altitudeLayer>Building</altitudeLayer>
         <fillPercent>0.5</fillPercent>
         <useHitPoints>True</useHitPoints>
         <statBases>
             <WorkToBuild>3000</WorkToBuild>
-            <MaxHitPoints>180</MaxHitPoints>
+            <MaxHitPoints>250</MaxHitPoints>
             <Flammability>1.0</Flammability>
-            <Cleanliness>-3</Cleanliness>
+            <Cleanliness>0</Cleanliness>
         </statBases>
         <size>(3,1)</size>
         <designationCategory>Production</designationCategory>
@@ -44,36 +41,41 @@
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
         <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<recipes>
+			<li>ButcherCorpseMechanoid</li>
+		</recipes>
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
-        <building>
-            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-        </building>
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <shortCircuitInRain>true</shortCircuitInRain>
-                <basePowerConsumption>210</basePowerConsumption>
+                <basePowerConsumption>400</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(73,123,138,0)</glowColor>
+			</li>
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>
                     <li>ToolCabinet</li>
                 </linkableFacilities>
             </li>
-            <li Class="CompProperties_HeatPusher">
-                <compClass>CompHeatPusherPowered</compClass>
-                <heatPerSecond>4</heatPerSecond>
-            </li>
+			<li Class="CompProperties_Breakdownable"/>
         </comps>
-        <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
-            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-        </placeWorkers>
-        <researchPrerequisites>
-            <li>Celes_Manufactory_I</li>
-        </researchPrerequisites>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Celes_Manufactory_I</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
     </ThingDef>
     
     <ThingDef ParentName="BenchBase">
@@ -85,10 +87,6 @@
             <texPath>Celes/Building/Celes_TailoringTab/Celes_TailoringTab</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(3.5,1.5)</drawSize>
-            <shadowData>
-                <volume>(2.8, 0.35, 0.59)</volume>
-                <offset>(0, 0, 0.08)</offset>
-            </shadowData>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
@@ -96,11 +94,12 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
         <costList>
             <Steel>100</Steel>
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
-        <constructEffect>ConstructWood</constructEffect>
         <altitudeLayer>Building</altitudeLayer>
         <fillPercent>0.5</fillPercent>
         <useHitPoints>True</useHitPoints>
@@ -108,7 +107,7 @@
             <WorkToBuild>3000</WorkToBuild>
             <MaxHitPoints>180</MaxHitPoints>
             <Flammability>1.0</Flammability>
-            <Cleanliness>-3</Cleanliness>
+            <Cleanliness>0</Cleanliness>
         </statBases>
         <size>(3,1)</size>
         <designationCategory>Production</designationCategory>
@@ -124,12 +123,13 @@
         </inspectorTabs>
         <building>
             <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<unpoweredWorkTableWorkSpeedFactor>0.5</unpoweredWorkTableWorkSpeedFactor>
         </building>
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <shortCircuitInRain>true</shortCircuitInRain>
-                <basePowerConsumption>210</basePowerConsumption>
+                <basePowerConsumption>120</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_AffectedByFacilities">

@@ -9,7 +9,7 @@
         <graphicData>
             <texPath>Celes/Item/Celes_NanoCrystallisedCorpse/Celes_NanoCrystallisedCorpse</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.85</drawSize>
+            <drawSize>1.0</drawSize>
         </graphicData>
         <stackLimit>1</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>
@@ -33,14 +33,13 @@
         <descriptionHyperlinks>
             <ThingDef>Celes_NanoCrystallisedCorpse</ThingDef>
         </descriptionHyperlinks>
-        <jobString>dismantling Dust-Mech crystalline corpse</jobString>
-        <workAmount>300</workAmount>
-        <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
-        <workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
+		<workAmount>300</workAmount>
+		<jobString>dismantling Dust-Mech crystalline corpse</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
-        <efficiencyStat>ButcheryMechanoidEfficiency</efficiencyStat>
-        <effectWorking>ButcherMechanoid</effectWorking>
-        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <uiIconThing>Celes_NanoCrystallisedCorpse</uiIconThing>
         <ingredients>
             <li>
                 <filter>
@@ -51,13 +50,8 @@
                 <count>1</count>
             </li>
         </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>Celes_NanoCrystallisedCorpse</li>
-            </thingDefs>
-        </fixedIngredientFilter>
         <products>
-            <CelesNanoMachine>50</CelesNanoMachine>
+            <CelesNanoMachine>15</CelesNanoMachine>
             <Neutroamine>50</Neutroamine>
         </products>
         <recipeUsers>
@@ -67,7 +61,80 @@
         <researchPrerequisites>
             <li>Celes_MainTech_II</li>
         </researchPrerequisites>
-        <displayPriority>0</displayPriority>
+        <displayPriority>1</displayPriority>
     </RecipeDef>
-    
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>CelesNanoMachineCrystal</defName>
+		<label>CelesNanoMachineCrystal</label>
+		<description>CelesNanoMachineCrystal.</description>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Celes/Item/CelesNanoMachineCrystal/CelesNanoMachineCrystal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<intricate>true</intricate>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>120</MarketValue>
+			<Mass>0.001</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>Make_CelesNanoMachineCrystal</defName>
+		<label>Make_CelesNanoMachineCrystal</label>
+		<description>Make_CelesNanoMachineCrystal</description>
+		<jobString>Make_CelesNanoMachineCrystal</jobString>
+		<uiIconThing>CelesNanoMachineCrystal</uiIconThing>
+		<workAmount>10000</workAmount>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>Celes_MultifunctionalTab</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>Celes_MainTech_II</li>
+		</researchPrerequisites>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CelesNanoMachine</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<CelesNanoMachineCrystal>1</CelesNanoMachineCrystal>
+		</products>
+	</RecipeDef>
+
 </Defs>

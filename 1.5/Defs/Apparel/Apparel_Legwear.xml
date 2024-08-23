@@ -2,9 +2,10 @@
 <Defs>
 
 	<ThingDef Name="Celes_LegwearBase" ParentName="Celes_ApparelBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
 		<statBases>
-			<Mass>0.8</Mass>
-			<EquipDelay>1.8</EquipDelay>
+			<Mass>0.1</Mass>
+			<EquipDelay>1.0</EquipDelay>
 		</statBases>
 		<apparel>	
 			<layers>
@@ -15,6 +16,9 @@
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+		</equippedStatOffsets>
 	</ThingDef>
 
 	<!-- ========== 日常服装 ========= -->
@@ -23,7 +27,7 @@
 	<defName>Celes_KneeHighBlack</defName>
 	<label>celestia black knee-high stocking</label>
 	<description>A pair of black knee-high stockings that fit Celestia's figure, balancing warmth and aesthetics, often used to match a variety of outfits. \n\nBut the truth is that if it wasn't made of a stretchy material like Dust-Mech silk or synthetic fibres, it would just be a pair of slightly longer and opaque socks.</description>
-	<costStuffCount>60</costStuffCount>
+	<costStuffCount>30</costStuffCount>
 	<stuffCategories>
 	    <li>Fabric</li>
 	</stuffCategories>
@@ -34,10 +38,10 @@
 	</graphicData>
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToMake>5400</WorkToMake>
-		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		<WorkToMake>1500</WorkToMake>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.18</StuffEffectMultiplierInsulation_Heat>
 	</statBases>
 	<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -68,7 +72,7 @@
 		<defName>Celes_StockingBlack</defName>
 		<label>celestia black thigh-high stocking</label>
 		<description>A pair of black thigh-high stocking that fit Celestia's figure, showing off legs more while keeping warm, often used to match a variety of outfits. \n\nThis style of thigh-high stocking is widely praised, but until a certain fashion designer adjusts the knitting density of the cuffs, the outer side of this style is always prone to accidental slippage, while the inner side tends to irritate the base of the thigh in friction.</description>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
@@ -79,10 +83,10 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>5400</WorkToMake>
+			<WorkToMake>1500</WorkToMake>
 			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.16</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.12</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -112,7 +116,7 @@
 		<defName>Celes_TightBlack</defName>
 		<label>celestia black tight</label>
 		<description>A pair of black tight that fit Celestia's figure, completely wrapped around the lower body, often used to match a variety of outfits. \n\nQuite a classic stocking style, it was said that the museums on the home planet had even once exhibited pantyhose from Earth. Many Celestia even like to simply wear this style of stockings as trousers, after all, as long as the blouse is loose enough no one can tell.</description>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
@@ -123,10 +127,10 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>5400</WorkToMake>
-			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<WorkToMake>1500</WorkToMake>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -152,27 +156,32 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="Celes_ArmorMachineableBase"><!--轻型腿甲-->
+	<ThingDef ParentName="Celes_ArmorMachineableBase"><!--动力护腿-->
 		<defName>Celes_LightLegArmour</defName>
-		<label>celestia light leg armour</label>
-		<description>A pair of knee-high, ballistic boots with thigh-length composite textile material, sufficient to protect Celestia's lower limbs as much as possible in a light suit. \n\nThis lightweight leg armour is derived from Celestia IEVA clothing's Gravity Boots, a device often used to simulate gravity while maximising the user's dexterity, dampen shock and fall, and provide armour protection against small space debris. Nowadays, this structure has been localised and modified by the Celestia Pioneers to act as bulletproof trousers.</description>
+		<label>celestia powered gaiter</label>
+		<description>A pair of knee-high, powered gaiter with thigh-length composite textile material, sufficient to protect Celestia's lower limbs as much as possible in a light suit. It is a part of Celestia's standard power armour.. \n\nThis lightweight leg armour is derived from Celestia IEVA clothing's Gravity Boots, a device often used to simulate gravity while maximising the user's dexterity, dampen shock and fall, and provide armour protection against small space debris. Its built-in power unit supports the user's body and drives the power armour.</description>
+		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Celes/Apparel/Legwear/LightLegArmour/LightLegArmour</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<statBases>
-			<Mass>0.8</Mass>
-			<EquipDelay>1.8</EquipDelay>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>5400</WorkToMake>
-			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<Mass>4</Mass>
+			<EquipDelay>5</EquipDelay>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToMake>14400</WorkToMake>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.5</ArmorRating_Heat>
+			<Insulation_Cold>12.0</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
 		</statBases>
 		<apparel>
 			<layers>
 				<li>OnSkin</li>
+				<li>Middle</li>
 			</layers>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -188,17 +197,21 @@
 			</tags>
 		</apparel>
 		<costList>
-			<Steel>70</Steel>
-			<Cloth>30</Cloth>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>50</Plasteel>
+			<CelesAlloy>20</CelesAlloy>
+			<CelesAdvanceCloth>20</CelesAdvanceCloth>
+			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
+			<researchPrerequisite>Celes_Apparel_IV</researchPrerequisite>
 			<recipeUsers>
 				<li>Celes_MultifunctionalTab</li>
 			</recipeUsers>
 			<displayPriority>307</displayPriority>
 		</recipeMaker>
+		<equippedStatOffsets>
+			<MoveSpeed>0.6</MoveSpeed>
+		</equippedStatOffsets>
 		<thingCategories>
 			<li>Celes_Apparel_Military</li>
 		</thingCategories>

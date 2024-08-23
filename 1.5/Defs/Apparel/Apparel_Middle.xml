@@ -5,25 +5,26 @@
 
     <ThingDef ParentName="Celes_ArmorMachineableBase"><!--厨房围裙-->
         <defName>Celes_KitchenApron</defName>
-        <label>Celes_KitchenApron</label>
-        <description>.</description>
+        <label>celestia kitchen apron</label>
+        <description>A simple kitchen apron will keep things clean while cooking.</description>
+		<techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Celes/Apparel/Middle/KitchenApron/KitchenApron</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
         <statBases>
-            <Mass>0.8</Mass>
-            <EquipDelay>1.8</EquipDelay>
+            <Mass>0.2</Mass>
+            <EquipDelay>1.5</EquipDelay>
             <MaxHitPoints>100</MaxHitPoints>
-            <WorkToMake>5400</WorkToMake>
-            <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <WorkToMake>1800</WorkToMake>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <apparel>
             <layers>
@@ -47,6 +48,9 @@
             </recipeUsers>
             <displayPriority>307</displayPriority>
         </recipeMaker>
+		<equippedStatOffsets>
+			<FoodPoisonChance>-1.0</FoodPoisonChance>
+		</equippedStatOffsets>
         <thingCategories>
             <li>Celes_Apparel_Daily</li>
         </thingCategories>
@@ -56,21 +60,25 @@
 
     <ThingDef ParentName="Celes_ArmorMachineableBase"><!--战术背心-->
         <defName>Celes_TacticalVest</defName>
-        <label>Celes_TacticalVest</label>
-        <description>.</description>
+        <label>celestia tactical vest</label>
+        <description>Tactical vest for Celestia with inserted ballistic inserts, comes with several hanging pockets to increase the user's speed of changing ammunition and provide efficient protection for the torso.</description>
+		<techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Celes/Apparel/Middle/TacticalVest/TacticalVest</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <statBases>
-            <Mass>0.8</Mass>
-            <EquipDelay>1.8</EquipDelay>
-            <MaxHitPoints>100</MaxHitPoints>
-            <WorkToMake>5400</WorkToMake>
-            <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <Mass>4</Mass>
+            <EquipDelay>5</EquipDelay>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>9000</WorkToMake>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
         </statBases>
         <apparel>
             <layers>
@@ -80,7 +88,9 @@
             <useWornGraphicMask>true</useWornGraphicMask>
             <developmentalStageFilter>Adult</developmentalStageFilter>
             <bodyPartGroups>
-                <li>Torso</li>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
             </bodyPartGroups>
             <wornGraphicPath>Celes/Apparel/Middle/TacticalVest/TacticalVest</wornGraphicPath>
             <tags>
@@ -89,9 +99,9 @@
             </tags>
         </apparel>
         <costList>
-            <Steel>70</Steel>
-            <Cloth>30</Cloth>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <Steel>60</Steel>
+            <Cloth>40</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
@@ -109,21 +119,24 @@
 	
 	<ThingDef ParentName="Celes_ApparelArmorPowerBase"><!--轻型动力甲-->
 		<defName>Celes_LightPowerArmour</defName>
-		<label>Celes_LightPowerArmour</label>
-		<description>.</description>
+		<label>celestia sentinel sadira power armour</label>
+		<description>Modified from the Celestia IEVA suit of Sadira Power Armour, this armour is a lighter version.</description>
 		<graphicData>
 			<texPath>Celes/Apparel/Middle/LightPowerArmour/LightPowerArmour</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<statBases>
-			<Mass>0.8</Mass>
-			<EquipDelay>1.8</EquipDelay>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>5400</WorkToMake>
-			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<Mass>9</Mass>
+			<EquipDelay>12</EquipDelay>
+			<MaxHitPoints>450</MaxHitPoints>
+			<WorkToMake>54000</WorkToMake>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.5</ArmorRating_Heat>
+			<Insulation_Cold>283</Insulation_Cold>
+			<Insulation_Heat>500</Insulation_Heat>
 		</statBases>
 		<apparel>
 			<layers>
@@ -139,6 +152,12 @@
 				<li>Celes_Military</li>
 			</tags>
 		</apparel>
+		<costList>
+			<ComponentSpacer>4</ComponentSpacer>
+			<Plasteel>120</Plasteel>
+			<CelesAlloy>40</CelesAlloy>
+			<CelesAdvanceCloth>40</CelesAdvanceCloth>
+		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Celes_Apparel_IV</researchPrerequisite>
 			<recipeUsers>
@@ -146,9 +165,6 @@
 			</recipeUsers>
 			<displayPriority>307</displayPriority>
 		</recipeMaker>
-		<thingCategories>
-			<li>Celes_Apparel_Military</li>
-		</thingCategories>
 	</ThingDef>
 
 </Defs>

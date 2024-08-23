@@ -58,8 +58,8 @@
         <defaultDamage>60</defaultDamage>
         <defaultStoppingPower>0.5</defaultStoppingPower>
         <defaultArmorPenetration>0.50</defaultArmorPenetration>
-        <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
-        <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+        <buildingDamageFactorImpassable>6</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>3</buildingDamageFactorPassable>
         <plantDamageFactor>4</plantDamageFactor>
         <corpseDamageFactor>0.5</corpseDamageFactor>
         <explosionColorCenter>(0.25, 0.98, 1)</explosionColorCenter>

@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    <Celes_ExploreCoat.label>星铃拓荒大衣</Celes_ExploreCoat.label>
+	<Celes_SummerCoat.label>星铃防尘大衣</Celes_SummerCoat.label>
+	<!-- EN: celestia dustproof coat -->
+	<Celes_SummerCoat.description>一件用于抵御高温热风，粗粝沙尘和强烈日晒的防尘大衣，因为其外形设计在星铃社会格外流行。\n\n。</Celes_SummerCoat.description>
+	<!-- EN: A dustproof coat used to protect against hot winds, coarse sand and intense sunlight, it is extraordinarily popular in Celestia society because of its form factor. -->
+
+	<Celes_WinterCoat.label>星铃风雪大衣</Celes_WinterCoat.label>
+	<!-- EN: celestia parka -->
+	<Celes_WinterCoat.description>一件格外保温的厚重大衣，用以对抗极端的严寒天气，即使在最寒冷的天气也能保持温暖。\n\n。</Celes_WinterCoat.description>
+	<!-- EN: An extra-insulating heavy coat to combat extreme cold weather and keep you warm even on the coldest days. \n\n. -->
+
+	<Celes_TrenchCoat.label>星铃运动外套</Celes_TrenchCoat.label>
+	<!-- EN: celestia trench coat -->
+	<Celes_TrenchCoat.description>一件遮蔽风雨的坚固运动外套，可以保持基本的温度舒适。\n\n。</Celes_TrenchCoat.description>
+	<!-- EN: A trench coat that protects you from the elements and keeps you comfortable at a basic temperature. \n\n. -->
+
+	<Celes_ExploreCoat.label>星铃拓荒大衣</Celes_ExploreCoat.label>
     <!-- EN: celestia explore coat -->
-    <Celes_ExploreCoat.description>一件易于制造的宽松大衣，附带大量的挂带和松紧带来适应各种条件，即使是敲着石头的土著也能勉强模仿这种设计。\n\n这件大衣设计上是为了在身边高度缺乏工具的情况下，提供最基础的衣物保护。但这种作为备选的备选方案的情况几乎没有被投入过多关注，以至于这件大衣似乎多了许多并不必要的结构——多到可以被星铃们当作流行时装。</Celes_ExploreCoat.description>
-    <!-- EN: An easy-to-fabricate loose-fitting coat that comes with plenty of hanging straps and elasticated bands to suit a variety of conditions, a design that even rock-knocking natives could barely emulate. \n\nThis coat was designed to provide the most basic clothing protection in situations where there was a high lack of tools around. But so little attention has been devoted to this situation as an alternate alternative that the coat seems to have so much extra and unnecessary structure - so much that it could be passed off as popular fashion by the Celestia. -->
+    <Celes_ExploreCoat.description>一件易于制造的宽松大衣，附带大量的挂带和松紧带来适应各种条件。\n\n这件大衣设计上是为了在身边高度缺乏工具的情况下，提供最基础的衣物保护。但这种作为备选的备选方案的情况几乎没有被投入过多关注，以至于这件大衣似乎多了许多并不必要的结构——多到可以被星铃们当作流行时装。</Celes_ExploreCoat.description>
+    <!-- EN: An easy-to-fabricate loose-fitting coat that comes with plenty of hanging straps and elasticated bands to suit a variety of conditions. \n\nThis coat was designed to provide the most basic clothing protection in situations where there was a high lack of tools around. But so little attention has been devoted to this situation as an alternate alternative that the coat seems to have so much extra and unnecessary structure - so much that it could be passed off as popular fashion by the Celestia. -->
 
-    <Celes_TrenchCoat.label>星铃防风大衣</Celes_TrenchCoat.label>
-    <!-- EN: celestia windproof coat -->
-    <Celes_TrenchCoat.description>一件用于抵御高温热风，粗粝沙尘和强烈日晒的防风大衣，在星铃社会广泛流行。\n\n你看到这个表示这段待写。</Celes_TrenchCoat.description>
-    <!-- EN: A windproof coat which used to protect against hot winds, coarse sand and intense sunlight is widely popular in Celestia society. \n\n. -->
+	<Celes_Celes_LabCoat.label>星铃实验服</Celes_Celes_LabCoat.label>
+	<!-- EN: celestia lab coat -->
+	<Celes_Celes_LabCoat.description>一件干净整洁的白大褂，可以有效提高研究的效率。\n\n。</Celes_Celes_LabCoat.description>
+	<!-- EN: A clean and tidy lab coat can be effective in improving the efficiency of research. \n\n. -->
 
-    <Celes_MilitaryCoat.label>星铃军装大衣</Celes_MilitaryCoat.label>
+	<Celes_MilitaryCoat.label>星铃军装大衣</Celes_MilitaryCoat.label>
     <!-- EN: celestia military coat -->
     <Celes_MilitaryCoat.description>参照星铃海军制服设计的低温环境军装，删减了许多针对太空环境的设计，同时也作为星铃军人正装的外套。\n\n满腔热情是不少星铃入伍的契机，而其次大概就是一袭帅气的军装。而在事实上属于星铃海军编制的拓荒队，自然也就沿用了这份来自太空的赠礼。</Celes_MilitaryCoat.description>
     <!-- EN: Designed with reference to Celestia's naval uniforms for low temperature environments and also serve as an outerwear for Celestia's military formal wear. Though, many of the designs for the space environment have been cut.\n\n Full of enthusiasm is the opportunity for many Celestia to enlist in the army, and the second is probably a handsome uniform. And in fact belongs to the Celestia Navy establishment of the pioneering team, naturally followed this gift from space.　-->

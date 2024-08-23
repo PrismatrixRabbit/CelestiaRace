@@ -39,14 +39,13 @@
     <defaultFactionType>Celes_PlayerFaction</defaultFactionType>
 </PawnKindDef>
     
-    <PawnKindDef ParentName="Celes_PawnBase">
+    <PawnKindDef Name="Celes_Outlander" ParentName="Celes_PawnBase">
         <defName>Celes_Outlander</defName>
         <label>celestia outlander</label>
         <combatPower>45</combatPower>
         <itemQuality>Normal</itemQuality>
         <isFighter>false</isFighter>
-        <factionLeader>true</factionLeader><!--这个要改的-->
-        <gearHealthRange>0.2~2.0</gearHealthRange>
+        <gearHealthRange>0.7~2.0</gearHealthRange>
         <apparelTags>
             <li>Celes_Uniform</li>
             <li>Celes_Daily</li>
@@ -71,47 +70,8 @@
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
         <weaponMoney>400~1000</weaponMoney>
         <weaponTags>
-            <li>Celes_EarlyWeapon</li>
-        </weaponTags>
-        <backstoryFilters>
-            <li>
-                <categories>
-                    <li>Celes_Outlander</li>
-                </categories>
-            </li>
-        </backstoryFilters>
-        <inventoryOptions>
-            <skipChance>0.25</skipChance>
-            <subOptionsChooseOne>
-                <li>
-                    <choiceChance>100</choiceChance>
-                    <thingDef>Silver</thingDef>
-                    <countRange>
-                        <min>20</min>
-                        <max>75</max>
-                    </countRange>
-                </li>
-            </subOptionsChooseOne>
-        </inventoryOptions>
-    </PawnKindDef>
-    
-    <PawnKindDef ParentName="Celes_PawnBase">
-        <defName>Celes_Trader</defName>
-        <label>celestia trader</label>
-        <trader>true</trader>
-        <combatPower>45</combatPower>
-        <itemQuality>Normal</itemQuality>
-        <isFighter>false</isFighter>
-        <gearHealthRange>1~1</gearHealthRange>
-        <apparelTags>
-            <li>Celes_Uniform</li>
-            <li>Celes_Daily</li>
-        </apparelTags>
-        <apparelMoney>150~500</apparelMoney>
-        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-        <weaponMoney>750~10000</weaponMoney>
-        <weaponTags>
-            <li>Celes_MidWeapon</li>
+            <li>Celes_EarlyWeaponAssault</li>
+			<li>Celes_EarlyMelee</li>
         </weaponTags>
         <backstoryFilters>
             <li>
@@ -135,20 +95,132 @@
         </inventoryOptions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="Celes_PawnBase">
+	<PawnKindDef ParentName="Celes_Outlander">
+		<defName>Celes_OutlanderLeader</defName>
+		<label>celestia outlander leader</label>
+		<itemQuality>Excellent</itemQuality>
+		<factionLeader>true</factionLeader>
+		<apparelMoney>150~1000</apparelMoney>
+		<specificApparelRequirements>
+            <li>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <requiredTag>Celes_Military</requiredTag>
+            </li>
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <requiredTag>Celes_Explore</requiredTag>
+            </li>
+        </specificApparelRequirements>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>Celes_SpacerWeaponPDW</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Celes_PawnBase">
+        <defName>Celes_Trader</defName>
+        <label>celestia trader</label>
+        <trader>true</trader>
+        <combatPower>45</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>false</isFighter>
+        <gearHealthRange>1~1</gearHealthRange>
+        <apparelTags>
+            <li>Celes_Uniform</li>
+        </apparelTags>
+        <apparelMoney>150~500</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <weaponMoney>750~10000</weaponMoney>
+        <weaponTags>
+            <li>Celes_MidWeaponAssault</li>
+        </weaponTags>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Celes_Outlander</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <inventoryOptions>
+            <skipChance>0.25</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>100</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>
+                        <min>20</min>
+                        <max>75</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+	<PawnKindDef Name="Celes_ArmedExplorer" ParentName="Celes_PawnBase">
+		<defName>Celes_ArmedExplorer</defName>
+		<label>celestia armed pioneer</label>
+		<combatPower>45</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>true</isFighter>
+		<apparelTags>
+			<li>Celes_Explore</li>
+		</apparelTags>
+		<apparelMoney>150~5000</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponMoney>750~10000</weaponMoney>
+		<weaponTags>
+			<li>Celes_EarlyWeaponAssault</li>
+		</weaponTags>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Celes_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>100</choiceChance>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>20</min>
+						<max>75</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Celes_ArmedExplorer">
+		<defName>Celes_ArmedExplorerSniper</defName>
+		<label>celestia armed pioneer sniper</label>
+		<combatPower>60</combatPower>
+		<itemQuality>Good</itemQuality>
+		<weaponTags>
+			<li>Celes_EarlyWeaponSniper</li>
+		</weaponTags>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef Name="Celes_Scout" ParentName="Celes_PawnBase">
         <defName>Celes_Scout</defName>
         <label>celestia vanguard</label>
-        <combatPower>60</combatPower>
-        <itemQuality>Good</itemQuality>
+        <combatPower>55</combatPower>
+        <itemQuality>Normal</itemQuality>
         <isFighter>true</isFighter>
         <apparelTags>
             <li>Celes_Military</li>
         </apparelTags>
         <apparelMoney>150~5000</apparelMoney>
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-        <weaponMoney>750~100000</weaponMoney>
+        <weaponMoney>750~10000</weaponMoney>
         <weaponTags>
-            <li>Celes_MidWeapon</li>
+            <li>Celes_MidWeaponAssault</li>
         </weaponTags>
         <backstoryFilters>
             <li>
@@ -173,5 +245,113 @@
         <initialWillRange>5~7</initialWillRange>
         <initialResistanceRange>15~24</initialResistanceRange>
     </PawnKindDef>
+
+	<PawnKindDef ParentName="Celes_Scout">
+		<defName>Celes_ScoutSniper</defName>
+		<label>celestia vanguard sniper</label>
+		<combatPower>70</combatPower>
+		<itemQuality>Good</itemQuality>
+		<weaponTags>
+			<li>Celes_MidWeaponSniper</li>
+		</weaponTags>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Celes_Scout">
+		<defName>Celes_ScoutMelee</defName>
+		<label>celestia vanguard guard</label>
+		<combatPower>60</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<weaponTags>
+			<li>Celes_MidMeleeStandard</li>
+		</weaponTags>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef Name="Celes_Elite" ParentName="Celes_PawnBase">
+		<defName>Celes_Elite</defName>
+		<label>celestia regular marine</label>
+		<combatPower>90</combatPower>
+		<itemQuality>Good</itemQuality>
+		<isFighter>true</isFighter>
+		<apparelTags>
+			<li>Celes_Elite</li>
+			<li>Celes_Military</li>
+		</apparelTags>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Celes_Elite</requiredTag>
+			</li>
+		</specificApparelRequirements>
+		<apparelMoney>150~5000</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponMoney>2000~10000</weaponMoney>
+		<weaponTags>
+			<li>Celes_SpacerWeaponAssault</li>
+		</weaponTags>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Celes_Military</li>
+					<li>Celes_Spacer</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>100</choiceChance>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>20</min>
+						<max>75</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<biocodeWeaponChance>1.0</biocodeWeaponChance>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Celes_Elite">
+		<defName>Celes_EliteSniper</defName>
+		<label>celestia regular marine sniper</label>
+		<combatPower>110</combatPower>
+		<itemQuality>Excellent</itemQuality>
+		<weaponTags>
+			<li>Celes_SpacerWeaponSniper</li>
+		</weaponTags>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Celes_Elite">
+		<defName>Celes_EliteSupport</defName>
+		<label>celestia regular marine supporter</label>
+		<combatPower>120</combatPower>
+		<itemQuality>Excellent</itemQuality>
+		<weaponTags>
+			<li>Celes_SpacerWeaponHeavy</li>
+		</weaponTags>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Celes_Elite">
+		<defName>Celes_EliteMelee</defName>
+		<label>celestia regular marine guard</label>
+		<combatPower>100</combatPower>
+		<itemQuality>Good</itemQuality>
+		<weaponTags>
+			<li>Celes_SpacerMeleeStandard</li>
+		</weaponTags>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+	</PawnKindDef>
 
 </Defs>

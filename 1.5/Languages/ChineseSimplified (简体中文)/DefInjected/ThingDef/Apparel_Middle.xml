@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Celes_KitchenApron.label>星铃厨房围裙</Celes_KitchenApron.label>
+	<!-- EN: celestia kitchen apron -->
+	<Celes_KitchenApron.description>一件简单的厨房围裙，可以保持烹饪时的洁净。</Celes_KitchenApron.description>
+	<!-- EN: A simple kitchen apron will keep things clean while cooking. -->
+
+	<Celes_TacticalVest.label>星铃战术背心</Celes_TacticalVest.label>
+	<!-- EN: celestia tactical vest -->
+	<Celes_TacticalVest.description>适用于星铃的战术背心，插有防弹插板，附带数个挂袋，可以提高使用者的换弹速度并对躯干提供高效的保护。</Celes_TacticalVest.description>
+	<!-- EN: Tactical vest for Celestia with inserted ballistic inserts, comes with several hanging pockets to increase the user's speed of changing ammunition and provide efficient protection for the torso. -->
+
+	<Celes_LightPowerArmour.label>哨卫型天苑动力护甲</Celes_LightPowerArmour.label>
+	<!-- EN: celestia sentinel sadira power armour  -->
+	<Celes_LightPowerArmour.description>改良自星铃IEVA套装的天苑动力护甲，这款护甲是轻量化版本。</Celes_LightPowerArmour.description>
+	<!-- EN: Modified from the Celestia IEVA suit of Sadira Power Armour, this armour is a lighter version. -->
+	
+</LanguageData>

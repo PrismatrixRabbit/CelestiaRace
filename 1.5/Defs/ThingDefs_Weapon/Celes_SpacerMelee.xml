@@ -14,6 +14,9 @@
         <thingCategories Inherit="false">
             <li>Celes_WeaponsMelee</li>
         </thingCategories>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
     </ThingDef>
 
     <ThingDef ParentName="Celes_SpacerMeleeBase">
@@ -27,22 +30,25 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
-            <CelesAlloy>40</CelesAlloy>
-            <ComponentSpacer>3</ComponentSpacer>
+            <CelesAlloy>80</CelesAlloy>
+            <ComponentSpacer>2</ComponentSpacer>
         </costList>
 		<statBases>
-            <WorkToMake>7000</WorkToMake>
+            <WorkToMake>45000</WorkToMake>
             <Mass>0.85</Mass>
         </statBases>
+		<weaponTags>
+			<li>Celes_SpacerMeleeStandard</li>
+		</weaponTags>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
-            <MeleeDodgeChance>0.4</MeleeDodgeChance>
-            <MeleeHitChance>0.4</MeleeHitChance>
+            <MeleeDodgeChance>2.0</MeleeDodgeChance>
+            <MeleeHitChance>4.0</MeleeHitChance>
             <NegotiationAbility>0.5</NegotiationAbility>
         </equippedStatOffsets>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>12</Crafting>
+                <Crafting>9</Crafting>
             </skillRequirements>
         </recipeMaker>
         <tools>
@@ -101,21 +107,22 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
-            <CelesAlloy>20</CelesAlloy>
+            <CelesAlloy>40</CelesAlloy>
             <ComponentSpacer>1</ComponentSpacer>
         </costList>
 		<statBases>
-            <WorkToMake>7000</WorkToMake>
-            <Mass>0.85</Mass>
+            <WorkToMake>35000</WorkToMake>
+            <Mass>0.25</Mass>
         </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
-            <MeleeHitChance>1</MeleeHitChance>
-            <PlantWorkSpeed>0.25</PlantWorkSpeed>
+			<MeleeDodgeChance>4.0</MeleeDodgeChance>
+            <MeleeHitChance>4.0</MeleeHitChance>
+			<GeneralLaborSpeed>0.25</GeneralLaborSpeed>
         </equippedStatOffsets>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>12</Crafting>
+                <Crafting>8</Crafting>
             </skillRequirements>
         </recipeMaker>
         <tools>
@@ -214,10 +221,10 @@
     <relicChance>3</relicChance>
     <smeltable>false</smeltable>
 	<equippedStatOffsets>
-        <NegotiationAbility>1</NegotiationAbility>
-        <SocialImpact>1</SocialImpact>
-        <MeleeDodgeChance>0.6</MeleeDodgeChance>
-        <MeleeHitChance>0.4</MeleeHitChance>
+        <NegotiationAbility>0.5</NegotiationAbility>
+        <SocialImpact>0.5</SocialImpact>
+        <MeleeDodgeChance>6.0</MeleeDodgeChance>
+        <MeleeHitChance>4.0</MeleeHitChance>
     </equippedStatOffsets>
     <weaponClasses>
       <li>MeleePiercer</li>

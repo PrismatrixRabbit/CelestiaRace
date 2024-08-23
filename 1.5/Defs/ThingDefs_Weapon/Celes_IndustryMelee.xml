@@ -43,7 +43,7 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
-            <Steel>60</Steel>
+            <Steel>45</Steel>
         </costList>
         <statBases>
             <WorkToMake>7000</WorkToMake>
@@ -51,8 +51,7 @@
         </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
-            <MeleeHitChance>0.5</MeleeHitChance>
-            <PlantWorkSpeed>1.2</PlantWorkSpeed>
+            <PlantWorkSpeed>0.4</PlantWorkSpeed>
         </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisites>
@@ -98,23 +97,22 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
-            <CelesAlloy>40</CelesAlloy>
+			<Steel>50</Steel>
         </costList>
         <statBases>
-            <WorkToMake>16000</WorkToMake>
-            <Mass>1</Mass>
+            <WorkToMake>15000</WorkToMake>
+            <Mass>0.9</Mass>
         </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
-            <MeleeHitChance>0.75</MeleeHitChance>
-            <MiningSpeed>2</MiningSpeed>
+            <MiningSpeed>0.4</MiningSpeed>
         </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisites>
                 <li>Celes_Weapon_I</li>
             </researchPrerequisites>
             <skillRequirements>
-                <Crafting>6</Crafting>
+                <Crafting>5</Crafting>
             </skillRequirements>
         </recipeMaker>
         <weaponClasses>
@@ -152,23 +150,24 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
-            <CelesAlloy>40</CelesAlloy>
-            <ComponentIndustrial>4</ComponentIndustrial>
+			<Steel>90</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
 		<statBases>
-            <WorkToMake>16000</WorkToMake>
-            <Mass>1</Mass>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>1.5</Mass>
         </statBases>
+		<weaponTags>
+			<li>Celes_MidMeleeStandard</li>
+		</weaponTags>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
-            <MeleeDodgeChance>0.4</MeleeDodgeChance>
-            <MeleeHitChance>0.4</MeleeHitChance>
             <NegotiationAbility>0.3</NegotiationAbility>
         </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_II</researchPrerequisite>
             <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
         <tools>
@@ -214,22 +213,22 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
-            <CelesAlloy>20</CelesAlloy>
-            <ComponentIndustrial>4</ComponentIndustrial>
+			<Steel>30</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
 		<statBases>
-            <WorkToMake>16000</WorkToMake>
-            <Mass>1</Mass>
+            <WorkToMake>9000</WorkToMake>
+            <Mass>0.4</Mass>
         </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
-            <MeleeHitChance>1</MeleeHitChance>
-            <PlantWorkSpeed>0.25</PlantWorkSpeed>
+			<MeleeDodgeChance>2.0</MeleeDodgeChance>
+			<GeneralLaborSpeed>0.25</GeneralLaborSpeed>
         </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_II</researchPrerequisite>
             <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
         <tools>

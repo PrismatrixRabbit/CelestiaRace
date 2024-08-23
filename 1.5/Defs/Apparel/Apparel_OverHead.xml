@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	
-	<ThingDef Name="Celes_ShellBase" ParentName="Celes_ApparelBase" Abstract="True">
+	<ThingDef Name="Celes_OverheadBase" ParentName="Celes_ApparelBase" Abstract="True">
 		<statBases>
 			<Mass>0.8</Mass>
 			<EquipDelay>1.8</EquipDelay>
@@ -16,9 +16,9 @@
 		</apparel>
 	</ThingDef>
 	
-	<!-- ========== 制衣标准 ========= -->
+	<!-- ========== 制衣标准 ========= 
 
-	<ThingDef ParentName="Celes_ShellBase"><!--防晒沙滩帽-->
+	<ThingDef ParentName="Celes_OverheadBase">  防晒沙滩帽
 		<defName>Celes_SummerHat</defName>
 		<label>Celes_SummerHat</label>
 		<description>.</description>
@@ -84,7 +84,7 @@
 		<comps>
 			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
 		</comps>
-	</HediffDef>
-	
-	
+	</HediffDef> -->
+
+
 </Defs>

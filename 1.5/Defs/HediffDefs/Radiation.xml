@@ -66,8 +66,8 @@
                 <painOffset>0.50</painOffset>
                 <capMods>
                     <li>
-                        <capacity>Consciousness</capacity>
-                        <setMax>0.10</setMax>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.30</postFactor>
                     </li>
                 </capMods>
                 <hediffGivers>

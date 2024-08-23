@@ -5,11 +5,11 @@
     <!-- EN: Celestia standard mono saber  -->
     <CelesSaberSpacer.description>一把星铃制式标准的单分子军刀，对古典款军刀的重设计。使用相当致命的单分子刀刃，在攻击时会额外附带短暂的EMP伤害。</CelesSaberSpacer.description>
     <!-- EN: A Celestia standard mono saber, a redesign of the classic model. Uses a fairly lethal monomolecular blade, with an additional short burst of EMP damage when attacking.  -->
-    <CelesMonoDagger.tools.0.label>刀尖</CelesMonoDagger.tools.0.label>
+	<CelesSaberSpacer.tools.0.label>刀尖</CelesSaberSpacer.tools.0.label>
     <!-- EN: point  -->
-    <CelesMonoDagger.tools.1.label>刀刃</CelesMonoDagger.tools.1.label>
+	<CelesSaberSpacer.tools.1.label>刀刃</CelesSaberSpacer.tools.1.label>
     <!-- EN: edge  -->
-    <CelesMonoDagger.tools.2.label>刀柄</CelesMonoDagger.tools.2.label>
+	<CelesSaberSpacer.tools.2.label>刀柄</CelesSaberSpacer.tools.2.label>
     <!-- EN: handle  -->
     
     <CelesMonoDagger.label>星铃制式单分子匕首</CelesMonoDagger.label>

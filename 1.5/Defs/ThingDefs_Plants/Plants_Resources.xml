@@ -5,34 +5,41 @@
         <label>crystal orchid</label>
         <description>Crystal Orchid, scientific name Dust-Mech Regeneration Plant. A genetically modified plant that is highly symbiotic with Dust-Mech for the production of Dust-Mech substances, its seed packets are placed into almost all Celestia emergency survival kits as one of the sources of Dust-Mech substances for extreme situations, and possibly the only source of Dust-Mech for those who do not want to risk serious blood loss. \n\nIts special and interesting life cycle and extremely high mineral requirements make it require a long growing time and a very high fertility requirement for the land, almost exclusively in hydroponic tanks and fertile soil. Please be careful not to let the cold snap destroy these crops.</description>
         <statBases>
-            <MaxHitPoints>185</MaxHitPoints>
+			<Beauty>2</Beauty>
+            <MaxHitPoints>75</MaxHitPoints>
+			<Flammability>0.5</Flammability>
             <Nutrition>0.2</Nutrition>
         </statBases>
         <graphicData>
-            <texPath>Things/Plant/CottonPlant</texPath>
+            <texPath>Celes/Plant/Plant_CelesNano</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
         <selectable>true</selectable>
         <pathCost>14</pathCost>
         <ingestible/>
         <plant>
-            <growDays>12</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>CelesNanoMachine</harvestedThingDef>
-            <harvestYield>10</harvestYield>
-            <sowTags>
-                <li>Ground</li>
-                <li>Hydroponic</li>
-            </sowTags>
-            <sowMinSkill>6</sowMinSkill>
-            <sowResearchPrerequisites>
-                <li>Celes_MainTech_II</li>
-            </sowResearchPrerequisites>
-            <topWindExposure>0.1</topWindExposure>
-            <immatureGraphicPath>Things/Plant/CottonPlant_Immature</immatureGraphicPath>
-            <visualSizeRange>0.3~1.05</visualSizeRange>
+			<immatureGraphicPath>Celes/Plant/Plant_CelesNanoImmature</immatureGraphicPath>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>15</growDays>
+			<sowWork>400</sowWork>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>CelesNanoMachine</harvestedThingDef>
+			<harvestYield>2</harvestYield>
+			<neverBlightable>true</neverBlightable>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<sowMinSkill>6</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Celes_MainTech_II</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>0.6~1.05</visualSizeRange>
             <wildOrder>2</wildOrder>
+			<pollution>Any</pollution>
+			<fertilityMin>1.20</fertilityMin>
         </plant>
     </ThingDef>
 </Defs>

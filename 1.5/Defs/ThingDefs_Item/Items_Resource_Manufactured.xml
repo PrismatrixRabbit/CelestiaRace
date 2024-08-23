@@ -43,7 +43,7 @@
         <intricate>true</intricate>
         <statBases>
             <MaxHitPoints>50</MaxHitPoints>
-            <MarketValue>120</MarketValue>
+            <MarketValue>12</MarketValue>
             <Mass>0.001</Mass>
             <Flammability>0</Flammability>
         </statBases>
@@ -102,19 +102,6 @@
             <Plasteel>2</Plasteel>
             <CelesNanoMachine>1</CelesNanoMachine>
         </costList>
-        <recipeMaker>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <recipeUsers>
-                <li>Celes_TailoringTab</li>
-            </recipeUsers>
-            <researchPrerequisite>Celes_AdvancedCloth</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>8</Crafting>
-                <Intellectual>10</Intellectual>
-            </skillRequirements>
-            <bulkRecipeCount>5</bulkRecipeCount>
-        </recipeMaker>
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>
 
@@ -194,11 +181,12 @@
         <stackLimit>50</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
-            <MaxHitPoints>70</MaxHitPoints>
-            <MarketValue>32</MarketValue>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>150</MarketValue>
             <Mass>0.6</Mass>
             <Flammability>0.6</Flammability>
-            <DeteriorationRate>2.0</DeteriorationRate>
+            <DeteriorationRate>5.0</DeteriorationRate>
+			<WorkToMake>3000</WorkToMake>
         </statBases>
         <intricate>true</intricate>
         <thingCategories>
@@ -207,7 +195,7 @@
         <costList>
             <Steel>5</Steel>
             <Gold>1</Gold>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -217,8 +205,8 @@
             </recipeUsers>
             <researchPrerequisite>Celes_Manufactory_I</researchPrerequisite>
             <skillRequirements>
-                <Crafting>8</Crafting>
-                <Intellectual>10</Intellectual>
+                <Crafting>6</Crafting>
+                <Intellectual>4</Intellectual>
             </skillRequirements>
             <bulkRecipeCount>5</bulkRecipeCount>
         </recipeMaker>

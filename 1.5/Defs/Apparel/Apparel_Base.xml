@@ -92,17 +92,12 @@
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 	  <skillRequirements>
-        <Crafting>7</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
 	<thingCategories>
-      <li>ApparelArmor</li>
+      <li>Celes_Apparel_Military</li>
     </thingCategories>
-	<costList>
-      <ComponentSpacer>4</ComponentSpacer>
-      <Plasteel>100</Plasteel>
-      <Uranium>20</Uranium>
-    </costList>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -119,10 +114,10 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
+		<tags>
+			<li>Celes_Elite</li>
+		</tags>
     </apparel>
-    <!--<comps>
-      <li Class="CompProperties_Biocodable"/>
-    </comps>-->
   </ThingDef>
   
   

@@ -29,4 +29,11 @@
     <Make_CelesAlloy.jobString>正在转化灵尘合金</Make_CelesAlloy.jobString>
     <!-- EN: reconstructing Chime Alloy -->
 
+	<Make_CelesAdvanceCloth.label>重组尘化丝绸</Make_CelesAdvanceCloth.label>
+	<!-- EN: reorganise Dust-Mech Silk -->
+	<Make_CelesAdvanceCloth.description>利用尘构将边缘世界的原生材料重组为尘化丝绸。</Make_CelesAdvanceCloth.description>
+	<!-- EN: Using Dust-Mech to reorganise Rimworld's native materials into Dust-Mech Silk. -->
+	<Make_CelesAdvanceCloth.jobString>正在重组尘化丝绸</Make_CelesAdvanceCloth.jobString>
+	<!-- EN: reorganising Dust-Mech Silk -->
+
 </LanguageData>

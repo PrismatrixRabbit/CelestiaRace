@@ -24,7 +24,30 @@
     <!-- EN: A laborer sent to you by [permitFaction_name] has died. Your goodwill with [permitFaction_name] has fallen by [goodwillPenaltyPawn]. -->
     <Celes_Permit_CallLaborers.LetterTextLaborerDied.slateRef>由[permitFaction_name]派遣来帮你的一名外勤建设工死亡了。你与[permitFaction_name]的好感度降低了[goodwillPenaltyPawn]。</Celes_Permit_CallLaborers.LetterTextLaborerDied.slateRef>
 
-    <Celes_Permit_CallForces.questDescriptionAndNameRules.rulesStrings>
+	<!-- EN:
+      <li>questName->Laborers</li>
+      <li>questDescription-></li>
+    -->
+	<Celes_Permit_CallExplore.questDescriptionAndNameRules.rulesStrings>
+		<li>questName->志愿拓荒队员</li>
+		<li>questDescription-></li>
+	</Celes_Permit_CallExplore.questDescriptionAndNameRules.rulesStrings>
+	<!-- EN: Laborers arrived -->
+	<Celes_Permit_CallExplore.LetterLabelLaborersArrived.slateRef>志愿拓荒队已经抵达</Celes_Permit_CallExplore.LetterLabelLaborersArrived.slateRef>
+	<!-- EN: The laborers from [permitFaction_name] have arrived. A shuttle will come to collect them in [laborersDurationDays] days. -->
+	<Celes_Permit_CallExplore.LetterTextLaborersArrived.slateRef>来自[permitFaction_name]的志愿拓荒队已经抵达。一艘穿梭机将在[laborersDurationDays]天后接走他们。记得让她们及时登机，不然[permitFaction_name]肯定会非常不满。</Celes_Permit_CallExplore.LetterTextLaborersArrived.slateRef>
+	<!-- EN: Should depart on shuttle -->
+	<Celes_Permit_CallExplore.InspectStringDepartShuttle.slateRef>应搭乘穿梭机离开</Celes_Permit_CallExplore.InspectStringDepartShuttle.slateRef>
+	<!-- EN: Shuttle arrived -->
+	<Celes_Permit_CallExplore.LetterLabelShuttleArrived.slateRef>穿梭机抵达</Celes_Permit_CallExplore.LetterLabelShuttleArrived.slateRef>
+	<!-- EN: A shuttle has arrived to collect the laborers from [permitFaction_name]. -->
+	<Celes_Permit_CallExplore.LetterTextShuttleArrivedForLaborers.slateRef>一艘穿梭机已抵达，以接走来自[permitFaction_name]的志愿拓荒队。</Celes_Permit_CallExplore.LetterTextShuttleArrivedForLaborers.slateRef>
+	<!-- EN: Laborer died: {SUBJECT_definite} -->
+	<Celes_Permit_CallExplore.LetterLabelLaborerDied.slateRef>志愿拓荒队员死亡：{SUBJECT_definite}</Celes_Permit_CallExplore.LetterLabelLaborerDied.slateRef>
+	<!-- EN: A laborer sent to you by [permitFaction_name] has died. Your goodwill with [permitFaction_name] has fallen by [goodwillPenaltyPawn]. -->
+	<Celes_Permit_CallExplore.LetterTextLaborerDied.slateRef>由[permitFaction_name]派遣来帮你的一名志愿拓荒队员死亡了。你与[permitFaction_name]的好感度降低了[goodwillPenaltyPawn]。</Celes_Permit_CallExplore.LetterTextLaborerDied.slateRef>
+
+	<Celes_Permit_CallForces.questDescriptionAndNameRules.rulesStrings>
         <li>questName->援军</li>
         <li>questDescription-></li>
     </Celes_Permit_CallForces.questDescriptionAndNameRules.rulesStrings>

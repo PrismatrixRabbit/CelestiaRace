@@ -14,6 +14,9 @@
         <thingCategories Inherit="false">
             <li>Celes_WeaponsRanged</li>
         </thingCategories>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
     </ThingDef>
     
     <ThingDef ParentName="Celes_SpacerGunBase">
@@ -29,7 +32,7 @@
         <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
-            <WorkToMake>45000</WorkToMake>
+            <WorkToMake>51000</WorkToMake>
             <Mass>5.0</Mass>
             <AccuracyTouch>0.65</AccuracyTouch>
             <AccuracyShort>0.75</AccuracyShort>
@@ -37,19 +40,25 @@
             <AccuracyLong>0.55</AccuracyLong>
             <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
         </statBases>
+		<weaponTags>
+			<li>Celes_SpacerWeaponAssault</li>
+		</weaponTags>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
             <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>9</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
                 <li>Celes_MultifunctionalTab</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Plasteel>80</Plasteel>
-            <ComponentSpacer>5</ComponentSpacer>
+			<CelesAlloy>40</CelesAlloy>
+            <ComponentSpacer>3</ComponentSpacer>
         </costList>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>3.0</ShootingAccuracyPawn>
+		</equippedStatOffsets>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
@@ -132,6 +141,9 @@
             <AccuracyLong>0.15</AccuracyLong>
             <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
         </statBases>
+		<weaponTags>
+			<li>Celes_SpacerWeaponPDW</li>
+		</weaponTags>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
             <skillRequirements>
@@ -142,9 +154,12 @@
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Plasteel>80</Plasteel>
-            <ComponentSpacer>5</ComponentSpacer>
+			<CelesAlloy>20</CelesAlloy>
+            <ComponentSpacer>2</ComponentSpacer>
         </costList>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>3.0</ShootingAccuracyPawn>
+		</equippedStatOffsets>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
@@ -196,7 +211,7 @@
         <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
-            <WorkToMake>45000</WorkToMake>
+            <WorkToMake>75000</WorkToMake>
             <Mass>10.0</Mass>
             <AccuracyTouch>0.35</AccuracyTouch>
             <AccuracyShort>0.65</AccuracyShort>
@@ -204,20 +219,24 @@
             <AccuracyLong>0.92</AccuracyLong>
             <RangedWeapon_Cooldown>3.70</RangedWeapon_Cooldown>
         </statBases>
+		<weaponTags>
+			<li>Celes_SpacerWeaponSniper</li>
+		</weaponTags>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
             <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>10</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
                 <li>Celes_MultifunctionalTab</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Plasteel>80</Plasteel>
+			<CelesAlloy>80</CelesAlloy>
             <ComponentSpacer>5</ComponentSpacer>
         </costList>
         <equippedStatOffsets>
+			<ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
             <MoveSpeed>-0.4</MoveSpeed>
         </equippedStatOffsets>
         <thingSetMakerTags>
@@ -271,7 +290,7 @@
         <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
-            <WorkToMake>45000</WorkToMake>
+            <WorkToMake>81000</WorkToMake>
             <Mass>10.0</Mass>
             <AccuracyTouch>0.20</AccuracyTouch>
             <AccuracyShort>0.25</AccuracyShort>
@@ -279,17 +298,20 @@
             <AccuracyLong>0.20</AccuracyLong>
             <RangedWeapon_Cooldown>5.3</RangedWeapon_Cooldown>
         </statBases>
+		<weaponTags>
+			<li>Celes_SpacerWeaponHeavy</li>
+		</weaponTags>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_IV</researchPrerequisite>
             <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>12</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
                 <li>Celes_MultifunctionalTab</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Plasteel>80</Plasteel>
+			<CelesAlloy>80</CelesAlloy>
             <ComponentSpacer>5</ComponentSpacer>
         </costList>
         <equippedStatOffsets>
@@ -346,7 +368,7 @@
         <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
-            <WorkToMake>45000</WorkToMake>
+            <WorkToMake>81000</WorkToMake>
             <Mass>10.0</Mass>
             <AccuracyTouch>0.55</AccuracyTouch>
             <AccuracyShort>0.75</AccuracyShort>
@@ -354,17 +376,20 @@
             <AccuracyLong>0.55</AccuracyLong>
             <RangedWeapon_Cooldown>7.3</RangedWeapon_Cooldown>
         </statBases>
+		<weaponTags>
+			<li>Celes_SpacerWeaponHeavy</li>
+		</weaponTags>
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_IV</researchPrerequisite>
             <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>12</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
                 <li>Celes_MultifunctionalTab</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Plasteel>80</Plasteel>
+			<CelesAlloy>80</CelesAlloy>
             <ComponentSpacer>5</ComponentSpacer>
         </costList>
         <equippedStatOffsets>
