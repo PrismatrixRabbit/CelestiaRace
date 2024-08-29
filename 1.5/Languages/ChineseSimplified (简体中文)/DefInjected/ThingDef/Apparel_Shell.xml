@@ -21,9 +21,9 @@
     <Celes_ExploreCoat.description>一件易于制造的宽松大衣，附带大量的挂带和松紧带来适应各种条件。\n\n这件大衣设计上是为了在身边高度缺乏工具的情况下，提供最基础的衣物保护。但这种作为备选的备选方案的情况几乎没有被投入过多关注，以至于这件大衣似乎多了许多并不必要的结构——多到可以被星铃们当作流行时装。</Celes_ExploreCoat.description>
     <!-- EN: An easy-to-fabricate loose-fitting coat that comes with plenty of hanging straps and elasticated bands to suit a variety of conditions. \n\nThis coat was designed to provide the most basic clothing protection in situations where there was a high lack of tools around. But so little attention has been devoted to this situation as an alternate alternative that the coat seems to have so much extra and unnecessary structure - so much that it could be passed off as popular fashion by the Celestia. -->
 
-	<Celes_Celes_LabCoat.label>星铃实验服</Celes_Celes_LabCoat.label>
+	<Celes_LabCoat.label>星铃实验服</Celes_LabCoat.label>
 	<!-- EN: celestia lab coat -->
-	<Celes_Celes_LabCoat.description>一件干净整洁的白大褂，可以有效提高研究的效率。\n\n。</Celes_Celes_LabCoat.description>
+	<Celes_LabCoat.description>一件干净整洁的白大褂，可以有效提高研究的效率。\n\n。</Celes_LabCoat.description>
 	<!-- EN: A clean and tidy lab coat can be effective in improving the efficiency of research. \n\n. -->
 
 	<Celes_MilitaryCoat.label>星铃军装大衣</Celes_MilitaryCoat.label>

@@ -30,4 +30,26 @@
         <useFactionXenotypes>false</useFactionXenotypes>
     </PawnKindDef>
 
+	<PawnKindDef Name="Celes_CombatPawnBase" ParentName="Celes_PawnBase" Abstract="True">
+		<disallowedTraits>
+			<li>Nudist</li>
+			<li>Brawler</li>
+			<li>Wimp</li>
+		</disallowedTraits>
+		<specificApparelRequirements>
+		<li>
+			<bodyPartGroup>UpperHead</bodyPartGroup>
+			<stuff>CelesAdvanceCloth</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<stuff>CelesAdvanceCloth</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<stuff>CelesAdvanceCloth</stuff>
+		</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
 </Defs>

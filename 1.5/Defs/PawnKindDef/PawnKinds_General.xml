@@ -156,7 +156,7 @@
         </inventoryOptions>
     </PawnKindDef>
 
-	<PawnKindDef Name="Celes_ArmedExplorer" ParentName="Celes_PawnBase">
+	<PawnKindDef Name="Celes_ArmedExplorer" ParentName="Celes_CombatPawnBase">
 		<defName>Celes_ArmedExplorer</defName>
 		<label>celestia armed pioneer</label>
 		<combatPower>45</combatPower>
@@ -165,7 +165,7 @@
 		<apparelTags>
 			<li>Celes_Explore</li>
 		</apparelTags>
-		<apparelMoney>150~5000</apparelMoney>
+		<apparelMoney>1000~5000</apparelMoney>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		<weaponMoney>750~10000</weaponMoney>
 		<weaponTags>
@@ -207,7 +207,7 @@
 		<initialResistanceRange>15~24</initialResistanceRange>
 	</PawnKindDef>
 
-	<PawnKindDef Name="Celes_Scout" ParentName="Celes_PawnBase">
+	<PawnKindDef Name="Celes_Scout" ParentName="Celes_CombatPawnBase">
         <defName>Celes_Scout</defName>
         <label>celestia vanguard</label>
         <combatPower>55</combatPower>
@@ -216,7 +216,7 @@
         <apparelTags>
             <li>Celes_Military</li>
         </apparelTags>
-        <apparelMoney>150~5000</apparelMoney>
+        <apparelMoney>2250~5000</apparelMoney>
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
         <weaponMoney>750~10000</weaponMoney>
         <weaponTags>
@@ -270,7 +270,7 @@
 		<initialResistanceRange>15~24</initialResistanceRange>
 	</PawnKindDef>
 
-	<PawnKindDef Name="Celes_Elite" ParentName="Celes_PawnBase">
+	<PawnKindDef Name="Celes_Elite" ParentName="Celes_CombatPawnBase">
 		<defName>Celes_Elite</defName>
 		<label>celestia regular marine</label>
 		<combatPower>90</combatPower>
@@ -286,7 +286,7 @@
 				<requiredTag>Celes_Elite</requiredTag>
 			</li>
 		</specificApparelRequirements>
-		<apparelMoney>150~5000</apparelMoney>
+		<apparelMoney>3500~6000</apparelMoney>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		<weaponMoney>2000~10000</weaponMoney>
 		<weaponTags>

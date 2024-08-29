@@ -595,8 +595,30 @@
 			<raceRestriction>
 
 				<apparelList>
+					<!-- 腿饰 -->
 					<li>Celes_KneeHighBlack</li>
 					<li>Celes_StockingBlack</li>
+					<li>Celes_TightBlack</li>
+					<li>Celes_LightLegArmour</li>
+					<!-- 夹层 -->
+					<li>Celes_KitchenApron</li>
+					<li>Celes_TacticalVest</li>
+					<li>Celes_LightPowerArmour</li>
+					<!-- 内衬 -->
+					<li>Celes_Tribal</li>
+					<li>Celes_SummerVest</li>
+					<li>Celes_WinterSweater</li>
+					<li>Celes_CivilianUniform</li>
+					<li>Celes_ExploreVest</li>
+					<li>Celes_MilitaryUniform</li>
+					<li>Celes_ClassicalGown</li>
+					<!-- 外套 -->
+					<li>Celes_SummerCoat</li>
+					<li>Celes_WinterCoat</li>
+					<li>Celes_TrenchCoat</li>
+					<li>Celes_ExploreCoat</li>
+					<li>Celes_LabCoat</li>
+					<li>Celes_MilitaryCoat</li>
 				</apparelList>
 
 				<recipeList>

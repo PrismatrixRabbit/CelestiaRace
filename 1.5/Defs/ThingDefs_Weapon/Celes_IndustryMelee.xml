@@ -146,7 +146,7 @@
             <texPath>Celes/Weapon/Mid/Celes_Saber</texPath>
             <graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-            <drawSize>1</drawSize>
+            <drawSize>1.1</drawSize>
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>

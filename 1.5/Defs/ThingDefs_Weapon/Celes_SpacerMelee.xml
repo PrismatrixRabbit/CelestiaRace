@@ -26,7 +26,7 @@
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_MonoSaber</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1</drawSize>
+            <drawSize>1.1</drawSize>
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
@@ -214,6 +214,7 @@
     <graphicData>
         <texPath>Celes/Weapon/Spacer/Celes_RelicSword</texPath>
         <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1.1</drawSize>
     </graphicData>
     <soundInteract>Interact_PlasmaSword</soundInteract>
     <meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>

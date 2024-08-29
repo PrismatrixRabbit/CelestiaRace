@@ -55,6 +55,11 @@
 			<li>Celes_Uniform</li>
 			<li>Celes_Daily</li>
 		</tags>
+		<drawData>
+			<defaultData>
+				<layer>10</layer>
+			</defaultData>
+		</drawData>
 	</apparel>
 		<recipeMaker>
 			<researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
@@ -77,7 +82,7 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<graphicData>
-			<texPath>Celes/Apparel/Legwear/KneeHighBlack/KneeHighBlack</texPath>
+			<texPath>Celes/Apparel/Legwear/StockingBlack/StockingBlack</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -95,10 +100,15 @@
 				<li>Legs</li>
 				<li>Feet</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Celes/Apparel/Legwear/KneeHighBlack/KneeHighBlack</wornGraphicPath>
+			<wornGraphicPath>Celes/Apparel/Legwear/StockingBlack/StockingBlack</wornGraphicPath>
 			<tags>
 				<li>Celes_Daily</li>
 			</tags>
+			<drawData>
+				<defaultData>
+					<layer>10</layer>
+				</defaultData>
+			</drawData>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
@@ -143,6 +153,11 @@
 			<tags>
 				<li>Celes_Daily</li>
 			</tags>
+			<drawData>
+				<defaultData>
+					<layer>10</layer>
+				</defaultData>
+			</drawData>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
@@ -195,6 +210,11 @@
 				<li>Celes_Legwear</li>
 				<li>Celes_Military</li>
 			</tags>
+			<drawData>
+				<defaultData>
+					<layer>10</layer>
+				</defaultData>
+			</drawData>
 		</apparel>
 		<costList>
 			<Plasteel>50</Plasteel>

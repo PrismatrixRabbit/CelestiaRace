@@ -10,11 +10,15 @@
         <maxSeverity>1</maxSeverity>
         <tendable>true</tendable>
         <comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.13</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
             <li Class="HediffCompProperties_TendDuration">
                 <labelTendedWell>have taken anti-radiation drugs</labelTendedWell>
                 <labelTendedWellInner>have taken anti-radiation drugs</labelTendedWellInner>
                 <labelSolidTendedWell>have taken anti-radiation drugs</labelSolidTendedWell>
-                <severityPerDayTended>-0.25</severityPerDayTended>
+                <severityPerDayTended>-0.33</severityPerDayTended>
             </li>
         </comps>
         <stages>

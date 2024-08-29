@@ -67,7 +67,7 @@
         </costList>
         <comps>
             <li Class="CompProperties_Drug">
-                <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+                <isCombatEnhancingDrug>false</isCombatEnhancingDrug>
                 <overdoseSeverityOffset>0.08~0.45</overdoseSeverityOffset>
             </li>
         </comps>

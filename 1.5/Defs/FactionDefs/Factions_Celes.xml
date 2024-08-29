@@ -46,7 +46,7 @@
     </startingTechprintsResearchTags>
     <apparelStuffFilter>
       <thingDefs>
-        <li>Synthread</li>
+        <li>CelesAdvanceCloth</li>
       </thingDefs>
 	  <disallowedThingDefs>
         <li>Hyperweave</li>

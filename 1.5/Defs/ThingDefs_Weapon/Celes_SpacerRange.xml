@@ -97,29 +97,6 @@
         </tools>
     </ThingDef>
 	
-    <ThingDef ParentName="BaseBullet">
-        <defName>Celes_HEPT</defName>
-        <label>radioactive high energy plasma</label>
-        <graphicData>
-            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>Celes_BulletRadiation</damageDef>
-            <damageAmountBase>20</damageAmountBase>
-            <armorPenetrationBase>0.75</armorPenetrationBase>
-            <stoppingPower>0.9</stoppingPower>
-            <speed>120</speed>
-            <extraDamages>
-                <li>
-                    <def>Burn</def>
-                    <amount>7</amount>
-                    <chance>1</chance>
-                </li>
-            </extraDamages>
-        </projectile>
-    </ThingDef>
-	
 	<ThingDef ParentName="Celes_SpacerGunBase">
         <defName>Celes_Spacer_SMG</defName>
         <label>Celestia standard submachine gun</label>
@@ -328,7 +305,7 @@
                 <warmupTime>2.5</warmupTime>
                 <range>31.9</range>
                 <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-                <burstShotCount>10</burstShotCount>
+                <burstShotCount>16</burstShotCount>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -354,7 +331,30 @@
             </li>
         </tools>
     </ThingDef>
-	
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Celes_HEPT</defName>
+		<label>radioactive high energy plasma</label>
+		<graphicData>
+			<texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Celes_BulletRadiation</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<stoppingPower>0.9</stoppingPower>
+			<speed>120</speed>
+			<extraDamages>
+				<li>
+					<def>Burn</def>
+					<amount>7</amount>
+					<chance>1</chance>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+
 	<ThingDef ParentName="Celes_SpacerGunBase">
         <defName>Celes_Spacer_Launcher</defName>
         <label>magnetic reconnection accelerator</label>
@@ -405,7 +405,7 @@
                 <defaultProjectile>CelesBullet_Launcher</defaultProjectile>
                 <warmupTime>8.5</warmupTime>
                 <range>39.9</range>
-                <forcedMissRadius>1.9</forcedMissRadius>
+                <forcedMissRadius>2.9</forcedMissRadius>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
                 <burstShotCount>2</burstShotCount>
                 <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
@@ -413,7 +413,7 @@
                 <ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
                 <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
                 <ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
-                <minRange>4.9</minRange>
+                <minRange>5.9</minRange>
                 <targetParams>
                     <canTargetLocations>true</canTargetLocations>
                     <canTargetPawns>true</canTargetPawns>
@@ -526,7 +526,7 @@
         <projectile>
             <damageDef>Celes_MRPlasma</damageDef>
             <speed>65</speed>
-            <explosionRadius>2.9</explosionRadius>
+            <explosionRadius>3.9</explosionRadius>
         </projectile>
     </ThingDef>
 </Defs>

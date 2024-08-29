@@ -242,8 +242,8 @@
     </CelesFeature.TradeOptionDef>
 
     <CelesFeature.TradeOptionDef>
-        <defName>TradeOption_Small01</defName>
-        <label>TradeOptionS01</label>
+        <defName>TradeOption_Small</defName>
+        <label>TradeOption</label>
         <tradeType>Small</tradeType>
         <requests>
 			<Celes_IndustrialChips>15</Celes_IndustrialChips>
@@ -256,46 +256,18 @@
     </CelesFeature.TradeOptionDef>
 
 	<CelesFeature.TradeOptionDef>
-		<defName>TradeOption_Small02</defName>
-		<label>TradeOptionS02</label>
-		<tradeType>Small</tradeType>
+        <defName>TradeOption_Big</defName>
+        <label>TradeOption</label>
+        <tradeType>Big</tradeType>
 		<requests>
 			<CelesNanoMachineCrystal>3</CelesNanoMachineCrystal>
 		</requests>
 		<rewards>
 			<CelesKeyCard>1</CelesKeyCard>
 		</rewards>
-		<dropPod>ActiveDropPodMechanoid</dropPod>
-		<faller>DropPodIncomingMechanoid</faller>
-	</CelesFeature.TradeOptionDef>
-
-	<CelesFeature.TradeOptionDef>
-        <defName>TradeOption_Big01</defName>
-        <label>TradeOptionB01</label>
-        <tradeType>Big</tradeType>
-        <requests>
-			<Celes_IndustrialChips>50</Celes_IndustrialChips>
-        </requests>
-        <rewards>
-            <CelesKeyCard>4</CelesKeyCard>
-        </rewards>
         <dropPod>ActiveDropPodMechanoid</dropPod>
         <faller>DropPodIncomingMechanoid</faller>
     </CelesFeature.TradeOptionDef>
-
-	<CelesFeature.TradeOptionDef>
-		<defName>TradeOption_Big01</defName>
-		<label>TradeOptionB01</label>
-		<tradeType>Big</tradeType>
-		<requests>
-			<CelesNanoMachineCrystal>10</CelesNanoMachineCrystal>
-		</requests>
-		<rewards>
-			<CelesKeyCard>4</CelesKeyCard>
-		</rewards>
-		<dropPod>ActiveDropPodMechanoid</dropPod>
-		<faller>DropPodIncomingMechanoid</faller>
-	</CelesFeature.TradeOptionDef>
 
 	<CelesFeature.TradeOptionDef>
         <defName>TradeOption_Back</defName>

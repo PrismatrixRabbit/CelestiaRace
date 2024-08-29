@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!-- TO DO 副作用改射击能力削弱和饥饿-->
     <ThingDef ParentName="MakeableDrugBase">
         <defName>Celes_CS12M</defName>
         <label>CS-12 combat hemostat</label>
@@ -56,7 +57,7 @@
         </costList>
         <comps>
             <li Class="CompProperties_Drug">
-                <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+                <isCombatEnhancingDrug>false</isCombatEnhancingDrug>
                 <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
             </li>
         </comps>

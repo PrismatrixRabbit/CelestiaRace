@@ -9,7 +9,7 @@
         <graphicData>
             <texPath>Celes/Item/MedicineCeles</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.95</drawSize>
+            <drawSize>0.85</drawSize>
         </graphicData>
         <techLevel>Industrial</techLevel>
         <statBases>
@@ -48,7 +48,7 @@
         <description>An extremely high quality individual ration, probably from the distant home planet of Celestia, processed and encapsulated using some technology unknown to the Rimworld, non-perishable and with a good flavour. It was originally planned to be widely used by Celestia's pioneering teams for long term exploration, but for some reason it is less common nowadays.</description>
         <graphicData>
             <texPath>Celes/Item/MRE</texPath>
-            <graphicClass>Graphic_MealVariants</graphicClass>
+            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
             <DeteriorationRate>0.25</DeteriorationRate>
