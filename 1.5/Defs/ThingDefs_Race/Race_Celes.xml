@@ -418,7 +418,7 @@
 						</li> -->
 					</bodyAddons>
 
-					<headOffset>(0,-0.01)</headOffset>
+					<headOffset>(0,0)</headOffset>
 					<customDrawSize>(1.0, 1.0)</customDrawSize>
 					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
 					<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
