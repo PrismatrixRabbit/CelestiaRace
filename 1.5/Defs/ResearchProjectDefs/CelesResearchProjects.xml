@@ -14,6 +14,9 @@
         <defName>Celes_MainTech_I</defName><!-- 晶兰 -->
         <label>crystal orchid</label>
         <description>Unlock the planting of ‘Crystal Orchid’, a strange plant whose fruits spontaneously take on a crystalline shape, grows slowly, and has extremely high requirements for the environment in which it grows. \n\nThe fruit of the crystal orchid has many properties that defy common sense, but has unusually harsh triggering conditions.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_RawCrystalOrchid</ThingDef>
+        </descriptionHyperlinks>
         <baseCost>300</baseCost>
         <techLevel>Medieval</techLevel>
         <researchViewX>0</researchViewX>
@@ -68,6 +71,9 @@
         <defName>Celes_MainTech_IV</defName><!-- 尘构重编译 -->
         <label>Dust-Mech reprogramming(WIP)</label>
         <description>Dust-Mech reprogramming(WIP)</description>
+        <descriptionHyperlinks>
+            <ThingDef>CelesNanoManifold</ThingDef>
+        </descriptionHyperlinks>
         <baseCost>3000</baseCost>
         <techLevel>Ultra</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -202,7 +208,7 @@
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
         <prerequisites>
-            <li>Celes_MainTech_II</li>
+            <li>Celes_MainTech_III</li>
             <li>Celes_Bio_II</li>
         </prerequisites>
         <researchViewX>4</researchViewX>
@@ -220,7 +226,9 @@
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
-        <prerequisites><li>Celes_Bio_III</li></prerequisites>
+        <prerequisites>
+            <li>Celes_Bio_III</li>
+        </prerequisites>
         <researchViewX>5</researchViewX>
         <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
@@ -237,10 +245,10 @@
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
         <prerequisites>
-            <li>Celes_MainTech_II</li>
         </prerequisites>
         <hiddenPrerequisites>
             <li>Celes_Bio_I</li>
+            <li>Celes_MainTech_III</li>
         </hiddenPrerequisites>
         <researchViewX>4</researchViewX>
         <researchViewY>3.6</researchViewY>
@@ -262,9 +270,9 @@
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
         <prerequisites>
-            <li>Celes_MainTech_II</li>
         </prerequisites>
         <hiddenPrerequisites>
+            <li>Celes_MainTech_III</li>
             <li>Celes_Bio_I</li>
         </hiddenPrerequisites>
         <researchViewX>4</researchViewX>
@@ -371,6 +379,9 @@
         <prerequisites>
             <li>Celes_Apparel_III</li>
         </prerequisites>
+        <hiddenPrerequisites>
+            <li>Celes_MainTech_III</li>
+        </hiddenPrerequisites>
         <researchViewX>4</researchViewX>
         <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
