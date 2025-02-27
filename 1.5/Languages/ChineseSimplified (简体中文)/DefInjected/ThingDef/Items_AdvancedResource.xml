@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CelesAdvanceCloth.label>尘化丝绸</CelesAdvanceCloth.label>
+  <!-- EN: Dust-Mech Silk -->
+  <CelesAdvanceCloth.description>一种利用尘构重组微观纤维结构制成的高强度布料。配方对边缘世界的环境进行了适配，用于制作各式星铃先进衣物。</CelesAdvanceCloth.description>
+  <!-- EN: A high-strength fabric made using Dust-Mech to reconfigure microscopic fibre structures. The formula is adapted to the environment of the Rimworld and is used to make all types of Celestia advanced clothing. -->
+
+  <Celes_IndustrialChips.label>星铃工业芯片</Celes_IndustrialChips.label>
+  <!-- EN: Celestia industrial chips -->
+  <Celes_IndustrialChips.description>一种被星铃广泛运用的芯片，在我们手中只能用于制造某些星铃装置，但星铃拓荒队似乎对此有很大的需求。</Celes_IndustrialChips.description>
+  <!-- EN: A chip that is widely used by Celestia, and in our hands can only be used to make certain Celestia devices, but there seems to be a great demand for it from the Celestia Toppers. -->
+
+  <!--<CelesAlloy.label>淬铃合金</CelesAlloy.label>-->
+  <!-- EN: Chime Alloy -->
+  <!--<CelesAlloy.description>一种利用尘构重组金属晶格结构制成的轻质合金，强度稍高于钢铁，用于制作各式星铃器械，并能转化为两种灵能敏感的合金。虽然在母星系不被瞧得上，但易于制造的特性让它在边缘世界的星铃拓荒队手中大放异彩。</CelesAlloy.description>-->
+  <!-- EN: A special alloy made using Dust-Mech to reconfigure the structure of the metal lattice, it is used to make all manner of Celestia instruments and can be converted into two psychically sensitive alloys. Though not looked upon favourably in the home system, its ease of manufacture has made it a hit in the hands of Celestia pioneers on the Rimworld. -->
+
+  <!--<Celes_NegativeAlloy.label>黯辉合金</Celes_NegativeAlloy.label>-->
+  <!-- EN: Dull-L Alloy -->
+  <!--<Celes_NegativeAlloy.description>由淬铃合金转化而成的，压制灵能的特殊合金。作为装备可以降低使用者的心灵敏感度，但似乎还有别的用途。</Celes_NegativeAlloy.description>-->
+  <!-- EN: A special alloy converted from Chime Alloy that suppresses psychic energy. When use into equipment it can reduce the user's psychic sensitivity, but it seems to have other uses. -->
+
+  <!--<Celes_PositiveAlloy.label>灵尘合金</Celes_PositiveAlloy.label>-->
+  <!-- EN: Psi-dust Alloy -->
+  <!--<Celes_PositiveAlloy.description>由淬铃合金转化而成的，激发灵能的特殊合金。作为装备可以提高使用者的心灵敏感度，但似乎还有别的用途。</Celes_PositiveAlloy.description>-->
+  <!-- EN: A special alloy converted from Chime Alloy that stimulates psychic energy. When use into equipment it can increase the user's psychic sensitivity, but it seems to have other uses. -->
+
+</LanguageData>

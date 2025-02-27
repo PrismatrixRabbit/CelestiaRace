@@ -64,6 +64,9 @@
 	
 	<RulePackDef>
 		<defName>CelesInitialSettlement_Namer</defName>
+		<include>
+			<li>CelespawnName</li>
+		</include>
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[Celes_Position][Celes_Site]</li>

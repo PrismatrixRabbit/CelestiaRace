@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ========== 基础资源 ========== -->
+
+    <ThingDef ParentName="PlantFoodRawBase"><!-- 晶蒴 -->
+        <defName>Celes_RawCrystalOrchid</defName>
+        <label>crystal capsule</label>
+        <description>The fruit of the crystal orchid, in the form of crystals, is very hard to the touch but unexpectedly edible ...... But how to eat it is another question.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Plant_CelesNano</ThingDef>
+        </descriptionHyperlinks>
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/RawCrystalOrchid</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.0</MarketValue>
+            <Nutrition>0.02</Nutrition>
+            <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <thingCategories>
+            <li>Celes_NanoResourcesRaw</li>
+        </thingCategories>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>180</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="ResourceBase"><!-- 生物酶凝胶 -->
+        <defName>Celes_BioGel</defName>
+        <label>bio-enzyme gels</label>
+        <description>A potent bio-enzyme gel extracted from organic matter is used to make Celestia's various specialised medicines.</description>
+        <possessionCount>5</possessionCount>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/BioGel</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>0.05</Mass>
+            <Flammability>0.7</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>20</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>CelesNanoMachine</defName>
+        <label>the Dust-Mech</label>
+        <description>A powerful and highly controllable programmable nanomachine, one of the roots of Celestia's civilisation, used extensively. But in places like the Rimworld, where supplies are scarce, Dust-Mech matter does not shape the world as it pleases.</description>
+        <possessionCount>5</possessionCount>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/NanoMachine</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>60</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>0.001</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>20</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>CelesNanoManifold</defName>
+        <label>the Dust-Mech Manifold</label>
+        <description>A powerful and highly controllable programmable nanomachine, one of the roots of Celestia's civilisation, used extensively. But in places like the Rimworld, where supplies are scarce, Dust-Mech matter does not shape the world as it pleases.</description>
+        <possessionCount>5</possessionCount>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/NanoManifold</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>60</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>0.001</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>20</allowedArchonexusCount>
+    </ThingDef>
+
+    <!-- ========== 纳米化素材 ========== -->
+    
+    <ThingDef ParentName="ResourceBase">
+        <defName>Celes_NanoMachineCrystal</defName>
+        <label>CelesNanoMachineCrystal</label>
+        <description>CelesNanoMachineCrystal.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/NanoMachineCrystal</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <stackLimit>1</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <MarketValue>120</MarketValue>
+            <Mass>20</Mass>
+            <Beauty>-8</Beauty>
+            <Flammability>0</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>Celes_NanoCrystallisedCorpse</defName>
+        <label>crystalline corpse</label>
+        <description>For some reason, human corpses that have been almost completely transformed by Dust-Mech have initial state Dust-Mech on them that has crystallised and can be dismantled for recycling and to produce neutral amines as a by-product.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/NanoCrystallisedCorpse/NanoCrystallisedCorpse</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <stackLimit>1</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>60</Mass>
+            <Beauty>-75</Beauty>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>CorpsesHumanlike</li>
+        </thingCategories>
+        <tradeability>None</tradeability>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>Celes_RottenNanoCrystallisedCorpse</defName>
+        <label>Rotten crystalline corpse</label>
+        <description>For some reason, human corpses that have been almost completely transformed by Dust-Mech have initial state Dust-Mech on them that has crystallised and can be dismantled for recycling and to produce neutral amines as a by-product.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/RottenNanoCrystallisedCorpse/RottenNanoCrystallisedCorpse</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.7</drawSize>
+        </graphicData>
+        <stackLimit>1</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>60</Mass>
+            <Beauty>-75</Beauty>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>CorpsesHumanlike</li>
+        </thingCategories>
+        <tradeability>None</tradeability>
+    </ThingDef>
+
+</Defs>

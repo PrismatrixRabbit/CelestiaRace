@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- ========== 基础资源 ========== -->
+
+    <Celes_MakeBiogel.label>提取生物酶凝胶</Celes_MakeBiogel.label>
+    <!-- EN: extract bio-enzyme gel -->
+    <Celes_MakeBiogel.description>从有机质中提取有效的生物酶凝胶。</Celes_MakeBiogel.description>
+    <!-- EN: Extraction of an effective bio-enzyme gel from organic matter. -->
+    <Celes_MakeBiogel.jobString>正在从有机质中提取生物酶凝胶</Celes_MakeBiogel.jobString>
+    <!-- EN: extracting bio-enzyme gel from organics -->
+
+    <!-- ========== 纳米化素材 ========== -->
+
+    <Make_CelesNanoMachineCrystal.label>培养尘构结晶块</Make_CelesNanoMachineCrystal.label>
+    <!-- EN: Make_CelesNanoMachineCrystal -->
+    <Make_CelesNanoMachineCrystal.description>培养尘构结晶块。</Make_CelesNanoMachineCrystal.description>
+    <!-- EN: Make_CelesNanoMachineCrystal. -->
+    <Make_CelesNanoMachineCrystal.jobString>培养尘构结晶块</Make_CelesNanoMachineCrystal.jobString>
+    <!-- EN: Make_CelesNanoMachineCrystal -->
+
+    <Deconstruct_CelesNanoMachineCrystal.label>拆解尘构结晶块</Deconstruct_CelesNanoMachineCrystal.label>
+    <!-- EN: Make_CelesNanoMachineCrystal -->
+    <Deconstruct_CelesNanoMachineCrystal.description>拆解尘构结晶块。</Deconstruct_CelesNanoMachineCrystal.description>
+    <!-- EN: Make_CelesNanoMachineCrystal. -->
+    <Deconstruct_CelesNanoMachineCrystal.jobString>拆解尘构结晶块</Deconstruct_CelesNanoMachineCrystal.jobString>
+    <!-- EN: Make_CelesNanoMachineCrystal -->
+
+    <ButcherCeles_NanoCrystallisedCorpse.label>拆解晶化尸体</ButcherCeles_NanoCrystallisedCorpse.label>
+    <!-- EN: dismantle Dust-Mech crystalline corpse -->
+    <ButcherCeles_NanoCrystallisedCorpse.description>拆解这具已经被晶体几乎完全转化的尸体，其中有一些血肉组织可能仍有活性，下手谨慎。</ButcherCeles_NanoCrystallisedCorpse.description>
+    <!-- EN: Disassembling the body, which has been almost completely transformed by Dust-Mech crystals, with some of the flesh and blood tissues that may still be active, is done with caution. -->
+    <ButcherCeles_NanoCrystallisedCorpse.jobString>正在拆解晶化尸体</ButcherCeles_NanoCrystallisedCorpse.jobString>
+    <!-- EN: dismantling Dust-Mech crystalline corpse -->
+
+    <ButcherCeles_RottenNanoCrystallisedCorpse.label>拆解腐朽的晶化尸体</ButcherCeles_RottenNanoCrystallisedCorpse.label>
+    <!-- EN: dismantle Dust-Mech crystalline corpse -->
+    <ButcherCeles_RottenNanoCrystallisedCorpse.description>拆解这具已经被晶体几乎完全转化的尸体，下手谨慎。</ButcherCeles_RottenNanoCrystallisedCorpse.description>
+    <!-- EN: Disassembling the body, which has been almost completely transformed by Dust-Mech crystals, with some of the flesh and blood tissues that may still be active, is done with caution. -->
+    <ButcherCeles_RottenNanoCrystallisedCorpse.jobString>正在拆解腐朽的晶化尸体</ButcherCeles_RottenNanoCrystallisedCorpse.jobString>
+    <!-- EN: dismantling Dust-Mech crystalline corpse -->
+
+</LanguageData>

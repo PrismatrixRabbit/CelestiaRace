@@ -4,7 +4,7 @@
     <ThingDef Name="Celes_EarlyGunBase" ParentName="BaseMakeableGun" Abstract="True">
         <recipeMaker>
             <recipeUsers Inherit="false">
-                <li>Celes_MultifunctionalTab</li>
+                <li>Celes_MultifunctionalTabA</li>
             </recipeUsers>
         </recipeMaker>
         <weaponTags>
@@ -23,7 +23,7 @@
             <soundWorking>Recipe_Smith</soundWorking>
             <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
             <recipeUsers Inherit="false">
-                <li>Celes_MultifunctionalTab</li>
+                <li>Celes_MultifunctionalTabA</li>
             </recipeUsers>
             <displayPriority>210</displayPriority>
         </recipeMaker>

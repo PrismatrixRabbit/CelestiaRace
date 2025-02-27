@@ -24,7 +24,7 @@
         <costList>
             <Steel>20</Steel>
             <Chemfuel>80</Chemfuel>
-            <CelesBioGel>20</CelesBioGel>
+            <Celes_BioGel>20</Celes_BioGel>
         </costList>
         <weaponTags>
             <li>Grenade</li>

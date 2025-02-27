@@ -68,7 +68,7 @@
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
       <recipeUsers>
-        <li>Celes_MultifunctionalTab</li>
+        <li>Celes_MultifunctionalTabA</li>
       </recipeUsers>
       <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
       <defaultIngredientFilter>

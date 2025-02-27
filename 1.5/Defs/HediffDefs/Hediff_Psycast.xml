@@ -52,14 +52,14 @@
             <li Class="CompProperties_Forbiddable"/>
         </comps>
         <costList>
-            <CelesBioGel>40</CelesBioGel>
+            <Celes_BioGel>40</Celes_BioGel>
             <CelesNanoMachine>20</CelesNanoMachine>
             <ComponentIndustrial>10</ComponentIndustrial>
         </costList>
         <recipeMaker>
 			<researchPrerequisite>Celes_Bio_II</researchPrerequisite>
 			<recipeUsers>
-				<li>Celes_MultifunctionalTab</li>
+				<li>Celes_MultifunctionalTabA</li>
 			</recipeUsers>
             <skillRequirements>
                 <Crafting>6</Crafting>

@@ -4,7 +4,7 @@
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
             <recipeUsers Inherit="false">
-                <li>Celes_MultifunctionalTab</li>
+                <li>Celes_MultifunctionalTabA</li>
             </recipeUsers>
         </recipeMaker>
         <techLevel>Spacer</techLevel>
@@ -30,7 +30,7 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
-            <CelesAlloy>80</CelesAlloy>
+            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
 		<statBases>
@@ -107,7 +107,7 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
-            <CelesAlloy>40</CelesAlloy>
+            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
             <ComponentSpacer>1</ComponentSpacer>
         </costList>
 		<statBases>

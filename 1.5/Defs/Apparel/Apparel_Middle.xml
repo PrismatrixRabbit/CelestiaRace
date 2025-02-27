@@ -106,7 +106,7 @@
         <recipeMaker>
             <researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
             <recipeUsers>
-                <li>Celes_MultifunctionalTab</li>
+                <li>Celes_MultifunctionalTabA</li>
             </recipeUsers>
             <displayPriority>307</displayPriority>
         </recipeMaker>
@@ -155,13 +155,13 @@
 		<costList>
 			<ComponentSpacer>4</ComponentSpacer>
 			<Plasteel>120</Plasteel>
-			<CelesAlloy>40</CelesAlloy>
+            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
 			<CelesAdvanceCloth>40</CelesAdvanceCloth>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Celes_Apparel_IV</researchPrerequisite>
 			<recipeUsers>
-				<li>Celes_MultifunctionalTab</li>
+				<li>Celes_MultifunctionalTabA</li>
 			</recipeUsers>
 			<displayPriority>307</displayPriority>
 		</recipeMaker>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef>
+        <defName>Make_CelesAdvanceCloth</defName>
+        <label>reorganise Dust-Mech Silk</label>
+        <description>Using Dust-Mech to reorganise Rimworld's native materials into Dust-Mech Silk.</description>
+        <jobString>reorganising Dust-Mech Silk</jobString>
+        <workAmount>10000</workAmount>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_TailoringTab</li>
+        </recipeUsers>
+        <researchPrerequisite>Celes_MainTech_II</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoMachineCrystal</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <products>
+            <CelesAdvanceCloth>20</CelesAdvanceCloth>
+        </products>
+    </RecipeDef>
+
+    <!--<RecipeDef>
+        <defName>Celes_Make_NegativeAlloy</defName>
+        <label>convert Dull-L Alloy</label>
+        <description>Using eltex as a raw material, the Dust-Mech is used to transform the Chime Alloy into the Dull-L Alloy that suppresses psychic energy.</description>
+        <jobString>converting Dull-L Alloy</jobString>
+        <workAmount>15000</workAmount>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_MultifunctionalTabA</li>
+        </recipeUsers>
+        <researchPrerequisite>Celes_Manufactory_II_a</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <products>
+            <Celes_NegativeAlloy>50</Celes_NegativeAlloy>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_Make_PositiveAlloy</defName>
+        <label>convert Psi-dust Alloy</label>
+        <description>Using the Dust-Mech, convert the Chime Alloy to the Psi-dust Alloy that inspires psychic energy.</description>
+        <jobString>converting Psi-dust Alloy</jobString>
+        <workAmount>15000</workAmount>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_MultifunctionalTabA</li>
+        </recipeUsers>
+        <researchPrerequisite>Celes_Manufactory_II_a</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <products>
+            <Celes_PositiveAlloy>50</Celes_PositiveAlloy>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Make_CelesAlloy</defName>
+        <label>reconstruct Chime Alloy</label>
+        <description>Using Dust-Mech to reconstruct Rimworld's native materials into Chime Alloy.</description>
+        <jobString>reconstructing Chime Alloy</jobString>
+        <workAmount>10000</workAmount>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_MultifunctionalTabA</li>
+        </recipeUsers>
+        <researchPrerequisite>Celes_Manufactory_II</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanoMachineCrystal</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>60</count>
+            </li>
+        </ingredients>
+        <products>
+            <CelesAlloy>40</CelesAlloy>
+        </products>
+    </RecipeDef>-->
+
+</Defs>

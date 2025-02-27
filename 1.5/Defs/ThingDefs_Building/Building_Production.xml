@@ -2,14 +2,14 @@
 <Defs>
 
     <ThingDef ParentName="BenchBase">
-        <defName>Celes_MultifunctionalTab</defName>
+        <defName>Celes_MultifunctionalTabA</defName><!-- 星铃加工台 --><!-- 待编辑 -->
         <label>Celestia multifunctional tab</label>
         <description>Multifunctional tab for assembling and disassembling various Celestia equipment, such as Celestia's advanced firearms and defences, all made to Celestia's specifications.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
-            <texPath>Celes/Building/Celes_MultifunctionalTab/Celes_MultifunctionalTab</texPath>
+            <texPath>Celes/Building/Celes_MultifunctionalTabA/Celes_MultifunctionalTabA</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3.5,1.5)</drawSize>
+            <drawSize>(2.5,1.5)</drawSize>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
@@ -32,7 +32,7 @@
             <Flammability>1.0</Flammability>
             <Cleanliness>0</Cleanliness>
         </statBases>
-        <size>(3,1)</size>
+        <size>(2,1)</size>
         <designationCategory>Production</designationCategory>
         <uiOrder>2510</uiOrder>
         <passability>PassThroughOnly</passability>
@@ -70,16 +70,93 @@
 		</building>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
-			<li>Celes_Manufactory_I</li>
+			<li>Celes_MainTech_II</li>
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
     </ThingDef>
+
+    <ThingDef ParentName="BenchBase">
+        <defName>Celes_MultifunctionalTabB</defName><!-- 星铃先进加工台 --><!-- 待编辑 -->
+        <label>Celestia multifunctional tab</label>
+        <description>Multifunctional tab for assembling and disassembling various Celestia equipment, such as Celestia's advanced firearms and defences, all made to Celestia's specifications.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>Celes/Building/Celes_MultifunctionalTabB/Celes_MultifunctionalTabB</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2.5,1.5)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <costList>
+            <Steel>100</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <WorkToBuild>3000</WorkToBuild>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>0</Cleanliness>
+        </statBases>
+        <size>(2,1)</size>
+        <designationCategory>Production</designationCategory>
+        <uiOrder>2510</uiOrder>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <recipes>
+            <li>ButcherCorpseMechanoid</li>
+        </recipes>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>400</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(73,123,138,0)</glowColor>
+            </li>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>ToolCabinet</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <constructEffect>ConstructMetal</constructEffect>
+        <researchPrerequisites>
+            <li>Celes_MainTech_IV</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+    </ThingDef>
     
     <ThingDef ParentName="BenchBase">
-        <defName>Celes_TailoringTab</defName>
+        <defName>Celes_TailoringTab</defName><!-- 星铃缝纫台 --><!-- 待编辑 -->
         <label>Celestia tailoring tab</label>
         <description>A Celestia tailoring tab with a range of sewing tools, all manufactured to Celestia standards for sewing Celestia clothing. Works at 50% of its usual speed when there is no power.</description>
         <thingClass>Building_WorkTable</thingClass>

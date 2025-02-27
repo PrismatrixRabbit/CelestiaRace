@@ -7,7 +7,7 @@
         <description>An advanced set of emergency medicines for The Navigator Programme, possibly from a distant Celestia home planet, containing a vast array of nanomachines and advanced instruments that would be difficult to replicate on the Rimworld, would be all that is needed to treat a large number of diseases.</description>
         <possessionCount>2</possessionCount>
         <graphicData>
-            <texPath>Celes/Item/MedicineCeles</texPath>
+            <texPath>Celes/Item/Utility/MedicineCeles</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.85</drawSize>
         </graphicData>
@@ -24,7 +24,7 @@
         <!-- <costList>
             <MedicineHerbal>1</MedicineHerbal>
             <Neutroamine>1</Neutroamine>
-            <CelesBioGel>2</CelesBioGel>
+            <Celes_BioGel>2</Celes_BioGel>
         </costList>
         <recipeMaker>
             <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
@@ -47,7 +47,7 @@
         <label>Celestia MRE</label>
         <description>An extremely high quality individual ration, probably from the distant home planet of Celestia, processed and encapsulated using some technology unknown to the Rimworld, non-perishable and with a good flavour. It was originally planned to be widely used by Celestia's pioneering teams for long term exploration, but for some reason it is less common nowadays.</description>
         <graphicData>
-            <texPath>Celes/Item/MRE</texPath>
+            <texPath>Celes/Item/Utility/MRE</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -73,7 +73,7 @@
         <description>A single-use quantum key authorised by the Celestia Pioneers is made in the form of a small card for ease of understanding and is distributed anonymously. The card signifies the holder's contribution to the Celestia Pioneers, and only friends of the Celestia Pioneers can exchange it for valid support.</description>
         <possessionCount>2</possessionCount>
         <graphicData>
-            <texPath>Celes/Item/CelesKeyCard</texPath>
+            <texPath>Celes/Item/Utility/CelesKeyCard</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Pickup</soundInteract>
@@ -123,7 +123,7 @@
 			<RecipeDef>Parse_CelesSTC_MainTech_II</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Celes/Item/Celes_STCLock/Celes_STCLock</texPath>
+			<texPath>Celes/Item/Utility/Celes_STCLock/Celes_STCLock</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -143,7 +143,7 @@
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<recipeUsers>
-			<li>Celes_MultifunctionalTab</li>
+			<li>Celes_MultifunctionalTabA</li>
 		</recipeUsers>
 		<researchPrerequisite>Celes_MainTech_I</researchPrerequisite>
 		<skillRequirements>
@@ -182,7 +182,7 @@
 			<RecipeDef>Parse_CelesSTC_MainTech_II</RecipeDef>
 		</descriptionHyperlinks>
         <graphicData>
-            <texPath>Celes/Item/Celes_STC/Celes_STC</texPath>
+            <texPath>Celes/Item/Utility/Celes_STC/Celes_STC</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>

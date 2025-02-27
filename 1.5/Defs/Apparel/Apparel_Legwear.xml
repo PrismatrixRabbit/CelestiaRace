@@ -218,14 +218,14 @@
 		</apparel>
 		<costList>
 			<Plasteel>50</Plasteel>
-			<CelesAlloy>20</CelesAlloy>
+			<Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
 			<CelesAdvanceCloth>20</CelesAdvanceCloth>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Celes_Apparel_IV</researchPrerequisite>
 			<recipeUsers>
-				<li>Celes_MultifunctionalTab</li>
+				<li>Celes_MultifunctionalTabA</li>
 			</recipeUsers>
 			<displayPriority>307</displayPriority>
 		</recipeMaker>

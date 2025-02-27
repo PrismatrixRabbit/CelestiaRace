@@ -260,7 +260,7 @@
         <label>TradeOption</label>
         <tradeType>Big</tradeType>
 		<requests>
-			<CelesNanoMachineCrystal>3</CelesNanoMachineCrystal>
+			<Celes_NanoMachineCrystal>3</Celes_NanoMachineCrystal>
 		</requests>
 		<rewards>
 			<CelesKeyCard>1</CelesKeyCard>

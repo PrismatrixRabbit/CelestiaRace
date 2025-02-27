@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<DoBillsCeles_MultifunctionalTab.label>完成星铃加工台的清单</DoBillsCeles_MultifunctionalTab.label>
-	<DoBillsCeles_MultifunctionalTab.gerund>加工于</DoBillsCeles_MultifunctionalTab.gerund>
-	<DoBillsCeles_MultifunctionalTab.verb>加工</DoBillsCeles_MultifunctionalTab.verb>
+	<DoBillsCeles_MultifunctionalTabA.label>完成星铃加工台的清单</DoBillsCeles_MultifunctionalTabA.label>
+	<DoBillsCeles_MultifunctionalTabA.gerund>加工于</DoBillsCeles_MultifunctionalTabA.gerund>
+	<DoBillsCeles_MultifunctionalTabA.verb>加工</DoBillsCeles_MultifunctionalTabA.verb>
+
+	<DoBillsCeles_MultifunctionalTabB.label>完成星铃先进加工台的清单</DoBillsCeles_MultifunctionalTabB.label>
+	<DoBillsCeles_MultifunctionalTabB.gerund>加工于</DoBillsCeles_MultifunctionalTabB.gerund>
+	<DoBillsCeles_MultifunctionalTabB.verb>加工</DoBillsCeles_MultifunctionalTabB.verb>
 
 	<DoBillsCeles_TailoringTab.label>制作衣物</DoBillsCeles_TailoringTab.label>
 	<DoBillsCeles_TailoringTab.gerund>制作于</DoBillsCeles_TailoringTab.gerund>

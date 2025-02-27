@@ -63,7 +63,7 @@
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <recipeUsers>
-                <li>Celes_MultifunctionalTab</li>
+                <li>Celes_MultifunctionalTabA</li>
             </recipeUsers>
             <researchPrerequisite>Celes_Prosthesis_I</researchPrerequisite>
             <skillRequirements>

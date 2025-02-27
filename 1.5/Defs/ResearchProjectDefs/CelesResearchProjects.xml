@@ -8,16 +8,16 @@
         <generalDescription>.</generalDescription>
     </ResearchTabDef>
 
+    <!-- ========== 主要科技 ========== -->
+
     <ResearchProjectDef>
-        <defName>Celes_MainTech_I</defName>
-        <label>Decoding Celestia technical language</label>
-        <description>Unlock Celestia tech items by decoding the symbols and words in Celestia tech to unlock the most basic equipment for the Rimworld environment.</description>
+        <defName>Celes_MainTech_I</defName><!-- 晶兰 -->
+        <label>crystal orchid</label>
+        <description>Unlock the planting of ‘Crystal Orchid’, a strange plant whose fruits spontaneously take on a crystalline shape, grows slowly, and has extremely high requirements for the environment in which it grows. \n\nThe fruit of the crystal orchid has many properties that defy common sense, but has unusually harsh triggering conditions.</description>
         <baseCost>300</baseCost>
-        <techLevel>Neolithic</techLevel>
-        <prerequisites>
-        </prerequisites>
+        <techLevel>Medieval</techLevel>
         <researchViewX>0</researchViewX>
-        <researchViewY>2.4</researchViewY>
+        <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
             <li>Celes_ClassicStart</li>
@@ -25,56 +25,291 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_II</defName>
+        <defName>Celes_MainTech_II</defName><!-- 晶兰催化加工 -->
+        <label>crystal catalytic process</label>
+        <description>Synchronise Celestia's pharmaceutical technology by extracting bio-enzyme gels from organic matter. Unlock Celestia's basic medicines, such as IAS-2 immune-activating stimulants, which prevents infections and plagues, and NS-90 nervous stimulants, which provides extra efficiency but causes fatigue.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Electricity</li>
+            <li>Celes_MainTech_I</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+            <li>Celes_ClassicStart</li>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_MainTech_III</defName><!-- 尘构技术解译 -->
         <label>Dust-Mech technical interpretation</label>
         <description>Decipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.\n\n&lt;color=#87cefa&gt;"The Dust-Mech, known as the Adaptive Nano Calibration System, or ANCS, is a cybernetic-based augmented nanomachine developed by the Celestia civilisation. The Dust-Mech is capable of fusing different organisms with organisms, and organisms with machinery, and acts as a medium in which to acquire, transmit, and process information flows, and is highly adaptable when combined with intelligence. " - Parsed from Celestia's Self-explanatory Technology Core.&lt;/color&gt;</description>
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
         <prerequisites>
-            <li>Celes_MainTech_I</li>
-            <li>AdvancedFabrication</li>
+            <li>MultiAnalyzer</li>
+            <li>Celes_MainTech_II</li>
         </prerequisites>
         <requiredAnalyzed>
             <li>Celes_STC_MainTech_II</li>
         </requiredAnalyzed>
         <researchViewX>3</researchViewX>
+        <researchViewY>1.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_MainTech_IV</defName><!-- 尘构重编译 -->
+        <label>Dust-Mech reprogramming(WIP)</label>
+        <description>Dust-Mech reprogramming(WIP)</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <hiddenPrerequisites>
+            <li>Celes_MainTech_III</li>
+        </hiddenPrerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>1.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <!-- ========== 制造科技 ========== -->
+
+    <ResearchProjectDef>
+        <defName>Celes_Weapon_I</defName><!-- 星铃拓荒武器 -->
+        <label>Celestia pioneer weapons</label>
+        <description>Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese designs are said to have originated from antique artefacts brought by the original Celestia from its home planet, but no one has been able to confirm or disprove this.</description>
+        <baseCost>300</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_MainTech_I</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1.2</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Weapon_II</defName><!-- 星铃古典武器 -->
+        <label>Celestia classical weapons</label>
+        <description>Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThese classical weapons are still used in Celestia Pathfinder pioneer squads or are issued to outpost residents for self-defence; their history can no longer be traced.</description>
+        <baseCost>500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+            <li>Celes_MainTech_II</li>
+            <li>Celes_Weapon_I</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>1.2</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Weapon_III</defName><!-- 星铃制式武器 --><!-- 待编辑 -->
+        <label>Celestia standard-issue weapons</label>
+        <description>Unlocks the crafting of Celestia standard firearms that emit high-energy polarised particle beams; the high-energy radiation attached to these weapons burns the target's body surface severely and interferes with the functioning of mechanics. It also allows the crafting of weapons such as Celestia standard monomolecular sabre. \n\nThese weapons had been phased out by the Celestia Navy for more than a century, but industry on the Rimworld did not support the production of naval weapons for the time being, and so these serviceable particle beam weapons became the standard for Celestia's pioneering teams as well.</description>
+        <baseCost>3500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>Celes_MainTech_III</li>
+            <li>Celes_Weapon_II</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>1.2</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Weapon_IV</defName><!-- 试验性改造 --><!-- 待编辑 -->
+        <label>experimental modified weapons</label>
+        <description>Allows for the manufacture of magnetic reconnection accelerators and radioactive high-energy plasma emitters, weapons derived from experimental modifications of old-time ship repair tools, but capable of bursting with exaggerated lethality.</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>Celes_Weapon_III</li>
+        </prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>1.2</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <!-- ========== 生化科技 ========== -->
+
+    <ResearchProjectDef>
+        <defName>Celes_Bio_I</defName><!-- 星铃生化标准 -->
+        <label>Celestia biochemical standard</label>
+        <description>Synchronise Celestia's pharmaceutical technology by extracting bio-enzyme gels from organic matter. Unlock Celestia's basic medicines, such as IAS-2 immune-activating stimulants, which prevents infections and plagues, and NS-90 nervous stimulants, which provides extra efficiency but causes fatigue.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_MainTech_I</li>
+            <li>MedicineProduction</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
         <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_III</defName>
-        <label>Dust-Mech reprogramming(WIP)</label>
-        <description>Dust-Mech reprogramming(WIP)</description>
-        <baseCost>3000</baseCost>
+        <defName>Celes_Bio_II</defName><!-- 星铃战斗药物 -->
+        <label>Celestia combat medication</label>
+        <description>Further analysis of Celestia's biochemical technology unlocks the creation of Celestia's combat drugs: CS-6 combat stimulants, which briefly stimulates tissue activity, and CS-12 combat hemostat, which accelerates wound healing. Please note that these drugs have deadly side effects at the cost of overloading cellular activity.</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+            <li>Celes_Bio_I</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2.4</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Bio_III</defName><!-- 尘构调用:灵能制药 -->
+        <label>Dust-Mech Call:Psychic Pharmaceuticals</label>
+        <description>Unlocks the crafting of "CPS-1 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances.</description>
+        <baseCost>2500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <hiddenPrerequisites>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
             <li>Celes_MainTech_II</li>
-        </hiddenPrerequisites>
+            <li>Celes_Bio_II</li>
+        </prerequisites>
         <researchViewX>4</researchViewX>
         <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Apparel_I</defName>
-        <label>Celestia clothing standards</label>
-        <description>Based on complex clothing,further parsing the clothing standards which fit Celestia's body type. Unlock complex clothing for Celestia, such as trench coats, summer vests, and more.</description>
-        <baseCost>100</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>Celes_MainTech_I</li>
-            <li>ComplexClothing</li>
-        </prerequisites>
-        <researchViewX>1</researchViewX>
-        <researchViewY>0.6</researchViewY>
+        <defName>Celes_Bio_IV</defName><!-- 高危试验性药物 -->
+        <label>High-risk experimental medicines</label>
+        <description>Unlocks the crafting of "RS-1 Experimental Stimulants", a dangerously efficient final resort obtained by overriding the commands of Luciferium using Dust-Mech. \n\nThe overwriting and overloading of Luciferium using Dust-Mech did solve the nano-mechanical mixture's shortcomings in co-ordination ability, but it also made the drug more unstable - which then manifested itself in RS-1's high probability of coma and heart attack side effects.</description>
+        <baseCost>3500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites><li>Celes_Bio_III</li></prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Apparel_II</defName>
+        <defName>Celes_Prosthesis_I</defName>
+        <label>Dust-Mech Call:Signal Transcoding(WIP)</label>
+        <description>Dust-Mech Call:Signal Transcoding(WIP)</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>Celes_MainTech_II</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>Celes_Bio_I</li>
+        </hiddenPrerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>3.6</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_NanoImplant_I</defName>
+        <label>Dust-Mech Call:Invasive Implantation</label>
+        <description>Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's Self-explanatory Technology Core says so ...... but it doesn't say what side effects it would have on races other than Celestia.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine_ForCeles</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_ForCeles</HediffDef>
+        </descriptionHyperlinks>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>Celes_MainTech_II</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>Celes_Bio_I</li>
+        </hiddenPrerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>3</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_NanoImplant_II</defName>
+        <label>degraded cybernetic modification</label>
+        <description>Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_DegradedCyberneticSurgery</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_IV</HediffDef>
+        </descriptionHyperlinks>
+        <baseCost>3500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites><li>Celes_NanoImplant_I</li></prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>3</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <!-- ========== 制衣科技 ========== -->
+
+    <ResearchProjectDef>
+        <defName>Celes_Apparel_I</defName><!-- 星铃制衣标准 -->
+        <label>Celestia clothing standards</label>
+        <description>Based on complex clothing,further parsing the clothing standards which fit Celestia's body type. Unlock complex clothing for Celestia, such as trench coats, summer vests, and more.</description>
+        <baseCost>100</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>ComplexClothing</li>
+        </prerequisites>
+        <researchViewX>0</researchViewX>
+        <researchViewY>0.6</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef>
+        <defName>Celes_Apparel_II</defName><!-- 星铃日常服装 -->
         <label>Celestia daily wear</label>
         <description>Allows for the creation of a variety of daily clothing styles common to Celestia society, such as various uniforms and stockings. These garments must be made on the Celestia tailoring tab to begin with.</description>
         <baseCost>300</baseCost>
@@ -82,15 +317,15 @@
         <prerequisites>
             <li>Celes_Apparel_I</li>
         </prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>0</researchViewY>
+        <researchViewX>1</researchViewX>
+        <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Apparel_III</defName>
+        <defName>Celes_Apparel_III</defName><!-- 拓荒军队制服 -->
         <label>pioneer military uniforms</label>
         <description>Study the military clothing of the Celestia Pioneers, a uniform style that was once the uniform of the Celestia Marines and is now widely used in the Celestia Vanguard Squad.</description>
         <baseCost>1400</baseCost>
@@ -100,15 +335,15 @@
             <li>Celes_Apparel_II</li>
             <li>MicroelectronicsBasics</li>
         </prerequisites>
-        <researchViewX>3</researchViewX>
-        <researchViewY>0</researchViewY>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Apparel_III_a</defName>
+        <defName>Celes_Apparel_III_a</defName><!-- 星铃专业服装 -->
         <label>Celestia professional clothing</label>
         <description>Study Celestia's professional clothing, most of which was developed during The Navigator Programme to adapt to unknown planetary environments and was used in a variety of special scenarios.</description>
         <baseCost>500</baseCost>
@@ -116,15 +351,15 @@
         <prerequisites>
             <li>Celes_Apparel_II</li>
         </prerequisites>
-        <researchViewX>3</researchViewX>
-        <researchViewY>0.4</researchViewY>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Apparel_IV</defName>
+        <defName>Celes_Apparel_IV</defName><!-- 星铃动力突击装甲 -->
         <label>Celestia power assault armour</label>
         <description>Unlocking the Celestia Power Assault Armour, based on the IEVA suits, combines a portion of the technology once used for the security forces of Celestia's Outer Rim domains to create a power assault armour that belongs to Celestia. \n\nThe standard power armour that was really used for Celestia's navy is difficult to make in the Rimworld, but this armour is also sufficient to face the intensity of conflict in the Rimworld.</description>
         <baseCost>6000</baseCost>
@@ -135,18 +370,16 @@
         </requiredResearchFacilities>
         <prerequisites>
             <li>Celes_Apparel_III</li>
-            <li>Celes_AdvancedCloth</li>
-            <li>Celes_Manufactory_II</li>
         </prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>0</researchViewY>
+        <researchViewX>4</researchViewX>
+        <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Apparel_V</defName>
+        <defName>Celes_Apparel_V</defName><!-- 北冕座项目 -->
         <label>Corona Borealis Programme(WIP)</label>
         <description>Corona Borealis Programme(WIP)</description>
         <baseCost>10000</baseCost>
@@ -158,12 +391,14 @@
         <prerequisites>
             <li>Celes_Apparel_IV</li>
         </prerequisites>
-        <researchViewX>6</researchViewX>
-        <researchViewY>0</researchViewY>
+        <researchViewX>5</researchViewX>
+        <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
     </ResearchProjectDef>
+    
+    <!--
 
     <ResearchProjectDef>
         <defName>Celes_AdvancedCloth</defName>
@@ -242,212 +477,6 @@
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Weapon_I</defName>
-        <label>Celestia pioneer weapons</label>
-        <description>Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese designs are said to have originated from antique artefacts brought by the original Celestia from its home planet, but no one has been able to confirm or disprove this.</description>
-        <baseCost>300</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>Celes_Manufactory_I</li>
-        </prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>1.8</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Weapon_II</defName>
-        <label>Celestia classical weapons</label>
-        <description>Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThese classical weapons are still used in Celestia Pathfinder pioneer squads or are issued to outpost residents for self-defence; their history can no longer be traced.</description>
-        <baseCost>500</baseCost>
-        <techLevel>Industrial</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <prerequisites>
-            <li>Celes_Weapon_I</li>
-        </prerequisites>
-        <researchViewX>3</researchViewX>
-        <researchViewY>1.8</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Weapon_III</defName>
-        <label>Celestia standard-issue weapons</label>
-        <description>Unlocks the crafting of Celestia standard firearms that emit high-energy polarised particle beams; the high-energy radiation attached to these weapons burns the target's body surface severely and interferes with the functioning of mechanics. It also allows the crafting of weapons such as Celestia standard monomolecular sabre. \n\nThese weapons had been phased out by the Celestia Navy for more than a century, but industry on the Rimworld did not support the production of naval weapons for the time being, and so these serviceable particle beam weapons became the standard for Celestia's pioneering teams as well.</description>
-        <baseCost>3500</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites>
-            <li>Celes_Manufactory_II</li>
-            <li>Celes_Weapon_II</li>
-        </prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>1.8</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Weapon_IV</defName>
-        <label>experimental modified weapons</label>
-        <description>Allows for the manufacture of magnetic reconnection accelerators and radioactive high-energy plasma emitters, weapons derived from experimental modifications of old-time ship repair tools, but capable of bursting with exaggerated lethality.</description>
-        <baseCost>5000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites>
-            <li>Celes_Weapon_III</li>
-        </prerequisites>
-        <researchViewX>6</researchViewX>
-        <researchViewY>1.8</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>
+    </ResearchProjectDef>-->
     
-    <ResearchProjectDef>
-        <defName>Celes_Bio_I</defName>
-        <label>Celestia biochemical standard</label>
-        <description>Synchronise Celestia's pharmaceutical technology by extracting bio-enzyme gels from organic matter. Unlock Celestia's basic medicines, such as IAS-2 immune-activating stimulants, which prevents infections and plagues, and NS-90 nervous stimulants, which provides extra efficiency but causes fatigue.</description>
-        <baseCost>1500</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>Celes_MainTech_I</li>
-            <li>MedicineProduction</li>
-        </prerequisites>
-        <researchViewX>1</researchViewX>
-        <researchViewY>3.6</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Bio_II</defName>
-        <label>Celestia combat medication</label>
-        <description>Further analysis of Celestia's biochemical technology unlocks the creation of Celestia's combat drugs: CS-6 combat stimulants, which briefly stimulates tissue activity, and CS-12 combat hemostat, which accelerates wound healing. Please note that these drugs have deadly side effects at the cost of overloading cellular activity.</description>
-        <baseCost>2000</baseCost>
-        <techLevel>Industrial</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <prerequisites>
-            <li>Celes_Bio_I</li>
-            <li>MedicineProduction</li>
-        </prerequisites>
-        <researchViewX>3</researchViewX>
-        <researchViewY>3.6</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Bio_III</defName>
-        <label>Dust-Mech Call:Psychic Pharmaceuticals</label>
-        <description>Unlocks the crafting of "CPS-1 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances.</description>
-        <baseCost>2500</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites>
-            <li>Celes_MainTech_II</li>
-            <li>Celes_Bio_II</li>
-        </prerequisites>
-        <researchViewX>4</researchViewX>
-        <researchViewY>3.6</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Bio_IV</defName>
-        <label>High-risk experimental medicines</label>
-        <description>Unlocks the crafting of "RS-1 Experimental Stimulants", a dangerously efficient final resort obtained by overriding the commands of Luciferium using Dust-Mech. \n\nThe overwriting and overloading of Luciferium using Dust-Mech did solve the nano-mechanical mixture's shortcomings in co-ordination ability, but it also made the drug more unstable - which then manifested itself in RS-1's high probability of coma and heart attack side effects.</description>
-        <baseCost>3500</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites><li>Celes_Bio_III</li></prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>3.6</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Prosthesis_I</defName>
-        <label>Dust-Mech Call:Signal Transcoding(WIP)</label>
-        <description>Dust-Mech Call:Signal Transcoding(WIP)</description>
-        <baseCost>2000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-        <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites>
-            <li>Celes_MainTech_II</li>
-        </prerequisites>
-        <hiddenPrerequisites>
-            <li>Celes_Bio_I</li>
-        </hiddenPrerequisites>
-        <researchViewX>4</researchViewX>
-        <researchViewY>4.2</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_NanoImplant_I</defName>
-        <label>Dust-Mech Call:Invasive Implantation</label>
-        <description>Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's Self-explanatory Technology Core says so ...... but it doesn't say what side effects it would have on races other than Celestia.</description>
-        <descriptionHyperlinks>
-            <RecipeDef>Celes_ImplantNanomachine_ForCeles</RecipeDef>
-            <HediffDef>Celes_NanoImplanted_ForCeles</HediffDef>
-        </descriptionHyperlinks>
-        <baseCost>2000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites>
-            <li>Celes_MainTech_II</li>
-        </prerequisites>
-        <hiddenPrerequisites>
-            <li>Celes_Bio_I</li>
-        </hiddenPrerequisites>
-        <researchViewX>4</researchViewX>
-        <researchViewY>3</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_NanoImplant_II</defName>
-        <label>degraded cybernetic modification</label>
-        <description>Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct.</description>
-        <descriptionHyperlinks>
-            <RecipeDef>Celes_DegradedCyberneticSurgery</RecipeDef>
-            <HediffDef>Celes_NanoImplanted_IV</HediffDef>
-        </descriptionHyperlinks>
-        <baseCost>3500</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites><li>Celes_NanoImplant_I</li></prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>3</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-    </ResearchProjectDef>
-
 </Defs>

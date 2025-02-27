@@ -1,19 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   
-  <Celes_MainTech_I.label>解码星铃技术语言</Celes_MainTech_I.label>
-  <!-- EN: Decoding Celestia technical language -->
-  <Celes_MainTech_I.description>通过解码星铃技术中的符号与文字来开启星铃科技项目，解锁最基础的装备以适应边缘世界环境。</Celes_MainTech_I.description>
-  <!-- EN: Unlock Celestia tech items by decoding the symbols and words in Celestia tech to unlock the most basic equipment for the Rimworld environment. -->
+  <Celes_MainTech_I.label>晶兰</Celes_MainTech_I.label>
+  <!-- EN: Crystal Orchid -->
+  <Celes_MainTech_I.description>解锁种植「晶兰」，一种果实自发呈现晶体状的奇异植株，生长缓慢，对生长环境有着极高的要求。\n\n晶兰的果实具有许多违背常识的性质，但却有着异常苛刻的触发条件。</Celes_MainTech_I.description>
+  <!-- EN: Unlock the planting of ‘Crystal Orchid’, a strange plant whose fruits spontaneously take on a crystalline shape, grows slowly, and has extremely high requirements for the environment in which it grows. \n\nThe fruit of the crystal orchid has many properties that defy common sense, but has unusually harsh triggering conditions. -->
   
-  <Celes_MainTech_II.label>尘构技术解译</Celes_MainTech_II.label>
+  <Celes_MainTech_II.label>晶兰催化加工</Celes_MainTech_II.label>
+  <!-- EN: crystal catalytic process -->
+  <Celes_MainTech_II.description>解锁建造「星铃加工台」，可以完成绝大多数星铃加工方案。并允许在其上执行「晶兰增殖操作」，在往常看来无法利用的介质上培育晶蒴。</Celes_MainTech_II.description>
+  <!-- EN: Unlocks the construction of the Celestia Processing Table, which allows most Celestia processing programmes to be completed. It also allows you to perform the ‘Crystal Orchid Multiplication Operation’ on it, which allows you to cultivate crystals on a medium that you would not normally be able to use. -->
+
+  <Celes_MainTech_III.label>尘构技术解译</Celes_MainTech_III.label>
   <!-- EN: Dust-Mech technical interpretation -->
-  <Celes_MainTech_II.description>破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。\n\n&lt;color=#87cefa&gt;＂尘构，学名适应性纳米校正系统(Adaptive Nano Calibration System)，即ANCS。是由星铃文明研发的，基于控制论的增强纳米机械。尘构能够融合不同的生物与生物，生物与机械，并且充当媒介在其中获取，传递，并处理信息流，在与智能结合的情况下，具有高度的适应性。＂————解析自星铃自译解技术核心&lt;/color&gt;</Celes_MainTech_II.description>
+  <Celes_MainTech_III.description>破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。\n\n&lt;color=#87cefa&gt;＂尘构，学名适应性纳米校正系统(Adaptive Nano Calibration System)，即ANCS。是由星铃文明研发的，基于控制论的增强纳米机械。尘构能够融合不同的生物与生物，生物与机械，并且充当媒介在其中获取，传递，并处理信息流，在与智能结合的情况下，具有高度的适应性。＂————解析自星铃自译解技术核心&lt;/color&gt;</Celes_MainTech_III.description>
   <!-- EN: Decipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.\n\n"The Dust-Mech, known as the Adaptive Nano Calibration System, or ANCS, is a cybernetic-based augmented nanomachine developed by the Celestia civilisation. The Dust-Mech is capable of fusing different organisms with organisms, and organisms with machinery, and acts as a medium in which to acquire, transmit, and process information flows, and is highly adaptable when combined with intelligence. " - Parsed from Celestia's Self-explanatory Technology Core -->
 
-  <Celes_MainTech_III.label>尘构重编程(即将推出)</Celes_MainTech_III.label>
+  <Celes_MainTech_IV.label>尘构重编程(即将推出)</Celes_MainTech_IV.label>
   <!-- EN: Dust-Mech reprogramming(WIP) -->
-  <Celes_MainTech_III.description>尘构重编程，绝赞制作中。</Celes_MainTech_III.description>
+  <Celes_MainTech_IV.description>尘构重编程，绝赞制作中。</Celes_MainTech_IV.description>
   <!-- EN: Dust-Mech reprogramming(WIP) -->
 
   <Celes_Apparel_I.label>星铃制衣标准</Celes_Apparel_I.label>
@@ -46,24 +51,24 @@
   <Celes_Apparel_V.description>北冕座项目，绝赞制作中，我和你说这就是雷神锤Mark V。</Celes_Apparel_V.description>
   <!-- EN: Corona Borealis Programme(WIP) -->
 
-  <Celes_AdvancedCloth.label>尘构调用:纤维重组</Celes_AdvancedCloth.label>
+  <!--<Celes_AdvancedCloth.label>尘构调用:纤维重组</Celes_AdvancedCloth.label>-->
   <!-- EN: Dust-Mech Call:Fibre Recombination -->
-  <Celes_AdvancedCloth.description>解锁制作「尘化丝绸」，一种利用尘构重组微观纤维结构制成的高强度布料。</Celes_AdvancedCloth.description>
+  <!--<Celes_AdvancedCloth.description>解锁制作「尘化丝绸」，一种利用尘构重组微观纤维结构制成的高强度布料。</Celes_AdvancedCloth.description>-->
   <!-- EN: Unlocks the crafting of "Dust-Mech Silk", a high-strength fabric made using Dust-Mech to reorganise microscopic fibre structures. -->
-  
-  <Celes_Manufactory_I.label>星铃加工标准</Celes_Manufactory_I.label>
-  <!-- EN: Celestia processing standard -->
-  <Celes_Manufactory_I.description>解锁建造「星铃加工台」，针对星铃的加工标准设计的特殊制造台，用于制造各式星铃装备。</Celes_Manufactory_I.description>
+
+  <!-- <Celes_Manufactory_I.label>星铃加工标准</Celes_Manufactory_I.label>-->
+   <!-- EN: Celestia processing standard -->
+  <!--<Celes_Manufactory_I.description>解锁建造「星铃加工台」，针对星铃的加工标准设计的特殊制造台，用于制造各式星铃装备。</Celes_Manufactory_I.description>-->
   <!-- EN: Unlock the "Celestia multifunctional tab", a special manufacturing station designed for Celestia's processing standard, used to manufacture various types of Celestia equipment. -->
 
-  <Celes_Manufactory_II.label>尘构调用:晶格重构</Celes_Manufactory_II.label>
+  <!--<Celes_Manufactory_II.label>尘构调用:晶格重构</Celes_Manufactory_II.label>-->
   <!-- EN: Dust-Mech Call:Lattice Reconstruction -->
-  <Celes_Manufactory_II.description>解锁制作「淬铃合金」，一种利用尘构重组金属晶格结构制成的特种合金。</Celes_Manufactory_II.description>
+  <!--<Celes_Manufactory_II.description>解锁制作「淬铃合金」，一种利用尘构重组金属晶格结构制成的特种合金。</Celes_Manufactory_II.description>-->
   <!-- EN: Unlocks the crafting of "Chime Alloy", a special alloy made by using Dust-Mech to reconfigure the lattice structure of metals. -->
 
-  <Celes_Manufactory_II_a.label>灵能专业化合金</Celes_Manufactory_II_a.label>
+  <!--<Celes_Manufactory_II_a.label>灵能专业化合金</Celes_Manufactory_II_a.label>-->
   <!-- EN: psychic specialised alloy -->
-  <Celes_Manufactory_II_a.description>解锁「黯辉合金」与「灵尘合金」，对灵能反应具有特殊性质的两种合金。</Celes_Manufactory_II_a.description>
+  <!--<Celes_Manufactory_II_a.description>解锁「黯辉合金」与「灵尘合金」，对灵能反应具有特殊性质的两种合金。</Celes_Manufactory_II_a.description>-->
   <!-- EN: Unlock "Dull-L Alloy" and "Psi-dust Alloy", two alloys with special properties for psychic energy reactions. -->
 
   <Celes_Weapon_I.label>星铃拓荒武器</Celes_Weapon_I.label>

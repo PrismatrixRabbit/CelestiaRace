@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+
+    <Celes_NanoResourcesRaw.label>星铃纳米素材</Celes_NanoResourcesRaw.label>
+    <Celes_Manufactured.label>星铃工业制品</Celes_Manufactured.label>
     
     <Celes_Weapons.label>星铃武器</Celes_Weapons.label>
     <Celes_WeaponsMelee.label>星铃近战武器</Celes_WeaponsMelee.label>

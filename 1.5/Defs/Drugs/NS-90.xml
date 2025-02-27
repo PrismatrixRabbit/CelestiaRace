@@ -54,7 +54,7 @@
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <CelesBioGel>2</CelesBioGel>
+            <Celes_BioGel>2</Celes_BioGel>
         </costList>
         <comps>
             <li Class="CompProperties_Drug">

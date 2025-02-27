@@ -5,7 +5,7 @@
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
             <recipeUsers Inherit="false">
-                <li>Celes_MultifunctionalTab</li>
+                <li>Celes_MultifunctionalTabA</li>
             </recipeUsers>
         </recipeMaker>
         <weaponTags>
@@ -49,11 +49,11 @@
                 <Crafting>9</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>Celes_MultifunctionalTab</li>
+                <li>Celes_MultifunctionalTabA</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
-			<CelesAlloy>40</CelesAlloy>
+            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
             <ComponentSpacer>3</ComponentSpacer>
         </costList>
 		<equippedStatOffsets>
@@ -127,11 +127,11 @@
                 <Crafting>8</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>Celes_MultifunctionalTab</li>
+                <li>Celes_MultifunctionalTabA</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
-			<CelesAlloy>20</CelesAlloy>
+            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
 		<equippedStatOffsets>
@@ -205,11 +205,11 @@
                 <Crafting>10</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>Celes_MultifunctionalTab</li>
+                <li>Celes_MultifunctionalTabA</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
-			<CelesAlloy>80</CelesAlloy>
+            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
             <ComponentSpacer>5</ComponentSpacer>
         </costList>
         <equippedStatOffsets>
@@ -284,11 +284,11 @@
                 <Crafting>12</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>Celes_MultifunctionalTab</li>
+                <li>Celes_MultifunctionalTabA</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
-			<CelesAlloy>80</CelesAlloy>
+            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
             <ComponentSpacer>5</ComponentSpacer>
         </costList>
         <equippedStatOffsets>
@@ -385,11 +385,11 @@
                 <Crafting>12</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>Celes_MultifunctionalTab</li>
+                <li>Celes_MultifunctionalTabA</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
-			<CelesAlloy>80</CelesAlloy>
+            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
             <ComponentSpacer>5</ComponentSpacer>
         </costList>
         <equippedStatOffsets>

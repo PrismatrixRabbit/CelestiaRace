@@ -22,7 +22,7 @@
         <costList>
             <Plasteel>10</Plasteel>
             <ComponentSpacer>3</ComponentSpacer>
-            <CelesBioGel>1</CelesBioGel>
+            <Celes_BioGel>1</Celes_BioGel>
         </costList>
     </ThingDef>
 
