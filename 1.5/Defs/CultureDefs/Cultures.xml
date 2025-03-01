@@ -13,7 +13,7 @@
     <iconPath>UI/Cultures/Astropolitan</iconPath>
     <styleItemTags>
       <li>
-        <tag>Celes_Style</tag>
+        <tag>NoTattoo</tag><!--Celes_Style-->
         <baseWeight>1</baseWeight>
         <weightFactor>1</weightFactor>
       </li>
