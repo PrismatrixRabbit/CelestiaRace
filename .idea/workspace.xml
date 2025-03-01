@@ -4,9 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="整体性修改，添加新贴图">
+    <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Assemblies/CelesFeature.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/DamageDef/Celes_BulletDamage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/DamageDef/Celes_BulletDamage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Hediffs_Mechanitor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Hediffs_Mechanitor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/RecipeDefs/Recipes_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/RecipeDefs/Recipes_BaseResourse.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Defs/ResearchProjectDefs/CelesResearchProjects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ResearchProjectDefs/CelesResearchProjects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/Surgery/Surgery_implant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/Surgery/Surgery_implant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Building/Building_Production.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Building/Building_Production.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_AdvancedResource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_AdvancedResource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_BaseResourse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_Utility.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_Utility.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Plants/Plants_Resources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Plants/Plants_Resources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_Mechanitor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_Mechanitor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Recipes_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Recipes_BaseResourse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Items_AdvancedResource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Items_AdvancedResource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Items_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Items_BaseResourse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Items_Utility.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Items_Utility.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +86,12 @@
       <workItem from="1740468435138" duration="10152000" />
       <workItem from="1740557257104" duration="12406000" />
       <workItem from="1740669005859" duration="4081000" />
-      <workItem from="1740676623467" duration="1765000" />
+      <workItem from="1740676623467" duration="2003000" />
+      <workItem from="1740727981290" duration="4629000" />
+      <workItem from="1740734793056" duration="3007000" />
+      <workItem from="1740753433015" duration="974000" />
+      <workItem from="1740763187092" duration="7200000" />
+      <workItem from="1740805802332" duration="2035000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -81,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740676709960</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="科研项目小修">
+      <option name="closed" value="true" />
+      <created>1740678676185</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740678676185</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="整体性修改，添加新贴图" />
-    <option name="LAST_COMMIT_MESSAGE" value="整体性修改，添加新贴图" />
+    <MESSAGE value="科研项目小修" />
+    <option name="LAST_COMMIT_MESSAGE" value="科研项目小修" />
   </component>
 </project>

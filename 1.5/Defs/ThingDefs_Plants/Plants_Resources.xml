@@ -28,13 +28,13 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>Celes_RawCrystalOrchid</harvestedThingDef>
-			<harvestYield>7</harvestYield>
+			<harvestYield>2</harvestYield>
 			<neverBlightable>true</neverBlightable>
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
 			</sowTags>
-			<sowMinSkill>6</sowMinSkill>
+			<sowMinSkill>4</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Celes_MainTech_I</li>
 			</sowResearchPrerequisites>

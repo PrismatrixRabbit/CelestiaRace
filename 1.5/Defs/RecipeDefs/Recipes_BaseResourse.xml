@@ -21,18 +21,17 @@
         </recipeUsers>
         <researchPrerequisites>
             <li>Celes_MainTech_I</li>
-            <li>MedicineProduction</li>
+            <li>DrugProduction</li>
         </researchPrerequisites>
         <ingredients>
             <li>
                 <filter>
-                    <customSummary>protein</customSummary>
                     <categories>
                         <li>MeatRaw</li>
                         <li>AnimalProductRaw</li>
                     </categories>
                 </filter>
-                <count>2</count>
+                <count>0.5</count>
             </li>
             <li>
                 <filter>
@@ -51,6 +50,14 @@
             </categories>
         </fixedIngredientFilter>
         <defaultIngredientFilter>
+            <categories>
+                <li>MeatRaw</li>
+                <li>AnimalProductRaw</li>
+                <li>Celes_NanoResourcesRaw</li>
+            </categories>
+            <disallowedCategories>
+                <li>EggsFertilized</li>
+            </disallowedCategories>
             <disallowedThingDefs>
                 <li>Celes_RawCrystalOrchid</li>
             </disallowedThingDefs>
@@ -60,11 +67,55 @@
         </products>
     </RecipeDef>
 
+    <RecipeDef>
+        <defName>Celes_MakeNanoMachine</defName><!-- 提纯自复制晶体 --><!-- 暂未完成 -->
+        <label>extractable self-replicating crystals</label>
+        <description>Inefficient extraction of special crystalline substances from crystal capsules, which is inefficient but extremely fast.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_RawCrystalOrchid</ThingDef>
+            <ThingDef>CelesNanoMachine</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>Celes_BioGel</uiIconThing>
+        <jobString>extracting self-replicating crystals</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>600</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <workSkill>Medicine</workSkill>
+        <recipeUsers>
+            <li>Celes_MultifunctionalTabA</li>
+            <li>TableMachining</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_II</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_RawCrystalOrchid</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Celes_RawCrystalOrchid</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <CelesNanoMachine>2</CelesNanoMachine>
+        </products>
+    </RecipeDef>
+
     <!-- ========== 纳米化素材 ========== -->
 
     <RecipeDef>
-        <defName>Make_CelesNanoMachineCrystal</defName>
-        <label>Make_CelesNanoMachineCrystal</label>
+        <defName>Make_CelesNanoMachineCrystal</defName><!--石料晶化处理-->
+        <label>Stone chunk crystallisation</label>
         <description>Make_CelesNanoMachineCrystal</description>
         <jobString>Make_CelesNanoMachineCrystal</jobString>
         <uiIconThing>Celes_NanoMachineCrystal</uiIconThing>
@@ -87,11 +138,11 @@
         <ingredients>
             <li>
                 <filter>
-                    <thingDefs>
-                        <li>CelesNanoMachine</li>
-                    </thingDefs>
+                    <categories>
+                        <li>Celes_NanoResourcesRaw</li>
+                    </categories>
                 </filter>
-                <count>15</count>
+                <count>5</count>
             </li>
             <li>
                 <filter>
@@ -104,6 +155,7 @@
         </ingredients>
         <fixedIngredientFilter>
             <categories>
+                <li>Celes_NanoResourcesRaw</li>
                 <li>StoneChunks</li>
             </categories>
         </fixedIngredientFilter>
@@ -148,7 +200,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <CelesNanoMachine>30</CelesNanoMachine>
+            <CelesNanoMachine>7</CelesNanoMachine>
         </products>
     </RecipeDef>
 

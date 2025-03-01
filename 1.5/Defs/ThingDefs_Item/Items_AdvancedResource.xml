@@ -103,8 +103,8 @@
     
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_SpaceWeapenComponent</defName>
-        <label>Celes_SpaceWeapenComponent</label>
-        <description>Celes_SpaceWeapenComponent</description>
+        <label>Celestia high-tech component</label>
+        <description>A series of parts containing high-precision coils, ion batteries, and other components that seem to be used in the construction of some Celestia's instruments.</description>
         <possessionCount>2</possessionCount>
         <graphicData>
             <texPath>Celes/Item/AdvancedResource/SpaceWeapenComponent/SpaceWeapenComponent</texPath>

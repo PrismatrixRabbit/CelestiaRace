@@ -86,7 +86,7 @@
         <graphicData>
             <texPath>Celes/Building/Celes_MultifunctionalTabB/Celes_MultifunctionalTabB</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(2.5,1.5)</drawSize>
+            <drawSize>(2.5,2.0)</drawSize>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>

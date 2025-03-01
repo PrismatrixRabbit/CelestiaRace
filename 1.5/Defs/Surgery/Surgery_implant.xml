@@ -25,7 +25,7 @@
         <anesthetize>false</anesthetize>
         <workSkillLearnFactor>2</workSkillLearnFactor>
         <products>
-            <CelesNanoMachine>2</CelesNanoMachine>
+            <CelesNanoMachine>5</CelesNanoMachine>
         </products>
         <researchPrerequisites>
             <li>Celes_MainTech_II</li>

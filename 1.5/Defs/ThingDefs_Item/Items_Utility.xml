@@ -119,8 +119,8 @@
 		<label>Unresolved Self-explanatory Technology Core</label>
 		<description>This is a Self-explanatory Technology Core from Celestia's research project "Dust-Mech technical interpretation". \n\nAn extremely advanced technological teaching device from Celestia's "The Navigator Programme" known as the "Self-explanatory Technology Core", with a variety of different forms, but most of them have a variety of obvious interfaces. Extremely rare in the Rimworld, most of them seem to be strictly guarded by Celestia's pioneering team. \n\nFrom brain links to holographic projections, the device is designed to explain Celestia's technology to any intelligent biological individual and guide him in putting it into practice. And strangely, some of the swarm-thinking creatures are unable to use and understand the knowledge taught by this device. It is unclear for what reason Celestia created this device, but it does help the user unlock further Celestia technology. </description>
 		<descriptionHyperlinks>
-			<ThingDef>Celes_STC_MainTech_II</ThingDef>
-			<RecipeDef>Parse_CelesSTC_MainTech_II</RecipeDef>
+			<ThingDef>Celes_STC_MainTech_III</ThingDef>
+			<RecipeDef>Parse_CelesSTC_MainTech_III</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Celes/Item/Utility/Celes_STCLock/Celes_STCLock</texPath>
@@ -132,11 +132,11 @@
 	</ThingDef>
 
 	<RecipeDef>
-		<defName>Parse_CelesSTC_MainTech_II</defName>
+		<defName>Parse_CelesSTC_MainTech_III</defName>
 		<label>Dust-Mech technical interpretation</label>
 		<description>Dust-Mech technical interpretation</description>
 		<jobString>Dust-Mech technical interpretation</jobString>
-		<uiIconThing>Celes_STC_MainTech_II</uiIconThing>
+		<uiIconThing>Celes_STC_MainTech_III</uiIconThing>
 		<workAmount>10000</workAmount>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -145,7 +145,7 @@
 		<recipeUsers>
 			<li>Celes_MultifunctionalTabA</li>
 		</recipeUsers>
-		<researchPrerequisite>Celes_MainTech_I</researchPrerequisite>
+		<researchPrerequisite>Celes_MainTech_II</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>6</Intellectual>
@@ -169,17 +169,17 @@
 			</li>
 		</ingredients>
 		<products>
-			<Celes_STC_MainTech_II>1</Celes_STC_MainTech_II>
+			<Celes_STC_MainTech_III>1</Celes_STC_MainTech_III>
 		</products>
 	</RecipeDef>
 
 	<ThingDef ParentName="Celes_STCResourceBase">
-        <defName>Celes_STC_MainTech_II</defName>
+        <defName>Celes_STC_MainTech_III</defName>
         <label>Self-explanatory Technology Core(Dust-Mech technical interpretation)</label>
         <description>This is a Self-explanatory Technology Core from Celestia's research project "Dust-Mech technical interpretation". \n\nAn extremely advanced technological teaching device from Celestia's "The Navigator Programme" known as the "Self-explanatory Technology Core", with a variety of different forms, but most of them have a variety of obvious interfaces. Extremely rare in the Rimworld, most of them seem to be strictly guarded by Celestia's pioneering team. \n\nFrom brain links to holographic projections, the device is designed to explain Celestia's technology to any intelligent biological individual and guide him in putting it into practice. And strangely, some of the swarm-thinking creatures are unable to use and understand the knowledge taught by this device. It is unclear for what reason Celestia created this device, but it does help the user unlock further Celestia technology. \n\nDust-Mech technical interpretation\n\nDecipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Celes_STCLock</ThingDef>
-			<RecipeDef>Parse_CelesSTC_MainTech_II</RecipeDef>
+			<RecipeDef>Parse_CelesSTC_MainTech_III</RecipeDef>
 		</descriptionHyperlinks>
         <graphicData>
             <texPath>Celes/Item/Utility/Celes_STC/Celes_STC</texPath>

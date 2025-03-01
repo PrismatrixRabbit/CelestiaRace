@@ -147,8 +147,22 @@
         </stages>
     </HediffDef>
 
+    <HediffDef>
+        <defName>CelesSleepMechlinkImplant</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+        <initialSeverity>0.001</initialSeverity>
+        <label>mechlink implant(sleeping)</label>
+        <description>mechlink implant(sleeping)</description>
+        <isBad>false</isBad>
+        <descriptionHyperlinks><HediffDef>MechlinkImplant</HediffDef></descriptionHyperlinks>
+        <stages>
+        </stages>
+    </HediffDef>
+
     <HediffDef ParentName="ImplantHediffBase">
         <defName>Celes_FieldAidRestrict</defName>
+        <label>Celes_FieldAidRestrict</label>
         <description>Celestia Command has added restrictions to the Field Support Team to avoid risks to the mechlink.</description>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>

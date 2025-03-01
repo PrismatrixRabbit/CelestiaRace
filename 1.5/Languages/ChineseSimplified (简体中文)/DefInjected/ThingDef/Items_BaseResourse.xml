@@ -13,10 +13,10 @@
     <Celes_BioGel.description>一种从有机物中提取的强效生物酶凝胶用于制造星铃的各种特效药。</Celes_BioGel.description>
     <!-- EN: A potent bio-enzyme gel extracted from organic matter is used to make Celestia's various specialised medicines. -->
 
-    <CelesNanoMachine.label>尘构物质</CelesNanoMachine.label>
-    <!-- EN: the Dust-Mech -->
-    <CelesNanoMachine.description>一种强大而高度可控的可编程纳米机器，是星铃文明的根基之一，运用广泛。但在边缘世界这样物资缺乏的地方，尘构物质并不能随心所欲的塑造世界。</CelesNanoMachine.description>
-    <!-- EN: A powerful and highly controllable programmable nanomachine, one of the roots of Celestia's civilisation, used extensively. But in places like the Rimworld, where supplies are scarce, Dust-Mech matter does not shape the world as it pleases. -->
+    <CelesNanoMachine.label>自复制晶体</CelesNanoMachine.label>
+    <!-- EN: Self-replicating crystals -->
+    <CelesNanoMachine.description>从晶蒴中提取出的奇异晶体，透明却仿佛有什么东西在内里流动，晶格在其中不断的复制与消亡着。可以用来制作星铃的特殊物品。</CelesNanoMachine.description>
+    <!-- EN: The strange crystals extracted from the crystal capsule are transparent yet it seems as if something is flowing inside, the lattice duplicating and dying out in it. It could be used to make special items belonging to Celestia's technology. -->
 
     <CelesNanoManifold.label>尘构流形</CelesNanoManifold.label>
     <!-- EN: the Dust-Mech -->

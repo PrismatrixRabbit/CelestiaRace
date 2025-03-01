@@ -10,20 +10,27 @@
     <Celes_MakeBiogel.jobString>正在从有机质中提取生物酶凝胶</Celes_MakeBiogel.jobString>
     <!-- EN: extracting bio-enzyme gel from organics -->
 
+    <Celes_MakeNanoMachine.label>提纯自复制晶体</Celes_MakeNanoMachine.label>
+    <!-- EN: extractable self-replicating crystals -->
+    <Celes_MakeNanoMachine.description>从晶蒴中低效的提取出特殊的晶体物质，效率低但极其快速。</Celes_MakeNanoMachine.description>
+    <!-- EN: Inefficient extraction of special crystalline substances from crystal capsules, which is inefficient but extremely fast. -->
+    <Celes_MakeNanoMachine.jobString>正在提纯自复制晶体</Celes_MakeNanoMachine.jobString>
+    <!-- EN: extracting self-replicating crystals -->
+
     <!-- ========== 纳米化素材 ========== -->
 
-    <Make_CelesNanoMachineCrystal.label>培养尘构结晶块</Make_CelesNanoMachineCrystal.label>
-    <!-- EN: Make_CelesNanoMachineCrystal -->
-    <Make_CelesNanoMachineCrystal.description>培养尘构结晶块。</Make_CelesNanoMachineCrystal.description>
+    <Make_CelesNanoMachineCrystal.label>石料晶化处理</Make_CelesNanoMachineCrystal.label>
+    <!-- EN: Stone chunk crystallisation -->
+    <Make_CelesNanoMachineCrystal.description>培养晶化石料。</Make_CelesNanoMachineCrystal.description>
     <!-- EN: Make_CelesNanoMachineCrystal. -->
-    <Make_CelesNanoMachineCrystal.jobString>培养尘构结晶块</Make_CelesNanoMachineCrystal.jobString>
+    <Make_CelesNanoMachineCrystal.jobString>正在培养晶化石料</Make_CelesNanoMachineCrystal.jobString>
     <!-- EN: Make_CelesNanoMachineCrystal -->
 
-    <Deconstruct_CelesNanoMachineCrystal.label>拆解尘构结晶块</Deconstruct_CelesNanoMachineCrystal.label>
+    <Deconstruct_CelesNanoMachineCrystal.label>拆解晶化石料（晶体）</Deconstruct_CelesNanoMachineCrystal.label>
     <!-- EN: Make_CelesNanoMachineCrystal -->
-    <Deconstruct_CelesNanoMachineCrystal.description>拆解尘构结晶块。</Deconstruct_CelesNanoMachineCrystal.description>
+    <Deconstruct_CelesNanoMachineCrystal.description>拆解晶化石料。</Deconstruct_CelesNanoMachineCrystal.description>
     <!-- EN: Make_CelesNanoMachineCrystal. -->
-    <Deconstruct_CelesNanoMachineCrystal.jobString>拆解尘构结晶块</Deconstruct_CelesNanoMachineCrystal.jobString>
+    <Deconstruct_CelesNanoMachineCrystal.jobString>正在拆解晶化石料</Deconstruct_CelesNanoMachineCrystal.jobString>
     <!-- EN: Make_CelesNanoMachineCrystal -->
 
     <ButcherCeles_NanoCrystallisedCorpse.label>拆解晶化尸体</ButcherCeles_NanoCrystallisedCorpse.label>
