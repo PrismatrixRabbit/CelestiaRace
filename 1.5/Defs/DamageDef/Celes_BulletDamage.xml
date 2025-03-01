@@ -17,6 +17,11 @@
 
     <DamageDef ParentName="Bullet">
         <defName>Celes_Particle</defName>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_DamageExtension_Multiplier">
+                <multiplier>0.5</multiplier>
+            </li>
+        </modExtensions>
         <label>polarised particle projectile</label>
         <deathMessage>{0} was shot by a polarised particle.</deathMessage>
         <workerClass>CelesFeature.CelesDamageWorker_DoubleToNext</workerClass>
@@ -36,6 +41,11 @@
     
     <DamageDef ParentName="Bullet">
         <defName>Celes_MassiveParticle</defName>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_DamageExtension_Multiplier">
+                <multiplier>0.7</multiplier>
+            </li>
+        </modExtensions>
         <label>massive polarised particle projectile</label>
         <deathMessage>{0} was shot by a polarised particle.</deathMessage>
         <workerClass>CelesFeature.CelesDamageWorker_DoubleToNext</workerClass>
