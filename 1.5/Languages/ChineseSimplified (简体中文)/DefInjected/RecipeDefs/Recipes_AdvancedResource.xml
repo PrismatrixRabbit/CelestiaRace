@@ -8,6 +8,27 @@
     <Make_CelesAdvanceCloth.jobString>正在重组尘化丝绸</Make_CelesAdvanceCloth.jobString>
     <!-- EN: reorganising Dust-Mech Silk -->
 
+    <Make_Celes_SpaceWeapenComponent.label>制作星铃尖端零件</Make_Celes_SpaceWeapenComponent.label>
+    <!-- EN: make celestia high-tech component -->
+    <Make_Celes_SpaceWeapenComponent.description>制作星铃尖端零件。</Make_Celes_SpaceWeapenComponent.description>
+    <!-- EN: make celestia high-tech component. -->
+    <Make_Celes_SpaceWeapenComponent.jobString>正在制作星铃尖端零件</Make_Celes_SpaceWeapenComponent.jobString>
+    <!-- EN: making celestia high-tech component -->
+
+    <Celes_MakeMedicineAlternative.label>制作医药(生物酶凝胶)</Celes_MakeMedicineAlternative.label>
+    <!-- EN: make medicine(bio-enzyme gel) -->
+    <Celes_MakeMedicineAlternative.description>通过生物酶凝胶制作医药。</Celes_MakeMedicineAlternative.description>
+    <!-- EN: make medicine by bio-enzyme gel. -->
+    <Celes_MakeMedicineAlternative.jobString>正在制作医药</Celes_MakeMedicineAlternative.jobString>
+    <!-- EN: making medicine by bio-enzyme gel. -->
+
+    <Celes_MakeMedicineAlternative_x4.label>制作医药(生物酶凝胶) x4</Celes_MakeMedicineAlternative_x4.label>
+    <!-- EN: make medicine(bio-enzyme gel) x4 -->
+    <Celes_MakeMedicineAlternative_x4.description>通过生物酶凝胶制作医药。</Celes_MakeMedicineAlternative_x4.description>
+    <!-- EN: make medicine by bio-enzyme gel. -->
+    <Celes_MakeMedicineAlternative_x4.jobString>正在制作医药</Celes_MakeMedicineAlternative_x4.jobString>
+    <!-- EN: making medicine by bio-enzyme gel. -->
+
     <!--<Celes_Make_NegativeAlloy.label>转化黯辉合金</Celes_Make_NegativeAlloy.label>-->
     <!-- EN: convert Dull-L Alloy -->
     <!--<Celes_Make_NegativeAlloy.description>利用尘构将淬铃合金转化为压制灵能的黯辉合金。</Celes_Make_NegativeAlloy.description>-->

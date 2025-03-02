@@ -60,9 +60,10 @@
             <li>Celes_EarlyWeaponSniper</li>
         </weaponTags>
         <costList>
-            <Steel>40</Steel>
-            <WoodLog>80</WoodLog>
+            <Steel>60</Steel>
+            <WoodLog>20</WoodLog>
             <ComponentIndustrial>4</ComponentIndustrial>
+            <Celes_RawCrystalOrchid>10</Celes_RawCrystalOrchid>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -79,7 +80,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_EarlyRifle</defaultProjectile>
                 <warmupTime>1.7</warmupTime>
-                <range>37.9</range>
+                <range>39.9</range>
                 <soundCast>Shot_BoltActionRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -111,9 +112,9 @@
         <label>Celestia standard 8.5mm bullet</label>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>20</damageAmountBase>
-            <armorPenetrationBase>0.25</armorPenetrationBase>
-            <stoppingPower>1.5</stoppingPower>
+            <damageAmountBase>21</damageAmountBase>
+            <armorPenetrationBase>0.32</armorPenetrationBase>
+            <stoppingPower>2.0</stoppingPower>
             <speed>75</speed>
         </projectile>
         <graphicData>
@@ -141,15 +142,16 @@
             <AccuracyShort>0.88</AccuracyShort>
             <AccuracyMedium>0.75</AccuracyMedium>
             <AccuracyLong>0.60</AccuracyLong>
-            <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
         </statBases>
 		<weaponTags>
 			<li>Celes_EarlyWeaponAssault</li>
 		</weaponTags>
         <costList>
-            <Steel>50</Steel>
-            <WoodLog>40</WoodLog>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <Steel>60</Steel>
+            <WoodLog>20</WoodLog>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <Celes_RawCrystalOrchid>10</Celes_RawCrystalOrchid>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -238,6 +240,7 @@
         <costList>
             <Steel>40</Steel>
             <ComponentIndustrial>3</ComponentIndustrial>
+            <Celes_RawCrystalOrchid>5</Celes_RawCrystalOrchid>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -311,19 +314,20 @@
         <statBases>
             <WorkToMake>15000</WorkToMake>
             <Mass>3.5</Mass>
-            <AccuracyTouch>0.50</AccuracyTouch>
-            <AccuracyShort>0.60</AccuracyShort>
-            <AccuracyMedium>0.55</AccuracyMedium>
-            <AccuracyLong>0.45</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <AccuracyTouch>0.47</AccuracyTouch>
+            <AccuracyShort>0.55</AccuracyShort>
+            <AccuracyMedium>0.45</AccuracyMedium>
+            <AccuracyLong>0.40</AccuracyLong>
+            <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
         </statBases>
 		<weaponTags>
 			<li>Celes_EarlyWeaponAssault</li>
 		</weaponTags>
         <costList>
-            <Steel>40</Steel>
-            <WoodLog>65</WoodLog>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <Steel>60</Steel>
+            <WoodLog>25</WoodLog>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <Celes_RawCrystalOrchid>10</Celes_RawCrystalOrchid>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -339,7 +343,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_EarlyRifle</defaultProjectile>
-                <warmupTime>1.0</warmupTime>
+                <warmupTime>0.9</warmupTime>
                 <range>27.9</range>
                 <soundCast>Shot_BoltActionRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -393,7 +397,8 @@
         </weaponTags>
         <costList>
             <Steel>75</Steel>
-            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentIndustrial>8</ComponentIndustrial>
+            <CelesNanoMachine>15</CelesNanoMachine>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -465,7 +470,8 @@
         </weaponTags>
         <costList>
             <Steel>70</Steel>
-            <ComponentIndustrial>7</ComponentIndustrial>
+            <ComponentIndustrial>8</ComponentIndustrial>
+            <CelesNanoMachine>15</CelesNanoMachine>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -520,10 +526,10 @@
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>11</damageAmountBase>
+            <damageAmountBase>13</damageAmountBase>
             <speed>70</speed>
             <stoppingPower>0.5</stoppingPower>
-            <armorPenetrationBase>0.15</armorPenetrationBase>
+            <armorPenetrationBase>0.25</armorPenetrationBase>
         </projectile>
     </ThingDef>
 
@@ -552,8 +558,9 @@
             <li>Celes_MidWeaponSniper</li>
         </weaponTags>
         <costList>
-			<Steel>80</Steel>
+            <Steel>80</Steel>
             <ComponentIndustrial>8</ComponentIndustrial>
+            <CelesNanoMachine>15</CelesNanoMachine>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -569,7 +576,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_EarlyRifle</defaultProjectile>
-                <warmupTime>1.7</warmupTime>
+                <warmupTime>3.0</warmupTime>
                 <range>39.9</range>
                 <burstShotCount>2</burstShotCount>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -615,17 +622,18 @@
             <WorkToMake>65000</WorkToMake>
             <Mass>5.5</Mass>
             <AccuracyTouch>0.40</AccuracyTouch>
-            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyShort>0.72</AccuracyShort>
             <AccuracyMedium>0.80</AccuracyMedium>
             <AccuracyLong>0.90</AccuracyLong>
-            <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
         </statBases>
 		<weaponTags>
 			<li>Celes_MidWeaponSniper</li>
 		</weaponTags>
         <costList>
-			<Steel>140</Steel>
-            <ComponentIndustrial>12</ComponentIndustrial>
+            <Steel>140</Steel>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <CelesNanoMachine>20</CelesNanoMachine>
         </costList>
         <equippedStatOffsets>
             <MoveSpeed>-0.25</MoveSpeed>
@@ -644,7 +652,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_SR</defaultProjectile>
-                <warmupTime>3.0</warmupTime>
+                <warmupTime>3.5</warmupTime>
                 <range>53.9</range>
                 <soundCast>Shot_SniperRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -681,7 +689,7 @@
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>40</damageAmountBase>
+            <damageAmountBase>38</damageAmountBase>
             <stoppingPower>2</stoppingPower>
             <armorPenetrationBase>0.4</armorPenetrationBase>
             <speed>120</speed>

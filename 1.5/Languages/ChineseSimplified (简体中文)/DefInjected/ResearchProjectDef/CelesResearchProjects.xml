@@ -73,13 +73,13 @@
 
   <Celes_Weapon_I.label>星铃拓荒武器</Celes_Weapon_I.label>
   <!-- EN: Celestia pioneer weapons -->
-  <Celes_Weapon_I.description>依照星铃标准设计拓荒武器，允许制作拓荒冰镐，并改良简单枪械。\n\n这些设计据说是源于最初的星铃从母星带来的古董文物，但没有人能证实亦或证伪。</Celes_Weapon_I.description>
-  <!-- EN: Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese designs are said to have originated from antique artefacts brought by the original Celestia from its home planet, but no one has been able to confirm or disprove this. -->
+  <Celes_Weapon_I.description>依照星铃标准设计拓荒武器，允许制作拓荒冰镐，并改良简单枪械。\n\n这些古董般的设计，只是通过与晶蒴等材料一并锻造，却有着纳米级精度的膛线与自气密的非凡性能。</Celes_Weapon_I.description>
+  <!-- EN: Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese antique-like designs are simply forged by forging them together with materials such as crystal capsules, yet they have the extraordinary performance of nano-precision rifling and self-airtightness. -->
 
   <Celes_Weapon_II.label>星铃古典武器</Celes_Weapon_II.label>
   <!-- EN: Celestia classical weapons -->
-  <Celes_Weapon_II.description>按照星铃武器规范和弹药口径设计的古典武器，允许制作拓荒军刀等武器，并改良精准步枪。\n\n这种古典的武器仍然用于星铃拓荒队的先锋小队中，或者被配发给前哨站居民防身，它们的历史却已经无从追溯。</Celes_Weapon_II.description>
-  <!-- EN: Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThese classical weapons are still used in Celestia Pathfinder pioneer squads or are issued to outpost residents for self-defence; their history can no longer be traced. -->
+  <Celes_Weapon_II.description>按照星铃武器规范和弹药口径设计的古典武器，允许制作拓荒军刀等武器，并改良精准步枪。\n\n这种武器利用电化学推进发射弹药，有着夸张的能量密度。仍然用于星铃拓荒队的先锋小队中，或者被配发给前哨站居民防身，它们的历史却已经无从追溯。</Celes_Weapon_II.description>
+  <!-- EN: Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThis weapon utilises electrochemical propulsion to fire ammunition and has an exaggerated energy density. Still used in Celestia Topsy-Turvy pioneer squads or issued to outpost residents for self-defence, their history is untraceable. -->
 
   <Celes_Weapon_III.label>星铃制式武器</Celes_Weapon_III.label>
   <!-- EN: Celestia standard-issue weapons -->
@@ -111,19 +111,24 @@
   <Celes_Bio_IV.description>解锁制作「RS-1试验性强化剂」，通过利用尘构对路西法合剂的指令进行覆写，得到的一种危险高效的最终手段。\n\n利用尘构对路西法合剂的覆写和过载确实解决了这种纳米机械混合物在协调能力上的缺陷，但也让这种药物变得更不稳定——这便体现在RS-1高概率的昏迷与心脏病副作用上。</Celes_Bio_IV.description>
   <!-- EN: Unlocks the crafting of "RS-1 Experimental Stimulants", a dangerously efficient final resort obtained by overriding the commands of Luciferium using Dust-Mech. \n\nThe overwriting and overloading of Luciferium using Dust-Mech did solve the nano-mechanical mixture's shortcomings in co-ordination ability, but it also made the drug more unstable - which then manifested itself in RS-1's high probability of coma and heart attack side effects. -->
 
+  <Celes_Medicine_I.label>替代性制药</Celes_Medicine_I.label>
+  <!-- EN: alternative medicine production -->
+  <Celes_Medicine_I.description>利用生物酶凝胶作为原料替代中性胺制取药物，效率略低但高度自给。</Celes_Medicine_I.description>
+  <!-- EN: Slightly less efficient but highly self-sufficient use of bio-enzymatic gels as a feedstock to replace neutral amines in the production of medicine. -->
+
+  <Celes_NanoImplant_I.label>侵入性植入</Celes_NanoImplant_I.label>
+  <!-- EN: Invasive Implantation -->
+  <Celes_NanoImplant_I.description>解锁「侵入性尘构植入」手术，一种利用尘构物质取代部分身体机能的极端强化手段，大多数时候对星铃的副作用处于可控范围。\n\n星铃的技术说明是这么说的……但上面没有说对星铃之外的种族会有什么副作用。</Celes_NanoImplant_I.description>
+  <!-- EN: Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's technology manual says so ...... but it doesn't say what side effects it would have on races other than Celestia. -->
+
+  <Celes_NanoImplant_II.label>尘构调用:劣化信息论改造</Celes_NanoImplant_II.label>
+  <!-- EN: Dust-Mech Call:degraded cybernetic modification -->
+  <Celes_NanoImplant_II.description>解锁「劣化信息论改造」手术，这种改造一般运用于意外被尘构高度同化的生物，配方已经针对边缘世界的物资进行针对性调整。\n\n这种技术被技术监管委员会限定只能用于未开化动物，但事实上只需要修改一个"+"号就能用于人类。在边缘世界，人类和动物似乎并不是那么泾渭分明。</Celes_NanoImplant_II.description>
+  <!-- EN: Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct. -->
+
   <Celes_Prosthesis_I.label>尘构调用:活械转译\n(即将推出)</Celes_Prosthesis_I.label>
   <!-- EN: Dust-Mech Call:Signal Transcoding(WIP) -->
   <Celes_Prosthesis_I.description>活械转译技术也在做呢，别急别急。</Celes_Prosthesis_I.description>
   <!-- EN: Dust-Mech Call:Signal Transcoding(WIP) -->
-
-  <Celes_NanoImplant_I.label>尘构调用:侵入性植入</Celes_NanoImplant_I.label>
-  <!-- EN: Dust-Mech Call:Invasive Implantation -->
-  <Celes_NanoImplant_I.description>解锁「侵入性尘构植入」手术，一种利用尘构物质取代部分身体机能的极端强化手段，大多数时候对星铃的副作用处于可控范围。\n\n星铃的自译解技术核心是这么说的……但上面没有说对星铃之外的种族会有什么副作用。</Celes_NanoImplant_I.description>
-  <!-- EN: Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's Self-explanatory Technology Core says so ...... but it doesn't say what side effects it would have on races other than Celestia. -->
-
-  <Celes_NanoImplant_II.label>劣化信息论改造</Celes_NanoImplant_II.label>
-  <!-- EN: degraded cybernetic modification -->
-  <Celes_NanoImplant_II.description>解锁「劣化信息论改造」手术，这种改造一般运用于意外被尘构高度同化的生物，配方已经针对边缘世界的物资进行针对性调整。\n\n这种技术被技术监管委员会限定只能用于未开化动物，但事实上只需要修改一个"+"号就能用于人类。在边缘世界，人类和动物似乎并不是那么泾渭分明。</Celes_NanoImplant_II.description>
-  <!-- EN: Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct. -->
 
 </LanguageData>

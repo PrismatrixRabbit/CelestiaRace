@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<Parse_CelesSTC_MainTech_II.label>尘构技术解译</Parse_CelesSTC_MainTech_II.label>
+	<Parse_CelesSTC_MainTech_III.label>尘构技术解译</Parse_CelesSTC_MainTech_III.label>
 	<!-- EN: Dust-Mech technical interpretation -->
-	<Parse_CelesSTC_MainTech_II.description>尘构技术解译。</Parse_CelesSTC_MainTech_II.description>
+	<Parse_CelesSTC_MainTech_III.description>尘构技术解译。</Parse_CelesSTC_MainTech_III.description>
 	<!-- EN: Dust-Mech technical interpretation -->
-	<Parse_CelesSTC_MainTech_II.jobString>尘构技术解译</Parse_CelesSTC_MainTech_II.jobString>
+	<Parse_CelesSTC_MainTech_III.jobString>尘构技术解译</Parse_CelesSTC_MainTech_III.jobString>
 	<!-- EN: Dust-Mech technical interpretation -->
 
 </LanguageData>

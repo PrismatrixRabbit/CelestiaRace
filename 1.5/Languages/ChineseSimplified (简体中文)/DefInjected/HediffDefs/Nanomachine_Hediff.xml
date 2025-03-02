@@ -2,18 +2,18 @@
 <LanguageData>
     
     <Celes_NanoImplanted_I.label>侵入性尘构感染</Celes_NanoImplanted_I.label>
-    <Celes_NanoImplanted_I.description>过量的尘构物质被强行注射入个体体内，这些纳米机械会试图自我复制并填补与增强机体运动能力与感官能力，但也会不可避免的触发炎症反应造成疼痛和高度疲劳。注意，基因中缺少尘构抑制序列的个体将无法抑制尘构复制导致失控增殖！</Celes_NanoImplanted_I.description>
+    <Celes_NanoImplanted_I.description>过量的尘构物质被强行注射入个体体内，这些纳米机械会试图自我复制并填补与增强机体运动能力与感官能力，但也会不可避免的触发炎症反应造成疼痛和高度疲劳。\n\n注意，基因中缺少尘构抑制序列的个体将无法抑制尘构复制导致失控增殖！</Celes_NanoImplanted_I.description>
     <Celes_NanoImplanted_I.stages.0.label>增殖期</Celes_NanoImplanted_I.stages.0.label>
     <Celes_NanoImplanted_I.stages.1.label>活性期</Celes_NanoImplanted_I.stages.1.label>
 
     <Celes_NanoImplanted_II.label>侵入性尘构感染 过度复制</Celes_NanoImplanted_II.label>
-    <Celes_NanoImplanted_II.description>过量的尘构物质已被强行注射入个体体内，仍在试图增强个体机能，但因为个体基因中缺少尘构抑制序列而失控增殖。尘构并没有失控，只是这个机体没有抑制检测。我们可以通过强行抽出患者体内的过量尘构并输入化学物质来抑制失控，并作为副产物获取一些尘构和中性胺，但这意味着极高的死亡率……又或许，我们可以放任尘构利用这些有机物。但无论如何，这将是抑制尘构复制的最后机会！</Celes_NanoImplanted_II.description>
+    <Celes_NanoImplanted_II.description>过量的尘构物质已被强行注射入个体体内，仍在试图增强个体机能，但因为个体基因中缺少尘构抑制序列而非受控增殖。但尘构并没有失控，这一现象只是由于该机体没有抑制检测。\n\n我们可以通过强行抽出患者体内的过量尘构并输入化学物质来抑制失控，并作为副产物获取一些尘构和中性胺，但这意味着极高的死亡率……又或许，我们可以放任尘构利用这些有机物。但无论如何，这将是抑制尘构复制的最后机会。</Celes_NanoImplanted_II.description>
     <Celes_NanoImplanted_II.stages.0.label>超活性期</Celes_NanoImplanted_II.stages.0.label>
-    <Celes_NanoImplanted_II.stages.1.label>失控前期</Celes_NanoImplanted_II.stages.1.label>
+    <Celes_NanoImplanted_II.stages.1.label>超载前期</Celes_NanoImplanted_II.stages.1.label>
 
-    <Celes_NanoImplanted_III.label>侵入性尘构感染 失控复制</Celes_NanoImplanted_III.label>
-    <Celes_NanoImplanted_III.description>过量的尘构物质已被强行注射入个体体内，并因为个体基因中缺少尘构抑制序列而完全失控增殖并无法阻止。尘构并没有失控，只是这个机体没有抑制检测。尘构物质会分解利用这具躯体的所有物质来自我复制，该躯体的脑机能也已经高度受损，表现出生命体征仅仅因为尘构在试图维持和增强该个体。理论上只有另一种纳米修复能医治该个体……除非我们不想＂医治＂它？</Celes_NanoImplanted_III.description>
-    <Celes_NanoImplanted_III.stages.0.label>失控后期</Celes_NanoImplanted_III.stages.0.label>
+    <Celes_NanoImplanted_III.label>侵入性尘构感染 超载复制</Celes_NanoImplanted_III.label>
+    <Celes_NanoImplanted_III.description>过量的尘构物质已被强行注射入个体体内，并因为个体基因中缺少尘构抑制序列而完全非受控增殖并无法阻止。但尘构并没有失控，这一现象只是由于该机体没有抑制检测。\n\n尘构物质会分解利用这具躯体的所有物质来自我复制，该躯体的脑机能也已经高度受损，表现出生命体征仅仅因为尘构在试图维持和增强该个体。理论上只有另一种纳米修复能医治该个体……又或者，我们并不想＂医治＂它？</Celes_NanoImplanted_III.description>
+    <Celes_NanoImplanted_III.stages.0.label>超载后期</Celes_NanoImplanted_III.stages.0.label>
 
     <Celes_NanoImplanted_IV.label>劣化控制论增强</Celes_NanoImplanted_IV.label>
     <Celes_NanoImplanted_IV.description>这个个体已经变得难以情绪崩溃，并获得机体运动能力的强化，但它也会难以学习知识，并无法再从事复杂工作和研究工作。</Celes_NanoImplanted_IV.description>

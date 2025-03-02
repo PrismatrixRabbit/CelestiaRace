@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+    <!-- ========== 高级资源 ========== -->
+
     <RecipeDef>
         <defName>Make_CelesAdvanceCloth</defName>
         <label>reorganise Dust-Mech Silk</label>
@@ -14,7 +16,7 @@
         <recipeUsers>
             <li>Celes_TailoringTab</li>
         </recipeUsers>
-        <researchPrerequisite>Celes_MainTech_II</researchPrerequisite>
+        <researchPrerequisite>Celes_MainTech_IV</researchPrerequisite>
         <skillRequirements>
             <Crafting>8</Crafting>
             <Intellectual>10</Intellectual>
@@ -47,6 +49,173 @@
         </ingredients>
         <products>
             <CelesAdvanceCloth>20</CelesAdvanceCloth>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Make_Celes_SpaceWeapenComponent</defName>
+        <label>make celestia high-tech component</label>
+        <description>make celestia high-tech component.</description>
+        <jobString>making celestia high-tech component</jobString>
+        <workAmount>6000</workAmount>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_MultifunctionalTabA</li>
+        </recipeUsers>
+        <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Celes_NanoResourcesRaw</li>
+                    </categories>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>Gold</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+            <categories>
+                <li>Celes_NanoResourcesRaw</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
+        </products>
+    </RecipeDef>
+
+    <!-- ========== 替代配方 ========== -->
+
+    <RecipeDef>
+        <defName>Celes_MakeMedicineAlternative</defName>
+        <label>make medicine(bio-enzyme gel)</label>
+        <description>make medicine by bio-enzyme gel.</description>
+        <jobString>making medicine by bio-enzyme gel.</jobString>
+        <workAmount>720</workAmount>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+        <researchPrerequisite>Celes_Medicine_I</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineHerbal</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_BioGel</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <products>
+            <MedicineIndustrial>1</MedicineIndustrial>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_MakeMedicineAlternative_x4</defName>
+        <label>make medicine(bio-enzyme gel) x4</label>
+        <description>make medicine by bio-enzyme gel.</description>
+        <jobString>making medicine by bio-enzyme gel.</jobString>
+        <workAmount>2820</workAmount>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+        <researchPrerequisite>Celes_Medicine_I</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineHerbal</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_BioGel</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+        </ingredients>
+        <products>
+            <MedicineIndustrial>4</MedicineIndustrial>
         </products>
     </RecipeDef>
 

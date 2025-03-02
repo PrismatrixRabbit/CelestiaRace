@@ -126,23 +126,6 @@
         <thingCategories>
             <li>Manufactured</li>
         </thingCategories>
-        <costList>
-            <Gold>10</Gold>
-            <ComponentSpacer>1</ComponentSpacer>
-        </costList>
-        <recipeMaker>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <recipeUsers>
-                <li>Celes_MultifunctionalTabA</li>
-            </recipeUsers>
-            <researchPrerequisite>Celes_MainTech_II</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>6</Crafting>
-                <Intellectual>4</Intellectual>
-            </skillRequirements>
-            <bulkRecipeCount>5</bulkRecipeCount>
-        </recipeMaker>
         <allowedArchonexusCount>10</allowedArchonexusCount>
     </ThingDef>
 

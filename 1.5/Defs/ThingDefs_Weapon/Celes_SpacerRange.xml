@@ -53,8 +53,8 @@
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
-            <ComponentSpacer>3</ComponentSpacer>
+            <Plasteel>60</Plasteel>
+            <Celes_SpaceWeapenComponent>3</Celes_SpaceWeapenComponent>
         </costList>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>3.0</ShootingAccuracyPawn>
@@ -131,8 +131,8 @@
             </recipeUsers>
         </recipeMaker>
         <costList>
+            <Plasteel>30</Plasteel>
             <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
-            <ComponentSpacer>2</ComponentSpacer>
         </costList>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>3.0</ShootingAccuracyPawn>
@@ -209,8 +209,8 @@
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
-            <ComponentSpacer>5</ComponentSpacer>
+            <Plasteel>80</Plasteel>
+            <Celes_SpaceWeapenComponent>4</Celes_SpaceWeapenComponent>
         </costList>
         <equippedStatOffsets>
 			<ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
@@ -288,8 +288,9 @@
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
-            <ComponentSpacer>5</ComponentSpacer>
+            <Plasteel>120</Plasteel>
+            <Celes_SpaceWeapenComponent>4</Celes_SpaceWeapenComponent>
+            <ComponentSpacer>4</ComponentSpacer>
         </costList>
         <equippedStatOffsets>
             <MoveSpeed>-0.25</MoveSpeed>
@@ -341,17 +342,10 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Celes_BulletRadiation</damageDef>
-			<damageAmountBase>13</damageAmountBase>
-			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.90</armorPenetrationBase>
 			<stoppingPower>0.9</stoppingPower>
 			<speed>120</speed>
-			<extraDamages>
-				<li>
-					<def>Burn</def>
-					<amount>7</amount>
-					<chance>1</chance>
-				</li>
-			</extraDamages>
 		</projectile>
 	</ThingDef>
 
@@ -389,8 +383,9 @@
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
-            <ComponentSpacer>5</ComponentSpacer>
+            <Plasteel>120</Plasteel>
+            <Celes_SpaceWeapenComponent>4</Celes_SpaceWeapenComponent>
+            <ComponentSpacer>4</ComponentSpacer>
         </costList>
         <equippedStatOffsets>
             <MoveSpeed>-0.25</MoveSpeed>
@@ -455,7 +450,7 @@
         <projectile>
             <damageDef>Celes_Particle</damageDef>
             <damageAmountBase>5</damageAmountBase>
-            <armorPenetrationBase>0.4</armorPenetrationBase>
+            <armorPenetrationBase>0.6</armorPenetrationBase>
             <stoppingPower>0.9</stoppingPower>
             <speed>90</speed>
             <extraDamages>
@@ -479,7 +474,7 @@
                 <damageDef>Celes_Particle</damageDef>
                 <damageAmountBase>12</damageAmountBase>
                 <speed>90</speed>
-                <armorPenetrationBase>0.4</armorPenetrationBase>
+                <armorPenetrationBase>0.6</armorPenetrationBase>
                 <stoppingPower>0.9</stoppingPower>
             <extraDamages>
                 <li>
@@ -502,7 +497,7 @@
             <damageDef>Celes_MassiveParticle</damageDef>
             <damageAmountBase>42</damageAmountBase>
             <speed>120</speed>
-            <armorPenetrationBase>0.5</armorPenetrationBase>
+            <armorPenetrationBase>0.75</armorPenetrationBase>
             <stoppingPower>3.0</stoppingPower>
             <extraDamages>
                 <li>

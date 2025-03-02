@@ -81,8 +81,6 @@
         <soundWorking>Recipe_Cremate</soundWorking>
         <workAmount>600</workAmount>
         <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <allowMixingIngredients>true</allowMixingIngredients>
-        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
         <workSkill>Medicine</workSkill>
         <recipeUsers>
             <li>Celes_MultifunctionalTabA</li>
@@ -128,6 +126,7 @@
             <li>Celes_MultifunctionalTabA</li>
             <li>TableMachining</li>
         </recipeUsers>
+        <unfinishedThingDef>UnfinishedCrystal</unfinishedThingDef>
         <researchPrerequisites>
             <li>Celes_MainTech_II</li>
         </researchPrerequisites>
@@ -170,7 +169,7 @@
         <description>Deconstruct_CelesNanoMachineCrystal</description>
         <jobString>Deconstruct_CelesNanoMachineCrystal</jobString>
         <uiIconThing>Celes_NanoMachineCrystal</uiIconThing>
-        <workAmount>10000</workAmount>
+        <workAmount>3000</workAmount>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

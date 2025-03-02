@@ -2,6 +2,11 @@
 <Defs>
     <DamageDef ParentName="Bullet">
         <defName>Celes_BulletRadiation</defName>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_DamageExtension_Multiplier">
+                <multiplier>1.0</multiplier>
+            </li>
+        </modExtensions>
         <label>radioactive plasma projectile</label>
         <deathMessage>{0} was shot by high-energy plasma.</deathMessage>
         <additionalHediffs>

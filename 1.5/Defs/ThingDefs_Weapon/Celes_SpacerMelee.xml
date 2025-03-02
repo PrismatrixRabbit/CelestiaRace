@@ -30,8 +30,8 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
-            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
-            <ComponentSpacer>2</ComponentSpacer>
+            <Plasteel>80</Plasteel>
+            <Celes_SpaceWeapenComponent>2</Celes_SpaceWeapenComponent>
         </costList>
 		<statBases>
             <WorkToMake>45000</WorkToMake>
@@ -107,8 +107,8 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <costList>
+            <Plasteel>25</Plasteel>
             <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
-            <ComponentSpacer>1</ComponentSpacer>
         </costList>
 		<statBases>
             <WorkToMake>35000</WorkToMake>

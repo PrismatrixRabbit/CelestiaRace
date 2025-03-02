@@ -3,10 +3,10 @@
 
     <!-- ========== 基础资源 ========== -->
 
-    <ThingDef ParentName="PlantFoodRawBase"><!-- 晶蒴 -->
+    <ThingDef ParentName="ResourceBase"><!-- 晶蒴 -->
         <defName>Celes_RawCrystalOrchid</defName>
         <label>crystal capsule</label>
-        <description>The fruit of the crystal orchid, in the form of crystals, is very hard to the touch but unexpectedly edible ...... But how to eat it is another question.</description>
+        <description>The fruit of the crystal orchid, in the form of crystals, is very hard to the touch but seems unexpectedly edible ...... But how to eat it is another question.</description>
         <descriptionHyperlinks>
             <ThingDef>Plant_CelesNano</ThingDef>
         </descriptionHyperlinks>
@@ -16,22 +16,15 @@
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
-            <MarketValue>1.0</MarketValue>
-            <Nutrition>0.02</Nutrition>
-            <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+            <MaxHitPoints>75</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>0.05</Mass>
+            <Flammability>1.2</Flammability>
         </statBases>
         <thingCategories>
             <li>Celes_NanoResourcesRaw</li>
         </thingCategories>
-        <ingestible>
-            <foodType>VegetableOrFruit</foodType>
-        </ingestible>
-        <comps>
-            <li Class="CompProperties_Rottable">
-                <daysToRotStart>180</daysToRotStart>
-                <rotDestroys>true</rotDestroys>
-            </li>
-        </comps>
+        <allowedArchonexusCount>20</allowedArchonexusCount>
     </ThingDef>
     
     <ThingDef ParentName="ResourceBase"><!-- 生物酶凝胶 -->
@@ -112,7 +105,21 @@
     </ThingDef>
 
     <!-- ========== 纳米化素材 ========== -->
-    
+
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>UnfinishedCrystal</defName>
+        <label>uncrystallised stone</label>
+        <description>An uncrystallised stone.</description>
+        <statBases>
+            <Flammability>0</Flammability>
+        </statBases>
+        <graphicData>
+            <texPath>Celes/Item/Unfinished/UnfinishedCrystal</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stuffCategories Inherit="false" />
+    </ThingDef>
+
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_NanoMachineCrystal</defName>
         <label>CelesNanoMachineCrystal</label>
@@ -121,7 +128,7 @@
         <graphicData>
             <texPath>Celes/Item/BaseResource/NanoMachineCrystal</texPath>
             <graphicClass>Graphic_Random</graphicClass>
-            <drawSize>1.0</drawSize>
+            <drawSize>2.0</drawSize>
         </graphicData>
         <stackLimit>1</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>
@@ -146,7 +153,7 @@
         <graphicData>
             <texPath>Celes/Item/BaseResource/NanoCrystallisedCorpse/NanoCrystallisedCorpse</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.5</drawSize>
+            <drawSize>2.3</drawSize>
         </graphicData>
         <stackLimit>1</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>

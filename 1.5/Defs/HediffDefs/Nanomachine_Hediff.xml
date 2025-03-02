@@ -276,6 +276,23 @@
                 <onlyMessageForColonistsOrPrisoners>true</onlyMessageForColonistsOrPrisoners>
             </li>
         </comps>
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+                <texPath>Celes/Wounds/CrystallisedEye</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.20</drawSize>
+                <drawData>
+                    <defaultData>
+                        <layer>120</layer>
+                        <offset>(-0.09, 0, -0.07)</offset>
+                    </defaultData>
+                    <dataWest>
+                        <flip>true</flip>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
     </HediffDef>
 
     <RecipeDef ParentName="SurgeryFlesh">

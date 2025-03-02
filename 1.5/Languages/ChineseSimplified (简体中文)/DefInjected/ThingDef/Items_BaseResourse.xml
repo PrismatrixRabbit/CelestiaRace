@@ -5,8 +5,8 @@
 
     <Celes_RawCrystalOrchid.label>晶蒴</Celes_RawCrystalOrchid.label>
     <!-- EN: crystal capsule -->
-    <Celes_RawCrystalOrchid.description>晶兰的果实，呈晶体状，摸上去非常坚硬但意外的可以食用……但如何食用就是另一个问题了。</Celes_RawCrystalOrchid.description>
-    <!-- EN: The fruit of the crystal orchid, in the form of crystals, is very hard to the touch but unexpectedly edible ...... But how to eat it is another question. -->
+    <Celes_RawCrystalOrchid.description>晶兰的果实，呈晶体状，摸上去非常坚硬但意外的似乎可以食用……但如何食用就是另一个问题了。</Celes_RawCrystalOrchid.description>
+    <!-- EN: The fruit of the crystal orchid, in the form of crystals, is very hard to the touch but seems unexpectedly edible ...... But how to eat it is another question. -->
 
     <Celes_BioGel.label>生物酶凝胶</Celes_BioGel.label>
     <!-- EN: bio-enzyme gels -->
@@ -24,6 +24,11 @@
     <!-- EN: A powerful and highly controllable programmable nanomachine, one of the roots of Celestia's civilisation, used extensively. But in places like the Rimworld, where supplies are scarce, Dust-Mech matter does not shape the world as it pleases. -->
 
     <!-- ========== 纳米化素材 ========== -->
+
+    <UnfinishedCrystal.label>未完全晶化石料</UnfinishedCrystal.label>
+    <!-- EN: uncrystallised stone -->
+    <UnfinishedCrystal.description>未完全晶化石料。</UnfinishedCrystal.description>
+    <!-- EN: An uncrystallised stone -->
 
     <Celes_NanoMachineCrystal.label>晶化石料</Celes_NanoMachineCrystal.label>
     <!-- EN: CelesNanoMachineCrystal -->

@@ -93,7 +93,7 @@
     <ResearchProjectDef>
         <defName>Celes_Weapon_I</defName><!-- 星铃拓荒武器 -->
         <label>Celestia pioneer weapons</label>
-        <description>Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese designs are said to have originated from antique artefacts brought by the original Celestia from its home planet, but no one has been able to confirm or disprove this.</description>
+        <description>Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese antique-like designs are simply forged by forging them together with materials such as crystal capsules, yet they have the extraordinary performance of nano-precision rifling and self-airtightness.</description>
         <baseCost>300</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -109,7 +109,7 @@
     <ResearchProjectDef>
         <defName>Celes_Weapon_II</defName><!-- 星铃古典武器 -->
         <label>Celestia classical weapons</label>
-        <description>Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThese classical weapons are still used in Celestia Pathfinder pioneer squads or are issued to outpost residents for self-defence; their history can no longer be traced.</description>
+        <description>Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThis weapon utilises electrochemical propulsion to fire ammunition and has an exaggerated energy density. Still used in Celestia Topsy-Turvy pioneer squads or issued to outpost residents for self-defence, their history is untraceable.</description>
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -178,7 +178,7 @@
             <li>MedicineProduction</li>
         </prerequisites>
         <researchViewX>1</researchViewX>
-        <researchViewY>2.4</researchViewY>
+        <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -193,7 +193,7 @@
             <li>Celes_Bio_I</li>
         </prerequisites>
         <researchViewX>2</researchViewX>
-        <researchViewY>2.4</researchViewY>
+        <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -212,7 +212,7 @@
             <li>Celes_Bio_II</li>
         </prerequisites>
         <researchViewX>4</researchViewX>
-        <researchViewY>2.4</researchViewY>
+        <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -230,6 +230,72 @@
             <li>Celes_Bio_III</li>
         </prerequisites>
         <researchViewX>5</researchViewX>
+        <researchViewY>3.0</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Medicine_I</defName>
+        <label>alternative medicine production</label>
+        <description>Slightly less efficient but highly self-sufficient use of bio-enzymatic gels as a feedstock to replace neutral amines in the production of medicine.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+            <li>Celes_Bio_I</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>Celes_MainTech_II</li>
+        </hiddenPrerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>3.6</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_NanoImplant_I</defName>
+        <label>Invasive Implantation</label>
+        <description>Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's technology manual says so ...... but it doesn't say what side effects it would have on races other than Celestia.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine_ForCeles</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_ForCeles</HediffDef>
+        </descriptionHyperlinks>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>Celes_MainTech_II</li>
+            <li>Celes_Bio_I</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2.4</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_NanoImplant_II</defName>
+        <label>Dust-Mech Call:degraded cybernetic modification</label>
+        <description>Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_DegradedCyberneticSurgery</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_IV</HediffDef>
+        </descriptionHyperlinks>
+        <baseCost>3500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>Celes_NanoImplant_I</li>
+            <li>Celes_MainTech_III</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+        </hiddenPrerequisites>
+        <researchViewX>4</researchViewX>
         <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -252,51 +318,6 @@
         </hiddenPrerequisites>
         <researchViewX>4</researchViewX>
         <researchViewY>3.6</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_NanoImplant_I</defName>
-        <label>Dust-Mech Call:Invasive Implantation</label>
-        <description>Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's Self-explanatory Technology Core says so ...... but it doesn't say what side effects it would have on races other than Celestia.</description>
-        <descriptionHyperlinks>
-            <RecipeDef>Celes_ImplantNanomachine_ForCeles</RecipeDef>
-            <HediffDef>Celes_NanoImplanted_ForCeles</HediffDef>
-        </descriptionHyperlinks>
-        <baseCost>2000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites>
-        </prerequisites>
-        <hiddenPrerequisites>
-            <li>Celes_MainTech_III</li>
-            <li>Celes_Bio_I</li>
-        </hiddenPrerequisites>
-        <researchViewX>4</researchViewX>
-        <researchViewY>3</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_NanoImplant_II</defName>
-        <label>degraded cybernetic modification</label>
-        <description>Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct.</description>
-        <descriptionHyperlinks>
-            <RecipeDef>Celes_DegradedCyberneticSurgery</RecipeDef>
-            <HediffDef>Celes_NanoImplanted_IV</HediffDef>
-        </descriptionHyperlinks>
-        <baseCost>3500</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites><li>Celes_NanoImplant_I</li></prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>3</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
