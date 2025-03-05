@@ -23,8 +23,8 @@
 
 	<!-- ========== 日常服装 ========= -->
 
-	<ThingDef ParentName="Celes_LegwearBase"><!--过膝袜黑-->
-	<defName>Celes_KneeHighBlack</defName>
+	<ThingDef ParentName="Celes_LegwearBase"><!--吊带袜黑-->
+	<defName>Celes_SuspenderBlack</defName>
 	<label>celestia black knee-high stocking</label>
 	<description>A pair of black knee-high stockings that fit Celestia's figure, balancing warmth and aesthetics, often used to match a variety of outfits. \n\nBut the truth is that if it wasn't made of a stretchy material like Dust-Mech silk or synthetic fibres, it would just be a pair of slightly longer and opaque socks.</description>
 	<costStuffCount>30</costStuffCount>
@@ -32,7 +32,7 @@
 	    <li>Fabric</li>
 	</stuffCategories>
 	<graphicData>
-		<texPath>Celes/Apparel/Legwear/KneeHighBlack/KneeHighBlack</texPath>
+		<texPath>Celes/Apparel/Legwear/SuspenderBlack/SuspenderBlack</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
@@ -50,7 +50,7 @@
 			<li>Legs</li>
 			<li>Feet</li>
         </bodyPartGroups>
-		<wornGraphicPath>Celes/Apparel/Legwear/KneeHighBlack/KneeHighBlack</wornGraphicPath>
+		<wornGraphicPath>Celes/Apparel/Legwear/SuspenderBlack/SuspenderBlack</wornGraphicPath>
 		<tags>
 			<li>Celes_Uniform</li>
 			<li>Celes_Daily</li>
@@ -73,7 +73,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="Celes_LegwearBase"><!--长筒袜黑-->
+	<ThingDef ParentName="Celes_LegwearBase"><!--过膝袜黑-->
 		<defName>Celes_StockingBlack</defName>
 		<label>celestia black thigh-high stocking</label>
 		<description>A pair of black thigh-high stocking that fit Celestia's figure, showing off legs more while keeping warm, often used to match a variety of outfits. \n\nThis style of thigh-high stocking is widely praised, but until a certain fashion designer adjusts the knitting density of the cuffs, the outer side of this style is always prone to accidental slippage, while the inner side tends to irritate the base of the thigh in friction.</description>

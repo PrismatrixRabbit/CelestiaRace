@@ -596,7 +596,7 @@
 
 				<apparelList>
 					<!-- 腿饰 -->
-					<li>Celes_KneeHighBlack</li>
+					<li>Celes_SuspenderBlack</li>
 					<li>Celes_StockingBlack</li>
 					<li>Celes_TightBlack</li>
 					<li>Celes_LightLegArmour</li>
@@ -703,7 +703,7 @@
 			<MentalBreakThreshold>0.3</MentalBreakThreshold>
 			<ComfyTemperatureMax>26</ComfyTemperatureMax>
 			<ComfyTemperatureMin>10</ComfyTemperatureMin>
-			<ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+			<ImmunityGainSpeed>0.4</ImmunityGainSpeed>
 			<CarryingCapacity>75</CarryingCapacity>
 			<RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">3</RoyalFavorValue>
 			<MeatAmount>45</MeatAmount>

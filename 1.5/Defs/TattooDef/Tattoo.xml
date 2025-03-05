@@ -6,7 +6,7 @@
         <label>celestia Tattoo style</label>
     </StyleItemCategoryDef>
 
-    <TattooDef>
+    <!--<TattooDef>
         <defName>Celes_Component</defName>
         <label>Celestia Body Mechanisms</label>
         <texPath>Celes/Tattoo/Component/Component</texPath>
@@ -15,10 +15,22 @@
         <styleTags>
             <li>Celes_TattooBodyStyle</li>
         </styleTags>
-    </TattooDef>
+    </TattooDef>-->
 
     <TattooDef>
-        <defName>Celes_TattooNull</defName>
+        <defName>Celes_TattooNullB</defName>
+        <label>Celestia Body Mechanisms</label>
+        <texPath>Celes/Hair/Null/Null</texPath>
+        <tattooType>Body</tattooType>
+        <category>Celes_Style</category>
+        <noGraphic>true</noGraphic>
+        <styleTags>
+            <li>Celes_TattooBodyStyle</li>
+        </styleTags>
+    </TattooDef>
+    
+    <TattooDef>
+        <defName>Celes_TattooNullH</defName>
         <label>Celestia Face Mechanisms</label>
         <texPath>Celes/Hair/Null/Null</texPath>
         <tattooType>Face</tattooType>

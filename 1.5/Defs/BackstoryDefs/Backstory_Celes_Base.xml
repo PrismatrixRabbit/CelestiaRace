@@ -6,7 +6,7 @@
         </disallowedTraitsChance>
         <forcedHediffs>
             <li>MechlinkImplant</li>
-            <li>Celes_MechlinkRestriction</li>
+            <li>Celes_DustMechRhythm_Standard</li>
         </forcedHediffs>
         <bodyTypeMale>Female</bodyTypeMale>
         <spawnCategories>
@@ -19,7 +19,7 @@
         </disallowedTraitsChance>
         <forcedHediffs>
             <li>MechlinkImplant</li>
-            <li>Celes_MechlinkRestriction</li>
+            <li>Celes_DustMechRhythm_Standard</li>
         </forcedHediffs>
         <spawnCategories>
             <li>Celes_All</li>

@@ -2,7 +2,7 @@
 <Defs>
     <HediffDef Name="Celes_NanoHediffBase" Abstract="True">
         <hediffClass>HediffWithComps</hediffClass>
-        <defaultLabelColor>(.80, 0.38, 0.38)</defaultLabelColor>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
     </HediffDef>
     
     <HediffDef ParentName="Celes_NanoHediffBase">

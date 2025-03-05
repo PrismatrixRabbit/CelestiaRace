@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef Name="Celes_DustMechRhythmBase" Abstract="True">
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+    </HediffDef>
+
+    <!-- ========== 标准节律 ========== -->
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_Standard</defName>
+        <label>Celes_DustMechRhythm_Standard</label>
+        <description>Celes_DustMechRhythm_Standard</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <minSeverity>0.001</minSeverity>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>1.0</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+            </li>
+        </stages>
+        <comps>
+            <li Class="CelesFeature.Celes_HediffCompProperties_CapacityCheck">
+                <targetHediff>Celes_DustMechRhythm_ProtocolIII</targetHediff>
+                <CapacityToCheck>Consciousness</CapacityToCheck>
+                <SeverityToCheck>0.5</SeverityToCheck>
+                <HPCheck>0.75</HPCheck>
+            </li>
+            <!--<li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.16</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_NanoImplanted_II</targetHediff>
+            </li>-->
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_ProtocolIII</defName>
+        <label>Celes_DustMechRhythm_ProtocolIII</label>
+        <description>Celes_DustMechRhythm_ProtocolIII</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <tendable>true</tendable>
+        <stages>
+            <li>
+                <label>Stress</label>
+                <minSeverity>0.001</minSeverity>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.6</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>Exhaustion</label>
+                <minSeverity>0.67</minSeverity>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.6</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>3.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="HediffCompProperties_TendDuration">
+                <baseTendDurationHours>24</baseTendDurationHours>
+                <severityPerDayTended>-1.5</severityPerDayTended>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Standard</targetHediff>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_Activity</defName>
+        <label>Celes_DustMechRhythm_Activity</label>
+        <description>Celes_DustMechRhythm_Activity</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <minSeverity>0.001</minSeverity>
+                <label>Exhaustion</label>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>1.0</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Dormant</targetHediff>
+                <useRace>True</useRace>
+                <specialRace>Celes_Race</specialRace>
+                <hediffForSpRace>Celes_DustMechRhythm_Dormant</hediffForSpRace>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_Dormant</defName>
+        <label>Celes_DustMechRhythm_Dormant</label>
+        <description>Celes_DustMechRhythm_Dormant</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <minSeverity>0.001</minSeverity>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>3.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Standard</targetHediff>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!-- ========== 军规节律 ========== -->
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_Military</defName>
+        <label>Celes_DustMechRhythm_Military</label>
+        <description>Celes_DustMechRhythm_Military</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <minSeverity>0.001</minSeverity>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>3.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Standard</targetHediff>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_ProtocolIV</defName>
+        <label>Celes_DustMechRhythm_ProtocolIV</label>
+        <description>Celes_DustMechRhythm_ProtocolIV</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <tendable>true</tendable>
+        <stages>
+            <li>
+                <label>Stress</label>
+                <minSeverity>0.001</minSeverity>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.6</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>Exhaustion</label>
+                <minSeverity>0.67</minSeverity>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.6</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>3.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="HediffCompProperties_TendDuration">
+                <baseTendDurationHours>24</baseTendDurationHours>
+                <severityPerDayTended>-1.5</severityPerDayTended>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Standard</targetHediff>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_MilitaryActivity</defName>
+        <label>Celes_DustMechRhythm_MilitaryActivity</label>
+        <description>Celes_DustMechRhythm_MilitaryActivity</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <minSeverity>0.001</minSeverity>
+                <label>Exhaustion</label>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>1.0</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Dormant</targetHediff>
+                <useRace>True</useRace>
+                <specialRace>Celes_Race</specialRace>
+                <hediffForSpRace>Celes_DustMechRhythm_Dormant</hediffForSpRace>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_MilitaryDormant</defName>
+        <label>Celes_DustMechRhythm_MilitaryDormant</label>
+        <description>Celes_DustMechRhythm_MilitaryDormant</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <minSeverity>0.001</minSeverity>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>3.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Standard</targetHediff>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!-- ========== 人类节律 ========== -->
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_Overactivity</defName>
+        <label>Celes_DustMechRhythm_Overactivity</label>
+        <description>Celes_DustMechRhythm_Overactivity</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <minSeverity>0.001</minSeverity>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>3.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Standard</targetHediff>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_Extreme</defName>
+        <label>Celes_DustMechRhythm_Extreme</label>
+        <description>Celes_DustMechRhythm_Extreme</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <minSeverity>0.001</minSeverity>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>3.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Standard</targetHediff>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!-- ========== 仆从节律 ========== -->
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_Serve</defName>
+        <label>Celes_DustMechRhythm_Serve</label>
+        <description>Celes_DustMechRhythm_Serve</description>
+        <descriptionHyperlinks>
+            <RecipeDef>Celes_ImplantNanomachine</RecipeDef>
+            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <minSeverity>0.001</minSeverity>
+                <statFactors>
+                    <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">-1</MechControlGroups>
+                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <painOffset>0.1</painOffset>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>3.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Standard</targetHediff>
+            </li>
+        </comps>
+    </HediffDef>
+
+</Defs>

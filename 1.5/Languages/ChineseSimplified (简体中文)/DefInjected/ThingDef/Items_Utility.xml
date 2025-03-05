@@ -16,7 +16,12 @@
     <CelesKeyCard.description>由星铃拓荒队授权的一次性量子密钥，为了便于理解做成了小卡片的形式，采用不记名的形式分发。这张卡片意味着持有者对星铃拓荒队的贡献．而只有星铃拓荒队的朋友才能将其兑换为有效的支援。</CelesKeyCard.description>
     <!-- EN: A single-use quantum key authorised by the Celestia Pioneers is made in the form of a small card for ease of understanding and is distributed anonymously. The card signifies the holder's contribution to the Celestia Pioneers, and only friends of the Celestia Pioneers can exchange it for valid support. -->
 
-	<Celes_STCLock.label>未解析的自译解技术核心</Celes_STCLock.label>
+    <Celes_MechlinkAuthorization.label>民用机控限制骇入器</Celes_MechlinkAuthorization.label>
+    <!-- EN: civilian mechlink restriction hacker -->
+    <Celes_MechlinkAuthorization.description>利用在边缘世界发现的机控中枢，结合尘构机械制成的骇入器。用于强行解除星铃被设置于硬件层面的机控限制，并更新为星铃标准机控。</Celes_MechlinkAuthorization.description>
+    <!-- EN: A hacker made using a mechlink hub found in the Rimworld, combined with Dust-Mech. Used to forcibly disarm Celestia's mechlink restrictions that were set at the hardware level, and updated to Celestia standard mechlink. -->
+
+    <Celes_STCLock.label>未解析的自译解技术核心</Celes_STCLock.label>
 	<!-- EN: Unresolved Self-explanatory Technology Core -->
 	<Celes_STCLock.description>这是一个尚未解析的自译解技术核心，需要解析为特定项目才能使用。\n\n一种被称为＂自译解技术核心＂的，来自星铃＂领航计划＂的极端先进技术教学装置，形态多变，但大多有多种明显的接口。在边缘世界极其少见，似乎大多数都被星铃拓荒队严加保管。\n\n从大脑链接到全息投影，这一装置旨在向任何具有智能的生物个体解释星铃的科技并指导他将其付诸实践。而奇怪的，部分蜂群思维式生物无法使用和理解这一设备教导的知识。尚不清楚星铃出于什么理由制造了这一装置，但它确实有助于使用者解锁进一步的星铃科技。</Celes_STCLock.description>
 	<!-- EN: This is an unresolved Self-explanatory Technology Core that needs to be parsed into a specific project in order to be used. \n\nAn extremely advanced technological teaching device from Celestia's "The Navigator Programme" known as the "Self-explanatory Technology Core", with a variety of different forms, but most of them have a variety of obvious interfaces. Extremely rare in the Rimworld, most of them seem to be strictly guarded by Celestia's pioneering team. \n\nFrom brain links to holographic projections, the device is designed to explain Celestia's technology to any intelligent biological individual and guide him in putting it into practice. And strangely, some of the swarm-thinking creatures are unable to use and understand the knowledge taught by this device. It is unclear for what reason Celestia created this device, but it does help the user unlock further Celestia technology.  -->
