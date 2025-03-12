@@ -623,7 +623,7 @@
         </researchPrerequisites>
     </RecipeDef>
 
-    <RecipeDef ParentName="Celes_Surgery">
+    <RecipeDef ParentName="Celes_OwnSurgery">
         <defName>RemoveCelesNanoMachine_ForCeles</defName>
         <label>remove celestia nanomachine infection from infected person</label>
         <description>.</description>

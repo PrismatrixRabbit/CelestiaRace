@@ -14,7 +14,7 @@
     <apparelDisallowTags>
     </apparelDisallowTags>
     <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
-    <weaponTags>
+    <weaponTags Inherit="false">
     </weaponTags>
     <backstoryFiltersOverride>
         <li>
@@ -69,7 +69,7 @@
         </apparelDisallowTags>
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
         <weaponMoney>400~1000</weaponMoney>
-        <weaponTags>
+        <weaponTags Inherit="false">
             <li>Celes_EarlyWeaponAssault</li>
 			<li>Celes_EarlyMelee</li>
         </weaponTags>
@@ -112,7 +112,8 @@
             </li>
         </specificApparelRequirements>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-		<weaponTags>
+		<weaponMoney>800~1800</weaponMoney>
+		<weaponTags Inherit="false">
 			<li>Celes_SpacerWeaponPDW</li>
 		</weaponTags>
 	</PawnKindDef>
@@ -131,7 +132,7 @@
         <apparelMoney>150~500</apparelMoney>
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
         <weaponMoney>750~10000</weaponMoney>
-        <weaponTags>
+        <weaponTags Inherit="false">
             <li>Celes_MidWeaponAssault</li>
         </weaponTags>
         <backstoryFilters>
@@ -168,7 +169,7 @@
 		<apparelMoney>1000~5000</apparelMoney>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		<weaponMoney>750~10000</weaponMoney>
-		<weaponTags>
+		<weaponTags Inherit="false">
 			<li>Celes_EarlyWeaponAssault</li>
 		</weaponTags>
 		<backstoryFilters>
@@ -193,6 +194,14 @@
 		</inventoryOptions>
 		<initialWillRange>5~7</initialWillRange>
 		<initialResistanceRange>15~24</initialResistanceRange>
+
+		<startingHediffs>
+			<li>
+				<def>Celes_StandardMechlink</def>
+				<chance>1.0</chance>
+				<severity>0.5</severity>
+			</li>
+		</startingHediffs>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Celes_ArmedExplorer">
@@ -200,7 +209,7 @@
 		<label>celestia armed pioneer sniper</label>
 		<combatPower>60</combatPower>
 		<itemQuality>Good</itemQuality>
-		<weaponTags>
+		<weaponTags Inherit="false">
 			<li>Celes_EarlyWeaponSniper</li>
 		</weaponTags>
 		<initialWillRange>5~7</initialWillRange>
@@ -219,7 +228,7 @@
         <apparelMoney>2250~5000</apparelMoney>
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
         <weaponMoney>750~10000</weaponMoney>
-        <weaponTags>
+        <weaponTags Inherit="false">
             <li>Celes_MidWeaponAssault</li>
         </weaponTags>
         <backstoryFilters>
@@ -244,6 +253,14 @@
         </inventoryOptions>
         <initialWillRange>5~7</initialWillRange>
         <initialResistanceRange>15~24</initialResistanceRange>
+
+		<startingHediffs>
+			<li>
+				<def>Celes_DustMechRhythm_Military</def>
+				<chance>0.33</chance>
+				<severity>0.5</severity>
+			</li>
+		</startingHediffs>
     </PawnKindDef>
 
 	<PawnKindDef ParentName="Celes_Scout">
@@ -251,7 +268,7 @@
 		<label>celestia vanguard sniper</label>
 		<combatPower>70</combatPower>
 		<itemQuality>Good</itemQuality>
-		<weaponTags>
+		<weaponTags Inherit="false">
 			<li>Celes_MidWeaponSniper</li>
 		</weaponTags>
 		<initialWillRange>5~7</initialWillRange>
@@ -263,7 +280,7 @@
 		<label>celestia vanguard guard</label>
 		<combatPower>60</combatPower>
 		<itemQuality>Normal</itemQuality>
-		<weaponTags>
+		<weaponTags Inherit="false">
 			<li>Celes_MidMeleeStandard</li>
 		</weaponTags>
 		<initialWillRange>5~7</initialWillRange>
@@ -288,15 +305,14 @@
 		</specificApparelRequirements>
 		<apparelMoney>3500~6000</apparelMoney>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-		<weaponMoney>2000~10000</weaponMoney>
-		<weaponTags>
+		<weaponMoney>2500~10000</weaponMoney>
+		<weaponTags Inherit="false">
 			<li>Celes_SpacerWeaponAssault</li>
 		</weaponTags>
 		<backstoryFilters>
 			<li>
 				<categories>
 					<li>Celes_Military</li>
-					<li>Celes_Spacer</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -316,6 +332,14 @@
 		<biocodeWeaponChance>1.0</biocodeWeaponChance>
 		<initialWillRange>5~7</initialWillRange>
 		<initialResistanceRange>15~24</initialResistanceRange>
+
+		<startingHediffs>
+			<li>
+				<def>Celes_DustMechRhythm_Military</def>
+				<chance>1.0</chance>
+				<severity>0.5</severity>
+			</li>
+		</startingHediffs>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Celes_Elite">
@@ -323,7 +347,7 @@
 		<label>celestia regular marine sniper</label>
 		<combatPower>110</combatPower>
 		<itemQuality>Excellent</itemQuality>
-		<weaponTags>
+		<weaponTags Inherit="false">
 			<li>Celes_SpacerWeaponSniper</li>
 		</weaponTags>
 		<initialWillRange>5~7</initialWillRange>
@@ -335,7 +359,8 @@
 		<label>celestia regular marine supporter</label>
 		<combatPower>120</combatPower>
 		<itemQuality>Excellent</itemQuality>
-		<weaponTags>
+		<weaponMoney>3500~10000</weaponMoney>
+		<weaponTags Inherit="false">
 			<li>Celes_SpacerWeaponHeavy</li>
 		</weaponTags>
 		<initialWillRange>5~7</initialWillRange>
@@ -347,8 +372,11 @@
 		<label>celestia regular marine guard</label>
 		<combatPower>100</combatPower>
 		<itemQuality>Good</itemQuality>
-		<weaponTags>
-			<li>Celes_SpacerMeleeStandard</li>
+		<apparelTags>
+			<li>BeltDefense</li>
+		</apparelTags>
+		<weaponTags Inherit="false">
+			<li>Celes_SpacerMeleeStandard</li>BeltDefense
 		</weaponTags>
 		<initialWillRange>5~7</initialWillRange>
 		<initialResistanceRange>15~24</initialResistanceRange>

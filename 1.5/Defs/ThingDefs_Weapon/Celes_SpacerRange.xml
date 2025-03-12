@@ -403,7 +403,7 @@
                 <forcedMissRadius>2.9</forcedMissRadius>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
                 <burstShotCount>2</burstShotCount>
-                <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+                <ai_AvoidFriendlyFireRadius>9</ai_AvoidFriendlyFireRadius>
                 <ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
                 <ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
                 <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>

@@ -167,7 +167,7 @@
 		<!-- 拓荒队突袭 -->
         <li>
             <kindDef>Combat</kindDef>
-            <commonality>100</commonality>
+            <commonality>33</commonality>
             <options>
 				<Celes_ArmedExplorer>10</Celes_ArmedExplorer>
 				<Celes_ArmedExplorerSniper>3</Celes_ArmedExplorerSniper>
@@ -187,31 +187,36 @@
 		<!-- 陆战队突袭-普通 -->
 		<li>
 			<kindDef>Combat</kindDef>
-			<commonality>22</commonality>
+			<commonality>17</commonality>
 			<options>
-				<Celes_Elite>10</Celes_Elite>
+				<Celes_Elite>5</Celes_Elite>
 				<Celes_EliteSniper>3</Celes_EliteSniper>
-				<Celes_EliteSupport>3</Celes_EliteSupport>
+				<Celes_EliteSupport>1</Celes_EliteSupport>
+                <Celes_EliteMelee>5</Celes_EliteMelee>
 				<Celes_OutlanderLeader>1</Celes_OutlanderLeader>
 			</options>
 		</li>
 		<!-- 陆战队突袭-压制性火力 -->
 		<li>
 			<kindDef>Combat</kindDef>
-			<commonality>6</commonality>
+			<commonality>8</commonality>
+            <!--<disallowedStrategies>
+                <li></li>
+            </disallowedStrategies>-->
 			<options>
 				<Celes_Elite>5</Celes_Elite>
-				<Celes_EliteSniper>5</Celes_EliteSniper>
-				<Celes_EliteSupport>5</Celes_EliteSupport>
+				<Celes_EliteSniper>3</Celes_EliteSniper>
+				<Celes_EliteSupport>3</Celes_EliteSupport>
+                <Celes_EliteMelee>2</Celes_EliteMelee>
 			</options>
 		</li>
 		<!-- 陆战队突袭-近卫突袭 -->
 		<li>
 			<kindDef>Combat</kindDef>
-			<commonality>5</commonality>
+			<commonality>8</commonality>
 			<options>
 				<Celes_Elite>10</Celes_Elite>
-				<Celes_EliteMelee>10</Celes_EliteMelee>
+				<Celes_EliteMelee>25</Celes_EliteMelee>
 			</options>
 		</li>
       <li>

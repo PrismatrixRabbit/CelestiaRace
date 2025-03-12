@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    <Celes_ImplantNanomachine.label>侵入性尘构植入</Celes_ImplantNanomachine.label>
-    <Celes_ImplantNanomachine.description>向个体植入过量的侵入性增强尘构，该行为对星铃通常具有有限的损伤和一定的机体增强。但注意，基因中缺少尘构抑制序列的个体将无法抑制尘构复制导致失控增殖！</Celes_ImplantNanomachine.description>
-    <Celes_ImplantNanomachine.jobString>侵入性尘构植入</Celes_ImplantNanomachine.jobString>
+    <!-- ========== 标准节律 ========== -->
+
+    <Celes_ActiveDustMechRhythm_Standard.label>活化尘构节律</Celes_ActiveDustMechRhythm_Standard.label>
+    <Celes_ActiveDustMechRhythm_Standard.description>向个体植入尘构机械。</Celes_ActiveDustMechRhythm_Standard.description>
+    <Celes_ActiveDustMechRhythm_Standard.jobString>正在活化尘构节律</Celes_ActiveDustMechRhythm_Standard.jobString>
+
+    <!-- ========== 军用节律 ========== -->
+
+    <Celes_MilitarizeDustMechRhythm_Standard.label>尘构节律军事化</Celes_MilitarizeDustMechRhythm_Standard.label>
+    <Celes_MilitarizeDustMechRhythm_Standard.description>尘构节律军事化。</Celes_MilitarizeDustMechRhythm_Standard.description>
+    <Celes_MilitarizeDustMechRhythm_Standard.jobString>正在军事化尘构节律</Celes_MilitarizeDustMechRhythm_Standard.jobString>
+
+    <Celes_DemilitarizeDustMechRhythm_Standard.label>尘构节律非军事化</Celes_DemilitarizeDustMechRhythm_Standard.label>
+    <Celes_DemilitarizeDustMechRhythm_Standard.description>尘构节律非军事化。</Celes_DemilitarizeDustMechRhythm_Standard.description>
+    <Celes_DemilitarizeDustMechRhythm_Standard.jobString>正在非军事化尘构节律</Celes_DemilitarizeDustMechRhythm_Standard.jobString>
+
+    <!-- ========== 军用节律 ========== -->
 
     <RemoveCelesNanoMachine_I.label>侵入性尘构关机</RemoveCelesNanoMachine_I.label>
     <RemoveCelesNanoMachine_I.description>通过化学药物抑制尘构自我增殖机能，关闭体内所有活性尘构物质，并促使其转化为可被机体自然分解的有机物。</RemoveCelesNanoMachine_I.description>

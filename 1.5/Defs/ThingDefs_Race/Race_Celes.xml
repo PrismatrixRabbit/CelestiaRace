@@ -16,19 +16,11 @@
 				<forcedRaceTraitEntries>
 					<li>
 						<defName>FastLearner</defName>
-						<chance>65</chance>
-					</li>
-					<li>
-						<defName Degree="1">Beauty</defName>
-						<chance>80</chance>
-					</li>
-					<li>
-						<defName Degree="2">Beauty</defName>
-						<chance>25</chance>
+						<chance>33</chance>
 					</li>
 					<li>
 						<defName>Masochist</defName>
-						<chance>40</chance>
+						<chance>33</chance>
 					</li>
 				</forcedRaceTraitEntries>
 				<disallowedTraits>
@@ -703,12 +695,14 @@
 			<MentalBreakThreshold>0.3</MentalBreakThreshold>
 			<ComfyTemperatureMax>26</ComfyTemperatureMax>
 			<ComfyTemperatureMin>10</ComfyTemperatureMin>
-			<ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+			<InjuryHealingFactor>2.0</InjuryHealingFactor>
+			<ImmunityGainSpeed>0.95</ImmunityGainSpeed>
 			<CarryingCapacity>75</CarryingCapacity>
 			<RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">3</RoyalFavorValue>
 			<MeatAmount>45</MeatAmount>
 			<LeatherAmount>40</LeatherAmount>
 			<Mass>45</Mass>
+			<PawnBeauty>1</PawnBeauty>
 			<!--==-->
 			<GlobalLearningFactor>1.2</GlobalLearningFactor>
 			<PsychicSensitivity>1</PsychicSensitivity>

@@ -41,7 +41,8 @@
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->Celestia's 7th Fleet Pioneer</li>
-				<li>r_name->"Aurora" United Pioneer</li>
+				<li>r_name->"Pharos" United Pioneer</li>
+				<li>r_name->Celestia's 7th Fleet Outpost</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

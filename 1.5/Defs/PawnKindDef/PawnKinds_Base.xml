@@ -28,9 +28,27 @@
             </xenotypeChances>
         </xenotypeSet>
         <useFactionXenotypes>false</useFactionXenotypes>
+        <startingHediffs>
+            <li>
+                <def>MechlinkImplant</def>
+                <chance>1.0</chance>
+                <severity>0.5</severity>
+            </li>
+            <li>
+                <def>Celes_MechlinkRestriction</def>
+                <chance>1.0</chance>
+                <severity>0.5</severity>
+            </li>
+            <li>
+                <def>Celes_DustMechRhythm_Standard</def>
+                <chance>1.0</chance>
+                <severity>0.5</severity>
+            </li>
+        </startingHediffs>
     </PawnKindDef>
 
 	<PawnKindDef Name="Celes_CombatPawnBase" ParentName="Celes_PawnBase" Abstract="True">
+        <minGenerationAge>21</minGenerationAge>
 		<disallowedTraits>
 			<li>Nudist</li>
 			<li>Brawler</li>

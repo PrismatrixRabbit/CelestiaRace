@@ -128,7 +128,7 @@
         <graphicData>
             <texPath>Celes/Item/BaseResource/NanoMachineCrystal</texPath>
             <graphicClass>Graphic_Random</graphicClass>
-            <drawSize>2.0</drawSize>
+            <drawSize>1.0</drawSize>
         </graphicData>
         <stackLimit>1</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>
@@ -153,7 +153,7 @@
         <graphicData>
             <texPath>Celes/Item/BaseResource/NanoCrystallisedCorpse/NanoCrystallisedCorpse</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>2.3</drawSize>
+            <drawSize>2.0</drawSize>
         </graphicData>
         <stackLimit>1</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>
@@ -179,7 +179,7 @@
         <graphicData>
             <texPath>Celes/Item/BaseResource/RottenNanoCrystallisedCorpse/RottenNanoCrystallisedCorpse</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.7</drawSize>
+            <drawSize>2.3</drawSize>
         </graphicData>
         <stackLimit>1</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>

@@ -1,25 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+    
+    <RecipeDef Name="Celes_Surgery" Abstract="True">
+        <recipeUsers>
+            <li>Celes_Race</li>
+        </recipeUsers>
+        <effectWorking>Surgery</effectWorking>
+        <soundWorking>Recipe_Surgery</soundWorking>
+        <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+        <workSkill>Medicine</workSkill>
+        <workSkillLearnFactor>16</workSkillLearnFactor>
+        <surgeryOutcomeEffect>SurgeryOutcomeBase</surgeryOutcomeEffect>
+        <anesthetize>false</anesthetize>
+    </RecipeDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
-        <defName>Celes_ImplantNanomachine</defName>
-        <label>implant nanomachine</label>
-        <description>.</description>
+    <!-- ========== 标准节律 ========== -->
+
+    <RecipeDef ParentName="Celes_Surgery">
+        <defName>Celes_ActiveDustMechRhythm_Standard</defName>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_RecipeModExtension">
+                <addHediff>true</addHediff>
+                <hediffToAdd>Celes_DustMechRhythm_Activity</hediffToAdd>
+                <removeHediff>true</removeHediff>
+                <hediffToRemove>Celes_DustMechRhythm_Standard</hediffToRemove>
+                <AllowWhenHediff>
+                    <li>Celes_DustMechRhythm_Standard</li>
+                </AllowWhenHediff>
+                <DisallowWhenHediff>  
+                    <li>Celes_DustMechRhythm_Activity</li>
+                    <li>Celes_DustMechRhythm_ProtocolIII</li>
+                    <li>Celes_DustMechRhythm_Dormant</li>
+                </DisallowWhenHediff>
+            </li>
+        </modExtensions>
+        <label>Celes_ActiveDustMechRhythm_Standard</label>
+        <description>Celes_ActiveDustMechRhythm_Standard</description>
+        <jobString>Celes_ActiveDustMechRhythm_Standard</jobString>
         <descriptionHyperlinks>
-            <HediffDef>Celes_NanoImplanted_I</HediffDef>
-            <HediffDef>Celes_NanoImplanted_II</HediffDef>
-            <HediffDef>Celes_NanoImplanted_III</HediffDef>
+            <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
+            <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
+            <HediffDef>Celes_DustMechRhythm_Overactivity</HediffDef>
         </descriptionHyperlinks>
-        <workerClass>CelesFeature.Celes_Recipe_AddHediff</workerClass>
-        <jobString>Implanting nanomachine</jobString>
+        <workerClass>CelesFeature.Celes_RecipeSurgery</workerClass>
         <workAmount>2000</workAmount>
         <hideBodyPartNames>true</hideBodyPartNames>
         <targetsBodyPart>false</targetsBodyPart>
-        <isViolation>true</isViolation>
-        <anesthetize>false</anesthetize>
-        <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
-        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
-        <addsHediff>Celes_NanoImplanted_I</addsHediff>
+        <isViolation>false</isViolation>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <surgerySuccessChanceFactor>5.0</surgerySuccessChanceFactor>
         <skillRequirements>
             <Medicine>6</Medicine>
             <Intellectual>4</Intellectual>
@@ -45,7 +74,176 @@
         <uiIconThing>CelesNanoMachine</uiIconThing>
     </RecipeDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
+    <!-- ========== 军用节律 ========== -->
+
+    <RecipeDef ParentName="Celes_Surgery">
+        <defName>Celes_MilitarizeDustMechRhythm_Standard</defName>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_RecipeModExtension">
+                <addHediff>true</addHediff>
+                <hediffToAdd>Celes_DustMechRhythm_Military</hediffToAdd>
+                <removeHediff>true</removeHediff>
+                <hediffToRemove>Celes_DustMechRhythm_Standard</hediffToRemove>
+                <AllowWhenHediff>
+                    <li>Celes_DustMechRhythm_Standard</li>
+                </AllowWhenHediff>
+                <DisallowWhenHediff>
+                    <li>Celes_DustMechRhythm_Military</li>
+                </DisallowWhenHediff>
+            </li>
+        </modExtensions>
+        <label>Celes_MilitarizeDustMechRhythm_Standard</label>
+        <description>Celes_MilitarizeDustMechRhythm_Standard</description>
+        <jobString>Celes_MilitarizeDustMechRhythm_Standard</jobString>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
+            <HediffDef>Celes_DustMechRhythm_Military</HediffDef>
+        </descriptionHyperlinks>
+        <workerClass>CelesFeature.Celes_RecipeSurgery</workerClass>
+        <workAmount>2000</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <isViolation>false</isViolation>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <surgerySuccessChanceFactor>5.0</surgerySuccessChanceFactor>
+        <skillRequirements>
+            <Medicine>6</Medicine>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CelesNanoMachine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>
+            <li>Celes_NanoImplant_I</li>
+        </researchPrerequisite>
+        <uiIconThing>CelesNanoMachine</uiIconThing>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Celes_Surgery">
+        <defName>Celes_DemilitarizeDustMechRhythm_Standard</defName>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_RecipeModExtension">
+                <addHediff>true</addHediff>
+                <hediffToAdd>Celes_DustMechRhythm_Standard</hediffToAdd>
+                <removeHediff>true</removeHediff>
+                <hediffToRemove>Celes_DustMechRhythm_Military</hediffToRemove>
+                <AllowWhenHediff>
+                    <li>Celes_DustMechRhythm_Military</li>
+                </AllowWhenHediff>
+                <DisallowWhenHediff>
+                    <li>Celes_DustMechRhythm_Standard</li>
+                </DisallowWhenHediff>
+            </li>
+        </modExtensions>
+        <label>Celes_DemilitarizeDustMechRhythm_Standard</label>
+        <description>Celes_DemilitarizeDustMechRhythm_Standard</description>
+        <jobString>Celes_DemilitarizeDustMechRhythm_Standard</jobString>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
+            <HediffDef>Celes_DustMechRhythm_Military</HediffDef>
+        </descriptionHyperlinks>
+        <workerClass>CelesFeature.Celes_RecipeSurgery</workerClass>
+        <workAmount>2000</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <isViolation>false</isViolation>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <surgerySuccessChanceFactor>5.0</surgerySuccessChanceFactor>
+        <skillRequirements>
+            <Medicine>6</Medicine>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CelesNanoMachine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>
+            <li>Celes_NanoImplant_I</li>
+        </researchPrerequisite>
+        <uiIconThing>CelesNanoMachine</uiIconThing>
+    </RecipeDef>
+
+    <!-- ========== 人类节律 ========== -->
+
+    <RecipeDef ParentName="Celes_Surgery">
+        <defName>Celes_DemilitarizeDustMechRhythm_Standard</defName>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_RecipeModExtension">
+                <addHediff>true</addHediff>
+                <hediffToAdd>Celes_DustMechRhythm_Standard</hediffToAdd>
+                <removeHediff>true</removeHediff>
+                <hediffToRemove>Celes_DustMechRhythm_Military</hediffToRemove>
+                <AllowWhenHediff>
+                    <li>Celes_DustMechRhythm_Military</li>
+                </AllowWhenHediff>
+                <DisallowWhenHediff>
+                    <li>Celes_DustMechRhythm_Standard</li>
+                </DisallowWhenHediff>
+            </li>
+        </modExtensions>
+        <label>Celes_DemilitarizeDustMechRhythm_Standard</label>
+        <description>Celes_DemilitarizeDustMechRhythm_Standard</description>
+        <jobString>Celes_DemilitarizeDustMechRhythm_Standard</jobString>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
+            <HediffDef>Celes_DustMechRhythm_Military</HediffDef>
+        </descriptionHyperlinks>
+        <workerClass>CelesFeature.Celes_RecipeSurgery</workerClass>
+        <workAmount>2000</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <isViolation>false</isViolation>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <surgerySuccessChanceFactor>5.0</surgerySuccessChanceFactor>
+        <skillRequirements>
+            <Medicine>6</Medicine>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CelesNanoMachine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>
+            <li>Celes_NanoImplant_I</li>
+        </researchPrerequisite>
+        <uiIconThing>CelesNanoMachine</uiIconThing>
+    </RecipeDef>
+
+    <!--<RecipeDef ParentName="SurgeryFlesh">
         <defName>RemoveCelesNanoMachine_I</defName>
         <label>remove celestia nanomachine infection from infected person</label>
         <description>.</description>
@@ -228,6 +426,6 @@
         <researchPrerequisites>
             <li>Celes_NanoImplant_I</li>
         </researchPrerequisites>
-    </RecipeDef>
+    </RecipeDef>-->
 
 </Defs>

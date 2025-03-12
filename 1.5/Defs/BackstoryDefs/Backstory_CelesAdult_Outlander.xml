@@ -202,8 +202,60 @@
 
     <!--============================== 军事 Military ============================-->
 
-    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory_Military">
         <defName>Celes_Backstory_Military01</defName>
+        <title>celestia vanguard squad soldier</title>
+        <titleShort>vanguard</titleShort>
+        <description>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory_Military">
+        <defName>Celes_Backstory_Military02</defName>
+        <title>celestia vanguard squad soldier</title>
+        <titleShort>vanguard</titleShort>
+        <description>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory_Military">
+        <defName>Celes_Backstory_Military03</defName>
+        <title>celestia vanguard squad soldier</title>
+        <titleShort>vanguard</titleShort>
+        <description>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory_Military">
+        <defName>Celes_Backstory_Military04</defName>
+        <title>celestia vanguard squad soldier</title>
+        <titleShort>vanguard</titleShort>
+        <description>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory_Military">
+        <defName>Celes_Backstory_Military05</defName>
         <title>celestia vanguard squad soldier</title>
         <titleShort>vanguard</titleShort>
         <description>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</description>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <HediffDef>
+    
+    <HediffDef MayRequire="Ludeon.RimWorld.Biotech">
         <defName>Celes_MechlinkRestriction</defName>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
@@ -36,7 +37,7 @@
         </comps>
     </HediffDef>
     
-    <HediffDef>
+    <HediffDef MayRequire="Ludeon.RimWorld.Biotech">
         <defName>Celes_StandardMechlink</defName>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
@@ -54,7 +55,7 @@
         </stages>
     </HediffDef>
 
-    <HediffDef>
+    <HediffDef MayRequire="Ludeon.RimWorld.Biotech">
         <defName>CelesSleepMechlinkImplant</defName>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
@@ -67,7 +68,7 @@
         </stages>
     </HediffDef>
 
-    <HediffDef ParentName="ImplantHediffBase">
+    <HediffDef ParentName="ImplantHediffBase" MayRequire="Ludeon.RimWorld.Biotech">
         <defName>Celes_FieldAidRestrict</defName>
         <label>Celes_FieldAidRestrict</label>
         <description>Celestia Command has added restrictions to the Field Support Team to avoid risks to the mechlink.</description>

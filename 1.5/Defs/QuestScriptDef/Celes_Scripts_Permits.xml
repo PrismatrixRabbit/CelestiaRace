@@ -21,6 +21,12 @@
                         <biocodeApparelChance>1</biocodeApparelChance>
                     </node>
                 </li>
+
+                <!-- 机控限制 -->
+                <li Class="QuestNode_AddHediff">
+                    <pawns>$laborers</pawns>
+                    <hediffDef>Celes_FieldAidRestrict</hediffDef>
+                </li>
                 
                 <!-- 锁定装备 -->
                 <li Class="QuestNode_SetAllApparelLocked">
