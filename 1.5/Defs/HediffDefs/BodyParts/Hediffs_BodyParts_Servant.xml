@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ========== 测试：尘构仆役-爪 ========= -->
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Celes_TestServantClaw</defName>
+        <label>Celes_TestServantClaw</label>
+        <description>Celes_TestServantClaw</description>
+        <descriptionHyperlinks><RecipeDef>Celes_InstallTestServantClaw</RecipeDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>CelesNanoMachine</spawnThingOnRemoved>
+        <defaultInstallPart>Hand</defaultInstallPart>
+        <stages>
+            <li>
+                <painOffset>0.20</painOffset>
+                <statOffsets>
+                    <PlantWorkSpeed>1.00</PlantWorkSpeed>
+                    <PlantHarvestYield>0.50</PlantHarvestYield>
+                    <PawnBeauty>-1</PawnBeauty>
+                </statOffsets>
+                <capMods>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>claw</label>
+                        <capacities>
+                            <li>Cut</li>
+                        </capacities>
+                        <armorPenetration>0.4</armorPenetration>
+                        <power>22</power>
+                        <cooldownTime>2.4</cooldownTime>
+                        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+                        <soundMeleeHit>Pawn_Melee_PowerClaw_Hit</soundMeleeHit>
+                        <soundMeleeMiss>Pawn_Melee_PowerClaw_Miss</soundMeleeMiss>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <addedPartProps>
+            <isGoodWeapon>true</isGoodWeapon>
+            <solid>true</solid>
+            <partEfficiency>1.00</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+            <!--<Cloth>20</Cloth>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>-->
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+        <defName>Celes_InstallTestServantClaw</defName>
+        <label>Celes_InstallTestServantClaw</label>
+        <description>Celes_InstallTestServantClaw</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_TestServantClaw</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Celes_InstallTestServantClaw</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CelesNanoMachine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Hand</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Celes_TestServantClaw</addsHediff>
+    </RecipeDef>
+
+    <!-- ========== 测试：尘构仆役-锤 ========= -->
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Celes_TestServantHammer</defName>
+        <label>Celes_TestServantHammer</label>
+        <description>Celes_TestServantHammer</description>
+        <descriptionHyperlinks><RecipeDef>Celes_InstallTestServantHammer</RecipeDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>CelesNanoMachine</spawnThingOnRemoved>
+        <defaultInstallPart>Hand</defaultInstallPart>
+        <stages>
+            <li>
+                <painOffset>0.20</painOffset>
+                <statOffsets>
+                    <ConstructionSpeedFactor>1.00</ConstructionSpeedFactor>
+                    <ConstructSuccessChance>0.50</ConstructSuccessChance>
+                    <PawnBeauty>-1</PawnBeauty>
+                </statOffsets>
+                <capMods>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>hammer</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <armorPenetration>0.42</armorPenetration>
+                        <power>26</power>
+                        <cooldownTime>2.0</cooldownTime>
+                        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+                        <soundMeleeHit>Pawn_Melee_PowerClaw_Hit</soundMeleeHit>
+                        <soundMeleeMiss>Pawn_Melee_PowerClaw_Miss</soundMeleeMiss>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <addedPartProps>
+            <isGoodWeapon>true</isGoodWeapon>
+            <solid>true</solid>
+            <partEfficiency>1.0</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <!--<Cloth>20</Cloth>
+    <Steel>25</Steel>
+    <ComponentIndustrial>4</ComponentIndustrial>-->
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+        <defName>Celes_InstallTestServantHammer</defName>
+        <label>Celes_InstallTestServantHammer</label>
+        <description>Celes_InstallTestServantHammer</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_TestServantHammer</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Celes_InstallTestServantHammer</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CelesNanoMachine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Hand</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Celes_TestServantHammer</addsHediff>
+    </RecipeDef>
+
+
+</Defs>

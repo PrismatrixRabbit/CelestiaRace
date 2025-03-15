@@ -376,7 +376,7 @@
 			<li>BeltDefense</li>
 		</apparelTags>
 		<weaponTags Inherit="false">
-			<li>Celes_SpacerMeleeStandard</li>BeltDefense
+			<li>Celes_SpacerMeleeStandard</li>
 		</weaponTags>
 		<initialWillRange>5~7</initialWillRange>
 		<initialResistanceRange>15~24</initialResistanceRange>

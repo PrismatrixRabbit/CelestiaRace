@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef ParentName="Celes_Shell_I">
+        <defName>Celes_ServantCoat</defName>
+        <label>Celes_ServantCoat</label>
+        <description>Celes_ServantCoat</description>
+        <costStuffCount>80</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <graphicData>
+            <texPath>Celes/Apparel/Shell/ServantCoat/ServantCoat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>9000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>Mouth</li>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Celes/Apparel/Shell/ServantCoat/ServantCoat</wornGraphicPath>
+            <tags>
+                <li>Celes_Servant</li>
+            </tags>
+            <drawData>
+                <defaultData>
+                    <layer>83</layer>
+                </defaultData>
+            </drawData>
+            <!--<drawData>
+                <dataNorth><layer>40</layer></dataNorth>
+            </drawData>-->
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+            <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+        </apparel>
+    </ThingDef>
+    
+</Defs>

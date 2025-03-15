@@ -145,8 +145,8 @@
                 <faction>Celes_Faction</faction>                <!-- 呼叫的派系 -->
                 <aidParameter>                    <!-- 来的人的参数 -->
                     <favorCost>4</favorCost>
-                    <pawnKindDef>Celes_Outlander</pawnKindDef>
-                    <pawnCount>2</pawnCount>
+                    <pawnKindDef>Celes_ServantUnit</pawnKindDef>
+                    <pawnCount>4</pawnCount>
                     <aidDurationDays>4</aidDurationDays>
                     <targetingRange>44.9</targetingRange>
                     <targetingRequireLOS>false</targetingRequireLOS>

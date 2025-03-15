@@ -5,31 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/1.5/Defs/ThoughtDefs/Thoughts_DustMechRhythm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThoughtDef/Thoughts_DustMechRhythm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.5/Defs/Apparel/Apparel_Human.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/BodyParts/Hediffs_BodyParts_Servant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_Human.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_BodyParts_Servant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/PawnKindDef/PawnKinds_Human.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Assemblies/CelesFeature.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/BackstoryDefs/Backstory_CelesAdult_Outlander.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/BackstoryDefs/Backstory_CelesAdult_Outlander.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/BackstoryDefs/Backstory_Celes_Base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/BackstoryDefs/Backstory_Celes_Base.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/FactionDefs/AidOption.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/FactionDefs/AidOption.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Defs/FactionDefs/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/FactionDefs/Factions_Celes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/BodyParts/Hediffs_Bodyparts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/BodyParts/Hediffs_Bodyparts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Hediffs_DustMechRhythm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Hediffs_DustMechRhythm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Hediffs_Mechanitor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Hediffs_Mechanitor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Nanomachine_Hediff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Nanomachine_Hediff.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_Base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_Base.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_General.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_General.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Defs/QuestScriptDef/Celes_Scripts_Permits.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/QuestScriptDef/Celes_Scripts_Permits.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/RulePacks/RulePacksNamers_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/RulePacks/RulePacksNamers_Celes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/Scenario/Celes_Scenarios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/Scenario/Celes_Scenarios.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Defs/Surgery/Surgery_DustMechRhythm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/Surgery/Surgery_DustMechRhythm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/Surgery/Surgery_implant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/Surgery/Surgery_implant.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_BaseResourse.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Race/Race_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Race/Race_Celes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_SpacerMelee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_SpacerMelee.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/FactionDef/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/FactionDef/Factions_Celes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_DustMechRhythm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_DustMechRhythm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_Mechanitor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_Mechanitor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Surgery_DustMechRhythm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Surgery_DustMechRhythm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/RulePackDef/RulePacksNamers_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/RulePackDef/RulePacksNamers_Celes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Patches/Core/Recipes/Recipes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Patches/Core/Recipes/Recipes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ExploreCoat/ExploreCoat_Female_south.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ExploreCoat/ExploreCoat_Female_south.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ExploreCoat/ExploreCoat_Female_southm.PNG" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +114,11 @@
       <workItem from="1741527497628" duration="14796000" />
       <workItem from="1741688073338" duration="7679000" />
       <workItem from="1741695815047" duration="7720000" />
-      <workItem from="1741788068396" duration="1567000" />
+      <workItem from="1741788068396" duration="1823000" />
+      <workItem from="1741938597981" duration="14847000" />
+      <workItem from="1741970423550" duration="586000" />
+      <workItem from="1741972551294" duration="3191000" />
+      <workItem from="1742026057329" duration="28833000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -175,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741193814424</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="尘构节律修复（人类配方待完成）">
+      <option name="closed" value="true" />
+      <created>1741794758192</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741794758192</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +212,7 @@
     <MESSAGE value="烧伤附着" />
     <MESSAGE value="渲染调整，平衡性调整" />
     <MESSAGE value="增添贴图，初步修正尘构节律" />
-    <option name="LAST_COMMIT_MESSAGE" value="增添贴图，初步修正尘构节律" />
+    <MESSAGE value="尘构节律修复（人类配方待完成）" />
+    <option name="LAST_COMMIT_MESSAGE" value="尘构节律修复（人类配方待完成）" />
   </component>
 </project>

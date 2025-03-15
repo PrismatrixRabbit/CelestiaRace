@@ -22,12 +22,34 @@
                     </node>
                 </li>
 
-                <!-- 机控限制 -->
-                <li Class="QuestNode_AddHediff">
-                    <pawns>$laborers</pawns>
-                    <hediffDef>Celes_FieldAidRestrict</hediffDef>
+                <!-- Get or generate guards
+                <li Class="QuestNode_LoopCount">
+                    <loopCount>2</loopCount>
+                    <node Class="QuestNode_GeneratePawn">
+                        <faction>Empire</faction>
+                        <kindDef>Empire_Fighter_StellicGuardRanged</kindDef>
+                        <addToList>lodgers</addToList>
+                        <biocodeWeaponChance>1</biocodeWeaponChance>
+                        <biocodeApparelChance>1</biocodeApparelChance>
+                        <mustBeCapableOfViolence>true</mustBeCapableOfViolence>
+                        <allowPregnant>false</allowPregnant>
+                        <giveDependentDrugs>true</giveDependentDrugs>
+                    </node>
                 </li>
-                
+                <li Class="QuestNode_LoopCount">
+                    <loopCount>2</loopCount>
+                    <node Class="QuestNode_GeneratePawn">
+                        <faction>Empire</faction>
+                        <kindDef>Empire_Fighter_StellicGuardMelee</kindDef>
+                        <addToList>lodgers</addToList>
+                        <biocodeWeaponChance>1</biocodeWeaponChance>
+                        <biocodeApparelChance>1</biocodeApparelChance>
+                        <mustBeCapableOfViolence>true</mustBeCapableOfViolence>
+                        <allowPregnant>false</allowPregnant>
+                        <giveDependentDrugs>true</giveDependentDrugs>
+                    </node>
+                </li> -->
+
                 <!-- 锁定装备 -->
                 <li Class="QuestNode_SetAllApparelLocked">
                     <pawns>$laborers</pawns>
@@ -61,47 +83,6 @@
                         <faction>$permitFaction</faction>
                         <change>$goodwillChangeOnShuttleDestroyed</change>
                         <reason>ShuttleDestroyed</reason>
-                    </node>
-                </li>
-
-                <!-- 到来穿梭机生成 -->
-                <li Class="QuestNode_SubScript">
-                    <def>Util_TransportShip_DropOff</def>
-                    <parms>
-                        <contents>$laborers</contents>
-                        <owningFaction>$permitFaction</owningFaction>
-                    </parms>
-                </li>
-                <li Class="QuestNode_Letter">
-                    <label TKey="LetterLabelLaborersArrived">Laborers arrived</label>
-                    <text TKey="LetterTextLaborersArrived">The laborers from [permitFaction_name] have arrived. A shuttle will come to collect them in [laborersDurationDays] days.</text>
-                    <lookTargets>$laborers</lookTargets>
-                    <filterDeadPawnsFromLookTargets>True</filterDeadPawnsFromLookTargets>
-                </li>
-
-                <!-- 离开穿梭机 -->
-                <li Class="QuestNode_ShuttleDelay">
-                    <delayTicks>$($laborersDurationDays * 60000)</delayTicks>
-                    <lodgers>$laborers</lodgers>
-                    <node Class="QuestNode_Sequence">
-                        <nodes>
-                            <li Class="QuestNode_SubScript">
-                                <def>Util_TransportShip_Pickup</def>
-                                <parms>
-                                    <leaveDelayTicks>$(1*60000)</leaveDelayTicks>
-                                    <requiredPawns>$laborers</requiredPawns>
-                                </parms>
-                            </li>
-                            <li Class="QuestNode_InspectString">
-                                <targets>$laborers</targets>
-                                <inspectString TKey="InspectStringDepartShuttle">Should depart on shuttle</inspectString>
-                            </li>
-                            <li Class="QuestNode_Letter">
-                                <label TKey="LetterLabelShuttleArrived">Shuttle arrived</label>
-                                <text TKey="LetterTextShuttleArrivedForLaborers">A shuttle has arrived to collect the laborers from [permitFaction_name].</text>
-                                <lookTargets>$pickupShipThing</lookTargets>
-                            </li>
-                        </nodes>
                     </node>
                 </li>
 
@@ -192,15 +173,11 @@
                   <li>Artistic</li>
               </disabledWorkTags>
           </li>
-          <!-- 心情想法设置 -->
-          <li Class="QuestNode_AddMemoryThought">
-              <pawns>$laborers</pawns>
-              <def>Celes_OnDuty</def>
-          </li>
+          
           <!-- 死亡/未离开好感惩罚设置 -->
           <li Class="QuestNode_Set">
               <name>goodwillPenaltyPawn</name>
-              <value>-12</value>
+              <value>-2</value>
           </li>
           <!-- 穿梭机摧毁好感惩罚设置 -->
           <li Class="QuestNode_Set">
@@ -232,6 +209,7 @@
                       <li Class="QuestNode_SubScript">
                           <def>Util_TransportShip_Pickup</def>
                           <parms>
+                              <leaveImmediatelyWhenSatisfied>true</leaveImmediatelyWhenSatisfied>
                               <leaveDelayTicks>$(1*60000)</leaveDelayTicks>
                               <requiredPawns>$laborers</requiredPawns>
                           </parms>
@@ -263,6 +241,12 @@
         </questDescriptionAndNameRules>
         <root Class="QuestNode_Sequence">
             <nodes>
+
+                <!-- 机控限制 -->
+                <li Class="QuestNode_AddHediff">
+                    <pawns>$laborers</pawns>
+                    <hediffDef>Celes_FieldAidRestrict</hediffDef>
+                </li>
 
                 <!-- 工作禁用设置 -->
                 <li Class="QuestNode_WorkDisabled">
@@ -312,6 +296,7 @@
                             <li Class="QuestNode_SubScript">
                                 <def>Util_TransportShip_Pickup</def>
                                 <parms>
+                                    <leaveImmediatelyWhenSatisfied>true</leaveImmediatelyWhenSatisfied>
                                     <leaveDelayTicks>$(1*60000)</leaveDelayTicks>
                                     <requiredPawns>$laborers</requiredPawns>
                                 </parms>
@@ -343,6 +328,12 @@
     </questDescriptionAndNameRules>
     <root Class="QuestNode_Sequence">
       <nodes>
+
+          <!-- 机控限制 -->
+          <li Class="QuestNode_AddHediff">
+              <pawns>$laborers</pawns>
+              <hediffDef>Celes_FieldAidRestrict</hediffDef>
+          </li>
 
           <!-- 工作禁用设置 -->
           <li Class="QuestNode_WorkDisabled">
@@ -396,6 +387,7 @@
                       <li Class="QuestNode_SubScript">
                           <def>Util_TransportShip_Pickup</def>
                           <parms>
+                              <leaveImmediatelyWhenSatisfied>true</leaveImmediatelyWhenSatisfied>
                               <leaveDelayTicks>$(1*60000)</leaveDelayTicks>
                               <requiredPawns>$laborers</requiredPawns>
                           </parms>

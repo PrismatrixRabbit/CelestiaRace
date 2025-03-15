@@ -12,7 +12,7 @@
     <!--<Celes_DustMechRhythm_Standard.stages.0.label>增殖期</Celes_DustMechRhythm_Standard.stages.0.label>-->
 
     <Celes_DustMechRhythm_Activity.label>尘构节律(活性)</Celes_DustMechRhythm_Activity.label>
-    <Celes_DustMechRhythm_Activity.description>周期性波动的尘构机械，协调着星铃的机体机能，正处于应激状态。\n\n尘构机械正</Celes_DustMechRhythm_Activity.description>
+    <Celes_DustMechRhythm_Activity.description>周期性波动的尘构机械，协调着该个体的机体机能，正处于应激状态。\n\n尘构机械正</Celes_DustMechRhythm_Activity.description>
 
     <Celes_DustMechRhythm_Dormant.label>尘构节律(疲劳)</Celes_DustMechRhythm_Dormant.label>
     <Celes_DustMechRhythm_Dormant.description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于应激状态。\n\n尘构机械正</Celes_DustMechRhythm_Dormant.description>
@@ -43,13 +43,13 @@
     <Celes_DustMechRhythm_DormantHuman.description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于应激状态。\n\n尘构机械正</Celes_DustMechRhythm_DormantHuman.description>
     <Celes_DustMechRhythm_Serve.stages.0.label>尘构活跃</Celes_DustMechRhythm_Serve.stages.0.label>
 
-    <!-- ========== 侍从建构 ========== -->
+    <!-- ========== 侍从构建 ========== -->
 
-    <Celes_DustMechRhythm_Serve.label>尘构节律(侍从建构)</Celes_DustMechRhythm_Serve.label>
-    <Celes_DustMechRhythm_Serve.description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于应激状态。\n\n尘构机械正</Celes_DustMechRhythm_Serve.description>
-    <Celes_DustMechRhythm_Serve.stages.0.label>尘构活跃</Celes_DustMechRhythm_Serve.stages.0.label>
+    <Celes_DustMechRhythm_Serve.label>尘构节律(侍从构建)</Celes_DustMechRhythm_Serve.label>
+    <Celes_DustMechRhythm_Serve.description>周期性波动的尘构机械，协调着该个体的机体机能，正处于稳定状态。\n\n秉承着“以人为本”的理念，藉由星铃科考队的实验性技术，已经对该个体完成了仆从化改造。通过抑制无意义的高级脑区活动，个体摒弃了大部分的能量需求与休息需求。这些能量将被分配给尘构机械用以强化更有意义的个体素质。而代价则是些微的意识水平减退。</Celes_DustMechRhythm_Serve.description>
+    <!--<Celes_DustMechRhythm_Serve.stages.0.label>尘构活跃</Celes_DustMechRhythm_Serve.stages.0.label>
     <Celes_DustMechRhythm_Serve.stages.1.label>尘构充足</Celes_DustMechRhythm_Serve.stages.1.label>
     <Celes_DustMechRhythm_Serve.stages.2.label>尘构匮乏</Celes_DustMechRhythm_Serve.stages.2.label>
-    <Celes_DustMechRhythm_Serve.stages.3.label>尘构宕机</Celes_DustMechRhythm_Serve.stages.3.label>
+    <Celes_DustMechRhythm_Serve.stages.3.label>尘构宕机</Celes_DustMechRhythm_Serve.stages.3.label>-->
 
 </LanguageData>

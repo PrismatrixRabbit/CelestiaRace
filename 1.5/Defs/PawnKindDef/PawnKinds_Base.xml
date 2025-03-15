@@ -7,11 +7,12 @@
         <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
         <invNutrition>3</invNutrition>
         <gearHealthRange>0.8~1.0</gearHealthRange>
-        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
         <maxGenerationAge>35</maxGenerationAge>
         <minGenerationAge>16</minGenerationAge>
-        <initialWillRange>3~5</initialWillRange>
-        <initialResistanceRange>9~20</initialResistanceRange>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>15~24</initialResistanceRange>
+        <useFactionXenotypes>false</useFactionXenotypes>
         <xenotypeSet>
             <xenotypeChances>
                 <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
@@ -27,7 +28,6 @@
                 <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
             </xenotypeChances>
         </xenotypeSet>
-        <useFactionXenotypes>false</useFactionXenotypes>
         <startingHediffs>
             <li>
                 <def>MechlinkImplant</def>
@@ -48,7 +48,10 @@
     </PawnKindDef>
 
 	<PawnKindDef Name="Celes_CombatPawnBase" ParentName="Celes_PawnBase" Abstract="True">
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
         <minGenerationAge>21</minGenerationAge>
+        <initialWillRange>3~6</initialWillRange>
+        <initialResistanceRange>21~45</initialResistanceRange>
 		<disallowedTraits>
 			<li>Nudist</li>
 			<li>Brawler</li>
@@ -69,5 +72,81 @@
 		</li>
 		</specificApparelRequirements>
 	</PawnKindDef>
+
+    <PawnKindDef Name="Celes_ServantPawnBase" Abstract="True">
+        <race>Human</race>
+        <defaultFactionType>Celes_Faction</defaultFactionType>
+        <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+        <invNutrition>0</invNutrition>
+        <gearHealthRange>0.8~1.0</gearHealthRange>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <maxGenerationAge>65</maxGenerationAge>
+        <minGenerationAge>16</minGenerationAge>
+        <initialWillRange>0~1</initialWillRange>
+        <initialResistanceRange>1~7</initialResistanceRange>
+        
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <biocodeWeaponChance>0</biocodeWeaponChance>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.325</Baseliner><!-- 智人种 -->
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.025</Dirtmole><!-- 土鼹种 -->
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie><!-- 智灵种 -->
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.025</Hussar><!-- 骠骑种 -->
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.025</Neanderthal><!-- 尼人种 -->
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.025</Pigskin><!-- 猪猡种 -->
+                <Waster MayRequire="Ludeon.RimWorld.Biotech">0.025</Waster><!-- 污骸种 -->
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.025</Yttakin><!-- 毛绒种 -->
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate><!-- 优侣种 -->
+                <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid><!-- 炎魔种 -->
+                <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage><!-- 赫血种 -->
+            </xenotypeChances>
+        </xenotypeSet>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Offworld</li>
+                    <li>Outlander</li>
+                    <li>Pirate</li>
+                    <li>Madman</li>
+                    <li>Cult</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        
+        <apparelTags>
+            <li>Celes_Servant</li>
+            <li>Neolithic</li>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <specificApparelRequirements>
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>Shell</apparelLayer>
+                <stuff>Cloth</stuff>
+            </li>
+        </specificApparelRequirements>
+        <apparelRequired>
+            <li>Celes_ServantCoat</li>
+        </apparelRequired>
+        
+        <!--<techHediffsChance>0.3</techHediffsChance>
+        <techHediffsMoney>1000~1500</techHediffsMoney>
+        <techHediffsMaxAmount>4</techHediffsMaxAmount>
+        <techHediffsRequired>
+            <li>Celes_TestServantClaw</li>
+            <li>Celes_TestServantLeg</li>
+            <li>Celes_TestServantLeg</li>
+        </techHediffsRequired>
+
+        <disallowedTraits>
+            <li>Wimp</li>
+            <li>Nudist</li>
+            <li>BodyPurist</li>
+        </disallowedTraits>-->
+        
+    </PawnKindDef>
 
 </Defs>

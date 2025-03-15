@@ -47,7 +47,34 @@
           <hideOffMap>true</hideOffMap>
           <severityRange>1~1</severityRange>
         </li>
-        
+
+
+        <!-- Starting research -->
+        <!-- <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MicroelectronicsBasics</project>
+        </li> -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Batteries</project>
+        </li>
+        <li Class="ScenPart_StartingResearch" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingResearch</def>
+          <project>BasicMechtech</project>
+        </li>
+
+        <!-- Starting mechs -->
+        <li Class="ScenPart_StartingMech" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingMech</def>
+          <mechKind>Mech_Agrihand</mechKind>
+          <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_StartingMech" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingMech</def>
+          <mechKind>Mech_Constructoid</mechKind>
+          <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+        </li>
+
         <!-- Player starting things -->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -68,6 +95,16 @@
           <def>StartingThing_Defined</def>
           <thingDef>ComponentIndustrial</thingDef>
           <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Plasteel</thingDef>
+          <count>100</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingThing_Defined</def>
+          <thingDef>SubcoreBasic</thingDef>
+          <count>3</count>
         </li>
 		<!-- 这下面也肯定要换星铃武器和防具的 -->
         <li Class="ScenPart_StartingThing_Defined">

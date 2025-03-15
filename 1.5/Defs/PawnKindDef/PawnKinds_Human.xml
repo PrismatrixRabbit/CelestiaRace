@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef Name="Celes_ServantUnit" ParentName="Celes_ServantPawnBase">
+        <defName>Celes_ServantUnit</defName>
+        <label>servant unit</label>
+        <combatPower>50</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>true</isFighter>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>1250~2500</apparelMoney>
+
+        <startingHediffs>
+            <li>
+                <def>Celes_DustMechRhythm_Serve</def>
+                <chance>1.0</chance>
+                <severity>0.9</severity>
+            </li>
+            <li>
+                <def>Celes_TestServantClaw</def>
+                <chance>0.3</chance>
+                <severity>0.5</severity>
+            </li>
+            <li>
+                <def>Celes_TestServantHammer</def>
+                <chance>0.3</chance>
+                <severity>0.5</severity>
+            </li>
+        </startingHediffs>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="Celes_ServantUnit">
+        <defName>Celes_ServantUnitClaw</defName>
+        <label>farm servant unit</label>
+        
+        <startingHediffs>
+            <li>
+                <def>Celes_TestServantClaw</def>
+                <chance>1.0</chance>
+                <severity>0.5</severity>
+            </li>
+        </startingHediffs>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="Celes_ServantUnit">
+        <defName>Celes_ServantUnitHammer</defName>
+        <label>construct servant unit</label>
+
+        <startingHediffs>
+            <li>
+                <def>Celes_TestServantHammer</def>
+                <chance>1.0</chance>
+                <severity>0.5</severity>
+            </li>
+        </startingHediffs>
+    </PawnKindDef>
+
+</Defs>

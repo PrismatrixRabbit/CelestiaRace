@@ -44,6 +44,9 @@
             <HediffDef>Celes_FakeEar</HediffDef>
         </descriptionHyperlinks>
         <jobString>Installing fake celestia ear.</jobString>
+        <recipeUsers>
+            <li>Celes_Race</li>
+        </recipeUsers>
         <ingredients>
             <li>
                 <filter>
@@ -102,6 +105,9 @@
             <HediffDef>Celes_BionicEar</HediffDef>
         </descriptionHyperlinks>
         <jobString>Installing bionic celestia ear.</jobString>
+        <recipeUsers>
+            <li>Celes_Race</li>
+        </recipeUsers>
         <ingredients>
             <li>
                 <filter>

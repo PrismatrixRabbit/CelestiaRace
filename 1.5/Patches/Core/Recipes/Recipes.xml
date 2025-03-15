@@ -4,10 +4,10 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName = "Human"]/recipes</xpath>
         <value>
-            <li>Celes_ImplantNanomachine</li>
-            <li>RemoveCelesNanoMachine_I</li>
-            <li>RemoveCelesNanoMachine_II</li>
-            <li>Celes_DegradedCyberneticSurgery</li>
+            <li>Celes_ImplantDustMechRhythm</li>
+            <li>Celes_RemoveDustMechRhythm_ActivityForHuman</li>
+            <li>Celes_RemoveCeles_DustMechRhythm_Overactivity</li>
+            <li>Celes_SetDustMechRhythm_Serve</li>
         </value>
     </Operation>
 

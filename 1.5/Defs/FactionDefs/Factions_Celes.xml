@@ -172,6 +172,8 @@
 				<Celes_ArmedExplorer>10</Celes_ArmedExplorer>
 				<Celes_ArmedExplorerSniper>3</Celes_ArmedExplorerSniper>
 				<Celes_OutlanderLeader>1</Celes_OutlanderLeader>
+                <Celes_ServantUnitClaw>1</Celes_ServantUnitClaw>
+                <Celes_ServantUnitHammer>1</Celes_ServantUnitHammer>
             </options>
         </li>
         <!-- 先锋突袭 -->
