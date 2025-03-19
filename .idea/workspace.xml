@@ -5,28 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/1.5/Defs/Apparel/Apparel_Human.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/BodyParts/Hediffs_BodyParts_Servant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_Human.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_BodyParts_Servant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/PawnKindDef/PawnKinds_Human.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.5/Defs/Apparel/Apparel_Belt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Assemblies/CelesFeature.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/FactionDefs/AidOption.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/FactionDefs/AidOption.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/FactionDefs/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/FactionDefs/Factions_Celes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/BodyParts/Hediffs_Bodyparts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/BodyParts/Hediffs_Bodyparts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/BodyParts/Hediffs_BodyParts_Servant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/BodyParts/Hediffs_BodyParts_Servant.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Hediffs_DustMechRhythm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Hediffs_DustMechRhythm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_Base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_Base.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_General.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/PawnKindDef/PawnKinds_General.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/QuestScriptDef/Celes_Scripts_Permits.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/QuestScriptDef/Celes_Scripts_Permits.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/Scenario/Celes_Scenarios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/Scenario/Celes_Scenarios.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/Surgery/Surgery_DustMechRhythm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/Surgery/Surgery_DustMechRhythm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Race/Race_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Race/Race_Celes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_DustMechRhythm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_DustMechRhythm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Surgery_DustMechRhythm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Surgery_DustMechRhythm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Patches/Core/Recipes/Recipes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Patches/Core/Recipes/Recipes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ExploreCoat/ExploreCoat_Female_south.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ExploreCoat/ExploreCoat_Female_south.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ExploreCoat/ExploreCoat_Female_southm.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/HediffDefs/Nanomachine_Hediff.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ResearchProjectDefs/CelesResearchProjects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ResearchProjectDefs/CelesResearchProjects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThoughtDefs/Thoughts_Memory_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThoughtDefs/Thoughts_Memory_Misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Nanomachine_Hediff.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Nanomachine_Hediff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Nanomachine_Hediff.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Languages/ChineseSimplified (简体中文)/DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +49,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2tWBj3dEwQo3UTSs9FNbOqp4BGP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -118,7 +109,10 @@
       <workItem from="1741938597981" duration="14847000" />
       <workItem from="1741970423550" duration="586000" />
       <workItem from="1741972551294" duration="3191000" />
-      <workItem from="1742026057329" duration="28833000" />
+      <workItem from="1742026057329" duration="31731000" />
+      <workItem from="1742212281876" duration="3294000" />
+      <workItem from="1742295077944" duration="624000" />
+      <workItem from="1742302798886" duration="5796000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -184,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741794758192</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="我们星铃爷的飞船终于会落在信标里了&#10;以及我们的破烂机仆会刷新了">
+      <option name="closed" value="true" />
+      <created>1742063557948</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742063557948</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +215,7 @@
     <MESSAGE value="渲染调整，平衡性调整" />
     <MESSAGE value="增添贴图，初步修正尘构节律" />
     <MESSAGE value="尘构节律修复（人类配方待完成）" />
-    <option name="LAST_COMMIT_MESSAGE" value="尘构节律修复（人类配方待完成）" />
+    <MESSAGE value="我们星铃爷的飞船终于会落在信标里了&#10;以及我们的破烂机仆会刷新了" />
+    <option name="LAST_COMMIT_MESSAGE" value="我们星铃爷的飞船终于会落在信标里了&#10;以及我们的破烂机仆会刷新了" />
   </component>
 </project>

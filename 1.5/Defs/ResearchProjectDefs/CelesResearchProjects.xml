@@ -257,8 +257,6 @@
         <label>Invasive Implantation</label>
         <description>Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's technology manual says so ...... but it doesn't say what side effects it would have on races other than Celestia.</description>
         <descriptionHyperlinks>
-            <RecipeDef>Celes_ImplantNanomachine_ForCeles</RecipeDef>
-            <HediffDef>Celes_NanoImplanted_ForCeles</HediffDef>
         </descriptionHyperlinks>
         <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
@@ -280,8 +278,6 @@
         <label>Dust-Mech Call:degraded cybernetic modification</label>
         <description>Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct.</description>
         <descriptionHyperlinks>
-            <RecipeDef>Celes_DegradedCyberneticSurgery</RecipeDef>
-            <HediffDef>Celes_NanoImplanted_IV</HediffDef>
         </descriptionHyperlinks>
         <baseCost>3500</baseCost>
         <techLevel>Spacer</techLevel>

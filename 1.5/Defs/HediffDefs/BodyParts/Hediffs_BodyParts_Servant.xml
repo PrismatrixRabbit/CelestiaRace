@@ -59,6 +59,12 @@
         <descriptionHyperlinks>
             <HediffDef>Celes_TestServantClaw</HediffDef>
         </descriptionHyperlinks>
+        <workerClass>CelesFeature.Celes_RecipeInstallImplant</workerClass>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_RecipeModExtension">
+                <PrerequisiteHediff>Celes_DustMechRhythm_Serve</PrerequisiteHediff>
+            </li>
+        </modExtensions>
         <jobString>Celes_InstallTestServantClaw</jobString>
         <ingredients>
             <li>
@@ -136,6 +142,12 @@
         <defName>Celes_InstallTestServantHammer</defName>
         <label>Celes_InstallTestServantHammer</label>
         <description>Celes_InstallTestServantHammer</description>
+        <workerClass>CelesFeature.Celes_RecipeInstallImplant</workerClass>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_RecipeModExtension">
+                <PrerequisiteHediff>Celes_DustMechRhythm_Serve</PrerequisiteHediff>
+            </li>
+        </modExtensions>
         <descriptionHyperlinks>
             <HediffDef>Celes_TestServantHammer</HediffDef>
         </descriptionHyperlinks>

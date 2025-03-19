@@ -920,7 +920,7 @@
                 <totalBleedFactor>0.2</totalBleedFactor>
                 <hungerRateFactor>0.4</hungerRateFactor>
                 <statOffsets>
-                    <!--<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.3</SlaveSuppressionOffset>TODO 这玩意jb不让改
+                    <!--<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.3</SlaveSuppressionOffset> 这玩意jb不让改
                     
                     <ImmunityGainSpeed>0.2</ImmunityGainSpeed>
                     <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
