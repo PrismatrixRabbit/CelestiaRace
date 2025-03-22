@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
     
-    <Celes_KneeHighBlack.label>星铃过膝袜(黑)</Celes_KneeHighBlack.label>
+    <Celes_SuspenderBlack.label>星铃吊带袜(黑)</Celes_SuspenderBlack.label>
     <!-- EN: celestia black knee-high stocking -->
-    <Celes_KneeHighBlack.description>一条黑色的过膝丝袜，适配星铃的身材，兼顾保暖和美观，常用于搭配各种服装。\n\n但事实上如果不是用尘化丝绸或者合成纤维之类的弹力材料制成，这也就是一对稍长而不透明的袜子。</Celes_KneeHighBlack.description>
+    <Celes_SuspenderBlack.description>一条黑色的吊带丝袜，适配星铃的身材，兼顾保暖和美观，常用于搭配各种服装。\n\n但事实上如果不是用尘化丝绸或者合成纤维之类的弹力材料制成，这也就是一对稍长而不透明的袜子。</Celes_SuspenderBlack.description>
     <!-- EN: A pair of black knee-high stockings that fit Celestia's figure, balancing warmth and aesthetics, often used to match a variety of outfits. \n\nBut the truth is that if it wasn't made of a stretchy material like Dust-Mech silk or synthetic fibres, it would just be a pair of slightly longer and opaque socks. -->
 
     <Celes_StockingBlack.label>星铃大腿袜(黑)</Celes_StockingBlack.label>

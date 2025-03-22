@@ -34,7 +34,7 @@
 				<li>Ground</li>
 				<li>Hydroponic</li>
 			</sowTags>
-			<sowMinSkill>4</sowMinSkill>
+			<sowMinSkill>6</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Celes_MainTech_I</li>
 			</sowResearchPrerequisites>

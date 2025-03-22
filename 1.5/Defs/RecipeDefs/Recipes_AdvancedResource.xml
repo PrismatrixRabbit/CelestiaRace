@@ -57,7 +57,7 @@
         <label>make celestia high-tech component</label>
         <description>make celestia high-tech component.</description>
         <jobString>making celestia high-tech component</jobString>
-        <workAmount>6000</workAmount>
+        <workAmount>12000</workAmount>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

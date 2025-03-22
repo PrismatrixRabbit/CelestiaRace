@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
-    <ThingDef ParentName="Celes_Shell_I">
+    <ThingDef>
         <defName>Celes_ServantCoat</defName>
         <label>Celes_ServantCoat</label>
         <description>Celes_ServantCoat</description>
         <costStuffCount>80</costStuffCount>
+        <techLevel>Industrial</techLevel>
         <stuffCategories>
             <li>Fabric</li>
             <li>Leathery</li>
@@ -15,13 +16,21 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
+            <Mass>0.3</Mass>
+            <EquipDelay>1.5</EquipDelay>
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToMake>9000</WorkToMake>
             <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
         </statBases>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset>0.30</SlaveSuppressionOffset>
+        </equippedStatOffsets>
         <apparel>
+            <layers>
+                <li>Shell</li>
+            </layers>
             <useWornGraphicMask>true</useWornGraphicMask>
             <developmentalStageFilter>Adult</developmentalStageFilter>
             <bodyPartGroups>
@@ -48,6 +57,41 @@
             <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
             <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
         </apparel>
+        <recipeMaker>
+            <researchPrerequisite>Celes_NanoImplant_I</researchPrerequisite>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>Celes_TailoringTab</li>
+            </recipeUsers>
+            <displayPriority>301</displayPriority>
+        </recipeMaker>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>Celes_ServantCoat</hediff>
+                <part>Torso</part>
+            </li>
+        </comps>
     </ThingDef>
+
+    <HediffDef>
+        <defName>Celes_ServantCoat</defName>
+        <label>Celes_ServantCoat</label>
+        <description>Celes_ServantCoat</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <painOffset>0.20</painOffset>
+                <hungerRateFactor>0.4</hungerRateFactor>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
     
 </Defs>

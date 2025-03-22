@@ -66,7 +66,17 @@
         <!-- Starting mechs -->
         <li Class="ScenPart_StartingMech" MayRequire="Ludeon.RimWorld.Biotech">
           <def>StartingMech</def>
+          <mechKind>Mech_Lifter</mechKind>
+          <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_StartingMech" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingMech</def>
           <mechKind>Mech_Agrihand</mechKind>
+          <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_StartingMech" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingMech</def>
+          <mechKind>Mech_Constructoid</mechKind>
           <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
         </li>
         <li Class="ScenPart_StartingMech" MayRequire="Ludeon.RimWorld.Biotech">
@@ -109,7 +119,7 @@
 		<!-- 这下面也肯定要换星铃武器和防具的 -->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Celes_Mid_SAssault</thingDef>
+          <thingDef>Celes_Early_SemiRifle</thingDef>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -119,11 +129,11 @@
           <def>StartingThing_Defined</def>
           <thingDef>Celes_TacticalVest</thingDef>
         </li>
-        <li Class="ScenPart_StartingThing_Defined">
+        <!-- <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Celes_LightLegArmour</thingDef>
         </li>
-        <!-- <li Class="ScenPart_StartingThing_Defined">
+        <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Apparel_AdvancedHelmet</thingDef>
           <stuff>Plasteel</stuff>

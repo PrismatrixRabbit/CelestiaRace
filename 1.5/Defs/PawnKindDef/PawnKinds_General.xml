@@ -71,6 +71,7 @@
         <weaponMoney>400~1000</weaponMoney>
         <weaponTags Inherit="false">
             <li>Celes_EarlyWeaponAssault</li>
+			<li>Celes_EarlyWeaponShotGun</li>
 			<li>Celes_EarlyMelee</li>
         </weaponTags>
         <backstoryFilters>
@@ -98,6 +99,7 @@
 	<PawnKindDef ParentName="Celes_Outlander">
 		<defName>Celes_OutlanderLeader</defName>
 		<label>celestia outlander leader</label>
+		<combatPower>85</combatPower>
 		<itemQuality>Excellent</itemQuality>
 		<factionLeader>true</factionLeader>
 		<apparelMoney>150~1000</apparelMoney>
@@ -131,7 +133,7 @@
         </apparelTags>
         <apparelMoney>150~500</apparelMoney>
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-        <weaponMoney>750~10000</weaponMoney>
+        <weaponMoney>900~10000</weaponMoney>
         <weaponTags Inherit="false">
             <li>Celes_MidWeaponAssault</li>
         </weaponTags>
@@ -160,7 +162,7 @@
 	<PawnKindDef Name="Celes_ArmedExplorer" ParentName="Celes_CombatPawnBase">
 		<defName>Celes_ArmedExplorer</defName>
 		<label>celestia armed pioneer</label>
-		<combatPower>45</combatPower>
+		<combatPower>60</combatPower>
 		<itemQuality>Normal</itemQuality>
 		<isFighter>true</isFighter>
 		<apparelTags>
@@ -171,6 +173,7 @@
 		<weaponMoney>750~10000</weaponMoney>
 		<weaponTags Inherit="false">
 			<li>Celes_EarlyWeaponAssault</li>
+			<li>Celes_EarlyWeaponShotGun</li>
 		</weaponTags>
 		<backstoryFilters>
 			<li>
@@ -198,7 +201,7 @@
 		<startingHediffs>
 			<li>
 				<def>Celes_StandardMechlink</def>
-				<chance>1.0</chance>
+				<chance>0.3</chance>
 				<severity>0.5</severity>
 			</li>
 		</startingHediffs>
@@ -207,7 +210,7 @@
 	<PawnKindDef ParentName="Celes_ArmedExplorer">
 		<defName>Celes_ArmedExplorerSniper</defName>
 		<label>celestia armed pioneer sniper</label>
-		<combatPower>60</combatPower>
+		<combatPower>65</combatPower>
 		<itemQuality>Good</itemQuality>
 		<weaponTags Inherit="false">
 			<li>Celes_EarlyWeaponSniper</li>
@@ -219,7 +222,7 @@
 	<PawnKindDef Name="Celes_Scout" ParentName="Celes_CombatPawnBase">
         <defName>Celes_Scout</defName>
         <label>celestia vanguard</label>
-        <combatPower>55</combatPower>
+        <combatPower>85</combatPower>
         <itemQuality>Normal</itemQuality>
         <isFighter>true</isFighter>
         <apparelTags>
@@ -227,7 +230,7 @@
         </apparelTags>
         <apparelMoney>2250~5000</apparelMoney>
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-        <weaponMoney>750~10000</weaponMoney>
+        <weaponMoney>1050~10000</weaponMoney>
         <weaponTags Inherit="false">
             <li>Celes_MidWeaponAssault</li>
         </weaponTags>
@@ -266,7 +269,7 @@
 	<PawnKindDef ParentName="Celes_Scout">
 		<defName>Celes_ScoutSniper</defName>
 		<label>celestia vanguard sniper</label>
-		<combatPower>70</combatPower>
+		<combatPower>95</combatPower>
 		<itemQuality>Good</itemQuality>
 		<weaponTags Inherit="false">
 			<li>Celes_MidWeaponSniper</li>
@@ -278,8 +281,11 @@
 	<PawnKindDef ParentName="Celes_Scout">
 		<defName>Celes_ScoutMelee</defName>
 		<label>celestia vanguard guard</label>
-		<combatPower>60</combatPower>
+		<combatPower>85</combatPower>
 		<itemQuality>Normal</itemQuality>
+		<apparelTags>
+			<li>BeltDefense</li>
+		</apparelTags>
 		<weaponTags Inherit="false">
 			<li>Celes_MidMeleeStandard</li>
 		</weaponTags>
@@ -290,7 +296,7 @@
 	<PawnKindDef Name="Celes_Elite" ParentName="Celes_CombatPawnBase">
 		<defName>Celes_Elite</defName>
 		<label>celestia regular marine</label>
-		<combatPower>90</combatPower>
+		<combatPower>135</combatPower>
 		<itemQuality>Good</itemQuality>
 		<isFighter>true</isFighter>
 		<apparelTags>
@@ -345,7 +351,7 @@
 	<PawnKindDef ParentName="Celes_Elite">
 		<defName>Celes_EliteSniper</defName>
 		<label>celestia regular marine sniper</label>
-		<combatPower>110</combatPower>
+		<combatPower>140</combatPower>
 		<itemQuality>Excellent</itemQuality>
 		<weaponTags Inherit="false">
 			<li>Celes_SpacerWeaponSniper</li>
@@ -357,7 +363,7 @@
 	<PawnKindDef ParentName="Celes_Elite">
 		<defName>Celes_EliteSupport</defName>
 		<label>celestia regular marine supporter</label>
-		<combatPower>120</combatPower>
+		<combatPower>155</combatPower>
 		<itemQuality>Excellent</itemQuality>
 		<weaponMoney>3500~10000</weaponMoney>
 		<weaponTags Inherit="false">
@@ -370,7 +376,7 @@
 	<PawnKindDef ParentName="Celes_Elite">
 		<defName>Celes_EliteMelee</defName>
 		<label>celestia regular marine guard</label>
-		<combatPower>100</combatPower>
+		<combatPower>135</combatPower>
 		<itemQuality>Good</itemQuality>
 		<apparelTags>
 			<li>BeltDefense</li>

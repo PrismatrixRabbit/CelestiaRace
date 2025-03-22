@@ -94,7 +94,7 @@
         <defName>Celes_Weapon_I</defName><!-- 星铃拓荒武器 -->
         <label>Celestia pioneer weapons</label>
         <description>Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese antique-like designs are simply forged by forging them together with materials such as crystal capsules, yet they have the extraordinary performance of nano-precision rifling and self-airtightness.</description>
-        <baseCost>300</baseCost>
+        <baseCost>1500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_MainTech_I</li>
@@ -110,7 +110,7 @@
         <defName>Celes_Weapon_II</defName><!-- 星铃古典武器 -->
         <label>Celestia classical weapons</label>
         <description>Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThis weapon utilises electrochemical propulsion to fire ammunition and has an exaggerated energy density. Still used in Celestia Topsy-Turvy pioneer squads or issued to outpost residents for self-defence, their history is untraceable.</description>
-        <baseCost>500</baseCost>
+        <baseCost>3000</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
@@ -126,9 +126,9 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_III</defName><!-- 星铃制式武器 --><!-- 待编辑 -->
-        <label>Celestia standard-issue weapons</label>
+        <label>Celestia standard-issue weapons(WIP)</label>
         <description>Unlocks the crafting of Celestia standard firearms that emit high-energy polarised particle beams; the high-energy radiation attached to these weapons burns the target's body surface severely and interferes with the functioning of mechanics. It also allows the crafting of weapons such as Celestia standard monomolecular sabre. \n\nThese weapons had been phased out by the Celestia Navy for more than a century, but industry on the Rimworld did not support the production of naval weapons for the time being, and so these serviceable particle beam weapons became the standard for Celestia's pioneering teams as well.</description>
-        <baseCost>3500</baseCost>
+        <baseCost>4500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
@@ -147,7 +147,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_IV</defName><!-- 试验性改造 --><!-- 待编辑 -->
-        <label>experimental modified weapons</label>
+        <label>experimental modified weapons(WIP)</label>
         <description>Allows for the manufacture of magnetic reconnection accelerators and radioactive high-energy plasma emitters, weapons derived from experimental modifications of old-time ship repair tools, but capable of bursting with exaggerated lethality.</description>
         <baseCost>5000</baseCost>
         <techLevel>Spacer</techLevel>
@@ -385,7 +385,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_IV</defName><!-- 星铃动力突击装甲 -->
-        <label>Celestia power assault armour</label>
+        <label>Celestia power assault armour(WIP)</label>
         <description>Unlocking the Celestia Power Assault Armour, based on the IEVA suits, combines a portion of the technology once used for the security forces of Celestia's Outer Rim domains to create a power assault armour that belongs to Celestia. \n\nThe standard power armour that was really used for Celestia's navy is difficult to make in the Rimworld, but this armour is also sufficient to face the intensity of conflict in the Rimworld.</description>
         <baseCost>6000</baseCost>
         <techLevel>Spacer</techLevel>

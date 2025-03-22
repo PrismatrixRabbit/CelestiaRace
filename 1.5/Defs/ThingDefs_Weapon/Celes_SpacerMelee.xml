@@ -190,18 +190,14 @@
     <smeltable>true</smeltable>
     <burnableByRecipe>true</burnableByRecipe>
     <thingCategories>
-      <li>WeaponsMelee</li>
+      <li>Celes_WeaponsMelee</li>
     </thingCategories>
     <weaponTags>
       <li>Celes_UltraMeleeStandard</li>
     </weaponTags>
     <tradeTags>
-      <li>WeaponMelee</li>
+      <li>Celes_WeaponsMelee</li>
     </tradeTags>
-    <weaponClasses>
-      <li>Melee</li>
-      <li>Ultratech</li>
-    </weaponClasses>
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>
     </thingSetMakerTags>
@@ -227,9 +223,6 @@
         <MeleeDodgeChance>6.0</MeleeDodgeChance>
         <MeleeHitChance>4.0</MeleeHitChance>
     </equippedStatOffsets>
-    <weaponClasses>
-      <li>MeleePiercer</li>
-    </weaponClasses>
 		<tools>
             <li>
                 <label>point</label>

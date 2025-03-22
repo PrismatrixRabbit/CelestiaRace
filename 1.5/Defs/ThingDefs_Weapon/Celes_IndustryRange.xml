@@ -48,13 +48,13 @@
         <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <WorkToMake>15000</WorkToMake>
-            <Mass>3.5</Mass>
+            <WorkToMake>45000</WorkToMake>
+            <Mass>4.0</Mass>
             <AccuracyTouch>0.63</AccuracyTouch>
             <AccuracyShort>0.85</AccuracyShort>
             <AccuracyMedium>0.90</AccuracyMedium>
             <AccuracyLong>0.85</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
         </statBases>
         <weaponTags>
             <li>Celes_EarlyWeaponSniper</li>
@@ -79,7 +79,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_EarlyRifle</defaultProjectile>
-                <warmupTime>1.7</warmupTime>
+                <warmupTime>2.3</warmupTime>
                 <range>39.9</range>
                 <soundCast>Shot_BoltActionRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -136,7 +136,7 @@
         <uiIconScale>1.2</uiIconScale>
         <soundInteract>Interact_Shotgun</soundInteract>
         <statBases>
-            <WorkToMake>12000</WorkToMake>
+            <WorkToMake>35000</WorkToMake>
             <Mass>3.5</Mass>
             <AccuracyTouch>0.90</AccuracyTouch>
             <AccuracyShort>0.88</AccuracyShort>
@@ -145,7 +145,7 @@
             <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
         </statBases>
 		<weaponTags>
-			<li>Celes_EarlyWeaponAssault</li>
+			<li>Celes_EarlyWeaponShotGun</li>
 		</weaponTags>
         <costList>
             <Steel>60</Steel>
@@ -169,7 +169,7 @@
                 <defaultProjectile>CelesBullet_ShotGun</defaultProjectile>
                 <warmupTime>0.6</warmupTime>
                 <range>14.9</range>
-                <burstShotCount>6</burstShotCount>
+                <burstShotCount>8</burstShotCount>
                 <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -226,7 +226,7 @@
         <uiIconScale>1.2</uiIconScale>
         <soundInteract>Interact_Revolver</soundInteract>
         <statBases>
-            <WorkToMake>5000</WorkToMake>
+            <WorkToMake>25000</WorkToMake>
             <Mass>2.0</Mass>
             <AccuracyTouch>0.50</AccuracyTouch>
             <AccuracyShort>0.43</AccuracyShort>
@@ -312,13 +312,13 @@
         <uiIconScale>1.2</uiIconScale>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <WorkToMake>15000</WorkToMake>
+            <WorkToMake>35000</WorkToMake>
             <Mass>3.5</Mass>
             <AccuracyTouch>0.47</AccuracyTouch>
             <AccuracyShort>0.55</AccuracyShort>
             <AccuracyMedium>0.45</AccuracyMedium>
             <AccuracyLong>0.40</AccuracyLong>
-            <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
         </statBases>
 		<weaponTags>
 			<li>Celes_EarlyWeaponAssault</li>
@@ -384,7 +384,7 @@
         <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <WorkToMake>18000</WorkToMake>
+            <WorkToMake>50000</WorkToMake>
             <Mass>4.5</Mass>
             <AccuracyTouch>0.55</AccuracyTouch>
             <AccuracyShort>0.62</AccuracyShort>
@@ -397,7 +397,7 @@
         </weaponTags>
         <costList>
             <Steel>75</Steel>
-            <ComponentIndustrial>8</ComponentIndustrial>
+            <ComponentIndustrial>10</ComponentIndustrial>
             <CelesNanoMachine>15</CelesNanoMachine>
         </costList>
         <recipeMaker>
@@ -457,7 +457,7 @@
         <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <WorkToMake>40000</WorkToMake>
+            <WorkToMake>50000</WorkToMake>
             <Mass>3.5</Mass>
             <AccuracyTouch>0.65</AccuracyTouch>
             <AccuracyShort>0.70</AccuracyShort>
@@ -470,7 +470,7 @@
         </weaponTags>
         <costList>
             <Steel>70</Steel>
-            <ComponentIndustrial>8</ComponentIndustrial>
+            <ComponentIndustrial>10</ComponentIndustrial>
             <CelesNanoMachine>15</CelesNanoMachine>
         </costList>
         <recipeMaker>
@@ -546,7 +546,7 @@
         <uiIconScale>1.2</uiIconScale>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <WorkToMake>45000</WorkToMake>
+            <WorkToMake>55000</WorkToMake>
             <Mass>4.0</Mass>
             <AccuracyTouch>0.65</AccuracyTouch>
             <AccuracyShort>0.85</AccuracyShort>
@@ -559,7 +559,7 @@
         </weaponTags>
         <costList>
             <Steel>80</Steel>
-            <ComponentIndustrial>8</ComponentIndustrial>
+            <ComponentIndustrial>10</ComponentIndustrial>
             <CelesNanoMachine>15</CelesNanoMachine>
         </costList>
         <recipeMaker>
@@ -632,7 +632,7 @@
 		</weaponTags>
         <costList>
             <Steel>140</Steel>
-            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentIndustrial>14</ComponentIndustrial>
             <CelesNanoMachine>20</CelesNanoMachine>
         </costList>
         <equippedStatOffsets>

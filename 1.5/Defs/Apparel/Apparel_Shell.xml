@@ -60,7 +60,7 @@
 	<ThingDef Name="Celes_Shell_III" ParentName="Celes_ShellBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>Celes_Apparel_III_a</researchPrerequisite>
+			<researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
 			<recipeUsers>
 				<li>Celes_TailoringTab</li>
 			</recipeUsers>
@@ -149,8 +149,8 @@
 			</drawData>
 		</apparel>
 	</ThingDef>
-	
-	<ThingDef ParentName="Celes_Shell_I"><!--运动外套-->
+
+	<!--<ThingDef ParentName="Celes_Shell_I">运动外套
 		<defName>Celes_TrenchCoat</defName>
 		<label>celestia trench coat</label>
 		<description>A trench coat that protects you from the elements and keeps you comfortable at a basic temperature. \n\n.</description>
@@ -189,7 +189,7 @@
 				<dataNorth><layer>40</layer></dataNorth>
 			</drawData>
 		</apparel>
-	</ThingDef>
+	</ThingDef>-->
 
 	<!-- ========== 专业服装 ========= -->
 

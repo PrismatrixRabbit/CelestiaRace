@@ -85,12 +85,10 @@
 	<!--↓↓↓这里等着改↓↓↓-->
 	<!--什么异种啊文化啊戒律啊麻烦死了先占位-->
 	<requiredMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
     </requiredMemes>
 	<!-- 这是白名单和黑名单，不能共用，到时候再按需自取 -->
     <allowedMemes>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
         <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
         <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
     </allowedMemes>
@@ -154,26 +152,37 @@
 	<allowedArrivalTemperatureRange>-45~50</allowedArrivalTemperatureRange>
 	<maxPawnCostPerTotalPointsCurve>
       <points>
-        <li>(0,35)</li>
-        <li>(70, 50)</li>
-        <li>(700, 100)</li>
-        <li>(1300, 150)</li>
-        <li>(100000, 10000)</li>
+          <li>(400, 100)</li>
+          <li>(850, 150)</li>
+          <li>(1750, 250)</li>
+          <li>(2000, 10000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>
 	<!--这里抄了原版-->
 	<pawnGroupMakers>
 		<!-- 注释掉的是这个需要的pawn我们没写 -->
-		<!-- 拓荒队突袭 -->
+		<!-- 拓荒队突袭-仆从 -->
         <li>
             <kindDef>Combat</kindDef>
             <commonality>33</commonality>
             <options>
-				<Celes_ArmedExplorer>10</Celes_ArmedExplorer>
-				<Celes_ArmedExplorerSniper>3</Celes_ArmedExplorerSniper>
-				<Celes_OutlanderLeader>1</Celes_OutlanderLeader>
-                <Celes_ServantUnitClaw>1</Celes_ServantUnitClaw>
-                <Celes_ServantUnitHammer>1</Celes_ServantUnitHammer>
+				<Celes_ArmedExplorer>3</Celes_ArmedExplorer>
+                <Celes_ServantUnitGunner>10</Celes_ServantUnitGunner>
+                <Celes_ServantUnitClaw>5</Celes_ServantUnitClaw>
+                <Celes_ServantUnitHammer>5</Celes_ServantUnitHammer>
+            </options>
+        </li>
+        <!-- 拓荒队突袭 -->
+        <li>
+            <kindDef>Combat</kindDef>
+            <commonality>33</commonality>
+            <options>
+                <Celes_ArmedExplorer>10</Celes_ArmedExplorer>
+                <Celes_ServantUnitGunner>3</Celes_ServantUnitGunner>
+                <Celes_ArmedExplorerSniper>3</Celes_ArmedExplorerSniper>
+                <Celes_OutlanderLeader>1</Celes_OutlanderLeader>
+                <Celes_ServantUnitClaw>5</Celes_ServantUnitClaw>
+                <Celes_ServantUnitHammer>5</Celes_ServantUnitHammer>
             </options>
         </li>
         <!-- 先锋突袭 -->
@@ -224,7 +233,7 @@
       <li>
         <kindDef>Peaceful</kindDef>
         <options>
-			<Celes_Outlander>10</Celes_Outlander>
+			<Celes_ServantUnit>10</Celes_ServantUnit>
 			<Celes_ArmedExplorer>3</Celes_ArmedExplorer>
         </options>
       </li>
@@ -234,16 +243,21 @@
           <Celes_Trader>1</Celes_Trader>
         </traders>
         <carriers>
-          <Celes_Outlander>10</Celes_Outlander>
+            <Muffalo>6</Muffalo>
+            <Dromedary>5</Dromedary>
+            <Alpaca>2</Alpaca>
+            <Elephant>1</Elephant>
         </carriers>
         <guards>
-			<Celes_ArmedExplorer>10</Celes_ArmedExplorer>
-			<Celes_Scout>10</Celes_Scout>
+			<Celes_ArmedExplorer>5</Celes_ArmedExplorer>
+			<Celes_Scout>5</Celes_Scout>
+            <Celes_ServantUnit>10</Celes_ServantUnit>
         </guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
+            <Celes_ServantUnit>10</Celes_ServantUnit>
 			<Celes_Outlander>10</Celes_Outlander>
 			<Celes_Scout>10</Celes_Scout>
 			<Celes_ScoutMelee>5</Celes_ScoutMelee>

@@ -180,25 +180,25 @@
   <!-- EN: [PAWN_nameDef] works at Celestia's Academy of Ecological Sciences, alongside Celestia's creators, the Abyssaltia, using Celestia's advanced artificial ecological technology to study and protect the rare ecosystems of their home planet. The ‘Bright Blue Dot’, over 95% of which is covered by the ocean, has been gradually unbalanced by deep-sea industrial development, and its fragile deep-sea ecosystems are collapsing due to sunlight, ocean currents, and physical and chemical imbalances such as temperature, salinity, pressure, and density. Before the planet's ecological resources and evolutionary footprint are completely lost, [PAWN_pronoun] has an obligation to reconstruct artificial ecosystems to protect these natural creations. -->
 
   <Celes_Backstory_Space26.title>星铃 记录官</Celes_Backstory_Space26.title>
-  <!-- EN: celestia  -->
+  <!-- EN: celestia archivist -->
   <Celes_Backstory_Space26.titleShort>记录官</Celes_Backstory_Space26.titleShort>
-  <!-- EN:  -->
+  <!-- EN: archivist -->
   <Celes_Backstory_Space26.description>[PAWN_nameDef]在星铃史学研究院工作。[PAWN_pronoun]立志探明一切的历史，记录从已知到未知的所有人类故事。[PAWN_pronoun]会记录下星铃历史中的大事，从那群活化石渊铃们口中寻得史实，但更多时候，[PAWN_pronoun]会一整周都泡在档案馆中，试图从那些已经零碎的遗物中复原历史，复原千年来人类文明的演化和发展。探寻历史的真相，查明星铃的方向。</Celes_Backstory_Space26.description>
-  <!-- EN:  -->
+  <!-- EN: [PAWN_nameDef] works at Celestia's Academy of Historical Research. [PAWN_pronoun] is determined to uncover all histories, documenting every human story from the known to the unknown. [PAWN_pronoun] records major events in Celestia's history, seeking historical facts from those living fossils, the Abyssia. But more often, [PAWN_pronoun] spends entire weeks immersed in the archives, attempting to reconstruct history from fragmented relics, piecing together the evolution and development of human civilization over millennia. Exploring the truths of history, illuminating the path for Celestia. -->
 
   <Celes_Backstory_Space27.title>星铃 航标维护员</Celes_Backstory_Space27.title>
-  <!-- EN: celestia  -->
+  <!-- EN: celestia beacon technician -->
   <Celes_Backstory_Space27.titleShort>航标维护员</Celes_Backstory_Space27.titleShort>
-  <!-- EN:  -->
+  <!-- EN: beacontender -->
   <Celes_Backstory_Space27.description>[PAWN_nameDef]是星铃技术院最好的技术工之一。利用自动机械，[PAWN_pronoun]一个人就可以维护一整个居住站周边的所有航标。[PAWN_possessive]工作为过往的航船提供指引，让他们免于迷失在无垠的深空。在工作之余，[PAWN_pronoun]只想躺在单人宿舍里，吃上些零食看会全息频道。</Celes_Backstory_Space27.description>
-  <!-- EN:  -->
+  <!-- EN: [PAWN_nameDef] is one of the best technicians at Celestia Technical Institute. Using automated machinery, [PAWN_pronoun] alone can maintain all navigation beacons around an entire habitation station. [PAWN_possessive] work provides guidance for passing vessels, preventing them from getting lost in the endless void. Off-duty, [PAWN_pronoun] just wants to lie in [PAWN_possessive] single dormitory, snacking and watching holographic channels. -->
 
   <Celes_Backstory_Space28.title>星铃 领航员</Celes_Backstory_Space28.title>
-  <!-- EN: celestia  -->
+  <!-- EN: celestia navigator -->
   <Celes_Backstory_Space28.titleShort>领航员</Celes_Backstory_Space28.titleShort>
-  <!-- EN:  -->
+  <!-- EN: navigator -->
   <Celes_Backstory_Space28.description>[PAWN_nameDef]通过分析计算机得出的星图数据，为飞船设计并引导最优的飞行航路。[PAWN_pronoun]并不固定在一艘飞船上任职，[PAWN_possessive]雇主有时需要高速抵达，有时需要节约燃料，而有时要兼顾两者。哪怕雇主需要[PAWN_pronoun]尽可能隐蔽舰船雷达特征避开巡逻队突破禁飞区，[PAWN_pronoun]也能颇具职业素养的以最快速度得出最优飞行航路。</Celes_Backstory_Space28.description>
-  <!-- EN:  -->
+  <!-- EN: [PAWN_nameDef] analyzes stellar cartography data from computers to design and guide optimal flight routes for spacecraft. [PAWN_pronoun] is not permanently assigned to any single vessel, as [PAWN_possessive] employers sometimes require high-speed arrivals, sometimes fuel conservation, and occasionally a balance of both. Even when clients need [PAWN_pronoun] to obscure ship radar signatures and breach no-fly zones past patrols, [PAWN_pronoun] can professionally calculate the optimal trajectory with maximum efficiency. -->
 
   <Celes_Backstory_Space29.title>星铃 飞船工程师</Celes_Backstory_Space29.title>
   <!-- EN: celestia  -->

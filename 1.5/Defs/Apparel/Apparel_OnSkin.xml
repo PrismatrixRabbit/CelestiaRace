@@ -129,7 +129,7 @@
 			</tags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>Celes_MainTech_I</researchPrerequisite>
+			<researchPrerequisite>Celes_Apparel_I</researchPrerequisite>
 			<recipeUsers>
 				<li>CraftingSpot</li>
 				<li>ElectricTailoringBench</li>

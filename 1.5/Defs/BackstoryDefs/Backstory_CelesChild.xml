@@ -33,10 +33,16 @@
 		<titleShort>far-planetkid</titleShort>
 		<description>[PAWN_nameDef] was born on a habitation station far from the stars, and to [PAWN_pronoun], the stars of [PAWN_possessive] home system looked like nothing more than a dim point of light. [PAWN_pronoun] was taught to aim for the pioneer, but [PAWN_pronoun] never gave up [PAWN_possessive] curiosity about that dim point of light.</description>
 		<slot>Childhood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+		</workDisables>
 		<skillGains>
-			<Plants>3</Plants>
-			<Crafting>3</Crafting>
-			<Mining>1</Mining>
+			<Construction>2</Construction>
+			<Intellectual>2</Intellectual>
+			<Plants>1</Plants>
+			<Social>-1</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -52,7 +58,7 @@
 		<skillGains>
 			<Construction>4</Construction>
 			<Intellectual>4</Intellectual>
-			<Mining>2</Mining>
+			<Crafting>2</Crafting>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -89,8 +95,8 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 		<skillGains>
-			<Shooting>2</Shooting>
 			<Melee>4</Melee>
+			<Construction>1</Construction>
 			<Social>-2</Social>
 		</skillGains>
 		<spawnCategories>

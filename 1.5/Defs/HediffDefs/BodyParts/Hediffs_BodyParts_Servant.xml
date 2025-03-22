@@ -173,5 +173,83 @@
         <addsHediff>Celes_TestServantHammer</addsHediff>
     </RecipeDef>
 
+    <!-- ========== 测试：尘构仆役-火控脑区 ========= -->
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Celes_TestServantFCBR</defName>
+        <label>Celes_TestServantFCBR</label>
+        <description>Celes_TestServantFCBR</description>
+        <descriptionHyperlinks><RecipeDef>Celes_InstallTestServantFCBR</RecipeDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>CelesNanoMachine</spawnThingOnRemoved>
+        <defaultInstallPart>Brain</defaultInstallPart>
+        <stages>
+            <li>
+                <painOffset>0.20</painOffset>
+                <statFactors>
+                    <AimingDelayFactor>0.5</AimingDelayFactor>
+                </statFactors>
+                <statOffsets>
+                    <ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
+                    <MeleeDodgeChance>-10.0</MeleeDodgeChance>
+                    <MeleeHitChance>-10.0</MeleeHitChance>
+                </statOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_ReactOnDamage">
+                <damageDefIncoming>EMP</damageDefIncoming>
+                <createHediff>BrainShock</createHediff>
+            </li>
+        </comps>
+    <addedPartProps>
+        <solid>false</solid>
+    </addedPartProps>
+    </HediffDef>
+
+    <!--<Cloth>20</Cloth>
+    <Steel>25</Steel>
+    <ComponentIndustrial>4</ComponentIndustrial>-->
+
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
+        <defName>Celes_InstallTestServantFCBR</defName>
+        <label>Celes_InstallTestServantFCBR</label>
+        <description>Celes_InstallTestServantFCBR</description>
+        <workerClass>CelesFeature.Celes_RecipeInstallImplant</workerClass>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_RecipeModExtension">
+                <PrerequisiteHediff>Celes_DustMechRhythm_Serve</PrerequisiteHediff>
+            </li>
+        </modExtensions>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_TestServantFCBR</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Celes_InstallTestServantFCBR</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesNanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CelesNanoMachine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Celes_TestServantFCBR</addsHediff>
+    </RecipeDef>
+
 
 </Defs>

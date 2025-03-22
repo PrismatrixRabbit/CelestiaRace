@@ -918,7 +918,6 @@
                 <!--<minSeverity>0.85</minSeverity>-->
                 <painFactor>0.1</painFactor>
                 <totalBleedFactor>0.2</totalBleedFactor>
-                <hungerRateFactor>0.4</hungerRateFactor>
                 <statOffsets>
                     <!--<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.3</SlaveSuppressionOffset> 这玩意jb不让改
                     

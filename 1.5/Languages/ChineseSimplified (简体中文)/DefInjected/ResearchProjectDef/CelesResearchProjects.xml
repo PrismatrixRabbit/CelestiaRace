@@ -16,7 +16,7 @@
   <Celes_MainTech_III.description>破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。\n\n&lt;color=#87cefa&gt;＂尘构，学名适应性纳米校正系统(Adaptive Nano Calibration System)，即ANCS。是由星铃文明研发的，基于控制论的增强纳米机械。尘构能够融合不同的生物与生物，生物与机械，并且充当媒介在其中获取，传递，并处理信息流，在与智能结合的情况下，具有高度的适应性。＂————解析自星铃自译解技术核心&lt;/color&gt;</Celes_MainTech_III.description>
   <!-- EN: Decipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.\n\n"The Dust-Mech, known as the Adaptive Nano Calibration System, or ANCS, is a cybernetic-based augmented nanomachine developed by the Celestia civilisation. The Dust-Mech is capable of fusing different organisms with organisms, and organisms with machinery, and acts as a medium in which to acquire, transmit, and process information flows, and is highly adaptable when combined with intelligence. " - Parsed from Celestia's Self-explanatory Technology Core -->
 
-  <Celes_MainTech_IV.label>尘构重编程(即将推出)</Celes_MainTech_IV.label>
+  <Celes_MainTech_IV.label>尘构重编程(正在制作)</Celes_MainTech_IV.label>
   <!-- EN: Dust-Mech reprogramming(WIP) -->
   <Celes_MainTech_IV.description>尘构重编程，绝赞制作中。</Celes_MainTech_IV.description>
   <!-- EN: Dust-Mech reprogramming(WIP) -->
@@ -41,7 +41,7 @@
   <Celes_Apparel_III_a.description>研究星铃拓荒队的专业服装，这些衣物大多是＂领航计划＂时期为了适应未知星球环境开发的特化服装，被用于各式特殊场景。</Celes_Apparel_III_a.description>
   <!-- EN: Study Celestia's professional clothing, most of which was developed during The Navigator Programme to adapt to unknown planetary environments and was used in a variety of special scenarios. -->
 
-  <Celes_Apparel_IV.label>星铃动力突击装甲</Celes_Apparel_IV.label>
+  <Celes_Apparel_IV.label>星铃动力突击装甲(正在制作)</Celes_Apparel_IV.label>
   <!-- EN: Celestia power assault armour -->
   <Celes_Apparel_IV.description>解锁星铃动力突击盔甲，在太空活动防护服的基础上，结合一部分曾用于星铃外环星域治安部队的技术制作出属于星铃的动力突击装甲。\n\n真正用于星铃海军的标准动力装甲在边缘世界难以制造，但这种装甲也足够面对边缘世界的冲突烈度。</Celes_Apparel_IV.description>
   <!-- EN: Unlocking the Celestia Power Assault Armour, based on the IEVA suits, combines a portion of the technology once used for the security forces of Celestia's Outer Rim domains to create a power assault armour that belongs to Celestia. \n\nThe standard power armour that was really used for Celestia's navy is difficult to make in the Rimworld, but this armour is also sufficient to face the intensity of conflict in the Rimworld. -->
@@ -73,20 +73,20 @@
 
   <Celes_Weapon_I.label>星铃拓荒武器</Celes_Weapon_I.label>
   <!-- EN: Celestia pioneer weapons -->
-  <Celes_Weapon_I.description>依照星铃标准设计拓荒武器，允许制作拓荒冰镐，并改良简单枪械。\n\n这些古董般的设计，只是通过与晶蒴等材料一并锻造，却有着纳米级精度的膛线与自气密的非凡性能。</Celes_Weapon_I.description>
+  <Celes_Weapon_I.description>依照星铃标准设计拓荒武器，允许制作拓荒冰镐，并改良简单枪械。\n\n这些古董般的设计，只是通过与晶蒴等材料一并锻造，就能有着纳米级精度的膛线与自气密的跨时代性能。</Celes_Weapon_I.description>
   <!-- EN: Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese antique-like designs are simply forged by forging them together with materials such as crystal capsules, yet they have the extraordinary performance of nano-precision rifling and self-airtightness. -->
 
   <Celes_Weapon_II.label>星铃古典武器</Celes_Weapon_II.label>
   <!-- EN: Celestia classical weapons -->
-  <Celes_Weapon_II.description>按照星铃武器规范和弹药口径设计的古典武器，允许制作拓荒军刀等武器，并改良精准步枪。\n\n这种武器利用电化学推进发射弹药，有着夸张的能量密度。仍然用于星铃拓荒队的先锋小队中，或者被配发给前哨站居民防身，它们的历史却已经无从追溯。</Celes_Weapon_II.description>
+  <Celes_Weapon_II.description>按照星铃武器规范和弹药口径设计的古典武器，允许制作拓荒军刀等武器，并改良精准步枪。\n\n这种武器利用电化学推进发射弹药，有着夸张的能量密度，已经逼近一个工业文明所能企及的极限。这型号仍然用于星铃拓荒队的先锋小队中，或者被配发给前哨站居民防身，它们的历史却已经无从追溯。</Celes_Weapon_II.description>
   <!-- EN: Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThis weapon utilises electrochemical propulsion to fire ammunition and has an exaggerated energy density. Still used in Celestia Topsy-Turvy pioneer squads or issued to outpost residents for self-defence, their history is untraceable. -->
 
-  <Celes_Weapon_III.label>星铃制式武器</Celes_Weapon_III.label>
+  <Celes_Weapon_III.label>星铃制式武器(正在制作)</Celes_Weapon_III.label>
   <!-- EN: Celestia standard-issue weapons -->
-  <Celes_Weapon_III.description>解锁制作发射高能极化粒子束的星铃制式枪械，这些武器附带的高能辐射会对目标体表严重烧伤，并干扰机械体的运作。并允许制作制式单分子军刀等武器。\n\n这些武器曾被星铃海军淘汰百年有余，但边缘世界的工业暂不支持海军制式武器的生产，于是这些可堪一用的粒子束武器便也成为拓荒队的标配。</Celes_Weapon_III.description>
+  <Celes_Weapon_III.description>解锁制作发射高能极化粒子束的星铃制式枪械，这些武器附带的高能辐射会对目标体表严重烧伤，并干扰机械体的运作。并允许制作制式单分子军刀等武器。\n\n这些武器曾被星铃海军淘汰百年有余，但基于边缘世界的工业暂不支持海军制式武器生产的现状，于是这些差强人意的粒子束武器便也成为拓荒队的标配。</Celes_Weapon_III.description>
   <!-- EN: Unlocks the crafting of Celestia standard firearms that emit high-energy polarised particle beams; the high-energy radiation attached to these weapons burns the target's body surface severely and interferes with the functioning of mechanics. It also allows the crafting of weapons such as Celestia standard monomolecular sabre. \n\nThese weapons had been phased out by the Celestia Navy for more than a century, but industry on the Rimworld did not support the production of naval weapons for the time being, and so these serviceable particle beam weapons became the standard for Celestia's pioneering teams as well. -->
   
-  <Celes_Weapon_IV.label>试验性改造武器</Celes_Weapon_IV.label>
+  <Celes_Weapon_IV.label>试验性改造武器(正在制作)</Celes_Weapon_IV.label>
   <!-- EN: experimental modified weapons -->
   <Celes_Weapon_IV.description>允许制造磁重联加速器与放射性高能等离子发射器，这种武器源于对旧时代飞船维修工具的试验性改造，但能爆发出夸张的杀伤力。</Celes_Weapon_IV.description>
   <!-- EN: Allows for the manufacture of magnetic reconnection accelerators and radioactive high-energy plasma emitters, weapons derived from experimental modifications of old-time ship repair tools, but capable of bursting with exaggerated lethality. -->
