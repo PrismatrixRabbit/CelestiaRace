@@ -43,6 +43,8 @@
         <tags>
             <li>Celes_ClassicStart</li>
         </tags>
+        <discoveredLetterTitle>About: Self-replicating crystals</discoveredLetterTitle>
+        <discoveredLetterText>About: Self-replicating crystals</discoveredLetterText>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -260,10 +262,6 @@
         </descriptionHyperlinks>
         <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
         <prerequisites>
             <li>Celes_MainTech_II</li>
             <li>Celes_Bio_I</li>
@@ -271,27 +269,25 @@
         <researchViewX>2</researchViewX>
         <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
+        <discoveredLetterTitle>About: Invasive Implantation</discoveredLetterTitle>
+        <discoveredLetterText>About: Invasive Implantation</discoveredLetterText>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>Celes_NanoImplant_II</defName>
-        <label>Dust-Mech Call:degraded cybernetic modification</label>
+        <label>degraded cybernetic modification</label>
         <description>Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct.</description>
         <descriptionHyperlinks>
         </descriptionHyperlinks>
-        <baseCost>3500</baseCost>
-        <techLevel>Spacer</techLevel>
+        <baseCost>2500</baseCost>
+        <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
         <prerequisites>
             <li>Celes_NanoImplant_I</li>
-            <li>Celes_MainTech_III</li>
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
-        <researchViewX>4</researchViewX>
+        <researchViewX>3</researchViewX>
         <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>

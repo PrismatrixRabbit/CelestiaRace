@@ -519,11 +519,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space29</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia starship engineer</title>
+		<titleShort>starship-engineer</titleShort>
+		<description>[PAWN_nameDef] has participated in the design of various spacecraft models. [PAWN_possessive] designs are always utility-oriented, and to achieve the intended purposes, [PAWN_pronoun] often personally designs the ship's AI systems and electromechanical systems. The easily maintainable yet highly customizable structures combined with excellent spacecraft performance have earned [PAWN_pronoun] some renown in the industry.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Crafting>5</Crafting>
+			<Construction>4</Construction>
+			<Intellectual>2</Intellectual>
+			<Social>-3</Social>
+			<Plants>-2</Plants>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -532,11 +537,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space30</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia shipboard physician</title>
+		<titleShort>ship-doctor</titleShort>
+		<description>[PAWN_nameDef] serves as a physician aboard a spacecraft, safeguarding the crew's physical and mental health. Traveling between the Inner and Outer Rim domains, the lonely journeys spanning dozens of astronomical units not only exert immense psychological pressure on the crew but also expose them to unstable gravity and radiation, creating a vicious cycle that disrupts everyone's condition. [PAWN_nameDef] must maintain [PAWN_possessive] own stability, pulling both crewmembers and the entire ship back from the self-destructive vortex of the void through regular checkups and psychological counseling.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Medicine>7</Medicine>
+			<Social>3</Social>
+			<Intellectual>2</Intellectual>
+			<Mining>-4</Mining>
+			<Shooting>-2</Shooting>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -545,11 +555,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space31</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia exotic veterinarian</title>
+		<titleShort>pet-doctor</titleShort>
+		<description>[PAWN_nameDef] is a seasoned veterinarian who always knows how to calm down and treat various bizarre little pets - yes, bizarre, as Celestia's gene-editing technology has made pet species and purposes extraordinarily peculiar. Though their bodily structures differ, the biological systems revealed under X-rays and AI analysis always betray the consistency of biological origins, which forms the basis of [PAWN_pronoun] treatment for these creatures.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Animals>6</Animals>
+			<Medicine>4</Medicine>
+			<Intellectual>2</Intellectual>
+			<Shooting>-3</Shooting>
+			<Mining>-3</Mining>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -558,11 +573,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space32</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia cyber beastmaster</title>
+		<titleShort>cyber-tamer</titleShort>
+		<description>[PAWN_nameDef] is an expert in creating and training bionic mechanical pets. Making these little things behave like real creatures with genuine desires and self-awareness is quite challenging - tasks artificial intelligence cannot accomplish, as simulated consciousness can only replicate simulations, not comprehend the desires behind them. \n\nPerfectly dosed flaws and logical paradoxes allow each biomechanical pet [PAWN_pronoun] trains to develop vivid and utterly unique personalities. Yet [PAWN_pronoun] never doubts whether these machines possess true life.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Crafting>5</Crafting>
+			<Animals>4</Animals>
+			<Intellectual>3</Intellectual>
+			<Social>-4</Social>
+			<Shooting>-2</Shooting>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -571,11 +591,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space33</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia post-modern artist</title>
+		<titleShort>neo-artist</titleShort>
+		<description>Not all art attracts admiration, and [PAWN_nameDef]'s work exemplifies this. Sometimes people perceive [PAWN_possessive] designs as random combinations from a chaotic lexicon, yet pieces like "Countless Yaks Gazing Beyond the Sculpture, Symbolizing Chaos" occasionally evoke inexplicable awe, radiating transcendent beauty.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Artistic>7</Artistic>
+			<Social>3</Social>
+			<Intellectual>2</Intellectual>
+			<Mining>-5</Mining>
+			<Plants>-2</Plants>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -584,11 +609,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space34</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia couturier</title>
+		<titleShort>couturier</titleShort>
+		<description>[PAWN_nameDef]'s artistic flair drives [PAWN_pronoun] to design elegant fashion for fellow Celestia. To fully realize [PAWN_possessive] visions, [PAWN_pronoun] naturally mastered garment tailoring - aided by nanomachines. [PAWN_possessive] talent soon attracted custom orders from many, including Celestia officials. Rumor has it [PAWN_pronoun] contributed to the latest official uniform design.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Artistic>6</Artistic>
+			<Crafting>4</Crafting>
+			<Social>2</Social>
+			<Mining>-4</Mining>
+			<Shooting>-2</Shooting>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -597,11 +627,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space35</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia mechatronics designer</title>
+		<titleShort>cyber-architect</titleShort>
+		<description>[PAWN_nameDef]'s mind constantly generates mechanical concepts, and Celestia's neural-link technology with nanomachines allows [PAWN_pronoun] to project these structures into reality. [PAWN_pronoun] has designed numerous bionic mechanisms widely used in Celestia society, including cargo handlers still prevalent in spaceports.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Crafting>7</Crafting>
+			<Intellectual>4</Intellectual>
+			<Artistic>1</Artistic>
+			<Social>-5</Social>
+			<Shooting>-3</Shooting>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -610,11 +645,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space36</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia tech-regulator</title>
+		<titleShort>risk-control</titleShort>
+		<description>"Controlled technology, controlled risks."\n\n[PAWN_nameDef] served in the Celestia Technology Oversight Committee, a specialized agency directly under the Celestia government, dedicated to mitigating the projected risks of hazardous technologies. [PAWN_pronoun] must deeply comprehend diverse technologies and their applications—and excel at envisioning their darkest possibilities. After rigorous evaluation, [PAWN_pronoun] employs negotiation, contracts, litigation, or even forceful suppression to neutralize and regulate technologies with latent threats, ensuring their ethical deployment.\n\nCelestia's advancements have long held the power to obliterate their own civilization: programmable nanomachines, pseudo-sentient AI, radical genetic editing, neural-link interfaces, ubiquitous antimatter energy... Countless perilous innovations necessitated regulators like [PAWN_nameDef] to strangle disasters at their inception. They chase the storm, yet are chased by it in turn.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Intellectual>8</Intellectual>
+			<Crafting>4</Crafting>
+			<Social>3</Social>
+			<Shooting>3</Shooting>
+			<Artistic>-6</Artistic>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -623,11 +663,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space37</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia heretic cyberneticist</title>
+		<titleShort>fleshsmith</titleShort>
+		<description>[PAWN_nameDef] was an imaginative cybernetics specialist, renowned for designing lifelike prosthetic systems and personally installing custom augmentations for clients deemed worthy.\n\nThis continued until [PAWN_pronoun] mastered the use of DustMech-aligned genetic editing to engineer synthetic tissues, fusing these bioengineered masses with [PAWN_possessive] bespoke prosthetics. As [PAWN_possessive] creativity surged, [PAWN_pronoun] flung open the gates to uncharted realms, eager to test these innovations on [PAWN_objective]—only for the Technology Oversight Committee to storm into [PAWN_possessive] lab and slam those gates shut.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Crafting>6</Crafting>
+			<Medicine>5</Medicine>
+			<Intellectual>3</Intellectual>
+			<Social>-6</Social>
+			<Shooting>-3</Shooting>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -636,11 +681,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space38</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia holovideographer</title>
+		<titleShort>holoartist</titleShort>
+		<description>[PAWN_nameDef] is a new-era visual artist who uses neural-linked camera drones to create hyperrealistic holograms. [PAWN_pronoun] weaves emotional triggers into [PAWN_possessive] works, allowing viewers to relive memories with multisensory immersion. Patrons flock to [PAWN_objective] to eternally preserve their most precious moments.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Artistic>7</Artistic>
+			<Intellectual>3</Intellectual>
+			<Social>2</Social>
+			<Mining>-5</Mining>
+			<Shooting>-2</Shooting>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -649,11 +699,15 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space39</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia virtuo-reality architect</title>
+		<titleShort>virtuogenius</titleShort>
+		<description>[PAWN_nameDef] crafts immersive virtual worlds that cleverly bypass Celestia's reality-awareness laws. [PAWN_possessive] masterpiece 'The Fifth Expedition' lets players unravel cosmic mysteries while battling extradimensional horrors, blending narrative depth with meta-reality subversion.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Artistic>6</Artistic>
+			<Intellectual>5</Intellectual>
+			<Mining>-4</Mining>
+			<Construction>-3</Construction>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -662,11 +716,15 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space40</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia neural-hedonist</title>
+		<titleShort>taboo-designer</titleShort>
+		<description>[PAWN_nameDef] specializes in illicit VR experiences that bypass biological limitations. To perfect [PAWN_possessive] signature 'Transspecies Symphony' series, [PAWN_pronoun] personally tests neural-stimulation patterns in [PAWN_possessive] underground lab, blending scientific rigor with deviant creativity.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Artistic>5</Artistic>
+			<Medicine>4</Medicine>
+			<Animals>3</Animals>
+			<Social>-6</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -675,11 +733,14 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space41</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia neurosurgeon</title>
+		<titleShort>brainmender</titleShort>
+		<description>After nanomechs restored [PAWN_nameDef]'s tremor-ridden hands, [PAWN_pronoun] developed psionic-assisted surgery techniques. Now [PAWN_pronoun] performs 27-hour neurografts with psychic precision, [PAWN_possessive] consciousness split between surgical drones and [PAWN_possessive] augmented body.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Medicine>8</Medicine>
+			<Intellectual>4</Intellectual>
+			<Social>-6</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -688,11 +749,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space42</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia clinic physician</title>
+		<titleShort>frontier-doctor</titleShort>
+		<description>[PAWN_nameDef] operates a small clinic in an Outer Rim space habitation station. Managing government-issued nanomed units, [PAWN_pronoun] combats zero-gravity osteopenia and gunshot wounds alike. [PAWN_possessive] presence alone deters would-be troublemakers, making the clinic an oasis in the lawless void.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Medicine>5</Medicine>
+			<Social>3</Social>
+			<Shooting>2</Shooting>
+			<Mining>-3</Mining>
+			<Construction>-2</Construction>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -701,11 +767,15 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space43</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia freighter captain</title>
+		<titleShort>captain</titleShort>
+		<description>[PAWN_nameDef] commands a massive cargo hauler, sustaining civilization through interstellar trade. While secretly battling stress-induced insomnia, [PAWN_pronoun] maintains calm authority during 30-lightyear voyages, coordinating shipments like a cosmic conductor.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Social>5</Social>
+			<Intellectual>3</Intellectual>
+			<Plants>-3</Plants>
+			<Mining>-2</Mining>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -714,11 +784,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space44</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia freighter captain</title>
+		<titleShort>captain</titleShort>
+		<description>[PAWN_nameDef]'s obsession with shipboard micromanagement borders on madness. Every airscrubber efficiency report feeds [PAWN_possessive] tyrannical control, yet beneath the ruthless exterior lies desperate hope to deliver [PAWN_possessive] crew safely home.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Intellectual>6</Intellectual>
+			<Shooting>2</Shooting>
+			<Medicine>-3</Medicine>
+			<Animals>-3</Animals>
+			<Social>-2</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -727,11 +802,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space45</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia compassionate volunteer</title>
+		<titleShort>goodsamaritan</titleShort>
+		<description>Beyond [PAWN_possessive] primary duties, [PAWN_nameDef] selflessly aids others across hospitals and spaceports. While AI could handle these tasks, [PAWN_pronoun] believes genuine human warmth - a smile, a kind word - makes all the difference in the cold void of space.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Social>4</Social>
+			<Medicine>2</Medicine>
+			<Cooking>2</Cooking>
+			<Mining>-3</Mining>
+			<Shooting>-2</Shooting>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -740,11 +820,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space46</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia community delegate</title>
+		<titleShort>spokesperson</titleShort>
+		<description>Elected by [PAWN_possessive] neighbors, [PAWN_nameDef] voices community concerns in stellar assemblies. Though sometimes stumbling through complex policy debates, [PAWN_pronoun]'s earnest efforts to balance diverse interests are gradually gaining recognition across the system.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Social>6</Social>
+			<Intellectual>3</Intellectual>
+			<Artistic>2</Artistic>
+			<Mining>-4</Mining>
+			<Plants>-2</Plants>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -753,11 +838,15 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space47</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia antimatter engineer</title>
+		<titleShort>corekeeper</titleShort>
+		<description>[PAWN_nameDef] maintains the beating heart of a space habitat - a magnetic containment antimatter reactor. While micromachines handle daily operations, [PAWN_pronoun]'s expertise in calibrating energy output curves ensures the station never flickers.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Crafting>6</Crafting>
+			<Intellectual>4</Intellectual>
+			<Construction>2</Construction>
+			<Social>-5</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -766,11 +855,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space48</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia stellar-ring engineer</title>
+		<titleShort>ringbuilder</titleShort>
+		<description>Overseeing a segment of the colossal solar particle accelerator, [PAWN_nameDef] converts stellar plasma into usable matter/antimatter pairs. [PAWN_possessive] daily calibrations of the 0.97c particle streams fuel entire star systems.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Construction>8</Construction>
+			<Intellectual>6</Intellectual>
+			<Mining>2</Mining>
+			<Social>-4</Social>
+			<Plants>-3</Plants>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -779,11 +873,15 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space49</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia stellar-tech delegate</title>
+		<titleShort>technocrat</titleShort>
+		<description>[PAWN_nameDef] wields considerable influence on Celestia's Central Committee as a technological representative. With [PAWN_possessive] eloquence and profound understanding of socio-technological systems, [PAWN_pronoun] helps shape civilization's future through key policy decisions.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Social>6</Social>
+			<Intellectual>5</Intellectual>
+			<Mining>-4</Mining>
+			<Shooting>-3</Shooting>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -792,11 +890,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space50</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia navigator architect</title>
+		<titleShort>ark-designer</titleShort>
+		<description>[PAWN_nameDef] participated in the critical design and planning of a key component of "The Navigator Programme." This initiative, serving as the ultimate contingency plan, aims to dispatch Celestia's embers to distant star systems before the inevitable and total collapse of the "BlueFlood." The light-speed barrier will forever constrain these exiled voyagers from returning home, rendering this journey a one-way odyssey for most. After the embers depart, the guardians of the home star system will attempt to obliterate the source of all calamities.\n\nNow, [PAWN_nameDef] voyages with "The Navigator Programme," awakening only sporadically during the endless journey. While maintaining the ark-ship's cryogenic hibernation systems, [PAWN_pronoun] also serves as a chronicler, documenting the indelible epic of Celestia's civilization.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Intellectual>7</Intellectual>
+			<Construction>6</Construction>
+			<Medicine>2</Medicine>
+			<Social>-5</Social>
+			<Animals>-2</Animals>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -805,11 +908,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space51</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia abyssia caretaker</title>
+		<titleShort>caretaker</titleShort>
+		<description>[PAWN_nameDef] entered into a long-term service agreement with an Abyssia. Barring unforeseen circumstances, [PAWN_pronoun] would have dutifully served as a steward until retirement.\n\nThe Abyssia—creators of the Celestia, pioneers of the homeworld, and the original Celestia themselves—grow increasingly frail due to their ill-adaptedness to the space environment. The cognitive patterns of the earliest Abyssia have already entered a millennia-long decline. As part of a form of elder care and end-of-life support, [PAWN_nameDef] spent decades striving to fulfill the employer’s physiological and psychological needs.\n\nYet "The Navigator Programme" became that unforeseen circumstance. Stranded in deep space, tens or hundreds of light-years from [PAWN_possessive] charge, it leaves [PAWN_objective] perpetually entangled by unresolved obligations.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Medicine>6</Medicine>
+			<Social>6</Social>
+			<Cooking>6</Cooking>
+			<Mining>-4</Mining>
+			<Shooting>-3</Shooting>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -818,11 +926,19 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space52</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>Celestia Marine Infantry</title>
+		<titleShort>Marine</titleShort>
+		<description>[PAWN_nameDef] was an ordinary member of the Celestia Navy, commanding an automated assault squad. By directing autonomous machines to breach enemy lines alongside [PAWN_pronoun], Celestia steadily reclaimed territory from mechanoids and insectoids. Each time [PAWN_pronoun] was injured, Celestia's medical technology healed [PAWN_pronoun], allowing [PAWN_pronoun] to return to the war with more experience, gradually making [PAWN_pronoun] fearless in the face of death.</description>
 		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<skillGains>
+			<Shooting>5</Shooting>
+			<Intellectual>3</Intellectual>
+			<Melee>2</Melee>
+			<Social>-4</Social>
+			<Animals>-2</Animals>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -831,11 +947,19 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space53</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>Celestia Marine Infantry</title>
+		<titleShort>Marine</titleShort>
+		<description>[PAWN_nameDef] enlisted and became an ordinary member of the Celestia Marine Corps, fighting on the front lines against mechanoids.\n\nAs [PAWN_pronoun] moved from one star system to another, [PAWN_nameDef] gradually realized that no amount of enemies slain would change [PAWN_possessive] life. [PAWN_pronoun] began focusing on saving others—rescuing comrades whose bodies were not yet brain-dead, at least saving their lives this once.</description>
 		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<skillGains>
+			<Medicine>6</Medicine>
+			<Shooting>4</Shooting>
+			<Social>2</Social>
+			<Construction>-3</Construction>
+			<Mining>-2</Mining>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -844,11 +968,18 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space54</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>Celestia Marine Infantry</title>
+		<titleShort>Marine</titleShort>
+		<description>[PAWN_nameDef] served in the Celestia Marine Corps. Celestia's advancements in mechanoid control greatly enhanced soldiers' combat capabilities, and [PAWN_nameDef] excelled at maximizing this technology. With [PAWN_possessive] flexible tactical thinking, [PAWN_pronoun] often achieved unexpected combat results using just a few mechanoids, earning [PAWN_pronoun] the occasional nickname "the fox" from [PAWN_possessive] teammates.</description>
 		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<skillGains>
+			<Crafting>5</Crafting>
+			<Shooting>4</Shooting>
+			<Intellectual>3</Intellectual>
+			<Social>-4</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -857,11 +988,19 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space55</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>Celestia Marine Infantry</title>
+		<titleShort>Marine</titleShort>
+		<description>It’s awkward to admit, but [PAWN_nameDef] joined the military partly for the sake of a steady meal. However, when faced with the roar of artillery and the bloodshed of battle, [PAWN_pronoun] found there was no turning back.\n\nOnce, a group of mechanoids breached the defenses and nearly detected [PAWN_pronoun] through the data stream, despite [PAWN_possessive] crude camouflage. A bullet pierced [PAWN_possessive] body. When [PAWN_pronoun] awoke with these memories, [PAWN_pronoun] found [PAWN_reflective] in a medical bay, having narrowly escaped death. [PAWN_nameDef] suddenly realized that the war [PAWN_pronoun] was fighting was no virtual reality game.</description>
 		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Medicine>2</Medicine>
+			<Artistic>-4</Artistic>
+			<Animals>-3</Animals>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -870,11 +1009,19 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space56</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>Celestia Veteran</title>
+		<titleShort>Veteran</titleShort>
+		<description>After enduring many trials, [PAWN_nameDef] retired from the Celestia Marine Corps with honors and gleaming medals.\n\nEven though [PAWN_pronoun] survived the smoke-filled, blood-soaked battlefields, and even though Celestia's technology could repair all physical injuries and disabilities, the prolonged stress of fighting mechanoids left [PAWN_pronoun] restless and haunted by nightmares. With the help of the Naval Veterans Affairs Department, [PAWN_pronoun] secured a new job and life—a leisurely position and a chance to heal both body and mind.</description>
 		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>4</Melee>
+			<Medicine>2</Medicine>
+			<Social>-5</Social>
+			<Intellectual>-1</Intellectual>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -883,11 +1030,19 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space57</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>Celestia Marine Special Forces</title>
+		<titleShort>Marine</titleShort>
+		<description>[PAWN_nameDef] was a member of the Orbital Drop Shock Troopers, one of the most elite marine units in the Celestia Navy. Unlike other forces that deploy via landing craft or aerospace vehicles, [PAWN_pronoun] descended in advanced orbital drop pods at supersonic speeds, carrying firepower足以 to neutralize even a destroyer. [PAWN_pronoun] struck deep behind enemy lines, eliminating anti-orbital weapons before launching assaults and clearing the area for subsequent operations. A wave of military machinery and high-energy explosives would then engulf the enemy positions.</description>
 		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>4</Melee>
+			<Construction>2</Construction>
+			<Social>-5</Social>
+			<Animals>-3</Animals>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -896,11 +1051,19 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space58</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>Celestia Cruiser Artillery</title>
+		<titleShort>Artillery</titleShort>
+		<description>[PAWN_nameDef] served as an artillery operator aboard a Celestia cruiser, directing high-energy self-contained plasma and energy torrents toward the enemies of Celestia. [PAWN_pronoun] also mastered a range of mechanical and information technologies, taking on the task of maintaining these instruments of war when necessary.</description>
 		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<skillGains>
+			<Shooting>5</Shooting>
+			<Crafting>3</Crafting>
+			<Intellectual>2</Intellectual>
+			<Social>-4</Social>
+			<Plants>-2</Plants>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -909,11 +1072,19 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space59</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>Celestia Cruiser Captain</title>
+		<titleShort>Captain</titleShort>
+		<description>[PAWN_nameDef] was the captain of a Celestia cruiser, renowned for [PAWN_possessive] aggressive and offensive tactics. [PAWN_possessive] combat style and professional expertise often led the command to assign [PAWN_pronoun] various assault missions. With [PAWN_possessive] exceptional command skills, [PAWN_pronoun] repeatedly spearheaded into the heart of enemy forces, delivering致命 strikes and retreating unscathed.</description>
 		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<skillGains>
+			<Intellectual>6</Intellectual>
+			<Social>4</Social>
+			<Shooting>3</Shooting>
+			<Mining>-5</Mining>
+			<Plants>-3</Plants>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -922,11 +1093,19 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space60</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>Celestia Stellar Military Representative</title>
+		<titleShort>Representative</titleShort>
+		<description>[PAWN_nameDef] has endured countless battles and studied numerous ancient and modern military strategies. Soon after, [PAWN_pronoun] was chosen to represent the military's interests in the Central Committee, providing expert military advice and analysis to the committee, while striving to secure better conditions for the soldiers.</description>
 		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<skillGains>
+			<Social>6</Social>
+			<Intellectual>4</Intellectual>
+			<Shooting>2</Shooting>
+			<Crafting>-4</Crafting>
+			<Mining>-2</Mining>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>
@@ -935,11 +1114,16 @@
 
 	<AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
 		<defName>Celes_Backstory_Space61</defName>
-		<title>celestia</title>
-		<titleShort>.</titleShort>
-		<description>.</description>
+		<title>celestia teacher</title>
+		<titleShort>teacher</titleShort>
+		<description>[PAWN_nameDef] teaches at a school. The foundational knowledge that once required over a decade of learning no longer needs to be taught step-by-step by instructors. Instead, [PAWN_nameDef]'s role as a teacher is to answer questions, resolve doubts, and guide students on how to apply knowledge and how to explore and discover. Practice is the only true method of mastering knowledge.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
+			<Social>5</Social>
+			<Intellectual>4</Intellectual>
+			<Artistic>2</Artistic>
+			<Mining>-4</Mining>
+			<Plants>-3</Plants>
 		</skillGains>
 		<spawnCategories>
 			<li>Celes_Space</li>

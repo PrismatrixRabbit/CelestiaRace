@@ -180,7 +180,7 @@
                                 </li>
                                 <li>
                                     <def>Celes_Ear</def>
-                                    <customLabel>left ear</customLabel>
+                                    <customLabel>left rabbit ear</customLabel>
                                     <coverage>0.07</coverage>
                                     <groups>
                                         <li>UpperHead</li>
@@ -189,7 +189,7 @@
                                 </li>
                                 <li>
                                     <def>Celes_Ear</def>
-                                    <customLabel>right ear</customLabel>
+                                    <customLabel>right rabbit ear</customLabel>
                                     <coverage>0.07</coverage>
                                     <groups>
                                         <li>UpperHead</li>
@@ -221,6 +221,24 @@
                                             </groups>
                                         </li>
                                     </parts>
+                                </li>
+                                <li>
+                                    <def>Celes_FakeEar</def>
+                                    <customLabel>left ear</customLabel>
+                                    <coverage>0.07</coverage>
+                                    <groups>
+                                        <li>UpperHead</li>
+                                        <li>FullHead</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>Celes_FakeEar</def>
+                                    <customLabel>right ear</customLabel>
+                                    <coverage>0.07</coverage>
+                                    <groups>
+                                        <li>UpperHead</li>
+                                        <li>FullHead</li>
+                                    </groups>
                                 </li>
                             </parts>
                         </li>

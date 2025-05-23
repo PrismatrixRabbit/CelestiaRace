@@ -149,7 +149,7 @@
 			<wornGraphicPath>Celes/Apparel/Middle/LightPowerArmour/LightPowerArmour</wornGraphicPath>
 			<tags>
 				<li>Celes_OnSkin</li>
-				<li>Celes_Military</li>
+				<li>Celes_EliteMilitary</li>
 			</tags>
 		</apparel>
 		<costList>
@@ -165,6 +165,155 @@
 			</recipeUsers>
 			<displayPriority>307</displayPriority>
 		</recipeMaker>
+        <comps>
+            <li Class="CelesFeature.Celes_CompProperties_MutiFunctionalShield">
+                <energyOnReset>0.3</energyOnReset>
+                <startingTicksToReset>1800</startingTicksToReset>
+
+                <minDrawSize>0.65</minDrawSize>
+                <maxDrawSize>1.0</maxDrawSize>
+
+                <energyLossEMPFactor>0.04</energyLossEMPFactor>
+                <energyLossExplosiveFactor>0.05</energyLossExplosiveFactor>
+                <energyLossDefaultFactor>0.01</energyLossDefaultFactor>
+
+                <blocksRangedWeapons>false</blocksRangedWeapons>
+            </li>
+        </comps>
 	</ThingDef>
+
+    <!-- ========== 北冕座装甲 ========= -->
+
+    <ThingDef ParentName="Celes_ApparelArmorPowerBase"><!--中型动力甲-->
+        <defName>Celes_MidPowerArmour</defName>
+        <label>celestia sentinel sadira power armour</label>
+        <description>Modified from the Celestia IEVA suit of Sadira Power Armour, this armour is a lighter version.</description>
+        <graphicData>
+            <texPath>Celes/Apparel/Middle/MidPowerArmour/MidPowerArmour</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <statBases>
+            <Mass>9</Mass>
+            <EquipDelay>12</EquipDelay>
+            <MaxHitPoints>450</MaxHitPoints>
+            <WorkToMake>54000</WorkToMake>
+            <Flammability>0.2</Flammability>
+            <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>1.5</ArmorRating_Heat>
+            <Insulation_Cold>283</Insulation_Cold>
+            <Insulation_Heat>500</Insulation_Heat>
+        </statBases>
+        <apparel>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <wornGraphicPath>Celes/Apparel/Middle/LightPowerArmour/LightPowerArmour</wornGraphicPath>
+            <tags>
+                <li>Celes_Shell</li>
+                <li>Celes_EliteMilitary</li>
+            </tags>
+        </apparel>
+        <costList>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Plasteel>120</Plasteel>
+            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
+            <CelesAdvanceCloth>40</CelesAdvanceCloth>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Apparel_V</researchPrerequisite>
+            <recipeUsers>
+                <li>Celes_MultifunctionalTabA</li>
+            </recipeUsers>
+            <displayPriority>307</displayPriority>
+        </recipeMaker>
+        <comps>
+            <li Class="CelesFeature.Celes_CompProperties_MutiFunctionalShield">
+                <energyOnReset>0.3</energyOnReset>
+                <startingTicksToReset>1800</startingTicksToReset>
+
+                <minDrawSize>0.65</minDrawSize>
+                <maxDrawSize>1.0</maxDrawSize>
+
+                <energyLossEMPFactor>0.04</energyLossEMPFactor>
+                <energyLossExplosiveFactor>0.05</energyLossExplosiveFactor>
+                <energyLossDefaultFactor>0.01</energyLossDefaultFactor>
+
+                <blocksRangedWeapons>false</blocksRangedWeapons>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- ========== 特殊装备 ========= -->
+
+    <!--<ThingDef ParentName="Celes_ApparelArmorPowerBase">重型动力甲
+        <defName>Celes_HeavyPowerArmour</defName>
+        <label>celestia sentinel sadira power armour</label>
+        <description>Modified from the Celestia IEVA suit of Sadira Power Armour, this armour is a lighter version.</description>
+        <graphicData>
+            <texPath>Celes/Apparel/Middle/HeavyPowerArmour/HeavyPowerArmour</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <statBases>
+            <Mass>9</Mass>
+            <EquipDelay>12</EquipDelay>
+            <MaxHitPoints>450</MaxHitPoints>
+            <WorkToMake>54000</WorkToMake>
+            <Flammability>0.2</Flammability>
+            <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>1.5</ArmorRating_Heat>
+            <Insulation_Cold>283</Insulation_Cold>
+            <Insulation_Heat>500</Insulation_Heat>
+        </statBases>
+        <apparel>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <wornGraphicPath>Celes/Apparel/Middle/LightPowerArmour/LightPowerArmour</wornGraphicPath>
+            <tags>
+                <li>Celes_Shell</li>
+                <li>Celes_UltraMilitary</li>
+            </tags>
+        </apparel>
+        <costList>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Plasteel>120</Plasteel>
+            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
+            <CelesAdvanceCloth>40</CelesAdvanceCloth>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Apparel_V</researchPrerequisite>
+            <recipeUsers>
+                <li>Celes_MultifunctionalTabA</li>
+            </recipeUsers>
+            <displayPriority>307</displayPriority>
+        </recipeMaker>
+        <comps>
+            <li Class="CelesFeature.Celes_CompProperties_MutiFunctionalShield">
+                <energyOnReset>0.3</energyOnReset>
+                <startingTicksToReset>1800</startingTicksToReset>
+
+                <minDrawSize>0.65</minDrawSize>
+                <maxDrawSize>1.0</maxDrawSize>
+
+                <energyLossEMPFactor>0.04</energyLossEMPFactor>
+                <energyLossExplosiveFactor>0.05</energyLossExplosiveFactor>
+                <energyLossDefaultFactor>0.01</energyLossDefaultFactor>
+
+                <blocksRangedWeapons>false</blocksRangedWeapons>
+            </li>
+        </comps>
+    </ThingDef>-->
 
 </Defs>

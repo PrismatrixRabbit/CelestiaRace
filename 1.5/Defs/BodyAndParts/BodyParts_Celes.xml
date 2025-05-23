@@ -28,7 +28,7 @@
     
     <BodyPartDef>
         <defName>Celes_Ear</defName>
-        <label>ear</label>
+        <label>rabbit ear</label>
         <hitPoints>12</hitPoints>
         <frostbiteVulnerability>5</frostbiteVulnerability>
         <skinCovered>true</skinCovered>
@@ -37,5 +37,14 @@
             <li>CelesHearingSource</li>
             <li>HearingSource</li>
         </tags>
+    </BodyPartDef>
+    
+    <BodyPartDef>
+        <defName>Celes_FakeEar</defName>
+        <label>fake ear</label>
+        <hitPoints>8</hitPoints>
+        <frostbiteVulnerability>5</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <beautyRelated>false</beautyRelated>
     </BodyPartDef>
 </Defs>

@@ -149,4 +149,50 @@
         
     </PawnKindDef>
 
+    <PawnKindDef Name="Celes_AbyssiaPawnBase" Abstract="True">
+        <race>Celes_Abyssia_Race</race>
+        <defaultFactionType>Celes_Faction</defaultFactionType>
+        <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+        <invNutrition>3</invNutrition>
+        <gearHealthRange>0.8~1.0</gearHealthRange>
+        <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+        <maxGenerationAge>35</maxGenerationAge>
+        <minGenerationAge>16</minGenerationAge>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>15~24</initialResistanceRange>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+                <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+                <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+                <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+        <startingHediffs>
+            <li>
+                <def>MechlinkImplant</def>
+                <chance>1.0</chance>
+                <severity>0.5</severity>
+            </li>
+            <li>
+                <def>Celes_MechlinkRestriction</def>
+                <chance>1.0</chance>
+                <severity>0.5</severity>
+            </li>
+            <li>
+                <def>Celes_DustMechRhythm_Standard</def>
+                <chance>1.0</chance>
+                <severity>0.5</severity>
+            </li>
+        </startingHediffs>
+    </PawnKindDef>
+
 </Defs>

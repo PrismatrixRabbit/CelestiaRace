@@ -7,9 +7,13 @@
         <defName>Celes_Backstory_Special01</defName>
         <title>celestia detective</title>
         <titleShort>detective</titleShort>
-        <description>.</description>
+        <description>[PAWN_nameDef] is a professional police detective in the Outer Rim domain who has successfully solved countless dangerous cases occurring in the Outer Rim through his excellent reasoning and deductive skills. [PAWN_pronoun]‘s exquisite fighting skills are the key to [PAWN_pronoun]’s capture of the culprits. \n\nBut a mediocre disappearance case changed [PAWN_possessive]'s life: the daughter of a well-known archaeologist disappeared somewhere in the Outer Rim domain, and in the course of pursuing this case, [PAWN_pronoun] mistakenly invested too much emotion in the girl, allowing [PAWN_pronoun] to unintentionally get involved in a much bigger whirlpool, [PAWN_pronoun] eventually only saw fluorescent blue flowers had bloomed all over that girl's body, the ‘Blue Flood’. \n\nBefore falling too deep, [PAWN_pronoun] struggled to get out, but the fluorescent blue had already entangled [PAWN_possessive], and the fate of the entire Celestia civilisation in the river of destiny.</description>
         <slot>Adulthood</slot>
         <skillGains>
+            <Intellectual>6</Intellectual>
+            <Shooting>4</Shooting>
+            <Melee>2</Melee>
+            <Social>4</Social>
         </skillGains>
         <spawnCategories>
             <li>Celes_Special</li>
@@ -20,9 +24,14 @@
         <defName>Celes_Backstory_Special02</defName>
         <title>celestia psychologist</title>
         <titleShort>psychologist</titleShort>
-        <description>.</description>
+        <description>[PAWN_nameDef] is a renowned and celebrated psychologist, not only achieving remarkable academic success but also exuding an elegant personal charm in both words and actions. However, the dazzling accomplishments and the divergence in thinking made [PAWN_pronoun] acutely aware of the differences from ordinary people, leading to feelings of loneliness and boredom. Driven by these emotions, [PAWN_pronoun] began to follow [PAWN_possessive] inner self, creating beautiful art as [PAWN_pronoun] true self. But art requires an audience, and with an excessive curiosity, [PAWN_pronoun] sought understanding—finding it in [PAWN_possessive] intriguing patient, an agent.\n\nWhile understanding others, [PAWN_pronoun] was also being understood—[PAWN_pronoun] magnificent art, constructed from corpses, flesh, and actions, was undeniably brilliant.\n\n—[PAWN_pronoun] brutal murders, concealed by identity, knowledge, and intellect, were glaringly evident.</description>
         <slot>Adulthood</slot>
         <skillGains>
+            <Social>5</Social>
+            <Intellectual>4</Intellectual>
+            <Medicine>4</Medicine>
+            <Artistic>3</Artistic>
+            <Melee>2</Melee>
         </skillGains>
         <spawnCategories>
             <li>Celes_Special</li>
@@ -33,12 +42,16 @@
         <defName>Celes_Backstory_Special03</defName>
         <title>celestia recorder</title>
         <titleShort>recorder</titleShort>
-        <description>.</description>
+        <description>[PAWN_nameDef] once served at the Celestia Institute of Historical Research, approaching history with diligence and dedication, meticulously recording it. However, the outbreak of the "BlueFlood" changed [PAWN_possessive] perspective on documentation—it was not history that recorded civilization, but civilization that recorded history. Thus, [PAWN_pronoun] came to the Rimworld, determined to witness and document everything about Celestia as part of the civilization itself. Only the continuation of civilization holds value, and future generations will judge its worth.\n\n"Vitrification," "indiscriminate cleansing," "The Navigator Programme," "BlueFlood"—[PAWN_nameDef] firmly believes these will not be the final chapters of Celestia's civilization.</description>
         <slot>Adulthood</slot>
         <skillGains>
+            <Intellectual>6</Intellectual>
+            <Social>4</Social>
+            <Artistic>4</Artistic>
         </skillGains>
         <spawnCategories>
             <li>Celes_Special</li>
+            <li>Celes_Space</li>
         </spawnCategories>
     </AlienRace.AlienBackstoryDef>
 
@@ -46,9 +59,13 @@
         <defName>Celes_Backstory_Special04</defName>
         <title>celestia archotech contacter</title>
         <titleShort>contacter</titleShort>
-        <description>.</description>
+        <description>"The entire Celestia civilization is merely a stroke of luck. And luck will eventually run out."\n\nBefore encountering the Archotech, [PAWN_nameDef] was simply a "lucky" archaeologist. At the edge of a planetary terraforming project zone, [PAWN_pronoun] was conducting a protective salvage operation on nearby ancient ruins with [PAWN_possessive] daughter—what we now know to be one of the hubs of the Archotech hidden within the planet. DustMech, psionics, machinery, intelligence, the Archotech—even [PAWN_pronoun] could not comprehend what was awakened and what perished in that brief moment. A wave of fluorescent blue replaced the DustMech that had inadvertently touched the Archotech, and [PAWN_possessive] luck ended that day.</description>
         <slot>Adulthood</slot>
         <skillGains>
+            <Intellectual>7</Intellectual>
+            <Social>4</Social>
+            <Crafting>4</Crafting>
+            <Medicine>2</Medicine>
         </skillGains>
         <spawnCategories>
             <li>Celes_Special</li>
@@ -59,61 +76,87 @@
         <defName>Celes_Backstory_Special05</defName>
         <title>celestia ecologist</title>
         <titleShort>ecologist</titleShort>
-        <description>.</description>
+        <description>[PAWN_nameDef] is an expert in artificial ecosystem science, shuttling between habitat stations and the homeworld to domesticate various flora and fauna, studying the flow of matter, energy, and information among organisms, and constructing refined artificial ecosystems at all scales. [PAWN_possessive] research is brilliant and groundbreaking.\n\nOne day, [PAWN_pronoun] received an offer from the Celestia Central Committee—a position with unimaginable salary and priority. [PAWN_pronoun] was instructed not to inquire about the details. When [PAWN_pronoun] sought further clarity, [PAWN_pronoun] received a direct reply from the leadership: [PAWN_pronoun] was to design a millennia life-support system for "The Navigator Programme."\n\n&lt;color=#87cefa&gt;"...This will be the most important work of your life."&lt;/color&gt;</description>
         <slot>Adulthood</slot>
         <skillGains>
+            <Plants>8</Plants>
+            <Intellectual>8</Intellectual>
+            <Construction>4</Construction>
+            <Social>2</Social>
         </skillGains>
         <spawnCategories>
             <li>Celes_Special</li>
+            <li>Celes_Space</li>
         </spawnCategories>
     </AlienRace.AlienBackstoryDef>
 
     <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
         <defName>Celes_Backstory_Special06</defName>
-        <title>celestia pacesetter</title>
-        <titleShort>pacesetter</titleShort>
-        <description>.</description>
+        <title>celestia navigator</title>
+        <titleShort>navigator</titleShort>
+        <description>[PAWN_nameDef] served as a navigator aboard a massive cargo vessel, plotting the most cost-effective and secure routes for the colossal ship. With a flawless career record, the vessel under [PAWN_possessive] guidance always completed its deliveries on time, transporting vital resources to sustain habitat stations across diverse environments.\n\n[PAWN_pronoun] assumed [PAWN_possessive] career would end in ordinary yet perfect routine—until an offer from the Celestia Central Committee abruptly disrupted [PAWN_possessive] life. The offer included a prepayment vast enough to secure [PAWN_pronoun] and [PAWN_possessive] family’s livelihood for ten lifetimes: "The Navigator Programme."\n\n&lt;color=#87cefa&gt;"...You will chart the course for billions of our kin."&lt;/color&gt;</description>
         <slot>Adulthood</slot>
         <skillGains>
+            <Intellectual>8</Intellectual>
+            <Shooting>4</Shooting>
+            <Social>4</Social>
+            <Crafting>4</Crafting>
         </skillGains>
         <spawnCategories>
             <li>Celes_Special</li>
+            <li>Celes_Space</li>
         </spawnCategories>
     </AlienRace.AlienBackstoryDef>
 
     <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
         <defName>Celes_Backstory_Special07</defName>
         <title>celestia spaceship engineer</title>
-        <titleShort>spaceship engineer</titleShort>
-        <description>.</description>
+        <titleShort>engineer</titleShort>
+        <description>[PAWN_nameDef] is one of Celestia's finest starship engineers. [PAWN_pronoun] operates at the bleeding edge of technology, designing superior vessels with the most advanced systems. Though socially aloof and examine others with arrogant and compulsiveness, [PAWN_possessive] genius-level design inspiration often outpaced available funding.\n\nThe Celestia Central Committee offered [PAWN_pronoun] an irresistible gift: unlimited resources, access to all documented technologies, top-tier personnel clearance—and "The Navigator Programme." [PAWN_possessive] task? To design a perfect starship—a colossal generation ark capable of surviving all known extreme conditions.\n\n&lt;color=#87cefa&gt;"You must journey to a hidden dock far from stars, to build the greatest miracle in history..."&lt;/color&gt;</description>
         <slot>Adulthood</slot>
         <skillGains>
+            <Crafting>8</Crafting>
+            <Construction>8</Construction>
+            <Intellectual>6</Intellectual>
+            <Artistic>4</Artistic>
+            <Social>-6</Social>
         </skillGains>
         <spawnCategories>
             <li>Celes_Special</li>
+            <li>Celes_Space</li>
         </spawnCategories>
     </AlienRace.AlienBackstoryDef>
 
     <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
         <defName>Celes_Backstory_Special08</defName>
-        <title>celestia deep-space doctor</title>
-        <titleShort>deep-space doctor</titleShort>
-        <description>.</description>
+        <title>celestia deep-space physician</title>
+        <titleShort>physician</titleShort>
+        <description>The desolate void of deep space, far from solid ground, inflicts countless physical and psychological strains on crew members. [PAWN_nameDef] specializes in addressing these issues, relentlessly researching permanent solutions to the trials of space. [PAWN_pronoun] also trains others, particularly shipboard medics, to mitigate the toll of cosmic isolation.\n\nThen a tesk from the Celestia Central Committee caught [PAWN_possessive] eye: "Feasibility Study on Mental Health Maintenance in Extreme Deep-Space Environments Under Ultra-Cognitive Temporal Scale Using Mind-Matrix Cryopreservation Technology."\n\n&lt;color=#87cefa&gt;Signed: "The Navigator Programme."&lt;/color&gt;</description>
         <slot>Adulthood</slot>
         <skillGains>
+            <Medicine>7</Medicine>
+            <Intellectual>6</Intellectual>
+            <Social>5</Social>
+            <Plants>2</Plants>
         </skillGains>
         <spawnCategories>
             <li>Celes_Special</li>
+            <li>Celes_Space</li>
         </spawnCategories>
     </AlienRace.AlienBackstoryDef>
 
     <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
         <defName>Celes_Backstory_Special09</defName>
-        <title>celestia the silent squad</title>
-        <titleShort>silent squad</titleShort>
-        <description>.</description>
+        <title>celestia the silent corps</title>
+        <titleShort>the silent</titleShort>
+        <description>[PAWN_nameDef] belonged to a unique Celestia Marine unit, embodying the pinnacle of Celestia's cutting-edge technology and individual combat prowess—the "Silent Corps." Only a handful have witnessed [PAWN_possessive] methods of warfare, and even fewer know [PAWN_pronoun] true mission: to obliterate all Archotech creations, regardless of cost.\n\nWith "The Navigator Programme," they have now arrived at the Rimworld.</description>
         <slot>Adulthood</slot>
         <skillGains>
+            <Shooting>8</Shooting>
+            <Melee>6</Melee>
+            <Intellectual>5</Intellectual>
+            <Construction>4</Construction>
+            <Crafting>4</Crafting>
         </skillGains>
         <spawnCategories>
             <li>Celes_Special</li>
@@ -127,8 +170,12 @@
         <title>celestia blueflood survivor</title>
         <titleShort>survivor</titleShort>
         <description>.</description>
-        <slot>Adulthood</slot>
+        <slot>Childhood</slot>
         <skillGains>
+            <Medicine>2</Medicine>
+            <Animals>-5</Animals>
+            <Social>-4</Social>
+            <Artistic>-3</Artistic>
         </skillGains>
         <spawnCategories>
             <li>Celes_BlueFlood</li>
@@ -140,8 +187,12 @@
         <title>celestia blueflood survivor</title>
         <titleShort>survivor</titleShort>
         <description>.</description>
-        <slot>Childhood</slot>
+        <slot>Adulthood</slot>
         <skillGains>
+            <Intellectual>4</Intellectual>
+            <Medicine>3</Medicine>
+            <Cooking>2</Cooking>
+            <Social>-5</Social>
         </skillGains>
         <spawnCategories>
             <li>Celes_BlueFlood</li>
@@ -155,6 +206,10 @@
         <description>.</description>
         <slot>Adulthood</slot>
         <skillGains>
+            <Construction>5</Construction>
+            <Intellectual>2</Intellectual>
+            <Artistic>-5</Artistic>
+            <Social>-3</Social>
         </skillGains>
         <spawnCategories>
             <li>Celes_BlueFlood</li>

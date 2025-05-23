@@ -6,7 +6,7 @@
         <label>CPS-1 combat psychic stimulants</label>
         <description>A synthetic Dust-Mech preparation used to enhance the user's psychic combat abilities and directly increase psyfocus.CPS-1 inherits Celestia's usual cellular activity overload from its combat drugs, and its aftereffects are somewhat lethal. \n\nBy overactivating the nerves, the user will feel pain more easily, but will also be able to dissipate neural heat and gather psyfocus more quickly. As a side effect, the user will also be more focused in combat, but overfocused and sensitive nerves slow down daily tasks.</description>
         <descriptionHyperlinks>
-            <HediffDef>Celes_CPS1_High</HediffDef>
+            <HediffDef>Celes_CPS1_HighSample</HediffDef>
             <HediffDef>Celes_CPS1_After</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
@@ -26,7 +26,7 @@
             <joy>0.30</joy>
             <baseIngestTicks>40</baseIngestTicks>
             <nurseable>true</nurseable>
-            <drugCategory>Hard</drugCategory>
+            <drugCategory>Medical</drugCategory>
             <ingestSound>Ingest_Inject</ingestSound>
             <ingestHoldOffsetStanding>
                 <northDefault>
@@ -40,7 +40,7 @@
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
                     <hediffDef>Celes_CPS1_High</hediffDef>
-                    <severity>1</severity>
+                    <severity>0.33</severity>
                 </li>
                 <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
                     <offset>0.8</offset>
@@ -57,6 +57,7 @@
         <costList>
             <Neutroamine>2</Neutroamine>
             <Celes_BioGel>2</Celes_BioGel>
+            <CelesNanoMachine>2</CelesNanoMachine>
             <PsychoidLeaves>8</PsychoidLeaves>
         </costList>
         <comps>
@@ -66,6 +67,35 @@
             </li>
         </comps>
     </ThingDef>
+
+    <HediffDef>
+        <defName>Celes_CPS1_HighSample</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>CPS-1 stimulant is taking effect.</label>
+        <labelNoun>CPS-1 effect</labelNoun>
+        <description>The CPS-1 Dust-Mech substance flowing in the bloodstream was increasing the user's psychic combat ability.</description>
+        <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+        <initialSeverity>0.001</initialSeverity>
+        <maxSeverity>0.002</maxSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <painFactor>1.3</painFactor>
+                <restFallFactor>0.5</restFallFactor>
+                <statOffsets>
+                    <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+                    <ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
+                    <MeleeHitChance>2.5</MeleeHitChance>
+                </statOffsets>
+                <statFactors>
+                    <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.8</PsychicEntropyGain>
+                    <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.5</PsychicEntropyMax>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">2</MeditationFocusGain>
+                    <PsychicSensitivity>1.30</PsychicSensitivity>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
 
     <HediffDef>
         <defName>Celes_CPS1_High</defName>
@@ -88,40 +118,40 @@
         </comps>
         <stages>
             <li>
+                <painFactor>1.3</painFactor>
+                <restFallFactor>0.5</restFallFactor>
                 <statOffsets>
                     <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
-                    <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
-                    <MeleeHitChance>0.25</MeleeHitChance>
+                    <ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
+                    <MeleeHitChance>2.5</MeleeHitChance>
                 </statOffsets>
-                <painFactor>1.3</painFactor>
-                <restFallFactor>0</restFallFactor>
                 <statFactors>
-                    <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicEntropyGain>
+                    <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.8</PsychicEntropyGain>
                     <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.5</PsychicEntropyMax>
-                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">8</MeditationFocusGain>
-                    <PsychicSensitivity>2.5</PsychicSensitivity>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">2</MeditationFocusGain>
+                    <PsychicSensitivity>1.30</PsychicSensitivity>
                 </statFactors>
             </li>
             <li>
+                <painFactor>1.3</painFactor>
+                <restFallFactor>0.3</restFallFactor>
                 <minSeverity>0.51</minSeverity>
                 <label>overdose</label>
                 <statOffsets>
                     <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
-                    <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
-                    <MeleeHitChance>0.25</MeleeHitChance>
+                    <ShootingAccuracyPawn>10.0</ShootingAccuracyPawn>
+                    <MeleeHitChance>7.5</MeleeHitChance>
                 </statOffsets>
-                <painFactor>1.3</painFactor>
-                <restFallFactor>0</restFallFactor>
                 <statFactors>
-                    <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicEntropyGain>
+                    <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.5</PsychicEntropyGain>
                     <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.5</PsychicEntropyMax>
-                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">8</MeditationFocusGain>
-                    <PsychicSensitivity>2.5</PsychicSensitivity>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">6</MeditationFocusGain>
+                    <PsychicSensitivity>1.75</PsychicSensitivity>
                 </statFactors>
                 <hediffGivers>
                     <li Class="HediffGiver_Random">
                         <hediff>HeartAttack</hediff>
-                        <mtbDays>1</mtbDays>
+                        <mtbDays>0.128</mtbDays>
                         <partsToAffect>
                             <li>Heart</li>
                         </partsToAffect>

@@ -102,6 +102,7 @@
 								</BodyPart>
 								<Apparel>
 									<hiddenUnderApparelTag>
+										<li>Celes_TailCover</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
 								<Posture>
@@ -245,7 +246,7 @@
 							<alignWithHead>true</alignWithHead>
 							<conditions>
 								<BodyPart>
-									<bodyPartLabel>left ear</bodyPartLabel>
+									<bodyPartLabel>left rabbit ear</bodyPartLabel>
 								</BodyPart>
 								<Apparel>
 									<hiddenUnderApparelTag>
@@ -313,7 +314,7 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<conditions>
 								<BodyPart>
-									<bodyPartLabel>right ear</bodyPartLabel>
+									<bodyPartLabel>right rabbit ear</bodyPartLabel>
 								</BodyPart>
 								<Apparel>
 									<hiddenUnderApparelTag>
@@ -607,7 +608,7 @@
 					<!-- 外套 -->
 					<li>Celes_SummerCoat</li>
 					<li>Celes_WinterCoat</li>
-					<li>Celes_TrenchCoat</li>
+					<!--<li>Celes_TrenchCoat</li>-->
 					<li>Celes_ExploreCoat</li>
 					<li>Celes_LabCoat</li>
 					<li>Celes_MilitaryCoat</li>
@@ -690,18 +691,18 @@
 			</raceRestriction>
 		</alienRace>
 		<statBases>
-			<MarketValue>800</MarketValue>
+			<MarketValue>2250</MarketValue>
 			<Flammability>0.5</Flammability>
-			<MoveSpeed>4.8</MoveSpeed>
+			<MoveSpeed>4.9</MoveSpeed>
 			<MentalBreakThreshold>0.3</MentalBreakThreshold>
 			<ComfyTemperatureMax>26</ComfyTemperatureMax>
 			<ComfyTemperatureMin>10</ComfyTemperatureMin>
 			<InjuryHealingFactor>2.0</InjuryHealingFactor>
-			<ImmunityGainSpeed>0.95</ImmunityGainSpeed>
-			<CarryingCapacity>75</CarryingCapacity>
-			<RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">3</RoyalFavorValue>
-			<MeatAmount>45</MeatAmount>
-			<LeatherAmount>40</LeatherAmount>
+			<ImmunityGainSpeed>0.96</ImmunityGainSpeed>
+			<CarryingCapacity>85</CarryingCapacity>
+			<RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">4</RoyalFavorValue>
+			<MeatAmount>160</MeatAmount>
+			<LeatherAmount>80</LeatherAmount>
 			<Mass>45</Mass>
 			<PawnBeauty>1</PawnBeauty>
 			<!--==-->
@@ -710,16 +711,16 @@
 			<MeleeDodgeChance>2.0</MeleeDodgeChance>
 			<MeleeHitChance>3.0</MeleeHitChance>
 			<ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.9</AimingDelayFactor>
-			<PainShockThreshold>0.85</PainShockThreshold>
+			<AimingDelayFactor>0.85</AimingDelayFactor>
+			<PainShockThreshold>0.9</PainShockThreshold>
 			<GeneralLaborSpeed>0.9</GeneralLaborSpeed>
 			<!--=普通工作=-->
 			<DrugSynthesisSpeed>1.5</DrugSynthesisSpeed>
 			<MedicalTendSpeed>1</MedicalTendSpeed>
-			<MedicalTendQuality>1.1</MedicalTendQuality>
+			<MedicalTendQuality>1.2</MedicalTendQuality>
 			<MedicalSurgerySuccessChance>1.2</MedicalSurgerySuccessChance>
 			<!--==-->
-			<NegotiationAbility>0.5</NegotiationAbility>
+			<NegotiationAbility>0.75</NegotiationAbility>
 			<SellPriceFactor>0.8</SellPriceFactor>
 			<TradePriceImprovement>1</TradePriceImprovement>
 			<SocialImpact>0.8</SocialImpact>
@@ -833,14 +834,14 @@
 			<anomalyKnowledge>1</anomalyKnowledge>
 
 			<makesFootprints>true</makesFootprints>
-			<lifeExpectancy>100</lifeExpectancy>
+			<lifeExpectancy>120</lifeExpectancy>
 			<leatherDef>Leather_Human</leatherDef>
 			<nameCategory>HumanStandard</nameCategory>
 			<body>Celes_Body</body>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
-			<gestationPeriodDays>18</gestationPeriodDays>
+			<gestationPeriodDays>12</gestationPeriodDays>
 			<meatMarketValue>0.8</meatMarketValue>
 			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>

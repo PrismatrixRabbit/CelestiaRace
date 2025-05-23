@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- TO DO 副作用改射击能力削弱和饥饿-->
+	<!-- TODO 副作用改射击能力削弱和饥饿-->
     <ThingDef ParentName="MakeableDrugBase">
         <defName>Celes_CS12M</defName>
         <label>CS-12 combat hemostat</label>
         <description>A synthetic chemical agent used to transiently inhibit the user's nociceptive nerves, activate the body's healing mechanisms, and inhibit bleeding through multiple pathways. Note that CS-12 achieves organic enhancement by overloading cellular activity, and its after-effects are somewhat lethal. \n\nThe risks of overdosing on CS-12 are so great that the synthetic formulas used by Celestia pioneers make it fundamentally difficult to synthesise high concentrations of CS-12. But even so, continuous injections of CS-12 still carry a not inconsiderable risk.</description>
         <descriptionHyperlinks>
-            <HediffDef>Celes_CS12_High</HediffDef>
+            <HediffDef>Celes_CS12_HighSample</HediffDef>
             <HediffDef>Celes_CS12_After</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
@@ -26,7 +26,7 @@
             <foodType>Processed</foodType>
             <baseIngestTicks>650</baseIngestTicks>
             <nurseable>true</nurseable>
-            <drugCategory>Hard</drugCategory>
+            <drugCategory>Medical</drugCategory>
             <ingestHoldOffsetStanding>
                 <northDefault>
                     <offset>(0.18,0,0)</offset>
@@ -39,7 +39,7 @@
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
                     <hediffDef>Celes_CS12_High</hediffDef>
-                    <severity>0.5</severity>
+                    <severity>0.33</severity>
                 </li>
             </outcomeDoers>
         </ingestible>
@@ -62,6 +62,27 @@
             </li>
         </comps>
     </ThingDef>
+
+    <HediffDef>
+        <defName>Celes_CS12_HighSample</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>CS-12 stimulant is taking effect.</label>
+        <labelNoun>CS-12 effect</labelNoun>
+        <description>The CS-12 chemicals flowing in the bloodstream was increasing the user's haemostatic and healing capacity.</description>
+        <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+        <initialSeverity>0.001</initialSeverity>
+        <maxSeverity>0.002</maxSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <painFactor>0.5</painFactor>
+                <totalBleedFactor>0.3</totalBleedFactor>
+                <statFactors>
+                    <InjuryHealingFactor>4.0</InjuryHealingFactor>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
 
     <HediffDef>
         <defName>Celes_CS12_High</defName>
@@ -87,7 +108,7 @@
                 <painFactor>0.5</painFactor>
                 <totalBleedFactor>0.3</totalBleedFactor>
                 <statFactors>
-                    <InjuryHealingFactor>1.5</InjuryHealingFactor>
+                    <InjuryHealingFactor>4.0</InjuryHealingFactor>
                 </statFactors>
             </li>
             <li>
@@ -96,12 +117,12 @@
                 <painFactor>0.2</painFactor>
                 <totalBleedFactor>0</totalBleedFactor>
                 <statFactors>
-                    <InjuryHealingFactor>2.5</InjuryHealingFactor>
+                    <InjuryHealingFactor>8.0</InjuryHealingFactor>
                 </statFactors>
                 <hediffGivers>
                     <li Class="HediffGiver_Random">
                         <hediff>HeartAttack</hediff>
-                        <mtbDays>1</mtbDays>
+                        <mtbDays>0.128</mtbDays>
                         <partsToAffect>
                             <li>Heart</li>
                         </partsToAffect>

@@ -301,6 +301,7 @@
 		<wornGraphicPath>Celes/Apparel/OnSkin/ExploreVest/ExploreVest</wornGraphicPath>
 		<tags>
 			<li>Celes_Explore</li>
+			<li>Celes_TailCover</li>
 		</tags>
 	</apparel>
 		<equippedStatOffsets>

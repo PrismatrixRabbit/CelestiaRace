@@ -117,7 +117,7 @@
         <description>Make_CelesNanoMachineCrystal</description>
         <jobString>Make_CelesNanoMachineCrystal</jobString>
         <uiIconThing>Celes_NanoMachineCrystal</uiIconThing>
-        <workAmount>10000</workAmount>
+        <workAmount>30000</workAmount>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -141,7 +141,7 @@
                         <li>Celes_NanoResourcesRaw</li>
                     </categories>
                 </filter>
-                <count>5</count>
+                <count>3</count>
             </li>
             <li>
                 <filter>
@@ -159,7 +159,7 @@
             </categories>
         </fixedIngredientFilter>
         <products>
-            <Celes_NanoMachineCrystal>1</Celes_NanoMachineCrystal>
+            <CelesNanoMachine>24</CelesNanoMachine>
         </products>
     </RecipeDef>
 
@@ -199,7 +199,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <CelesNanoMachine>7</CelesNanoMachine>
+            <CelesNanoMachine>24</CelesNanoMachine>
         </products>
     </RecipeDef>
 
@@ -228,8 +228,8 @@
             </li>
         </ingredients>
         <products>
-            <CelesNanoMachine>15</CelesNanoMachine>
-            <Neutroamine>50</Neutroamine>
+            <CelesNanoMachine>3</CelesNanoMachine>
+            <Neutroamine>10</Neutroamine>
         </products>
         <recipeUsers>
             <li>Celes_MultifunctionalTabA</li>
@@ -265,8 +265,58 @@
             </li>
         </ingredients>
         <products>
-            <CelesNanoMachine>15</CelesNanoMachine>
-            <Neutroamine>50</Neutroamine>
+            <CelesNanoMachine>2</CelesNanoMachine>
+        </products>
+        <recipeUsers>
+            <li>Celes_MultifunctionalTabA</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_II</li>
+        </researchPrerequisites>
+        <displayPriority>1</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_ProduceNanoByCorpse</defName>
+        <label>Celes_ProduceNanoByCorpse</label>
+        <description>Celes_ProduceNanoByCorpse</description>
+        <descriptionHyperlinks>
+            <ThingDef>CelesNanoMachine</ThingDef>
+        </descriptionHyperlinks>
+        <workAmount>30000</workAmount>
+        <jobString>Celes_ProduceNanoByCorpse</jobString>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <uiIconThing>Celes_RottenNanoCrystallisedCorpse</uiIconThing>
+        <unfinishedThingDef>Celes_RottenNanoCrystallisedCorpse</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>CorpsesHumanlike</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Celes_NanoResourcesRaw</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>CorpsesHumanlike</li>
+                <li>Celes_NanoResourcesRaw</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <CelesNanoMachine>5</CelesNanoMachine>
         </products>
         <recipeUsers>
             <li>Celes_MultifunctionalTabA</li>

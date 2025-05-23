@@ -21,42 +21,42 @@
     <!-- EN: celestia recorder -->
     <Celes_Backstory_Special03.titleShort>记录官</Celes_Backstory_Special03.titleShort>
     <!-- EN: recorder -->
-    <Celes_Backstory_Special03.description>[PAWN_nameDef]曾任职于星铃史学研究院，以认真且刻苦的态度对待历史，记录历史。但“蓝灾”的爆发让[PAWN_pronoun]改变了自己对记录的看法——不是历史记录下文明，而是文明记录下历史。因此，[PAWN_pronoun]来到边缘世界，只为作为文明的一部分，见证和记录星铃的一切。唯有文明的存续才有价值，而此后自有后人评判。\n\n“玻璃化”“无差别净空”“领航计划”“蓝灾”，[PAWN_nameDef]坚信这些不会是星铃文明的句点。</Celes_Backstory_Special03.description>
+    <Celes_Backstory_Special03.description>[PAWN_nameDef]曾任职于星铃史学研究院，以认真且刻苦的态度对待历史，记录历史。但“蓝灾”的爆发让[PAWN_pronoun]改变了自己对记录的看法——不是历史记录下文明，而是文明记录下历史。因此，[PAWN_pronoun]来到边缘世界，只为作为文明的一部分，见证和记录星铃的一切。唯有文明的存续才有价值，是非功过自有后人评判。\n\n“玻璃化”“无差别净空”“领航计划”“蓝灾”，[PAWN_nameDef]坚信这些不会是星铃文明的句点。</Celes_Backstory_Special03.description>
     <!-- EN:  -->
 
     <Celes_Backstory_Special04.title>星铃 超凡接触者</Celes_Backstory_Special04.title>
     <!-- EN: celestia archotech contacter -->
     <Celes_Backstory_Special04.titleShort>接触者</Celes_Backstory_Special04.titleShort>
     <!-- EN: contacter -->
-    <Celes_Backstory_Special04.description>“整个星铃文明，仅仅只是一种幸运。而幸运终会结束。”\n\n[PAWN_nameDef]在接触到超凡智能之前，只是一个“幸运”的考古学家。在行星改造工程区的边缘，[PAWN_pronoun]正带着女儿对附近的未知古代遗迹进行着保护性抢救——如今我们知道，那是潜于这颗行星的超凡智能其中一个枢纽。尘构，灵能，机械，智慧，超凡，即使是[PAWN_pronoun]也不知道那短暂的瞬间，有什么被唤醒了而又有什么死去。荧蓝色如浪潮般替换了无意接触到超凡智能的银白尘构，[PAWN_possessive]幸运在那一天结束。</Celes_Backstory_Special04.description>
+    <Celes_Backstory_Special04.description>“整个星铃文明，仅仅只是一种幸运。而幸运终会结束。”\n\n[PAWN_nameDef]在接触到超凡智能之前，只是一个“幸运”的考古学家。在行星改造工程区的边缘，[PAWN_pronoun]正带着女儿对附近的未知古代遗迹进行着保护性抢救——如今我们知道，那是潜于这颗行星的超凡智能其中一个枢纽。尘构，灵能，机械，智慧，超凡，即使是[PAWN_pronoun]也不知道那短暂的瞬间，有什么被唤醒了而又有什么死去。荧蓝色如浪潮般替换了无意接触到超凡智能的尘构，[PAWN_possessive]幸运在那一天结束。</Celes_Backstory_Special04.description>
     <!-- EN:  -->
 
     <Celes_Backstory_Special05.title>星铃 生态学家</Celes_Backstory_Special05.title>
     <!-- EN: celestia ecologist -->
     <Celes_Backstory_Special05.titleShort>生态学家</Celes_Backstory_Special05.titleShort>
     <!-- EN: ecologist -->
-    <Celes_Backstory_Special05.description>[PAWN_nameDef]是一位人工生态系统学专家，[PAWN_pronoun]往返于居住站与母星之间，驯服各种植物和动物，研究生物间物质，能量与信息的流动，构建和完善各种尺度下的人工生态系统。[PAWN_possessive]研究卓越而领先。\n\n而在某一天，[PAWN_pronoun]收到了一份来自星铃中央委员会的工作邀请，一份有着难以想象的待遇和优先级的工作，[PAWN_pronoun]被告知不要询问工作的细节。而当[PAWN_pronoun]试图了解更多时，[PAWN_pronoun]收到了领袖的直接回信。[PAWN_pronoun]需要为“领航计划”设计一套可以维持千年的生命维持系统。\n\n“……这会是你这辈子最重要的工作。”</Celes_Backstory_Special05.description>
+    <Celes_Backstory_Special05.description>[PAWN_nameDef]是一位人工生态系统学专家，[PAWN_pronoun]往返于居住站与母星之间，驯服各种植物和动物，研究生物间物质，能量与信息的流动，构建和完善各种尺度下的人工生态系统。[PAWN_possessive]研究卓越而领先。\n\n而在某一天，[PAWN_pronoun]收到了一份来自星铃中央委员会的工作邀请，一份有着难以想象的待遇和优先级的工作，[PAWN_pronoun]被告知不要询问工作的细节。而当[PAWN_pronoun]试图了解更多时，[PAWN_pronoun]收到了领袖的直接回信。[PAWN_pronoun]需要为“领航计划”设计一套可以维持千年的生命维持系统。\n\n&lt;color=#87cefa&gt;“……这会是你这辈子最重要的工作。”&lt;/color&gt;</Celes_Backstory_Special05.description>
     <!-- EN:  -->
 
     <Celes_Backstory_Special06.title>星铃 领航员</Celes_Backstory_Special06.title>
     <!-- EN: celestia pacesetter -->
     <Celes_Backstory_Special06.titleShort>领航员</Celes_Backstory_Special06.titleShort>
     <!-- EN: pacesetter -->
-    <Celes_Backstory_Special06.description>[PAWN_nameDef]在一艘大型货船上担任领航员，为这艘庞然大物规划最具性价比的安全航路。[PAWN_possessive]职业生涯中无一失误，在[PAWN_possessive]指引下，那艘货船总能又快又稳，每次都按时完成航线，在各种环境下的运送维系居住站生存的资源。\n\n[PAWN_pronoun]以为自己会就这么平凡而完美的结束自己的职业生涯，但星铃中央委员会的一份工作邀请，一份提前预付了足以让[PAWN_pronoun]和[PAWN_possessive]家人十辈子都衣食无忧的巨额工资的工作突然插入了[PAWN_possessive]生活——“领航计划”。\n\n“……你将为数十亿同胞指引航路……”</Celes_Backstory_Special06.description>
+    <Celes_Backstory_Special06.description>[PAWN_nameDef]在一艘大型货船上担任领航员，为这艘庞然大物规划最具性价比的安全航路。[PAWN_possessive]职业生涯中无一失误，在[PAWN_possessive]指引下，那艘货船总能又快又稳，每次都按时完成航线，在各种环境下的运送维系居住站生存的资源。\n\n[PAWN_pronoun]以为自己会就这么平凡而完美的结束自己的职业生涯，但星铃中央委员会的一份工作邀请，一份提前预付了足以让[PAWN_pronoun]和[PAWN_possessive]家人十辈子都衣食无忧的巨额工资的工作突然插入了[PAWN_possessive]生活——“领航计划”。\n\n&lt;color=#87cefa&gt;“……你将为数十亿同胞指引航路……”&lt;/color&gt;</Celes_Backstory_Special06.description>
     <!-- EN:  -->
 
     <Celes_Backstory_Special07.title>星铃 飞船工程师</Celes_Backstory_Special07.title>
     <!-- EN: celestia spaceship engineer -->
     <Celes_Backstory_Special07.titleShort>飞船工程师</Celes_Backstory_Special07.titleShort>
     <!-- EN: spaceship engineer -->
-    <Celes_Backstory_Special07.description>[PAWN_nameDef]是星铃最优秀的飞船工程师之一。[PAWN_pronoun]总是走在技术的最前沿，用最尖端的技术设计最优秀的舰船。[PAWN_pronoun]性格孤僻怪异，总是以高度的傲慢和强迫来评判他人，但[PAWN_pronoun]天才般的设计灵感思如泉涌，却受限于资金每每无法实现。\n\n而星铃中央委员会带来了一份[PAWN_pronoun]无法拒绝的礼物：不限量的资金，所有被记录在案的技术，最高优先级的人员调用权限，“领航计划”。而[PAWN_pronoun]需要做的，是设计一艘完美的飞船——一艘可以在所有已知极端环境下生存的巨型世代飞船。\n\n“你需要前往远离恒星的隐蔽船坞，建造史上最伟大的奇迹……”</Celes_Backstory_Special07.description>
+    <Celes_Backstory_Special07.description>[PAWN_nameDef]是星铃最优秀的飞船工程师之一。[PAWN_pronoun]总是走在技术的最前沿，用最尖端的技术设计最优秀的舰船。[PAWN_pronoun]性格孤僻怪异，总是以高度的傲慢和强迫来评判他人，但[PAWN_pronoun]天才般的设计灵感思如泉涌，却受限于资金每每无法实现。\n\n而星铃中央委员会带来了一份[PAWN_pronoun]无法拒绝的礼物：不限量的资金，所有被记录在案的技术，最高优先级的人员调用权限，“领航计划”。而[PAWN_pronoun]需要做的，是设计一艘完美的飞船——一艘可以在所有已知极端环境下生存的巨型世代飞船。\n\n&lt;color=#87cefa&gt;“你需要前往远离恒星的隐蔽船坞，建造史上最伟大的奇迹……”&lt;/color&gt;</Celes_Backstory_Special07.description>
     <!-- EN:  -->
 
     <Celes_Backstory_Special08.title>星铃 深空医学家</Celes_Backstory_Special08.title>
     <!-- EN: celestia deep-space doctor -->
     <Celes_Backstory_Special08.titleShort>深空医学家</Celes_Backstory_Special08.titleShort>
     <!-- EN: deep-space doctor -->
-    <Celes_Backstory_Special08.description>远离坚实地面的空寂深空总是给飞船船员们带来无数的身心问题，[PAWN_nameDef]则是处理这些问题的专家。[PAWN_pronoun]不断的试图深入研究，期望有一天能一劳永逸的解决太空的困扰。[PAWN_pronoun]也试图教导更多人，尤其是随舰医生，如何克服太空对船员的折磨。\n\n而一个来自星铃中央委员会的课题吸引了[PAWN_possessive]的好奇心——《论超认知时间尺度下太空环境心理健康保持与冷冻保存技术的可行性》，署名：“领航计划”。</Celes_Backstory_Special08.description>
+    <Celes_Backstory_Special08.description>远离坚实地面的空寂深空总是给飞船船员们带来无数的身心问题，[PAWN_nameDef]则是处理这些问题的专家。[PAWN_pronoun]不断的试图深入研究，期望有一天能一劳永逸的解决太空的困扰。[PAWN_pronoun]也试图教导更多人，尤其是随舰医生，如何克服太空对船员的折磨。\n\n而一个来自星铃中央委员会的课题吸引了[PAWN_possessive]的好奇心——《一种基于思维矩阵冷冻保存技术的超认知时间尺度下的极端太空环境心理健康保持的可行性论证》，\n\n&lt;color=#87cefa&gt;署名：“领航计划”。&lt;/color&gt;</Celes_Backstory_Special08.description>
     <!-- EN:  -->
 
     <Celes_Backstory_Special09.title>星铃 寂静部队</Celes_Backstory_Special09.title>

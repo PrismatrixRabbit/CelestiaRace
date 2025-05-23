@@ -2,7 +2,7 @@
 <Defs>
 
 
-    <ThingDef ParentName="ApparelBase">
+    <!--<ThingDef ParentName="ApparelBase">
         <defName>Celes_Apparel_ShieldBelt</defName>
         <label>muti-functional shield belt</label>
         <description>A projectile-repulsion device. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It prevents the wearer from firing out, and shuts down instantly if hit by EMP.</description>
@@ -104,7 +104,7 @@
         <tradeTags>
             <li>Armor</li>
         </tradeTags>
-    </ThingDef>
+    </ThingDef>-->
 
 
 </Defs>

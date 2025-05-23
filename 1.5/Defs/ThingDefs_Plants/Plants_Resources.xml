@@ -28,7 +28,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>Celes_RawCrystalOrchid</harvestedThingDef>
-			<harvestYield>2</harvestYield>
+			<harvestYield>1</harvestYield>
 			<neverBlightable>true</neverBlightable>
 			<sowTags>
 				<li>Ground</li>

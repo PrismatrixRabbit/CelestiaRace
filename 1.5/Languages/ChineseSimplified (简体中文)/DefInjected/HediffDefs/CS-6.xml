@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+    <Celes_CS6_HighSample.label>CS-6作战增强剂</Celes_CS6_HighSample.label>
+    <Celes_CS6_HighSample.labelNoun>CS-6效果</Celes_CS6_HighSample.labelNoun>
+    <Celes_CS6_HighSample.description>流淌在血液中的CS-6化学物质正在提高使用者的作战能力。</Celes_CS6_HighSample.description>
+    <!-- EN: The CS-6 chemicals flowing in the bloodstream was increasing the user's combat ability. -->
+
     <Celes_CS6_High.label>CS-6作战增强剂</Celes_CS6_High.label>
     <Celes_CS6_High.labelNoun>CS-6效果</Celes_CS6_High.labelNoun>
     <Celes_CS6_High.description>流淌在血液中的CS-6化学物质正在提高使用者的作战能力。</Celes_CS6_High.description>

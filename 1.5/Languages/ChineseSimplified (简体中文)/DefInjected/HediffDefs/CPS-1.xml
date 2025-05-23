@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <Celes_CPS1_HighSample.label>CPS-1作战灵能强化剂</Celes_CPS1_HighSample.label>
+  <Celes_CPS1_HighSample.labelNoun>CPS-1效果</Celes_CPS1_HighSample.labelNoun>
+  <Celes_CPS1_HighSample.description>流淌在血液中的CPS-1尘构物质正在提高使用者的灵能作战能力。</Celes_CPS1_HighSample.description>
+  <!-- EN: The CPS-1 Dust-Mech substance flowing in the bloodstream was increasing the user's psychic combat ability. -->
+
   <Celes_CPS1_High.label>CPS-1作战灵能强化剂</Celes_CPS1_High.label>
   <Celes_CPS1_High.labelNoun>CPS-1效果</Celes_CPS1_High.labelNoun>
   <Celes_CPS1_High.description>流淌在血液中的CPS-1尘构物质正在提高使用者的灵能作战能力。</Celes_CPS1_High.description>

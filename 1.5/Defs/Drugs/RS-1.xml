@@ -23,7 +23,7 @@
         <ingestible>
             <foodType>Processed, Fluid</foodType>
             <nurseable>true</nurseable>
-            <drugCategory>Hard</drugCategory>
+            <drugCategory>Medical</drugCategory>
             <baseIngestTicks>40</baseIngestTicks>
             <ingestSound>Ingest_Inject</ingestSound>
             <ingestHoldOffsetStanding>
@@ -61,9 +61,10 @@
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Celes_BioGel>2</Celes_BioGel>
-            <Neutroamine>2</Neutroamine>
-            <Luciferium>1</Luciferium>
+            <Celes_BioGel>10</Celes_BioGel>
+            <Neutroamine>5</Neutroamine>
+            <Luciferium>3</Luciferium>
+            <CelesNanoMachine>5</CelesNanoMachine>
         </costList>
         <comps>
             <li Class="CompProperties_Drug">
@@ -99,46 +100,37 @@
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <offset>0.20</offset>
+                        <offset>0.15</offset>
                     </li>
                     <li>
                         <capacity>Manipulation</capacity>
-                        <offset>0.30</offset>
+                        <offset>0.25</offset>
                     </li>
                     <li>
                         <capacity>Moving</capacity>
-                        <offset>0.30</offset>
+                        <offset>0.25</offset>
                     </li>
                     <li>
                         <capacity>Sight</capacity>
-                        <offset>0.30</offset>
-                    </li>
-                    <li>
-                        <capacity>BloodFiltration</capacity>
-                        <offset>1.00</offset>
+                        <offset>0.45</offset>
                     </li>
                     <li>
                         <capacity>BloodPumping</capacity>
-                        <offset>0.20</offset>
-                    </li>
-                    <li>
-                        <capacity>Metabolism</capacity>
-                        <offset>0.50</offset>
+                        <offset>0.25</offset>
                     </li>
                     <li>
                         <capacity>Breathing</capacity>
-                        <offset>0.20</offset>
+                        <offset>0.25</offset>
                     </li>
                 </capMods>
                 <statOffsets>
                     <WorkSpeedGlobal>-0.50</WorkSpeedGlobal>
-                    <ShootingAccuracyPawn>7</ShootingAccuracyPawn>
-                    <MeleeHitChance>7</MeleeHitChance>
-                    <MeleeDPS>2</MeleeDPS>
+                    <ShootingAccuracyPawn>10.0</ShootingAccuracyPawn>
+                    <MeleeHitChance>10.0</MeleeHitChance>
                 </statOffsets>
                 <statFactors>
                     <AimingDelayFactor>0.66</AimingDelayFactor>
-                    <InjuryHealingFactor>1.5</InjuryHealingFactor>
+                    <MeleeDPS>2.0</MeleeDPS>
                 </statFactors>
             </li>
         </stages>

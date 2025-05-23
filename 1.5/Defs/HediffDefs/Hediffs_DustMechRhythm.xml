@@ -85,7 +85,7 @@
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <postFactor>0.9</postFactor>
+                        <setMax>0.9</setMax>
                     </li>
                 </capMods>
                 <makeImmuneTo>
@@ -130,7 +130,7 @@
             </li>
             <li Class="HediffCompProperties_TendDuration">
                 <baseTendDurationHours>24</baseTendDurationHours>
-                <severityPerDayTended>3.0</severityPerDayTended>
+                <severityPerDayTended>-3.0</severityPerDayTended>
             </li>
             <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
                 <targetHediff>Celes_DustMechRhythm_Standard</targetHediff>
@@ -229,7 +229,7 @@
         </stages>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-0.5</severityPerDay>
+                <severityPerDay>-0.6</severityPerDay>
                 <showHoursToRecover>true</showHoursToRecover>
             </li>
             <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
@@ -240,6 +240,12 @@
                     <li>Celes_Race</li>
                 </specialRace>
                 <hediffForSpRace>Celes_DustMechRhythm_Dormant</hediffForSpRace>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_CapacityCheck">
+                <targetHediff>Celes_DustMechRhythm_ProtocolIII</targetHediff>
+                <CapacityToCheck>Consciousness</CapacityToCheck>
+                <SeverityToCheck>0.40</SeverityToCheck>
+                <HPCheck>0.90</HPCheck>
             </li>
         </comps>
     </HediffDef>
@@ -373,7 +379,7 @@
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <setMax>0.1</setMax>
+                        <setMax>0.5</setMax>
                     </li>
                 </capMods>
                 <makeImmuneTo>

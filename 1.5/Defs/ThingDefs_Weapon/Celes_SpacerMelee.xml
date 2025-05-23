@@ -198,9 +198,6 @@
     <tradeTags>
       <li>Celes_WeaponsMelee</li>
     </tradeTags>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
   </ThingDef>
 
   <ThingDef ParentName="MeleeWeaponUltratech">

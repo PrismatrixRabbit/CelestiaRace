@@ -132,10 +132,6 @@
                 <li>MedicineHerbal</li>
             </disallowedThingDefs>
         </fixedIngredientFilter>
-        <products>
-            <CelesNanoMachine>10</CelesNanoMachine>
-            <Neutroamine>10</Neutroamine>
-        </products>
         <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
         </researchPrerequisite>
@@ -374,10 +370,6 @@
                 <li>MedicineHerbal</li>
             </disallowedThingDefs>
         </fixedIngredientFilter>
-        <products>
-            <CelesNanoMachine>10</CelesNanoMachine>
-            <Neutroamine>10</Neutroamine>
-        </products>
         <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
         </researchPrerequisite>
@@ -389,7 +381,7 @@
         <modExtensions>
             <li Class="CelesFeature.Celes_RecipeModExtension">
                 <addHediff>true</addHediff>
-                <hediffToAdd>Celes_DustMechRhythm_DormantHuman</hediffToAdd>
+                <hediffToAdd>Celes_DustMechRhythm_Activity</hediffToAdd>
                 <removeHediff>true</removeHediff>
                 <hediffToRemove>Celes_DustMechRhythm_Overactivity</hediffToRemove>
                 <AllowWhenHediff>
@@ -435,8 +427,8 @@
             </disallowedThingDefs>
         </fixedIngredientFilter>
         <products>
-            <CelesNanoMachine>10</CelesNanoMachine>
-            <Neutroamine>10</Neutroamine>
+            <CelesNanoMachine>2</CelesNanoMachine>
+            <Neutroamine>5</Neutroamine>
         </products>
         <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
@@ -495,10 +487,6 @@
                 <li>MedicineHerbal</li>
             </disallowedThingDefs>
         </fixedIngredientFilter>
-        <products>
-            <CelesNanoMachine>10</CelesNanoMachine>
-            <Neutroamine>10</Neutroamine>
-        </products>
         <researchPrerequisite>
             <li>Celes_NanoImplant_II</li>
         </researchPrerequisite>

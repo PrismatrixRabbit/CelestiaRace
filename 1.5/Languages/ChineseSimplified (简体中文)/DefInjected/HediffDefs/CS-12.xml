@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+    <Celes_CS12_HighSample.label>CS-12作战止血剂</Celes_CS12_HighSample.label>
+    <Celes_CS12_HighSample.labelNoun>CS-12效果</Celes_CS12_HighSample.labelNoun>
+    <Celes_CS12_HighSample.description>流淌在血液中的CS-12化学物质正在提高使用者的止血愈合能力。</Celes_CS12_HighSample.description>
+    <!-- EN: The CS-12 chemicals flowing in the bloodstream was increasing the user's haemostatic and healing capacity. -->
+
     <Celes_CS12_High.label>CS-12作战止血剂</Celes_CS12_High.label>
     <Celes_CS12_High.labelNoun>CS-12效果</Celes_CS12_High.labelNoun>
     <Celes_CS12_High.description>流淌在血液中的CS-12化学物质正在提高使用者的止血愈合能力。</Celes_CS12_High.description>

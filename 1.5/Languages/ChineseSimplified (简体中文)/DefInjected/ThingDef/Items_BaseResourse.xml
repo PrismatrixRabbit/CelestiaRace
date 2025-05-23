@@ -10,12 +10,12 @@
 
     <Celes_BioGel.label>生物酶凝胶</Celes_BioGel.label>
     <!-- EN: bio-enzyme gels -->
-    <Celes_BioGel.description>一种从有机物中提取的强效生物酶凝胶用于制造星铃的各种特效药。</Celes_BioGel.description>
+    <Celes_BioGel.description>一种从有机物中提取的强效生物酶凝胶，用于制造星铃的各种特效药。</Celes_BioGel.description>
     <!-- EN: A potent bio-enzyme gel extracted from organic matter is used to make Celestia's various specialised medicines. -->
 
     <CelesNanoMachine.label>自复制晶体</CelesNanoMachine.label>
     <!-- EN: Self-replicating crystals -->
-    <CelesNanoMachine.description>从晶蒴中提取出的奇异晶体，透明却仿佛有什么东西在内里流动，晶格在其中不断的复制与消亡着。可以用来制作星铃的特殊物品。</CelesNanoMachine.description>
+    <CelesNanoMachine.description>从晶蒴中提取出的奇异晶体，通体透明，却仿佛有什么东西在内里流动，晶格在其中不断的复制与消亡着。可以用来制作星铃的特殊物品。这种晶体的组成成分无从确认，只能判断出其不属于任何自然物质或已知的有机物。</CelesNanoMachine.description>
     <!-- EN: The strange crystals extracted from the crystal capsule are transparent yet it seems as if something is flowing inside, the lattice duplicating and dying out in it. It could be used to make special items belonging to Celestia's technology. -->
 
     <CelesNanoManifold.label>尘构流形</CelesNanoManifold.label>

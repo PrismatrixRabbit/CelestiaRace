@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef ParentName="Celes_AbyssiaPawnBase">
+        <defName>Celes_AbyssiaColonist</defName>
+        <label>celestia abyssia colonist</label>
+        <combatPower>20</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>false</isFighter>
+        <apparelMoney>1500~2000</apparelMoney>
+        <apparelTags>
+            <li>Celes_Explore</li>
+        </apparelTags>
+        <apparelDisallowTags>
+        </apparelDisallowTags>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <weaponTags Inherit="false">
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Celes_Space</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <inventoryOptions>
+            <skipChance>0.1</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>100</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>
+                        <min>20</min>
+                        <max>100</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <defaultFactionType>Celes_PlayerFaction</defaultFactionType>
+    </PawnKindDef>
+    
+</Defs>

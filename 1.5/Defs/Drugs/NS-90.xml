@@ -25,7 +25,7 @@
             <foodType>Processed</foodType>
             <baseIngestTicks>650</baseIngestTicks>
             <nurseable>true</nurseable>
-            <drugCategory>Hard</drugCategory>
+            <drugCategory>Medical</drugCategory>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
                     <hediffDef>Celes_NS90_High</hediffDef>
@@ -334,7 +334,6 @@
         <stages>
             <li>
                 <vomitMtbDays>0.3</vomitMtbDays>
-                <painFactor>0.1</painFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>

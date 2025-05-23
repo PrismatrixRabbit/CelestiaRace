@@ -11,10 +11,10 @@
 	<Celes_WinterCoat.description>一件格外保温的厚重大衣，用以对抗极端的严寒天气，即使在最寒冷的天气也能保持温暖。\n\n。</Celes_WinterCoat.description>
 	<!-- EN: An extra-insulating heavy coat to combat extreme cold weather and keep you warm even on the coldest days. \n\n. -->
 
-	<Celes_TrenchCoat.label>星铃运动外套</Celes_TrenchCoat.label>
-	<!-- EN: celestia trench coat -->
-	<Celes_TrenchCoat.description>一件遮蔽风雨的坚固运动外套，可以保持基本的温度舒适。\n\n。</Celes_TrenchCoat.description>
-	<!-- EN: A trench coat that protects you from the elements and keeps you comfortable at a basic temperature. \n\n. -->
+	<!-- <Celes_TrenchCoat.label>星铃运动外套</Celes_TrenchCoat.label>
+	EN: celestia trench coat -->
+	<!-- <Celes_TrenchCoat.description>一件遮蔽风雨的坚固运动外套，可以保持基本的温度舒适。\n\n。</Celes_TrenchCoat.description>
+	EN: A trench coat that protects you from the elements and keeps you comfortable at a basic temperature. \n\n. -->
 
 	<Celes_ExploreCoat.label>星铃拓荒大衣</Celes_ExploreCoat.label>
     <!-- EN: celestia explore coat -->

@@ -150,7 +150,7 @@
 		</apparel>
 	</ThingDef>
 
-	<!--<ThingDef ParentName="Celes_Shell_I">运动外套
+	<ThingDef ParentName="Celes_Shell_I">
 		<defName>Celes_TrenchCoat</defName>
 		<label>celestia trench coat</label>
 		<description>A trench coat that protects you from the elements and keeps you comfortable at a basic temperature. \n\n.</description>
@@ -189,7 +189,7 @@
 				<dataNorth><layer>40</layer></dataNorth>
 			</drawData>
 		</apparel>
-	</ThingDef>-->
+	</ThingDef>
 
 	<!-- ========== 专业服装 ========= -->
 

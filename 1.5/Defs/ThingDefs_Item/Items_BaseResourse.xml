@@ -114,8 +114,9 @@
             <Flammability>0</Flammability>
         </statBases>
         <graphicData>
-            <texPath>Celes/Item/Unfinished/UnfinishedCrystal</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Celes/Item/BaseResource/NanoMachineCrystal</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>1.0</drawSize>
         </graphicData>
         <stuffCategories Inherit="false" />
     </ThingDef>
@@ -166,24 +167,15 @@
             <Flammability>0.2</Flammability>
         </statBases>
         <thingCategories>
-            <li>CorpsesHumanlike</li>
+            <li>Chunks</li>
         </thingCategories>
         <tradeability>None</tradeability>
     </ThingDef>
-
-    <ThingDef ParentName="ResourceBase">
+    
+    <ThingDef ParentName="UnfinishedBase">
         <defName>Celes_RottenNanoCrystallisedCorpse</defName>
         <label>Rotten crystalline corpse</label>
         <description>For some reason, human corpses that have been almost completely transformed by Dust-Mech have initial state Dust-Mech on them that has crystallised and can be dismantled for recycling and to produce neutral amines as a by-product.</description>
-        <tickerType>Normal</tickerType>
-        <graphicData>
-            <texPath>Celes/Item/BaseResource/RottenNanoCrystallisedCorpse/RottenNanoCrystallisedCorpse</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>2.3</drawSize>
-        </graphicData>
-        <stackLimit>1</stackLimit>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <intricate>true</intricate>
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>
             <MarketValue>12</MarketValue>
@@ -191,10 +183,12 @@
             <Beauty>-75</Beauty>
             <Flammability>0.2</Flammability>
         </statBases>
-        <thingCategories>
-            <li>CorpsesHumanlike</li>
-        </thingCategories>
-        <tradeability>None</tradeability>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/RottenNanoCrystallisedCorpse/RottenNanoCrystallisedCorpse</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.3</drawSize>
+        </graphicData>
+        <stuffCategories Inherit="false" />
     </ThingDef>
-
+    
 </Defs>

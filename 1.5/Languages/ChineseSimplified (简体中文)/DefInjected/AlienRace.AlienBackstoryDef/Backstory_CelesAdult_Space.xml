@@ -351,14 +351,14 @@
   <!-- EN: celestia  -->
   <Celes_Backstory_Space50.titleShort>“领航”设计师</Celes_Backstory_Space50.titleShort>
   <!-- EN:  -->
-  <Celes_Backstory_Space50.description>[PAWN_nameDef]参与了“领航计划”的一部分关键设计和规划，这个作为最终后备方案的计划，将在那势必失控的“蓝灾”完全失控之前，将星铃的火种送往其他星系。光速的壁障将限制这些离乡的远航者在未来的某一天归乡，对于大多数人，这将是有去无归的旅途。而在火种远航后，母星系的守望者将试图摧毁这一切灾祸的源头。[PAWN_nameDef]随着“领航计划”来到边缘世界，而[PAWN_pronoun]如今想做的，则是作为知情人，记录历史的真相，铭记星铃的过往。</Celes_Backstory_Space50.description>
+  <Celes_Backstory_Space50.description>[PAWN_nameDef]参与了“领航计划”的一部分关键设计和规划，这个作为最终后备方案的计划，将在那势必失控的“蓝灾”完全失控之前，将星铃的火种送往其他星系。光速的壁障将限制这些离乡的远航者在未来的某一天归乡，对于大多数人，这将是有去无归的旅途。而在火种远航后，母星系的守望者将试图摧毁这一切灾祸的源头。\n\n如今，[PAWN_nameDef]随着“领航计划”踏上漫漫旅途，只在几个短暂的时间片段中苏醒。[PAWN_pronoun]一边维护方舟舰的低温休眠系统，一边作为见证者，记录着星铃不可被忘却的文明史诗。</Celes_Backstory_Space50.description>
   <!-- EN:  -->
 
   <Celes_Backstory_Space51.title>星铃 渊铃私人管家</Celes_Backstory_Space51.title>
   <!-- EN: celestia  -->
   <Celes_Backstory_Space51.titleShort>管家</Celes_Backstory_Space51.titleShort>
   <!-- EN:  -->
-  <Celes_Backstory_Space51.description>[PAWN_nameDef]和一位渊铃签订了长期的服务协议，不出意外的话，[PAWN_pronoun]将作为管家直到退休。星铃们的创造者，母星的开拓者，亦是最初的星铃，渊铃们，正因为不适应太空环境而日趋虚弱，最初的渊铃已然进入长达数百年的衰弱期。作为某种意义上的养老与临终关照的一部分，[PAWN_nameDef]会在[PAWN_pronoun]工作的这几十年中尽可能满足雇主在生理与心理上的需求。而不巧的是，“领航计划”就是这个意外。</Celes_Backstory_Space51.description>
+  <Celes_Backstory_Space51.description>[PAWN_nameDef]和一位渊铃签订了长期的服务协议，不出意外的话，[PAWN_pronoun]将作为一位尽职的管家直到退休。\n\n星铃们的创造者，母星的开拓者，亦是最初的星铃，渊铃们，正因为不适应太空环境而日趋虚弱，最初渊铃的思维模式已然进入长达数千年的衰弱期。作为某种意义上的养老与临终关照的一部分，[PAWN_nameDef]会在[PAWN_pronoun]工作的这几十年中尽可能满足雇主在生理与心理上的需求。\n\n而不巧的是，“领航计划”就是这个意外。在距[PAWN_possessive]守护对象数十上百光年之遥的深空，使[PAWN_objective]始终被未尽之责所纠缠。</Celes_Backstory_Space51.description>
   <!-- EN:  -->
 
   <Celes_Backstory_Space52.title>星铃 海军陆战队步兵</Celes_Backstory_Space52.title>
@@ -400,7 +400,7 @@
   <!-- EN: celestia  -->
   <Celes_Backstory_Space57.titleShort>陆战队特战兵</Celes_Backstory_Space57.titleShort>
   <!-- EN:  -->
-  <Celes_Backstory_Space57.description>[PAWN_nameDef]隶属于轨道空投突击部队，星铃海军最精锐的陆战部队之一。不同于随着登陆舰或空天飞行器降落的其他部队，[PAWN_pronoun]会乘着先进的轨道空投舱以超音速硬着陆，携带着甚至足以肃清一艘驱逐舰的火力直插敌人后方，在发动攻势前拔除敌人的反轨道武器，为接下来的行动清空区域。大量的军用机械和高能爆破随即会在敌人的阵地上展开。</Celes_Backstory_Space57.description>
+  <Celes_Backstory_Space57.description>[PAWN_nameDef]隶属于轨道空降突击部队，星铃海军最精锐的陆战部队之一。不同于随着登陆舰或空天飞行器降落的其他部队，[PAWN_pronoun]会乘着先进的轨道空投舱以超音速硬着陆，携带着甚至足以肃清一艘驱逐舰的火力直插敌人后方，在发动攻势前拔除敌人的反轨道武器，为接下来的行动清空区域。大量的军用机械和高能爆破随即会在敌人的阵地上展开。</Celes_Backstory_Space57.description>
   <!-- EN:  -->
 
   <Celes_Backstory_Space58.title>星铃 巡洋舰炮兵</Celes_Backstory_Space58.title>

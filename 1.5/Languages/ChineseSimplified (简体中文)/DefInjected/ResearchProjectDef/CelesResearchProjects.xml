@@ -8,17 +8,19 @@
   
   <Celes_MainTech_II.label>晶兰催化加工</Celes_MainTech_II.label>
   <!-- EN: crystal catalytic process -->
-  <Celes_MainTech_II.description>解锁建造「星铃加工台」，可以完成绝大多数星铃加工方案。并允许在其上执行「晶兰增殖操作」，在往常看来无法利用的介质上培育晶蒴。</Celes_MainTech_II.description>
+  <Celes_MainTech_II.description>解锁建造「星铃加工台」，可以完成绝大多数星铃加工方案。并允许在其上执行「晶兰增殖操作」，在往常看来无法利用的介质上培育晶蒴并收获一种特殊的晶体产物。</Celes_MainTech_II.description>
   <!-- EN: Unlocks the construction of the Celestia Processing Table, which allows most Celestia processing programmes to be completed. It also allows you to perform the ‘Crystal Orchid Multiplication Operation’ on it, which allows you to cultivate crystals on a medium that you would not normally be able to use. -->
+  <Celes_NanoImplant_I.discoveredLetterTitle>关于：自复制晶体</Celes_NanoImplant_I.discoveredLetterTitle>
+  <Celes_NanoImplant_I.discoveredLetterText>你的研究人员向你大致阐明了星铃技术的下一个关键资源，「自复制晶体」的制造方法：\n\n-首先，你可以简单的把手头的晶蒴在「星铃加工台」转化为自复制晶体。\n-或者，你可以消耗大量时间手工培养晶化石材，通过拆解它们获得大量自复制晶体。\n-你也可以直接从星铃的体内提取一些，如果殖民地有自愿献血的星铃的话。\n-当然，星铃的商队似乎也会出售少量的自复制晶体。\n-而一个未经证实而骇人耸听的说法是……人类或许也能作为原料。</Celes_NanoImplant_I.discoveredLetterText>
 
   <Celes_MainTech_III.label>尘构技术解译</Celes_MainTech_III.label>
   <!-- EN: Dust-Mech technical interpretation -->
-  <Celes_MainTech_III.description>破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。\n\n&lt;color=#87cefa&gt;＂尘构，学名适应性纳米校正系统(Adaptive Nano Calibration System)，即ANCS。是由星铃文明研发的，基于控制论的增强纳米机械。尘构能够融合不同的生物与生物，生物与机械，并且充当媒介在其中获取，传递，并处理信息流，在与智能结合的情况下，具有高度的适应性。＂————解析自星铃自译解技术核心&lt;/color&gt;</Celes_MainTech_III.description>
+  <Celes_MainTech_III.description>我们终于知晓了这些奇异晶体的构成，尘构物质。\n\n破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。\n\n&lt;color=#87cefa&gt;＂尘构，学名适应性纳米校正系统(Adaptive Nano Calibration System)，即ANCS。是由星铃文明研发的，基于控制论的增强纳米机械。尘构能够融合不同的生物与生物，生物与机械，并且充当媒介在其中获取，传递，并处理信息流，在与智能结合的情况下，具有高度的适应性。＂————解析自星铃自译解技术核心&lt;/color&gt;</Celes_MainTech_III.description>
   <!-- EN: Decipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.\n\n"The Dust-Mech, known as the Adaptive Nano Calibration System, or ANCS, is a cybernetic-based augmented nanomachine developed by the Celestia civilisation. The Dust-Mech is capable of fusing different organisms with organisms, and organisms with machinery, and acts as a medium in which to acquire, transmit, and process information flows, and is highly adaptable when combined with intelligence. " - Parsed from Celestia's Self-explanatory Technology Core -->
 
   <Celes_MainTech_IV.label>尘构重编程(正在制作)</Celes_MainTech_IV.label>
   <!-- EN: Dust-Mech reprogramming(WIP) -->
-  <Celes_MainTech_IV.description>尘构重编程，绝赞制作中。</Celes_MainTech_IV.description>
+  <Celes_MainTech_IV.description>在星铃的理论体系，物质世界由且仅由三部分组成：物质，能量，信息。星铃早已知晓物质与能量是如何实现统一，而通过尘构物质，星铃实现了物质与信息的统一。通过给予尘构现有方法的重编程，我们或许可以无穷逼近将一切归于索拉里斯之海的可能性。</Celes_MainTech_IV.description>
   <!-- EN: Dust-Mech reprogramming(WIP) -->
 
   <Celes_Apparel_I.label>星铃制衣标准</Celes_Apparel_I.label>
@@ -98,7 +100,7 @@
 
   <Celes_Bio_II.label>星铃作战药物</Celes_Bio_II.label>
   <!-- EN: Celestia combat medication -->
-  <Celes_Bio_II.description>进一步解析星铃生化科技，解锁制作星铃作战药物：短暂激发组织活性的「CS-6作战增强剂」与加快伤口愈合的「CS-12作战止血剂」。请注意,这些药物以过载细胞活性为代价,具有相当致命的副作用。</Celes_Bio_II.description>
+  <Celes_Bio_II.description>进一步解析星铃生化科技，解锁制作星铃作战药物：短暂激发组织活性的「CS-6作战增强剂」与加快伤口愈合的「CS-12作战止血剂」。请注意，这些药物虽然规避了神经与心理成瘾性，但以过载细胞活性为代价，具有相当致命的副作用。</Celes_Bio_II.description>
   <!-- EN: Further analysis of Celestia's biochemical technology unlocks the creation of Celestia's combat drugs: CS-6 combat stimulants, which briefly stimulates tissue activity, and CS-12 combat hemostat, which accelerates wound healing. Please note that these drugs have deadly side effects at the cost of overloading cellular activity. -->
 
   <Celes_Bio_III.label>尘构调用:灵能制药</Celes_Bio_III.label>
@@ -116,14 +118,16 @@
   <Celes_Medicine_I.description>利用生物酶凝胶作为原料替代中性胺制取药物，效率略低但高度自给。</Celes_Medicine_I.description>
   <!-- EN: Slightly less efficient but highly self-sufficient use of bio-enzymatic gels as a feedstock to replace neutral amines in the production of medicine. -->
 
-  <Celes_NanoImplant_I.label>侵入性植入</Celes_NanoImplant_I.label>
+  <Celes_NanoImplant_I.label>侵入式调整</Celes_NanoImplant_I.label>
   <!-- EN: Invasive Implantation -->
-  <Celes_NanoImplant_I.description>解锁「侵入性尘构植入」手术，一种利用尘构物质取代部分身体机能的极端强化手段，大多数时候对星铃的副作用处于可控范围。\n\n星铃的技术说明是这么说的……但上面没有说对星铃之外的种族会有什么副作用。</Celes_NanoImplant_I.description>
+  <Celes_NanoImplant_I.description>解锁「侵入式调整」手术，通过自复制晶体植入或调整星铃体内的固有节律。\n\n星铃的技术说明是这么说的……但上面没有说对星铃之外的种族会有什么作用。</Celes_NanoImplant_I.description>
   <!-- EN: Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's technology manual says so ...... but it doesn't say what side effects it would have on races other than Celestia. -->
+  <Celes_NanoImplant_I.discoveredLetterTitle>关于：侵入式调整</Celes_NanoImplant_I.discoveredLetterTitle>
+  <Celes_NanoImplant_I.discoveredLetterText>你的研究人员大致解译了这项星铃的全新技术：\n现在，你可以通过自复制晶体，侵入式调整星铃体内尘构节律的活性，活性尘构节律可以在短期内全面提高星铃的工作能力并带有短暂的疲劳副作用。\n而对于未开化物种，由于某种保护性限制，这一技术会无法使用。但对于并非星铃又并非未开化物种的个体……尚且没有任何记录。</Celes_NanoImplant_I.discoveredLetterText>
 
-  <Celes_NanoImplant_II.label>尘构调用:劣化信息论改造</Celes_NanoImplant_II.label>
+  <Celes_NanoImplant_II.label>劣化信息论改造</Celes_NanoImplant_II.label>
   <!-- EN: Dust-Mech Call:degraded cybernetic modification -->
-  <Celes_NanoImplant_II.description>解锁「劣化信息论改造」手术，这种改造一般运用于意外被尘构高度同化的生物，配方已经针对边缘世界的物资进行针对性调整。\n\n这种技术被技术监管委员会限定只能用于未开化动物，但事实上只需要修改一个"+"号就能用于人类。在边缘世界，人类和动物似乎并不是那么泾渭分明。</Celes_NanoImplant_II.description>
+  <Celes_NanoImplant_II.description>解锁「劣化信息论改造」手术，这种改造一般运用于由于极低概率事件意外被尘构高度同化的生物，配方已经针对边缘世界的物资进行针对性调整。\n\n这种技术被技术监管委员会限定只能用于未开化动物，但事实上只需要修改一个"+"号就能用于人类。在边缘世界，人类和动物似乎并不是那么泾渭分明……\n\n作为这个技术的副产物，允许制作「侍仆防护长袍」。</Celes_NanoImplant_II.description>
   <!-- EN: Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct. -->
 
   <Celes_Prosthesis_I.label>尘构调用:活械转译\n(即将推出)</Celes_Prosthesis_I.label>
