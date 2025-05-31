@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <StatDef>
+        <defName>Celes_spawnInterval</defName>
+        <label>spawn Interval</label>
+        <description>spawn Interval.</description>
+        <category>Building</category>
+        <defaultBaseValue>24</defaultBaseValue>
+        <minValue>1</minValue>
+        <toStringStyle>Integer</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
+        <displayPriorityInCategory>3200</displayPriorityInCategory>
+    </StatDef>
+
+    <StatDef>
+        <defName>Celes_spawnCount</defName>
+        <label>spawn Count</label>
+        <description>spawn Count.</description>
+        <category>Building</category>
+        <defaultBaseValue>75</defaultBaseValue>
+        <minValue>1</minValue>
+        <toStringStyle>Integer</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
+        <displayPriorityInCategory>3201</displayPriorityInCategory>
+    </StatDef>
+
+</Defs>
