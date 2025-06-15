@@ -1,0 +1,979 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Celes_Abyssia_Race</defName>
+		<label>abyssia race</label>
+		<description>The creators of the Celestia, the pioneers of the abyssal expanse, and the original Celestia themselves—the Abyssia. They are a semi-organic, semi-mechanical advanced race from the Luminous World, their physiology vastly diverging from that of humanity's distant ancestors thousands of years ago. Eons of life in the deep sea have radically transformed their habits and survival adaptations. Their nervous systems have been reengineered with distributed computational nodes, and over half their bodies consist of DustMech materials, leaving them with scant resemblance to humans.\n\nWithin the Rimworld, they are exceedingly rare, with only a handful of dubious sighting reports to their name.</description>
+		<alienRace>
+			<generalSettings>
+				<immuneToXenophobia>true</immuneToXenophobia>
+				<maleGenderProbability>0</maleGenderProbability>
+				<!--要改的-->
+				<minAgeForAdulthood>20</minAgeForAdulthood>
+				<immuneToAge>true</immuneToAge>
+				<canLayDown>true</canLayDown>
+				<humanRecipeImport>false</humanRecipeImport>
+				<!-- TODO 修改特质 -->
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>FastLearner</defName>
+						<chance>33</chance>
+					</li>
+					<li>
+						<defName>Masochist</defName>
+						<chance>33</chance>
+					</li>
+				</forcedRaceTraitEntries>
+				<disallowedTraits>
+					<li>
+						<defName>AnnoyingVoice</defName>
+						<!--恶心呼吸II-->
+					</li>
+					<li>
+						<defName Degree="-1">Beauty</defName>
+						<!--丑-->
+					</li>
+					<li>
+						<defName Degree="-2">Beauty</defName>
+						<!--特丑-->
+					</li>
+					<li>
+						<defName>CreepyBreathing</defName>
+						<!--恶心呼吸I-->
+					</li>
+					<li>
+						<defName>Nudist</defName>
+						<!--裸体主义-->
+					</li>
+					<li>
+						<defName>Bloodlust</defName>
+						<!--嗜血-->
+					</li>
+					<li>
+						<defName>Cannibal</defName>
+						<!--食人-->
+					</li>
+					<li>
+						<defName>Pyromaniac</defName>
+						<!--纵火-->
+					</li>
+					<li>
+						<defName>Gourmand</defName>
+						<!--贪食者-->
+					</li>
+					<li>
+						<defName Degree="2">DrugDesire</defName>
+					</li>
+					<li>
+						<defName Degree="1">DrugDesire</defName>
+					</li>
+				</disallowedTraits>
+				<growthAges MayRequire="Ludeon.RimWorld.Biotech">
+					<li>7</li>
+					<li>10</li>
+					<li>13</li>
+				</growthAges>
+
+				<alienPartGenerator>
+					<headTypes>
+						<li>CelesHeadN1</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Female</li>
+						<!--<li>Thin</li>-->
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+
+					<!-- TODO 修改插件 此处占位 -->
+					<bodyAddons>
+						<li>
+							<!--尾巴-->
+							<name>celes tail</name>
+							<userCustomizable>false</userCustomizable>
+							<path>Celes/Addon/Tail/CelesTail</path>
+							<inFrontOfBody>false</inFrontOfBody>
+							<colorChannel>hair</colorChannel>
+							<defaultOffset>Center</defaultOffset>
+							<drawSize>1</drawSize>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Celes_Abyssia_Tail</bodyPart>
+									<bodyPartLabel>Fox Tail</bodyPartLabel>
+								</BodyPart>
+								<Apparel>
+									<hiddenUnderApparelTag>
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnInBed>false</drawnInBed>
+									<drawnLaying>true</drawnLaying>
+								</Posture>
+								<RotStage>Fresh,Rotting</RotStage>
+							</conditions>
+							<offsets>
+								<west>
+									<bodyTypes>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.275</layerOffset>
+								</west>
+								<south>
+									<bodyTypes>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.275</layerOffset>
+								</south>
+								<north>
+									<bodyTypes>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.275</layerOffset>
+								</north>
+								<east>
+									<bodyTypes>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.275</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<!--头发正面-->
+							<name>celes hair</name>
+							<userCustomizable>true</userCustomizable>
+							<path>Celes/Hair/HairFront/CelesHair</path>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<colorChannel>hair</colorChannel>
+							<defaultOffset>Center</defaultOffset>
+							<drawSize>1</drawSize>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<alignWithHead>true</alignWithHead>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Head</bodyPart>
+								</BodyPart>
+								<Apparel>
+									<hiddenUnderApparelTag>
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnInBed>true</drawnInBed>
+									<drawnLaying>true</drawnLaying>
+								</Posture>
+								<RotStage>Fresh,Rotting</RotStage>
+							</conditions>
+							<offsets>
+								<west>
+									<layerOffset>-0.274</layerOffset>
+								</west>
+								<south>
+									<layerOffset>-0.274</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.274</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.274</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<!--头发背面-->
+							<name>celes hairB</name>
+							<userCustomizable>true</userCustomizable>
+							<path>Celes/Hair/HairBack/CelesHairB</path>
+							<inFrontOfBody>false</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<colorChannel>hair</colorChannel>
+							<defaultOffset>Center</defaultOffset>
+							<drawSize>1</drawSize>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<alignWithHead>true</alignWithHead>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Head</bodyPart>
+								</BodyPart>
+								<Apparel>
+									<hiddenUnderApparelTag>
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnInBed>false</drawnInBed>
+									<drawnLaying>true</drawnLaying>
+								</Posture>
+								<RotStage>Fresh,Rotting</RotStage>
+							</conditions>
+							<offsets>
+								<west>
+									<layerOffset>-0.275</layerOffset>
+								</west>
+								<south>
+									<layerOffset>-0.275</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.275</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.275</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<!--左边耳朵-->
+							<name>celes earL</name>
+							<userCustomizable>false</userCustomizable>
+							<path>Celes/Addon/Ear/EarL/CelesEarL</path>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<colorChannel>hair</colorChannel>
+							<defaultOffset>Center</defaultOffset>
+							<drawSize>1</drawSize>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<alignWithHead>true</alignWithHead>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>left fox ear</bodyPartLabel>
+								</BodyPart>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<!--<li>Celes_EarCover</li>-->
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnInBed>true</drawnInBed>
+									<drawnLaying>true</drawnLaying>
+								</Posture>
+								<RotStage>Fresh,Rotting</RotStage>
+							</conditions>
+							<offsets>
+								<west>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.268</layerOffset>
+								</west>
+								<south>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.268</layerOffset>
+								</south>
+								<north>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.268</layerOffset>
+								</north>
+								<east>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.268</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<!--右边耳朵-->
+							<name>celes earR</name>
+							<userCustomizable>false</userCustomizable>
+							<path>Celes/Addon/Ear/EarR/CelesEarR</path>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<colorChannel>hair</colorChannel>
+							<defaultOffset>Center</defaultOffset>
+							<drawSize>1</drawSize>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<alignWithHead>true</alignWithHead>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>right fox ear</bodyPartLabel>
+								</BodyPart>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<!--<li>Celes_EarCover</li>-->
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnInBed>true</drawnInBed>
+									<drawnLaying>true</drawnLaying>
+								</Posture>
+								<RotStage>Fresh,Rotting</RotStage>
+							</conditions>
+							<offsets>
+								<west>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.268</layerOffset>
+								</west>
+								<south>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.268</layerOffset>
+								</south>
+								<north>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.268</layerOffset>
+								</north>
+								<east>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.268</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<!-- <li> -->
+							<!--特殊衣物前景-->
+						<!-- <path>Celes/Apparel/Null/Null</path>
+							<bodyPart>Head</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>Blank</colorChannel>
+							<shaderType>Cutout</shaderType>
+							<layerInvert>false</layerInvert>
+							<angle>0</angle>
+							<drawSize>1</drawSize>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>Center</defaultOffset>
+							<alignWithHead>true</alignWithHead>
+							<drawnDesiccated>false</drawnDesiccated>
+							<linkVariantIndexWithPrevious>false</linkVariantIndexWithPrevious>
+							<hediffGraphics>
+								<Celes_SummerHat>Celes/Apparel/Overhead/SummerHatFG/SummerHatFG</Celes_SummerHat>
+							</hediffGraphics>
+							<offsets>
+								<west>
+									<bodyTypes>
+										<Female>(0,0)</Female>
+									</bodyTypes>
+									<layerOffset>-0.265</layerOffset>
+								</west>
+								<south>
+									<layerOffset>-0.265</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.265</layerOffset>
+								</north>
+								<east>
+									<bodyTypes>
+										<Female>(0,0)</Female>
+									</bodyTypes>
+									<layerOffset>-0.265</layerOffset>
+								</east>
+							</offsets>
+							<hiddenUnderApparelTag>
+							</hiddenUnderApparelTag>
+							<drawnInBed>true</drawnInBed>
+						</li> -->
+					</bodyAddons>
+
+					<headOffset>(0,0)</headOffset>
+					<customDrawSize>(1.0, 1.0)</customDrawSize>
+					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+					<atlasScale>4</atlasScale>
+					<borderScale>1</borderScale>
+
+					<colorChannels>
+						<!--颜色设定-->
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>100</weight>
+										<only>RGBA(255,255,255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<!--瞳色-->
+								<options>
+									<!--原色
+									<li>
+										<weight>100</weight>
+										<only>RGBA(255,255,255)</only>
+									</li>-->
+									<!--天青色-->
+									<li>
+										<weight>35</weight>
+										<only>RGBA(135,196,237)</only>
+									</li>
+									<!--蔚蓝色-->
+									<li>
+										<weight>35</weight>
+										<only>RGBA(112,243,255)</only>
+									</li>
+									<!--血红色-->
+									<li>
+										<weight>25</weight>
+										<only>RGBA(205,0,0)</only>
+									</li>
+									<!--紫色-->
+									<li>
+										<weight>5</weight>
+										<only>RGBA(128,29,174)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<!--发色-->
+								<options>
+									<!--原色-->
+									<li>
+										<weight>5</weight>
+										<only>RGBA(255,255,255)</only>
+									</li>
+									<!--银白-->
+									<li>
+										<weight>10</weight>
+										<only>RGBA(233,231,239)</only>
+									</li>
+									<!--灰蓝-->
+									<li>
+										<weight>10</weight>
+										<only>RGBA(122,184,204)</only>
+									</li>
+									<!--天青-->
+									<li>
+										<weight>20</weight>
+										<only>RGBA(135,196,237)</only>
+									</li>
+									<!--爱丽丝蓝-->
+									<li>
+										<weight>20</weight>
+										<only>RGBA(240,248,255)</only>
+									</li>
+									<!--矢车菊蓝-->
+									<li>
+										<weight>20</weight>
+										<only>RGBA(100,149,237)</only>
+									</li>
+									<!--钢青
+									<li>
+										<weight>20</weight>
+										<only>RGBA(70,130,180)</only>
+									</li>-->
+									<!--道奇蓝-->
+									<li>
+										<weight>15</weight>
+										<only>RGBA(30,144,255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>100</weight>
+										<only>RGBA(255,255,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+
+			<graphicPaths>
+				<head>Celes/Head/</head>
+				<body>
+					<path>Celes/Body/Naked_Female</path>
+					<ageGraphics>
+						<HumanlikeAdult>Celes/Body/Naked_Female</HumanlikeAdult>
+						<HumanlikePreTeenager MayRequire="Ludeon.RimWorld.Biotech">Celes/Body/Naked_Female</HumanlikePreTeenager>
+						<HumanlikeBaby MayRequire="Ludeon.RimWorld.Biotech">Celes/Body/Naked_Female</HumanlikeBaby>
+						<!--<HumanlikeBaby MayRequire="Ludeon.RimWorld.Biotech">Celes/Body/Naked_Baby</HumanlikeBaby>-->
+					</ageGraphics>
+				</body>
+				<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Female</skeleton>
+			</graphicPaths>
+
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Celes_Style</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>Celes_TattooBodyStyle</li>
+							<li>Celes_TattooFaceStyle</li>
+						</styleTags>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<!-- TODO 想法你都没写呢替换什么啊！ -->
+			<!-- <thoughtSettings>
+                <replacerList>
+                    <li>
+                        <original>AteNutrientPasteMeal</original>
+                        <replacer>Celes_AteNutrientPasteMeal</replacer>
+                    </li>
+                    <li>
+                        <original>AteLavishMeal</original>
+                        <replacer>Celes_AteLavishMeal</replacer>
+                    </li>
+                </replacerList>
+            </thoughtSettings> -->
+			<relationSettings>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierExLover>0</relationChanceModifierExLover>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+				<relationChanceModifierParent>0</relationChanceModifierParent>
+				<relationChanceModifierChild>0</relationChanceModifierChild>
+				<relationChanceModifierSibling>0</relationChanceModifierSibling>
+			</relationSettings>
+			<raceRestriction>
+
+				<apparelList>
+					<!-- 腿饰 -->
+					<li>Celes_SuspenderBlack</li>
+					<li>Celes_StockingBlack</li>
+					<li>Celes_TightBlack</li>
+					<li>Celes_LightLegArmour</li>
+					<!-- 夹层 -->
+					<li>Celes_KitchenApron</li>
+					<li>Celes_TacticalVest</li>
+					<li>Celes_LightPowerArmour</li>
+					<!-- 内衬 -->
+					<li>Celes_Tribal</li>
+					<li>Celes_SummerVest</li>
+					<li>Celes_WinterSweater</li>
+					<li>Celes_CivilianUniform</li>
+					<li>Celes_ExploreVest</li>
+					<li>Celes_MilitaryUniform</li>
+					<li>Celes_ClassicalGown</li>
+					<!-- 外套 -->
+					<li>Celes_SummerCoat</li>
+					<li>Celes_WinterCoat</li>
+					<!--<li>Celes_TrenchCoat</li>-->
+					<li>Celes_ExploreCoat</li>
+					<li>Celes_LabCoat</li>
+					<li>Celes_MilitaryCoat</li>
+				</apparelList>
+
+				<recipeList>
+				</recipeList>
+
+				<blackRecipeList>
+					<li>Celes_RemoveDustMechRhythm_ActivityForHuman</li>
+				</blackRecipeList>
+
+				<plantList>
+				</plantList>
+
+				<!--<researchList>
+					<li>
+						<projects>
+							<li>Celes_MainTech_I</li>
+						</projects>
+					</li>
+				</researchList>-->
+
+				<onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes>
+				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+
+				<xenotypeList MayRequire="Ludeon.RimWorld.Biotech">
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">CelesXenotype</li> -->
+				</xenotypeList>
+
+				<whiteXenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+				</whiteXenotypeList>
+
+				<!--<geneList MayRequire="Ludeon.RimWorld.Biotech">
+                </geneList>-->
+
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>HairColor</li>
+					<li>BodyType</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Voice</li>
+					<li>Headbone</li>
+					<li>Head</li>
+					<li>Jaw</li>
+				</blackEndoCategories>
+
+				<blackGeneList MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+				</blackGeneList>
+
+				<blackGeneTags>
+					<li>EyeColor</li>
+					<li>HairStyle</li>
+					<li>BeardStyle</li>
+					<li>SkinColorOverride</li>
+					<li>Tail</li>
+					<li>BodyType</li>
+					<li>Ears</li>
+				</blackGeneTags>
+
+				<blackXenotypeList MayRequire="Ludeon.RimWorld.Biotech">
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li> -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
+				</blackXenotypeList>
+
+			</raceRestriction>
+		</alienRace>
+
+
+		<!-- TODO 修改属性 -->
+		<statBases>
+			<MarketValue>2250</MarketValue>
+			<Flammability>0.5</Flammability>
+			<MoveSpeed>4.9</MoveSpeed>
+			<MentalBreakThreshold>0.3</MentalBreakThreshold>
+			<ComfyTemperatureMax>26</ComfyTemperatureMax>
+			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<InjuryHealingFactor>2.0</InjuryHealingFactor>
+			<ImmunityGainSpeed>0.96</ImmunityGainSpeed>
+			<CarryingCapacity>85</CarryingCapacity>
+			<RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">4</RoyalFavorValue>
+			<MeatAmount>160</MeatAmount>
+			<LeatherAmount>40</LeatherAmount>
+			<Mass>45</Mass>
+			<PawnBeauty>1</PawnBeauty>
+			<!--==-->
+			<GlobalLearningFactor>1.2</GlobalLearningFactor>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<MeleeDodgeChance>2.0</MeleeDodgeChance>
+			<MeleeHitChance>3.0</MeleeHitChance>
+			<ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.85</AimingDelayFactor>
+			<PainShockThreshold>0.9</PainShockThreshold>
+			<GeneralLaborSpeed>0.9</GeneralLaborSpeed>
+			<!--=普通工作=-->
+			<DrugSynthesisSpeed>1.5</DrugSynthesisSpeed>
+			<MedicalTendSpeed>1</MedicalTendSpeed>
+			<MedicalTendQuality>1.2</MedicalTendQuality>
+			<MedicalSurgerySuccessChance>1.2</MedicalSurgerySuccessChance>
+			<!--==-->
+			<NegotiationAbility>0.75</NegotiationAbility>
+			<SellPriceFactor>0.8</SellPriceFactor>
+			<TradePriceImprovement>1</TradePriceImprovement>
+			<SocialImpact>0.8</SocialImpact>
+			<!--==-->
+			<WorkSpeedGlobal>0.9</WorkSpeedGlobal>
+			<!--=全局工作=-->
+			<EatingSpeed>1</EatingSpeed>
+			<ConstructionSpeed>1</ConstructionSpeed>
+			<ButcheryMechanoidEfficiency>1</ButcheryMechanoidEfficiency>
+			<ButcheryMechanoidSpeed>1</ButcheryMechanoidSpeed>
+			<SmeltingSpeed>1</SmeltingSpeed>
+			<ResearchSpeed>1.2</ResearchSpeed>
+			<MiningSpeed>0.8</MiningSpeed>
+			<MiningYield>1</MiningYield>
+			<!--==-->
+			<ButcheryFleshEfficiency>1</ButcheryFleshEfficiency>
+			<ButcheryFleshSpeed>1</ButcheryFleshSpeed>
+			<FoodPoisonChance>1.1</FoodPoisonChance>
+			<CookSpeed>1.1</CookSpeed>
+			<RestRateMultiplier>1.2</RestRateMultiplier>
+			<PlantWorkSpeed>0.8</PlantWorkSpeed>
+			<PlantHarvestYield>1</PlantHarvestYield>
+			<!--==-->
+			<ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">
+				0.18
+			</ShootingAccuracyOutdoorsDarkOffset>
+			<ShootingAccuracyIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">
+				0.18
+			</ShootingAccuracyIndoorsDarkOffset>
+			<MeleeHitChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">
+				0.15
+			</MeleeHitChanceIndoorsDarkOffset>
+			<MeleeHitChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">
+				0.15
+			</MeleeHitChanceOutdoorsDarkOffset>
+			<MeleeDodgeChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">
+				0.1
+			</MeleeDodgeChanceIndoorsDarkOffset>
+			<MeleeDodgeChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">
+				0.1
+			</MeleeDodgeChanceOutdoorsDarkOffset>
+		</statBases>
+		
+		<tools>
+			<li>
+				<label>tentacle poke</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<armorPenetration>0.4</armorPenetration>
+				<power>16.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Celes_AbyssiaFirstTentacle</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacle cut</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<armorPenetration>0.4</armorPenetration>
+				<power>16.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Celes_AbyssiaSecondTentacle</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>tentacle blunt</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Celes_AbyssiaThirdTentacle</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		
+		
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<bloodDef>Celes_Filth_AbyssiaBlood</bloodDef>
+			<bloodSmearDef>Celes_Filth_AbyssiaBloodSmear</bloodSmearDef>
+			<meatColor>(160,140,168)</meatColor>
+
+			<renderTree>Humanlike</renderTree>
+			<canBecomeShambler>false</canBecomeShambler>
+			<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
+			<anomalyKnowledge>1</anomalyKnowledge>
+
+			<makesFootprints>false</makesFootprints>
+			<lifeExpectancy>8192</lifeExpectancy>
+			<leatherDef>CelesNanoMachine</leatherDef>
+			<nameCategory>HumanStandard</nameCategory>
+			<body>Celes_Abyssia_Body</body>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+			<foodType>OmnivoreRoughAnimal, AnimalProduct</foodType>
+			<gestationPeriodDays>36</gestationPeriodDays>
+			<meatMarketValue>0.8</meatMarketValue>
+			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<nameGenerator>NamerPerson_Celes</nameGenerator>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+					<!--<headOffset>(0.09, -0.08)</headOffset>
+                    <customDrawSize>(0.75,0.75)</customDrawSize>
+                    <customPortraitDrawSize>(0.75,0.75)</customPortraitDrawSize>
+                    <customHeadDrawSize>(0.794,0.794)</customHeadDrawSize>
+                    <customPortraitHeadDrawSize>(0.794,0.794)</customPortraitHeadDrawSize>-->
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeChild</def>
+					<minAge>3</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>9</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeAdult</def>
+					<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>13</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>7</BasicWorker>
+				<Warden>13</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>13</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>10</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>10</Smithing>
+				<Tailoring>10</Tailoring>
+				<Art>10</Art>
+				<Crafting>10</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>13</Research>
+			</lifeStageWorkSettings>
+			<!-- TODO 修改音效 -->
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<!-- TODO 修改年龄生成 -->
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+					<!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+					<!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+					<li>(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,50)</li>
+					<li>(20,100)</li>
+					<li>(30,100)</li>
+					<li>(40,10)</li>
+					<li>(60,5)</li>
+					<li>(80,1)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

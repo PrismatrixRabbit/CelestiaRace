@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BodyPartGroupDef>
+        <defName>Celes_AbyssiaFirstTentacle</defName>
+        <label>First Tentacle</label>
+        <listOrder>111</listOrder>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>Celes_AbyssiaSecondTentacle</defName>
+        <label>Second Tentacle</label>
+        <listOrder>112</listOrder>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>Celes_AbyssiaThirdTentacle</defName>
+        <label>Third Tentacle</label>
+        <listOrder>113</listOrder>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>Celes_AbyssiaFourthTentacle</defName>
+        <label>Fourth Tentacle</label>
+        <listOrder>114</listOrder>
+    </BodyPartGroupDef>
+
+</Defs>

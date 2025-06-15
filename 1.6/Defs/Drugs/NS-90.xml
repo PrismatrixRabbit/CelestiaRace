@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>Celes_NS90M</defName>
+        <label>NS-90 nervous stimulants</label>
+        <description>A modified synthetic stimulant that quickly restores the user's resting value and reduces the need for sleep, allowing the user to concentrate more on work. \n\nCompared to wake-up, NS-90 is not addictive, but it is highly tolerable and brings on pain and hunger. Overdose can lead to severe headaches and violent tendencies ...... but it does increase productivity more, use with caution.</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_NS90_High</HediffDef>
+            <HediffDef>Celes_NerveStimulateTolerance</HediffDef>
+            <HediffDef>Celes_NS90_After</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Celes/Drugs/NS90</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>400</WorkToMake>
+            <MarketValue>36</MarketValue>
+            <Mass>0.005</Mass>
+        </statBases>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <foodType>Processed</foodType>
+            <baseIngestTicks>650</baseIngestTicks>
+            <nurseable>true</nurseable>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>Celes_NS90_High</hediffDef>
+                    <severity>0.34</severity>
+                    <toleranceChemical>Celes_NerveStimulate</toleranceChemical>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>1.0</offset>
+                </li>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>Celes_NerveStimulateTolerance</hediffDef>
+                    <severity>0.225</severity>
+                    <divideByBodySize>true</divideByBodySize>
+                    <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+                    <offset>0.10</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Celes_BioGel>2</Celes_BioGel>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>Celes_NerveStimulate</chemical>
+                <addictiveness>0</addictiveness>
+                <listOrder>1000</listOrder>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- ========== 效果 ========== -->
+
+    <HediffDef>
+        <defName>Celes_NS90_High</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>NS-90 CNS</label>
+        <labelNoun>a NS-90 CNS high</labelNoun>
+        <description>The NS-90 chemicals that flow through the bloodstream are helping users stay awake and focused.</description>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.66</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_NS90_After</targetHediff>
+                <chanceToJump>0.33</chanceToJump>
+                <minToJump>true</minToJump>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <painOffset>0.10</painOffset>
+                <socialFightChanceFactor>2.0</socialFightChanceFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.4</WorkSpeedGlobal>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.15</MeditationFocusGain>
+                </statOffsets>
+                <hungerRateFactor>1.1</hungerRateFactor>
+                <statFactors>
+                    <RestFallRateFactor>0.8</RestFallRateFactor>
+                </statFactors>
+            </li>
+            <li>
+                <label>overdose</label>
+                <minSeverity>0.35</minSeverity>
+                <painOffset>0.30</painOffset>
+                <socialFightChanceFactor>3.0</socialFightChanceFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>1.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>1.3</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.6</WorkSpeedGlobal>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.2</MeditationFocusGain>
+                </statOffsets>
+                <hungerRateFactor>1.5</hungerRateFactor>
+                <statFactors>
+                    <RestFallRateFactor>0.8</RestFallRateFactor>
+                </statFactors>
+            </li>
+            <li>
+                <label>severe overdose</label>
+                <minSeverity>0.70</minSeverity>
+                <painOffset>0.75</painOffset>
+                <socialFightChanceFactor>5.0</socialFightChanceFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>1.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>1.1</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.4</WorkSpeedGlobal>
+                    <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.2</MeditationFocusGain>
+                </statOffsets>
+                <hungerRateFactor>3</hungerRateFactor>
+                <statFactors>
+                    <RestFallRateFactor>0</RestFallRateFactor>
+                </statFactors>
+                <mentalStateGivers>
+                    <li>
+                        <mentalState>Berserk</mentalState>
+                        <mtbDays>0.9</mtbDays>
+                    </li>
+                </mentalStateGivers>
+            </li>
+        </stages>
+    </HediffDef>
+    
+    <ThoughtDef>
+        <defName>Celes_NS90_High_T</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>Celes_NS90_High</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>NS-90 excitement</label>
+                <description>Full of energy! Time to get to work!</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>NS-90 excitement(overdose)</label>
+                <description>I feel like I have inexhaustible energy! Where's the work?</description>
+                <baseMoodEffect>7</baseMoodEffect>
+            </li>
+            <li>
+                <label>NS-90 excitement(severe overdose)</label>
+                <description>I feel like my heart is restless and I can't stay idle! Get out of my way!</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!-- ========== 化学 ========== -->
+
+    <ChemicalDef>
+        <defName>Celes_NerveStimulate</defName>
+        <label>Celes_NerveStimulate</label>
+        <addictionHediff>Celes_NerveStimulateAddiction</addictionHediff>
+        <toleranceHediff>Celes_NerveStimulateTolerance</toleranceHediff>
+        <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+        <!--<geneToleranceBuildupFactorResist>0.5</geneToleranceBuildupFactorResist>
+        <geneToleranceBuildupFactorImmune>0</geneToleranceBuildupFactorImmune>
+        <geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
+        <geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>-->
+    </ChemicalDef>
+
+    <HediffDef ParentName="AddictionBase">
+        <defName>Celes_NerveStimulateAddiction</defName>
+        <label>wake-up addiction</label>
+        <description>.</description>
+        <hediffClass>Hediff_Addiction</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- ========== 耐受 ========== -->
+    
+    <HediffDef>
+        <defName>Celes_NerveStimulateTolerance</defName>
+        <label>NS-90 tolerant brain fog</label>
+        <description>Forced maintenance of arousal via NS-90 causes the nervous system to develop severe tolerance and fall into a state of brain fog, with a reduced ability to be conscious and more easily fatigued.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.15</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_DrugEffectFactor">
+                <chemical>Celes_NerveStimulate</chemical>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <label>small</label>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.03</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <RestFallRateFactor>0.1</RestFallRateFactor>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.50</minSeverity>
+                <label>large</label>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <RestFallRateFactor>0.3</RestFallRateFactor>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.80</minSeverity>
+                <label>massive</label>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <RestFallRateFactor>0.5</RestFallRateFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>Celes_NerveStimulateTolerance_T</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>Celes_NerveStimulateTolerance</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>NS-90 tolerant brain fog(small)</label>
+                <description>A bit of a daze ......</description>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>NS-90 tolerant brain fog(large)</label>
+                <description>I feel a bit dizzy, but it's not right, is it an illusion ......?</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>NS-90 tolerant brain fog(massive)</label>
+                <description>I feel like I'm mentally fatigued, but I'm clearly not ...... I'm having such a hard time concentrating ......</description>
+                <baseMoodEffect>-7</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!-- ========== 后效 ========== -->
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>Celes_NS90_After</defName>
+        <label>NS-90 acute brain fog</label>
+        <description>Perhaps due to work overload or a drug overdose, the patient developed severe cognitive dissonance, which required at least half a day to adjust and recover.</description>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>30000~60000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <vomitMtbDays>0.3</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.9</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <postFactor>0.75</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <postFactor>0.75</postFactor>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <RestFallRateFactor>1</RestFallRateFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

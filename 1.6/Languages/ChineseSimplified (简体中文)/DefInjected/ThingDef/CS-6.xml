@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_CS6M.label>CS-6作战增强剂</Celes_CS6M.label>
+    <Celes_CS6M.description>一种合成化学制剂，用于全面提高使用者的战斗能力，并短暂抑制使用者的睡眠需求。注意，CS-6通过过载细胞活性实现机体增强，其后效有一定致命性。\n\n这种复合制剂在活跃神经系统之外，对全身各系统都有一定程度的强化和过载，这种透支身体的药物长期使用会大幅降低预期寿命。毫无疑问，过量使用这种药物是相当危险的。</Celes_CS6M.description>
+    <!-- EN: A synthetic chemical agent used to fully enhance the user's combat abilities and briefly suppress the user's need to sleep. Note that CS-6 achieves organic enhancement by overloading cellular activity, and its after-effects are somewhat lethal. \n\nThis compound agent, in addition to activating the nervous system, has a certain degree of strengthening and overloading of all systems of the body, and the long-term use of this kind of overdrafting drug will drastically reduce life expectancy. There is no doubt that overdose of this drug is quite dangerous. -->
+    <Celes_CS6M.ingestible.ingestCommandString>注射{0}</Celes_CS6M.ingestible.ingestCommandString>
+    <Celes_CS6M.ingestible.ingestReportString>正在注射{0}</Celes_CS6M.ingestible.ingestReportString>
+
+</LanguageData>

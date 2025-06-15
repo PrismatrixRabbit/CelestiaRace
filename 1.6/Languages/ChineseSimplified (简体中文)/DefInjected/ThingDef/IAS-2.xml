@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_IAS2M.label>IAS-2免疫增强剂</Celes_IAS2M.label>
+    <Celes_IAS2M.description>一种改良的合成药物，全面提升了使用者的免疫机能，并在血液中维持特殊药物。阻断疟疾，昏睡病，瘟疫等疾病的传染，抑制伤口感染，并对各类寄生虫的幼虫及虫卵具有毒害作用。\n\n注意：这种药物如同佩诺西林一样，无法治疗已经患上的疾病，只能用于预防。</Celes_IAS2M.description>
+    <!-- EN: An improved synthetic drug that comprehensively boosts the immune function of the user and maintains special drugs in the bloodstream. Blocks the transmission of diseases such as malaria, sleeping sickness, and plague, inhibits wound infections, and is toxic to the larvae and eggs of all types of parasites. \n\n Note: This drug, like penicillin, cannot cure diseases already contracted, but can only be used for prevention. -->
+    <Celes_IAS2M.ingestible.ingestCommandString>服用{0}</Celes_IAS2M.ingestible.ingestCommandString>
+    <Celes_IAS2M.ingestible.ingestReportString>正在服用{0}</Celes_IAS2M.ingestible.ingestReportString>
+
+</LanguageData>

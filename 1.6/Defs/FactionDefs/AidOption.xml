@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ========== 物品 ========== -->
+
+	<CelesFeature.AidOptionDef>
+        <defName>Option_Drop11</defName>
+        <label>request two stacks of MREs.(1 Pioneer Key)</label>
+        <cooldown>120000</cooldown>
+        <requests>
+            <CelesKeyCard>1</CelesKeyCard>
+        </requests>
+        <isDrop>true</isDrop>
+        <effects>
+            <li Class="CelesFeature.AidEffect_Drop">
+                <things>
+                    <li>
+						<CelesMRE>20</CelesMRE>
+                    </li>
+                </things>
+                <dropPod>ActiveDropPodMechanoid</dropPod>
+                <faller>DropPodIncomingMechanoidRapid</faller>
+            </li>
+        </effects>
+    </CelesFeature.AidOptionDef>
+
+	<CelesFeature.AidOptionDef>
+		<defName>Option_Drop12</defName>
+		<label>request a little medicine.(1 Pioneer Key)</label>
+		<cooldown>150000</cooldown>
+		<requests>
+			<CelesKeyCard>1</CelesKeyCard>
+		</requests>
+		<isDrop>true</isDrop>
+		<effects>
+			<li Class="CelesFeature.AidEffect_Drop">
+				<things>
+					<li>
+						<MedicineCeles>5</MedicineCeles>
+					</li>
+				</things>
+				<dropPod>ActiveDropPodMechanoid</dropPod>
+				<faller>DropPodIncomingMechanoidRapid</faller>
+			</li>
+		</effects>
+	</CelesFeature.AidOptionDef>
+	
+	<CelesFeature.AidOptionDef>
+		<defName>Option_Drop13</defName>
+		<label>request three stacks of steels.(1 Pioneer Key)</label>
+		<cooldown>150000</cooldown>
+		<requests>
+			<CelesKeyCard>1</CelesKeyCard>
+		</requests>
+		<isDrop>true</isDrop>
+		<effects>
+			<li Class="CelesFeature.AidEffect_Drop">
+				<things>
+					<li>
+						<Steel>225</Steel>
+					</li>
+				</things>
+				<dropPod>ActiveDropPodMechanoid</dropPod>
+				<faller>DropPodIncomingMechanoidRapid</faller>
+			</li>
+		</effects>
+	</CelesFeature.AidOptionDef>
+
+	<CelesFeature.AidOptionDef>
+		<defName>Option_Drop21</defName>
+		<label>request a stack of silver.(2 Pioneer Key)</label>
+		<cooldown>270000</cooldown>
+		<requests>
+			<CelesKeyCard>2</CelesKeyCard>
+		</requests>
+		<isDrop>true</isDrop>
+		<effects>
+			<li Class="CelesFeature.AidEffect_Drop">
+				<things>
+					<li>
+						<Silver>500</Silver>
+					</li>
+				</things>
+				<dropPod>ActiveDropPodMechanoid</dropPod>
+				<faller>DropPodIncomingMechanoidRapid</faller>
+			</li>
+		</effects>
+	</CelesFeature.AidOptionDef>
+
+	<CelesFeature.AidOptionDef>
+		<defName>Option_Drop22</defName>
+		<label>request a small pile of components.(2 Pioneer Key)</label>
+		<cooldown>270000</cooldown>
+		<requests>
+			<CelesKeyCard>2</CelesKeyCard>
+		</requests>
+		<isDrop>true</isDrop>
+		<effects>
+			<li Class="CelesFeature.AidEffect_Drop">
+				<things>
+					<li>
+						<ComponentIndustrial>15</ComponentIndustrial>
+					</li>
+				</things>
+				<dropPod>ActiveDropPodMechanoid</dropPod>
+				<faller>DropPodIncomingMechanoidRapid</faller>
+			</li>
+		</effects>
+	</CelesFeature.AidOptionDef>
+
+	<CelesFeature.AidOptionDef>
+		<defName>Option_Drop31</defName>
+		<label>request artillery strike targeter.(4 Pioneer Key)</label>
+		<cooldown>840000</cooldown>
+		<requests>
+			<CelesKeyCard>4</CelesKeyCard>
+		</requests>
+		<isDrop>true</isDrop>
+		<effects>
+			<li Class="CelesFeature.AidEffect_Drop">
+				<things>
+					<li>
+						<CelesArtilleryTargeter>2</CelesArtilleryTargeter>
+					</li>
+				</things>
+				<dropPod>ActiveDropPodMechanoid</dropPod>
+				<faller>DropPodIncomingMechanoidRapid</faller>
+			</li>
+		</effects>
+	</CelesFeature.AidOptionDef>
+
+	<!-- ========== 人员 ========== -->
+	
+	<CelesFeature.AidOptionDef>
+        <defName>Option_Aid01</defName>
+        <label>request celestia field construction team.(1 Pioneer Key)</label>
+        <cooldown>270000</cooldown>        <!-- 冷却 -->
+        <requests>            <!-- 需要物资 -->
+            <CelesKeyCard>1</CelesKeyCard>
+        </requests>
+        <isDrop>false</isDrop>
+        <effects>            <!-- 效果 -->
+            <li Class="CelesFeature.AidEffect_Quest">
+                <def>Celes_Permit_CallLaborers</def>
+                <faction>Celes_Faction</faction>                <!-- 呼叫的派系 -->
+                <aidParameter>                    <!-- 来的人的参数 -->
+                    <favorCost>4</favorCost>
+                    <pawnKindDef>Celes_ServantUnit</pawnKindDef>
+                    <pawnCount>4</pawnCount>
+                    <aidDurationDays>4</aidDurationDays>
+                    <targetingRange>44.9</targetingRange>
+                    <targetingRequireLOS>false</targetingRequireLOS>
+                </aidParameter>
+            </li>
+        </effects>
+    </CelesFeature.AidOptionDef>
+
+	<CelesFeature.AidOptionDef>
+		<defName>Option_Aid02</defName>
+		<label>request celestia volunteer pioneer team.(2 Pioneer Key)</label>
+		<cooldown>270000</cooldown>
+		<requests>
+			<CelesKeyCard>2</CelesKeyCard>
+		</requests>
+		<isDrop>false</isDrop>
+		<effects>
+			<li Class="CelesFeature.AidEffect_Quest">
+				<def>Celes_Permit_CallExplore</def>
+				<faction>Celes_Faction</faction>
+				<aidParameter>
+					<favorCost>4</favorCost>
+					<pawnKindDef>Celes_ArmedExplorer</pawnKindDef>
+					<pawnCount>3</pawnCount>
+					<aidDurationDays>4</aidDurationDays>
+					<targetingRange>44.9</targetingRange>
+					<targetingRequireLOS>false</targetingRequireLOS>
+				</aidParameter>
+			</li>
+		</effects>
+	</CelesFeature.AidOptionDef>
+
+	<CelesFeature.AidOptionDef>
+        <defName>Option_Aid03</defName>
+        <label>request celestia vanguard combat squad.(3 Pioneer Key)</label>
+        <cooldown>570000</cooldown>
+        <requests>
+            <CelesKeyCard>3</CelesKeyCard>
+        </requests>
+        <isDrop>false</isDrop>
+        <effects>
+            <li Class="CelesFeature.AidEffect_Quest">
+                <def>Celes_Permit_CallForces</def>
+                <faction>Celes_Faction</faction>
+                <aidParameter>
+                    <favorCost>4</favorCost>
+                    <pawnKindDef>Celes_Scout</pawnKindDef>
+                    <pawnCount>3</pawnCount>
+                    <aidDurationDays>2</aidDurationDays>
+                    <targetingRange>44.9</targetingRange>
+                    <targetingRequireLOS>false</targetingRequireLOS>
+                </aidParameter>
+            </li>
+        </effects>
+    </CelesFeature.AidOptionDef>
+
+	<CelesFeature.AidOptionDef>
+		<defName>Option_Aid04</defName>
+		<label>request celestia regular marine squad.(5 Pioneer Key)</label>
+		<cooldown>840000</cooldown>
+		<requests>
+			<CelesKeyCard>5</CelesKeyCard>
+		</requests>
+		<isDrop>false</isDrop>
+		<effects>
+			<li Class="CelesFeature.AidEffect_Quest">
+				<def>Celes_Permit_CallForces</def>
+				<faction>Celes_Faction</faction>
+				<aidParameter>
+					<favorCost>4</favorCost>
+					<pawnKindDef>Celes_Elite</pawnKindDef>
+					<pawnCount>3</pawnCount>
+					<aidDurationDays>2</aidDurationDays>
+					<targetingRange>44.9</targetingRange>
+					<targetingRequireLOS>false</targetingRequireLOS>
+				</aidParameter>
+			</li>
+		</effects>
+	</CelesFeature.AidOptionDef>
+
+	<!-- ========== 交易 ========== -->
+
+	<CelesFeature.TradeOptionDef>
+        <defName>TradeOption_Goodwill</defName>
+        <label>TradeOption</label>
+        <tradeType>GoodWill</tradeType>        <!-- 交易类型 -->
+        <goodwillRequest>15~55</goodwillRequest>
+        <rewards>            <!-- 交易物资 -->
+            <CelesKeyCard>1</CelesKeyCard>
+        </rewards>
+        <dropPod>ActiveDropPodMechanoid</dropPod>        <!-- 填空投仓的def -->
+        <faller>DropPodIncomingMechanoidRapid</faller>        <!-- 填skyfaller -->
+    </CelesFeature.TradeOptionDef>
+
+    <CelesFeature.TradeOptionDef>
+        <defName>TradeOption_Small</defName>
+        <label>TradeOption</label>
+        <tradeType>Small</tradeType>
+        <requests>
+			<Celes_IndustrialChips>5</Celes_IndustrialChips>
+        </requests>
+        <rewards>
+            <CelesKeyCard>1</CelesKeyCard>
+        </rewards>
+        <dropPod>ActiveDropPodMechanoid</dropPod>
+        <faller>DropPodIncomingMechanoidRapid</faller>
+    </CelesFeature.TradeOptionDef>
+
+	<CelesFeature.TradeOptionDef>
+        <defName>TradeOption_Big</defName>
+        <label>TradeOption</label>
+        <tradeType>Big</tradeType>
+		<requests>
+			<CelesAlloy>80</CelesAlloy>
+		</requests>
+		<rewards>
+			<CelesKeyCard>1</CelesKeyCard>
+		</rewards>
+        <dropPod>ActiveDropPodMechanoid</dropPod>
+        <faller>DropPodIncomingMechanoidRapid</faller>
+    </CelesFeature.TradeOptionDef>
+
+	<CelesFeature.TradeOptionDef>
+        <defName>TradeOption_Back</defName>
+        <label>TradeOption</label>
+        <tradeType>Back</tradeType>
+        <requests>
+            <CelesKeyCard>5</CelesKeyCard>
+        </requests>
+        <rewards>
+			<Celes_STCLock>1</Celes_STCLock>
+        </rewards>
+        <dropPod>ActiveDropPodMechanoid</dropPod>
+        <faller>DropPodIncomingMechanoidRapid</faller>
+    </CelesFeature.TradeOptionDef>
+
+
+</Defs>

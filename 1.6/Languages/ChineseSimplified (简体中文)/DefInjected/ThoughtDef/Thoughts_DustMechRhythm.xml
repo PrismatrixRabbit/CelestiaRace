@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_DustMechRhythm_ProtocolII_Thought.stages.0.label>协议二：坚守任务</Celes_DustMechRhythm_ProtocolII_Thought.stages.0.label>
+    <!-- EN:  -->
+    <Celes_DustMechRhythm_ProtocolII_Thought.stages.0.description>坚守任务！永不言弃！</Celes_DustMechRhythm_ProtocolII_Thought.stages.0.description>
+    <!-- EN:  -->
+    <Celes_DustMechRhythm_ProtocolII_Thought.stages.1.label>协议二：坚守任务</Celes_DustMechRhythm_ProtocolII_Thought.stages.1.label>
+    <!-- EN:  -->
+    <Celes_DustMechRhythm_ProtocolII_Thought.stages.1.description>坚守任务！永不言弃！</Celes_DustMechRhythm_ProtocolII_Thought.stages.1.description>
+    <!-- EN:  -->
+
+    <!-- ========== 侍从节律 ========== -->
+
+    <Celes_DustMechRhythm_Serve_Thought.stages.0.label>侍从建构(尘构活跃)</Celes_DustMechRhythm_Serve_Thought.stages.0.label>
+    <Celes_DustMechRhythm_Serve_Thought.stages.0.description>完成使命，为了神圣的服侍。</Celes_DustMechRhythm_Serve_Thought.stages.0.description>
+    <Celes_DustMechRhythm_Serve_Thought.stages.1.label>侍从建构(尘构充足)</Celes_DustMechRhythm_Serve_Thought.stages.1.label>
+    <Celes_DustMechRhythm_Serve_Thought.stages.1.description>需要……完成使命，为了……服侍。</Celes_DustMechRhythm_Serve_Thought.stages.1.description>
+    <Celes_DustMechRhythm_Serve_Thought.stages.2.label>侍从建构(尘构匮乏)</Celes_DustMechRhythm_Serve_Thought.stages.2.label>
+    <Celes_DustMechRhythm_Serve_Thought.stages.2.description>我需要完成使命，为了服侍殖民地。</Celes_DustMechRhythm_Serve_Thought.stages.2.description>
+    <Celes_DustMechRhythm_Serve_Thought.stages.3.label>侍从建构(尘构宕机)</Celes_DustMechRhythm_Serve_Thought.stages.3.label>
+    <Celes_DustMechRhythm_Serve_Thought.stages.3.description>……我头晕眼花，我为什么在这里……？</Celes_DustMechRhythm_Serve_Thought.stages.3.description>
+
+</LanguageData>

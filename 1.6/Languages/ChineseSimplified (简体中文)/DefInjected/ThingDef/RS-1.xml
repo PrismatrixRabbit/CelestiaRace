@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_RS1M.label>RS-1试验性强化剂</Celes_RS1M.label>
+    <Celes_RS1M.description>一种合成尘构制剂，大幅全面强化使用者的身体机能，使其成为强大无匹的战争机器。但注意，摄入RS-1的同时伴随着高概率的昏迷与心脏病副作用。\n\n这种药物本质上是被调整了指令的路西法合剂，通过利用尘构对路西法合剂的指令进行覆写和过载，RS-1的研发者成功解决了这种纳米机械混合物在协调能力上的缺陷和难以排出身体的问题，但随之而来的是尘构和路西法合剂的交叉影响导致的高度不稳定。</Celes_RS1M.description>
+    <!-- EN: A synthetic Dust-Mech agent that drastically and comprehensively strengthens the user's body, making it a powerful and unrivalled war machine. Note, however, that the ingestion of RS-1 is accompanied by a high probability of coma and cardiac side effects. \n\nThe drug is essentially a Luciferium that has been tweaked with instructions, and by using the Dust-Mech to override and overload the instructions of the Luciferian concoction, the developers of RS-1 have managed to solve the nanomachine mixture's deficiencies in co-ordination and difficulty in expelling from the body, but with that comes a high degree of instability due to the cross-influence of the Dust-Mech and Luciferium. -->
+    <Celes_RS1M.ingestible.ingestCommandString>注射{0}</Celes_RS1M.ingestible.ingestCommandString>
+    <Celes_RS1M.ingestible.ingestReportString>正在注射{0}</Celes_RS1M.ingestible.ingestReportString>
+
+</LanguageData>

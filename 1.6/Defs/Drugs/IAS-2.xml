@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="MakeableDrugBase">
+        <defName>Celes_IAS2M</defName>
+        <label>IAS-2 immunoagonist stimulants</label>
+        <description>A drug for preventing varieties infections before they take hold. Blocks cancer, infection, malaria, sleeping sickness, plague. Must be taken every five days to remain effective.\n\nThis drug only prevents new infections. It does not cure existing infections - even those that are not yet discovered.</description>
+        <possessionCount>10</possessionCount>
+        <descriptionHyperlinks><HediffDef>Celes_IASHigh</HediffDef></descriptionHyperlinks>
+        <graphicData>
+            <texPath>Celes/Drugs/IAS2</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>600</WorkToMake>
+            <MarketValue>30</MarketValue>
+            <Mass>0.005</Mass>
+            <Flammability>0.7</Flammability>
+        </statBases>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <foodType>Processed</foodType>
+            <baseIngestTicks>650</baseIngestTicks>
+            <nurseable>true</nurseable>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>Celes_IASHigh</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>2</Neutroamine>
+            <Celes_BioGel>2</Celes_BioGel>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>1000</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef>
+        <defName>Celes_IASHigh</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>IAS-2 immune-activating stimulants</label>
+        <description>The IAS-2 chemicals flowing through the bloodstream are preventing disease from occurring, but this does not stop the disease that has already occurred.</description>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.18</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <CancerRate  MayRequire="Ludeon.RimWorld.Biotech">0.1</CancerRate>
+                </statFactors>
+                <makeImmuneTo>
+                    <li>Malaria</li>
+                    <li>SleepingSickness</li>
+                    <li>Plague</li>
+                    <li>MuscleParasites</li>
+                    <li>GutWorms</li>
+                    <li>WoundInfection</li>
+                    <li>Flu</li>
+                </makeImmuneTo>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_RS1_High.label>RS-1试验性强化剂</Celes_RS1_High.label>
+    <Celes_RS1_High.description>体内被重编程的路西法合剂正在全面改善宿主的身体机能，并将在一段时间后被尘构分解无效化。</Celes_RS1_High.description>
+    <!-- EN: The reprogrammed Luciferium in the body is improving the host's bodily functions across the board and will be nullified by Dust-Mech decomposition after some time. -->
+
+    <Celes_RS1Stun.label>应激性休克</Celes_RS1Stun.label>
+    <Celes_RS1Stun.description>不稳定的路西法合剂导致使用者的身体进入了无害的保护性休克状态，这会花费至少一天来恢复。</Celes_RS1Stun.description>
+    <!-- EN: The unstable Luciferium caused the user's body to go into a harmless state of protective shock, which would take at least a day to recover from. -->
+
+</LanguageData>

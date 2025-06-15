@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RulePackDef>
+		<defName>CelespawnName</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>Celes_Surname->[Last]</li>
+				<li>Celes_Name->[First]</li>
+				<li>Celes_Nickname->[Nick]</li>
+				<li>Celes_Number->[Number]</li>
+				<li>Celes_Position->[Position]</li>
+				<li>Celes_Site->[Site]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Last->Names/Celes_Last</li>
+				<li>First->Names/Celes_First</li>
+				<li>Nick->Names/Celes_Nick</li>
+				<li>Number->Names/Celes_Number</li>
+				<li>Position->Names/Celes_Position</li>
+				<li>Site->Names/Celes_Site</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPerson_Celes</defName>
+		<include>
+			<li>CelespawnName</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!--<li>r_name->[Celes_Name] '[Celes_Nickname]' [Celes_Surname]</li>-->
+				<li>r_name->[Celes_Name] [Celes_Surname]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>CelesFaction_Namer</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Celestia's 7th Fleet Pioneer</li>
+				<li>r_name->"Pharos" United Pioneer</li>
+				<li>r_name->Celestia's 7th Fleet Outpost</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<!--<CelesFaction_Namer.rulePack.rulesStrings.0>r_name->星铃第七舰队前哨</CelesFaction_Namer.rulePack.rulesStrings.0>-->
+	
+	<RulePackDef>
+		<defName>CelesSettlement_Namer</defName>
+		<include>
+			<li>CelespawnName</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Celes_Number][Celes_Site]</li>
+				<li>r_name->[Celes_Position][Celes_Site]</li>
+				<li>r_name->[Celes_Site][Celes_Number]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>CelesInitialSettlement_Namer</defName>
+		<include>
+			<li>CelespawnName</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Celes_Position][Celes_Site]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+</Defs>

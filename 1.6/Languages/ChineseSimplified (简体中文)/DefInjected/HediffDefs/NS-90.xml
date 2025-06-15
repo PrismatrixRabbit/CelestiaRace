@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_NS90_High.label>NS-90神经兴奋剂</Celes_NS90_High.label>
+    <Celes_NS90_High.labelNoun>NS-90效果</Celes_NS90_High.labelNoun>
+    <Celes_NS90_High.description>流淌在血液中的NS-90化学物质正在帮助使用者维持清醒，并集中注意力。</Celes_NS90_High.description>
+    <!-- EN: The NS-90 chemicals that flow through the bloodstream are helping users stay awake and focused. -->
+    <Celes_NS90_High.stages.1.label>过量</Celes_NS90_High.stages.1.label>
+    <Celes_NS90_High.stages.2.label>严重过量</Celes_NS90_High.stages.2.label>
+
+    <Celes_NerveStimulateTolerance.label>NS-90耐受性脑雾</Celes_NerveStimulateTolerance.label>
+    <Celes_NerveStimulateTolerance.description>通过NS-90强行维持兴奋使得神经系统产生严重耐受并陷入脑雾状态，意识能力降低且更容易疲劳。</Celes_NerveStimulateTolerance.description>
+    <!-- EN: Forced maintenance of arousal via NS-90 causes the nervous system to develop severe tolerance and fall into a state of brain fog, with a reduced ability to be conscious and more easily fatigued. -->
+    <Celes_NerveStimulateTolerance.stages.0.label>微弱</Celes_NerveStimulateTolerance.stages.0.label>
+    <Celes_NerveStimulateTolerance.stages.1.label>严重</Celes_NerveStimulateTolerance.stages.1.label>
+    <Celes_NerveStimulateTolerance.stages.2.label>极重</Celes_NerveStimulateTolerance.stages.2.label>
+
+    <Celes_NS90_After.label>NS-90急性脑雾</Celes_NS90_After.label>
+    <Celes_NS90_After.description>或许是因为工作过量，又或是药物过量，患者产生了严重的认知失调现象，这至少需要半天的时间调整恢复。</Celes_NS90_After.description>
+    <!-- EN: Perhaps due to work overload or a drug overdose, the patient developed severe cognitive dissonance, which required at least half a day to adjust and recover. -->
+
+</LanguageData>

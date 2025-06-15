@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <CultureDef Name="CelesCulture_Base" Abstract="True">
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">Celes_LeaderTitleMaker_Pioneer</leaderTitleMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+    <allowedPlaceTags>
+      <li>OriginSpacer</li>
+    </allowedPlaceTags>
+    <iconPath>UI/Cultures/Astropolitan</iconPath>
+    <styleItemTags>
+      <li>
+        <tag>NoTattoo</tag><!--Celes_Style-->
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardRural</tag>
+        <baseWeight>0</baseWeight>
+        <weightFactor>0</weightFactor>
+      </li>
+      <li>
+        <tag>BeardUrban</tag>
+        <baseWeight>0</baseWeight>
+        <weightFactor>0</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+
+  <CultureDef ParentName="CelesCulture_Base">
+  <defName>CelesCulture</defName>
+  <label>Celestia</label>
+  <description>Cultures brought by the Celestia who came to the Rimworld, are commonly found in the Celestia Pioneers.</description>
+  <preferredWeaponClasses>
+    <noble>Ultratech</noble>
+    <despised>Neolithic</despised>
+  </preferredWeaponClasses>
+  </CultureDef>
+
+</Defs>

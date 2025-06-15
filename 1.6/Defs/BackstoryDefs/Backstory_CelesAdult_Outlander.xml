@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--============================== 外域 Outlander ============================-->
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander01</defName>
+        <title>celestia traveller</title>
+        <titleShort>traveller</titleShort>
+        <description>[PAWN_nameDef] enjoys traveling around, and the exploration experience [PAWN_pronoun] gained makes [PAWN_pronoun] more skilled in pioneering and exploring the wilderness than most Celestia natives, even though [PAWN_pronoun] still struggles to fully handle Rimworld's complex ecosystems.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Plants>2</Plants>
+            <Mining>2</Mining>
+            <Medicine>-1</Medicine>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander02</defName>
+        <title>celestia outpost bartender</title>
+        <titleShort>bartender</titleShort>
+        <description>[PAWN_nameDef] worked as a bartender and part-time brewer in a frontier outpost bar. Many of [PAWN_possessive] skills became useless under Rimworld's harsh conditions. The good news is, people here still seek bartenders to chat with, even if all [PAWN_pronoun] can offer is a cup of plain water.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Social>4</Social>
+            <Cooking>3</Cooking>
+            <Shooting>-2</Shooting>
+            <Mining>-1</Mining>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander03</defName>
+        <title>celestia liaison officer</title>
+        <titleShort>liaison officer</titleShort>
+        <description>[PAWN_nameDef] operated radio equipment at Celestia's relay communication station, maintaining contact between outposts. The terrible electromagnetic environment and makeshift cobbled-together equipment made [PAWN_pronoun] deeply envy seniors working in the home star system: they reportedly only needed automated DustMech to maintain the equipment while enjoying salted potato chips in comfortable rooms!</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+            <Social>3</Social>
+            <Crafting>-2</Crafting>
+            <Mining>-1</Mining>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander04</defName>
+        <title>celestia outpost guard</title>
+        <titleShort>guard</titleShort>
+        <description>[PAWN_nameDef] received basic training to perform auxiliary security duties at Celestia outposts. Putting out fires, maintaining order, clearing insect infestations. Though not a professional, [PAWN_pronoun] was more than capable of handling minor disturbances in the Rimworld.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Melee>2</Melee>
+            <Medicine>1</Medicine>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander05</defName>
+        <title>celestia lucky hunter</title>
+        <titleShort>hunter</titleShort>
+        <description>[PAWN_nameDef] hunted wild animals for the outpost, relying almost entirely on luck with only a 50% chance of bringing back prey.\n\nBut one time, [PAWN_pronoun] miraculously encountered a bleeding thrumbo. When [PAWN_pronoun] dragged the beast back to the outpost, everyone gazed at [PAWN_objective] with mixed envy and disbelief.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Animals>4</Animals>
+            <Shooting>3</Shooting>
+            <Medicine>-2</Medicine>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander06</defName>
+        <title>celestia reclusive hunter</title>
+        <titleShort>hunter</titleShort>
+        <description>[PAWN_nameDef] grew weary of social life and eventually chose seclusion, hunting for food while occasionally visiting settlements for supplies.\n\nOne day, after ambushing a thrumbo into critical condition, the beast suddenly rallied and escaped [PAWN_possessive] sight. [PAWN_nameDef] abruptly realized cooperative hunting might be better.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Animals>4</Animals>
+            <Social>-3</Social>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander07</defName>
+        <title>celestia relic farmer</title>
+        <titleShort>farmer</titleShort>
+        <description>[PAWN_nameDef] was responsible for food supply at a Celestia outpost, not through labor but knowledge. The outpost possessed automated agricultural equipment dismantled from The Navigator Programme, making [PAWN_pronoun] more of an engineer than a farmer. By maintaining the self-powered automated farm at minimal operation, [PAWN_pronoun] could supply food for multiple surrounding colonies, with surplus energy even sustaining the entire outpost's power grid.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Plants>3</Plants>
+            <Crafting>2</Crafting>
+            <Mining>-2</Mining>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander08</defName>
+        <title>celestia farmer</title>
+        <titleShort>farmer</titleShort>
+        <description>The exaggerated creature sizes in Rimworld made [PAWN_possessive] farming efforts unexpectedly difficult. Just subduing giant rodents took considerable effort, not to mention dealing with enraged wildlife and raiders destroying crops. [PAWN_pronoun] often had to roll up [PAWN_possessive] sleeves to drive these bastards back home.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Plants>4</Plants>
+            <Melee>3</Melee>
+            <Animals>2</Animals>
+            <Social>-1</Social>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander09</defName>
+        <title>celestia senior architect</title>
+        <titleShort>architect</titleShort>
+        <description>[PAWN_nameDef] was the senior architect of the outpost. Not only did [PAWN_pronoun] study construction blueprints from The Navigator Programme, but also designed new Rimworld-adapted structures. [PAWN_pronoun] personally participated in all colonial construction projects, ultimately building a new home with companions.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Construction>5</Construction>
+            <Intellectual>3</Intellectual>
+            <Crafting>2</Crafting>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander10</defName>
+        <title>celestia mineral prospector</title>
+        <titleShort>prospector</titleShort>
+        <description>[PAWN_nameDef] scouted mineral deposits for Celestia pioneers, sometimes joining merchant caravans, sometimes venturing alone into unexplored regions. While some believed in Celestia's survival, [PAWN_pronoun] was convinced they would build another glitter world here. Rediscovering the planet's hidden resources was the first step toward that future.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Mining>4</Mining>
+            <Intellectual>3</Intellectual>
+            <Plants>1</Plants>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander11</defName>
+        <title>celestia alien-creature cooking master</title>
+        <titleShort>cook</titleShort>
+        <description>Thanks to an anonymous predecessor's alien cooking guide in The Navigator Programme database, [PAWN_nameDef] learned to safely process Rimworld's bizarre creatures and make them palatable. As [PAWN_pronoun] put it, combining these monstrosities with unadapted microbes made food poisoning prevention the real challenge.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Cooking>5</Cooking>
+            <Medicine>2</Medicine>
+            <Social>-3</Social>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander12</defName>
+        <title>celestia navigator-tech archaeologist</title>
+        <titleShort>archaeologist</titleShort>
+        <description>Celestia colonists arriving via The Navigator Programme faced technological discontinuity. Though the "Self-explanatory Tech Core" could holographically display their tech, practical implementation remained challenging. These technologies became known as Navigator Tech.\n\n[PAWN_nameDef], a specialist in recreating Navigator Tech, possessed eccentric thinking and social awkwardness that ironically granted [PAWN_objective] exceptional aptitude. Combined with manual skills, [PAWN_pronoun] brought forgotten technologies back to light.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+            <Crafting>6</Crafting>
+            <Social>-4</Social>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander13</defName>
+        <title>celestia old-school artist</title>
+        <titleShort>artist</titleShort>
+        <description>[PAWN_nameDef] always believed [PAWN_pronoun] had artistic talent, yet nobody appreciated [PAWN_possessive] masterpieces. A chance discovery of classical art forms from The Navigator Programme database made [PAWN_pronoun] question whether [PAWN_pronoun] was born in the wrong era or if modern Celestia's aesthetics had regressed.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Artistic>4</Artistic>
+            <Intellectual>2</Intellectual>
+            <Social>-3</Social>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander14</defName>
+        <title>celestia outpost doctor</title>
+        <titleShort>doctor</titleShort>
+        <description>[PAWN_nameDef] ran a clinic at a Celestia outpost, treating pioneers and caravan members for fees. Claiming [PAWN_possessive] skills came from family "tricks", though none could verify if this mentor truly existed.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Medicine>5</Medicine>
+            <Social>2</Social>
+            <Shooting>-2</Shooting>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory">
+        <defName>Celes_Backstory_Outlander15</defName>
+        <title>celestia outpost leader</title>
+        <titleShort>leader</titleShort>
+        <description>Initially offering suggestions to stop inefficiency, [PAWN_nameDef] soon realized communication failures caused disputes. By understanding needs and proposing collaborative solutions, [PAWN_pronoun] gradually became the de facto leader when the outpost adopted [PAWN_possessive] effective guidance.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>3</Intellectual>
+            <Mining>-2</Mining>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Outlander</li>
+            <li>Celes_OutlanderLeader</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+
+    <!--============================== 军事 Military ============================-->
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory_Military">
+        <defName>Celes_Backstory_Military01</defName>
+        <title>celestia soldier</title>
+        <titleShort>soldier</titleShort>
+        <description>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</description>
+        <slot>Adulthood</slot>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+            <Social>-2</Social>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory_Military">
+        <defName>Celes_Backstory_Military02</defName>
+        <title>celestia vanguard squad soldier</title>
+        <titleShort>vanguard</titleShort>
+        <description>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory_Military">
+        <defName>Celes_Backstory_Military03</defName>
+        <title>celestia vanguard squad soldier</title>
+        <titleShort>vanguard</titleShort>
+        <description>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory_Military">
+        <defName>Celes_Backstory_Military04</defName>
+        <title>celestia vanguard squad soldier</title>
+        <titleShort>vanguard</titleShort>
+        <description>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="Celes_BaseAdultBackstory_Military">
+        <defName>Celes_Backstory_Military05</defName>
+        <title>celestia vanguard squad soldier</title>
+        <titleShort>vanguard</titleShort>
+        <description>[PAWN_nameDef] initially joined Celestia's army only to take revenge, hostile forces destroyed [PAWN_possessive] homeland in a surprise attack without a second thought, so [PAWN_pronoun] enlisted in the army hoping to take revenge on those bandits as well in anger. There were also many who discouraged [PAWN_nameDef], but until [PAWN_pronoun] actually calmed down, these words did nothing to quench [PAWN_possessive] anger.</description>
+        <slot>Adulthood</slot>
+        <skillGains>
+        </skillGains>
+        <spawnCategories>
+            <li>Celes_Military</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+</Defs>

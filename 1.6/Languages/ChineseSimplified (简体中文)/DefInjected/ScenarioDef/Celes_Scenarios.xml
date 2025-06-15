@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Celes_Scenarios.label>地上的星铃</Celes_Scenarios.label>
+  <!-- EN: Celestia on the ground. -->
+  <Celes_Scenarios.description>作为领航计划的拓荒者，搭乘着＂北极星＂号的你们本应被智能机械，至少是这艘世代飞船的船员唤醒，迎接新世界的黎明。而不是被自称来自＂星铃第七舰队＂的海军陆战队士兵在有机质与机械的烧灼味中拉出了冬眠舱。在他们的帮助下，你们两人搭上了逃离飞船的逃生舱。在冲入大气层前回望的某个瞬间，你们看见了被晶莹蓝光缠绕的世代飞船，在如同新星般的火光中骤然消逝。</Celes_Scenarios.description>
+  <!-- EN: As pioneers of The Navigator Programme, you aboard the Polaris should have been awakened to the dawn of a new world by intelligent machinery, or at least by the crew of this generational ship. Instead, you were pulled out of your hibernation pods by marines claiming to be from Celestia's Seventh Fleet, amidst the burning smell of organic matter and machinery. With their help, the two of you were able to hitch a ride on an escape pod from the ship. Looking back at a moment before you entered the atmosphere, you saw the Generation ship, wreathed in crystalline blue light, fade away in a flash of fire like a nova. -->
+  <Celes_Scenarios.scenario.name>地上的星铃</Celes_Scenarios.scenario.name>
+  <!-- EN: Celestia on the ground. -->
+  <Celes_Scenarios.scenario.summary>两名遭遇意外，迫降在这个边缘世界的星铃。</Celes_Scenarios.scenario.summary>
+  <!-- EN: Two Celestia who suffered an accident and were forced to land in this Rimworld. -->
+  <Celes_Scenarios.scenario.description>作为领航计划的拓荒者，搭乘着＂北极星＂号的你们本应被智能机械，至少是这艘世代飞船的船员唤醒，迎接新世界的黎明。而不是被自称来自＂星铃第七舰队＂的海军陆战队士兵在有机质与机械的烧灼味中拉出了冬眠舱。在他们的帮助下，你们两人搭上了逃离飞船的逃生舱。在冲入大气层前回望的某个瞬间，你们看见了被晶莹蓝光缠绕的世代飞船，在如同新星般的火光中骤然消逝。\n&lt;color=#3d3e3f&gt;＂错误：无法获取实例，自我维修系统离……已上线，集群已接管北极星号。＂&lt;/color&gt;</Celes_Scenarios.scenario.description>
+  <!-- EN: As pioneers of The Navigator Programme, you aboard the Polaris should have been awakened to the dawn of a new world by intelligent machinery, or at least by the crew of this generational ship. Instead, you were pulled out of your hibernation pods by marines claiming to be from Celestia's Seventh Fleet, amidst the burning smell of organic matter and machinery. With their help, the two of you were able to hitch a ride on an escape pod from the ship. Looking back at a moment before you entered the atmosphere, you saw the Generation ship, wreathed in crystalline blue light, fade away in a flash of fire like a nova. \n&lt;color=#3d3e3f&gt;"ERROR: Unable to get instance, self-maintenance system away from ...... is online, CLUSTER has taken over Polaris." &lt;/color&gt;　-->
+  
+  <Celes_Scenarios.scenario.parts.0.text>坏消息，坠毁了。\n\n你们两人逃离了已经四分五裂的＂北极星＂号，和其他拓荒者走散，降落在这个陌生而未知的边缘世界。飞船的残骸大多在大气层中化为流星，而剩下的则不断坠落在你们身边。\n\n现在是时候制定一份计划，关于如何在这蛮荒之地生存下来。</Celes_Scenarios.scenario.parts.0.text>
+  <!-- EN: Bad news, crash reporting. \n\nThe two of you escaped the fragmented Polaris, separated from the other pioneers, and landed on a strange and unknown Rimworld. Much of the ship's wreckage has been reduced to meteors in the atmosphere, while the rest has continued to fall around you. \n\nIt's time to formulate a plan on how to survive in this barren land. -->
+
+
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_Abyssia_Race.label>渊铃</Celes_Abyssia_Race.label>
+    <Celes_Abyssia_Race.description>星铃们的创造者，渊洋的开拓者，亦是最初的星铃，渊铃。她们是一群来自闪耀世界的半有机半机械先进种族，与数千年前的人类远祖在生理结构上已经相去甚远。长久以来在深海的生活彻底改造了她们的生活习惯与生存形态。神经系统由分布式运算单元重塑，过半的躯体由尘构物质组成，使得她们已经与人类鲜有共通之处。\n\n她们在边缘世界往往极其罕见，甚至只有极少数似是而非的目击报告。</Celes_Abyssia_Race.description>
+    <Celes_Abyssia_Race.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>skin</Celes_Abyssia_Race.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+    <Celes_Abyssia_Race.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>hair</Celes_Abyssia_Race.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+    <Celes_Abyssia_Race.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>Blank</Celes_Abyssia_Race.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>
+
+
+</LanguageData>

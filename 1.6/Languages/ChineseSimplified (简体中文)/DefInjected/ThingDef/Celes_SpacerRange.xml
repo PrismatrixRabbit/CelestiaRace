@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_Spacer_Rifle.label>星铃制式突击步枪</Celes_Spacer_Rifle.label>
+    <!-- EN: Celestia standard assault rifle  -->
+    <Celes_Spacer_Rifle.description>一把星铃制式标准的突击步枪，有着均衡的射程射速，精准度有所提升，被广泛用于星铃正面军事力量。使用标准星铃能量仓，发射中型极化粒子束射弹。\n\n一把真正的星铃武器，其每一发子弹都携带着极高的穿透性与夸张能量密度，可以对软硬目标同时造成可观的毁伤，迅速压制并干扰敌方的护盾系统，甚至足以干扰机械体的内部电路。</Celes_Spacer_Rifle.description>
+    <!-- EN: A Celestia standard assault rifle with a balanced rate of fire and improved accuracy, widely used by Celestia's frontal military forces. Uses a standard Celestia energy chamber and fires medium polarised particle projectile. \n\n A true Celestia weapon, each of its rounds carries a high penetration and energy density that can cause considerable damage to both soft and hard targets, quickly suppressing and disrupting the enemy's shield systems, and even enough to disrupt the internal circuitry of a mechanical body.  -->
+    <Celes_Spacer_Rifle.tools.0.label>枪托</Celes_Spacer_Rifle.tools.0.label>
+    <!-- EN: stock  -->
+    <Celes_Spacer_Rifle.tools.1.label>枪管</Celes_Spacer_Rifle.tools.1.label>
+    <!-- EN: barrel  -->
+
+    <Celes_HEPT.label>放射性高能等离子体</Celes_HEPT.label>
+    <!-- EN: radioactive high energy plasma  -->
+
+    <Celes_Spacer_SMG.label>星铃制式冲锋枪</Celes_Spacer_SMG.label>
+    <!-- EN: Celestia standard submachine gun  -->
+    <Celes_Spacer_SMG.description>一把星铃制式标准的冲锋枪，射速极快但射程较近，往往被用作文职人员的PDW。使用标准星铃能量仓，发射轻型极化粒子束射弹。\n\n“即使遭遇紧急情况，也请尽量不要在室内狭窄地带使用。祝您有美好的一天。”</Celes_Spacer_SMG.description>
+    <!-- EN: A Celestia-standard submachine gun, extremely fast but close-range, often used as a PDW for civilians. uses a standard Celestia energy chamber and fires light polarised particle projectile. \n\n "Even in the event of an emergency, please try not to use it indoors or in a confined area. Have a nice day."  -->
+    <Celes_Spacer_SMG.tools.0.label>枪托</Celes_Spacer_SMG.tools.0.label>
+    <!-- EN: stock  -->
+    <Celes_Spacer_SMG.tools.1.label>枪管</Celes_Spacer_SMG.tools.1.label>
+    <!-- EN: barrel  -->
+
+    <Celes_Spacer_SniperRifle.label>星铃制式狙击枪</Celes_Spacer_SniperRifle.label>
+    <!-- EN: Celestia standard sniper rifle  -->
+    <Celes_Spacer_SniperRifle.description>一把星铃制式标准的狙击枪，射程远而精准，破坏力巨大，往往只需一发便能使敌人失能，但本身也过于笨重，事实上不适合野战。使用标准星铃能量仓，发射重型极化粒子束射弹。\n\n一件暴力美学的工艺品，其极化粒子束中包裹着少量的正电子，能额外对建筑造成夸张的伤害。但它的本意似乎是彻底湮灭敌对目标，让其永不超生。</Celes_Spacer_SniperRifle.description>
+    <!-- EN: A Celestia standard sniper rifle with long range and accuracy, devastatingly powerful, often disabling enemies with just one shot, but also too bulky itself for field combat in fact. Uses a standard Celestia energy chamber to fire massive polarised particle projectile. \n\n An artefact of violent aesthetics, its polarised particle is encased in a small amount of positrons, which can additionally cause exaggerated damage to buildings. However, its intent seems to be the complete annihilation of hostile targets so that they never return.  -->
+    <Celes_Spacer_SniperRifle.tools.0.label>枪托</Celes_Spacer_SniperRifle.tools.0.label>
+    <!-- EN: stock  -->
+    <Celes_Spacer_SniperRifle.tools.1.label>枪管</Celes_Spacer_SniperRifle.tools.1.label>
+    <!-- EN: barrel  -->
+
+    <Celes_Spacer_HMG.label>放射性高能等离子发射器</Celes_Spacer_HMG.label>
+    <!-- EN: radioactive high-energy plasma emitter  -->
+    <Celes_Spacer_HMG.description>一把试验性改造的放射性高能等离子发射器，能够喷射出相当恐怖的放射性等离子团，在烧伤敌人之外带来严重的辐射病。\n\n其技术核心来自于星铃的电弱转化装置，通过加速衰变反应快速分解物质。使用标准星铃能量仓。</Celes_Spacer_HMG.description>
+    <!-- EN: An experimentally modified radioactive high-energy plasma emitter capable of spewing out a rather terrifying radioactive plasma mass that brings severe radiation sickness on top of burning enemies. Uses standard Celestia energy chamber.  -->
+    <Celes_Spacer_HMG.tools.0.label>枪托</Celes_Spacer_HMG.tools.0.label>
+    <!-- EN: stock  -->
+    <Celes_Spacer_HMG.tools.1.label>枪管</Celes_Spacer_HMG.tools.1.label>
+    <!-- EN: barrel  -->
+
+    <Celes_Spacer_Launcher.label>磁重联加速器</Celes_Spacer_Launcher.label>
+    <!-- EN: magnetic reconnection accelerator  -->
+    <Celes_Spacer_Launcher.description>一把试验性改造的磁重联加速器，或者被称为＂日冕发射器＂，通过磁重联效应发射极具破坏性的高能等离子射流，剧烈的高温和爆炸下甚至没有火焰产生的机会。\n\n其核心原型是星铃聚变反应堆的脉冲式磁重联点火控制线圈，通过定向输出等离子体发射上亿度的高能等离子体。使用标准星铃能量仓。</Celes_Spacer_Launcher.description>
+    <!-- EN: An experimental modified magnetic reconnection accelerator, or "coronal emitter" as it is called, which emits a highly destructive, high-energy plasma jet through the magnetic reconnection effect, with intense heat and explosions that don't even have a chance of producing a flame. Uses standard Celestia energy chamber.  -->
+    <Celes_Spacer_Launcher.tools.0.label>枪托</Celes_Spacer_Launcher.tools.0.label>
+    <!-- EN: stock  -->
+    <Celes_Spacer_Launcher.tools.1.label>枪管</Celes_Spacer_Launcher.tools.1.label>
+    <!-- EN: barrel  -->
+
+    <CelesBullet_small_energy.label>轻型极化粒子束射弹</CelesBullet_small_energy.label>
+    <!-- EN: light polarised particle projectile  -->
+
+    <CelesBullet_medium_energy.label>中型极化粒子束射弹</CelesBullet_medium_energy.label>
+    <!-- EN: medium polarised particle projectile  -->
+
+    <CelesBullet_big_energy.label>重型极化粒子束射弹</CelesBullet_big_energy.label>
+    <!-- EN: massive polarised particle projectile  -->
+
+    <CelesBullet_Launcher.label>磁重联等离子体</CelesBullet_Launcher.label>
+    <!-- EN: magnetic reconnection plasma  -->
+
+</LanguageData>

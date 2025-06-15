@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="ApparelBase_Celes" ParentName="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+	  <drawSize>1.0</drawSize>
+	  <drawOffset>(0,0,0)</drawOffset>
+    </graphicData>
+	<drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <burnableByRecipe>true</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef Name="Celes_ApparelBase" ParentName="ApparelBase_Celes" Abstract="True">
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+	</apparel>
+	<recipeMaker>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<recipeUsers>
+			<li>Celes_TailoringTab</li>
+		</recipeUsers>
+		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		<defaultIngredientFilter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Gold</li>
+				<li>Silver</li>
+				<li>Plasteel</li>
+				<li>Jade</li>
+				<li>Uranium</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+	</recipeMaker>
+</ThingDef>
+
+<ThingDef Name="Celes_ArmorMachineableBase" ParentName="ApparelBase_Celes" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>Celes_MultifunctionalTabA</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+  
+ <ThingDef Name="Celes_ApparelArmorPowerBase" ParentName="Celes_ArmorMachineableBase" Abstract="True">
+	<techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories>
+      <li>Celes_Apparel_Military</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+		<li>Hands</li>
+        <li>Legs</li>
+		<li>Feet</li>
+      </bodyPartGroups>
+      <!--<defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>-->
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear>
+      <soundRemove>Remove_PowerArmor</soundRemove>
+		<tags>
+			<li>Celes_Elite</li>
+		</tags>
+    </apparel>
+  </ThingDef>
+  
+  
+	<!--<tradeTags>
+      <li>Apparel</li>
+    </tradeTags>
+	<tradeability>Sellable</tradeability>
+	<stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>-->
+
+</Defs>

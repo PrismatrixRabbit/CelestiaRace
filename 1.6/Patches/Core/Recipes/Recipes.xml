@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "Human"]/recipes</xpath>
+        <value>
+            <li>Celes_ImplantDustMechRhythm</li>
+            <li>Celes_RemoveDustMechRhythm_ActivityForHuman</li>
+            <li>Celes_RemoveCeles_DustMechRhythm_Overactivity</li>
+            <li>Celes_SetDustMechRhythm_Serve</li>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="OrbitalUtilityBase">
+        <defName>CelesArtilleryTargeter</defName>
+        <label>Celestia Pioneer artillery strike targeter</label>
+        <description>Celestia Pioneer artillery strike targeter, used to guide one over-the-horizon fire coverage from the Celestia Navy.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponSpecial/OrbitalTargeterBombardment/OrbitalTargeterBombardment</texPath>
+            <drawSize>(0.7,0.7)</drawSize>
+        </graphicData>
+        <apparel>
+            <ai_pickUpOpportunistically>true</ai_pickUpOpportunistically>
+            <wornGraphicPath>Things/Item/Equipment/WeaponSpecial/OrbitalTargeterBombardment/OrbitalTargeterBombardment</wornGraphicPath>
+            <wornGraphicData>
+                <renderUtilityAsPack>true</renderUtilityAsPack>
+                <north>
+                    <male>  <offset>(0.25, -0.25)</offset> </male>
+                    <female><offset>(0.25,-0.25)</offset> </female>
+                    <thin>  <offset>(0.15,-0.25)</offset> </thin>
+                    <hulk>  <offset>(0.25,-0.3)</offset> </hulk>
+                    <fat>   <offset>(0.45,-0.25)</offset> </fat>
+                </north>
+                <south>
+                    <male>  <offset>(-0.3, -0.25)</offset> </male>
+                    <female><offset>(-0.3,-0.25)</offset> </female>
+                    <thin>  <offset>(-0.2,-0.25)</offset> </thin>
+                    <hulk>  <offset>(-0.3,-0.3)</offset> </hulk>
+                    <fat>   <offset>(-0.5,-0.25)</offset> </fat>
+                </south>
+                <east>
+                    <offset>(-0.05,-0.3)</offset>
+                </east>
+
+                <male>  <scale>(0.4,0.4)</scale> </male>
+                <female><scale>(0.4,0.4)</scale> </female>
+                <thin>  <scale>(0.4,0.4)</scale> </thin>
+                <hulk>  <scale>(0.4,0.4)</scale> </hulk>
+                <fat>   <scale>(0.4,0.4)</scale> </fat>
+            </wornGraphicData>
+        </apparel>
+        <thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+        <verbs>
+            <li>
+                <verbClass>CelesFeature.Verb_ArtilleryStrike</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <warmupTime>3</warmupTime>
+                <ai_AvoidFriendlyFireRadius>23</ai_AvoidFriendlyFireRadius>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <range>49.9</range>
+                <burstShotCount>1</burstShotCount>
+                <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+                <soundCast>OrbitalTargeter_Fire</soundCast>
+                <onlyManualCast>true</onlyManualCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_ApparelReloadable">
+                <maxCharges>1</maxCharges>
+                <destroyOnEmpty>true</destroyOnEmpty>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>charge</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+            </li>
+        </comps>
+    </ThingDef>
+    
+</Defs>

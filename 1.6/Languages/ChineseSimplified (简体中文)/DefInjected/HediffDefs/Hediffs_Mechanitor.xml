@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <Celes_MechlinkRestriction.label>民用机控限制</Celes_MechlinkRestriction.label>
+    <!-- EN: civilian mechlink restriction -->
+    <Celes_MechlinkRestriction.description>一个硬件层的机控能力限制，适用于大多数星铃。\n\n为了方便生活工作，在星铃的母星系，星铃们会在出生时就进行一系列义体化改造，大多数都能被尘构自动化完成，而其中唯一完全不能在边缘世界复现的就是机控中枢系统。一部分诞生自边缘世界的新生代星铃，便可能并不具有机控能力。\n\n对于有机械操纵需要的星铃，过去可能只需要稍稍申请。而如今要解除这一限制，可能需要借助边缘世界的某些类似物。</Celes_MechlinkRestriction.description>
+    <!-- EN: A hardware layer of mechlink capability limitations that applies to most Celestia. \n\nTo facilitate life and work, in the Celestia's home system, Celestia will undergo a series of prosthetic modifications at birth, most of which can be automated by Dust-Mech, and the only one of which cannot be reproduced in Rimworlds at all is the Mechlink hub system. A portion of the new generation of Celestia born from the Rimworld may then not have mechlink capabilities. \n\nFor Celestia who have the need for mechanical manipulation, in the past, it may only require a slight application. Nowadays, in order to lift this restriction, it may be necessary to use certain analogues from the Rimworld. -->
+
+    <Celes_StandardMechlink.label>星铃标准机控</Celes_StandardMechlink.label>
+    <!-- EN: celestia standard mechlink -->
+    <Celes_StandardMechlink.description>一个硬件层的机控能力改装，提升星铃个体的机械控制能力，在星铃的母星常见于技术军士或工程师。\n\n为了方便生活工作，在星铃的母星系，星铃们会在出生时就进行一系列义体化改造，大多数都能被尘构自动化完成，而其中唯一完全不能在边缘世界复现的就是机控中枢系统。一部分诞生自边缘世界的新生代星铃，便可能并不具有机控能力。</Celes_StandardMechlink.description>
+    <!-- EN: A hardware tier mechlink ability modification that enhances the mechanical control of an individual Celestia, commonly found on Celestia's home planet as a soldier or engineer. \n\nTo facilitate life and work, in the Celestia's home system, Celestia will undergo a series of prosthetic modifications at birth, most of which can be automated by Dust-Mech, and the only one of which cannot be reproduced in Rimworlds at all is the Mechlink hub system. A portion of the new generation of Celestia born from the Rimworld may then not have mechlink capabilities.  -->
+
+    <CelesSleepMechlinkImplant.label>机控中枢(休眠)</CelesSleepMechlinkImplant.label>
+    <!-- EN: mechlink implant(sleeping) -->
+    <CelesSleepMechlinkImplant.description>mechlink implant(sleeping)</CelesSleepMechlinkImplant.description>
+    <!-- EN: mechlink implant(sleeping)  -->
+
+    <Celes_FieldAidRestrict.label>战地支援限制</Celes_FieldAidRestrict.label>
+    <!-- EN: Celes_FieldAidRestrict -->
+    <Celes_FieldAidRestrict.description>Celestia Command has added restrictions to the Field Support Team to avoid risks to the mechlink.</Celes_FieldAidRestrict.description>
+    <!-- EN: Celestia Command has added restrictions to the Field Support Team to avoid risks to the mechlink.  -->
+
+</LanguageData>

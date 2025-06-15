@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <HediffDef MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>Celes_MechlinkRestriction</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+        <initialSeverity>0.001</initialSeverity>
+        <label>celestia civilian mechlink restriction</label>
+        <description>A hardware layer of mechlink capability limitations that applies to most Celestia. \n\nTo facilitate life and work, in the Celestia's home system, Celestia will undergo a series of prosthetic modifications at birth, most of which can be automated by Dust-Mech, and the only one of which cannot be reproduced in Rimworlds at all is the Mechlink hub system. A portion of the new generation of Celestia born from the Rimworld may then not have mechlink capabilities. \n\nFor Celestia who have the need for mechanical manipulation, in the past, it may only require a slight application. Nowadays, in order to lift this restriction, it may be necessary to use certain analogues from the Rimworld.</description>
+        <isBad>false</isBad>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_MechlinkAuthorization</ThingDef>
+            <HediffDef>Celes_StandardMechlink</HediffDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statFactors>
+                    <MechBandwidth>0.35</MechBandwidth>
+                </statFactors>
+                <statOffsets>
+                    <MechControlGroups>-1</MechControlGroups>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_RemoveIfOtherHediff">
+                <hediffs>
+                    <li>Celes_StandardMechlink</li>
+                </hediffs>
+                <stages>0~</stages>
+                <mtbHours>0</mtbHours>
+                <message>{0} is no longer .</message>
+                <messageType>SilentInput</messageType>
+                <onlyMessageForColonistsOrPrisoners>true</onlyMessageForColonistsOrPrisoners>
+            </li>
+        </comps>
+    </HediffDef>
+    
+    <HediffDef MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>Celes_StandardMechlink</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+        <initialSeverity>0.001</initialSeverity>
+        <label>celestia standard mechlink</label>
+        <description>A hardware tier mechlink ability modification that enhances the mechanical control of an individual Celestia, commonly found on Celestia's home planet as a soldier or engineer. \n\nTo facilitate life and work, in the Celestia's home system, Celestia will undergo a series of prosthetic modifications at birth, most of which can be automated by Dust-Mech, and the only one of which cannot be reproduced in Rimworlds at all is the Mechlink hub system. A portion of the new generation of Celestia born from the Rimworld may then not have mechlink capabilities.</description>
+        <isBad>false</isBad>
+        <descriptionHyperlinks><ThingDef>Celes_MechlinkAuthorization</ThingDef></descriptionHyperlinks>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MechBandwidth>9</MechBandwidth>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>CelesSleepMechlinkImplant</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+        <initialSeverity>0.001</initialSeverity>
+        <label>mechlink implant(sleeping)</label>
+        <description>mechlink implant(sleeping)</description>
+        <isBad>false</isBad>
+        <descriptionHyperlinks><HediffDef>MechlinkImplant</HediffDef></descriptionHyperlinks>
+        <stages>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="ImplantHediffBase" MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>Celes_FieldAidRestrict</defName>
+        <label>Celes_FieldAidRestrict</label>
+        <description>Celestia Command has added restrictions to the Field Support Team to avoid risks to the mechlink.</description>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.0625</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <MechBandwidth>0</MechBandwidth>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef ParentName="ApparelBase">
+        <defName>Celes_ServantCoat</defName>
+        <label>Celes_ServantCoat</label>
+        <description>Celes_ServantCoat</description>
+        <costStuffCount>80</costStuffCount>
+        <techLevel>Industrial</techLevel>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <graphicData>
+            <texPath>Celes/Apparel/Shell/ServantCoat/ServantCoat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.3</Mass>
+            <EquipDelay>15</EquipDelay>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>9000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset>0.30</SlaveSuppressionOffset>
+            <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>Mouth</li>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Celes/Apparel/Shell/ServantCoat/ServantCoat</wornGraphicPath>
+            <tags>
+                <li>Celes_Servant</li>
+            </tags>
+            <drawData>
+                <defaultData>
+                    <layer>83</layer>
+                </defaultData>
+            </drawData>
+            <!--<drawData>
+                <dataNorth><layer>40</layer></dataNorth>
+            </drawData>-->
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+            <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>Celes_NanoImplant_II</researchPrerequisite>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>Celes_TailoringTab</li>
+            </recipeUsers>
+            <displayPriority>301</displayPriority>
+        </recipeMaker>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>Celes_ServantCoat</hediff>
+                <part>Torso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef>
+        <defName>Celes_ServantCoat</defName>
+        <label>Celes_ServantCoat</label>
+        <description>Celes_ServantCoat</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <painOffset>0.20</painOffset>
+                <hungerRateFactor>0.4</hungerRateFactor>
+                <capMods>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <postFactor>0</postFactor>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+    
+</Defs>

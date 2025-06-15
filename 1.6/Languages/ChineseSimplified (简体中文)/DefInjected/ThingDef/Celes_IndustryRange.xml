@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Celes_Early_Rifle.label>星铃拓荒栓动步枪</Celes_Early_Rifle.label>
+  <!-- EN: Celestia Pioneer bolter rifle  -->
+  <Celes_Early_Rifle.description>一把老式构型的栓动步枪，应急但确实有效，射程远而精准，但射速堪忧。使用星铃制式8.5mm子弹。\n\n如果不是某种紧急情况，这玩意应该在博物馆里躺着。</Celes_Early_Rifle.description>
+  <!-- EN: An old configuration bolt action rifle, emergency but really effective, long range and accurate but with a worrying rate of fire. Uses Celestia standard 8.5mm rounds. \n\nIf it wasn't for some kind of emergency, this thing would be lying around in a museum.  -->
+  <Celes_Early_Rifle.tools.0.label>枪托</Celes_Early_Rifle.tools.0.label>
+  <!-- EN: stock  -->
+  <Celes_Early_Rifle.tools.1.label>枪管</Celes_Early_Rifle.tools.1.label>
+  <!-- EN: barrel  -->
+  
+  <CelesBullet_EarlyRifle.label>星铃制式8.5mm子弹</CelesBullet_EarlyRifle.label>
+  <!-- EN: Celestia standard 8.5mm bullet  -->
+  
+  <Celes_Early_ShotGun.label>星铃拓荒半自动霰弹枪</Celes_Early_ShotGun.label>
+  <!-- EN: Celestia Pioneer semi-auto shotgun  -->
+  <Celes_Early_ShotGun.description>一把老式构型的半自动霰弹枪，火力致命，但射程较短。使用星铃制式20铅径霰弹枪子弹。\n\n如果不是某种紧急情况，这玩意多半只会出现在教材上。</Celes_Early_ShotGun.description>
+  <!-- EN: An older configuration semi-automatic shotgun with deadly firepower but short range. Uses Celestia standard 20GA. buckshot. \n\nIf it wasn't for some kind of emergency, this stuff would most likely only be in textbooks.  -->
+  <Celes_Early_ShotGun.tools.0.label>枪托</Celes_Early_ShotGun.tools.0.label>
+  <!-- EN: stock  -->
+  <Celes_Early_ShotGun.tools.1.label>枪管</Celes_Early_ShotGun.tools.1.label>
+  <!-- EN: barrel  -->
+  
+  <CelesBullet_ShotGun.label>星铃制式20铅径鹿弹</CelesBullet_ShotGun.label>
+  <!-- EN: Celestia standard 20GA. buckshot  -->
+  
+  <Celes_Early_Revolver.label>星铃拓荒左轮</Celes_Early_Revolver.label>
+  <!-- EN: Celestia Pioneer revolver  -->
+  <Celes_Early_Revolver.description>一把老式构型的大口径左轮手枪，用于有效的杀伤软目标，在近距离有夸张的杀伤力，对手腕也是。使用星铃制式15.2mm子弹。\n\n如果不是某种紧急情况，这玩意大概只会在某个私人收藏家的手里被把玩。</Celes_Early_Revolver.description>
+  <!-- EN: A large calibre revolver in an older configuration, used to effectively kill soft targets, with exaggerated lethality at close range and against the wrist. Uses Celestia standard 12.7mm bullet. \n\nIf it wasn't for some kind of emergency, this thing would probably only be played with in the hands of some private collector.  -->
+  <Celes_Early_Revolver.tools.0.label>握柄</Celes_Early_Revolver.tools.0.label>
+  <!-- EN: grip  -->
+  <Celes_Early_Revolver.tools.1.label>枪管</Celes_Early_Revolver.tools.1.label>
+  <!-- EN: barrel  -->
+
+  <!-- <CelesBullet_Revolver.label>星铃制式12.7mm子弹</CelesBullet_Revolver.label> -->
+  <!-- EN: Celestia standard 12.7mm bullet  -->
+  
+  <Celes_Early_SemiRifle.label>星铃拓荒半自动步枪</Celes_Early_SemiRifle.label>
+  <!-- EN: Celestia Pioneer semi-auto rifle  -->
+  <Celes_Early_SemiRifle.description>一把老式构型的半自动步枪，射速较快而压制力较强，但射击精度有所降低。使用星铃制式8.5mm子弹。\n\n如果不是某种紧急情况，这玩意大概只会在网络上用来作为谈资。</Celes_Early_SemiRifle.description>
+  <!-- EN: A semi-automatic rifle in an older configuration, with a faster rate of fire and more suppressive power, but with reduced accuracy. Uses Celestia 8.5mm bullet. \n\n If it wasn't for some kind of emergency, this stuff would probably only be used as a talking point on the internet.  -->
+  <Celes_Early_SemiRifle.tools.0.label>枪托</Celes_Early_SemiRifle.tools.0.label>
+  <!-- EN: stock  -->
+  <Celes_Early_SemiRifle.tools.1.label>枪管</Celes_Early_SemiRifle.tools.1.label>
+  <!-- EN: barrel  -->
+  
+  <Celes_Mid_ShotGun.label>星铃古典自动霰弹枪</Celes_Mid_ShotGun.label>
+  <!-- EN: Celestia classic automatic shotgun  -->
+  <Celes_Mid_ShotGun.description>一把古典构型的自动霰弹枪，在近距离的杀伤力极度恐怖，但精度和射程都堪忧。使用星铃制式20铅径霰弹枪子弹。</Celes_Mid_ShotGun.description>
+  <!-- EN: A classically constructed automatic shotgun that is extremely lethal at close range, but has worrying accuracy and range. Uses Celestia standard 20GA. buckshot.  -->
+  <Celes_Mid_ShotGun.tools.0.label>枪托</Celes_Mid_ShotGun.tools.0.label>
+  <!-- EN: stock  -->
+  <Celes_Early_SemiRifle.tools.1.label>枪管</Celes_Early_SemiRifle.tools.1.label>
+  <!-- EN: barrel  -->
+
+  <Celes_Mid_SAssault.label>星铃古典突击步枪</Celes_Mid_SAssault.label>
+  <!-- EN: Celestia classic assault rifle  -->
+  <Celes_Mid_SAssault.description>一把古典构型的突击步枪，射程，火力，精度都平庸但良好，广泛用于星铃拓荒队的先锋小队。使用星铃制式5.7mm子弹。</Celes_Mid_SAssault.description>
+  <!-- EN: A classically constructed assault rifle with mediocre but good range, firepower, and accuracy, widely used by Celestia's vanguard squads. Uses Celestia standard 5.7mm bullet.  -->
+  <Celes_Mid_SAssault.tools.0.label>枪托</Celes_Mid_SAssault.tools.0.label>
+  <!-- EN: stock  -->
+  <Celes_Mid_SAssault.tools.1.label>枪管</Celes_Mid_SAssault.tools.1.label>
+  <!-- EN: barrel  -->
+
+  <CelesBullet_AR.label>星铃制式5.7mm子弹</CelesBullet_AR.label>
+  <!-- EN: Celestia standard 5.7mm bullet  -->
+
+  <Celes_Mid_DMR.label>星铃古典精确射手步枪</Celes_Mid_DMR.label>
+  <!-- EN: Celestia classic DMR  -->
+  <Celes_Mid_DMR.description>一把古典构型的精确射手步枪，射速稍慢但精准，有着较大的射程，常被用于星铃拓荒队的精确射手。使用星铃制式8.5mm子弹。</Celes_Mid_DMR.description>
+  <!-- EN: A classically constructed DMR with a slightly slower but accurate rate of fire and a large range, often used as a precision shooter for Celestia Pioneer. Uses Celestia standard 8.5mm bullet.  -->
+  <Celes_Mid_DMR.tools.0.label>枪托</Celes_Mid_DMR.tools.0.label>
+  <!-- EN: stock  -->
+  <Celes_Mid_DMR.tools.1.label>枪管</Celes_Mid_DMR.tools.1.label>
+  <!-- EN: barrel  -->
+
+  <Celes_Mid_SR.label>星铃古典狙击枪</Celes_Mid_SR.label>
+  <!-- EN: Celestia classic sniper rifle  -->
+  <Celes_Mid_SR.description>一把古典构型的狙击枪，即使有着可折叠式枪托仍然不便于携带，高度精准的战术级武器，射速极慢但射程极大，即使是星铃也不常使用这种大型狙击枪。使用星铃制式15.2mm子弹。</Celes_Mid_SR.description>
+  <!-- EN: A classically constructed sniper rifle, even with a collapsible stock it is still not easy to carry, a highly accurate tactical weapon with a very slow rate of fire but a huge range, even Celestia doesn't often use this large sniper rifle. Uses Celestia's standard 15.2mm bullet.  -->
+  <Celes_Mid_SR.tools.0.label>枪托</Celes_Mid_SR.tools.0.label>
+  <!-- EN: stock  -->
+  <Celes_Mid_SR.tools.1.label>枪管</Celes_Mid_SR.tools.1.label>
+  <!-- EN: barrel  -->
+
+  <CelesBullet_SR.label>星铃制式15.2mm子弹</CelesBullet_SR.label>
+  <!-- EN: Celestia standard 15.2mm bullet  -->
+
+</LanguageData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_NanoResourcesRaw.label>星铃纳米素材</Celes_NanoResourcesRaw.label>
+    <Celes_Manufactured.label>星铃工业制品</Celes_Manufactured.label>
+    
+    <Celes_Weapons.label>星铃武器</Celes_Weapons.label>
+    <Celes_WeaponsMelee.label>星铃近战武器</Celes_WeaponsMelee.label>
+    <Celes_WeaponsRanged.label>星铃远程武器</Celes_WeaponsRanged.label>
+
+    <Celes_Apparel.label>星铃衣物</Celes_Apparel.label>
+    <Celes_Apparel_Daily.label>星铃日常衣物</Celes_Apparel_Daily.label>
+    <Celes_Apparel_Military.label>星铃军事衣物</Celes_Apparel_Military.label>
+    <Celes_Apparel_Hat.label>星铃帽子</Celes_Apparel_Hat.label>
+    <Celes_Apparel_Misc.label>星铃衣物杂项</Celes_Apparel_Misc.label>
+
+</LanguageData>

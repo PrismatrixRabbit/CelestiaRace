@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Make_CelesAdvanceCloth.label>重组尘化丝绸</Make_CelesAdvanceCloth.label>
+    <!-- EN: reorganise Dust-Mech Silk -->
+    <Make_CelesAdvanceCloth.description>利用尘构将边缘世界的原生材料重组为尘化丝绸。</Make_CelesAdvanceCloth.description>
+    <!-- EN: Using Dust-Mech to reorganise Rimworld's native materials into Dust-Mech Silk. -->
+    <Make_CelesAdvanceCloth.jobString>正在重组尘化丝绸</Make_CelesAdvanceCloth.jobString>
+    <!-- EN: reorganising Dust-Mech Silk -->
+
+    <Make_Celes_SpaceWeapenComponent.label>制作星铃尖端零件</Make_Celes_SpaceWeapenComponent.label>
+    <!-- EN: make celestia high-tech component -->
+    <Make_Celes_SpaceWeapenComponent.description>制作星铃尖端零件。</Make_Celes_SpaceWeapenComponent.description>
+    <!-- EN: make celestia high-tech component. -->
+    <Make_Celes_SpaceWeapenComponent.jobString>正在制作星铃尖端零件</Make_Celes_SpaceWeapenComponent.jobString>
+    <!-- EN: making celestia high-tech component -->
+
+    <Celes_MakeMedicineAlternative.label>制作医药(生物酶凝胶)</Celes_MakeMedicineAlternative.label>
+    <!-- EN: make medicine(bio-enzyme gel) -->
+    <Celes_MakeMedicineAlternative.description>通过生物酶凝胶制作医药。</Celes_MakeMedicineAlternative.description>
+    <!-- EN: make medicine by bio-enzyme gel. -->
+    <Celes_MakeMedicineAlternative.jobString>正在制作医药</Celes_MakeMedicineAlternative.jobString>
+    <!-- EN: making medicine by bio-enzyme gel. -->
+
+    <Celes_MakeMedicineAlternative_x4.label>制作医药(生物酶凝胶) x4</Celes_MakeMedicineAlternative_x4.label>
+    <!-- EN: make medicine(bio-enzyme gel) x4 -->
+    <Celes_MakeMedicineAlternative_x4.description>通过生物酶凝胶制作医药。</Celes_MakeMedicineAlternative_x4.description>
+    <!-- EN: make medicine by bio-enzyme gel. -->
+    <Celes_MakeMedicineAlternative_x4.jobString>正在制作医药</Celes_MakeMedicineAlternative_x4.jobString>
+    <!-- EN: making medicine by bio-enzyme gel. -->
+
+    <!--<Celes_Make_NegativeAlloy.label>转化黯辉合金</Celes_Make_NegativeAlloy.label>-->
+    <!-- EN: convert Dull-L Alloy -->
+    <!--<Celes_Make_NegativeAlloy.description>利用尘构将淬铃合金转化为压制灵能的黯辉合金。</Celes_Make_NegativeAlloy.description>-->
+    <!-- EN: Using the Dust-Mech, convert the Chime Alloy to the Dull-L Alloy that suppresses psychic energy. -->
+    <!--<Celes_Make_NegativeAlloy.jobString>正在转化黯辉合金</Celes_Make_NegativeAlloy.jobString>-->
+    <!-- EN: converting Dull-L Alloy -->
+
+    <!--<Celes_Make_PositiveAlloy.label>转化灵尘合金</Celes_Make_PositiveAlloy.label>-->
+    <!-- EN: convert Psi-dust Alloy -->
+    <!--<Celes_Make_PositiveAlloy.description>利用尘构将淬铃合金转化为激发灵能的灵尘合金。</Celes_Make_PositiveAlloy.description>-->
+    <!-- EN: Using the Dust-Mech, convert the Chime Alloy to the Psi-dust Alloy that inspires psychic energy. -->
+    <!--<Celes_Make_PositiveAlloy.jobString>正在转化灵尘合金</Celes_Make_PositiveAlloy.jobString>-->
+    <!-- EN: converting Psi-dust Alloy -->
+
+    <!--<Make_CelesAlloy.label>重构淬铃合金</Make_CelesAlloy.label>-->
+    <!-- EN: reconstruct Chime Alloy -->
+    <!--<Make_CelesAlloy.description>利用尘构将边缘世界的原生材料重构为淬铃合金。</Make_CelesAlloy.description>-->
+    <!-- EN: Using Dust-Mech to reconstruct Rimworld's native materials into Chime Alloy. -->
+    <!--<Make_CelesAlloy.jobString>正在转化灵尘合金</Make_CelesAlloy.jobString>-->
+    <!-- EN: reconstructing Chime Alloy -->
+
+</LanguageData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_ServantUnit.label>星铃通用侍仆</Celes_ServantUnit.label>
+    <Celes_ServantUnit.labelPlural>星铃通用侍仆</Celes_ServantUnit.labelPlural>
+    <Celes_ServantUnit.labelMale>星铃通用侍仆</Celes_ServantUnit.labelMale>
+    <Celes_ServantUnit.labelMalePlural>星铃通用侍仆</Celes_ServantUnit.labelMalePlural>
+    <Celes_ServantUnit.labelFemale>星铃通用侍仆</Celes_ServantUnit.labelFemale>
+    <Celes_ServantUnit.labelFemalePlural>星铃通用侍仆</Celes_ServantUnit.labelFemalePlural>
+
+    <Celes_ServantUnitClaw.label>星铃农用侍仆</Celes_ServantUnitClaw.label>
+    <Celes_ServantUnitClaw.labelPlural>星铃农用侍仆</Celes_ServantUnitClaw.labelPlural>
+    <Celes_ServantUnitClaw.labelMale>星铃农用侍仆</Celes_ServantUnitClaw.labelMale>
+    <Celes_ServantUnitClaw.labelMalePlural>星铃农用侍仆</Celes_ServantUnitClaw.labelMalePlural>
+    <Celes_ServantUnitClaw.labelFemale>星铃农用侍仆</Celes_ServantUnitClaw.labelFemale>
+    <Celes_ServantUnitClaw.labelFemalePlural>星铃农用侍仆</Celes_ServantUnitClaw.labelFemalePlural>
+
+    <Celes_ServantUnitHammer.label>星铃工建侍仆</Celes_ServantUnitHammer.label>
+    <Celes_ServantUnitHammer.labelPlural>星铃工建侍仆</Celes_ServantUnitHammer.labelPlural>
+    <Celes_ServantUnitHammer.labelMale>星铃工建侍仆</Celes_ServantUnitHammer.labelMale>
+    <Celes_ServantUnitHammer.labelMalePlural>星铃工建侍仆</Celes_ServantUnitHammer.labelMalePlural>
+    <Celes_ServantUnitHammer.labelFemale>星铃工建侍仆</Celes_ServantUnitHammer.labelFemale>
+    <Celes_ServantUnitHammer.labelFemalePlural>星铃工建侍仆</Celes_ServantUnitHammer.labelFemalePlural>
+
+</LanguageData>

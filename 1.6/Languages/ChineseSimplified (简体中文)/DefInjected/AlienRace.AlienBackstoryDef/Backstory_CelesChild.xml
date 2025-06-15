@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- [PAWN_nameDef][PAWN_pronoun][PAWN_possessive][PAWN_objective] -->
+  <!--============================== 孩童 ============================-->
+
+  <Celes_Backstory_Child01.title>星铃 远日行星孩童</Celes_Backstory_Child01.title>
+  <!-- EN: celestia far planet child-->
+  <Celes_Backstory_Child01.titleShort>远日孩童</Celes_Backstory_Child01.titleShort>
+  <!-- EN: far-planetkid -->
+  <Celes_Backstory_Child01.description>[PAWN_nameDef]出生在一个远离恒星的居住站，在[PAWN_possessive]眼中，母星系的恒星就像只是一个暗淡的光点。[PAWN_pronoun]被以开拓者为目标教导着，但[PAWN_pronoun]从未放弃对那暗淡光点的好奇。</Celes_Backstory_Child01.description>
+  <!-- EN: [PAWN_nameDef] was born on a habitation station far from the stars, and to [PAWN_pronoun], the stars of [PAWN_possessive] home system looked like nothing more than a dim point of light. [PAWN_pronoun] was taught to aim for the pioneer, but [PAWN_pronoun] never gave up [PAWN_possessive] curiosity about that dim point of light. -->
+  
+  <Celes_Backstory_Child02.title>星铃 工程师的孩子</Celes_Backstory_Child02.title>
+  <!-- EN: celestia engineer's child-->
+  <Celes_Backstory_Child02.titleShort>工程师之子</Celes_Backstory_Child02.titleShort>
+  <!-- EN: engineerkid -->
+  <Celes_Backstory_Child02.description>[PAWN_nameDef]是一对工程师夫妻的孩子，而在公共抚养所中[PAWN_pronoun]也和亲生父母保持着几乎朋友的关系，这让[PAWN_pronoun]很早的接触到了星铃们在小行星与太空工程建筑中所需要的一些常识，以及更重要的，实践而逻辑理性的思维方式。</Celes_Backstory_Child02.description>
+  <!-- EN: [PAWN_nameDef] was the child of an engineer couple, and while in public-upbringing-centre [PAWN_pronoun] also maintained an almost-friendship with his biological parents, which gave [PAWN_pronoun] early exposure to some of the common sense Celestia's needed for asteroid and space engineering construction, as well as, more importantly, a practical and logical and rational thinking way of thinking. -->
+  
+  <Celes_Backstory_Child03.title>星铃 枪械爱好者</Celes_Backstory_Child03.title>
+  <!-- EN: celestia firearms enthusiasts-->
+  <Celes_Backstory_Child03.titleShort>枪械爱好者</Celes_Backstory_Child03.titleShort>
+  <!-- EN: firearmkid -->
+  <Celes_Backstory_Child03.description>[PAWN_nameDef]一度被认为具有某些严重的暴力倾向。但事实很快证明，[PAWN_pronoun]只是对这些杀人武器的机械构造格外好奇——它们有着唯一的目的，但它们是如何通过那些无比精巧的机械构造高效且迅速的达成这一目的的？这完全满足了[PAWN_possessive]好奇心。</Celes_Backstory_Child03.description>
+  <!-- EN: [PAWN_nameDef] was once thought to have some serious violent tendencies. But as it soon turned out, [PAWN_pronoun] was just extraordinarily curious about the mechanics of these murderous weapons - they had a singular purpose, but how did they achieve that purpose efficiently and quickly through those incredibly delicate mechanics? It completely satisfied [PAWN_possessive] curiosity. -->
+  
+  <Celes_Backstory_Child04.title>星铃 不省心的孩子</Celes_Backstory_Child04.title>
+  <!-- EN: celestia troubled child-->
+  <Celes_Backstory_Child04.titleShort>问题儿童</Celes_Backstory_Child04.titleShort>
+  <!-- EN: troubledkid -->
+  <Celes_Backstory_Child04.description>[PAWN_nameDef]特别能闹麻烦，和同学打架，拆坏别人的东西，一和别人合作就把事情搞得乱七八糟。但[PAWN_pronoun]似乎并不是想要干坏事，[PAWN_pronoun]只是不知道怎么表达自己。</Celes_Backstory_Child04.description>
+  <!-- EN: [PAWN_nameDef] is especially capable of getting into trouble, fighting with classmates, tearing down other people's stuff, and messing things up when [PAWN_pronoun] works with others. But [PAWN_pronoun] doesn't seem to want to do bad things, [PAWN_pronoun] just doesn't know how to express [PAWN_objective]. -->
+
+  <Celes_Backstory_Child05.title>星铃 游戏厅大师</Celes_Backstory_Child05.title>
+  <!-- EN: celestia game master -->
+  <Celes_Backstory_Child05.titleShort>游戏大师</Celes_Backstory_Child05.titleShort>
+  <!-- EN: game master -->
+  <Celes_Backstory_Child05.description>还是个孩子的[PAWN_nameDef]就在当地的全息射击厅中不断保持着很高的排名,甚至许多大人都不具备这样的水平，这让[PAWN_pronoun]从小就被视为小小的射击天才。</Celes_Backstory_Child05.description>
+  <!-- EN: As a child, [PAWN_nameDef] was constantly ranked high in the local holographic shooting halls, even at a level that many adults do not possess, which made [PAWN_pronoun] regarded as a little shooting genius from a young age. -->
+
+  <Celes_Backstory_Child06.title>星铃 博物馆志愿工</Celes_Backstory_Child06.title>
+  <!-- EN: celestia museum volunteer -->
+  <Celes_Backstory_Child06.titleShort>志愿工</Celes_Backstory_Child06.titleShort>
+  <!-- EN: volunteer -->
+  <Celes_Backstory_Child06.description>[PAWN_nameDef]从小就对岩石地质之类的东西格外好奇，[PAWN_pronoun]不仅时不时跑去博物馆，而且在博物馆员工的热情邀请下，年幼的[PAWN_nameDef]开始帮助博物馆干一些[PAWN_pronoun]能胜任的工作，比如帮忙分类矿石标本，[PAWN_pronoun]也由此学到了许多实用的知识。</Celes_Backstory_Child06.description>
+  <!-- EN: Since [PAWN_pronoun] was a child, [PAWN_nameDef] has always been curious about things like rocks and geology, and [PAWN_pronoun] not only went to the museum from time to time, but also, at the invitation of the museum's staff, the young [PAWN_nameDef] began to help out with some of the tasks that [PAWN_pronoun] could handle, such as helping to sort the specimens of the ores. PAWN_pronoun] also learnt a lot of practical knowledge. -->
+
+  <Celes_Backstory_Child07.title>星铃 厨房帮手</Celes_Backstory_Child07.title>
+  <!-- EN: celestia kitchen helper -->
+  <Celes_Backstory_Child07.titleShort>小厨师</Celes_Backstory_Child07.titleShort>
+  <!-- EN: cook-kid -->
+  <Celes_Backstory_Child07.description>在其他孩子还在打打闹闹的时候，[PAWN_nameDef]已经开始不时的钻进厨房旁观，光看着的尴尬无措让围观自然的变成了帮忙准备食材，随后又变成了帮忙制作简单的食物。比其他孩子多擅长一点东西，让[PAWN_pronoun]收获了不少的自信和健谈。</Celes_Backstory_Child07.description>
+  <!-- EN: While the other children were still playing around, [PAWN_nameDef] had begun to dive into the kitchen from time to time to watch, and the awkwardness of just watching had naturally turned the spectating into helping with the preparation of ingredients, and then later into helping with the preparation of simple foods. Being a little bit better at something than the other children has helped [PAWN_pronoun] gain a lot of confidence and talkativeness. -->
+
+  <Celes_Backstory_Child08.title>星铃 农学生</Celes_Backstory_Child08.title>
+  <!-- EN: celestia agricultural student -->
+  <Celes_Backstory_Child08.titleShort>农学生</Celes_Backstory_Child08.titleShort>
+  <!-- EN: student -->
+  <Celes_Backstory_Child08.description>[PAWN_nameDef]跟随着自己的导师学习植物生产。[PAWN_pronoun]很快学会从植物的各种细节判断如何照料植物，调整肥料和营养液配比来促进生长。至少[PAWN_pronoun]现在很难把种子直接养死了。</Celes_Backstory_Child08.description>
+  <!-- EN: [PAWN_nameDef] Learned plant production from [PAWN_possessive] mentor. [PAWN_pronoun] quickly learned to judge how to care for plants from their various details, adjusting fertiliser and nutrient ratios to promote growth. At least [PAWN_pronoun] now has a hard time raising seeds straight to death. -->
+
+  <Celes_Backstory_Child09.title>星铃 小画家</Celes_Backstory_Child09.title>
+  <!-- EN: celestia child painter -->
+  <Celes_Backstory_Child09.titleShort>小画家</Celes_Backstory_Child09.titleShort>
+  <!-- EN: painterkid -->
+  <Celes_Backstory_Child09.description>[PAWN_nameDef]从小就展现出[PAWN_pronoun]在艺术上的天分，但与其说天分，[PAWN_pronoun]更多的只是想要能记录下[PAWN_pronoun]眼中美丽的瞬间，不是大人们看见的那个世界，而是[PAWN_pronoun]看到的这个。</Celes_Backstory_Child09.description>
+  <!-- EN: From a young age, [PAWN_nameDef] showed [PAWN_possessive] talent for art, but rather than talent, [PAWN_pronoun] just wanted to be able to record the moments of beauty in [PAWN_possessive] eyes, not the world that adults see, but this one that [PAWN_pronoun] sees. -->
+
+  <Celes_Backstory_Child10.title>星铃 调皮的孩子</Celes_Backstory_Child10.title>
+  <!-- EN: celestia naughty child-->
+  <Celes_Backstory_Child10.titleShort>调皮孩子</Celes_Backstory_Child10.titleShort>
+  <!-- EN: naughtykid -->
+  <Celes_Backstory_Child10.description>[PAWN_nameDef]总是闲不下来，一有机会就会跑到别处去玩。[PAWN_pronoun]总觉得自己有十足的把握能避开那些危险的事情，可惜大人们并不这么想。于是，每次受伤之后，[PAWN_pronoun]总会偷偷自己处理那些小伤口。</Celes_Backstory_Child10.description>
+  <!-- EN: [PAWN_nameDef] was always no way to be idle, and every chance [PAWN_pronoun] got [PAWN_pronoun] would run off to play somewhere else. [PAWN_pronoun] always felt completely sure that [PAWN_pronoun] could avoid those dangerous things, but unfortunately the adults didn't think so. So, after every injury, [PAWN_pronoun] would always secretly take care of those small wounds by [PAWN_objective]. -->
+
+  <Celes_Backstory_Child11.title>星铃 好奇的孩子</Celes_Backstory_Child11.title>
+  <!-- EN: celestia curious child -->
+  <Celes_Backstory_Child11.titleShort>好奇的孩子</Celes_Backstory_Child11.titleShort>
+  <!-- EN: curiouskid -->
+  <Celes_Backstory_Child11.description>[PAWN_nameDef]展现出了对世界的巨大好奇，[PAWN_possessive]问题就像永远没法被解答完一样。因为总会出现没有大人能回答[PAWN_pronoun]的情况，[PAWN_nameDef]开始自己翻阅资料来解答自己。但不一会，[PAWN_pronoun]就撞上了一个[PAWN_pronoun]无法回答的问题……到底什么是“热力学四大定律”？</Celes_Backstory_Child11.description>
+  <!-- EN: [PAWN_nameDef] showed a great curiosity about the world, and [PAWN_possessive] questions felt like they could never be answered. Since there were always situations where no adult could answer [PAWN_pronoun], [PAWN_nameDef] began to look through the information to answer [PAWN_objective]. But before long, [PAWN_pronoun] ran into a question that [PAWN_pronoun] couldn't answer ...... What exactly are the ‘Four Laws of Thermodynamics’? -->
+
+  <!--============================== 特殊孩童 ============================-->
+  
+  <Celes_Backstory_Child_Special01.title>星铃 战术定制对象</Celes_Backstory_Child_Special01.title>
+  <!-- EN: celestia tactical objects-->
+  <Celes_Backstory_Child_Special01.titleShort>战术定制</Celes_Backstory_Child_Special01.titleShort>
+  <!-- EN: tactical -->
+  <Celes_Backstory_Child_Special01.description>[PAWN_nameDef]有记忆以来，就参与着一个星铃军方的特殊绝密计划。\n\n[PAWN_pronoun]在幼年就展现出[PAWN_pronoun]出众的战术思维与身体强度，并以这样卓越的天赋被选出。野战训练，实战指挥，空间站近距离战斗，极端环境作战，所有的这些训练只为了选出最精锐的星铃战士。</Celes_Backstory_Child_Special01.description>
+  <!-- EN: [PAWN_nameDef] has been involved in a special top secret Celestia military programme for as long as [PAWN_pronoun] can remember.\n\n[PAWN_pronoun] showed [PAWN_possessive] outstanding tactical thinking and physical strength at an early age and was selected for such exceptional talent.Battlefield training, field command, close-quarters combat on space stations, and combat in extreme environments, all of which were trained only to select most elite Celestia warriors. -->
+  
+</LanguageData>

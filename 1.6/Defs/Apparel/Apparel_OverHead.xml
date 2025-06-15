@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<ThingDef Name="Celes_OverheadBase" ParentName="Celes_ApparelBase" Abstract="True">
+		<statBases>
+			<Mass>0.8</Mass>
+			<EquipDelay>1.8</EquipDelay>
+		</statBases>
+		<apparel>	
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Celes_Overhead</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<!-- ========== 制衣标准 ========= 
+
+	<ThingDef ParentName="Celes_OverheadBase">  防晒沙滩帽
+		<defName>Celes_SummerHat</defName>
+		<label>Celes_SummerHat</label>
+		<description>.</description>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Celes/Apparel/Overhead/SummerHat/SummerHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>5400</WorkToMake>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/Overhead/SummerHat/SummerHat</wornGraphicPath>
+			<tags>
+				<li>Celes_Daily</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_I</researchPrerequisite>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>301</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Hat</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>Celes_SummerHat</hediff>
+				<part>Head</part>
+			</li>
+		</comps>
+	</ThingDef>
+	<HediffDef>
+		<defName>Celes_SummerHat</defName>
+		<label>celestia summer hat</label>
+		<description>Wearing celestia summer hat.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
+	</HediffDef> -->
+
+	<!-- ========== 军事服装 ========= -->
+
+	<ThingDef ParentName="Celes_OverheadBase"> <!--军官帽-->
+		<defName>Celes_MilitaryHat</defName>
+		<label>Celes_MilitaryHat</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Celes/Apparel/OverHead/MilitaryHat/MilitaryHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>1.2</Mass>
+			<EquipDelay>5</EquipDelay>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.42</ArmorRating_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/OverHead/MilitaryHat/MilitaryHat</wornGraphicPath>
+			<tags>
+				<li>Celes_Military</li>
+			</tags>
+		</apparel>
+		<costList>
+			<Cloth>60</Cloth>
+			<Steel>40</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_TailoringTab</li>
+			</recipeUsers>
+			<displayPriority>301</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Hat</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="Celes_OverheadBase"> <!--战术头盔-->
+		<defName>Celes_TacticalHelmet</defName>
+		<label>Celes_TacticalHelmet</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Celes/Apparel/OverHead/TacticalHelmet/TacticalHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>1.2</Mass>
+			<EquipDelay>5</EquipDelay>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.42</ArmorRating_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/OverHead/TacticalHelmet/TacticalHelmet</wornGraphicPath>
+			<tags>
+				<li>Celes_Military</li>
+			</tags>
+		</apparel>
+		<costList>
+			<Steel>60</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
+			<recipeUsers>
+				<li>Celes_MultifunctionalTabA</li>
+			</recipeUsers>
+			<displayPriority>301</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>Celes_Apparel_Hat</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>

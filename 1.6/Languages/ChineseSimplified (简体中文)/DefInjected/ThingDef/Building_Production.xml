@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Celes_MultifunctionalTabA.label>星铃加工台</Celes_MultifunctionalTabA.label>
+  <Celes_MultifunctionalTabA.description>用于组装和拆解各式星铃设备的加工台，比如星铃的先进枪械和防具，所有的规格按照星铃标准制造。</Celes_MultifunctionalTabA.description>
+  <!-- EN: Multifunctional tab for assembling and disassembling various Celestia equipment, such as Celestia's advanced firearms and defences, all made to Celestia's specifications. -->
+
+  <Celes_MultifunctionalTabB.label>星铃先进加工台</Celes_MultifunctionalTabB.label>
+  <Celes_MultifunctionalTabB.description>用于组装和拆解各式星铃设备的加工台，比如星铃的先进枪械和防具，所有的规格按照星铃标准制造。</Celes_MultifunctionalTabB.description>
+  <!-- EN: Multifunctional tab for assembling and disassembling various Celestia equipment, such as Celestia's advanced firearms and defences, all made to Celestia's specifications. -->
+
+  <Celes_TailoringTab.label>星铃缝纫台</Celes_TailoringTab.label>
+  <Celes_TailoringTab.description>带有一系列缝纫工具的星铃缝纫台，所有的规格按照星铃标准制造，用于缝制星铃衣物。没电时的工作速度只有平时的50%。</Celes_TailoringTab.description>
+  <!-- EN: A Celestia tailoring tab with a range of sewing tools, all manufactured to Celestia standards for sewing Celestia clothing. Works at 50% of its usual speed when there is no power. -->
+  
+</LanguageData>

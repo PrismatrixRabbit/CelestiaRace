@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Option_Drop11.label>申请两堆MRE(需要1密钥)</Option_Drop11.label>
+	<!-- EN: request two stacks of MREs.(1 Pioneer Key) -->
+	<Option_Drop12.label>申请一小份药物(需要1密钥)</Option_Drop12.label>
+	<!-- EN: request a little medicine.(1 Pioneer Key) -->
+	<Option_Drop13.label>申请三堆钢铁(需要1密钥)</Option_Drop13.label>
+	<!-- EN: request three stacks of steels.(1 Pioneer Key) -->
+    <Option_Drop21.label>申请一堆白银(需要2密钥)</Option_Drop21.label>
+	<!-- EN: request a stack of silver.(2 Pioneer Key) -->
+	<Option_Drop22.label>申请一小堆零部件(需要2密钥)</Option_Drop22.label>
+	<!-- EN: request a small pile of components.(2 Pioneer Key) -->
+	<Option_Drop31.label>申请炮击指示器(需要4密钥)</Option_Drop31.label>
+	<!-- EN: request artillery strike targeter.(3 Pioneer Key) -->
+    
+    <Option_Aid01.label>申请外勤建设队(需要1密钥)</Option_Aid01.label>
+	<!-- EN: request celestia field construction team.(1 Pioneer Key) -->
+    <Option_Aid02.label>申请志愿拓荒队(需要2密钥)</Option_Aid02.label>
+	<!-- EN: request celestia volunteer pioneer team.(2 Pioneer Key) -->
+	<Option_Aid03.label>申请先锋作战小队(需要3密钥)</Option_Aid03.label>
+	<!-- EN: request celestia vanguard combat squad.(3 Pioneer Key) -->
+	<Option_Aid04.label>申请海军陆战队(需要5密钥)</Option_Aid04.label>
+	<!-- EN: request celestia regular marine squad.(5 Pioneer Key) -->
+
+</LanguageData>

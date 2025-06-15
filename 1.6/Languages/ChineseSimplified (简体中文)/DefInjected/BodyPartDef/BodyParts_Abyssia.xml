@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_Abyssia_Tail.label>狐尾</Celes_Abyssia_Tail.label>
+    <Celes_Abyssia_Tailbone.label>尾骨</Celes_Abyssia_Tailbone.label>
+    <Celes_Abyssia_Ear.label>狐耳</Celes_Abyssia_Ear.label>
+    <Celes_Abyssia_NerveCord.label>神经索</Celes_Abyssia_NerveCord.label>
+    <Celes_Abyssia_TentacleBase.label>触腕接点</Celes_Abyssia_TentacleBase.label>
+    <Celes_Abyssia_TentacleMain.label>触腕</Celes_Abyssia_TentacleMain.label>
+    <Celes_Abyssia_TentacleTip.label>触腕肢缘</Celes_Abyssia_TentacleTip.label>
+    <Celes_Abyssia_Neurons.label>分布式神经节</Celes_Abyssia_Neurons.label>
+    <Celes_Abyssia_TentacularTongue.label>触状舌</Celes_Abyssia_TentacularTongue.label>
+    <Celes_Abyssia_SecondaryEye.label>副眼</Celes_Abyssia_SecondaryEye.label>
+
+</LanguageData>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <RecipeDef Name="Celes_OwnSurgery" ParentName="SurgeryFlesh" Abstract="True">
+        <recipeUsers>
+            <li>Celes_Race</li>
+        </recipeUsers>
+        <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Celes_OwnSurgery">
+        <defName>ExtractCelesNanoMachine</defName>
+        <label>Separate Dust-Mech from Blood</label>
+        <description>Celestia's blood is filled with Dust-Mech substances that constantly maintain their bodies, and some of them are in an initial state where they have not yet been instructed to reproduce themselves. \n\nThe purpose of this procedure is to isolate these initial state Dust-Mech substances while extracting Celestia's blood. This is an emergency option in extreme cases.Without enough blood, it is impossible to isolate enough Dust-Mech to be self-sustaining.</description>
+        <workerClass>Recipe_ExtractHemogen</workerClass>
+        <jobString>Separating Dust-Mech from Blood.</jobString>
+        <workAmount>500</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <isViolation>true</isViolation>
+        <descriptionHyperlinks>
+            <ThingDef>CelesNanoMachine</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <anesthetize>false</anesthetize>
+        <workSkillLearnFactor>2</workSkillLearnFactor>
+        <products>
+            <CelesNanoMachine>3</CelesNanoMachine>
+        </products>
+        <researchPrerequisites>
+            <li>Celes_MainTech_II</li>
+        </researchPrerequisites>
+    </RecipeDef>
+    
+</Defs>

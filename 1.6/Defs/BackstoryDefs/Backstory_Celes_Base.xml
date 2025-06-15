@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <AlienRace.AlienBackstoryDef Name="Celes_BaseAdultBackstory" Abstract="True">
+        <disallowedTraitsChance>
+        </disallowedTraitsChance>
+        <bodyTypeMale>Female</bodyTypeMale>
+        <spawnCategories>
+            <li>Celes_All</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef Name="Celes_BaseAdultBackstory_Military" ParentName="Celes_BaseAdultBackstory" Abstract="True">
+        <disallowedTraitsChance>
+        </disallowedTraitsChance>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef Name="Celes_BaseChildBackstory" Abstract="True">
+        <disallowedTraitsChance>
+        </disallowedTraitsChance>
+        <spawnCategories>
+            <li>Celes_All</li>
+        </spawnCategories>
+    </AlienRace.AlienBackstoryDef>
+    
+</Defs>

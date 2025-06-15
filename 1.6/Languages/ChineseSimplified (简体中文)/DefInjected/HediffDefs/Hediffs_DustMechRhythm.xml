@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- ========== 标准节律 ========== -->
+
+    <Celes_DustMechRhythm_Standard.label>尘构节律(稳态)</Celes_DustMechRhythm_Standard.label>
+    <Celes_DustMechRhythm_Standard.description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于稳定状态。\n\n自出生起，星铃的血液中就流淌着尘构物质，主要充当着人机交互媒介的植入物，在边缘世界就显得用途局限。</Celes_DustMechRhythm_Standard.description>
+    <!--<Celes_DustMechRhythm_Standard.stages.0.label>增殖期</Celes_DustMechRhythm_Standard.stages.0.label>-->
+
+    <Celes_DustMechRhythm_ProtocolIII.label>尘构节律(协议三)</Celes_DustMechRhythm_ProtocolIII.label>
+    <Celes_DustMechRhythm_ProtocolIII.description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于特殊的活跃状态。\n\n作为星铃生存协议的一部分，当星铃机体的意识水平下降到一定程度时，流淌在血液中的尘构便会试图强行维系星铃的生存。尘构物质参与进循环系统，辅助运输，抑制出血，快速修补血管网络，在创伤处构建纳米网格，并阻断大脑高级功能避免生理与心理的进一步损伤。</Celes_DustMechRhythm_ProtocolIII.description>
+    <Celes_DustMechRhythm_ProtocolIII.stages.0.label>疲劳</Celes_DustMechRhythm_ProtocolIII.stages.0.label>
+    <Celes_DustMechRhythm_ProtocolIII.stages.1.label>活性</Celes_DustMechRhythm_ProtocolIII.stages.1.label>
+    <Celes_DustMechRhythm_ProtocolIII.stages.2.label>预备</Celes_DustMechRhythm_ProtocolIII.stages.2.label>
+
+    <Celes_DustMechRhythm_Activity.label>尘构节律(活性)</Celes_DustMechRhythm_Activity.label>
+    <Celes_DustMechRhythm_Activity.description>周期性波动的尘构机械，协调着该个体的机体机能，正处于活跃状态。\n\n在特殊指令的刺激下，尘构机械正修补并全面强化着个体的身体机能，但代价则是在全身各处穿行的尘构物质对免疫系统与神经末梢的无害强烈刺激。</Celes_DustMechRhythm_Activity.description>
+    <Celes_DustMechRhythm_Activity.stages.0.label>活性</Celes_DustMechRhythm_Activity.stages.0.label>
+    <Celes_DustMechRhythm_Activity.stages.1.label>预备</Celes_DustMechRhythm_Activity.stages.1.label>
+
+    <Celes_DustMechRhythm_Dormant.label>尘构节律(疲劳)</Celes_DustMechRhythm_Dormant.label>
+    <Celes_DustMechRhythm_Dormant.description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于应激状态。\n\n尘构机械刚刚经历了剧烈的消耗，连带着星铃的机体陷入过度疲劳的状态。这种无害的疲劳状态需要大约一天恢复。</Celes_DustMechRhythm_Dormant.description>
+
+    <!-- ========== 军规节律 ========== -->
+
+    <Celes_DustMechRhythm_Military.label>尘构节律(军规)</Celes_DustMechRhythm_Military.label>
+    <Celes_DustMechRhythm_Military.description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于稳定状态。\n\n该个体体内的尘构物质被调整到了一个运行模式，在这个模式下的尘构物质会全面强化个体的战斗能力，但会削弱些许工作能力。在星铃的母星系，调整到军规节律往往需要对象经历严苛的审查和检测。但在检测条件受限的边缘世界，这种节律似乎被稍稍滥用了。</Celes_DustMechRhythm_Military.description>
+
+    <Celes_DustMechRhythm_ProtocolII.label>尘构节律(协议二)</Celes_DustMechRhythm_ProtocolII.label>
+    <Celes_DustMechRhythm_ProtocolII.description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于特殊的活跃状态。\n\n作为星铃生存协议的一部分，这个协议通常只有在极其极端的条件下才会触发，军规节律则会绕过这个限制。流淌在血液中的尘构同样试图维持星铃的生存，但这一次是通过消灭威胁生存的对象，通过全面强化个体的作战能力。</Celes_DustMechRhythm_ProtocolII.description>
+    <Celes_DustMechRhythm_ProtocolII.stages.0.label>疲劳</Celes_DustMechRhythm_ProtocolII.stages.0.label>
+    <Celes_DustMechRhythm_ProtocolII.stages.1.label>活性</Celes_DustMechRhythm_ProtocolII.stages.1.label>
+
+    <!--<Celes_DustMechRhythm_MilitaryActivity.label>尘构节律(活性-高强度)</Celes_DustMechRhythm_MilitaryActivity.label>-->
+    <!--<Celes_DustMechRhythm_MilitaryActivity.description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于应激状态。\n\n尘构机械正</Celes_DustMechRhythm_MilitaryActivity.description>-->
+
+    <!--<Celes_DustMechRhythm_MilitaryDormant.label>尘构节律(疲劳-抑制性)</Celes_DustMechRhythm_MilitaryDormant.label>-->
+    <!--<Celes_DustMechRhythm_MilitaryDormant.description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于应激状态。\n\n尘构机械正</Celes_DustMechRhythm_MilitaryDormant.description>-->
+
+    <!-- ========== 人类节律 ========== -->
+
+    <Celes_DustMechRhythm_Overactivity.label>尘构节律(过活性)</Celes_DustMechRhythm_Overactivity.label>
+    <Celes_DustMechRhythm_Overactivity.description>周期性波动的尘构机械，协调着该个体的机体机能，正处于过度活跃状态，需要立刻介入。\n\n由于个体与星铃的基因相似性，尘构机械正不断增殖并试图修补并全面强化个体。但由于基因组中缺乏尘构抑制序列，这些尘构无法停止自发增殖，甚至有不少停留在自我复制的初始状态，并逐渐引起强烈的炎症反应，有致命风险。</Celes_DustMechRhythm_Overactivity.description>
+    <Celes_DustMechRhythm_Overactivity.stages.0.label>过活性</Celes_DustMechRhythm_Overactivity.stages.0.label>
+    <Celes_DustMechRhythm_Overactivity.stages.1.label>协议极限</Celes_DustMechRhythm_Overactivity.stages.1.label>
+
+    <Celes_DustMechRhythm_Extreme.label>尘构节律(协议突破)</Celes_DustMechRhythm_Extreme.label>
+    <Celes_DustMechRhythm_Extreme.description>周期性波动的尘构机械，协调着该个体的机体机能，已经突破标准协议，需要立刻介入。\n\n由于个体与星铃的基因相似性，尘构机械正不断增殖并试图修补并全面强化个体。但由于基因组中缺乏尘构抑制序列，这些尘构无法停止自发增殖，并已经不可避免的替换了一部分机体功能，无法安全分离。这些越过了协议限制的尘构物质最终会完全替换宿主的身体并摧毁智能，似乎只能通过另一种纳米机械治愈。</Celes_DustMechRhythm_Extreme.description>
+    <Celes_DustMechRhythm_Extreme.stages.1.label>协议突破</Celes_DustMechRhythm_Extreme.stages.1.label>
+
+    <Celes_DustMechRhythm_DormantHuman.label>尘构节律(疲劳)</Celes_DustMechRhythm_DormantHuman.label>
+    <Celes_DustMechRhythm_DormantHuman.description>尘构物质正在缓慢自我分解，并促使副产物脱离机体。\n\n该个体的细胞刚刚经历了过度的活跃，正陷入疲劳状态。这种无害的疲劳状态需要大约一天恢复。</Celes_DustMechRhythm_DormantHuman.description>
+    <Celes_DustMechRhythm_DormantHuman.stages.0.label>尘构活跃</Celes_DustMechRhythm_DormantHuman.stages.0.label>
+
+    <!-- ========== 侍从构建 ========== -->
+
+    <Celes_DustMechRhythm_Serve.label>尘构节律(侍从构建)</Celes_DustMechRhythm_Serve.label>
+    <Celes_DustMechRhythm_Serve.description>周期性波动的尘构机械，协调着该个体的机体机能，正处于稳定状态。\n\n秉承着“以人为本”的理念，藉由星铃科考队的实验性技术，已经对该个体完成了仆从化改造。通过抑制无意义的高级脑区活动，个体摒弃了大部分的能量需求与休息需求。这些能量将被分配给尘构机械用以强化更有意义的个体素质。而代价则是些微的意识水平减退。</Celes_DustMechRhythm_Serve.description>
+    <!--<Celes_DustMechRhythm_Serve.stages.0.label>尘构活跃</Celes_DustMechRhythm_Serve.stages.0.label>
+    <Celes_DustMechRhythm_Serve.stages.1.label>尘构充足</Celes_DustMechRhythm_Serve.stages.1.label>
+    <Celes_DustMechRhythm_Serve.stages.2.label>尘构匮乏</Celes_DustMechRhythm_Serve.stages.2.label>
+    <Celes_DustMechRhythm_Serve.stages.3.label>尘构宕机</Celes_DustMechRhythm_Serve.stages.3.label>-->
+
+</LanguageData>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Celes_CPS1M.label>CPS-1作战灵能强化剂</Celes_CPS1M.label>
+  <Celes_CPS1M.description>一种合成尘构制剂，用于提高使用者的灵能作战能力并直接增加精神力。CPS-1继承了星铃作战药物一贯的细胞活性过载，其后效有一定致命性。\n\n通过过度活跃神经，使用者会更容易感到疼痛，但也能更快的耗散心灵熵并凝聚精神力。作为某种＂副作用＂，使用者也会在战斗中更加专注……但过度专注和敏感的神经反而拖慢了日常工作的速度。</Celes_CPS1M.description>
+  <!-- EN: A synthetic Dust-Mech preparation used to enhance the user's psychic combat abilities and directly increase psyfocus.CPS-1 inherits Celestia's usual cellular activity overload from its combat drugs, and its aftereffects are somewhat lethal. \n\nBy overactivating the nerves, the user will feel pain more easily, but will also be able to dissipate neural heat and gather psyfocus more quickly. As a side effect, the user will also be more focused in combat, but overfocused and sensitive nerves slow down daily tasks. -->
+  <Celes_CPS1M.ingestible.ingestCommandString>注射{0}</Celes_CPS1M.ingestible.ingestCommandString>
+  <Celes_CPS1M.ingestible.ingestReportString>正在注射{0}</Celes_CPS1M.ingestible.ingestReportString>
+
+</LanguageData>

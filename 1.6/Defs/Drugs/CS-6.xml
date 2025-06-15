@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef ParentName="MakeableDrugBase">
+        <defName>Celes_CS6M</defName>
+        <label>CS-6 combat stimulants</label>
+        <description>A synthetic chemical agent used to fully enhance the user's combat abilities and briefly suppress the user's need to sleep. Note that CS-6 achieves organic enhancement by overloading cellular activity, and its after-effects are somewhat lethal. \n\nThis compound agent, in addition to activating the nervous system, has a certain degree of strengthening and overloading of all systems of the body, and the long-term use of this kind of overdrafting drug will drastically reduce life expectancy. There is no doubt that overdose of this drug is quite dangerous.</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_CS6_HighSample</HediffDef>
+            <HediffDef>Celes_CS6_After</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Celes/Drugs/CS6</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>400</WorkToMake>
+            <MarketValue>60</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <foodType>Processed, Fluid</foodType>
+            <baseIngestTicks>30</baseIngestTicks>
+            <nurseable>true</nurseable>
+            <drugCategory>Medical</drugCategory>
+            <ingestSound>Ingest_Inject</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.18,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Inject {0}</ingestCommandString>
+            <ingestReportString>Injecting {0}</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <chairSearchRadius>0</chairSearchRadius>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>Celes_CS6_High</hediffDef>
+                    <severity>0.33</severity>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+                    <offset>0.15</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>2</Neutroamine>
+            <Celes_BioGel>1</Celes_BioGel>
+            <PsychoidLeaves>8</PsychoidLeaves>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+                <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef>
+        <defName>Celes_CS6_HighSample</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>CS-6 stimulant is taking effect</label>
+        <labelNoun>CS-6 effect</labelNoun>
+        <description>The CS-6 chemicals flowing in the bloodstream was increasing the user's combat ability.</description>
+        <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+        <initialSeverity>0.001</initialSeverity>
+        <maxSeverity>0.002</maxSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <painFactor>0.2</painFactor>
+                <restFallFactor>0.5</restFallFactor>
+                <statOffsets>
+                    <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+                    <ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
+                    <MeleeHitChance>2.5</MeleeHitChance>
+                </statOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.35</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.5</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Celes_CS6_High</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>CS-6 stimulant is taking effect</label>
+        <labelNoun>CS-6 effect</labelNoun>
+        <description>The CS-6 chemicals flowing in the bloodstream was increasing the user's combat ability.</description>
+        <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_CS6_After</targetHediff>
+                <minToJump>true</minToJump>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <painFactor>0.2</painFactor>
+                <restFallFactor>0.5</restFallFactor>
+                <statOffsets>
+                    <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+                    <ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
+                    <MeleeHitChance>2.5</MeleeHitChance>
+                </statOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.35</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.5</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.51</minSeverity>
+                <label>overdose</label>
+                <painFactor>0.1</painFactor>
+                <restFallFactor>0.1</restFallFactor>
+                <statOffsets>
+                    <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+                    <ShootingAccuracyPawn>8.0</ShootingAccuracyPawn>
+                    <MeleeHitChance>5.0</MeleeHitChance>
+                </statOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.5</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.8</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>HeartAttack</hediff>
+                        <mtbDays>0.33</mtbDays>
+                        <partsToAffect>
+                            <li>Heart</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
+            </li>
+        </stages>
+    </HediffDef>
+    
+    <HediffDef>
+        <defName>Celes_CS6_After</defName>
+        <label>CS-6 after effect</label>
+        <labelNoun>a CS-6 after effect</labelNoun>
+        <description>The organism is recovering from an overload of cellular activity caused by CS-6, and lack of appropriate treatment may lead to death.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+        <makesSickThought>true</makesSickThought>
+        <lethalSeverity>1</lethalSeverity>
+        <tendable>true</tendable>
+        <isBad>true</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <!--<li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>30000~60000</disappearsAfterTicks>
+            </li>-->
+            <li Class="HediffCompProperties_TendDuration">
+                <baseTendDurationHours>24</baseTendDurationHours>
+                <severityPerDayTended>-1.5</severityPerDayTended>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <vomitMtbDays>0.2</vomitMtbDays>
+                <restFallFactor>2.5</restFallFactor>
+                <hungerRateFactorOffset>1</hungerRateFactorOffset>
+                <socialFightChanceFactor>3.0</socialFightChanceFactor>
+                <capMods>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.80</minSeverity>
+                <label>dangerous</label>
+                <lifeThreatening>true</lifeThreatening>
+                <vomitMtbDays>0.2</vomitMtbDays>
+                <restFallFactor>2.5</restFallFactor>
+                <hungerRateFactorOffset>1</hungerRateFactorOffset>
+                <socialFightChanceFactor>3.0</socialFightChanceFactor>
+                <capMods>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

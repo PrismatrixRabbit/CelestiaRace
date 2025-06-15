@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Celes_PlayerFaction.label>星铃新前哨</Celes_PlayerFaction.label>
+  <Celes_PlayerFaction.description>一个由新近抵达这颗行星的星铃组建的前哨。</Celes_PlayerFaction.description>
+  <!-- EN: An outpost formed by Celestia who had recently arrived on the planet. -->
+  <Celes_PlayerFaction.pawnSingular>星铃殖民者</Celes_PlayerFaction.pawnSingular>
+  <Celes_PlayerFaction.pawnsPlural>星铃殖民者</Celes_PlayerFaction.pawnsPlural>
+
+  <Celes_Faction.label>星铃拓荒队</Celes_Faction.label>
+  <Celes_Faction.description>一群大约在几十年前抵达这颗星球的星铃，由星铃第七舰队的海军和＂提灯＂号恒星际科考舰的拓荒队混编而成。她们掌握着许多先进而独特的科技，但并不以此自傲。大多数时候，星铃不会使用她们先进的武器，这可能是因为她们经历了某种技术退步，但又似乎是因为她们对抗某种敌人而养成的某种习惯。她们依然保存着某种技术生产线，如同事先做好了准备一般，甚至在积极地稳步恢复和重现已经遗失的技术。\n\n在大多数时候，她们待人友善，乐于和其他派系交换有无并结成盟友，即使对方是陌生人。但她们也会毫不客气的给敌人沉重的回击。\n\n最近一段时间，星铃开始利用物资和人员支援朋友们。通过通讯台联络她们的外勤部门，只要有所贡献就能有所交换。</Celes_Faction.description>
+  <!-- EN: A group of Celestia who arrived on the planet some decades ago, a mix of Celestia's Seventh Fleet Navy and the Pioneers of the Pharos interstellar science vessel. They possess many advanced and unique technologies, but are not proud of them. Most of the time, Celestia does not use their advanced weaponry, possibly because they have experienced some sort of technological regression, but it seems to be a habit they have developed against some sort of enemy. They still maintain some sort of technological production line, as if they had prepared for it beforehand, and are even actively and steadily restoring and recreating technology that has been lost. \n\n For the most part, they treat people kindly, happy to exchange haves and have-nots and form alliances with other factions, even if the other party is a stranger. But they also have no qualms about giving their enemies a heavy blow back. \n\n In recent times, Celestia had begun to support her friends with supplies and personnel. Contacting their field departments through the communication desk, they can exchange anything if you contribute. -->
+  <Celes_Faction.pawnSingular>星铃拓荒者</Celes_Faction.pawnSingular>
+  <Celes_Faction.pawnsPlural>星铃拓荒队</Celes_Faction.pawnsPlural>
+  <Celes_Faction.leaderTitle>拓荒总指挥</Celes_Faction.leaderTitle>
+
+
+</LanguageData>

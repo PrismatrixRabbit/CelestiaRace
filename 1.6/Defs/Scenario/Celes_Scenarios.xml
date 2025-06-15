@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <ScenarioDef ParentName="ScenarioBase">
+	<defName>Celes_Scenarios</defName>
+    <label>Celestia on the ground.</label>
+    <description>As pioneers of The Navigator Programme, you aboard the Polaris should have been awakened to the dawn of a new world by intelligent machinery, or at least by the crew of this generational ship. Instead, you were pulled out of your hibernation pods by marines claiming to be from Celestia's Seventh Fleet, amidst the burning smell of organic matter and machinery. With their help, the two of you were able to hitch a ride on an escape pod from the ship. Looking back at a moment before you entered the atmosphere, you saw the Generation ship, wreathed in crystalline blue light, fade away in a flash of fire like a nova. \n&lt;color=#3d3e3f&gt;"ERROR: Unable to get instance, self-maintenance system away from ...... is online, CLUSTER has taken over Polaris." &lt;/color&gt;</description>
+    <scenario>
+      <summary>Two Celestia who suffered an accident and were forced to land in this Rimworld.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>Celes_PlayerFaction</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Bad news, crash reporting. \n\nThe two of you escaped the fragmented Polaris, separated from the other pioneers, and landed on a strange and unknown Rimworld. Much of the ship's wreckage has been reduced to meteors in the atmosphere, while the rest has continued to fall around you. \n\nIt's time to formulate a plan on how to survive in this barren land.</text>
+          <textKey>GameStartDialog</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>2</pawnCount>
+          <pawnChoiceCount>6</pawnChoiceCount>
+        </li>
+
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+          <visible>false</visible>
+        </li>
+		
+		<!-- Player pawns modifiers -->
+		<!-- 也许我们不是低温休眠但是总之先这样写 -->
+        <li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>0.33</chance>
+          <hediff>CryptosleepSickness</hediff>
+          <hideOffMap>true</hideOffMap>
+          <severityRange>1~1</severityRange>
+        </li>
+
+
+        <!-- Starting research -->
+        <!-- <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MicroelectronicsBasics</project>
+        </li> -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Batteries</project>
+        </li>
+        <li Class="ScenPart_StartingResearch" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingResearch</def>
+          <project>BasicMechtech</project>
+        </li>
+
+        <!-- Starting mechs -->
+        <li Class="ScenPart_StartingMech" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingMech</def>
+          <mechKind>Mech_Lifter</mechKind>
+          <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_StartingMech" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingMech</def>
+          <mechKind>Mech_Agrihand</mechKind>
+          <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_StartingMech" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingMech</def>
+          <mechKind>Mech_Constructoid</mechKind>
+          <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_StartingMech" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingMech</def>
+          <mechKind>Mech_Constructoid</mechKind>
+          <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+        </li>
+
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>800</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>CelesMRE</thingDef><!-- 这个肯定要换星铃军粮的 -->
+          <count>40</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineCeles</thingDef><!-- 这个也肯定要换星铃药物的 -->
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Plasteel</thingDef>
+          <count>100</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="Ludeon.RimWorld.Biotech">
+          <def>StartingThing_Defined</def>
+          <thingDef>SubcoreBasic</thingDef>
+          <count>3</count>
+        </li>
+		<!-- 这下面也肯定要换星铃武器和防具的 -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Celes_Early_SemiRifle</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>CelesDagger</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Celes_TacticalVest</thingDef>
+        </li>
+        <!-- <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Celes_LightLegArmour</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Apparel_AdvancedHelmet</thingDef>
+          <stuff>Plasteel</stuff>
+        </li> -->
+
+        <!-- Scatter some things near player start -->
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>400</count>
+        </li>
+
+        <!-- Scatter some things anywhere -->
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ShipChunk</thingDef>
+          <allowRoofed>false</allowRoofed>
+          <count>5</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>Steel</thingDef>
+          <count>720</count>
+        </li>
+        
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

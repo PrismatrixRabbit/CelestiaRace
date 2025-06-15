@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <CelesArtilleryTargeter.label>星铃拓荒队炮击指示器</CelesArtilleryTargeter.label>
+    <!-- EN: Celestia Pioneer artillery strike targeter  -->
+    <CelesArtilleryTargeter.description>星铃拓荒队炮击指示器，用于指引一次来自星铃海军的超视距火力覆盖。</CelesArtilleryTargeter.description>
+    <!-- EN: Celestia Pioneer artillery strike targeter, used to guide one over-the-horizon fire coverage from the Celestia Navy.  -->
+
+</LanguageData>

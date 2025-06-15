@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="MakeableDrugBase">
+        <defName>Celes_RS1M</defName>
+        <label>RS-1 Experimental Stimulants</label>
+        <description>A synthetic Dust-Mech agent that drastically and comprehensively strengthens the user's body, making it a powerful and unrivalled war machine. Note, however, that the ingestion of RS-1 is accompanied by a high probability of coma and cardiac side effects. \n\nThe drug is essentially a Luciferium that has been tweaked with instructions, and by using the Dust-Mech to override and overload the instructions of the Luciferian concoction, the developers of RS-1 have managed to solve the nanomachine mixture's deficiencies in co-ordination and difficulty in expelling from the body, but with that comes a high degree of instability due to the cross-influence of the Dust-Mech and Luciferium.</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_RS1_High</HediffDef>
+            <HediffDef>Celes_RS1Stun</HediffDef>
+            <HediffDef>HeartAttack</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Celes/Drugs/RS1</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>1600</WorkToMake>
+            <MarketValue>120</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <foodType>Processed, Fluid</foodType>
+            <nurseable>true</nurseable>
+            <drugCategory>Medical</drugCategory>
+            <baseIngestTicks>40</baseIngestTicks>
+            <ingestSound>Ingest_Inject</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.18,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Inject {0}</ingestCommandString>
+            <ingestReportString>Injecting {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <chairSearchRadius>0</chairSearchRadius>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>Celes_RS1_High</hediffDef>
+                    <severity>0.5</severity>
+                </li>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <chance>0.33</chance>
+                    <hediffDef>Celes_RS1Stun</hediffDef>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>1.0</offset>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Food</need>
+                    <offset>1.0</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Bio_IV</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Celes_BioGel>10</Celes_BioGel>
+            <Neutroamine>5</Neutroamine>
+            <Luciferium>3</Luciferium>
+            <CelesNanoMachine>5</CelesNanoMachine>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+                <overdoseSeverityOffset>0.08~0.45</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <HediffDef>
+        <defName>Celes_RS1_High</defName>
+        <label>RS-1 effecting</label>
+        <description>The reprogrammed Luciferium in the body is improving the host's bodily functions across the board and will be nullified by Dust-Mech decomposition after some time.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <maxSeverity>1</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>HeartAttack</targetHediff>
+                <chanceToJump>0.6</chanceToJump>
+                <minToJump>true</minToJump>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <painFactor>0.5</painFactor>
+                <totalBleedFactor>0.5</totalBleedFactor>
+                <socialFightChanceFactor>5.0</socialFightChanceFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.45</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>-0.50</WorkSpeedGlobal>
+                    <ShootingAccuracyPawn>10.0</ShootingAccuracyPawn>
+                    <MeleeHitChance>10.0</MeleeHitChance>
+                </statOffsets>
+                <statFactors>
+                    <AimingDelayFactor>0.66</AimingDelayFactor>
+                    <MeleeDPS>2.0</MeleeDPS>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+    
+    <HediffDef ParentName="DiseaseBase">
+        <defName>Celes_RS1Stun</defName>
+        <label>stress shock</label>
+        <description>The unstable Luciferium caused the user's body to go into a harmless state of protective shock, which would take at least a day to recover from.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_RS1M</ThingDef>
+            <HediffDef>Celes_RS1_High</HediffDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>60000~150000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <vomitMtbDays>0.3</vomitMtbDays>
+                <painFactor>0.8</painFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.15</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+    
+</Defs>

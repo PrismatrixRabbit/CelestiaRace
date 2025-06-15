@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <Celes_NS90_High_T.stages.0.label>NS-90兴奋</Celes_NS90_High_T.stages.0.label>
+    <!-- EN: NS-90 excitement -->
+    <Celes_NS90_High_T.stages.0.description>精神十足！该干活了！</Celes_NS90_High_T.stages.0.description>
+    <!-- EN: Full of energy! Time to get to work! -->
+    <Celes_NS90_High_T.stages.1.label>NS-90兴奋(过量)</Celes_NS90_High_T.stages.1.label>
+    <!-- EN: NS-90 excitement(overdose) -->
+    <Celes_NS90_High_T.stages.1.description>我感觉我有用不完的精力！哪儿有活干？！</Celes_NS90_High_T.stages.1.description>
+    <!-- EN: I feel like I have inexhaustible energy! Where's the work? -->
+    <Celes_NS90_High_T.stages.2.label>NS-90兴奋(严重过量)</Celes_NS90_High_T.stages.2.label>
+    <!-- EN: NS-90 excitement(severe overdose) -->
+    <Celes_NS90_High_T.stages.2.description>我感觉我的心口躁动个不停，我闲不下来！别挡道！</Celes_NS90_High_T.stages.2.description>
+    <!-- EN: I feel like my heart is restless and I can't stay idle! Get out of my way! -->
+
+    <Celes_NerveStimulateTolerance_T.stages.0.label>NS-90耐受性脑雾(微弱)</Celes_NerveStimulateTolerance_T.stages.0.label>
+    <!-- EN: NS-90 tolerant brain fog(small) -->
+    <Celes_NerveStimulateTolerance_T.stages.0.description>有点迷糊……</Celes_NerveStimulateTolerance_T.stages.0.description>
+    <!-- EN: A bit of a daze ...... -->
+    <Celes_NerveStimulateTolerance_T.stages.1.label>NS-90耐受性脑雾(严重)</Celes_NerveStimulateTolerance_T.stages.1.label>
+    <!-- EN: NS-90 tolerant brain fog(large) -->
+    <Celes_NerveStimulateTolerance_T.stages.1.description>我觉得有点头晕，但又不对，是错觉吗……</Celes_NerveStimulateTolerance_T.stages.1.description>
+    <!-- EN: I feel a bit dizzy, but it's not right, is it an illusion ......? -->
+    <Celes_NerveStimulateTolerance_T.stages.2.label>NS-90耐受性脑雾(极重)</Celes_NerveStimulateTolerance_T.stages.2.label>
+    <!-- EN: NS-90 tolerant brain fog(massive) -->
+    <Celes_NerveStimulateTolerance_T.stages.2.description>我感觉我的精神很疲劳，可我明明不累……我有那么一点没法集中注意……</Celes_NerveStimulateTolerance_T.stages.2.description>
+    <!-- EN: I feel like I'm mentally fatigued, but I'm clearly not ...... I'm having such a hard time concentrating ...... -->
+
+</LanguageData>

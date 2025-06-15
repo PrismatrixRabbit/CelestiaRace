@@ -233,7 +233,7 @@
         <defName>TradeOption_Goodwill</defName>
         <label>TradeOption</label>
         <tradeType>GoodWill</tradeType>        <!-- 交易类型 -->
-        <goodwillRequest>45~55</goodwillRequest>
+        <goodwillRequest>15~55</goodwillRequest>
         <rewards>            <!-- 交易物资 -->
             <CelesKeyCard>1</CelesKeyCard>
         </rewards>
@@ -246,7 +246,7 @@
         <label>TradeOption</label>
         <tradeType>Small</tradeType>
         <requests>
-			<Celes_IndustrialChips>15</Celes_IndustrialChips>
+			<Celes_IndustrialChips>5</Celes_IndustrialChips>
         </requests>
         <rewards>
             <CelesKeyCard>1</CelesKeyCard>
@@ -260,7 +260,7 @@
         <label>TradeOption</label>
         <tradeType>Big</tradeType>
 		<requests>
-			<Celes_NanoMachineCrystal>3</Celes_NanoMachineCrystal>
+			<CelesAlloy>80</CelesAlloy>
 		</requests>
 		<rewards>
 			<CelesKeyCard>1</CelesKeyCard>
