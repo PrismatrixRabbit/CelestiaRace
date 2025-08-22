@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- TODO 副作用改射击能力削弱和饥饿-->
-    <ThingDef ParentName="MakeableDrugBase">
+    <ThingDef ParentName="Celes_MakeableDrugBase">
         <defName>Celes_CS12M</defName>
         <label>CS-12 combat hemostat</label>
         <description>A synthetic chemical agent used to transiently inhibit the user's nociceptive nerves, activate the body's healing mechanisms, and inhibit bleeding through multiple pathways. Note that CS-12 achieves organic enhancement by overloading cellular activity, and its after-effects are somewhat lethal. \n\nThe risks of overdosing on CS-12 are so great that the synthetic formulas used by Celestia pioneers make it fundamentally difficult to synthesise high concentrations of CS-12. But even so, continuous injections of CS-12 still carry a not inconsiderable risk.</description>

@@ -3,7 +3,7 @@
 
 	<!-- ========== 专业服装 ========= -->
 
-    <ThingDef ParentName="Celes_ArmorMachineableBase"><!--厨房围裙-->
+    <ThingDef ParentName="Celes_ApparelBase"><!--厨房围裙-->
         <defName>Celes_KitchenApron</defName>
         <label>celestia kitchen apron</label>
         <description>A simple kitchen apron will keep things clean while cooking.</description>
@@ -12,11 +12,14 @@
             <texPath>Celes/Apparel/Middle/KitchenApron/KitchenApron</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
+        <costList>
+            <Silver>25</Silver>
+        </costList>
         <statBases>
             <Mass>0.2</Mass>
             <EquipDelay>1.5</EquipDelay>
@@ -42,14 +45,14 @@
             </tags>
         </apparel>
         <recipeMaker>
-            <researchPrerequisite>Celes_Apparel_III_a</researchPrerequisite>
+            <researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
             <recipeUsers>
                 <li>Celes_TailoringTab</li>
             </recipeUsers>
             <displayPriority>307</displayPriority>
         </recipeMaker>
 		<equippedStatOffsets>
-			<FoodPoisonChance>-1.0</FoodPoisonChance>
+			<FoodPoisonChance>-0.8</FoodPoisonChance>
 		</equippedStatOffsets>
         <thingCategories>
             <li>Celes_Apparel_Daily</li>

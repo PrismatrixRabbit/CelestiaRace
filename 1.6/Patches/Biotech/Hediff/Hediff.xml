@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Patch>
-    <Operation Class="PatchOperationAdd">
+<Patch MayRequire="Ludeon.RimWorld.Biotech">
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
         <xpath>Defs/HediffDef[defName="MechlinkImplant"]/comps</xpath>
         <value>
-            <li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">
                 <compClass>CelesFeature.Celes_HediffComp_RemoveHediffOnDeath</compClass>
             </li>
         </value>

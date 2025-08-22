@@ -52,4 +52,61 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
+	<WorkGiverDef>
+		<defName>Celes_Refuel</defName>
+		<label>refuel buildings</label>
+		<giverClass>CelesFeature.WorkGiver_Celes_Refuel</giverClass>
+		<workType>Hauling</workType>
+		<verb>refuel</verb>
+		<gerund>refueling</gerund>
+		<priorityInType>140</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>Celes_Maintenance</defName>
+		<label>do maintenance</label>
+		<giverClass>CelesFeature.WorkGiver_Celes_Maintenance</giverClass>
+		<workType>Research</workType>
+		<verb>maintain at</verb>
+		<gerund>maintaining at</gerund>
+		<priorityInType>40</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<!-- <canBeDoneByMechs>false</canBeDoneByMechs> -->
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>Celes_LoadTransformer</defName>
+		<label>load transformer</label>
+		<giverClass>CelesFeature.WorkGiver_Celes_LoadTransformer</giverClass>
+		<workType>Hauling</workType>
+		<verb>load</verb>
+		<gerund>loading</gerund>
+		<priorityInType>105</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>Celes_DoAutomaticBill</defName>
+		<label>make things at </label>
+		<giverClass>CelesFeature.Celes_WorkGiver_DoAutomaticBill</giverClass>
+		<workType>Smithing</workType>
+		<verb>work at</verb>
+		<gerund>working at</gerund>
+		<priorityInType>215</priorityInType>
+		<fixedBillGiverDefs>
+		</fixedBillGiverDefs>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
 </Defs>

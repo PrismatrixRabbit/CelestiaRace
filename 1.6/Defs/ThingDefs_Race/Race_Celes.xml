@@ -76,6 +76,14 @@
 				<alienPartGenerator>
 					<headTypes>
 						<li>CelesHeadN1</li>
+						<li>CelesHeadN2</li>
+						<li>CelesHeadN3</li>
+						<li>CelesHeadN4</li>
+						<li>CelesHeadN5</li>
+						<li>CelesHeadN6</li>
+						<li>CelesHeadN7</li>
+						<li>CelesHeadN8</li>
+						<li>CelesHeadN9</li>
 					</headTypes>
 					<bodyTypes>
 						<li>Female</li>
@@ -175,17 +183,32 @@
 								<RotStage>Fresh,Rotting</RotStage>
 							</conditions>
 							<offsets>
-								<west>
-									<layerOffset>-0.274</layerOffset>
-								</west>
 								<south>
 									<layerOffset>-0.274</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0</Baby>
+									</bodyTypes>
 								</south>
 								<north>
 									<layerOffset>-0.274</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0</Baby>
+									</bodyTypes>
 								</north>
 								<east>
 									<layerOffset>-0.274</layerOffset>
+									<bodyTypes>
+										<Thin>(0,-0.001)</Thin>
+										<Female>(0,-0.001)</Female>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,-0.001)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.001)</Baby>
+									</bodyTypes>
 								</east>
 							</offsets>
 						</li>
@@ -218,17 +241,32 @@
 								<RotStage>Fresh,Rotting</RotStage>
 							</conditions>
 							<offsets>
-								<west>
-									<layerOffset>-0.275</layerOffset>
-								</west>
 								<south>
 									<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+									</bodyTypes>
 								</south>
 								<north>
 									<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+									</bodyTypes>
 								</north>
 								<east>
 									<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<Thin>(0,-0.001)</Thin>
+										<Female>(0,-0.001)</Female>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,-0.001)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,-0.001)</Baby>
+									</bodyTypes>
 								</east>
 							</offsets>
 						</li>
@@ -261,15 +299,6 @@
 								<RotStage>Fresh,Rotting</RotStage>
 							</conditions>
 							<offsets>
-								<west>
-									<bodyTypes>
-										<Thin>(0,0)</Thin>
-										<Female>(0,0)</Female>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
-										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
-									</bodyTypes>
-									<layerOffset>-0.268</layerOffset>
-								</west>
 								<south>
 									<bodyTypes>
 										<Thin>(0,0)</Thin>
@@ -297,6 +326,15 @@
 									</bodyTypes>
 									<layerOffset>-0.268</layerOffset>
 								</east>
+								<west>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.267</layerOffset>
+								</west>
 							</offsets>
 						</li>
 						<li>
@@ -329,15 +367,6 @@
 								<RotStage>Fresh,Rotting</RotStage>
 							</conditions>
 							<offsets>
-								<west>
-									<bodyTypes>
-										<Thin>(0,0)</Thin>
-										<Female>(0,0)</Female>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
-										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
-									</bodyTypes>
-									<layerOffset>-0.268</layerOffset>
-								</west>
 								<south>
 									<bodyTypes>
 										<Thin>(0,0)</Thin>
@@ -363,10 +392,121 @@
 										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
 										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
 									</bodyTypes>
-									<layerOffset>-0.268</layerOffset>
+									<layerOffset>-0.267</layerOffset>
 								</east>
+								<west>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+									<layerOffset>-0.268</layerOffset>
+								</west>
 							</offsets>
 						</li>
+                    <!--<li>以防以后需要食尸鬼，在这里存一个美狐的
+                    <path>Miho/Head/Head</path>
+                    <shaderType>Cutout</shaderType>
+                    <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                    <inFrontOfBody>false</inFrontOfBody>
+                    <layerInvert>false</layerInvert>
+                    <colorChannel>skin</colorChannel>
+                    <alignWithHead>true</alignWithHead>
+                    <angle>0</angle>
+                    <offsets>
+                        <north>
+                            <layerOffset>-0.275</layerOffset>
+                            <bodyTypes>
+                                <Thin>(0,0)</Thin>
+                                <Female>(0,0)</Female>
+                                <Male>(0,0)</Male>
+
+                                <Child>(0,-0.028)</Child>
+                                <Baby>(0,-0.028)</Baby>
+                            </bodyTypes>
+                            <offset>(0,0)</offset>
+                        </north>
+                        <south>
+                            <layerOffset>-0.325</layerOffset>
+                            <bodyTypes>
+                                <Thin>(0,0)</Thin>
+                                <Female>(0,0)</Female>
+                                <Male>(0,0)</Male>
+
+                                <Child>(0,0.055)</Child>
+                                <Baby>(0,0.055)</Baby>
+                            </bodyTypes>
+                            <offset>(0,0)</offset>
+                        </south>
+                        <east>
+                            <layerOffset>-0.325</layerOffset>
+                            <bodyTypes>
+                                <Thin>(0,0)</Thin>
+                                <Female>(0,0)</Female>
+                                <Male>(0,0)</Male>
+
+                                <Child>(0.03,0.04)</Child>
+                                <Baby>(0.03,0.04)</Baby>
+                            </bodyTypes>
+                            <offset>(0,0)</offset>
+                        </east>
+                        <west>
+                            <layerOffset>-0.325</layerOffset>
+                            <bodyTypes>
+                                <Thin>(0,0)</Thin>
+                                <Female>(0,0)</Female>
+                                <Male>(0,0)</Male>
+
+                                <Child>(0.03,0.04)</Child>
+                                <Baby>(0.03,0.04)</Baby>
+                            </bodyTypes>
+                            <offset>(0,0)</offset>
+                        </west>
+                    </offsets>
+                    <extendedGraphics>
+                        <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Miho/HeadGhoul/Head</Hediff>
+                        <BodyType For="Baby">Miho/HeadBaby/Head</BodyType>
+                        <BodyType For="Child">Miho/HeadBaby/Head</BodyType>
+                        <BodyType For="Female">
+                            <path>Miho/Head/Head</path>
+                            <extendedGraphics>
+                                <Gene For="Ears_Arctic_Miho">Miho/HeadArctic/Head</Gene>
+                                <Gene For="Ears_Desert_Miho">Miho/HeadDesert/Head</Gene>
+                                <Gene For="Ears_Highland_Miho">Miho/HeadHighland/Head</Gene>
+                                <Gene For="Ears_Highmate_Miho">Miho/HeadHighmate/Head</Gene>
+                            </extendedGraphics>
+                        </BodyType>
+                        <BodyType For="Thin">
+                            <path>Miho/Head/Head</path>
+                            <extendedGraphics>
+                                <Gender For="Female">
+                                    <extendedGraphics>
+                                        <Gene For="Ears_Arctic_Miho">Miho/HeadArctic/Head</Gene>
+                                        <Gene For="Ears_Desert_Miho">Miho/HeadDesert/Head</Gene>
+                                        <Gene For="Ears_Highland_Miho">Miho/HeadHighland/Head</Gene>
+                                        <Gene For="Ears_Highmate_Miho">Miho/HeadHighmate/Head</Gene>
+                                    </extendedGraphics>
+                                </Gender>
+                                <Gender For="Male">
+                                    <extendedGraphics>
+                                        <Gene For="Ears_Arctic_Miho">Miho/HeadArcticMale/Head</Gene>
+                                        <Gene For="Ears_Desert_Miho">Miho/HeadDesertMale/Head</Gene>
+                                        <Gene For="Ears_Highland_Miho">Miho/HeadHighlandMale/Head</Gene>
+                                        <Gene For="Ears_Highmate_Miho">Miho/HeadHighmateMale/Head</Gene>
+                                        <Gene For="Gene_CelestialMiho">Miho/HeadMale/Head</Gene>
+
+                                    </extendedGraphics>
+                                </Gender>
+                            </extendedGraphics>
+                        </BodyType>
+                    </extendedGraphics>
+                    <conditions>
+                        <BodyPart>
+                            <bodyPart>Head</bodyPart>
+                        </BodyPart>
+                    </conditions>
+                </li>-->
 						<!-- <li> -->
 							<!--特殊衣物前景-->
 						<!-- <path>Celes/Apparel/Null/Null</path>
@@ -412,8 +552,35 @@
 					</bodyAddons>
 
 					<headOffset>(0,0)</headOffset>
+					<headOffsetDirectional>
+						<north>
+							<offset>(0, -0.09)</offset>
+							<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+							</bodyTypes>
+						</north>
+						<south>
+							<offset>(0, -0.05)</offset>
+							<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+							</bodyTypes>
+						</south>
+						<east>
+							<offset>(-0.06, -0.08)</offset>
+							<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(0.05,0)</Child>
+							</bodyTypes>
+						</east>
+						<west>
+							<offset>(0.06, -0.08)</offset>
+							<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Child>
+							</bodyTypes>
+						</west>
+					</headOffsetDirectional>
 					<customDrawSize>(1.0, 1.0)</customDrawSize>
-					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<customHeadDrawSize>(0.83, 0.83)</customHeadDrawSize>
+					<customPortraitHeadDrawSize>(0.83, 0.83)</customPortraitHeadDrawSize>
 					<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
 					<atlasScale>4</atlasScale>
 					<borderScale>1</borderScale>
@@ -588,11 +755,11 @@
 			<raceRestriction>
 
 				<apparelList>
-					<!-- 腿饰 -->
+					<!-- 腿饰
 					<li>Celes_SuspenderBlack</li>
 					<li>Celes_StockingBlack</li>
 					<li>Celes_TightBlack</li>
-					<li>Celes_LightLegArmour</li>
+					<li>Celes_LightLegArmour</li> -->
 					<!-- 夹层 -->
 					<li>Celes_KitchenApron</li>
 					<li>Celes_TacticalVest</li>
@@ -608,7 +775,7 @@
 					<!-- 外套 -->
 					<li>Celes_SummerCoat</li>
 					<li>Celes_WinterCoat</li>
-					<!--<li>Celes_TrenchCoat</li>-->
+					<li>Celes_TrenchCoat</li>
 					<li>Celes_ExploreCoat</li>
 					<li>Celes_LabCoat</li>
 					<li>Celes_MilitaryCoat</li>
@@ -618,7 +785,6 @@
 				</recipeList>
 
 				<blackRecipeList>
-					<li>Celes_RemoveDustMechRhythm_ActivityForHuman</li>
 				</blackRecipeList>
 
 				<plantList>

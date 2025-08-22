@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- ========== 标准节律 ========== -->
+
+    <Celes_ActiveDustMechRhythm_Standard.label>活化尘构节律</Celes_ActiveDustMechRhythm_Standard.label>
+    <Celes_ActiveDustMechRhythm_Standard.description>通过特定手段活化尘构节律。</Celes_ActiveDustMechRhythm_Standard.description>
+    <Celes_ActiveDustMechRhythm_Standard.jobString>正在活化尘构节律</Celes_ActiveDustMechRhythm_Standard.jobString>
+
+    <Celes_RemoveDustMechRhythm_ActivityForCeles.label>去活化尘构节律</Celes_RemoveDustMechRhythm_ActivityForCeles.label>
+    <Celes_RemoveDustMechRhythm_ActivityForCeles.description>对个体去活化尘构机械。</Celes_RemoveDustMechRhythm_ActivityForCeles.description>
+    <Celes_RemoveDustMechRhythm_ActivityForCeles.jobString>正在去活化尘构节律</Celes_RemoveDustMechRhythm_ActivityForCeles.jobString>
+
+    <!-- ========== 军用节律 ========== -->
+
+    <Celes_MilitarizeDustMechRhythm_Standard.label>尘构节律军事化</Celes_MilitarizeDustMechRhythm_Standard.label>
+    <Celes_MilitarizeDustMechRhythm_Standard.description>尘构节律军事化。</Celes_MilitarizeDustMechRhythm_Standard.description>
+    <Celes_MilitarizeDustMechRhythm_Standard.jobString>正在军事化尘构节律</Celes_MilitarizeDustMechRhythm_Standard.jobString>
+
+    <Celes_DemilitarizeDustMechRhythm_Standard.label>尘构节律非军事化</Celes_DemilitarizeDustMechRhythm_Standard.label>
+    <Celes_DemilitarizeDustMechRhythm_Standard.description>尘构节律非军事化。</Celes_DemilitarizeDustMechRhythm_Standard.description>
+    <Celes_DemilitarizeDustMechRhythm_Standard.jobString>正在非军事化尘构节律</Celes_DemilitarizeDustMechRhythm_Standard.jobString>
+
+    <!-- ========== 人类节律 ========== -->
+
+    <Celes_ImplantDustMechRhythm.label>尘构激活</Celes_ImplantDustMechRhythm.label>
+    <Celes_ImplantDustMechRhythm.description>通过自复制晶体的侵入式调整，我们可以为尘构节律失活的星铃植入尘构节律。当然也可以是人类植入尘构节律。纵使我们并不确定这样的后果。</Celes_ImplantDustMechRhythm.description>
+    <Celes_ImplantDustMechRhythm.jobString>正在激活尘构</Celes_ImplantDustMechRhythm.jobString>
+
+    <Celes_RemoveDustMechRhythm_ActivityForHuman.label>停机尘构物质</Celes_RemoveDustMechRhythm_ActivityForHuman.label>
+    <Celes_RemoveDustMechRhythm_ActivityForHuman.description>对机体中的尘构物质释放停机指令。</Celes_RemoveDustMechRhythm_ActivityForHuman.description>
+    <Celes_RemoveDustMechRhythm_ActivityForHuman.jobString>正在停机尘构物质</Celes_RemoveDustMechRhythm_ActivityForHuman.jobString>
+
+    <Celes_RemoveCeles_DustMechRhythm_Overactivity.label>尘构离心抑制</Celes_RemoveCeles_DustMechRhythm_Overactivity.label>
+    <Celes_RemoveCeles_DustMechRhythm_Overactivity.description>去活化尘构节律(过活性)。过度增殖以至于已经在血液中形成晶体的尘构物质可以在这个过程中被离心析出，而其中一些处于尚未被施加指令，只能自我复制的初始状态。通过类似分离星铃血液中的自复制晶体的方法，我们可以在这个阶段分离出晶体。需要进一步指令停机尘构物质。</Celes_RemoveCeles_DustMechRhythm_Overactivity.description>
+    <Celes_RemoveCeles_DustMechRhythm_Overactivity.jobString>正在离心并抑制尘构</Celes_RemoveCeles_DustMechRhythm_Overactivity.jobString>
+
+    <Celes_SetDustMechRhythm_Serve.label>设置侍从构建</Celes_SetDustMechRhythm_Serve.label>
+    <Celes_SetDustMechRhythm_Serve.description>设置侍从构建</Celes_SetDustMechRhythm_Serve.description>
+    <Celes_SetDustMechRhythm_Serve.jobString>正在设置侍从构建</Celes_SetDustMechRhythm_Serve.jobString>
+
+</LanguageData>

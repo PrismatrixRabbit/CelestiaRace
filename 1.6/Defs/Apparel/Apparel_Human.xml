@@ -11,6 +11,11 @@
             <li>Fabric</li>
             <li>Leathery</li>
         </stuffCategories>
+        <costList>
+            <Steel>50</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <CelesNanoMachine>10</CelesNanoMachine>
+        </costList>
         <graphicData>
             <texPath>Celes/Apparel/Shell/ServantCoat/ServantCoat</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -25,8 +30,8 @@
             <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <equippedStatOffsets>
-            <SlaveSuppressionOffset>0.30</SlaveSuppressionOffset>
-            <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.45</SlaveSuppressionOffset>
+            <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
         </equippedStatOffsets>
         <apparel>
             <layers>
@@ -86,7 +91,11 @@
         <stages>
             <li>
                 <painOffset>0.20</painOffset>
-                <hungerRateFactor>0.4</hungerRateFactor>
+                <hungerRateFactor>0.5</hungerRateFactor>
+                <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+                <statOffsets>
+                    <MaxNutrition>1.5</MaxNutrition>
+                </statOffsets>
                 <capMods>
                     <li>
                         <capacity>Talking</capacity>

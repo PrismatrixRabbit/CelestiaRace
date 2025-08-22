@@ -12,27 +12,39 @@
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>ComponentIndustrial</thingDef>
-                <countRange>20~70</countRange>
+                <countRange>45~80</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>ComponentSpacer</thingDef>
-                <countRange>1~6</countRange>
+                <countRange>6~20</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
-                <thingDef>Steel</thingDef>
-                <countRange>500~800</countRange>
+                <thingDef>Celes_SpaceWeapenComponent</thingDef>
+                <countRange>2~6</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>WoodLog</thingDef>
                 <countRange>400~700</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
+                <thingDef>CelesAlloy</thingDef>
+                <countRange>300~950</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>CelesNanoMachine</thingDef>
+                <countRange>10~65</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Steel</thingDef>
+                <countRange>800~1500</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
                 <thingDef>Plasteel</thingDef>
-                <countRange>100~250</countRange>
+                <countRange>200~450</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Uranium</thingDef>
-                <countRange>40~200</countRange>
+                <countRange>80~400</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Cloth</thingDef>
@@ -47,20 +59,32 @@
                 <countRange>50~200</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
+                <thingDef>Celes_BioGel</thingDef>
+                <countRange>100~250</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
                 <thingDef>Chemfuel</thingDef>
                 <countRange>300~500</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Chocolate</thingDef>
-                <countRange>-30~70</countRange>
-            </li>
-            <li Class="StockGenerator_SingleDef">
-                <thingDef>Beer</thingDef>
-                <countRange>-40~100</countRange>
+                <countRange>0~70</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>MedicineIndustrial</thingDef>
                 <countRange>25~50</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MedicineCeles</thingDef>
+                <countRange>20~35</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>CelesMRE</thingDef>
+                <countRange>25~125</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Celes_STCLock</thingDef>
+                <countRange>-2~1</countRange>
             </li>
             <li Class="StockGenerator_ReinforcedBarrels">
                 <countRange>1~4</countRange>
@@ -87,6 +111,8 @@
                 <totalPriceRange>400~800</totalPriceRange>
                 <excludedThingDefs>
                     <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+                    <li MayRequire="Ludeon.RimWorld.Odyssey">GravlitePanel</li>
+                    <li MayRequire="Ludeon.RimWorld.Odyssey">BlocksVacstone</li>
                 </excludedThingDefs>
             </li>
             <li Class="StockGenerator_Category">
@@ -111,9 +137,9 @@
 
             <!-- Drugs -->
             <li Class="StockGenerator_Category">
-                <categoryDef>Drugs</categoryDef>
-                <thingDefCountRange>3~4</thingDefCountRange>
-                <totalPriceRange>700~1500</totalPriceRange>
+                <categoryDef>Celes_Drugs</categoryDef>
+                <thingDefCountRange>2~4</thingDefCountRange>
+                <totalPriceRange>1000~2500</totalPriceRange>
             </li>
 
             <!-- Techprints -->
@@ -151,27 +177,53 @@
 
             <!-- Weapons -->
             <li Class="StockGenerator_MarketValue">
-                <tradeTag>WeaponRanged</tradeTag>
+                <tradeTag>Celes_EarlyMelee</tradeTag>
+                <countRange>2~4</countRange>
+            </li>
+            <li Class="StockGenerator_MarketValue">
+                <tradeTag>Celes_EarlyWeapon</tradeTag>
                 <countRange>3~6</countRange>
             </li>
-            <li Class="StockGenerator_Category">
-                <categoryDef>WeaponsMelee</categoryDef>
-                <thingDefCountRange>3~4</thingDefCountRange>
+            <li Class="StockGenerator_MarketValue">
+                <tradeTag>Celes_MidMelee</tradeTag>
+                <countRange>2~5</countRange>
+            </li>
+            <li Class="StockGenerator_MarketValue">
+                <tradeTag>Celes_MidMelee</tradeTag>
+                <countRange>-3~3</countRange>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_Tag">
+                <tradeTag>PsychicWeapon</tradeTag>
+                <thingDefCountRange>1~2</thingDefCountRange>
                 <countRange>1~2</countRange>
+            </li>
+            <li Class="StockGenerator_MarketValue">
+                <tradeTag>WeaponMelee</tradeTag>
+                <weaponTag>UltratechMelee</weaponTag>
+                <countRange>1~2</countRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>MortarShell</tradeTag>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>3~15</countRange>
+                <excludedThingDefs>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Shell_Deadlife</li>
+                </excludedThingDefs>
             </li>
 
             <!-- Apparel -->
             <li Class="StockGenerator_MarketValue">
-                <tradeTag>BasicClothing</tradeTag>
-                <countRange>8~12</countRange>
+                <tradeTag>Celes_Clothing</tradeTag>
+                <countRange>5~7</countRange>
             </li>
             <li Class="StockGenerator_MarketValue">
-                <tradeTag>Clothing</tradeTag>
+                <tradeTag>HiTechArmor</tradeTag>
                 <countRange>2~4</countRange>
             </li>
-            <li Class="StockGenerator_MarketValue">
-                <tradeTag>Armor</tradeTag>
-                <countRange>2~4</countRange>
+            <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_Tag">
+                <tradeTag>PsychicApparel</tradeTag>
+                <thingDefCountRange>2~3</thingDefCountRange>
+                <countRange>1~3</countRange>
             </li>
 
             <!-- Implants -->
@@ -214,10 +266,11 @@
                 <excludedThingDefs>
                     <li>Luciferium</li> <!-- already handled by drugs -->
                     <li>ComponentSpacer</li> <!-- already handled by single def -->
+                    <li>MedicineUltratech</li> <!-- already handled by single def -->
+                    <li>MedicineCeles</li> <!-- already handled by single def -->
                 </excludedThingDefs>
                 <customCountRanges>
-                    <MedicineUltratech>2~15</MedicineUltratech>
-                    <Hyperweave>50~200</Hyperweave>
+                    <Hyperweave>100~200</Hyperweave>
                 </customCountRanges>
             </li>
 
@@ -240,24 +293,30 @@
             <!-- Slaves -->
             <li Class="StockGenerator_Slaves">
                 <respectPopulationIntent>true</respectPopulationIntent>
-                <countRange>-1~2</countRange>
+                <countRange>-3~6</countRange>
+                <slaveKindDef>Celes_ServantUnit</slaveKindDef>
             </li>
 
             <!-- Animals -->
             <li Class="StockGenerator_Animals">
                 <tradeTagsSell>
+                    <li>AnimalUncommon</li>
+                    <li>AnimalExotic</li>
                     <li>AnimalFarm</li>
                     <li>AnimalPet</li>
                 </tradeTagsSell>
-                <tradeTagsBuy>
-                    <li>AnimalUncommon</li>
-                    <li>AnimalExotic</li>
-                </tradeTagsBuy>
                 <kindCountRange>2~4</kindCountRange>
-                <countRange>3~8</countRange>
+                <countRange>2~8</countRange>
                 <createMatingPair>
                     <li>AnimalFarm</li>
                 </createMatingPair>
+            </li>
+
+            <!-- Psytrainers -->
+            <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_Category">
+                <categoryDef>NeurotrainersPsycast</categoryDef>
+                <thingDefCountRange>2~2</thingDefCountRange>
+                <countRange>0~2</countRange>
             </li>
 
             <!-- Archite capsule2 -->
@@ -272,22 +331,12 @@
                 <countRange>0~1</countRange>
             </li>
 
-            <!-- Cultist apparel -->
-            <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
-                <thingDef>Apparel_CultistMask</thingDef>
-                <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
-                <thingDef>Apparel_CeremonialCultistMask</thingDef>
-                <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
-            </li>
-
             <!-- Pack turret apparel -->
             <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
                 <thingDef>Apparel_PackTurret</thingDef>
                 <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
             </li>
-
+            
             <!-- Cultist apparel -->
             <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
                 <thingDef>Apparel_CultistMask</thingDef>
@@ -304,7 +353,9 @@
             <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
             <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
             <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
             <li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>Celes_Need</tag></li>
             <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shell_Deadlife</thingDef></li>
             <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>VoidSculpture</thingDef></li>
             <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shard</thingDef></li>

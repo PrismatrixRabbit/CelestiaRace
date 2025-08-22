@@ -123,15 +123,15 @@
         <useHitPoints>false</useHitPoints>
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
-            <MarketValue>6.5</MarketValue>
-            <Mass>0.5</Mass>
-            <StuffPower_Armor_Sharp>1.05</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>
+            <MarketValue>4.0</MarketValue>
+            <Mass>0.2</Mass>
+            <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
             <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-            <SharpDamageMultiplier>2.5</SharpDamageMultiplier>
-            <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+            <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
         </statBases>
         <thingCategories>
             <li>ResourcesRaw</li>
@@ -148,18 +148,22 @@
             <appearance>Metal</appearance>
             <commonality>0.01</commonality>
             <constructEffect>ConstructMetal</constructEffect>
-            <color>(220,220,245)</color>
+            <isAirtight>true</isAirtight>
+            <color>(227,227,242)</color>
             <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
             <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
             <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            <statOffsets>
+                <Beauty>2</Beauty>
+            </statOffsets>
             <statFactors>
-                <MaxHitPoints>2</MaxHitPoints>
-                <Beauty>1.0</Beauty>
+                <MaxHitPoints>1.8</MaxHitPoints>
+                <Beauty>1.5</Beauty>
                 <Flammability>0</Flammability>
-                <WorkToMake>1.5</WorkToMake>
-                <WorkToBuild>1.5</WorkToBuild>
-                <DoorOpenSpeed>1.15</DoorOpenSpeed>
+                <WorkToMake>0.9</WorkToMake>
+                <WorkToBuild>0.9</WorkToBuild>
+                <DoorOpenSpeed>1.0</DoorOpenSpeed>
                 <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
             </statFactors>
             <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
@@ -174,7 +178,7 @@
     <!-- ========== 纳米化素材 ========== -->
 
     <ThingDef ParentName="UnfinishedBase">
-        <defName>UnfinishedCrystal</defName>
+        <defName>Celes_UnfinishedCrystal</defName>
         <label>uncrystallised stone</label>
         <description>An uncrystallised stone.</description>
         <statBases>

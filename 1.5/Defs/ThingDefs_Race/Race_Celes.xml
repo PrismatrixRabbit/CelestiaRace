@@ -175,17 +175,32 @@
 								<RotStage>Fresh,Rotting</RotStage>
 							</conditions>
 							<offsets>
-								<west>
-									<layerOffset>-0.274</layerOffset>
-								</west>
 								<south>
 									<layerOffset>-0.274</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Child>(0,0.065)</Child>
+										<Baby>(0,0.065)</Baby>
+									</bodyTypes>
 								</south>
 								<north>
 									<layerOffset>-0.274</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Child>(0,0.065)</Child>
+										<Baby>(0,0.065)</Baby>
+									</bodyTypes>
 								</north>
 								<east>
 									<layerOffset>-0.274</layerOffset>
+									<bodyTypes>
+										<Thin>(0,-0.001)</Thin>
+										<Female>(0,-0.001)</Female>
+										<Child>(0.03,0.041)</Child>
+										<Baby>(0.03,0.041)</Baby>
+									</bodyTypes>
 								</east>
 							</offsets>
 						</li>
@@ -218,18 +233,43 @@
 								<RotStage>Fresh,Rotting</RotStage>
 							</conditions>
 							<offsets>
-								<west>
-									<layerOffset>-0.275</layerOffset>
-								</west>
 								<south>
 									<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Child>(0,0.065)</Child>
+										<Baby>(0,0.065)</Baby>
+									</bodyTypes>
 								</south>
 								<north>
 									<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Child>(0,0.065)</Child>
+										<Baby>(0,0.065)</Baby>
+									</bodyTypes>
 								</north>
 								<east>
 									<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Child>(0.03,0.041)</Child>
+										<Baby>(0.03,0.041)</Baby>
+									</bodyTypes>
 								</east>
+								<west>
+									<layerOffset>-0.275</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Female>(0,0)</Female>
+										<Child>(-0.03,0.065)</Child>
+										<Baby>(-0.03,0.065)</Baby>
+									</bodyTypes>
+									<offset>(0,0)</offset>
+								</west>
 							</offsets>
 						</li>
 						<li>
@@ -368,7 +408,7 @@
 							</offsets>
 						</li>
 						<!-- <li> -->
-							<!--特殊衣物前景-->
+						<!--特殊衣物前景-->
 						<!-- <path>Celes/Apparel/Null/Null</path>
 							<bodyPart>Head</bodyPart>
 							<inFrontOfBody>true</inFrontOfBody>
@@ -412,10 +452,37 @@
 					</bodyAddons>
 
 					<headOffset>(0,0)</headOffset>
+					<headOffsetDirectional>
+						<north>
+							<offset>(0, -0.09)</offset>
+							<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+							</bodyTypes>
+						</north>
+						<south>
+							<offset>(0, -0.05)</offset>
+							<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+							</bodyTypes>
+						</south>
+						<east>
+							<offset>(-0.06, -0.08)</offset>
+							<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(0.05,0)</Child>
+							</bodyTypes>
+						</east>
+						<west>
+							<offset>(0.06, -0.08)</offset>
+							<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Child>
+							</bodyTypes>
+						</west>
+					</headOffsetDirectional>
 					<customDrawSize>(1.0, 1.0)</customDrawSize>
-					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<customHeadDrawSize>(0.85, 0.85)</customHeadDrawSize>
+					<customPortraitHeadDrawSize>(0.85, 0.85)</customPortraitHeadDrawSize>
 					<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
-					<atlasScale>4</atlasScale>
+					<atlasScale>3</atlasScale>
 					<borderScale>1</borderScale>
 
 					<colorChannels>

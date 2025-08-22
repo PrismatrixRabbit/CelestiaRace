@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef>
+        <defName>Celes_MakeMechlinkAuthorization</defName><!-- 制作民用机控限制骇入器 --><!-- 暂未完成 -->
+        <label>Celes_MakeMechlinkAuthorization</label>
+        <description>Celes_MakeMechlinkAuthorization</description>
+        <uiIconThing>Celes_MechlinkAuthorization</uiIconThing>
+        <jobString>Celes_MakeMechlinkAuthorization</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <skillRequirements>
+            <Crafting>2</Crafting>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workAmount>600</workAmount>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+            <li>TableMachining</li>
+            <li>Celes_MultifunctionalTabA</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_Mech_I</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Celes_NanoResourcesRaw</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Mechlink</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Celes_NanoResourcesRaw</li>
+            </categories>
+            <thingDefs>
+                <li>ComponentIndustrial</li>
+                <li>Mechlink</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Celes_MechlinkAuthorization>1</Celes_MechlinkAuthorization>
+        </products>
+    </RecipeDef>
+    
+</Defs>

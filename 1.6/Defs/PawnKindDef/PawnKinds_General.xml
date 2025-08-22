@@ -7,6 +7,7 @@
     <combatPower>20</combatPower>
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
+	<gearHealthRange>0.02~0.30</gearHealthRange>
     <apparelMoney>1500~2000</apparelMoney>
     <apparelTags>
         <li>Celes_Explore</li>
@@ -199,7 +200,7 @@
 		<initialResistanceRange>15~24</initialResistanceRange>
 
 		<startingHediffs>
-			<li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<def>Celes_StandardMechlink</def>
 				<chance>0.3</chance>
 				<severity>0.5</severity>

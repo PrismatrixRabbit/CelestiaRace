@@ -78,7 +78,7 @@
         </statBases>
         <intricate>true</intricate>
         <thingCategories>
-            <li>Manufactured</li>
+            <li>Celes_Manufactured</li>
         </thingCategories>
         <costList>
             <Steel>5</Steel>
@@ -127,7 +127,7 @@
         </statBases>
         <intricate>true</intricate>
         <thingCategories>
-            <li>Manufactured</li>
+            <li>Celes_Manufactured</li>
         </thingCategories>
         <allowedArchonexusCount>10</allowedArchonexusCount>
     </ThingDef>

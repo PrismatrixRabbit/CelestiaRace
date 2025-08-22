@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <ThingDef ParentName="MakeableDrugBase">
+    <ThingDef ParentName="Celes_MakeableDrugBase">
         <defName>Celes_IAS2M</defName>
         <label>IAS-2 immunoagonist stimulants</label>
         <description>A drug for preventing varieties infections before they take hold. Blocks cancer, infection, malaria, sleeping sickness, plague. Must be taken every five days to remain effective.\n\nThis drug only prevents new infections. It does not cure existing infections - even those that are not yet discovered.</description>

@@ -11,13 +11,13 @@
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.85</drawSize>
         </graphicData>
-        <techLevel>Industrial</techLevel>
+        <techLevel>Ultra</techLevel>
         <statBases>
-            <MarketValue>35</MarketValue>
+            <Flammability>0</Flammability>
+            <MarketValue>60</MarketValue>
             <Mass>0.5</Mass>
-            <Flammability>0.7</Flammability>
-            <MedicalPotency>1.5</MedicalPotency>
-            <MedicalQualityMax>1.10</MedicalQualityMax>
+            <MedicalPotency>1.75</MedicalPotency>
+            <MedicalQualityMax>1.50</MedicalQualityMax>
             <DeteriorationRate>2.0</DeteriorationRate>
             <!-- <WorkToMake>900</WorkToMake> -->
         </statBases>
@@ -39,6 +39,9 @@
             </skillRequirements>
             <bulkRecipeCount>5</bulkRecipeCount>
         </recipeMaker> -->
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
         <allowedArchonexusCount>10</allowedArchonexusCount>
     </ThingDef>
 
@@ -51,11 +54,12 @@
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
-            <DeteriorationRate>0.25</DeteriorationRate>
+            <DeteriorationRate>0.1</DeteriorationRate>
+            <Flammability>0</Flammability>
             <MarketValue>24</MarketValue>
             <Mass>0.3</Mass>
-            <WorkToMake>450</WorkToMake>
             <Nutrition>0.9</Nutrition>
+            <!-- <WorkToMake>450</WorkToMake> -->
         </statBases>
         <ingestible>
             <preferability>MealSimple</preferability>
@@ -95,7 +99,7 @@
 
     <!-- ========== 星铃机控 ========== -->
 
-    <ThingDef>
+    <ThingDef MayRequire="Ludeon.RimWorld.Biotech">
         <defName>Celes_MechlinkAuthorization</defName>
         <label>celestia civilian mechlink restriction hacker</label>
         <description>A hacker made using a mechlink hub found in the Rimworld, combined with Dust-Mech. Used to forcibly disarm Celestia's mechlink restrictions that were set at the hardware level, and updated to Celestia standard mechlink.</description>
@@ -112,25 +116,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1.0</drawSize>
         </graphicData>
-        <costList>
-            <Plasteel>10</Plasteel>
-            <ComponentSpacer>3</ComponentSpacer>
-            <CelesNanoMachine>3</CelesNanoMachine>
-            <Mechlink>1</Mechlink>
-        </costList>
-        <recipeMaker>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <recipeUsers>
-                <li>Celes_MultifunctionalTabA</li>
-            </recipeUsers>
-            <researchPrerequisite>Celes_Prosthesis_I</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>8</Crafting>
-                <Intellectual>10</Intellectual>
-            </skillRequirements>
-        </recipeMaker>
-
+        
         <thingClass>ThingWithComps</thingClass>
         <category>Item</category>
         <drawerType>MapMeshOnly</drawerType>
@@ -150,7 +136,7 @@
         </comps>
     </ThingDef>
 
-    <RecipeDef ParentName="Celes_Surgery">
+    <RecipeDef ParentName="Celes_Surgery" MayRequire="Ludeon.RimWorld.Biotech">
         <defName>RemoveCelesMechlinkRestriction</defName>
         <label>civilian mechlink de-restrictor</label>
         <description>Use Dust-Mech machinery to forcibly remove the civilian limitations of the Celestia mechlink hub and update it to a standard Celestia mechlink.</description>

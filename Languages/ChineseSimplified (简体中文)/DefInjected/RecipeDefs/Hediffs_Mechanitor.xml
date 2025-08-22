@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Celes_MechlinkRestart.label>重启机控中枢</Celes_MechlinkRestart.label>
+    <Celes_MechlinkRestart.description>重启机控中枢。</Celes_MechlinkRestart.description>
+    <Celes_MechlinkRestart.jobString>正在重启机控中枢</Celes_MechlinkRestart.jobString>
+
+</LanguageData>

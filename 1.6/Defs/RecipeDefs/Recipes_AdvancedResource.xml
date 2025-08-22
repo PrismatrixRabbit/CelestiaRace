@@ -24,11 +24,11 @@
         <ingredients>
             <li>
                 <filter>
-                    <thingDefs>
-                        <li>Celes_NanoMachineCrystal</li>
-                    </thingDefs>
+                    <categories>
+                        <li>Celes_NanoResourcesRaw</li>
+                    </categories>
                 </filter>
-                <count>1</count>
+                <count>20</count>
             </li>
             <li>
                 <filter>
@@ -47,6 +47,15 @@
                 <count>2</count>
             </li>
         </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>Cloth</li>
+            </thingDefs>
+            <categories>
+                <li>Celes_NanoResourcesRaw</li>
+            </categories>
+        </fixedIngredientFilter>
         <products>
             <CelesAdvanceCloth>20</CelesAdvanceCloth>
         </products>
@@ -93,12 +102,12 @@
                         <li>Gold</li>
                     </thingDefs>
                 </filter>
-                <count>5</count>
+                <count>0.5</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Plasteel</li>
+                        <li>CelesAlloy</li>
                     </thingDefs>
                 </filter>
                 <count>20</count>
@@ -134,7 +143,9 @@
         <recipeUsers>
             <li>DrugLab</li>
         </recipeUsers>
-        <researchPrerequisite>Celes_Medicine_I</researchPrerequisite>
+        <researchPrerequisites>
+            <li>Celes_Medicine_I</li>
+        </researchPrerequisites>
         <skillRequirements>
             <Crafting>4</Crafting>
             <Intellectual>4</Intellectual>
@@ -183,7 +194,9 @@
         <recipeUsers>
             <li>DrugLab</li>
         </recipeUsers>
-        <researchPrerequisite>Celes_Medicine_I</researchPrerequisite>
+        <researchPrerequisites>
+            <li>Celes_Medicine_I</li>
+        </researchPrerequisites>
         <skillRequirements>
             <Crafting>4</Crafting>
             <Intellectual>4</Intellectual>

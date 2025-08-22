@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef Name="Celes_UnderwearBase" ParentName="Celes_ApparelBase" Abstract="True">
+        <statBases>
+            <Mass>0.3</Mass>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <layers>
+                <li>Celes_Underwear</li>
+            </layers>
+            <tags>
+                <li>Celes_Underwear</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef Name="Celes_Underwear_I" ParentName="Celes_UnderwearBase" Abstract="True">
+        <techLevel>Medieval</techLevel>
+        <apparel>
+            <tags>
+                <li>Celes_Daily</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Apparel_I</researchPrerequisite>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>Celes_TailoringTab</li>
+            </recipeUsers>
+            <displayPriority>305</displayPriority>
+        </recipeMaker>
+        <comps>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>Celes_Apparel_Daily</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef Name="Celes_Underwear_II" ParentName="Celes_UnderwearBase" Abstract="True">
+        <techLevel>Industrial</techLevel>
+        <apparel>
+            <tags>
+                <li>Celes_Daily</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Apparel_II</researchPrerequisite>
+            <recipeUsers>
+                <li>Celes_TailoringTab</li>
+            </recipeUsers>
+            <displayPriority>307</displayPriority>
+        </recipeMaker>
+        <comps>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>Celes_Apparel_Daily</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef Name="Celes_Underwear_III_a" ParentName="Celes_UnderwearBase" Abstract="True">
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Apparel_III_a</researchPrerequisite>
+            <recipeUsers>
+                <li>Celes_TailoringTab</li>
+            </recipeUsers>
+            <displayPriority>309</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- ========== 制衣标准 ========= -->
+
+    <ThingDef ParentName="Celes_Underwear_I"> <!--星铃内衣A款--> <!--待编辑-->
+        <defName>Celes_UnderwearA</defName>
+        <label>celestia underwear A</label>
+        <description>celestia underwear A.</description>
+        <costStuffCount>20</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <graphicData>
+            <texPath>Celes/Apparel/Underwear/UnderwearA/UnderwearA</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.2</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>150</WorkToMake>
+            <StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Celes/Apparel/Underwear/UnderwearA/UnderwearA</wornGraphicPath>
+        </apparel>
+        <tradeTags>
+            <li>Celes_Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="Celes_Underwear_I"> <!--星铃内衣B款--> <!--待编辑-->
+        <defName>Celes_UnderwearB</defName>
+        <label>celestia underwear B</label>
+        <description>celestia underwear B.</description>
+        <costStuffCount>20</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <graphicData>
+            <texPath>Celes/Apparel/Underwear/UnderwearB/UnderwearB</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.2</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>150</WorkToMake>
+            <StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Celes/Apparel/Underwear/UnderwearB/UnderwearB</wornGraphicPath>
+        </apparel>
+        <tradeTags>
+            <li>Celes_Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="Celes_Underwear_I"> <!--星铃内衣C款--> <!--待编辑-->
+        <defName>Celes_UnderwearC</defName>
+        <label>celestia underwear C</label>
+        <description>celestia underwear C.</description>
+        <costStuffCount>20</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <graphicData>
+            <texPath>Celes/Apparel/Underwear/UnderwearC/UnderwearC</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.2</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>150</WorkToMake>
+            <StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Celes/Apparel/Underwear/UnderwearC/UnderwearC</wornGraphicPath>
+        </apparel>
+        <tradeTags>
+            <li>Celes_Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- ========== 日常服装 ========= -->
+
+    <ThingDef ParentName="Celes_Underwear_II"> <!--星铃泳装A款--> <!--待编辑-->
+        <defName>Celes_SwimsuitA</defName>
+        <label>celestia swimsuit A</label>
+        <description>celestia swimsuit A.</description>
+        <costStuffCount>20</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <graphicData>
+            <texPath>Celes/Apparel/Underwear/SwimsuitA/SwimsuitA</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.2</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>150</WorkToMake>
+            <StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.39</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <layers Inherit="false">
+                <li>OnSkin</li>
+                <li>Celes_Underwear</li>
+            </layers>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Celes/Apparel/Underwear/SwimsuitA/SwimsuitA</wornGraphicPath>
+        </apparel>
+        <tradeTags>
+            <li>Celes_Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="Celes_Underwear_II"> <!--星铃泳装B款--> <!--待编辑-->
+        <defName>Celes_SwimsuitB</defName>
+        <label>celestia swimsuit B</label>
+        <description>celestia swimsuit B.</description>
+        <costStuffCount>20</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <graphicData>
+            <texPath>Celes/Apparel/Underwear/SwimsuitB/SwimsuitB</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.2</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>150</WorkToMake>
+            <StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.39</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <layers Inherit="false">
+                <li>OnSkin</li>
+                <li>Celes_Underwear</li>
+            </layers>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Celes/Apparel/Underwear/SwimsuitB/SwimsuitB</wornGraphicPath>
+        </apparel>
+        <tradeTags>
+            <li>Celes_Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- ========== 专业服装 ========= -->
+
+    <ThingDef ParentName="Celes_Underwear_III_a"> <!--星铃科考队内衣--> <!--待编辑-->
+        <defName>Celes_ExploreUnderwear</defName>
+        <label>celestia explore underwear</label>
+        <description>celestia explore underwear.</description>
+        <costStuffCount>20</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <graphicData>
+            <texPath>Celes/Apparel/Underwear/ExploreUnderwear/ExploreUnderwear</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.2</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>150</WorkToMake>
+            <StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Celes/Apparel/Underwear/ExploreUnderwear/ExploreUnderwear</wornGraphicPath>
+        </apparel>
+        <tradeTags>
+            <li>Celes_Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+</Defs>

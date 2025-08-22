@@ -120,7 +120,6 @@
 				<li>Neck</li>
 				<li>Torso</li>
 				<li>Shoulders</li>
-				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Celes/Apparel/OnSkin/Tribal/Tribal</wornGraphicPath>
@@ -169,23 +168,26 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>1500</WorkToMake>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.08</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.17</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.34</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<apparel>
+			<layers Inherit="false">
+				<li>OnSkin</li>
+				<li>Celes_Underwear</li>
+			</layers>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>
-				<li>Neck</li>
 				<li>Torso</li>
-				<li>Shoulders</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Celes/Apparel/OnSkin/SummerVest/SummerVest</wornGraphicPath>
 		</apparel>
 		<tradeTags>
 			<li>Celes_Clothing</li>
 		</tradeTags>
-	</ThingDef>
+	</ThingDef>	
 
 	<ThingDef ParentName="Celes_OnSkin_I"><!--冬装毛衣-->
 	<defName>Celes_WinterSweater</defName>
@@ -215,6 +217,7 @@
 			<li>Torso</li>
 			<li>Shoulders</li>
 			<li>Arms</li>
+			<li>Legs</li>
         </bodyPartGroups>
 		<wornGraphicPath>Celes/Apparel/OnSkin/WinterSweater/WinterSweater</wornGraphicPath>
 	</apparel>
@@ -252,6 +255,7 @@
 			<li>Torso</li>
 			<li>Shoulders</li>
 			<li>Arms</li>
+			<li>Legs</li>
         </bodyPartGroups>
 		<wornGraphicPath>Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform</wornGraphicPath>
 		<tags>
@@ -417,7 +421,7 @@
 		</apparel>
 		<equippedStatOffsets>
 			<PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
-			<PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+			<PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate>
 	</equippedStatOffsets>
 		<thingCategories>
 			<li>Celes_Apparel_Misc</li>

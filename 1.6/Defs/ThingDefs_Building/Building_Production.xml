@@ -227,15 +227,15 @@
     </ThingDef>
     
     <ThingDef ParentName="BuildingBase">
-        <defName>Celes_PropagateCan</defName>
+        <defName>Celes_PropagateTerminal</defName>
         <label>Propagate Can</label>
         <description>Slowly generates chemfuel by a complex series of chemical reactions, using atoms extracted from the air.</description>
         <thingClass>Building</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
-            <texPath>Celes/Building/Celes_PropagateCan/Celes_PropagateCan</texPath>
+            <texPath>Celes/Building/Celes_PropagateTerminal/Celes_PropagateTerminal</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(4, 3)</drawSize>
+            <drawSize>(5, 4)</drawSize>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
@@ -328,10 +328,9 @@
         <label>Propagate Radiator</label>
         <description>Increases work speed when placed near a workbench. One workbench can use up to two tool cabinets.</description>
         <graphicData>
-            <texPath>Things/Building/Misc/ToolCabinet</texPath>
+            <texPath>Celes/Building/Celes_PropagateRadiator/Celes_PropagateRadiator</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(2,1)</drawSize>
-            <color>(96,114,95)</color>
+            <drawSize>(2.5,1.5)</drawSize>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>

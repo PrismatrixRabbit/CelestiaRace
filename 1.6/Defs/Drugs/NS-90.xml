@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
-    <ThingDef ParentName="MakeableDrugPillBase">
+    <ThingDef ParentName="Celes_MakeableDrugPillBase">
         <defName>Celes_NS90M</defName>
         <label>NS-90 nervous stimulants</label>
         <description>A modified synthetic stimulant that quickly restores the user's resting value and reduces the need for sleep, allowing the user to concentrate more on work. \n\nCompared to wake-up, NS-90 is not addictive, but it is highly tolerable and brings on pain and hunger. Overdose can lead to severe headaches and violent tendencies ...... but it does increase productivity more, use with caution.</description>
@@ -54,7 +54,7 @@
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Celes_BioGel>2</Celes_BioGel>
+            <Celes_BioGel>4</Celes_BioGel>
         </costList>
         <comps>
             <li Class="CompProperties_Drug">

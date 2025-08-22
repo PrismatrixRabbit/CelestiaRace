@@ -2,12 +2,6 @@
 <Defs>
     
     <ThingDef Name="Celes_SpacerGunBase" ParentName="BaseMakeableGun" Abstract="True">
-        <recipeMaker>
-            <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
-            <recipeUsers Inherit="false">
-                <li>Celes_MultifunctionalTabA</li>
-            </recipeUsers>
-        </recipeMaker>
         <weaponTags>
             <li>Celes_SpacerWeapon</li>
         </weaponTags>

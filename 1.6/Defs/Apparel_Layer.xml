@@ -7,4 +7,10 @@
 	<drawOrder>-1</drawOrder>
 </ApparelLayerDef> -->
 
+    <ApparelLayerDef>
+        <defName>Celes_Underwear</defName>
+        <label>underwear</label>
+        <drawOrder>-1</drawOrder>
+    </ApparelLayerDef>
+
 </Defs>

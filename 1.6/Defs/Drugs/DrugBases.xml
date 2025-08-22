@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef Name="Celes_MakeableDrugBase" ParentName="MakeableDrugBase" Abstract="True">
+        <thingCategories Inherit="false">
+            <li>Celes_Drugs</li>
+        </thingCategories>
+        <tradeTags Inherit="false">
+            <li>Celes_Drugs</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef Name="Celes_MakeableDrugPillBase" ParentName="MakeableDrugPillBase" Abstract="True">
+        <thingCategories Inherit="false">
+            <li>Celes_Drugs</li>
+        </thingCategories>
+        <tradeTags Inherit="false">
+            <li>Celes_Drugs</li>
+        </tradeTags>
+    </ThingDef>
+
+</Defs>

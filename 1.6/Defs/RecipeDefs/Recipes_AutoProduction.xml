@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef Name="Celes_AutoProductionRecipeBase" Abstract="True">
+        <jobString>Gestating mech.</jobString>
+        <workAmount>1800</workAmount>
+        <gestationCycles>1</gestationCycles>
+        <formingTicks>120000</formingTicks><!-- 2 days -->
+        <workSpeedStat>MechFormingSpeed</workSpeedStat>
+        <soundWorking>MechGestatorCycle_Initiating</soundWorking>
+    </RecipeDef>
+
+    <RecipeDef Name="Celes_LightAutoRecipe" ParentName="Celes_AutoProductionRecipeBase" Abstract="True">
+        <!-- <researchPrerequisite>BasicMechtech</researchPrerequisite> -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <displayPriority>100</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Celes_LightAutoRecipe">
+        <defName>Celes_AutoProduction</defName>
+        <label>Celes_AutoProduction</label>
+        <description>Celes_AutoProduction.</description>
+        <products>
+            <Plasteel>10</Plasteel>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Plasteel</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+    
+</Defs>

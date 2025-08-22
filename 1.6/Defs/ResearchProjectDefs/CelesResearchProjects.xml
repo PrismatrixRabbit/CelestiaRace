@@ -20,7 +20,7 @@
         <baseCost>300</baseCost>
         <techLevel>Medieval</techLevel>
         <researchViewX>0</researchViewX>
-        <researchViewY>1.8</researchViewY>
+        <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
             <li>Celes_ClassicStart</li>
@@ -31,17 +31,16 @@
         <defName>Celes_MainTech_II</defName><!-- 晶兰催化加工 -->
         <label>crystal catalytic process</label>
         <description>Synchronise Celestia's pharmaceutical technology by extracting bio-enzyme gels from organic matter. Unlock Celestia's basic medicines, such as IAS-2 immune-activating stimulants, which prevents infections and plagues, and NS-90 nervous stimulants, which provides extra efficiency but causes fatigue.</description>
-        <baseCost>1200</baseCost>
+        <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Electricity</li>
             <li>Celes_MainTech_I</li>
         </prerequisites>
         <researchViewX>1</researchViewX>
-        <researchViewY>1.8</researchViewY>
+        <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
-            <li>Celes_ClassicStart</li>
         </tags>
         <discoveredLetterTitle>About: Self-replicating crystals</discoveredLetterTitle>
         <discoveredLetterText>About: Self-replicating crystals</discoveredLetterText>
@@ -54,18 +53,15 @@
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
         <prerequisites>
-            <li>MultiAnalyzer</li>
+            <li>MicroelectronicsBasics</li>
             <li>Celes_MainTech_II</li>
         </prerequisites>
         <requiredAnalyzed>
             <li>Celes_STC_MainTech_III</li>
         </requiredAnalyzed>
-        <researchViewX>3</researchViewX>
-        <researchViewY>1.8</researchViewY>
+        <researchViewX>4</researchViewX>
+        <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -76,33 +72,33 @@
         <descriptionHyperlinks>
             <ThingDef>CelesNanoManifold</ThingDef>
         </descriptionHyperlinks>
-        <baseCost>3000</baseCost>
+        <baseCost>4000</baseCost>
         <techLevel>Ultra</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
-        <hiddenPrerequisites>
+        <prerequisites>
             <li>Celes_MainTech_III</li>
-        </hiddenPrerequisites>
-        <researchViewX>4</researchViewX>
-        <researchViewY>1.8</researchViewY>
+        </prerequisites>
+        <researchViewX>7</researchViewX>
+        <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
-    <!-- ========== 制造科技 ========== -->
+    <!-- ========== 武器科技 ========== -->
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_I</defName><!-- 星铃拓荒武器 -->
         <label>Celestia pioneer weapons</label>
         <description>Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese antique-like designs are simply forged by forging them together with materials such as crystal capsules, yet they have the extraordinary performance of nano-precision rifling and self-airtightness.</description>
-        <baseCost>1500</baseCost>
+        <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_MainTech_I</li>
+            <li>Celes_MainTech_II</li>
         </prerequisites>
-        <researchViewX>1</researchViewX>
-        <researchViewY>1.2</researchViewY>
+        <researchViewX>2</researchViewX>
+        <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -112,15 +108,14 @@
         <defName>Celes_Weapon_II</defName><!-- 星铃古典武器 -->
         <label>Celestia classical weapons</label>
         <description>Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThis weapon utilises electrochemical propulsion to fire ammunition and has an exaggerated energy density. Still used in Celestia Topsy-Turvy pioneer squads or issued to outpost residents for self-defence, their history is untraceable.</description>
-        <baseCost>3000</baseCost>
+        <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
-            <li>Celes_MainTech_II</li>
             <li>Celes_Weapon_I</li>
         </prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>1.2</researchViewY>
+        <researchViewX>3</researchViewX>
+        <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -130,7 +125,7 @@
         <defName>Celes_Weapon_III</defName><!-- 星铃制式武器 --><!-- 待编辑 -->
         <label>Celestia standard-issue weapons(WIP)</label>
         <description>Unlocks the crafting of Celestia standard firearms that emit high-energy polarised particle beams; the high-energy radiation attached to these weapons burns the target's body surface severely and interferes with the functioning of mechanics. It also allows the crafting of weapons such as Celestia standard monomolecular sabre. \n\nThese weapons had been phased out by the Celestia Navy for more than a century, but industry on the Rimworld did not support the production of naval weapons for the time being, and so these serviceable particle beam weapons became the standard for Celestia's pioneering teams as well.</description>
-        <baseCost>4500</baseCost>
+        <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
@@ -140,8 +135,8 @@
             <li>Celes_MainTech_III</li>
             <li>Celes_Weapon_II</li>
         </prerequisites>
-        <researchViewX>4</researchViewX>
-        <researchViewY>1.2</researchViewY>
+        <researchViewX>5</researchViewX>
+        <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -151,7 +146,7 @@
         <defName>Celes_Weapon_IV</defName><!-- 试验性改造 --><!-- 待编辑 -->
         <label>experimental modified weapons(WIP)</label>
         <description>Allows for the manufacture of magnetic reconnection accelerators and radioactive high-energy plasma emitters, weapons derived from experimental modifications of old-time ship repair tools, but capable of bursting with exaggerated lethality.</description>
-        <baseCost>5000</baseCost>
+        <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
@@ -160,8 +155,32 @@
         <prerequisites>
             <li>Celes_Weapon_III</li>
         </prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>1.2</researchViewY>
+        <researchViewX>6</researchViewX>
+        <researchViewY>1.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Weapon_V</defName><!-- 北极星工程 -->
+        <label>Corona Borealis Programme(WIP)</label>
+        <description>Corona Borealis Programme(WIP)</description>
+        <baseCost>10000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>Celes_Apparel_V</li>
+            <li>Celes_Weapon_IV</li>
+            <li>Celes_MainTech_IV</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+        </hiddenPrerequisites>
+        <researchViewX>8</researchViewX>
+        <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -173,7 +192,7 @@
         <defName>Celes_Bio_I</defName><!-- 星铃生化标准 -->
         <label>Celestia biochemical standard</label>
         <description>Synchronise Celestia's pharmaceutical technology by extracting bio-enzyme gels from organic matter. Unlock Celestia's basic medicines, such as IAS-2 immune-activating stimulants, which prevents infections and plagues, and NS-90 nervous stimulants, which provides extra efficiency but causes fatigue.</description>
-        <baseCost>1500</baseCost>
+        <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_MainTech_I</li>
@@ -185,16 +204,31 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Bio_II</defName><!-- 星铃战斗药物 -->
-        <label>Celestia combat medication</label>
-        <description>Further analysis of Celestia's biochemical technology unlocks the creation of Celestia's combat drugs: CS-6 combat stimulants, which briefly stimulates tissue activity, and CS-12 combat hemostat, which accelerates wound healing. Please note that these drugs have deadly side effects at the cost of overloading cellular activity.</description>
-        <baseCost>2000</baseCost>
+        <defName>Celes_Bio_I-5</defName><!-- 晶体融合生化 -->
+        <label>Celes_Bio_I-5(WIP)</label>
+        <description>Celes_Bio_I-5(WIP)</description>
+        <baseCost>300</baseCost>
         <techLevel>Industrial</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
+            <li>Celes_MainTech_II</li>
             <li>Celes_Bio_I</li>
         </prerequisites>
         <researchViewX>2</researchViewX>
+        <researchViewY>3.0</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Bio_II</defName><!-- 星铃作战生化 -->
+        <label>Celestia combat biochemistry</label>
+        <description>Further analysis of Celestia's biochemical technology unlocks the creation of Celestia's combat drugs: CS-6 combat stimulants, which briefly stimulates tissue activity, and CS-12 combat hemostat, which accelerates wound healing. Please note that these drugs have deadly side effects at the cost of overloading cellular activity.</description>
+        <baseCost>700</baseCost>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+            <li>Celes_Bio_I-5</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
         <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -203,17 +237,19 @@
         <defName>Celes_Bio_III</defName><!-- 尘构调用:灵能制药 -->
         <label>Dust-Mech Call:Psychic Pharmaceuticals</label>
         <description>Unlocks the crafting of "CPS-1 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances.</description>
-        <baseCost>2500</baseCost>
+        <baseCost>1500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
         <prerequisites>
-            <li>Celes_MainTech_III</li>
             <li>Celes_Bio_II</li>
+            <li>Celes_MainTech_III</li>
         </prerequisites>
-        <researchViewX>4</researchViewX>
+        <!--<hiddenPrerequisites>
+        </hiddenPrerequisites>-->
+        <researchViewX>5</researchViewX>
         <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -222,7 +258,7 @@
         <defName>Celes_Bio_IV</defName><!-- 高危试验性药物 -->
         <label>High-risk experimental medicines</label>
         <description>Unlocks the crafting of "RS-1 Experimental Stimulants", a dangerously efficient final resort obtained by overriding the commands of Luciferium using Dust-Mech. \n\nThe overwriting and overloading of Luciferium using Dust-Mech did solve the nano-mechanical mixture's shortcomings in co-ordination ability, but it also made the drug more unstable - which then manifested itself in RS-1's high probability of coma and heart attack side effects.</description>
-        <baseCost>3500</baseCost>
+        <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
@@ -231,69 +267,64 @@
         <prerequisites>
             <li>Celes_Bio_III</li>
         </prerequisites>
-        <researchViewX>5</researchViewX>
+        <researchViewX>6</researchViewX>
         <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Medicine_I</defName>
+        <defName>Celes_Medicine_I</defName><!-- 替代性制药 -->
         <label>alternative medicine production</label>
         <description>Slightly less efficient but highly self-sufficient use of bio-enzymatic gels as a feedstock to replace neutral amines in the production of medicine.</description>
-        <baseCost>1000</baseCost>
+        <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
-            <li>Celes_Bio_I</li>
+            <li>Celes_Bio_I-5</li>
         </prerequisites>
-        <hiddenPrerequisites>
-            <li>Celes_MainTech_II</li>
-        </hiddenPrerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>3.6</researchViewY>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_NanoImplant_I</defName>
+        <defName>Celes_NanoImplant_I</defName><!-- 生体转译 -->
         <label>Invasive Implantation</label>
         <description>Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's technology manual says so ...... but it doesn't say what side effects it would have on races other than Celestia.</description>
         <descriptionHyperlinks>
         </descriptionHyperlinks>
-        <baseCost>2000</baseCost>
+        <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_MainTech_II</li>
-            <li>Celes_Bio_I</li>
+            <li>Celes_Bio_I-5</li>
         </prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>2.4</researchViewY>
+        <researchViewX>3</researchViewX>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <discoveredLetterTitle>About: Invasive Implantation</discoveredLetterTitle>
         <discoveredLetterText>About: Invasive Implantation</discoveredLetterText>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_NanoImplant_II</defName>
+        <defName>Celes_NanoImplant_II</defName><!-- 劣化信息论改造 -->
         <label>degraded cybernetic modification</label>
         <description>Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct.</description>
         <descriptionHyperlinks>
         </descriptionHyperlinks>
-        <baseCost>2500</baseCost>
+        <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
             <li>Celes_NanoImplant_I</li>
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
-        <researchViewX>3</researchViewX>
-        <researchViewY>2.4</researchViewY>
+        <researchViewX>4</researchViewX>
+        <researchViewY>4.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Prosthesis_I</defName>
+        <defName>Celes_Prosthesis_I</defName><!-- 尘构调用:活械调用 -->
         <label>Dust-Mech Call:Signal Transcoding(WIP)</label>
         <description>Dust-Mech Call:Signal Transcoding(WIP)</description>
         <baseCost>2000</baseCost>
@@ -303,14 +334,214 @@
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
         <prerequisites>
+            <li>Celes_Bio_II</li>
+            <li>Celes_NanoImplant_I</li>
+            <li>Celes_MainTech_III</li>
         </prerequisites>
         <hiddenPrerequisites>
-            <li>Celes_Bio_I</li>
-            <li>Celes_MainTech_III</li>
         </hiddenPrerequisites>
-        <researchViewX>4</researchViewX>
+        <researchViewX>5</researchViewX>
         <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Prosthesis_II</defName><!-- 超控统合 -->
+        <label>Dust-Mech Call:Signal Transcoding(WIP)</label>
+        <description>Dust-Mech Call:Signal Transcoding(WIP)</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>Celes_Prosthesis_I</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+        </hiddenPrerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>3.6</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+    </ResearchProjectDef>
+
+    <!-- ========== 机械科技 ========== -->
+
+    <ResearchProjectDef>
+        <defName>Celes_Mech_I</defName><!-- 星铃信息论基础 --><!-- 待编辑 -->
+        <label>Celes_Mech_I(WIP)</label>
+        <description>Celes_Mech_I</description>
+        <!-- 星铃枢纽塔 机械体培育器 机械体充电桩 旋翼工作无人机 四轮工作无人机 机控装备 -->
+        <baseCost>300</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Electricity</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>4.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+        <discoveredLetterTitle>Celes_Mech_I</discoveredLetterTitle>
+        <discoveredLetterText>Celes_Mech_I</discoveredLetterText>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Mech_II</defName><!-- 机械神经模式 --><!-- 待编辑 <li>Celes_Bio_I-5</li>-->
+        <label>Celes_Mech_II(WIP)</label>
+        <description>Celes_Mech_II</description>
+        <!-- 犬形辅助仿生机械 改良机控装备 -->
+        <baseCost>300</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Manufactory_I</li>
+            <li>Celes_Mech_I</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+        </hiddenPrerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>4.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Mech_III</defName><!-- 晶体拟电突触 --><!-- 待编辑 -->
+        <label>Celes_Mech_III(WIP)</label>
+        <description>Celes_Mech_III</description>
+        <!-- 犬形辅助仿生机械 改良机控装备 -->
+        <baseCost>300</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Mech_II</li>
+            <li>Celes_NanoImplant_I</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+        </hiddenPrerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>4.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Mech_IV</defName><!-- 融合思维理论 --><!-- 待编辑 -->
+        <label>Celes_Mech_IV(WIP)</label>
+        <description>Celes_Mech_IV</description>
+        <!-- 犬形辅助仿生机械 改良机控装备 -->
+        <baseCost>300</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Mech_III</li>
+            <li>Celes_Manufactory_II</li>
+            <li>Celes_Prosthesis_I</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+        </hiddenPrerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>4.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Mech_V</defName><!-- 欧米伽心智 --><!-- 待编辑 -->
+        <label>Celes_Mech_V(WIP)</label>
+        <description>Celes_Mech_V</description>
+        <!-- 犬形辅助仿生机械 改良机控装备 -->
+        <baseCost>300</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Mech_IV</li>
+            <li>Celes_MainTech_IV</li>
+            <li>Celes_Manufactory_III</li>
+            <li>Celes_Prosthesis_II</li>
+        </prerequisites>
+        <researchViewX>8</researchViewX>
+        <researchViewY>4.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <!-- ========== 生产科技 ========== -->
+
+    <ResearchProjectDef>
+        <defName>Celes_Manufactory_I</defName><!-- 晶体场控锻造 --><!-- 待编辑 -->
+        <label>Celes_Manufactory_I(WIP)</label>
+        <description>Celes_Manufactory_I</description>
+        <!-- 实验性尘构培养槽 实验性生化舱 -->
+        <baseCost>500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Mech_I</li>
+            <li>Celes_MainTech_II</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+        </hiddenPrerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>5.4</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Manufactory_II_a</defName><!-- 模式化锻造理论 --><!-- 待编辑 -->
+        <label>Celes_Manufactory_III_a(WIP)</label>
+        <description>Celes_Manufactory_III_a</description>
+        <!-- 实验性尘构培养槽 实验性生化舱 -->
+        <baseCost>500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Manufactory_I</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>Celes_MainTech_III</li>
+        </hiddenPrerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>5.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Manufactory_II</defName><!-- 尘构纳米锻造 --><!-- 待编辑 -->
+        <label>Celes_Manufactory_II(WIP)</label>
+        <description>Celes_Manufactory_II</description>
+        <!-- 实验性尘构培养槽 实验性生化舱 -->
+        <baseCost>500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Manufactory_I</li>
+            <li>Celes_MainTech_III</li>
+        </prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>5.4</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Manufactory_III</defName><!-- 适应性信息流 --><!-- 待编辑 -->
+        <label>Celes_Manufactory_III(WIP)</label>
+        <description>Celes_Manufactory_III</description>
+        <!-- 实验性尘构培养槽 实验性生化舱 -->
+        <baseCost>500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Manufactory_II</li>
+        </prerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>5.4</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
     </ResearchProjectDef>
 
     <!-- ========== 制衣科技 ========== -->
@@ -395,7 +626,7 @@
         <hiddenPrerequisites>
             <li>Celes_MainTech_III</li>
         </hiddenPrerequisites>
-        <researchViewX>4</researchViewX>
+        <researchViewX>5</researchViewX>
         <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -415,13 +646,33 @@
         <prerequisites>
             <li>Celes_Apparel_IV</li>
         </prerequisites>
-        <researchViewX>5</researchViewX>
+        <researchViewX>6</researchViewX>
         <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
     </ResearchProjectDef>
-    
+
+    <ResearchProjectDef>
+        <defName>Celes_Apparel_VI</defName><!-- 英仙座工程 -->
+        <label>Corona Borealis Programme(WIP)</label>
+        <description>Corona Borealis Programme(WIP)</description>
+        <baseCost>10000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>Celes_Apparel_V</li>
+        </prerequisites>
+        <researchViewX>7</researchViewX>
+        <researchViewY>0.6</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
     <!--
 
     <ResearchProjectDef>
@@ -438,7 +689,7 @@
             <li>Celes_MainTech_II</li>
             <li>Celes_Apparel_I</li>
         </prerequisites>
-        <researchViewX>4</researchViewX>
+        <researchViewX>5</researchViewX>
         <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -476,7 +727,7 @@
             <li>Celes_MainTech_II</li>
             <li>Celes_Manufactory_I</li>
         </prerequisites>
-        <researchViewX>4</researchViewX>
+        <researchViewX>5</researchViewX>
         <researchViewY>1.2</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>

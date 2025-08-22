@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <JobDef>
+        <defName>Celes_Job_Refuel</defName>
+        <driverClass>CelesFeature.JobDriver_Celes_Refuel</driverClass>
+        <reportString>refueling TargetA with TargetB.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef>
+        <defName>Celes_Job_Maintenance</defName>
+        <driverClass>CelesFeature.JobDriver_Celes_Maintenance</driverClass>
+        <reportString>maintaining TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef>
+        <defName>Celes_Job_LoadTransformer</defName>
+        <driverClass>CelesFeature.JobDriver_Celes_LoadTransformer</driverClass>
+        <reportString>loading TargetB to TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef>
+        <defName>Celes_Job_DoAutomaticBill</defName>
+        <driverClass>CelesFeature.Celes_JobDriver_DoAutomaticBill</driverClass>
+        <reportString>TargetA TargetB TargetC.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+</Defs>

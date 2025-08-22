@@ -18,8 +18,8 @@
 	<melaninRange>0</melaninRange>
 	<!--↓↓↓这里等着改↓↓↓-->
 	<!--NameMaker都等我写-->
-	<playerInitialSettlementNameMaker>CelesInitialSettlement_Namer</playerInitialSettlementNameMaker>
-	<factionNameMaker>CelesFaction_Namer</factionNameMaker>
+	<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+	<factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
     <allowedCultures>
 		<li>CelesCulture</li>
@@ -82,6 +82,10 @@
     <naturalEnemy>false</naturalEnemy>
     <permanentEnemy>false</permanentEnemy>
     <allowedCultures><li>CelesCulture</li></allowedCultures>
+    <arrivalLayerWhitelist>
+        <li>Surface</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </arrivalLayerWhitelist>
 	<!--↓↓↓这里等着改↓↓↓-->
 	<!--什么异种啊文化啊戒律啊麻烦死了先占位-->
 	<requiredMemes>
@@ -108,6 +112,17 @@
 	    <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
       </xenotypeChances>
     </xenotypeSet>
+    <permanentEnemyToEveryoneExcept>
+        <li>OutlanderCivil</li>
+        <li>TribeCivil</li>
+        <li>PlayerTribe</li>
+        <li>PlayerColony</li>
+        <li>Ancients</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Beggars</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">TradersGuild</li>
+    </permanentEnemyToEveryoneExcept>
 	<!--↑↑↑这里等着改↑↑↑-->
 	<backstoryFilters>
       <li>

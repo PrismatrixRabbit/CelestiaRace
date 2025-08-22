@@ -97,7 +97,7 @@
                 <label>Stress</label>
                 <minSeverity>0.34</minSeverity>
                 <statOffsets>
-                    <InjuryHealingFactor>2.0</InjuryHealingFactor>
+                    <InjuryHealingFactor>1.0</InjuryHealingFactor>
                 </statOffsets>
                 <painFactor>0.1</painFactor>
                 <totalBleedFactor>0.2</totalBleedFactor>
@@ -246,6 +246,65 @@
                 <CapacityToCheck>Consciousness</CapacityToCheck>
                 <SeverityToCheck>0.40</SeverityToCheck>
                 <HPCheck>0.90</HPCheck>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_ActivitySurgery</defName>
+        <label>Celes_DustMechRhythm_Activity</label>
+        <description>Celes_DustMechRhythm_Activity</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
+            <HediffDef>Celes_DustMechRhythm_Dormant</HediffDef>
+            <HediffDef>Celes_DustMechRhythm_Military</HediffDef>
+            <RecipeDef>Celes_ActiveDustMechRhythm_Standard</RecipeDef>
+            <RecipeDef>Celes_RemoveDustMechRhythm_ActivityForCeles</RecipeDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>0.002</initialSeverity>
+        <minSeverity>0.001</minSeverity>
+        <maxSeverity>0.003</maxSeverity>
+        <stages>
+            <li>
+                <label>Prepare</label>
+                <painOffset>0.2</painOffset>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+                    <RestFallRateFactor>1.0</RestFallRateFactor>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.6</severityPerDay>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_ActivityForHuman</targetHediff>
+                <minToJump>true</minToJump>
+                <useRace>True</useRace>
+                <specialRace>
+                    <li>Celes_Race</li>
+                </specialRace>
+                <hediffForSpRace>Celes_DustMechRhythm_Activity</hediffForSpRace>
             </li>
         </comps>
     </HediffDef>
@@ -600,6 +659,106 @@
     <!-- ========== 人类节律 ========== -->
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechRhythm_ActivityForHuman</defName>
+        <label>Celes_DustMechRhythm_Activity</label>
+        <description>Celes_DustMechRhythm_Activity</description>
+        <descriptionHyperlinks>
+            <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
+            <HediffDef>Celes_DustMechRhythm_Dormant</HediffDef>
+            <HediffDef>Celes_DustMechRhythm_Military</HediffDef>
+            <RecipeDef>Celes_ActiveDustMechRhythm_Standard</RecipeDef>
+            <RecipeDef>Celes_RemoveDustMechRhythm_ActivityForCeles</RecipeDef>
+        </descriptionHyperlinks>
+        <isBad>false</isBad>
+        <initialSeverity>1.0</initialSeverity>
+        <minSeverity>0.001</minSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <label>Working</label>
+                <painOffset>0.4</painOffset>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.35</ImmunityGainSpeed>
+                    <RestFallRateFactor>1.0</RestFallRateFactor>
+                    <InjuryHealingFactor>1.0</InjuryHealingFactor>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.35</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.35</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.35</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.35</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>0.35</offset>
+                    </li>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <offset>0.35</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>Prepare</label>
+                <minSeverity>0.980</minSeverity>
+                <painOffset>0.2</painOffset>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+                    <RestFallRateFactor>1.0</RestFallRateFactor>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.6</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Overactivity</targetHediff>
+                <minToJump>true</minToJump>
+                <useRace>True</useRace>
+                <specialRace>
+                    <li>Celes_Race</li>
+                </specialRace>
+                <hediffForSpRace>Celes_DustMechRhythm_Dormant</hediffForSpRace>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_Overactivity</defName>
         <label>Celes_DustMechRhythm_Overactivity</label>
         <description>Celes_DustMechRhythm_Overactivity</description>
@@ -920,23 +1079,24 @@
                 <!--<label>High-Energy</label>-->
                 <!--<minSeverity>0.85</minSeverity>-->
                 <painFactor>0.1</painFactor>
-                <totalBleedFactor>0.2</totalBleedFactor>
+                <!--<totalBleedFactor>0.2</totalBleedFactor>-->
                 <statOffsets>
                     <!--<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.3</SlaveSuppressionOffset> 这玩意jb不让改
                     
                     <ImmunityGainSpeed>0.2</ImmunityGainSpeed>
                     <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
                     <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-                    <ArmorRating_Heat>0.50</ArmorRating_Heat>-->
+                    <ArmorRating_Heat>0.50</ArmorRating_Heat>
+                    <InjuryHealingFactor>4.0</InjuryHealingFactor>-->
                     <MentalBreakThreshold>-0.50</MentalBreakThreshold>
-                    <InjuryHealingFactor>4.0</InjuryHealingFactor>
                     <PawnBeauty>-4</PawnBeauty>
-                    <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+                    <WorkSpeedGlobal>-0.30</WorkSpeedGlobal>
                 </statOffsets>
                 <statFactors>
-                    <StaggerDurationFactor>0</StaggerDurationFactor>
+                    <!--<StaggerDurationFactor>0</StaggerDurationFactor>-->
                     <GlobalLearningFactor>0.1</GlobalLearningFactor>
                     <PsychicSensitivity>0</PsychicSensitivity>
+                    <BondAnimalChanceFactor>0</BondAnimalChanceFactor>
                 </statFactors>
                 <disabledWorkTags>
                     <li>Intellectual</li>
@@ -950,7 +1110,7 @@
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <offset>-0.30</offset>
+                        <offset>-0.40</offset>
                     </li>
                     <li>
                         <capacity>Moving</capacity>
@@ -965,6 +1125,12 @@
                 </mentalStateGivers>
                 <disablesNeeds>
                     <li>Rest</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>RoomSize</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
                 </disablesNeeds>
             </li>
             <!--<li>
@@ -1147,7 +1313,7 @@
                         <offset>(0, 0, 0)</offset>
                     </dataSouth>
                     <dataEast>
-                        <offset>(0, 0, -0.07)</offset>
+                        <offset>(0, 0, -0.00)</offset>
                     </dataEast>
                     <dataWest>
                         <flip>true</flip>

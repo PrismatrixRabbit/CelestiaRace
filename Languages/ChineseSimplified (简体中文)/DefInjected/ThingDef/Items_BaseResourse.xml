@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- ========== 基础资源 ========== -->
+
+    <Celes_RawCrystalOrchid.label>晶蒴</Celes_RawCrystalOrchid.label>
+    <!-- EN: crystal capsule -->
+    <Celes_RawCrystalOrchid.description>晶兰的果实，呈晶体状，摸上去非常坚硬但意外的似乎可以食用……但如何食用就是另一个问题了。</Celes_RawCrystalOrchid.description>
+    <!-- EN: The fruit of the crystal orchid, in the form of crystals, is very hard to the touch but seems unexpectedly edible ...... But how to eat it is another question. -->
+
+    <Celes_BioGel.label>生物酶凝胶</Celes_BioGel.label>
+    <!-- EN: bio-enzyme gels -->
+    <Celes_BioGel.description>一种从有机物中提取的强效生物酶凝胶，用于制造星铃的各种特效药。</Celes_BioGel.description>
+    <!-- EN: A potent bio-enzyme gel extracted from organic matter is used to make Celestia's various specialised medicines. -->
+
+    <CelesNanoMachine.label>自复制晶体</CelesNanoMachine.label>
+    <!-- EN: Self-replicating crystals -->
+    <CelesNanoMachine.description>从晶蒴中提取出的奇异晶体，通体透明，却仿佛有什么东西在内里流动，晶格在其中不断的复制与消亡着。可以用来制作星铃的特殊物品。这种晶体的组成成分无从确认，只能判断出其不属于任何自然物质或已知的有机物。</CelesNanoMachine.description>
+    <!-- EN: The strange crystals extracted from the crystal capsule are transparent yet it seems as if something is flowing inside, the lattice duplicating and dying out in it. It could be used to make special items belonging to Celestia's technology. -->
+
+    <CelesNanoManifold.label>尘构流形</CelesNanoManifold.label>
+    <!-- EN: the Dust-Mech -->
+    <CelesNanoManifold.description>一种强大而高度可控的可编程纳米机器，是星铃文明的根基之一，运用广泛。但在边缘世界这样物资缺乏的地方，尘构物质并不能随心所欲的塑造世界。</CelesNanoManifold.description>
+    <!-- EN: A powerful and highly controllable programmable nanomachine, one of the roots of Celestia's civilisation, used extensively. But in places like the Rimworld, where supplies are scarce, Dust-Mech matter does not shape the world as it pleases. -->
+
+    <CelesAlloy.label>淬铃合金</CelesAlloy.label>
+    <!-- EN: Chime Alloy -->
+    <CelesAlloy.description>淬铃合金因其在撞击时发出的声音而得名。这种轻质合金极易加工，且高度耐用，但可变晶格结构影响了这种材料的抗剪拉性能。\n\n淬铃合金是一种特殊的场诱导相变合金，通常藉由向常规钢铁中掺入适当的晶蒴或者类似物制成。它在特定电场刺激下可转变为不同的特化晶体结构，因而常被用于制造各种星铃器械。尽管在母星系统中并不受青睐，但其廉价泛用的特性使其在边缘世界的星铃拓荒者手中大受欢迎。</CelesAlloy.description>
+    <!-- EN: A special alloy made using Dust-Mech to reconfigure the structure of the metal lattice, it is used to make all manner of Celestia instruments and can be converted into two psychically sensitive alloys. Though not looked upon favourably in the home system, its ease of manufacture has made it a hit in the hands of Celestia pioneers on the Rimworld. -->
+
+    <!-- ========== 纳米化素材 ========== -->
+
+    <Celes_UnfinishedCrystal.label>未完全晶化石料</Celes_UnfinishedCrystal.label>
+    <!-- EN: uncrystallised stone -->
+    <Celes_UnfinishedCrystal.description>未完全晶化石料。</Celes_UnfinishedCrystal.description>
+    <!-- EN: An uncrystallised stone -->
+
+    <Celes_NanoMachineCrystal.label>晶化石料</Celes_NanoMachineCrystal.label>
+    <!-- EN: CelesNanoMachineCrystal -->
+    <Celes_NanoMachineCrystal.description>出于某种原因，被几乎完全晶体化的粗糙岩石，其上的晶体可以被拆解回收。</Celes_NanoMachineCrystal.description>
+    <!-- EN: For some reason, rough rocks that have been almost completely crystallised have crystals on them that can be dismantled and recycled. -->
+
+    <Celes_NanoCrystallisedCorpse.label>晶化尸体</Celes_NanoCrystallisedCorpse.label>
+    <!-- EN: crystalline corpse -->
+    <Celes_NanoCrystallisedCorpse.description>出于某种原因，被几乎完全晶体化的人类尸体，其上的晶体可以被拆解回收，并作为副产品产出中性胺。</Celes_NanoCrystallisedCorpse.description>
+    <!-- EN: For some reason, human corpses that have been almost completely crystallised can be dismantled and recycled, yielding Neutroamine as a by-product. -->
+
+    <Celes_RottenNanoCrystallisedCorpse.label>腐朽的晶化尸体</Celes_RottenNanoCrystallisedCorpse.label>
+    <!-- EN: Rotten crystalline corpse -->
+    <Celes_RottenNanoCrystallisedCorpse.description>出于某种原因，被几乎完全晶体化的人类尸体，其上的晶体可以被拆解回收。但无论是尸体本身过于陈旧，还是晶体化过程中的差错，其已经无法作为副产品产出中性胺。</Celes_RottenNanoCrystallisedCorpse.description>
+    <!-- EN: For some reason, human corpses that have been almost completely crystallised can be dismantled and recycled. However, whether the corpses themselves are too old, or the crystallisation process was botched, they can no longer produce Neutroamine as a by-product. -->
+
+</LanguageData>

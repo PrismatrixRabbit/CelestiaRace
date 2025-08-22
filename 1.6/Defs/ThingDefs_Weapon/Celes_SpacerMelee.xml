@@ -203,7 +203,7 @@
     </tradeTags>
   </ThingDef>
 
-  <ThingDef ParentName="MeleeWeaponUltratech">
+  <ThingDef ParentName="Celes_UltraMeleeBase">
     <defName>CelesRelicSword</defName>
     <label>"The Dawn"</label>
     <description>An ancient weapon from Celestia's home planet, probably the standard plasma longsword of the Celestia Navy, with a deadly single-molecule blade encased in hot plasma. Known today as "The Dawn" for its morale-boosting qualities, the technology to make it has likely been lost.</description>

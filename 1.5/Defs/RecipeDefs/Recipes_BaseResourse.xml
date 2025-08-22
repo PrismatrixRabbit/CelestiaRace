@@ -177,7 +177,7 @@
             <li>Celes_MultifunctionalTabA</li>
             <li>TableMachining</li>
         </recipeUsers>
-        <unfinishedThingDef>UnfinishedCrystal</unfinishedThingDef>
+        <unfinishedThingDef>Celes_UnfinishedCrystal</unfinishedThingDef>
         <researchPrerequisites>
             <li>Celes_MainTech_II</li>
         </researchPrerequisites>

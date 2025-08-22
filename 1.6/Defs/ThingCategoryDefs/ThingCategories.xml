@@ -15,6 +15,12 @@
         <parent>Manufactured</parent>
     </ThingCategoryDef>
 
+    <ThingCategoryDef>
+        <defName>Celes_Drugs</defName>
+        <label>celestia drugs</label>
+        <parent>Manufactured</parent>
+    </ThingCategoryDef>
+
     <!-- ========== 星铃武器 ========== -->
 
     <ThingCategoryDef>

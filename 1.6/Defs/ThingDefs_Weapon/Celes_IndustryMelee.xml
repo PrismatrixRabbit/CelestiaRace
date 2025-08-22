@@ -60,6 +60,10 @@
             <PlantWorkSpeed>0.4</PlantWorkSpeed>
         </equippedStatOffsets>
         <recipeMaker>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
             <researchPrerequisites>
                 <li>Celes_MainTech_I</li>
                 <li>Smithing</li>
@@ -116,6 +120,7 @@
         <recipeMaker>
             <researchPrerequisites>
                 <li>Celes_Weapon_I</li>
+                <li>Smithing</li>
             </researchPrerequisites>
             <skillRequirements>
                 <Crafting>5</Crafting>
@@ -171,7 +176,10 @@
             <NegotiationAbility>0.3</NegotiationAbility>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>Celes_Weapon_II</researchPrerequisite>
+            <researchPrerequisites>
+                <li>Celes_Weapon_II</li>
+                <li>LongBlades</li>
+            </researchPrerequisites>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -229,10 +237,13 @@
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
 			<MeleeDodgeChance>2.0</MeleeDodgeChance>
-			<GeneralLaborSpeed>0.25</GeneralLaborSpeed>
+			<GeneralLaborSpeed>0.15</GeneralLaborSpeed>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>Celes_Weapon_II</researchPrerequisite>
+            <researchPrerequisites>
+                <li>Celes_Weapon_II</li>
+                <li>Smithing</li>
+            </researchPrerequisites>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>

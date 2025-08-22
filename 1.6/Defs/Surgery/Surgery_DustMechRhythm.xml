@@ -29,6 +29,8 @@
                 </AllowWhenHediff>
                 <DisallowWhenHediff>  
                     <li>Celes_DustMechRhythm_Activity</li>
+                    <li>Celes_DustMechRhythm_ActivitySurgery</li>
+                    <li>Celes_DustMechRhythm_ActivityForHuman</li>
                     <li>Celes_DustMechRhythm_ProtocolIII</li>
                     <li>Celes_DustMechRhythm_Dormant</li>
                 </DisallowWhenHediff>
@@ -95,9 +97,9 @@
                 </race>
             </li>
         </modExtensions>
-        <label>Celes_RemoveDustMechRhythm_ActivityForHuman</label>
-        <description>Celes_RemoveDustMechRhythm_ActivityForHuman</description>
-        <jobString>Celes_RemoveDustMechRhythm_ActivityForHuman</jobString>
+        <label>Celes_RemoveDustMechRhythm_ActivityForCeles</label>
+        <description>Celes_RemoveDustMechRhythm_ActivityForCeles</description>
+        <jobString>Celes_RemoveDustMechRhythm_ActivityForCeles</jobString>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
@@ -121,7 +123,7 @@
                         <li>Medicine</li>
                     </categories>
                 </filter>
-                <count>4</count>
+                <count>1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -265,12 +267,14 @@
         <modExtensions>
             <li Class="CelesFeature.Celes_RecipeModExtension">
                 <addHediff>true</addHediff>
-                <hediffToAdd>Celes_DustMechRhythm_Activity</hediffToAdd>
+                <hediffToAdd>Celes_DustMechRhythm_ActivitySurgery</hediffToAdd>
                 <removeHediff>false</removeHediff>
                 <DisallowWhenHediff>
                     <li>Celes_DustMechRhythm_Standard</li>
                     <li>Celes_DustMechRhythm_ProtocolIII</li>
                     <li>Celes_DustMechRhythm_Activity</li>
+                    <li>Celes_DustMechRhythm_ActivitySurgery</li>
+                    <li>Celes_DustMechRhythm_ActivityForHuman</li>
                     <li>Celes_DustMechRhythm_Dormant</li>
                     <li>Celes_DustMechRhythm_Military</li>
                     <li>Celes_DustMechRhythm_ProtocolII</li>
@@ -292,7 +296,8 @@
         <workAmount>2000</workAmount>
         <hideBodyPartNames>true</hideBodyPartNames>
         <targetsBodyPart>false</targetsBodyPart>
-        <isViolation>false</isViolation>
+        <isViolation>true</isViolation>
+        <anesthetize>false</anesthetize>
         <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
         <surgerySuccessChanceFactor>5.0</surgerySuccessChanceFactor>
         <skillRequirements>
@@ -327,9 +332,9 @@
                 <addHediff>true</addHediff>
                 <hediffToAdd>Celes_DustMechRhythm_DormantHuman</hediffToAdd>
                 <removeHediff>true</removeHediff>
-                <hediffToRemove>Celes_DustMechRhythm_Activity</hediffToRemove>
+                <hediffToRemove>Celes_DustMechRhythm_ActivityForHuman</hediffToRemove>
                 <AllowWhenHediff>
-                    <li>Celes_DustMechRhythm_Activity</li>
+                    <li>Celes_DustMechRhythm_ActivityForHuman</li>
                 </AllowWhenHediff>
             </li>
         </modExtensions>
@@ -359,7 +364,7 @@
                         <li>Medicine</li>
                     </categories>
                 </filter>
-                <count>4</count>
+                <count>1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -415,7 +420,7 @@
                         <li>Medicine</li>
                     </categories>
                 </filter>
-                <count>4</count>
+                <count>1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -427,7 +432,7 @@
             </disallowedThingDefs>
         </fixedIngredientFilter>
         <products>
-            <CelesNanoMachine>2</CelesNanoMachine>
+            <CelesNanoMachine>3</CelesNanoMachine>
             <Neutroamine>5</Neutroamine>
         </products>
         <researchPrerequisite>
@@ -476,7 +481,7 @@
                         <li>Medicine</li>
                     </categories>
                 </filter>
-                <count>4</count>
+                <count>2</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>

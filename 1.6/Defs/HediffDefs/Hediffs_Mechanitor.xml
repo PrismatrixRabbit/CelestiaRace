@@ -24,7 +24,7 @@
             </li>
         </stages>
         <comps>
-            <li Class="HediffCompProperties_RemoveIfOtherHediff">
+            <li Class="HediffCompProperties_RemoveIfOtherHediff" MayRequire="Ludeon.RimWorld.Biotech">
                 <hediffs>
                     <li>Celes_StandardMechlink</li>
                 </hediffs>
@@ -67,6 +67,40 @@
         <stages>
         </stages>
     </HediffDef>
+
+    <RecipeDef ParentName="Celes_Surgery" MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>Celes_MechlinkRestart</defName>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_RecipeModExtension">
+                <addHediff>true</addHediff>
+                <hediffToAdd>MechlinkImplant</hediffToAdd>
+                <removeHediff>true</removeHediff>
+                <hediffToRemove MayRequire="Ludeon.RimWorld.Biotech">CelesSleepMechlinkImplant</hediffToRemove>
+                <AllowWhenHediff>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">CelesSleepMechlinkImplant</li>
+                </AllowWhenHediff>
+                <useRace>true</useRace>
+                <race>
+                    <li>Celes_Race</li>
+                </race>
+            </li>
+        </modExtensions>
+        <label>Celes_MechlinkRestart</label>
+        <description>Celes_MechlinkRestart</description>
+        <jobString>Celes_MechlinkRestart</jobString>
+        <descriptionHyperlinks>
+            <HediffDef>MechlinkImplant</HediffDef>
+            <HediffDef>CelesSleepMechlinkImplant</HediffDef>
+        </descriptionHyperlinks>
+        <workerClass>CelesFeature.Celes_RecipeSurgery</workerClass>
+        <workAmount>2000</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <isViolation>false</isViolation>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <surgerySuccessChanceFactor>5.0</surgerySuccessChanceFactor>
+        <uiIconThing>Mechlink</uiIconThing>
+    </RecipeDef>
 
     <HediffDef ParentName="ImplantHediffBase" MayRequire="Ludeon.RimWorld.Biotech">
         <defName>Celes_FieldAidRestrict</defName>

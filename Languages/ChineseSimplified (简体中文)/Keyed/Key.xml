@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- ========== Patch_Faction ========== -->
+  <Celes_Main>联络星铃外勤部</Celes_Main>
+  <GreetI>在一阵杂音后，一个声音谨慎地回应了你的通讯，“通讯已接通，这里是星铃外勤部，我们只和朋友们互通有无……请出示密钥序列。”\n\n当前声望：{0}，密钥数量：{1}</GreetI>
+  <GreetII>在一阵杂音后，一个熟悉的声音不耐烦地回应了你的通讯，“通讯已接通，这里是星铃外勤部……欸，是你们啊，太好了。流程你们懂的，请出示密钥序列吧。”\n\n当前声望：{0}，密钥数量：{1}</GreetII>
+  
+  <Celes_Aid>支援密钥</Celes_Aid>
+  <Celes_AidGreet>你听到清脆的按键声，然后是带着干扰的声音，“如果你有密钥序列的话,可以考虑兑换为一次人员支援……清单上现在有这几种援助：”</Celes_AidGreet>
+
+  <Celes_Drop>物资密钥</Celes_Drop>
+  <Celes_DropGreet>你听到清脆的按键声，然后是带着干扰的声音，“如果你有密钥序列的话,可以考虑兑换为一次物资支援……清单上现在有这几种援助：”</Celes_DropGreet>
+
+  <GoodwillRequest>{0}好感</GoodwillRequest>
+  <TradeOption>{0}换{1}</TradeOption>
+  
+  <Celes_Trade>密钥交易</Celes_Trade>
+  <Celes_TradeGreet>你听到清脆的按键声，然后是带着干扰的声音，“这里可以用物资交换外勤部密钥，不过你要是腆着脸求我们的话也是可以的ｗ”</Celes_TradeGreet>
+  
+  <Celes_LackGoodwill>需求20好感度以上</Celes_LackGoodwill>
+  <Celes_LackRequests>缺少需求物资</Celes_LackRequests>
+  <Celes_InCooldown>冷却中({0}天)</Celes_InCooldown>
+  <!-- ========== Building_Celes_DeepDrill ========== -->
+
+  <Celes_Keyed_Active>开机</Celes_Keyed_Active>
+  <Celes_Keyed_Inactive>关机</Celes_Keyed_Inactive>
+  
+  <Celes_Keyed_ChangeMode>生产模式切换</Celes_Keyed_ChangeMode>
+  <Celes_Keyed_DrillingMode>钻取模式</Celes_Keyed_DrillingMode>
+  <Celes_Keyed_ProcessingMode>加工模式</Celes_Keyed_ProcessingMode>
+  <Celes_Keyed_ChooseProduct>选取加工产物</Celes_Keyed_ChooseProduct>
+
+  <!-- ========== Gizmo_Celes_Maintenance ========== -->
+
+  <Celes_Keyed_Maintenance>维护状态</Celes_Keyed_Maintenance>
+  <Celes_Keyed_Maintenance_Tooltip>
+    维护状态：{0}%\n
+    维护降低速率：{1}%/日\n
+    当前效率乘数：{2}%\n
+    点击来设置维护阈值。\n\n</Celes_Keyed_Maintenance_Tooltip>
+
+</LanguageData>

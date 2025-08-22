@@ -14,13 +14,12 @@
         <workAmount>600</workAmount>
         <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
         <allowMixingIngredients>true</allowMixingIngredients>
-        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
         <workSkill>Medicine</workSkill>
         <recipeUsers>
             <li>DrugLab</li>
         </recipeUsers>
         <researchPrerequisites>
-            <li>Celes_MainTech_I</li>
+            <li>Celes_Bio_I</li>
             <li>DrugProduction</li>
         </researchPrerequisites>
         <ingredients>
@@ -31,7 +30,7 @@
                         <li>AnimalProductRaw</li>
                     </categories>
                 </filter>
-                <count>0.5</count>
+                <count>20</count>
             </li>
             <li>
                 <filter>
@@ -58,9 +57,9 @@
             <disallowedCategories>
                 <li>EggsFertilized</li>
             </disallowedCategories>
-            <disallowedThingDefs>
+            <!-- <disallowedThingDefs>
                 <li>Celes_RawCrystalOrchid</li>
-            </disallowedThingDefs>
+            </disallowedThingDefs> -->
         </defaultIngredientFilter>
         <products>
             <Celes_BioGel>3</Celes_BioGel>
@@ -75,7 +74,7 @@
             <ThingDef>Celes_RawCrystalOrchid</ThingDef>
             <ThingDef>CelesNanoMachine</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>Celes_BioGel</uiIconThing>
+        <uiIconThing>CelesNanoMachine</uiIconThing>
         <jobString>extracting self-replicating crystals</jobString>
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
@@ -156,7 +155,7 @@
             </categories>
         </fixedIngredientFilter>
         <products>
-            <CelesAlloy>40</CelesAlloy>
+            <CelesAlloy>60</CelesAlloy>
         </products>
     </RecipeDef>
     
@@ -177,7 +176,7 @@
             <li>Celes_MultifunctionalTabA</li>
             <li>TableMachining</li>
         </recipeUsers>
-        <unfinishedThingDef>UnfinishedCrystal</unfinishedThingDef>
+        <unfinishedThingDef>Celes_UnfinishedCrystal</unfinishedThingDef>
         <researchPrerequisites>
             <li>Celes_MainTech_II</li>
         </researchPrerequisites>
@@ -239,8 +238,8 @@
             </li>
         </ingredients>
         <products>
-            <CelesNanoMachine>3</CelesNanoMachine>
-            <Neutroamine>10</Neutroamine>
+            <CelesNanoMachine>10</CelesNanoMachine>
+            <Neutroamine>25</Neutroamine>
         </products>
         <recipeUsers>
             <li>Celes_MultifunctionalTabA</li>
@@ -258,7 +257,7 @@
         <descriptionHyperlinks>
             <ThingDef>CelesNanoMachine</ThingDef>
         </descriptionHyperlinks>
-        <workAmount>30000</workAmount>
+        <workAmount>3000</workAmount>
         <jobString>Celes_ProduceNanoByCorpse</jobString>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
@@ -284,7 +283,7 @@
                         <li>Celes_NanoResourcesRaw</li>
                     </categories>
                 </filter>
-                <count>2</count>
+                <count>1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -293,8 +292,17 @@
                 <li>Celes_NanoResourcesRaw</li>
             </categories>
         </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>CorpsesHumanlike</li>
+                <li>Celes_NanoResourcesRaw</li>
+            </categories>
+            <disallowedThingDefs>
+                <li>CelesNanoManifold</li>
+            </disallowedThingDefs>
+        </defaultIngredientFilter>
         <products>
-            <CelesNanoMachine>10</CelesNanoMachine>
+            <CelesNanoMachine>3</CelesNanoMachine>
         </products>
         <recipeUsers>
             <li>Celes_MultifunctionalTabA</li>

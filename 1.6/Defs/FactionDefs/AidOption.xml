@@ -108,7 +108,7 @@
 		</effects>
 	</CelesFeature.AidOptionDef>
 
-	<CelesFeature.AidOptionDef>
+	<!-- <CelesFeature.AidOptionDef>
 		<defName>Option_Drop31</defName>
 		<label>request artillery strike targeter.(4 Pioneer Key)</label>
 		<cooldown>840000</cooldown>
@@ -127,7 +127,7 @@
 				<faller>DropPodIncomingMechanoidRapid</faller>
 			</li>
 		</effects>
-	</CelesFeature.AidOptionDef>
+	</CelesFeature.AidOptionDef> -->
 
 	<!-- ========== 人员 ========== -->
 	

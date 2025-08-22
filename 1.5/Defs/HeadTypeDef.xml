@@ -6,4 +6,53 @@
 		<graphicPath>Celes/Head/CelesHeadN1</graphicPath>
 		<gender>None</gender>
 	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CelesHeadN2</defName>
+		<graphicPath>Celes/Head/CelesHeadN2</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CelesHeadN3</defName>
+		<graphicPath>Celes/Head/CelesHeadN3</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CelesHeadN4</defName>
+		<graphicPath>Celes/Head/CelesHeadN4</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CelesHeadN5</defName>
+		<graphicPath>Celes/Head/CelesHeadN5</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CelesHeadN6</defName>
+		<graphicPath>Celes/Head/CelesHeadN6</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CelesHeadN7</defName>
+		<graphicPath>Celes/Head/CelesHeadN7</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CelesHeadN8</defName>
+		<graphicPath>Celes/Head/CelesHeadN8</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CelesHeadN9</defName>
+		<graphicPath>Celes/Head/CelesHeadN9</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
 </Defs>

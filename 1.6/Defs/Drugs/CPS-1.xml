@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
-    <ThingDef ParentName="MakeableDrugBase">
+    <ThingDef ParentName="Celes_MakeableDrugBase">
         <defName>Celes_CPS1M</defName>
         <label>CPS-1 combat psychic stimulants</label>
         <description>A synthetic Dust-Mech preparation used to enhance the user's psychic combat abilities and directly increase psyfocus.CPS-1 inherits Celestia's usual cellular activity overload from its combat drugs, and its aftereffects are somewhat lethal. \n\nBy overactivating the nerves, the user will feel pain more easily, but will also be able to dissipate neural heat and gather psyfocus more quickly. As a side effect, the user will also be more focused in combat, but overfocused and sensitive nerves slow down daily tasks.</description>
@@ -66,6 +66,9 @@
                 <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
             </li>
         </comps>
+        <tradeTags Inherit="false">
+            <li>Celes_DrugsDanger</li>
+        </tradeTags>
     </ThingDef>
 
     <HediffDef>

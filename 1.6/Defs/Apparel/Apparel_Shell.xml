@@ -156,7 +156,9 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="Celes_Shell_I">
+	<!-- ========== 日常服装 ========= -->
+
+	<ThingDef ParentName="Celes_Shell_II"><!--文职外套-->
 		<defName>Celes_TrenchCoat</defName>
 		<label>celestia trench coat</label>
 		<description>A trench coat that protects you from the elements and keeps you comfortable at a basic temperature. \n\n.</description>
