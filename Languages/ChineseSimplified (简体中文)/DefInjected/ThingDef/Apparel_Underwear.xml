@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    <Celes_Tribal.label>星铃蔽身短袍</Celes_Tribal.label>
-    <!-- EN: celestia primordial robe -->
-    <Celes_Tribal.description>一套原始的衣物，看起来非常落后，但至少能起到基本的保温作用。\n\n。</Celes_Tribal.description>
-    <!-- EN: A primitive set of clothing that looks very outdated, but at least provides basic insulation. \n\n. -->
-    
+    <Celes_UnderwearA.label>星铃内衣</Celes_UnderwearA.label>
+    <!-- EN: . -->
+    <Celes_UnderwearA.description>。</Celes_UnderwearA.description>
+    <!-- EN: . -->
+
+    <Celes_UnderwearB.label>星铃吊带内衣</Celes_UnderwearB.label>
+    <!-- EN: . -->
+    <Celes_UnderwearB.description>。</Celes_UnderwearB.description>
+    <!-- EN: . -->
+
+    <Celes_UnderwearC.label>星铃轻薄内衣</Celes_UnderwearC.label>
+    <!-- EN: . -->
+    <Celes_UnderwearC.description>。</Celes_UnderwearC.description>
+    <!-- EN: . -->
+
+    <Celes_SwimsuitA.label>星铃三点式泳装</Celes_SwimsuitA.label>
+    <!-- EN: . -->
+    <Celes_SwimsuitA.description>。</Celes_SwimsuitA.description>
+    <!-- EN: . -->
+
+    <Celes_SwimsuitB.label>星铃V字泳衣</Celes_SwimsuitB.label>
+    <!-- EN: . -->
+    <Celes_SwimsuitB.description>。</Celes_SwimsuitB.description>
+    <!-- EN: . -->
+
+    <Celes_ExploreUnderwear.label>星铃科考队内衣</Celes_ExploreUnderwear.label>
+    <!-- EN: . -->
+    <Celes_ExploreUnderwear.description>。</Celes_ExploreUnderwear.description>
+    <!-- EN: . -->
+
 </LanguageData>
