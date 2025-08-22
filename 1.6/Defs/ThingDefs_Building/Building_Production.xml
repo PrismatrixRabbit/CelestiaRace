@@ -33,7 +33,7 @@
             <Cleanliness>0</Cleanliness>
         </statBases>
         <size>(2,1)</size>
-        <designationCategory>Production</designationCategory>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
         <uiOrder>2510</uiOrder>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
@@ -110,7 +110,7 @@
             <Cleanliness>0</Cleanliness>
         </statBases>
         <size>(2,1)</size>
-        <designationCategory>Production</designationCategory>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
         <uiOrder>2510</uiOrder>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
@@ -187,7 +187,7 @@
             <Cleanliness>0</Cleanliness>
         </statBases>
         <size>(3,1)</size>
-        <designationCategory>Production</designationCategory>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
         <uiOrder>2510</uiOrder>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
@@ -313,7 +313,7 @@
         <thingCategories>
             <li>BuildingsProduction</li>
         </thingCategories>
-        <designationCategory>Production</designationCategory>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
         <minifiedDef>MinifiedThing</minifiedDef>
         <uiOrder>2100</uiOrder>
         <constructEffect>ConstructMetal</constructEffect>
@@ -359,7 +359,7 @@
         <building>
             <destroySound>BuildingDestroyed_Metal_Small</destroySound>
         </building>
-        <designationCategory>Production</designationCategory>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
         <minifiedDef>MinifiedThing</minifiedDef>
         <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
         <comps>

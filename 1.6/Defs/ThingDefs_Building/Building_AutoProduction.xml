@@ -68,7 +68,7 @@
             <Flammability>1.0</Flammability>
             <Cleanliness>-3</Cleanliness>
         </statBases>
-        <designationCategory>Production</designationCategory>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
         <uiOrder>2510</uiOrder>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
@@ -174,7 +174,7 @@
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
         <fillPercent>0.99</fillPercent>
-        <designationCategory>Production</designationCategory>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
         <statBases>
             <MaxHitPoints>450</MaxHitPoints>
             <WorkToBuild>12000</WorkToBuild>
@@ -254,7 +254,7 @@
         <fillPercent>0.5</fillPercent>
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-2)</interactionCellOffset>
-        <designationCategory>Production</designationCategory>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
         <statBases>
             <MaxHitPoints>450</MaxHitPoints>
             <WorkToBuild>12000</WorkToBuild>
