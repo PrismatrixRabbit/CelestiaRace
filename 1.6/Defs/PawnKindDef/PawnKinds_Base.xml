@@ -45,6 +45,13 @@
                 <severity>0.5</severity>
             </li>
         </startingHediffs>
+        <specificApparelRequirements>
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>Celes_Underwear</apparelLayer>
+                <requiredTag>Celes_Underwear</requiredTag>
+            </li>
+        </specificApparelRequirements>
     </PawnKindDef>
 
 	<PawnKindDef Name="Celes_CombatPawnBase" ParentName="Celes_PawnBase" Abstract="True">
@@ -58,18 +65,19 @@
 			<li>Wimp</li>
 		</disallowedTraits>
 		<specificApparelRequirements>
-		<li>
-			<bodyPartGroup>UpperHead</bodyPartGroup>
-			<stuff>CelesAdvanceCloth</stuff>
-		</li>
-		<li>
-			<bodyPartGroup>Torso</bodyPartGroup>
-			<stuff>CelesAdvanceCloth</stuff>
-		</li>
-		<li>
-			<bodyPartGroup>Legs</bodyPartGroup>
-			<stuff>CelesAdvanceCloth</stuff>
-		</li>
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>Celes_Underwear</apparelLayer>
+                <requiredTag>Celes_Underwear</requiredTag>
+            </li>
+            <li>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>CelesAdvanceCloth</stuff>
+            </li>
+            <li>
+                <apparelLayer>Shell</apparelLayer>
+                <stuff>CelesAdvanceCloth</stuff>
+            </li>
 		</specificApparelRequirements>
 	</PawnKindDef>
 

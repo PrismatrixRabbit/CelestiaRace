@@ -72,14 +72,14 @@
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <statBases>
-            <Mass>4</Mass>
+            <Mass>4.5</Mass>
             <EquipDelay>5</EquipDelay>
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToMake>9000</WorkToMake>
 			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
 			<Insulation_Cold>3</Insulation_Cold>
 			<Insulation_Heat>0</Insulation_Heat>
         </statBases>
@@ -113,6 +113,11 @@
             </recipeUsers>
             <displayPriority>307</displayPriority>
         </recipeMaker>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.12</MoveSpeed>
+            <RangedCooldownFactor>-0.15</RangedCooldownFactor>
+            <!-- <ShootingAccuracyPawn>1.0</ShootingAccuracyPawn> -->
+        </equippedStatOffsets>
         <thingCategories>
             <li>Celes_Apparel_Military</li>
         </thingCategories>

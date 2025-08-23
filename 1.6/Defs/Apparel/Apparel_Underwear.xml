@@ -212,6 +212,10 @@
                 <li>OnSkin</li>
                 <li>Celes_Underwear</li>
             </layers>
+            <tags Inherit="false">
+                <li>Celes_Daily</li>
+                <li>Celes_Underwear</li>
+            </tags>
             <useWornGraphicMask>true</useWornGraphicMask>
             <developmentalStageFilter>Adult</developmentalStageFilter>
             <bodyPartGroups>
@@ -251,6 +255,10 @@
                 <li>OnSkin</li>
                 <li>Celes_Underwear</li>
             </layers>
+            <tags Inherit="false">
+                <li>Celes_Daily</li>
+                <li>Celes_Underwear</li>
+            </tags>
             <useWornGraphicMask>true</useWornGraphicMask>
             <developmentalStageFilter>Adult</developmentalStageFilter>
             <bodyPartGroups>
@@ -290,6 +298,9 @@
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>
             <developmentalStageFilter>Adult</developmentalStageFilter>
+            <tags Inherit="false">
+                <li>Celes_Explore</li>
+            </tags>
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Legs</li>

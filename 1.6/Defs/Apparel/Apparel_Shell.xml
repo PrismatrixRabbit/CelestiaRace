@@ -254,7 +254,7 @@
 		</thingCategories>
 		<equippedStatOffsets>
 			<PainShockThreshold>0.05</PainShockThreshold>
-			<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
+			<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 	</ThingDef>
 
@@ -307,7 +307,7 @@
 
 	<!-- ========== 军事服装 ========= -->
 
-	<ThingDef ParentName="Celes_Shell_III"><!--军装大衣-->
+	<ThingDef ParentName="Celes_Shell_III"><!--星铃冬季军礼服-->
 	<defName>Celes_MilitaryCoat</defName>
 	<label>celestia military coat</label>
 	<description>Designed with reference to Celestia's naval uniforms for low temperature environments and also serve as an outerwear for Celestia's military formal wear. Though, many of the designs for the space environment have been cut.\n\n Full of enthusiasm is the opportunity for many Celestia to enlist in the army, and the second is probably a handsome uniform. And in fact belongs to the Celestia Navy establishment of the pioneering team, naturally followed this gift from space.</description>
@@ -327,9 +327,13 @@
 	<statBases>
 		<MaxHitPoints>300</MaxHitPoints>
 		<WorkToMake>14400</WorkToMake>
-		<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.85</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+		<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+		<Insulation_Cold>12</Insulation_Cold>
+		<Insulation_Heat>0</Insulation_Heat>
+		<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
 	</statBases>
 	<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -345,19 +349,77 @@
         </bodyPartGroups>
 		<wornGraphicPath>Celes/Apparel/Shell/MilitaryCoat/MilitaryCoat</wornGraphicPath>
 		<tags>
-			<li>Celes_Military</li>
+			<li>Celes_MilitaryDress</li>
+			<li>Celes_Leader</li>
 		</tags>
 		<drawData>
 			<dataNorth><layer>40</layer></dataNorth>
 		</drawData>
 	</apparel>
 		<equippedStatOffsets>
-			<MoveSpeed>0.12</MoveSpeed>
-			<ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
+			<SocialImpact>0.2</SocialImpact>
+			<NegotiationAbility>0.5</NegotiationAbility>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>Celes_Apparel_Military</li>
 		</thingCategories>
 	</ThingDef>
-	
+
+	<ThingDef ParentName="Celes_Shell_III"><!--星铃野战外套-->
+		<defName>Celes_FieldCoat</defName>
+		<label>celestia field coat</label>
+		<description>.</description>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<graphicData>
+			<texPath>Celes/Apparel/Shell/FieldCoat/FieldCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>14400</WorkToMake>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/Shell/FieldCoat/FieldCoat</wornGraphicPath>
+			<tags>
+				<li>Celes_Military</li>
+			</tags>
+			<drawData>
+				<dataNorth><layer>40</layer></dataNorth>
+			</drawData>
+		</apparel>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Celes_Apparel_Military</li>
+		</thingCategories>
+	</ThingDef>
+
 </Defs>

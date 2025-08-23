@@ -103,15 +103,19 @@
 		<combatPower>85</combatPower>
 		<itemQuality>Excellent</itemQuality>
 		<factionLeader>true</factionLeader>
-		<apparelMoney>150~1000</apparelMoney>
+		<apparelMoney>800~1600</apparelMoney>
+		<apparelTags>
+			<li>Celes_Leader</li>
+			<li>Celes_Daily</li>
+		</apparelTags>
 		<specificApparelRequirements>
             <li>
-                <bodyPartGroup>Legs</bodyPartGroup>
-                <requiredTag>Celes_Military</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+                <requiredTag>Celes_Leader</requiredTag>
             </li>
             <li>
-                <bodyPartGroup>Torso</bodyPartGroup>
-                <requiredTag>Celes_Explore</requiredTag>
+				<apparelLayer>Shell</apparelLayer>
+                <requiredTag>Celes_Leader</requiredTag>
             </li>
         </specificApparelRequirements>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
@@ -183,6 +187,13 @@
 				</categories>
 			</li>
 		</backstoryFilters>
+		<specificApparelRequirements Inherit="false">
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Celes_Underwear</apparelLayer>
+				<requiredTag>Celes_Explore</requiredTag>
+			</li>
+		</specificApparelRequirements>
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -242,6 +253,23 @@
                 </categories>
             </li>
         </backstoryFilters>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>Celes_Military</requiredTag>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Middle</apparelLayer>
+				<requiredTag>Celes_Military</requiredTag>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>Celes_Military</requiredTag>
+			</li>
+		</specificApparelRequirements>
         <inventoryOptions>
             <skipChance>0.25</skipChance>
             <subOptionsChooseOne>

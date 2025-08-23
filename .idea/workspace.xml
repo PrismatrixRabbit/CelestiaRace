@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/DesignationCategoryDef/DesignationCategories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Work.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Work.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_AutoProduction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_AutoProduction.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/WorkGivers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/WorkGivers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ApparelLayerDef/Apparel_Layer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ApparelLayerDef/Apparel_Layer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Apparel_Underwear.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Apparel_Underwear.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/Keyed/Key.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/Keyed/Key.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearC/UnderwearC.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearC/UnderwearC.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearC/UnderwearC_Female_south.png" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearC/UnderwearC_Female_south.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +142,7 @@
       <workItem from="1755787674074" duration="1846000" />
       <workItem from="1755833662453" duration="23234000" />
       <workItem from="1755875378747" duration="98000" />
+      <workItem from="1755949791325" duration="1796000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />

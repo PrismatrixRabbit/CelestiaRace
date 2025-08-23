@@ -4,7 +4,7 @@
     <DesignationCategoryDef>
         <defName>Celes_SpecialBuildings</defName>
         <label>celestia buildings</label>
-        <order>530</order>
+        <order>30</order>
         <specialDesignatorClasses>
             <li>Designator_Cancel</li>
             <li>Designator_Deconstruct</li>

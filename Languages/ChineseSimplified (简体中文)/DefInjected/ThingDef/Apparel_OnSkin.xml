@@ -26,10 +26,21 @@
     <Celes_ExploreVest.description>一件对躯干提供重点防护的防护服装，减弱穿戴者所受的生化与放射性威胁，在一定程度上增加了星铃拓荒小队的效率与泛用。\n\n在＂领航计划＂初期的设计中，这种防护服应当额外携带吗啡注射器，盖格计数器，附带头部防具与夜视仪，甚至集成一个智能终端并内置人工智能。但设计局最终以边缘世界难以提供足够的资源量产为理由削减了这些功能。</Celes_ExploreVest.description>
     <!-- EN: A protective suit that provides focused protection to the torso, reducing the wearer's exposure to biochemical and radiological threats, and increasing the Celestia Pilot Team's efficiency and versatility to a certain extent. \n\nIn the initial design of The Navigator Programme, the suit was supposed to carry a morphine injector, a Geiger counter, head protection and night vision, and even a smart terminal with built-in artificial intelligence. However, the design bureau eventually cut these features on the grounds that the Rimworld would have difficulty in providing sufficient resources for mass production. -->
 
-	<Celes_MilitaryUniform.label>星铃军装制服</Celes_MilitaryUniform.label>
+	<Celes_MilitaryUniform.label>星铃夏季军礼服</Celes_MilitaryUniform.label>
 	<!-- EN: celestia military uniform -->
-	<Celes_MilitaryUniform.description>参照星铃海军制服设计的高温环境军装，删减了许多针对太空环境的设计，同时也作为星铃军人正装的内衬。\n\n＂沿袭了来自星铃海军军装的戗驳领双排扣设计，兼顾稳重，威严与优雅。高弹性面料在凸显军人刚硬曲线的同时丝毫不会影响到身体敏捷……＂大多数介绍都是这么解释拓荒队军装的来历，但其中的用词似乎……有点违心。</Celes_MilitaryUniform.description>
+	<Celes_MilitaryUniform.description>参照星铃海军军礼服设计的夏季军装，删减了许多针对太空环境的设计。\n\n＂沿袭了来自星铃海军军礼服的戗驳领双排扣设计，兼顾稳重，威严与优雅。高弹性面料在凸显军人刚硬曲线的同时丝毫不会影响到身体敏捷……＂星铃征兵的小册子里是这么介绍拓荒队军礼服的来历的。</Celes_MilitaryUniform.description>
+	<!-- 参照星铃海军制服设计的高温环境军装，删减了许多针对太空环境的设计，同时也作为星铃军人正装的内衬。\n\n＂沿袭了来自星铃海军军装的戗驳领双排扣设计，兼顾稳重，威严与优雅。高弹性面料在凸显军人刚硬曲线的同时丝毫不会影响到身体敏捷……＂大多数介绍都是这么解释拓荒队军装的来历，但其中的用词似乎……有点违心。 -->
 	<!-- EN: Designed with reference to Celestia's naval uniforms for high temperature environments and also serve as a liner for Celestia's military formal wear. Though, many of the designs for the space environment have been cut. \n\n"The knock-down collar and double-breasted design from Celestia's naval uniforms combines stability, majesty and elegance. Highly elastic fabric highlights the HARD curves of the soldier while not affecting physical agility in the slightest ......" This is how most introductions explain the origins of the pioneer military uniform, but the wording used in it seems ...... to be a bit counterintuitive. -->
+
+	<Celes_CombatSuitJK.label>星铃城区作战服</Celes_CombatSuitJK.label>
+	<!-- EN: . -->
+	<Celes_CombatSuitJK.description>由星铃作战部队使用的军装，具有相当的识别度并能为穿戴者提供可观的防护，这套制服主要用于城区作战。\n\n这套衣服的配方会改别找我说imba！</Celes_CombatSuitJK.description>
+	<!-- EN: . -->
+
+	<Celes_CombatSuitTactical.label>星铃野战作战服</Celes_CombatSuitTactical.label>
+	<!-- EN: . -->
+	<Celes_CombatSuitTactical.description>由星铃作战部队使用的野战军装，具有相当的识别度并能为穿戴者提供可观的防护。\n\n这套衣服的配方会改别找我说imba！</Celes_CombatSuitTactical.description>
+	<!-- EN: . -->
 
 	<Celes_ClassicalGown.label>星铃古典礼服</Celes_ClassicalGown.label>
 	<!-- EN: celestia classical gown -->

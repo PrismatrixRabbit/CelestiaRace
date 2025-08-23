@@ -755,11 +755,14 @@
 			<raceRestriction>
 
 				<apparelList>
-					<!-- 腿饰
-					<li>Celes_SuspenderBlack</li>
-					<li>Celes_StockingBlack</li>
-					<li>Celes_TightBlack</li>
-					<li>Celes_LightLegArmour</li> -->
+					<!-- TODO我超别忘记改衣服 -->
+					<!-- 内衣 -->
+					<li>Celes_UnderwearA</li>
+					<li>Celes_UnderwearB</li>
+					<li>Celes_UnderwearC</li>
+					<li>Celes_SwimsuitA</li>
+					<li>Celes_SwimsuitB</li>
+					<li>Celes_ExploreUnderwear</li>
 					<!-- 夹层 -->
 					<li>Celes_KitchenApron</li>
 					<li>Celes_TacticalVest</li>
@@ -771,6 +774,8 @@
 					<li>Celes_CivilianUniform</li>
 					<li>Celes_ExploreVest</li>
 					<li>Celes_MilitaryUniform</li>
+					<li>Celes_CombatSuitJK</li>
+					<li>Celes_CombatSuitTactical</li>
 					<li>Celes_ClassicalGown</li>
 					<!-- 外套 -->
 					<li>Celes_SummerCoat</li>
@@ -779,6 +784,8 @@
 					<li>Celes_ExploreCoat</li>
 					<li>Celes_LabCoat</li>
 					<li>Celes_MilitaryCoat</li>
+					<li>Celes_FieldCoat</li>
+					<!-- 头饰 -->
 				</apparelList>
 
 				<recipeList>

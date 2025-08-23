@@ -176,6 +176,10 @@
 				<li>OnSkin</li>
 				<li>Celes_Underwear</li>
 			</layers>
+			<tags Inherit="false">
+				<li>Celes_Daily</li>
+				<li>Celes_Underwear</li>
+			</tags>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>
@@ -319,7 +323,7 @@
 	</apparel>
 		<equippedStatOffsets>
 			<PainShockThreshold>0.05</PainShockThreshold>
-			<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
+			<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>Celes_Apparel_Daily</li>
@@ -328,7 +332,7 @@
 
 	<!-- ========== 军事服装 ========= -->
 
-	<ThingDef ParentName="Celes_OnSkin_III"><!--星铃军装-->
+	<ThingDef ParentName="Celes_OnSkin_III"><!--星铃夏季军礼服-->
 		<defName>Celes_MilitaryUniform</defName>
 		<label>celestia military uniform</label>
 		<description>Designed with reference to Celestia's naval uniforms for high temperature environments and also serve as a liner for Celestia's military formal wear. Though, many of the designs for the space environment have been cut. \n\n"The knock-down collar and double-breasted design from Celestia's naval uniforms combines stability, majesty and elegance. Highly elastic fabric highlights the HARD curves of the soldier while not affecting physical agility in the slightest ......" This is how most introductions explain the origins of the pioneer military uniform, but the wording used in it seems ...... to be a bit counterintuitive.</description>
@@ -349,9 +353,13 @@
 			<Mass>2.0</Mass>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>9000</WorkToMake>
-			<StuffEffectMultiplierArmor>0.40</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.33</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>9</Insulation_Heat>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>
@@ -363,15 +371,132 @@
 				<li>Shoulders</li>
 				<li>Arms</li>
 				<li>Legs</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Celes/Apparel/OnSkin/MilitaryUniform/MilitaryUniform</wornGraphicPath>
+			<tags>
+				<li>Celes_MilitaryDress</li>
+				<li>Celes_Leader</li>
+			</tags>
+		</apparel>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Celes_Apparel_Military</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="Celes_OnSkin_III"><!--星铃城区作战服-->
+		<defName>Celes_CombatSuitJK</defName>
+		<label>celestia city combat suit</label>
+		<description>celestia combat suit</description>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<graphicData>
+			<texPath>Celes/Apparel/OnSkin/CombatSuitJK/CombatSuitJK</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>2.0</Mass>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.23</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.35</ArmorRating_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>11</Insulation_Heat>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/OnSkin/CombatSuitJK/CombatSuitJK</wornGraphicPath>
 			<tags>
 				<li>Celes_Military</li>
 			</tags>
 		</apparel>
 		<equippedStatOffsets>
-			<MoveSpeed>0.12</MoveSpeed>
-			<RangedCooldownFactor>-0.1</RangedCooldownFactor>
+			<MoveSpeed>-0.09</MoveSpeed>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Celes_Apparel_Military</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="Celes_OnSkin_III"><!--星铃野战作战服-->
+		<defName>Celes_CombatSuitTactical</defName>
+		<label>celestia field combat suit</label>
+		<description>celestia combat suit</description>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<graphicData>
+			<texPath>Celes/Apparel/OnSkin/CombatSuitTactical/CombatSuitTactical</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>2.0</Mass>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.23</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.35</ArmorRating_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>11</Insulation_Heat>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Celes/Apparel/OnSkin/CombatSuitTactical/CombatSuitTactical</wornGraphicPath>
+			<tags>
+				<li>Celes_Military</li>
+			</tags>
+		</apparel>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.09</MoveSpeed>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>Celes_Apparel_Military</li>

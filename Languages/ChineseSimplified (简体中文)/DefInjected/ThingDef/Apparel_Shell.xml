@@ -26,9 +26,14 @@
 	<Celes_LabCoat.description>一件干净整洁的白大褂，可以有效提高研究的效率。\n\n。</Celes_LabCoat.description>
 	<!-- EN: A clean and tidy lab coat can be effective in improving the efficiency of research. \n\n. -->
 
-	<Celes_MilitaryCoat.label>星铃军装大衣</Celes_MilitaryCoat.label>
+	<Celes_MilitaryCoat.label>星铃冬季军礼服</Celes_MilitaryCoat.label>
     <!-- EN: celestia military coat -->
-    <Celes_MilitaryCoat.description>参照星铃海军制服设计的低温环境军装，删减了许多针对太空环境的设计，同时也作为星铃军人正装的外套。\n\n满腔热情是不少星铃入伍的契机，而其次大概就是一袭帅气的军装。而在事实上属于星铃海军编制的拓荒队，自然也就沿用了这份来自太空的赠礼。</Celes_MilitaryCoat.description>
+    <Celes_MilitaryCoat.description>参照星铃海军军礼服设计的冬季军装，删减了许多针对太空环境的设计。\n\n满腔热情是不少星铃入伍的契机，而其次大概就是一袭帅气的军装。而在事实上属于星铃海军编制的拓荒队，自然也就沿用了这份来自太空的赠礼。</Celes_MilitaryCoat.description>
     <!-- EN: Designed with reference to Celestia's naval uniforms for low temperature environments and also serve as an outerwear for Celestia's military formal wear. Though, many of the designs for the space environment have been cut.\n\n Full of enthusiasm is the opportunity for many Celestia to enlist in the army, and the second is probably a handsome uniform. And in fact belongs to the Celestia Navy establishment of the pioneering team, naturally followed this gift from space.　-->
+
+	<Celes_FieldCoat.label>星铃野战外套</Celes_FieldCoat.label>
+	<!-- EN: . -->
+	<Celes_FieldCoat.description>由星铃作战部队使用的保暖外套，用于在冬季作战时防寒保暖。\n\n这套衣服的配方会改别找我说imba！</Celes_FieldCoat.description>
+	<!-- EN: .　-->
 
 </LanguageData>

@@ -2,6 +2,7 @@
 <Defs>
 
     <ThingDef Name="Celes_AutoBuildingBase" ParentName="BuildingBase" Abstract="True">
+        <tickerType>Normal</tickerType>
         <canOverlapZones>false</canOverlapZones>
         <minifiedDef>MinifiedThing</minifiedDef>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -54,6 +55,7 @@
             <Steel>100</Steel>
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
+        <tickerType>Normal</tickerType>
         <canOverlapZones>false</canOverlapZones>
         <minifiedDef>MinifiedThing</minifiedDef>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -92,7 +94,6 @@
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>350</basePowerConsumption>
-                <!-- <idlePowerDraw>50</idlePowerDraw> -->
             </li>
             <li Class="CelesFeature.CompProperties_Celes_Linker">
                 <thingsToLink>
@@ -125,20 +126,10 @@
             </li>
             <li Class="CelesFeature.CompProperties_Celes_Maintenance">
                 <decayPerDay>0.25</decayPerDay>
-                
                 <workAmount>6000</workAmount>
                 <recoveryAmount>0.3</recoveryAmount>
                 <maintenanceFreeDays>1.0</maintenanceFreeDays>
             </li>
-            <!-- <li Class="CompProperties_HeatPusher">
-                <compClass>CompHeatPusherPowered</compClass>
-                <heatPerSecond>4</heatPerSecond>
-            </li>
-            <li Class="CompProperties_AffectedByFacilities">
-                <linkableFacilities>
-                    <li>ToolCabinet</li>
-                </linkableFacilities>
-            </li> -->
         </comps>
         <placeWorkers>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -207,20 +198,19 @@
                     </li>
                 </processingModeRecipes>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_Terminal">
-                <efficiencyWithoutCore>0.1</efficiencyWithoutCore>
+            <li Class="CelesFeature.CompProperties_Celes_ConsumptionFactors">
+                <powerIdleFactor>0.1</powerIdleFactor>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_Linker">
-                <thingsToLink>
+            <li Class="CelesFeature.CompProperties_Celes_Terminal">
+                <thingsCanBeCore>
                     <li>Celes_CentralControlTower</li>
-                </thingsToLink>
-                <maxLinkableDistance>24.9</maxLinkableDistance>
-                <maxLinkableCount>1</maxLinkableCount>
+                </thingsCanBeCore>
+                <efficiencyWithoutCore>0.1</efficiencyWithoutCore>
             </li>
         </comps>
         <placeWorkers>
+            <li>CelesFeature.PlaceWorker_Celes_Terminal</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-            <li>CelesFeature.PlaceWorker_Celes_Linker</li>
         </placeWorkers>
         <researchPrerequisites>
             <li>Celes_Mech_I</li>
@@ -234,7 +224,7 @@
         <thingClass>CelesFeature.Celes_Building_AutomaticIndustry</thingClass>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Celes/Building/DrillTerminal/DrillTerminal</texPath>
+            <texPath>Celes/Building/ForgeTerminal/ForgeTerminal</texPath>
             <drawSize>(5,5)</drawSize>
             <drawRotated>false</drawRotated>
             <shadowData>
@@ -280,22 +270,97 @@
             </li>
             <li Class="CelesFeature.CompProperties_Celes_AutomaticIndustry"/>
             <li Class="CelesFeature.CompProperties_Celes_Terminal">
-                <efficiencyWithoutCore>0.5</efficiencyWithoutCore>
-            </li>
-            <li Class="CelesFeature.CompProperties_Celes_Linker">
-                <thingsToLink>
+                <thingsCanBeCore>
                     <li>Celes_CentralControlTower</li>
-                </thingsToLink>
-                <maxLinkableDistance>24.9</maxLinkableDistance>
-                <maxLinkableCount>1</maxLinkableCount>
+                </thingsCanBeCore>
+                <efficiencyWithoutCore>0.5</efficiencyWithoutCore>
             </li>
             <li Class="CelesFeature.CompProperties_Celes_ConsumptionFactors">
                 <powerIdleFactor>0.1</powerIdleFactor>
             </li>
         </comps>
         <placeWorkers>
+            <li>CelesFeature.PlaceWorker_Celes_Terminal</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-            <li>CelesFeature.PlaceWorker_Celes_Linker</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>Celes_Mech_I</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="Celes_AutoBuildingBase">
+        <defName>Celes_TransformTerminal</defName>
+        <label>Celes_TransformTerminal</label>
+        <description>Celes_TransformTerminal.</description>
+        <thingClass>CelesFeature.Building_Celes_Transformer</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Celes/Building/TransformTerminal/TransformTerminal</texPath>
+            <drawSize>(5,5)</drawSize>
+            <drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0.52, 0.53, 0.09)</volume>
+                <offset>(0,0,-0.43)</offset>
+            </shadowData>
+        </graphicData>
+        <size>(3,3)</size>
+        <costList>
+            <Steel>125</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.5</fillPercent>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <statBases>
+            <MaxHitPoints>450</MaxHitPoints>
+            <WorkToBuild>12000</WorkToBuild>
+            <Flammability>0.5</Flammability>
+            <Beauty>-10</Beauty>
+        </statBases>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <building>
+            <uninstallWork>3600</uninstallWork>
+            <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>300</basePowerConsumption>
+            </li>
+            <li Class="CelesFeature.CompProperties_Celes_Transformer">
+                <RockModeMaxCapacity>5.0</RockModeMaxCapacity>
+                <maxBodySize>4.0</maxBodySize>
+                <transformedHediff>Celes_DustMechRhythm_ActivitySurgery</transformedHediff><!-- temporary -->
+                <transformedThought>DebugBad</transformedThought><!-- temporary -->
+                <transformingModeRecipes>
+                    <li>
+                        <product>CelesNanoMachine</product>
+                        <safeModeOutputFactor>0.5</safeModeOutputFactor>
+                        <rockModeOutput>10</rockModeOutput>
+                        <nonHumanoidBioOutput>20</nonHumanoidBioOutput>
+                        <humanoidBioOutputPerTime>30</humanoidBioOutputPerTime>
+                    </li>
+                </transformingModeRecipes>
+            </li>
+            <li Class="CelesFeature.CompProperties_Celes_Terminal">
+                <thingsCanBeCore>
+                    <li>Celes_CentralControlTower</li>
+                </thingsCanBeCore>
+                <efficiencyWithoutCore>0.5</efficiencyWithoutCore>
+            </li>
+            <li Class="CelesFeature.CompProperties_Celes_ConsumptionFactors">
+                <powerIdleFactor>0.1</powerIdleFactor>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>CelesFeature.PlaceWorker_Celes_Terminal</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites>
             <li>Celes_Mech_I</li>

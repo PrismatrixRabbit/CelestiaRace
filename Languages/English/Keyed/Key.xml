@@ -33,10 +33,14 @@
 
   <!-- ========== Gizmo_Celes_Maintenance ========== -->
 
-  <Celes_Keyed_ConnectedToCore>已连接中枢。</Celes_Keyed_ConnectedToCore>
-  <Celes_Keyed_NoCoreConnected>未连接中枢。</Celes_Keyed_NoCoreConnected>
+  <Celes_Keyed_ConnectedToCore>Connected to core.</Celes_Keyed_ConnectedToCore>
+  <Celes_Keyed_NoCoreConnected>No core connected.</Celes_Keyed_NoCoreConnected>
 
-  <Celes_Keyed_Maintenance>维护状态</Celes_Keyed_Maintenance>
-  <Celes_Keyed_Maintenance_Tooltip>维护状态：{0}%\n维护降低速率：{1}%/日\n当前效率乘数：{2}%\n点击来设置维护阈值。\n\n</Celes_Keyed_Maintenance_Tooltip>
+  <Celes_Keyed_Maintenance>Maintenance</Celes_Keyed_Maintenance>
+  <Celes_Keyed_Maintenance_Tooltip>
+    维护状态：{0}%\n
+    维护降低速率：{1}%/日\n
+    当前效率乘数：{2}%\n
+    点击来设置维护阈值。\n\n</Celes_Keyed_Maintenance_Tooltip>
 
 </LanguageData>
