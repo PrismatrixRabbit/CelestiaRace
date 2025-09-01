@@ -34,7 +34,7 @@
         <defName>Celes_CentralControlTower</defName>
         <label>Celes_CentralControlTower</label>
         <description>Celes_CentralControlTower.</description>
-        <thingClass>CelesFeature.Building_Celes_Core</thingClass>
+        <thingClass>Celes_SEC_Assemblies.Building_Celes_Core</thingClass>
         <graphicData>
             <texPath>Celes/Building/CentralControlTower/CentralControlTower</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -95,7 +95,7 @@
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>350</basePowerConsumption>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_Linker">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Linker">
                 <thingsToLink>
                     <li>Celes_DrillTerminal</li>
                     <li>Celes_ForgeTerminal</li>
@@ -103,7 +103,7 @@
                 <maxLinkableDistance>24.9</maxLinkableDistance>
                 <maxLinkableCount>2</maxLinkableCount>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_Refuelable">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Refuelable">
                 <fuelCapacity>10.0</fuelCapacity>
                 <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
                 <initialConfigurableTargetFuelLevel>5.0</initialConfigurableTargetFuelLevel>
@@ -120,11 +120,11 @@
                 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
                 <canEjectFuel>true</canEjectFuel>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_ConsumptionFactors">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_ConsumptionFactors">
                 <powerIdleFactor>0.1</powerIdleFactor>
                 <fuelIdleFactor>0.1</fuelIdleFactor>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_Maintenance">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Maintenance">
                 <decayPerDay>0.25</decayPerDay>
                 <workAmount>6000</workAmount>
                 <recoveryAmount>0.3</recoveryAmount>
@@ -133,7 +133,7 @@
         </comps>
         <placeWorkers>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-            <li>CelesFeature.PlaceWorker_Celes_Linker</li>
+            <li>Celes_SEC_Assemblies.PlaceWorker_Celes_Linker</li>
         </placeWorkers>
         <researchPrerequisites>
             <li>Celes_Mech_I</li>
@@ -144,7 +144,7 @@
         <defName>Celes_DrillTerminal</defName>
         <label>Celes_DrillTerminal</label>
         <description>Celes_DrillTerminal.</description>
-        <thingClass>CelesFeature.Building_Celes_DeepDrill</thingClass>
+        <thingClass>Celes_SEC_Assemblies.Building_Celes_DeepDrill</thingClass>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <texPath>Celes/Building/DrillTerminal/DrillTerminal</texPath>
@@ -183,7 +183,7 @@
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>300</basePowerConsumption>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_DeepDrill">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_DeepDrill">
                 <drillingWorkAmount>5000</drillingWorkAmount>
                 <processingModeRecipes>
                     <li>
@@ -198,10 +198,10 @@
                     </li>
                 </processingModeRecipes>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_ConsumptionFactors">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_ConsumptionFactors">
                 <powerIdleFactor>0.1</powerIdleFactor>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_Terminal">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Terminal">
                 <thingsCanBeCore>
                     <li>Celes_CentralControlTower</li>
                 </thingsCanBeCore>
@@ -209,7 +209,7 @@
             </li>
         </comps>
         <placeWorkers>
-            <li>CelesFeature.PlaceWorker_Celes_Terminal</li>
+            <li>Celes_SEC_Assemblies.PlaceWorker_Celes_Terminal</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites>
@@ -221,7 +221,7 @@
         <defName>Celes_ForgeTerminal</defName>
         <label>Celes_ForgeTerminal</label>
         <description>Celes_ForgeTerminal.</description>
-        <thingClass>CelesFeature.Celes_Building_AutomaticIndustry</thingClass>
+        <thingClass>Celes_SEC_Assemblies.Celes_Building_AutomaticIndustry</thingClass>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <texPath>Celes/Building/ForgeTerminal/ForgeTerminal</texPath>
@@ -268,19 +268,19 @@
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>300</basePowerConsumption>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_AutomaticIndustry"/>
-            <li Class="CelesFeature.CompProperties_Celes_Terminal">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_AutomaticIndustry"/>
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Terminal">
                 <thingsCanBeCore>
                     <li>Celes_CentralControlTower</li>
                 </thingsCanBeCore>
                 <efficiencyWithoutCore>0.5</efficiencyWithoutCore>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_ConsumptionFactors">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_ConsumptionFactors">
                 <powerIdleFactor>0.1</powerIdleFactor>
             </li>
         </comps>
         <placeWorkers>
-            <li>CelesFeature.PlaceWorker_Celes_Terminal</li>
+            <li>Celes_SEC_Assemblies.PlaceWorker_Celes_Terminal</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites>
@@ -292,7 +292,7 @@
         <defName>Celes_TransformTerminal</defName>
         <label>Celes_TransformTerminal</label>
         <description>Celes_TransformTerminal.</description>
-        <thingClass>CelesFeature.Building_Celes_Transformer</thingClass>
+        <thingClass>Celes_SEC_Assemblies.Building_Celes_Transformer</thingClass>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <texPath>Celes/Building/TransformTerminal/TransformTerminal</texPath>
@@ -333,7 +333,7 @@
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>300</basePowerConsumption>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_Transformer">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Transformer">
                 <RockModeMaxCapacity>5.0</RockModeMaxCapacity>
                 <maxBodySize>4.0</maxBodySize>
                 <transformedHediff>Celes_DustMechRhythm_ActivitySurgery</transformedHediff><!-- temporary -->
@@ -348,18 +348,18 @@
                     </li>
                 </transformingModeRecipes>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_Terminal">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Terminal">
                 <thingsCanBeCore>
                     <li>Celes_CentralControlTower</li>
                 </thingsCanBeCore>
                 <efficiencyWithoutCore>0.5</efficiencyWithoutCore>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_ConsumptionFactors">
+            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_ConsumptionFactors">
                 <powerIdleFactor>0.1</powerIdleFactor>
             </li>
         </comps>
         <placeWorkers>
-            <li>CelesFeature.PlaceWorker_Celes_Terminal</li>
+            <li>Celes_SEC_Assemblies.PlaceWorker_Celes_Terminal</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites>

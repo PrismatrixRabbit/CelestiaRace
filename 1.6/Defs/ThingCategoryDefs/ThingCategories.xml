@@ -7,18 +7,21 @@
         <defName>Celes_NanoResourcesRaw</defName>
         <label>celestia nano product</label>
         <parent>ResourcesRaw</parent>
+        <iconPath>Celes/Item/BaseResource/NanoMachineCrystal</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>Celes_Manufactured</defName>
         <label>celestia manufactured</label>
         <parent>Manufactured</parent>
+        <iconPath>Celes/Item/AdvancedResource/IndustrialChips</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>Celes_Drugs</defName>
         <label>celestia drugs</label>
         <parent>Manufactured</parent>
+        <iconPath>Celes/Drugs/CS6</iconPath>
     </ThingCategoryDef>
 
     <!-- ========== 星铃武器 ========== -->

@@ -55,7 +55,7 @@
 	<WorkGiverDef>
 		<defName>Celes_Refuel</defName>
 		<label>refuel buildings</label>
-		<giverClass>CelesFeature.WorkGiver_Celes_Refuel</giverClass>
+		<giverClass>Celes_SEC_Assemblies.WorkGiver_Celes_Refuel</giverClass>
 		<workType>Hauling</workType>
 		<verb>refuel</verb>
 		<gerund>refueling</gerund>
@@ -69,7 +69,7 @@
 	<WorkGiverDef>
 		<defName>Celes_Maintenance</defName>
 		<label>do maintenance</label>
-		<giverClass>CelesFeature.WorkGiver_Celes_Maintenance</giverClass>
+		<giverClass>Celes_SEC_Assemblies.WorkGiver_Celes_Maintenance</giverClass>
 		<workType>Research</workType>
 		<verb>maintain at</verb>
 		<gerund>maintaining at</gerund>
@@ -83,7 +83,7 @@
 	<WorkGiverDef>
 		<defName>Celes_LoadTransformer</defName>
 		<label>load transformer</label>
-		<giverClass>CelesFeature.WorkGiver_Celes_LoadTransformer</giverClass>
+		<giverClass>Celes_SEC_Assemblies.WorkGiver_Celes_LoadTransformer</giverClass>
 		<workType>Hauling</workType>
 		<verb>load</verb>
 		<gerund>loading</gerund>
@@ -96,7 +96,7 @@
 	<WorkGiverDef>
 		<defName>Celes_DoAutomaticBill</defName>
 		<label>make things at </label>
-		<giverClass>CelesFeature.Celes_WorkGiver_DoAutomaticBill</giverClass>
+		<giverClass>Celes_SEC_Assemblies.Celes_WorkGiver_DoAutomaticBill</giverClass>
 		<workType>Smithing</workType>
 		<verb>work at</verb>
 		<gerund>working at</gerund>
