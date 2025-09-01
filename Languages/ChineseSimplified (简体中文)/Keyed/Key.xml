@@ -31,12 +31,49 @@
   <Celes_Keyed_ProcessingMode>加工模式</Celes_Keyed_ProcessingMode>
   <Celes_Keyed_ChooseProduct>选取加工产物</Celes_Keyed_ChooseProduct>
 
+  <Celes_Keyed_CurrentProduct>当前产品：{0}</Celes_Keyed_CurrentProduct>
+
   <!-- ========== Gizmo_Celes_Maintenance ========== -->
 
   <Celes_Keyed_ConnectedToCore>已连接中枢。</Celes_Keyed_ConnectedToCore>
   <Celes_Keyed_NoCoreConnected>未连接中枢。</Celes_Keyed_NoCoreConnected>
+  <Celes_Keyed_ConnectionCapacity>连接容量：{0} / {1}</Celes_Keyed_ConnectionCapacity>
+
+  <Celes_Keyed_CoreInactive>未激活</Celes_Keyed_CoreInactive>
+  <Celes_Keyed_TerminalEfficiencyFactor>终端效率乘数：{0}</Celes_Keyed_TerminalEfficiencyFactor>
+  <Celes_Keyed_CurrentEfficiency>当前效率：{0}</Celes_Keyed_CurrentEfficiency>
+
+  <Celes_Keyed_ProductionCycle_Timeleft>生产周期剩余时间</Celes_Keyed_ProductionCycle_Timeleft>
+  <Celes_Keyed_ProductionCycle_FormerIngredients>已收集原材料</Celes_Keyed_ProductionCycle_FormerIngredients>
+  <Celes_Keyed_ProductionCycle_Producing>生产{0}中</Celes_Keyed_ProductionCycle_Producing>
+  <Celes_Keyed_ProductionCycle_Completed>已完成生产周期</Celes_Keyed_ProductionCycle_Completed>
+  <Celes_Keyed_ProductionCycle_Manufacturing>制造中</Celes_Keyed_ProductionCycle_Manufacturing>
+  <Celes_Keyed_ProductionCycle_Manufactured>制造完毕</Celes_Keyed_ProductionCycle_Manufactured>
+  <Celes_Keyed_RemainingProductionCycles>生产周期剩余</Celes_Keyed_RemainingProductionCycles>
+
+  <Celes_Keyed_RockMode>岩质模式</Celes_Keyed_RockMode>
+  <Celes_Keyed_BiologicalMode>生质模式</Celes_Keyed_BiologicalMode>
+  <Celes_Keyed_RockLoaded>已装填岩石：{0} / {1}</Celes_Keyed_RockLoaded>
+  <Celes_Keyed_CreatureLoaded>已装填生物。</Celes_Keyed_CreatureLoaded>
+  <Celes_Keyed_WaitingForCreature>正在等待指定生物。</Celes_Keyed_WaitingForCreature>
+  <Celes_Keyed_NoChosenCreature>未选择要装填生物。</Celes_Keyed_NoChosenCreature>
+  <Celes_Keyed_TimeToEject>停电。在{0}后自动弹出内容物。</Celes_Keyed_TimeToEject>
+  <Celes_Keyed_ConfirmChangeTransformingMode>确认要改变转化模式吗？现有内容物将被倒出。</Celes_Keyed_ConfirmChangeTransformingMode>
+  <Celes_Keyed_ClearTransformer>倒出内容物</Celes_Keyed_ClearTransformer>
+  <Celes_Keyed_ConfirmClearTransformer>确认要倒出现有内容物吗？</Celes_Keyed_ConfirmClearTransformer>
+  <Celes_Keyed_InsertPersonTransformerDesc>选择要置入机器的生物。</Celes_Keyed_InsertPersonTransformerDesc>
+  <Celes_Keyed_ConfirmProcessPawn>确认要将这一生物置入机器吗？</Celes_Keyed_ConfirmProcessPawn>
+  <Celes_Keyed_NoTransportablePawns>没有可置入生物</Celes_Keyed_NoTransportablePawns>
+  <Celes_Keyed_SelectInnerPawn>选择已置入生物</Celes_Keyed_SelectInnerPawn>
+  <Celes_Keyed_KillMode>致命模式</Celes_Keyed_KillMode>
+  <Celes_Keyed_SafeMode>安全模式</Celes_Keyed_SafeMode>
+  <Celes_Keyed_ChooseProduct>选择产品</Celes_Keyed_ChooseProduct>
+  <Celes_Keyed_AutoLoadAllowed>允许自动装填原料</Celes_Keyed_AutoLoadAllowed>
+  <Celes_Keyed_AutoLoadDisallowed>禁止自动装填原料</Celes_Keyed_AutoLoadDisallowed>
+  <Celes_Keyed_BodySizeTooBig>体形过大</Celes_Keyed_BodySizeTooBig>
+  <Celes_Keyed_ProcessingTimeLeft>剩余加工时间：{0}</Celes_Keyed_ProcessingTimeLeft>
 
   <Celes_Keyed_Maintenance>维护状态</Celes_Keyed_Maintenance>
-  <Celes_Keyed_Maintenance_Tooltip>维护状态：{0}%\n维护降低速率：{1}%/日\n当前效率乘数：{2}%\n点击来设置维护阈值。\n\n</Celes_Keyed_Maintenance_Tooltip>
+  <Celes_Keyed_Maintenance_Tooltip>维护状态：{0}\n维护降低速率：{1}/日\n当前效率乘数：{2}\n当前维护阈值：{3}\n点击来设置维护阈值。\n\n</Celes_Keyed_Maintenance_Tooltip>
 
 </LanguageData>

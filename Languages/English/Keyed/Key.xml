@@ -31,10 +31,26 @@
   <Celes_Keyed_ProcessingMode>加工模式</Celes_Keyed_ProcessingMode>
   <Celes_Keyed_ChooseProduct>选取加工产物</Celes_Keyed_ChooseProduct>
 
+  <Celes_Keyed_CurrentProduct>Current product: {0}</Celes_Keyed_CurrentProduct>
+
   <!-- ========== Gizmo_Celes_Maintenance ========== -->
 
   <Celes_Keyed_ConnectedToCore>Connected to core.</Celes_Keyed_ConnectedToCore>
   <Celes_Keyed_NoCoreConnected>No core connected.</Celes_Keyed_NoCoreConnected>
+  <Celes_Keyed_ConnectionCapacity>Connection capacity: {0} / {1}</Celes_Keyed_ConnectionCapacity>
+
+  <Celes_Keyed_CoreInactive>Inactive</Celes_Keyed_CoreInactive>
+  <Celes_Keyed_TerminalEfficiencyFactor>Terminal efficiency factor: {0}</Celes_Keyed_TerminalEfficiencyFactor>
+  <Celes_Keyed_CurrentEfficiency>Current efficiency: {0}</Celes_Keyed_CurrentEfficiency>
+
+  <Celes_Keyed_ProductionCycle_Timeleft>Time left this cycle</Celes_Keyed_ProductionCycle_Timeleft>
+  <Celes_Keyed_ProductionCycle_FormerIngredients>Gathered ingredients</Celes_Keyed_ProductionCycle_FormerIngredients>
+  <Celes_Keyed_ProductionCycle_Producing>Producing {0}</Celes_Keyed_ProductionCycle_Producing>
+  <Celes_Keyed_ProductionCycle_Completed>Production cycles completed</Celes_Keyed_ProductionCycle_Completed>
+  <Celes_Keyed_ProductionCycle_Manufacturing>Manufacturing</Celes_Keyed_ProductionCycle_Manufacturing>
+  <Celes_Keyed_ProductionCycle_Manufactured>Manufactured</Celes_Keyed_ProductionCycle_Manufactured>
+  <Celes_Keyed_CurrentProductionCycle>Current production cycle</Celes_Keyed_CurrentProductionCycle>
+  <Celes_Keyed_RemainingProductionCycles>Production cycles Remaining</Celes_Keyed_RemainingProductionCycles>
 
   <Celes_Keyed_Maintenance>Maintenance</Celes_Keyed_Maintenance>
   <Celes_Keyed_Maintenance_Tooltip>

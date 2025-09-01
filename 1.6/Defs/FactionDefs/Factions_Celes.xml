@@ -112,7 +112,18 @@
 	    <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
       </xenotypeChances>
     </xenotypeSet>
-	<!--↑↑↑这里等着改↑↑↑-->
+    <!-- <permanentEnemyToEveryoneExcept>
+        <li>OutlanderCivil</li>
+        <li>TribeCivil</li>
+        <li>PlayerTribe</li>
+        <li>PlayerColony</li>
+        <li>Ancients</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Beggars</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">TradersGuild</li>
+    </permanentEnemyToEveryoneExcept>
+	↑↑↑这里等着改↑↑↑ -->
 	<backstoryFilters>
       <li>
             <categories>

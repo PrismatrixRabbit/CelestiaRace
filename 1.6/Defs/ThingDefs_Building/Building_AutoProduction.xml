@@ -14,14 +14,6 @@
         </statBases>
         <interactionCellIcon>DiningChair</interactionCellIcon>
         <noRightClickDraftAttack>true</noRightClickDraftAttack>
-        <comps>
-            <li Class="CompProperties_ReportWorkSpeed">
-                <workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
-            </li>
-        </comps>
-        <placeWorkers>
-            <li>PlaceWorker_ReportWorkSpeedPenalties</li>
-        </placeWorkers>
         <building>
             <buildingTags>
                 <li>Production</li>
@@ -34,7 +26,7 @@
         <defName>Celes_CentralControlTower</defName>
         <label>Celes_CentralControlTower</label>
         <description>Celes_CentralControlTower.</description>
-        <thingClass>Celes_SEC_Assemblies.Building_Celes_Core</thingClass>
+        <thingClass>CelesFeature.Building_Celes_Core</thingClass>
         <graphicData>
             <texPath>Celes/Building/CentralControlTower/CentralControlTower</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -95,15 +87,26 @@
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>350</basePowerConsumption>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Linker">
+            <li Class="CelesFeature.CompProperties_Celes_Linker">
                 <thingsToLink>
-                    <li>Celes_DrillTerminal</li>
-                    <li>Celes_ForgeTerminal</li>
+                    <li>
+                        <thingDef>Celes_DrillTerminal</thingDef>
+                    </li>
+                    <li>
+                        <thingDef>Celes_ForgeTerminal</thingDef>
+                    </li>
+                    <li>
+                        <thingDef>Celes_TransformTerminal</thingDef>
+                    </li>
+                    <li>
+                        <thingDef>Celes_Building_ModifierForCore</thingDef>
+                        <countLimit>2</countLimit><!--该种附属建筑的最大连接数量-->
+                    </li>
                 </thingsToLink>
                 <maxLinkableDistance>24.9</maxLinkableDistance>
                 <maxLinkableCount>2</maxLinkableCount>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Refuelable">
+            <li Class="CelesFeature.CompProperties_Celes_Refuelable">
                 <fuelCapacity>10.0</fuelCapacity>
                 <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
                 <initialConfigurableTargetFuelLevel>5.0</initialConfigurableTargetFuelLevel>
@@ -120,20 +123,21 @@
                 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
                 <canEjectFuel>true</canEjectFuel>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_ConsumptionFactors">
+            <li Class="CelesFeature.CompProperties_Celes_ConsumptionFactors">
                 <powerIdleFactor>0.1</powerIdleFactor>
                 <fuelIdleFactor>0.1</fuelIdleFactor>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Maintenance">
+            <li Class="CelesFeature.CompProperties_Celes_Maintenance">
+                <maintenanceCapacity>1.2</maintenanceCapacity>
                 <decayPerDay>0.25</decayPerDay>
-                <workAmount>6000</workAmount>
+                <workAmount>1200</workAmount>
                 <recoveryAmount>0.3</recoveryAmount>
                 <maintenanceFreeDays>1.0</maintenanceFreeDays>
             </li>
         </comps>
         <placeWorkers>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-            <li>Celes_SEC_Assemblies.PlaceWorker_Celes_Linker</li>
+            <li>CelesFeature.PlaceWorker_Celes_Linker</li>
         </placeWorkers>
         <researchPrerequisites>
             <li>Celes_Mech_I</li>
@@ -144,7 +148,7 @@
         <defName>Celes_DrillTerminal</defName>
         <label>Celes_DrillTerminal</label>
         <description>Celes_DrillTerminal.</description>
-        <thingClass>Celes_SEC_Assemblies.Building_Celes_DeepDrill</thingClass>
+        <thingClass>CelesFeature.Building_Celes_DeepDrill</thingClass>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <texPath>Celes/Building/DrillTerminal/DrillTerminal</texPath>
@@ -160,6 +164,8 @@
             <Steel>125</Steel>
             <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
         <tickerType>Normal</tickerType>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
@@ -183,7 +189,7 @@
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>300</basePowerConsumption>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_DeepDrill">
+            <li Class="CelesFeature.CompProperties_Celes_DeepDrill">
                 <drillingWorkAmount>5000</drillingWorkAmount>
                 <processingModeRecipes>
                     <li>
@@ -198,19 +204,29 @@
                     </li>
                 </processingModeRecipes>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_ConsumptionFactors">
+            <li Class="CelesFeature.CompProperties_Celes_ConsumptionFactors">
                 <powerIdleFactor>0.1</powerIdleFactor>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Terminal">
-                <thingsCanBeCore>
+            <li Class="CelesFeature.CompProperties_Celes_Terminal">
+                <thingsWillLinkThis>
                     <li>Celes_CentralControlTower</li>
-                </thingsCanBeCore>
+                </thingsWillLinkThis>
                 <efficiencyWithoutCore>0.1</efficiencyWithoutCore>
+            </li>
+            <li Class="CelesFeature.CompProperties_Celes_Linker">
+                <thingsToLink>
+                    <li>
+                        <thingDef>Celes_Building_ModifierForTerminal</thingDef>
+                        <countLimit>2</countLimit><!--该种附属建筑的最大连接数量-->
+                    </li>
+                </thingsToLink>
+                <maxLinkableDistance>8</maxLinkableDistance>
+                <maxLinkableCount>4</maxLinkableCount><!--包括所有种类建筑在内的最大连接数量-->
             </li>
         </comps>
         <placeWorkers>
-            <li>Celes_SEC_Assemblies.PlaceWorker_Celes_Terminal</li>
-            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            <li>CelesFeature.PlaceWorker_Celes_Linker</li>
+            <li>CelesFeature.PlaceWorker_Celes_Terminal</li>
         </placeWorkers>
         <researchPrerequisites>
             <li>Celes_Mech_I</li>
@@ -221,7 +237,7 @@
         <defName>Celes_ForgeTerminal</defName>
         <label>Celes_ForgeTerminal</label>
         <description>Celes_ForgeTerminal.</description>
-        <thingClass>Celes_SEC_Assemblies.Celes_Building_AutomaticIndustry</thingClass>
+        <thingClass>CelesFeature.Celes_Building_AutomaticIndustry</thingClass>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <texPath>Celes/Building/ForgeTerminal/ForgeTerminal</texPath>
@@ -259,28 +275,36 @@
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
-        <recipes>
-            <li>Celes_AutoProduction</li>
-        </recipes>
         <comps>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>300</basePowerConsumption>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_AutomaticIndustry"/>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Terminal">
-                <thingsCanBeCore>
+            <li Class="CelesFeature.CompProperties_Celes_AutomaticIndustry"/>
+            <li Class="CelesFeature.CompProperties_Celes_Linker">
+                <thingsToLink>
+                    <li>
+                        <thingDef>Celes_Building_ModifierForTerminal</thingDef>
+                        <countLimit>2</countLimit><!--该种附属建筑的最大连接数量-->
+                    </li>
+                </thingsToLink>
+                <maxLinkableDistance>8</maxLinkableDistance>
+                <maxLinkableCount>4</maxLinkableCount><!--包括所有种类建筑在内的最大连接数量-->
+            </li>
+            <li Class="CelesFeature.CompProperties_Celes_Terminal">
+                <thingsWillLinkThis>
                     <li>Celes_CentralControlTower</li>
-                </thingsCanBeCore>
+                </thingsWillLinkThis>
                 <efficiencyWithoutCore>0.5</efficiencyWithoutCore>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_ConsumptionFactors">
+            <li Class="CelesFeature.CompProperties_Celes_ConsumptionFactors">
                 <powerIdleFactor>0.1</powerIdleFactor>
             </li>
         </comps>
         <placeWorkers>
-            <li>Celes_SEC_Assemblies.PlaceWorker_Celes_Terminal</li>
+            <li>CelesFeature.PlaceWorker_Celes_Linker</li>
+            <li>CelesFeature.PlaceWorker_Celes_Terminal</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites>
@@ -292,7 +316,7 @@
         <defName>Celes_TransformTerminal</defName>
         <label>Celes_TransformTerminal</label>
         <description>Celes_TransformTerminal.</description>
-        <thingClass>Celes_SEC_Assemblies.Building_Celes_Transformer</thingClass>
+        <thingClass>CelesFeature.Building_Celes_Transformer</thingClass>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <texPath>Celes/Building/TransformTerminal/TransformTerminal</texPath>
@@ -333,11 +357,11 @@
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>300</basePowerConsumption>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Transformer">
+            <li Class="CelesFeature.CompProperties_Celes_Transformer">
                 <RockModeMaxCapacity>5.0</RockModeMaxCapacity>
                 <maxBodySize>4.0</maxBodySize>
-                <transformedHediff>Celes_DustMechRhythm_ActivitySurgery</transformedHediff><!-- temporary -->
-                <transformedThought>DebugBad</transformedThought><!-- temporary -->
+                <transformedHediff>Celes_DustMechRhythm_ActivitySurgery</transformedHediff>                <!-- temporary -->
+                <transformedThought>DebugBad</transformedThought>                <!-- temporary -->
                 <transformingModeRecipes>
                     <li>
                         <product>CelesNanoMachine</product>
@@ -347,24 +371,167 @@
                         <humanoidBioOutputPerTime>30</humanoidBioOutputPerTime>
                     </li>
                 </transformingModeRecipes>
+                <killModeTechLock>true</killModeTechLock>
+                <techUnlockKillMode>Celes_Bio_I-5</techUnlockKillMode>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_Terminal">
-                <thingsCanBeCore>
+            <li Class="CelesFeature.CompProperties_Celes_Linker">
+                <thingsToLink>
+                    <li>
+                        <thingDef>Celes_Building_ModifierForTerminal</thingDef>
+                        <countLimit>2</countLimit><!--该种附属建筑的最大连接数量-->
+                    </li>
+                </thingsToLink>
+                <maxLinkableDistance>8</maxLinkableDistance>
+                <maxLinkableCount>4</maxLinkableCount><!--包括所有种类建筑在内的最大连接数量-->
+            </li>
+            <li Class="CelesFeature.CompProperties_Celes_Terminal">
+                <thingsWillLinkThis>
                     <li>Celes_CentralControlTower</li>
-                </thingsCanBeCore>
+                </thingsWillLinkThis>
                 <efficiencyWithoutCore>0.5</efficiencyWithoutCore>
             </li>
-            <li Class="Celes_SEC_Assemblies.CompProperties_Celes_ConsumptionFactors">
+            <li Class="CelesFeature.CompProperties_Celes_ConsumptionFactors">
                 <powerIdleFactor>0.1</powerIdleFactor>
             </li>
         </comps>
         <placeWorkers>
-            <li>Celes_SEC_Assemblies.PlaceWorker_Celes_Terminal</li>
+            <li>CelesFeature.PlaceWorker_Celes_Linker</li>
+            <li>CelesFeature.PlaceWorker_Celes_Terminal</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites>
             <li>Celes_Mech_I</li>
         </researchPrerequisites>
+    </ThingDef>
+
+    <!--范例：核心加成-->
+    <ThingDef ParentName="BuildingBase">
+        <defName>Celes_Building_ModifierForCore</defName>
+        <label>modifier for core</label>
+        <description>Increases work speed when placed near a workbench. One workbench can use up to two tool cabinets.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/ToolCabinet</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,1)</drawSize>
+            <color>(96,114,95)</color>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.35</staticSunShadowHeight>
+        <fillPercent>0.5</fillPercent>
+        <canOverlapZones>false</canOverlapZones>
+        <pathCost>42</pathCost>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>1800</WorkToBuild>
+            <Mass>20</Mass>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <size>(2,1)</size>
+        <costList>
+            <Steel>200</Steel>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+        </building>
+        <researchPrerequisites>
+            <li>ComplexFurniture</li>
+        </researchPrerequisites>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <comps>
+            <li Class="CelesFeature.CompProperties_Celes_Terminal">
+                <consumeCapacity>false</consumeCapacity><!--不消耗连接容量-->
+                <thingsWillLinkThis>
+                    <li>Celes_CentralControlTower</li>
+                </thingsWillLinkThis>
+            </li>
+            <li Class="CelesFeature.CompProperties_Celes_ModifierLinker">
+                <extraLinkableDistance>4</extraLinkableDistance><!--额外连接距离-->
+                <extraLinkableCount>2</extraLinkableCount><!--额外连接数量-->
+                <extraCoreEfficiency>0.2</extraCoreEfficiency><!--额外核心效率-->
+            </li>
+        </comps>
+        <designationHotKey>Misc6</designationHotKey>
+        <placeWorkers>
+            <li>CelesFeature.PlaceWorker_Celes_Terminal</li>
+        </placeWorkers>
+    </ThingDef>
+    <!--范例：终端加成-->
+    <ThingDef ParentName="BuildingBase">
+        <defName>Celes_Building_ModifierForTerminal</defName>
+        <label>modifier for terminal</label>
+        <description>Increases work speed when placed near a workbench. One workbench can use up to two tool cabinets.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/ToolCabinet</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,1)</drawSize>
+            <color>(96,114,95)</color>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.35</staticSunShadowHeight>
+        <fillPercent>0.5</fillPercent>
+        <canOverlapZones>false</canOverlapZones>
+        <pathCost>42</pathCost>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>1800</WorkToBuild>
+            <Mass>20</Mass>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <size>(2,1)</size>
+        <costList>
+            <Steel>200</Steel>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+        </building>
+        <researchPrerequisites>
+            <li>ComplexFurniture</li>
+        </researchPrerequisites>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <comps>
+            <li Class="CelesFeature.CompProperties_Celes_Terminal">
+                <!--<consumeCapacity>true</consumeCapacity>默认将消耗连接容量-->
+                <thingsWillLinkThis>
+                    <li>Celes_DrillTerminal</li>
+                    <li>Celes_ForgeTerminal</li>
+                    <li>Celes_TransformTerminal</li>
+                </thingsWillLinkThis>
+            </li>
+            <li Class="CelesFeature.CompProperties_Celes_ModifierLinker">
+                <maxLinkableCount>2</maxLinkableCount><!--这一建筑最多可以连接多少其他建筑-->
+                <extraTerminalEfficiency>0.2</extraTerminalEfficiency><!--额外终端效率-->
+            </li>
+        </comps>
+        <designationHotKey>Misc6</designationHotKey>
+        <placeWorkers>
+            <li>CelesFeature.PlaceWorker_Celes_Terminal</li>
+        </placeWorkers>
     </ThingDef>
 
 </Defs>

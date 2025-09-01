@@ -55,7 +55,7 @@
 	<WorkGiverDef>
 		<defName>Celes_Refuel</defName>
 		<label>refuel buildings</label>
-		<giverClass>Celes_SEC_Assemblies.WorkGiver_Celes_Refuel</giverClass>
+		<giverClass>CelesFeature.WorkGiver_Celes_Refuel</giverClass>
 		<workType>Hauling</workType>
 		<verb>refuel</verb>
 		<gerund>refueling</gerund>
@@ -69,7 +69,7 @@
 	<WorkGiverDef>
 		<defName>Celes_Maintenance</defName>
 		<label>do maintenance</label>
-		<giverClass>Celes_SEC_Assemblies.WorkGiver_Celes_Maintenance</giverClass>
+		<giverClass>CelesFeature.WorkGiver_Celes_Maintenance</giverClass>
 		<workType>Research</workType>
 		<verb>maintain at</verb>
 		<gerund>maintaining at</gerund>
@@ -83,26 +83,31 @@
 	<WorkGiverDef>
 		<defName>Celes_LoadTransformer</defName>
 		<label>load transformer</label>
-		<giverClass>Celes_SEC_Assemblies.WorkGiver_Celes_LoadTransformer</giverClass>
+		<giverClass>CelesFeature.WorkGiver_Celes_LoadTransformer</giverClass>
 		<workType>Hauling</workType>
+		<priorityInType>105</priorityInType>
+		<fixedBillGiverDefs>
+			<li>Celes_TransformTerminal</li>
+		</fixedBillGiverDefs>
 		<verb>load</verb>
 		<gerund>loading</gerund>
-		<priorityInType>105</priorityInType>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
 	<WorkGiverDef>
-		<defName>Celes_DoAutomaticBill</defName>
-		<label>make things at </label>
-		<giverClass>Celes_SEC_Assemblies.Celes_WorkGiver_DoAutomaticBill</giverClass>
-		<workType>Smithing</workType>
-		<verb>work at</verb>
-		<gerund>working at</gerund>
-		<priorityInType>215</priorityInType>
+		<defName>Celes_WorkGiver_DoAutomaticBill</defName>
+		<label>operate</label>
+		<giverClass>CelesFeature.Celes_WorkGiver_DoAutomaticBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
+			<li>Celes_ForgeTerminal</li>
 		</fixedBillGiverDefs>
+		<verb>operate</verb>
+		<gerund>operating</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>

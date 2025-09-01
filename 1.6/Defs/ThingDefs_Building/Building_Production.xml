@@ -286,7 +286,7 @@
                         <li>CorpsesHumanlike</li>
                     </categories>
                 </fuelFilter>
-                <fuelIconPath>Celes/Item/Unfinished/StoneChunks</fuelIconPath>
+                <fuelIconPath>Celes/UI/Icons/StoneChunks</fuelIconPath>
                 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
             </li>
             <li Class="CelesFeature.Celes_CompProperties_Spawner">
