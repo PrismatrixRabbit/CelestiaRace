@@ -9,7 +9,7 @@
 				<immuneToXenophobia>true</immuneToXenophobia>
 				<maleGenderProbability>0</maleGenderProbability>
 				<!--要改的-->
-				<minAgeForAdulthood>20</minAgeForAdulthood>
+				<minAgeForAdulthood>15</minAgeForAdulthood>
 				<immuneToAge>true</immuneToAge>
 				<canLayDown>true</canLayDown>
 				<humanRecipeImport>true</humanRecipeImport>
@@ -864,6 +864,8 @@
 			</raceRestriction>
 		</alienRace>
 		<statBases>
+			<SexFrequency MayRequire="rim.job.world">1.8</SexFrequency>
+			<SexSatisfaction MayRequire="rim.job.world">0.8</SexSatisfaction>
 			<MarketValue>2250</MarketValue>
 			<Flammability>0.5</Flammability>
 			<MoveSpeed>4.9</MoveSpeed>

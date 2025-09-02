@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<rjw.RaceGroupDef MayRequire="rim.job.world">
+    <defName>CelesGroup</defName>
+    <raceNames>
+        <li>Celes_Race</li>
+    </raceNames>
+    <anuses>
+        <li>Anus</li>
+    </anuses>
+    <femaleBreasts>
+        <li>CelesBreasts</li>
+    </femaleBreasts>
+    <femaleGenitals>
+        <li>CelesVagina</li>
+    </femaleGenitals>
+    <maleBreasts>
+        <li>CelesBreasts</li>
+    </maleBreasts>
+    <maleGenitals>
+        <li>CelesPenis</li>
+    </maleGenitals>
+    <tags>
+        <li>Skin</li>
+    </tags>
+    <hasSingleGender>false</hasSingleGender>
+    <teenAge>10</teenAge>                <!--(normaly 1st reproductive lifestage); Default 13 for humanlikes -->
+    <!--can be used to disable sex with something like 9999-->
+    <adultAge>15</adultAge>
+</rjw.RaceGroupDef>
+
+<rjw.RacePartDef MayRequire="rim.job.world">
+<defName>CelesVagina</defName>
+<hediffName>CelesVagina</hediffName>
+<fluidModifier>1.5</fluidModifier>
+<severityCurve>
+    <points>
+        <li>(0.0, 0.01)</li>
+        <li>(0.1, 0.05)</li>
+        <li>(0.2, 0.08)</li>
+        <li>(0.5, 0.1)</li>
+        <li>(0.9, 0.15)</li>
+        <li>(1.0, 0.2)</li>
+    </points>
+</severityCurve>
+</rjw.RacePartDef>
+<rjw.HediffDef_SexPart MayRequire="rim.job.world">
+<defName>CelesVagina</defName>
+<label>vagina</label>
+<labelNoun>a vagina</labelNoun>
+<description>A vagina.</description>
+<descriptionHyperlinks><ThingDef>Vagina</ThingDef></descriptionHyperlinks>
+<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+<spawnThingOnRemoved>Vagina</spawnThingOnRemoved>
+<sizeProfile>CelesVaginaSizes</sizeProfile>
+<fluid>GirlCum</fluid>
+<produceFluidOnOrgasm>true</produceFluidOnOrgasm>
+<fluidMultiplier>1.5</fluidMultiplier>
+<defaultBodyPart>Genitals</defaultBodyPart>
+<genitalFamily>Vagina</genitalFamily>
+<genitalTags>
+    <li>CanBePenetrated</li>
+    <li>CanBeFertilized</li>
+</genitalTags>
+
+<hediffClass>rjw.Hediff_NaturalSexPart</hediffClass>
+<defaultLabelColor>(0.5, 0.8, 0.5)</defaultLabelColor>
+<comps>
+    <li Class="rjw.HediffCompProperties_GrowsWithOwner" />
+    <li Class="rjw.HediffCompProperties_SexPart" />
+    <li MayRequire="rjw.menstruation" Class="RJW_Menstruation.CompProperties_Menstruation">
+        <maxCumCapacity>10</maxCumCapacity>
+        <baseImplantationChanceFactor>1.0</baseImplantationChanceFactor>
+        <basefertilizationChanceFactor>1.0</basefertilizationChanceFactor>
+        <follicularIntervalDays>14</follicularIntervalDays>
+        <lutealIntervalDays>14</lutealIntervalDays>
+        <bleedingIntervalDays>6</bleedingIntervalDays>
+        <recoveryIntervalDays>30</recoveryIntervalDays>
+        <eggLifespanDays>1</eggLifespanDays>
+        <wombTex>Womb/Womb</wombTex>
+        <vagTex>Genitals/Vagina</vagTex>
+        <concealedEstrus>true</concealedEstrus>
+    </li>
+</comps>
+<addedPartProps>
+    <solid>false</solid>
+    <partEfficiency>1</partEfficiency>
+</addedPartProps>
+<!-- Not currently used by base game-->
+<organicAddedBodypart>true</organicAddedBodypart>
+
+<defaultBodyPartList>
+    <!--
+    <li>Head</li>
+    <li>Genitals</li>
+    <li>Chest</li>
+    <li>Anus</li>
+    -->
+</defaultBodyPartList>
+<!-- <everVisible>true</everVisible> -->
+<isBad>false</isBad>
+<priceImpact>false</priceImpact>
+<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+
+<stages Inherit="false">
+    <li>
+        <label>painfully tight</label>
+        <minSeverity>0.01</minSeverity>
+    </li>
+    <li>
+        <label>powerfuly tight</label>
+        <minSeverity>0.05</minSeverity>
+    </li>
+    <li>
+        <label>well tight</label>
+        <minSeverity>0.08</minSeverity>
+    </li>
+    <li>
+        <label>Moderately tight</label>
+        <minSeverity>0.1</minSeverity>
+    </li>
+    <li>
+        <label>comfortable tight</label>
+        <minSeverity>0.15</minSeverity>
+    </li>
+    <li>
+        <label>still Tight</label>
+        <minSeverity>0.2</minSeverity>
+    </li>
+</stages>
+</rjw.HediffDef_SexPart>
+
+<rjw.PartSizeConfigDef MayRequire="rim.job.world">
+<defName>CelesVaginaSizes</defName>
+<label>Celestia vagina size config</label>
+
+<girths>
+    <li>10</li>
+    <li>10.4</li>
+    <li>11</li>
+    <li>11.4</li>
+    <li>11.8</li>
+    <li>12</li>
+</girths>
+
+<lengths>
+    <li>35</li>
+    <li>36</li>
+    <li>37</li>
+    <li>38</li>
+    <li>39</li>
+    <li>40</li>
+</lengths>
+</rjw.PartSizeConfigDef>
+    
+<rjw.RacePartDef MayRequire="rim.job.world">
+    <defName>CelesPenis</defName>
+    <hediffName>CelesPenis</hediffName>
+    <fluidModifier>3</fluidModifier>
+    <severityCurve>
+        <points>
+            <li>(0.0, 0.01)</li>
+            <li>(0.1, 0.05)</li>
+            <li>(0.2, 0.08)</li>
+            <li>(0.5, 0.1)</li>
+            <li>(0.9, 0.15)</li>
+            <li>(1.0, 0.2)</li>
+        </points>
+    </severityCurve>
+</rjw.RacePartDef>
+
+<rjw.HediffDef_SexPart MayRequire="rim.job.world">
+    <defName>CelesPenis</defName>
+    <label>penis</label>
+    <labelNoun>a penis</labelNoun>
+    <description>A penis.</description>
+    <descriptionHyperlinks><ThingDef>Penis</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Penis</spawnThingOnRemoved>
+    <sizeProfile>CelesPenisSizes</sizeProfile>
+    <!-- <maxSeverity>0.4</maxSeverity> -->
+    <fluid>Cum</fluid>
+    <produceFluidOnOrgasm>true</produceFluidOnOrgasm>
+    <fluidMultiplier>1</fluidMultiplier>
+    <defaultBodyPart>Genitals</defaultBodyPart>
+    <genitalFamily>Penis</genitalFamily>
+    <genitalTags>
+        <li>CanPenetrate</li>
+        <li>CanFertilize</li>
+    </genitalTags>
+    <hediffClass>rjw.Hediff_NaturalSexPart</hediffClass>
+    <defaultLabelColor>(0.5, 0.8, 0.5)</defaultLabelColor>
+    <comps>
+        <li Class="rjw.HediffCompProperties_GrowsWithOwner" />
+        <li Class="rjw.HediffCompProperties_SexPart" />
+    </comps>
+    <addedPartProps>
+        <solid>false</solid>
+        <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+    <!-- Not currently used by base game-->
+    <organicAddedBodypart>true</organicAddedBodypart>
+    
+    <defaultBodyPartList>
+        <!--
+           <li>Head</li>
+           <li>Genitals</li>
+           <li>Chest</li>
+           <li>Anus</li>
+        -->
+    </defaultBodyPartList>
+    <!-- <everVisible>true</everVisible> -->
+    <isBad>false</isBad>
+    <priceImpact>false</priceImpact>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+
+    <stages Inherit="false">
+        <li>
+            <label>Micro</label>
+            <minSeverity>0.01</minSeverity>
+        </li>
+        <li>
+            <label>Small</label>
+            <minSeverity>0.20</minSeverity>
+        </li>
+        <li>
+            <label>Average</label>
+            <minSeverity>0.40</minSeverity>
+        </li>
+        <li>
+            <label>Large</label>
+            <minSeverity>0.60</minSeverity>
+        </li>
+        <li>
+            <label>Huge</label>
+            <minSeverity>0.80</minSeverity>
+        </li>
+        <li>
+            <label>Unthinkable</label>
+            <minSeverity>1.01</minSeverity>
+        </li>
+    </stages>
+</rjw.HediffDef_SexPart>
+    
+<rjw.PartSizeConfigDef MayRequire="rim.job.world">
+    <defName>CelesPenisSizes</defName>
+    <label>Celestia penis size config</label>
+
+    <girths>
+        <li>5</li>
+        <li>5.4</li>
+        <li>5.9</li>
+        <li>6.5</li>
+        <li>7.1</li>
+        <li>8</li>
+    </girths>
+    
+    <lengths>
+        <li>8</li>
+        <li>8.9</li>
+        <li>9.7</li>
+        <li>11.1</li>
+        <li>12.3</li>
+        <li>14</li>
+    </lengths>
+</rjw.PartSizeConfigDef>
+
+    <rjw.RacePartDef MayRequire="rim.job.world">
+        <defName>CelesBreasts</defName>
+        <hediffName>CelesBreasts</hediffName>
+    </rjw.RacePartDef>
+    <rjw.HediffDef_SexPart MayRequire="rim.job.world">
+        <defaultLabelColor>(0.5, 0.8, 0.5)</defaultLabelColor>
+        <defaultBodyPart>Chest</defaultBodyPart>
+        <defName>CelesBreasts</defName>
+        <label>celes breasts</label>
+        <labelNoun>celes breasts</labelNoun>
+        <description>A pair of breasts.</description>
+        <spawnThingOnRemoved>Breasts</spawnThingOnRemoved>
+        <sizeProfile>CelesBreasts</sizeProfile>
+        <stages Inherit = "false">
+            <li>
+                <label>Average</label>
+                <minSeverity>0.01</minSeverity>
+            </li>
+            <li>
+                <label>Large</label>
+                <minSeverity>0.60</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.01</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>Huge</label>
+                <minSeverity>1.0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.02</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.04</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </rjw.HediffDef_SexPart>
+    <rjw.PartSizeConfigDef MayRequire="rim.job.world">
+        <defName>CelesBreasts</defName>
+        <label>celes breast size config</label>
+        <bodysizescale>true</bodysizescale>
+        <density>1.0</density>
+        <cupSizes>
+            <li>3</li>
+            <li>6</li>
+            <li>9</li>
+        </cupSizes>
+    </rjw.PartSizeConfigDef>
+</Defs>
