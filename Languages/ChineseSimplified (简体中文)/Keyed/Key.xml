@@ -32,6 +32,8 @@
   <Celes_Keyed_ChooseProduct>选取加工产物</Celes_Keyed_ChooseProduct>
 
   <Celes_Keyed_CurrentProduct>当前产品：{0}</Celes_Keyed_CurrentProduct>
+  
+  <Celes_Keyed_ConfirmChangeMode>确认要切换生产模式吗？现有生产进度将被归零。</Celes_Keyed_ConfirmChangeMode>
 
   <!-- ========== Gizmo_Celes_Maintenance ========== -->
 

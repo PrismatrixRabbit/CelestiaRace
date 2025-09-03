@@ -8,7 +8,7 @@
         <generalDescription>.</generalDescription>
     </ResearchTabDef>
 
-    <!-- ========== 主要科技 ========== -->
+    <!-- ========== 过渡科技 ========== -->
 
     <ResearchProjectDef>
         <defName>Celes_MainTech_I</defName><!-- 晶兰 -->
@@ -20,24 +20,25 @@
         <baseCost>300</baseCost>
         <techLevel>Medieval</techLevel>
         <researchViewX>0</researchViewX>
-        <researchViewY>2.4</researchViewY>
+        <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
             <li>Celes_ClassicStart</li>
         </tags>
     </ResearchProjectDef>
 
+    <!-- ========== 主要科技 ========== -->
+
     <ResearchProjectDef>
-        <defName>Celes_MainTech_II</defName><!-- 晶兰催化加工 -->
+        <defName>Celes_MainTech_II</defName><!-- 晶体场控锻造 -->
         <label>crystal catalytic process</label>
         <description>Synchronise Celestia's pharmaceutical technology by extracting bio-enzyme gels from organic matter. Unlock Celestia's basic medicines, such as IAS-2 immune-activating stimulants, which prevents infections and plagues, and NS-90 nervous stimulants, which provides extra efficiency but causes fatigue.</description>
         <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Electricity</li>
-            <li>Celes_MainTech_I</li>
         </prerequisites>
-        <researchViewX>1</researchViewX>
+        <researchViewX>0</researchViewX>
         <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -47,7 +48,7 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_III</defName><!-- 尘构技术解译 -->
+        <defName>Celes_MainTech_III</defName><!-- 尘构纳米锻造 -->
         <label>Dust-Mech technical interpretation</label>
         <description>Decipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.\n\n&lt;color=#87cefa&gt;"The Dust-Mech, known as the Adaptive Nano Calibration System, or ANCS, is a cybernetic-based augmented nanomachine developed by the Celestia civilisation. The Dust-Mech is capable of fusing different organisms with organisms, and organisms with machinery, and acts as a medium in which to acquire, transmit, and process information flows, and is highly adaptable when combined with intelligence. " - Parsed from Celestia's Self-explanatory Technology Core.&lt;/color&gt;</description>
         <baseCost>3000</baseCost>
@@ -60,13 +61,13 @@
         <requiredAnalyzed>
             <li>Celes_STC_MainTech_III</li>
         </requiredAnalyzed>
-        <researchViewX>4</researchViewX>
+        <researchViewX>3</researchViewX>
         <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_IV</defName><!-- 尘构重编译 -->
+        <defName>Celes_MainTech_IV</defName><!-- 适应性信息流 -->
         <label>Dust-Mech reprogramming(WIP)</label>
         <description>Dust-Mech reprogramming(WIP)</description>
         <descriptionHyperlinks>
@@ -81,7 +82,7 @@
         <prerequisites>
             <li>Celes_MainTech_III</li>
         </prerequisites>
-        <researchViewX>7</researchViewX>
+        <researchViewX>5</researchViewX>
         <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -97,7 +98,7 @@
         <prerequisites>
             <li>Celes_MainTech_II</li>
         </prerequisites>
-        <researchViewX>2</researchViewX>
+        <researchViewX>1</researchViewX>
         <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -114,7 +115,7 @@
         <prerequisites>
             <li>Celes_Weapon_I</li>
         </prerequisites>
-        <researchViewX>3</researchViewX>
+        <researchViewX>2</researchViewX>
         <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -135,7 +136,7 @@
             <li>Celes_MainTech_III</li>
             <li>Celes_Weapon_II</li>
         </prerequisites>
-        <researchViewX>5</researchViewX>
+        <researchViewX>4</researchViewX>
         <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -155,7 +156,7 @@
         <prerequisites>
             <li>Celes_Weapon_III</li>
         </prerequisites>
-        <researchViewX>6</researchViewX>
+        <researchViewX>5</researchViewX>
         <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -179,7 +180,7 @@
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
-        <researchViewX>8</researchViewX>
+        <researchViewX>6</researchViewX>
         <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -195,25 +196,10 @@
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_MainTech_I</li>
+            <li>Celes_MainTech_II</li>
             <li>DrugProduction</li>
         </prerequisites>
         <researchViewX>1</researchViewX>
-        <researchViewY>3.0</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Bio_I-5</defName><!-- 晶体融合生化 -->
-        <label>Celes_Bio_I-5(WIP)</label>
-        <description>Celes_Bio_I-5(WIP)</description>
-        <baseCost>300</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>Celes_MainTech_II</li>
-            <li>Celes_Bio_I</li>
-        </prerequisites>
-        <researchViewX>2</researchViewX>
         <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -226,9 +212,9 @@
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
-            <li>Celes_Bio_I-5</li>
+            <li>Celes_Bio_I</li>
         </prerequisites>
-        <researchViewX>4</researchViewX>
+        <researchViewX>3</researchViewX>
         <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -249,7 +235,7 @@
         </prerequisites>
         <!--<hiddenPrerequisites>
         </hiddenPrerequisites>-->
-        <researchViewX>5</researchViewX>
+        <researchViewX>4</researchViewX>
         <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -267,7 +253,7 @@
         <prerequisites>
             <li>Celes_Bio_III</li>
         </prerequisites>
-        <researchViewX>6</researchViewX>
+        <researchViewX>5</researchViewX>
         <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -280,9 +266,9 @@
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
-            <li>Celes_Bio_I-5</li>
+            <li>Celes_Bio_I</li>
         </prerequisites>
-        <researchViewX>3</researchViewX>
+        <researchViewX>2</researchViewX>
         <researchViewY>2.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -296,9 +282,9 @@
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_Bio_I-5</li>
+            <li>Celes_Bio_I</li>
         </prerequisites>
-        <researchViewX>3</researchViewX>
+        <researchViewX>2</researchViewX>
         <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <discoveredLetterTitle>About: Invasive Implantation</discoveredLetterTitle>
@@ -314,11 +300,11 @@
         <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_NanoImplant_I</li>
+            <li>Celes_Bio_I</li>
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
-        <researchViewX>4</researchViewX>
+        <researchViewX>2</researchViewX>
         <researchViewY>4.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -340,7 +326,7 @@
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
-        <researchViewX>5</researchViewX>
+        <researchViewX>4</researchViewX>
         <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -360,7 +346,7 @@
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
-        <researchViewX>6</researchViewX>
+        <researchViewX>5</researchViewX>
         <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
@@ -377,7 +363,7 @@
         <prerequisites>
             <li>Electricity</li>
         </prerequisites>
-        <researchViewX>1</researchViewX>
+        <researchViewX>0</researchViewX>
         <researchViewY>4.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -387,19 +373,19 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Mech_II</defName><!-- 机械神经模式 --><!-- 待编辑 <li>Celes_Bio_I-5</li>-->
+        <defName>Celes_Mech_II</defName><!-- 机械神经模式 -->
         <label>Celes_Mech_II(WIP)</label>
         <description>Celes_Mech_II</description>
         <!-- 犬形辅助仿生机械 改良机控装备 -->
         <baseCost>300</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_Manufactory_I</li>
+            <li>Celes_MainTech_II</li>
             <li>Celes_Mech_I</li>
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
-        <researchViewX>3</researchViewX>
+        <researchViewX>1</researchViewX>
         <researchViewY>4.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -419,7 +405,7 @@
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
-        <researchViewX>4</researchViewX>
+        <researchViewX>3</researchViewX>
         <researchViewY>4.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -435,12 +421,11 @@
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_Mech_III</li>
-            <li>Celes_Manufactory_II</li>
             <li>Celes_Prosthesis_I</li>
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
-        <researchViewX>6</researchViewX>
+        <researchViewX>5</researchViewX>
         <researchViewY>4.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -457,10 +442,9 @@
         <prerequisites>
             <li>Celes_Mech_IV</li>
             <li>Celes_MainTech_IV</li>
-            <li>Celes_Manufactory_III</li>
             <li>Celes_Prosthesis_II</li>
         </prerequisites>
-        <researchViewX>8</researchViewX>
+        <researchViewX>6</researchViewX>
         <researchViewY>4.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -470,75 +454,19 @@
     <!-- ========== 生产科技 ========== -->
 
     <ResearchProjectDef>
-        <defName>Celes_Manufactory_I</defName><!-- 晶体场控锻造 --><!-- 待编辑 -->
-        <label>Celes_Manufactory_I(WIP)</label>
-        <description>Celes_Manufactory_I</description>
-        <!-- 实验性尘构培养槽 实验性生化舱 -->
+        <defName>Celes_Manufactory</defName><!-- 模式化锻造理论 --><!-- 待编辑 -->
+        <label>Celes_Manufactory(WIP)</label>
+        <description>Celes_Manufactory</description>
+        <!-- 纳米离心机 纳米纤维织机 -->
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_Mech_I</li>
-            <li>Celes_MainTech_II</li>
+            <li>Celes_MainTech_III</li>
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>5.4</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Manufactory_II_a</defName><!-- 模式化锻造理论 --><!-- 待编辑 -->
-        <label>Celes_Manufactory_III_a(WIP)</label>
-        <description>Celes_Manufactory_III_a</description>
-        <!-- 实验性尘构培养槽 实验性生化舱 -->
-        <baseCost>500</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>Celes_Manufactory_I</li>
-        </prerequisites>
-        <hiddenPrerequisites>
-            <li>Celes_MainTech_III</li>
-        </hiddenPrerequisites>
-        <researchViewX>3</researchViewX>
-        <researchViewY>5.8</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Manufactory_II</defName><!-- 尘构纳米锻造 --><!-- 待编辑 -->
-        <label>Celes_Manufactory_II(WIP)</label>
-        <description>Celes_Manufactory_II</description>
-        <!-- 实验性尘构培养槽 实验性生化舱 -->
-        <baseCost>500</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>Celes_Manufactory_I</li>
-            <li>Celes_MainTech_III</li>
-        </prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>5.4</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Manufactory_III</defName><!-- 适应性信息流 --><!-- 待编辑 -->
-        <label>Celes_Manufactory_III(WIP)</label>
-        <description>Celes_Manufactory_III</description>
-        <!-- 实验性尘构培养槽 实验性生化舱 -->
-        <baseCost>500</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>Celes_Manufactory_II</li>
-        </prerequisites>
-        <researchViewX>6</researchViewX>
-        <researchViewY>5.4</researchViewY>
+        <researchViewX>4</researchViewX>
+        <researchViewY>1.2</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -626,7 +554,7 @@
         <hiddenPrerequisites>
             <li>Celes_MainTech_III</li>
         </hiddenPrerequisites>
-        <researchViewX>5</researchViewX>
+        <researchViewX>4</researchViewX>
         <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -646,7 +574,7 @@
         <prerequisites>
             <li>Celes_Apparel_IV</li>
         </prerequisites>
-        <researchViewX>6</researchViewX>
+        <researchViewX>5</researchViewX>
         <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -666,92 +594,11 @@
         <prerequisites>
             <li>Celes_Apparel_V</li>
         </prerequisites>
-        <researchViewX>7</researchViewX>
+        <researchViewX>6</researchViewX>
         <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
     </ResearchProjectDef>
 
-    <!--
-
-    <ResearchProjectDef>
-        <defName>Celes_AdvancedCloth</defName>
-        <label>Dust-Mech Call:Fibre Recombination</label>
-        <description>Unlocks the crafting of "Dust-Mech Silk", a high-strength fabric made using Dust-Mech to reorganise microscopic fibre structures.</description>
-        <baseCost>3000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-        <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites>
-            <li>Celes_MainTech_II</li>
-            <li>Celes_Apparel_I</li>
-        </prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>0.6</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Manufactory_I</defName>
-        <label>Celestia processing standard</label>
-        <description>Unlock the "Celestia multifunctional tab", a special manufacturing station designed for Celestia's processing standard, used to manufacture various types of Celestia equipment.</description>
-        <baseCost>100</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>Celes_MainTech_I</li>
-            <li>Machining</li>
-        </prerequisites>
-        <researchViewX>1</researchViewX>
-        <researchViewY>1.2</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Manufactory_II</defName>
-        <label>Dust-Mech Call:Lattice Reconstruction</label>
-        <description>Unlocks the crafting of "Chime Alloy", a special alloy made by using Dust-Mech to reconfigure the lattice structure of metals.</description>
-        <baseCost>1000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites>
-            <li>Celes_MainTech_II</li>
-            <li>Celes_Manufactory_I</li>
-        </prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>1.2</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>Celes_Manufactory_II_a</defName>
-        <label>psychic specialised alloy</label>
-        <description>Unlock "Blackstone Alloy" and "Warlock Alloy", two alloys with special properties for psychic energy reactions.</description>
-        <baseCost>1000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-        <prerequisites>
-            <li>Celes_Manufactory_II</li>
-        </prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>0.9</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>-->
-    
 </Defs>

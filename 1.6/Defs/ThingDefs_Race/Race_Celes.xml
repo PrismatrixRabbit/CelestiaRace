@@ -40,25 +40,25 @@
 						<defName>CreepyBreathing</defName>
 						<!--恶心呼吸I-->
 					</li>
-					<li>
+					<!--<li>
 						<defName>Nudist</defName>
-						<!--裸体主义-->
+						裸体主义
 					</li>
 					<li>
 						<defName>Bloodlust</defName>
-						<!--嗜血-->
+						嗜血
 					</li>
 					<li>
 						<defName>Cannibal</defName>
-						<!--食人-->
-					</li>
-					<li>
-						<defName>Pyromaniac</defName>
-						<!--纵火-->
+						食人
 					</li>
 					<li>
 						<defName>Gourmand</defName>
-						<!--贪食者-->
+						贪食者
+					</li>-->
+					<li>
+						<defName>Pyromaniac</defName>
+						<!--纵火-->
 					</li>
 					<li>
 						<defName Degree="2">DrugDesire</defName>
@@ -68,6 +68,7 @@
 					</li>
 				</disallowedTraits>
 				<growthAges MayRequire="Ludeon.RimWorld.Biotech">
+					<li>5</li>
 					<li>7</li>
 					<li>10</li>
 					<li>13</li>
@@ -864,8 +865,6 @@
 			</raceRestriction>
 		</alienRace>
 		<statBases>
-			<SexFrequency MayRequire="rim.job.world">1.8</SexFrequency>
-			<SexSatisfaction MayRequire="rim.job.world">0.8</SexSatisfaction>
 			<MarketValue>2250</MarketValue>
 			<Flammability>0.5</Flammability>
 			<MoveSpeed>4.9</MoveSpeed>
@@ -937,6 +936,13 @@
 			<MeleeDodgeChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">
 				0.1
 			</MeleeDodgeChanceOutdoorsDarkOffset>
+			<!--==-->
+			<LearningRateFactor MayRequire="Ludeon.RimWorld.Biotech">
+				1.5
+			</LearningRateFactor>
+			<!--==-->
+			<SexFrequency MayRequire="rim.job.world">1.8</SexFrequency>
+			<SexSatisfaction MayRequire="rim.job.world">0.8</SexSatisfaction>
 		</statBases>
 		<tools>
 			<li>
@@ -1009,11 +1015,11 @@
 			<anomalyKnowledge>1</anomalyKnowledge>
 
 			<makesFootprints>true</makesFootprints>
-			<lifeExpectancy>120</lifeExpectancy>
+			<lifeExpectancy>220</lifeExpectancy>
 			<leatherDef>Leather_Human</leatherDef>
 			<nameCategory>HumanStandard</nameCategory>
 			<body>Celes_Body</body>
-			<baseBodySize>1</baseBodySize>
+			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>12</gestationPeriodDays>
@@ -1045,21 +1051,21 @@
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
 					<def>HumanlikePreTeenager</def>
-					<minAge>9</minAge>
+					<minAge>8</minAge>
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>HumanlikeTeenager</def>
-					<minAge>13</minAge>
+					<minAge>11</minAge>
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>HumanlikeAdult</def>
-					<minAge>18</minAge>
+					<minAge>14</minAge>
 				</li>
 			</lifeStageAges>
 			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
 				<Firefighter>7</Firefighter>
 				<Patient>0</Patient>
-				<Doctor>13</Doctor>
+				<Doctor>10</Doctor>
 				<PatientBedRest>0</PatientBedRest>
 				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
 				<BasicWorker>7</BasicWorker>
@@ -1077,7 +1083,7 @@
 				<Crafting>10</Crafting>
 				<Hauling>3</Hauling>
 				<Cleaning>3</Cleaning>
-				<Research>13</Research>
+				<Research>10</Research>
 			</lifeStageWorkSettings>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
@@ -1092,21 +1098,23 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
-					<!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+					<!-- Exclude 12.5-15 years to avoid spawning pawns who are very close to becoming adults -->
 					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
-					<!-- End exclude -->
-					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
 					<li>(14,0)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,50)</li>
-					<li>(20,100)</li>
-					<li>(30,100)</li>
-					<li>(40,10)</li>
-					<li>(60,5)</li>
-					<li>(80,1)</li>
-					<li>(100,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(15.001,130)</li>
+					<!-- End exclude -->
+					<li>(16,100)</li>
+					<li>(20,130)</li>
+					<li>(30,130)</li>
+					<li>(40,100)</li>
+					<li>(60,50)</li>
+					<li>(80,20)</li>
+					<li>(100,15)</li>
+					<li>(120,10)</li>
+					<li>(150,5)</li>
+					<li>(150.001,0)</li>
+					<li>(200,0)</li>
 				</points>
 			</ageGenerationCurve>
 			<hediffGiverSets>

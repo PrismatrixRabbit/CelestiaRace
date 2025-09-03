@@ -1,47 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  
+
   <Celes_MainTech_I.label>晶兰</Celes_MainTech_I.label>
   <!-- EN: Crystal Orchid -->
   <Celes_MainTech_I.description>解锁种植「晶兰」，一种果实自发呈现晶体状的奇异植株，生长缓慢，对生长环境有着极高的要求。\n\n晶兰的果实具有许多违背常识的性质，但却有着异常苛刻的触发条件。</Celes_MainTech_I.description>
   <!-- EN: Unlock the planting of ‘Crystal Orchid’, a strange plant whose fruits spontaneously take on a crystalline shape, grows slowly, and has extremely high requirements for the environment in which it grows. \n\nThe fruit of the crystal orchid has many properties that defy common sense, but has unusually harsh triggering conditions. -->
   
-  <Celes_MainTech_II.label>晶兰催化加工</Celes_MainTech_II.label>
+  <Celes_MainTech_II.label>晶体场控锻造</Celes_MainTech_II.label>
   <!-- EN: crystal catalytic process -->
-  <Celes_MainTech_II.description>解锁建造「星铃加工台」，可以完成绝大多数星铃加工方案。并允许在其上执行「晶兰增殖操作」，在往常看来无法利用的介质上培育晶蒴并收获一种特殊的晶体产物。</Celes_MainTech_II.description>
+  <Celes_MainTech_II.description>解锁建造「星铃加工台」，可以完成绝大多数星铃加工方案。并允许在其上执行「晶兰增殖操作」，在往常看来无法利用的介质上培育晶蒴并收获一种特殊的晶体产物。\n\n# 「星铃实验室组装仪」</Celes_MainTech_II.description>
   <!-- EN: Unlocks the construction of the Celestia Processing Table, which allows most Celestia processing programmes to be completed. It also allows you to perform the ‘Crystal Orchid Multiplication Operation’ on it, which allows you to cultivate crystals on a medium that you would not normally be able to use. -->
   <Celes_MainTech_II.discoveredLetterTitle>关于：自复制晶体</Celes_MainTech_II.discoveredLetterTitle>
   <Celes_MainTech_II.discoveredLetterText>你的研究人员向你大致阐明了星铃技术的下一个关键资源，「自复制晶体」的制造方法：\n\n-首先，你可以简单的把手头的晶蒴在「星铃加工台」转化为自复制晶体。\n-或者，你可以消耗大量时间手工培养晶化石材，通过拆解它们获得大量自复制晶体。\n-你也可以直接从星铃的体内提取一些，如果殖民地有自愿献血的星铃的话。\n-当然，星铃的商队似乎也会出售少量的自复制晶体。\n-而一个未经证实而骇人耸听的说法是……人类或许也能作为原料。\n\n而下一阶段的技术，似乎需要依靠星铃极少向外流通的「自译解技术核心」。</Celes_MainTech_II.discoveredLetterText>
 
-  <Celes_MainTech_III.label>尘构技术解译</Celes_MainTech_III.label>
+  <Celes_MainTech_III.label>尘构纳米锻造</Celes_MainTech_III.label>
   <!-- EN: Dust-Mech technical interpretation -->
   <Celes_MainTech_III.description>我们终于知晓了这些奇异晶体的构成，尘构物质。\n\n破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。\n\n&lt;color=#87cefa&gt;＂尘构，学名适应性纳米校正系统(Adaptive Nano Calibration System)，即ANCS。是由星铃文明研发的，基于控制论的增强纳米机械。尘构能够融合不同的生物与生物，生物与机械，并且充当媒介在其中获取，传递，并处理信息流，在与智能结合的情况下，具有高度的适应性。＂————解析自星铃自译解技术核心&lt;/color&gt;</Celes_MainTech_III.description>
   <!-- EN: Decipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.\n\n"The Dust-Mech, known as the Adaptive Nano Calibration System, or ANCS, is a cybernetic-based augmented nanomachine developed by the Celestia civilisation. The Dust-Mech is capable of fusing different organisms with organisms, and organisms with machinery, and acts as a medium in which to acquire, transmit, and process information flows, and is highly adaptable when combined with intelligence. " - Parsed from Celestia's Self-explanatory Technology Core -->
 
-  <Celes_MainTech_IV.label>尘构重编程(正在制作)</Celes_MainTech_IV.label>
+  <Celes_MainTech_IV.label>适应性信息流</Celes_MainTech_IV.label>
   <!-- EN: Dust-Mech reprogramming(WIP) -->
   <Celes_MainTech_IV.description>在星铃的理论体系，物质世界由且仅由三部分组成：物质，能量，信息。星铃早已知晓物质与能量是如何实现统一，而通过尘构物质，星铃实现了物质与信息的统一。通过给予尘构现有方法的重编程，我们或许可以无穷逼近将一切归于索拉里斯之海的可能性。</Celes_MainTech_IV.description>
   <!-- EN: Dust-Mech reprogramming(WIP) -->
-
-  <!--<Celes_AdvancedCloth.label>尘构调用:纤维重组</Celes_AdvancedCloth.label>-->
-  <!-- EN: Dust-Mech Call:Fibre Recombination -->
-  <!--<Celes_AdvancedCloth.description>解锁制作「尘化丝绸」，一种利用尘构重组微观纤维结构制成的高强度布料。</Celes_AdvancedCloth.description>-->
-  <!-- EN: Unlocks the crafting of "Dust-Mech Silk", a high-strength fabric made using Dust-Mech to reorganise microscopic fibre structures. -->
-
-  <!-- <Celes_Manufactory_I.label>星铃加工标准</Celes_Manufactory_I.label>-->
-   <!-- EN: Celestia processing standard -->
-  <!--<Celes_Manufactory_I.description>解锁建造「星铃加工台」，针对星铃的加工标准设计的特殊制造台，用于制造各式星铃装备。</Celes_Manufactory_I.description>-->
-  <!-- EN: Unlock the "Celestia multifunctional tab", a special manufacturing station designed for Celestia's processing standard, used to manufacture various types of Celestia equipment. -->
-
-  <!--<Celes_Manufactory_II.label>尘构调用:晶格重构</Celes_Manufactory_II.label>-->
-  <!-- EN: Dust-Mech Call:Lattice Reconstruction -->
-  <!--<Celes_Manufactory_II.description>解锁制作「淬铃合金」，一种利用尘构重组金属晶格结构制成的特种合金。</Celes_Manufactory_II.description>-->
-  <!-- EN: Unlocks the crafting of "Chime Alloy", a special alloy made by using Dust-Mech to reconfigure the lattice structure of metals. -->
-
-  <!--<Celes_Manufactory_II_a.label>灵能专业化合金</Celes_Manufactory_II_a.label>-->
-  <!-- EN: psychic specialised alloy -->
-  <!--<Celes_Manufactory_II_a.description>解锁「黯辉合金」与「灵尘合金」，对灵能反应具有特殊性质的两种合金。</Celes_Manufactory_II_a.description>-->
-  <!-- EN: Unlock "Dull-L Alloy" and "Psi-dust Alloy", two alloys with special properties for psychic energy reactions. -->
 
   <Celes_Weapon_I.label>星铃拓荒武器</Celes_Weapon_I.label>
   <!-- EN: Celestia pioneer weapons -->
@@ -68,15 +48,10 @@
   <Celes_Weapon_V.description>.</Celes_Weapon_V.description>
   <!-- . -->
 
-  <Celes_Bio_I.label>星铃生化标准</Celes_Bio_I.label>
+  <Celes_Bio_I.label>晶体融合生化</Celes_Bio_I.label>
   <!-- EN: Celestia biochemical standard -->
   <Celes_Bio_I.description>同步星铃的制药技术，从有机质中提取生物酶凝胶。解锁制作星铃基础药物，例如可以预防感染，瘟疫等疾病的「IAS-2免疫增强剂」与提供额外工作效率但带来疲劳的「NS-90神经兴奋剂」。</Celes_Bio_I.description>
   <!-- EN: Synchronise Celestia's pharmaceutical technology by extracting bio-enzyme gels from organic matter. Unlock Celestia's basic medicines, such as IAS-2 immune-activating stimulants, which prevents infections and plagues, and NS-90 nervous stimulants, which provides extra efficiency but causes fatigue. -->
-
-  <Celes_Bio_I-5.label>晶体融合生化</Celes_Bio_I-5.label>
-  <!-- EN: . -->
-  <Celes_Bio_I-5.description>.</Celes_Bio_I-5.description>
-  <!-- EN: . -->
 
   <Celes_Bio_II.label>星铃作战生化</Celes_Bio_II.label>
   <!-- EN: Celestia combat medication -->
@@ -147,24 +122,9 @@
   <Celes_Mech_V.description>.</Celes_Mech_V.description>
   <!-- EN: . -->
 
-  <Celes_Manufactory_I.label>晶体场控锻造</Celes_Manufactory_I.label>
+  <Celes_Manufactory.label>模式化锻造理论</Celes_Manufactory.label>
   <!-- EN: . -->
-  <Celes_Manufactory_I.description>.</Celes_Manufactory_I.description>
-  <!-- EN: . -->
-
-  <Celes_Manufactory_II_a.label>模式化锻造理论</Celes_Manufactory_II_a.label>
-  <!-- EN: . -->
-  <Celes_Manufactory_II_a.description>.</Celes_Manufactory_II_a.description>
-  <!-- EN: . -->
-
-  <Celes_Manufactory_II.label>尘构纳米锻造</Celes_Manufactory_II.label>
-  <!-- EN: . -->
-  <Celes_Manufactory_II.description>.</Celes_Manufactory_II.description>
-  <!-- EN: . -->
-
-  <Celes_Manufactory_III.label>适应性信息流</Celes_Manufactory_III.label>
-  <!-- EN: . -->
-  <Celes_Manufactory_III.description>.</Celes_Manufactory_III.description>
+  <Celes_Manufactory.description>.</Celes_Manufactory.description>
   <!-- EN: . -->
 
   <Celes_Apparel_I.label>星铃制衣标准</Celes_Apparel_I.label>

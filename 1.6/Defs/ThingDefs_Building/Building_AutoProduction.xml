@@ -372,7 +372,7 @@
                     </li>
                 </transformingModeRecipes>
                 <killModeTechLock>true</killModeTechLock>
-                <techUnlockKillMode>Celes_Bio_I-5</techUnlockKillMode>
+                <techUnlockKillMode>Celes_Bio_I</techUnlockKillMode>
             </li>
             <li Class="CelesFeature.CompProperties_Celes_Linker">
                 <thingsToLink>
