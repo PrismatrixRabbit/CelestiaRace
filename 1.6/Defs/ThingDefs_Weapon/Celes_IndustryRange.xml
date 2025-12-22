@@ -400,7 +400,7 @@
         <costList>
             <CelesAlloy>80</CelesAlloy>
             <ComponentIndustrial>10</ComponentIndustrial>
-            <CelesNanoMachine>5</CelesNanoMachine>
+            <Celes_NanoMachine>5</Celes_NanoMachine>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -473,7 +473,7 @@
         <costList>
             <CelesAlloy>80</CelesAlloy>
             <ComponentIndustrial>10</ComponentIndustrial>
-            <CelesNanoMachine>5</CelesNanoMachine>
+            <Celes_NanoMachine>5</Celes_NanoMachine>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -562,7 +562,7 @@
         <costList>
             <CelesAlloy>120</CelesAlloy>
             <ComponentIndustrial>10</ComponentIndustrial>
-            <CelesNanoMachine>5</CelesNanoMachine>
+            <Celes_NanoMachine>5</Celes_NanoMachine>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -635,7 +635,7 @@
         <costList>
             <CelesAlloy>160</CelesAlloy>
             <ComponentIndustrial>14</ComponentIndustrial>
-            <CelesNanoMachine>5</CelesNanoMachine>
+            <Celes_NanoMachine>5</Celes_NanoMachine>
         </costList>
         <equippedStatOffsets>
             <MoveSpeed>-0.25</MoveSpeed>

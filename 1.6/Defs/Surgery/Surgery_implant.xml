@@ -19,13 +19,13 @@
         <targetsBodyPart>false</targetsBodyPart>
         <isViolation>true</isViolation>
         <descriptionHyperlinks>
-            <ThingDef>CelesNanoMachine</ThingDef>
+            <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <uiIconThing>Celes_NanoMachine</uiIconThing>
         <anesthetize>false</anesthetize>
         <workSkillLearnFactor>2</workSkillLearnFactor>
         <products>
-            <CelesNanoMachine>3</CelesNanoMachine>
+            <Celes_NanoMachine>3</Celes_NanoMachine>
         </products>
         <researchPrerequisites>
             <li>Celes_MainTech_II</li>

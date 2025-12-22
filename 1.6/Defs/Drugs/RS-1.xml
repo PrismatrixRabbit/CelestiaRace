@@ -64,7 +64,7 @@
             <Celes_BioGel>10</Celes_BioGel>
             <Neutroamine>5</Neutroamine>
             <Luciferium>3</Luciferium>
-            <CelesNanoMachine>5</CelesNanoMachine>
+            <Celes_NanoMachine>5</Celes_NanoMachine>
         </costList>
         <comps>
             <li Class="CompProperties_Drug">

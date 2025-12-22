@@ -63,7 +63,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>CelesNanoMachine</li>
+                        <li>Celes_NanoMachine</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -71,13 +71,13 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>CelesNanoMachine</li>
+                <li>Celes_NanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
         <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
         </researchPrerequisite>
-        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <uiIconThing>Celes_NanoMachine</uiIconThing>
     </RecipeDef>
 
     <RecipeDef ParentName="Celes_Surgery">
@@ -137,7 +137,7 @@
         <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
         </researchPrerequisite>
-        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <uiIconThing>Celes_NanoMachine</uiIconThing>
     </RecipeDef>
 
     <!-- ========== 军用节律 ========== -->
@@ -184,7 +184,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>CelesNanoMachine</li>
+                        <li>Celes_NanoMachine</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -192,13 +192,13 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>CelesNanoMachine</li>
+                <li>Celes_NanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
         <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
         </researchPrerequisite>
-        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <uiIconThing>Celes_NanoMachine</uiIconThing>
     </RecipeDef>
 
     <RecipeDef ParentName="Celes_Surgery">
@@ -243,7 +243,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>CelesNanoMachine</li>
+                        <li>Celes_NanoMachine</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -251,13 +251,13 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>CelesNanoMachine</li>
+                <li>Celes_NanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
         <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
         </researchPrerequisite>
-        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <uiIconThing>Celes_NanoMachine</uiIconThing>
     </RecipeDef>
 
     <!-- ========== 人类节律 ========== -->
@@ -308,7 +308,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>CelesNanoMachine</li>
+                        <li>Celes_NanoMachine</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -316,13 +316,13 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>CelesNanoMachine</li>
+                <li>Celes_NanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
         <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
         </researchPrerequisite>
-        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <uiIconThing>Celes_NanoMachine</uiIconThing>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
@@ -378,7 +378,7 @@
         <researchPrerequisite>
             <li>Celes_NanoImplant_I</li>
         </researchPrerequisite>
-        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <uiIconThing>Celes_NanoMachine</uiIconThing>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
@@ -432,7 +432,7 @@
             </disallowedThingDefs>
         </fixedIngredientFilter>
         <products>
-            <CelesNanoMachine>3</CelesNanoMachine>
+            <Celes_NanoMachine>3</Celes_NanoMachine>
             <Neutroamine>5</Neutroamine>
         </products>
         <researchPrerequisite>
@@ -495,7 +495,7 @@
         <researchPrerequisite>
             <li>Celes_NanoImplant_II</li>
         </researchPrerequisite>
-        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <uiIconThing>Celes_NanoMachine</uiIconThing>
     </RecipeDef>
 
 </Defs>

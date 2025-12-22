@@ -24,9 +24,9 @@
         <ingredients>
             <li>
                 <filter>
-                    <categories>
-                        <li>Celes_NanoResourcesRaw</li>
-                    </categories>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
                 </filter>
                 <count>20</count>
             </li>
@@ -51,10 +51,8 @@
             <thingDefs>
                 <li>Plasteel</li>
                 <li>Cloth</li>
+                <li>Celes_NanoMachine</li>
             </thingDefs>
-            <categories>
-                <li>Celes_NanoResourcesRaw</li>
-            </categories>
         </fixedIngredientFilter>
         <products>
             <CelesAdvanceCloth>20</CelesAdvanceCloth>
@@ -82,9 +80,9 @@
         <ingredients>
             <li>
                 <filter>
-                    <categories>
-                        <li>Celes_NanoResourcesRaw</li>
-                    </categories>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
                 </filter>
                 <count>30</count>
             </li>
@@ -118,10 +116,8 @@
                 <li>Plasteel</li>
                 <li>Gold</li>
                 <li>ComponentIndustrial</li>
+                <li>Celes_NanoMachine</li>
             </thingDefs>
-            <categories>
-                <li>Celes_NanoResourcesRaw</li>
-            </categories>
         </fixedIngredientFilter>
         <products>
             <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
@@ -254,7 +250,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>CelesNanoMachine</li>
+                        <li>Celes_NanoMachine</li>
                     </thingDefs>
                 </filter>
                 <count>5</count>
@@ -295,7 +291,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>CelesNanoMachine</li>
+                        <li>Celes_NanoMachine</li>
                     </thingDefs>
                 </filter>
                 <count>5</count>

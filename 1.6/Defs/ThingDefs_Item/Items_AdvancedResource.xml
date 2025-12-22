@@ -50,7 +50,7 @@
         <!--<costList>
             <Cloth>20</Cloth>
             <Plasteel>2</Plasteel>
-            <CelesNanoMachine>1</CelesNanoMachine>
+            <Celes_NanoMachine>1</Celes_NanoMachine>
         </costList>-->
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>

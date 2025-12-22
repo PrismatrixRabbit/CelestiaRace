@@ -868,7 +868,7 @@
 
 			<makesFootprints>false</makesFootprints>
 			<lifeExpectancy>8192</lifeExpectancy>
-			<leatherDef>CelesNanoMachine</leatherDef>
+			<leatherDef>Celes_NanoMachine</leatherDef>
 			<nameCategory>HumanStandard</nameCategory>
 			<body>Celes_Abyssia_Body</body>
 			<baseBodySize>1.5</baseBodySize>

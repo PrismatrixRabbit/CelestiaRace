@@ -53,7 +53,7 @@
         </comps>
         <costList>
             <Celes_BioGel>40</Celes_BioGel>
-            <CelesNanoMachine>20</CelesNanoMachine>
+            <Celes_NanoMachine>20</Celes_NanoMachine>
             <ComponentIndustrial>10</ComponentIndustrial>
         </costList>
         <recipeMaker>

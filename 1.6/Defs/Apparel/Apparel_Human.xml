@@ -14,7 +14,7 @@
         <costList>
             <Steel>50</Steel>
             <ComponentIndustrial>2</ComponentIndustrial>
-            <CelesNanoMachine>10</CelesNanoMachine>
+            <Celes_NanoMachine>10</Celes_NanoMachine>
         </costList>
         <graphicData>
             <texPath>Celes/Apparel/Shell/ServantCoat/ServantCoat</texPath>

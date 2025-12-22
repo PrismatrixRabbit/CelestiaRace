@@ -292,7 +292,7 @@
             <li Class="CelesFeature.Celes_CompProperties_Spawner">
                 <requiresPower>true</requiresPower>
                 <needFuel>true</needFuel>
-                <thingToSpawn>CelesNanoMachine</thingToSpawn>
+                <thingToSpawn>Celes_NanoMachine</thingToSpawn>
                 <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
                 <showMessageIfOwned>true</showMessageIfOwned>
             </li>

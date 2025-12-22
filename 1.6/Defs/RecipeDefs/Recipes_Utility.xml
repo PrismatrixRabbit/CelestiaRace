@@ -28,9 +28,9 @@
         <ingredients>
             <li>
                 <filter>
-                    <categories>
-                        <li>Celes_NanoResourcesRaw</li>
-                    </categories>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
                 </filter>
                 <count>1</count>
             </li>
@@ -52,10 +52,8 @@
             </li>
         </ingredients>
         <fixedIngredientFilter>
-            <categories>
-                <li>Celes_NanoResourcesRaw</li>
-            </categories>
             <thingDefs>
+                <li>Celes_NanoMachine</li>
                 <li>ComponentIndustrial</li>
                 <li>Mechlink</li>
             </thingDefs>

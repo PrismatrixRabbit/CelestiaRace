@@ -111,11 +111,11 @@
                 <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
                 <initialConfigurableTargetFuelLevel>5.0</initialConfigurableTargetFuelLevel>
                 <fuelConsumptionRate>1.0</fuelConsumptionRate>
-                <initialFuelPercent>0.0</initialFuelPercent>
+                <initialFuelPercent>1.0</initialFuelPercent>
                 <autoRefuelPercent>0.50</autoRefuelPercent>
                 <fuelFilter>
                     <thingDefs>
-                        <li>CelesNanoMachine</li>
+                        <li>Celes_NanoMachine</li>
                         <li>CelesNanoManifold</li>
                     </thingDefs>
                 </fuelFilter>
@@ -281,7 +281,9 @@
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>300</basePowerConsumption>
             </li>
-            <li Class="CelesFeature.CompProperties_Celes_AutomaticIndustry"/>
+            <li Class="CelesFeature.CompProperties_Celes_AutomaticIndustry">
+                <autoEjectProducts>false</autoEjectProducts>
+            </li>
             <li Class="CelesFeature.CompProperties_Celes_Linker">
                 <thingsToLink>
                     <li>
@@ -364,7 +366,7 @@
                 <transformedThought>DebugBad</transformedThought>                <!-- temporary -->
                 <transformingModeRecipes>
                     <li>
-                        <product>CelesNanoMachine</product>
+                        <product>Celes_NanoMachine</product>
                         <safeModeOutputFactor>0.5</safeModeOutputFactor>
                         <rockModeOutput>10</rockModeOutput>
                         <nonHumanoidBioOutput>20</nonHumanoidBioOutput>

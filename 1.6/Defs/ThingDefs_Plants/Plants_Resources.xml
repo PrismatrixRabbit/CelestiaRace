@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="PlantBase">
-        <defName>Plant_CelesNano</defName>
+		<defName>Plant_CelesParsnip</defName>
         <label>Crystal Orchid</label>
         <description>Crystal Orchid, scientific name Dust-Mech Regeneration Plant. A genetically modified plant that is highly symbiotic with Dust-Mech for the production of Dust-Mech substances, its seed packets are placed into almost all Celestia emergency survival kits as one of the sources of Dust-Mech substances for extreme situations, and possibly the only source of Dust-Mech for those who do not want to risk serious blood loss. \n\nIts special and interesting life cycle and extremely high mineral requirements make it require a long growing time and a very high fertility requirement for the land, almost exclusively in hydroponic tanks and fertile soil. Please be careful not to let the cold snap destroy these crops.</description>
 		<descriptionHyperlinks>
-			<ThingDef>Celes_RawCrystalOrchid</ThingDef>
+			<ThingDef>Celes_RawParsnip</ThingDef>
 		</descriptionHyperlinks>
         <statBases>
 			<Beauty>2</Beauty>
@@ -23,12 +23,12 @@
         <plant>
 			<immatureGraphicPath>Celes/Plant/Plant_CelesNanoImmature</immatureGraphicPath>
 			<fertilitySensitivity>0</fertilitySensitivity>
-			<growDays>15</growDays>
-			<sowWork>400</sowWork>
+			<growDays>7</growDays>
+			<sowWork>540</sowWork>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>Celes_RawCrystalOrchid</harvestedThingDef>
-			<harvestYield>1</harvestYield>
+			<harvestedThingDef>Celes_RawParsnip</harvestedThingDef>
+			<harvestYield>20</harvestYield>
 			<neverBlightable>true</neverBlightable>
 			<sowTags>
 				<li>Ground</li>

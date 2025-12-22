@@ -41,7 +41,7 @@
   <Celes_Keyed_NoCoreConnected>未连接中枢。</Celes_Keyed_NoCoreConnected>
   <Celes_Keyed_ConnectionCapacity>连接容量：{0} / {1}</Celes_Keyed_ConnectionCapacity>
 
-  <Celes_Keyed_CoreInactive>未激活</Celes_Keyed_CoreInactive>
+  <Celes_Keyed_CoreInactive>停机中</Celes_Keyed_CoreInactive>
   <Celes_Keyed_TerminalEfficiencyFactor>终端效率乘数：{0}</Celes_Keyed_TerminalEfficiencyFactor>
   <Celes_Keyed_CurrentEfficiency>当前效率：{0}</Celes_Keyed_CurrentEfficiency>
 
@@ -51,7 +51,7 @@
   <Celes_Keyed_ProductionCycle_Completed>已完成生产周期</Celes_Keyed_ProductionCycle_Completed>
   <Celes_Keyed_ProductionCycle_Manufacturing>制造中</Celes_Keyed_ProductionCycle_Manufacturing>
   <Celes_Keyed_ProductionCycle_Manufactured>制造完毕</Celes_Keyed_ProductionCycle_Manufactured>
-  <Celes_Keyed_RemainingProductionCycles>生产周期剩余</Celes_Keyed_RemainingProductionCycles>
+  <Celes_Keyed_RemainingProcessingCycles>生产周期：{0} / {1}</Celes_Keyed_RemainingProcessingCycles>
 
   <Celes_Keyed_RockMode>岩质模式</Celes_Keyed_RockMode>
   <Celes_Keyed_BiologicalMode>生质模式</Celes_Keyed_BiologicalMode>
@@ -76,6 +76,10 @@
   <Celes_Keyed_ProcessingTimeLeft>剩余加工时间：{0}</Celes_Keyed_ProcessingTimeLeft>
 
   <Celes_Keyed_Maintenance>维护状态</Celes_Keyed_Maintenance>
-  <Celes_Keyed_Maintenance_Tooltip>维护状态：{0}\n维护降低速率：{1}/日\n当前效率乘数：{2}\n当前维护阈值：{3}\n点击来设置维护阈值。\n\n</Celes_Keyed_Maintenance_Tooltip>
+  <Celes_Keyed_Maintenance_Tooltip>维护状态：{0}\n维护降低速率：{1}\n预计距离下一次维护：{2}\n维护度免衰减时间：{3}\n当前效率乘数：{4}\n当前维护阈值：{5}\n点击来设置维护阈值。\n\n</Celes_Keyed_Maintenance_Tooltip>
+  <Celes_Keyed_Maintenance_NoDecay>无期</Celes_Keyed_Maintenance_NoDecay>
+  <Celes_Keyed_Unknown_Reason>未知原因</Celes_Keyed_Unknown_Reason>
+  <Celes_Keyed_RecentlyMaintained>近期已维护</Celes_Keyed_RecentlyMaintained>
+  <Celes_Keyed_NoRecentlyMaintained>近期未维护</Celes_Keyed_NoRecentlyMaintained>
 
 </LanguageData>

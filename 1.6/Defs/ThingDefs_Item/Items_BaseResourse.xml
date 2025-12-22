@@ -1,33 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- ========== 基础资源 ========== -->
+    <!-- ========== 早期植物 ========== -->
 
-    <ThingDef ParentName="ResourceBase"><!-- 晶蒴 -->
-        <defName>Celes_RawCrystalOrchid</defName>
+    <!-- 莹尘防风草 -->
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>Celes_RawParsnip</defName>
         <label>crystal capsule</label>
         <description>The fruit of the crystal orchid, in the form of crystals, is very hard to the touch but seems unexpectedly edible ...... But how to eat it is another question.</description>
         <descriptionHyperlinks>
-            <ThingDef>Plant_CelesNano</ThingDef>
+            <ThingDef>Plant_CelesParsnip</ThingDef>
         </descriptionHyperlinks>
         <possessionCount>10</possessionCount>
         <graphicData>
             <texPath>Celes/Item/BaseResource/RawCrystalOrchid</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
-            <MaxHitPoints>75</MaxHitPoints>
-            <MarketValue>12</MarketValue>
-            <Mass>0.05</Mass>
+            <MaxHitPoints>60</MaxHitPoints>
+            <MarketValue>1.2</MarketValue>
+            <Mass>0.02</Mass>
             <Flammability>1.2</Flammability>
         </statBases>
-        <thingCategories>
-            <li>Celes_NanoResourcesRaw</li>
-        </thingCategories>
-        <allowedArchonexusCount>20</allowedArchonexusCount>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>40</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <tasteThought></tasteThought>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
     </ThingDef>
-    
-    <ThingDef ParentName="ResourceBase"><!-- 生物酶凝胶 -->
+
+    <!-- ========== 基础资源 ========== -->
+
+    <!-- 自复制晶体 -->
+    <ThingDef ParentName="ResourceBase">
+        <defName>Celes_NanoMachine</defName>
+        <label>Self-replicating crystals</label>
+        <description>The strange crystals extracted from the crystal capsule are transparent yet it seems as if something is flowing inside, the lattice duplicating and dying out in it. It could be used to make special items belonging to Celestia's technology.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/NanoMachine</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>75</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>0.01</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0.1</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate> <!-- Not returned to player when product made of this is smelted. -->
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Celes_Need</li>
+        </tradeTags>
+        <!-- <allowedArchonexusCount>20</allowedArchonexusCount> 这玩意到底干啥的-->
+    </ThingDef>
+
+    <!-- 活磁流体 -->
+    <ThingDef ParentName="ResourceBase">
+        <defName>Celes_LivingFerrofluid</defName>
+        <label>Celes_LivingFerrofluid</label>
+        <description>Celes_LivingFerrofluid.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/NanoMachine</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>75</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>0.001</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0.1</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Celes_Need</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase"><!-- 多能介质凝胶 -->
         <defName>Celes_BioGel</defName>
         <label>bio-enzyme gels</label>
         <description>A potent bio-enzyme gel extracted from organic matter is used to make Celestia's various specialised medicines.</description>
@@ -56,35 +124,6 @@
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>CelesNanoMachine</defName>
-        <label>Self-replicating crystals</label>
-        <description>The strange crystals extracted from the crystal capsule are transparent yet it seems as if something is flowing inside, the lattice duplicating and dying out in it. It could be used to make special items belonging to Celestia's technology.</description>
-        <possessionCount>5</possessionCount>
-        <tickerType>Normal</tickerType>
-        <graphicData>
-            <texPath>Celes/Item/BaseResource/NanoMachine</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.85</drawSize>
-        </graphicData>
-        <stackLimit>75</stackLimit>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <intricate>true</intricate>
-        <statBases>
-            <MaxHitPoints>50</MaxHitPoints>
-            <MarketValue>12</MarketValue>
-            <Mass>0.001</Mass>
-            <Flammability>0</Flammability>
-        </statBases>
-        <thingCategories>
-            <li>Celes_NanoResourcesRaw</li>
-        </thingCategories>
-        <tradeTags>
-            <li>Celes_Need</li>
-        </tradeTags>
-        <allowedArchonexusCount>20</allowedArchonexusCount>
-    </ThingDef>
-
-    <ThingDef ParentName="ResourceBase">
         <defName>CelesNanoManifold</defName>
         <label>the Dust-Mech Manifold</label>
         <description>A powerful and highly controllable programmable nanomachine, one of the roots of Celestia's civilisation, used extensively. But in places like the Rimworld, where supplies are scarce, Dust-Mech matter does not shape the world as it pleases.</description>
@@ -105,7 +144,7 @@
             <Flammability>0</Flammability>
         </statBases>
         <thingCategories>
-            <li>Celes_NanoResourcesRaw</li>
+            <li>Celes_Manufactured</li>
         </thingCategories>
         <allowedArchonexusCount>20</allowedArchonexusCount>
     </ThingDef>

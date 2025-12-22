@@ -33,31 +33,35 @@
             </li>
             <li>
                 <filter>
-                    <categories>
-                        <li>Celes_NanoResourcesRaw</li>
-                    </categories>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
                 </filter>
                 <count>1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
+            <thingDefs>
+                <li>Celes_NanoMachine</li>
+            </thingDefs>
             <categories>
                 <li>MeatRaw</li>
                 <li>AnimalProductRaw</li>
-                <li>Celes_NanoResourcesRaw</li>
             </categories>
         </fixedIngredientFilter>
         <defaultIngredientFilter>
+            <thingDefs>
+                <li>Celes_NanoMachine</li>
+            </thingDefs>
             <categories>
                 <li>MeatRaw</li>
                 <li>AnimalProductRaw</li>
-                <li>Celes_NanoResourcesRaw</li>
             </categories>
             <disallowedCategories>
                 <li>EggsFertilized</li>
             </disallowedCategories>
             <!-- <disallowedThingDefs>
-                <li>Celes_RawCrystalOrchid</li>
+                <li>Celes_RawParsnip</li>
             </disallowedThingDefs> -->
         </defaultIngredientFilter>
         <products>
@@ -70,10 +74,10 @@
         <label>extractable self-replicating crystals</label>
         <description>Inefficient extraction of special crystalline substances from crystal capsules, which is inefficient but extremely fast.</description>
         <descriptionHyperlinks>
-            <ThingDef>Celes_RawCrystalOrchid</ThingDef>
-            <ThingDef>CelesNanoMachine</ThingDef>
+            <ThingDef>Celes_RawParsnip</ThingDef>
+            <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>CelesNanoMachine</uiIconThing>
+        <uiIconThing>Celes_NanoMachine</uiIconThing>
         <jobString>extracting self-replicating crystals</jobString>
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
@@ -91,7 +95,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Celes_RawCrystalOrchid</li>
+                        <li>Celes_RawParsnip</li>
                     </thingDefs>
                 </filter>
                 <count>3</count>
@@ -99,11 +103,11 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>Celes_RawCrystalOrchid</li>
+                <li>Celes_RawParsnip</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <CelesNanoMachine>2</CelesNanoMachine>
+            <Celes_NanoMachine>2</Celes_NanoMachine>
         </products>
     </RecipeDef>
 
@@ -130,9 +134,9 @@
         <ingredients>
             <li>
                 <filter>
-                    <categories>
-                        <li>Celes_NanoResourcesRaw</li>
-                    </categories>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
                 </filter>
                 <count>10</count>
             </li>
@@ -147,11 +151,9 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
+                <li>Celes_NanoMachine</li>
                 <li>Steel</li>
             </thingDefs>
-            <categories>
-                <li>Celes_NanoResourcesRaw</li>
-            </categories>
         </fixedIngredientFilter>
         <products>
             <CelesAlloy>60</CelesAlloy>
@@ -186,9 +188,9 @@
         <ingredients>
             <li>
                 <filter>
-                    <categories>
-                        <li>Celes_NanoResourcesRaw</li>
-                    </categories>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
                 </filter>
                 <count>3</count>
             </li>
@@ -202,13 +204,15 @@
             </li>
         </ingredients>
         <fixedIngredientFilter>
+            <thingDefs>
+                <li>Celes_NanoMachine</li>
+            </thingDefs>
             <categories>
-                <li>Celes_NanoResourcesRaw</li>
                 <li>StoneChunks</li>
             </categories>
         </fixedIngredientFilter>
         <products>
-            <CelesNanoMachine>24</CelesNanoMachine>
+            <Celes_NanoMachine>24</Celes_NanoMachine>
         </products>
     </RecipeDef>
 
@@ -237,7 +241,7 @@
             </li>
         </ingredients>
         <products>
-            <CelesNanoMachine>10</CelesNanoMachine>
+            <Celes_NanoMachine>10</Celes_NanoMachine>
             <Neutroamine>25</Neutroamine>
         </products>
         <recipeUsers>
@@ -254,7 +258,7 @@
         <label>Celes_ProduceNanoByCorpse</label>
         <description>Celes_ProduceNanoByCorpse</description>
         <descriptionHyperlinks>
-            <ThingDef>CelesNanoMachine</ThingDef>
+            <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
         <workAmount>3000</workAmount>
         <jobString>Celes_ProduceNanoByCorpse</jobString>
@@ -278,30 +282,31 @@
             </li>
             <li>
                 <filter>
-                    <categories>
-                        <li>Celes_NanoResourcesRaw</li>
-                    </categories>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
                 </filter>
                 <count>1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
+            <thingDefs>
+                <li>Celes_NanoMachine</li>
+            </thingDefs>
             <categories>
                 <li>CorpsesHumanlike</li>
-                <li>Celes_NanoResourcesRaw</li>
             </categories>
         </fixedIngredientFilter>
         <defaultIngredientFilter>
+            <thingDefs>
+                <li>Celes_NanoMachine</li>
+            </thingDefs>
             <categories>
                 <li>CorpsesHumanlike</li>
-                <li>Celes_NanoResourcesRaw</li>
             </categories>
-            <disallowedThingDefs>
-                <li>CelesNanoManifold</li>
-            </disallowedThingDefs>
         </defaultIngredientFilter>
         <products>
-            <CelesNanoMachine>3</CelesNanoMachine>
+            <Celes_NanoMachine>3</Celes_NanoMachine>
         </products>
         <recipeUsers>
             <li>Celes_MultifunctionalTabA</li>

@@ -4,13 +4,6 @@
     <!-- ========== 星铃物品 ========== -->
 
     <ThingCategoryDef>
-        <defName>Celes_NanoResourcesRaw</defName>
-        <label>celestia nano product</label>
-        <parent>ResourcesRaw</parent>
-        <iconPath>Celes/UI/Icons/NanoMachineCrystal_B</iconPath>
-    </ThingCategoryDef>
-
-    <ThingCategoryDef>
         <defName>Celes_Manufactured</defName>
         <label>celestia manufactured</label>
         <parent>Manufactured</parent>

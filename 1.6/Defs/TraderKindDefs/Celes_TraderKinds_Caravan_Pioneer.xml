@@ -32,7 +32,7 @@
         <countRange>120~240</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>CelesNanoMachine</thingDef>
+        <thingDef>Celes_NanoMachine</thingDef>
         <countRange>-10~45</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">

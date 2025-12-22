@@ -8,7 +8,7 @@
         <label>Celes_TestServantClaw</label>
         <description>Celes_TestServantClaw</description>
         <descriptionHyperlinks><RecipeDef>Celes_InstallTestServantClaw</RecipeDef></descriptionHyperlinks>
-        <spawnThingOnRemoved>CelesNanoMachine</spawnThingOnRemoved>
+        <spawnThingOnRemoved>Celes_NanoMachine</spawnThingOnRemoved>
         <defaultInstallPart>Hand</defaultInstallPart>
         <stages>
             <li>
@@ -70,7 +70,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>CelesNanoMachine</li>
+                        <li>Celes_NanoMachine</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -78,7 +78,7 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>CelesNanoMachine</li>
+                <li>Celes_NanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
@@ -94,7 +94,7 @@
         <label>Celes_TestServantHammer</label>
         <description>Celes_TestServantHammer</description>
         <descriptionHyperlinks><RecipeDef>Celes_InstallTestServantHammer</RecipeDef></descriptionHyperlinks>
-        <spawnThingOnRemoved>CelesNanoMachine</spawnThingOnRemoved>
+        <spawnThingOnRemoved>Celes_NanoMachine</spawnThingOnRemoved>
         <defaultInstallPart>Hand</defaultInstallPart>
         <stages>
             <li>
@@ -156,7 +156,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>CelesNanoMachine</li>
+                        <li>Celes_NanoMachine</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -164,7 +164,7 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>CelesNanoMachine</li>
+                <li>Celes_NanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
@@ -180,7 +180,7 @@
         <label>Celes_TestServantFCBR</label>
         <description>Celes_TestServantFCBR</description>
         <descriptionHyperlinks><RecipeDef>Celes_InstallTestServantFCBR</RecipeDef></descriptionHyperlinks>
-        <spawnThingOnRemoved>CelesNanoMachine</spawnThingOnRemoved>
+        <spawnThingOnRemoved>Celes_NanoMachine</spawnThingOnRemoved>
         <defaultInstallPart>Brain</defaultInstallPart>
         <stages>
             <li>
@@ -234,7 +234,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>CelesNanoMachine</li>
+                        <li>Celes_NanoMachine</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -242,7 +242,7 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>CelesNanoMachine</li>
+                <li>Celes_NanoMachine</li>
             </thingDefs>
         </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
