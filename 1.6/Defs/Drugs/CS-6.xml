@@ -46,16 +46,15 @@
             </outcomeDoers>
         </ingestible>
         <recipeMaker>
+            <label>编织指令：CS-6</label>
             <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
-            <recipeUsers>
-                <li>DrugLab</li>
-            </recipeUsers>
-            <soundWorking>Recipe_Drug</soundWorking>
+            <displayPriority>1535</displayPriority>
         </recipeMaker>
         <costList>
             <Neutroamine>2</Neutroamine>
-            <Celes_BioGel>1</Celes_BioGel>
+            <Celes_BioGel>4</Celes_BioGel>
             <PsychoidLeaves>8</PsychoidLeaves>
+            <Celes_NanoMachine>1</Celes_NanoMachine>
         </costList>
         <comps>
             <li Class="CompProperties_Drug">

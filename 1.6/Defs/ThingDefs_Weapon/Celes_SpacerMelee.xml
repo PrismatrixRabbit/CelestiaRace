@@ -4,8 +4,9 @@
         <recipeMaker>
             <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
             <recipeUsers Inherit="false">
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
+            <displayPriority>4500</displayPriority>
         </recipeMaker>
         <techLevel>Spacer</techLevel>
         <weaponTags>

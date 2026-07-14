@@ -1,6 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+    <!-- ========== 替代配方 ========== -->
+
+    <RecipeDef>
+        <defName>Celes_MakeMedicineAlternative</defName>
+        <label>编织指令：医药</label>
+        <description>编织指令：医药</description>
+        <jobString>正在编织医药</jobString>
+        <workAmount>720</workAmount>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_Medicine_I</li>
+        </researchPrerequisites>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineHerbal</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_BioGel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                        <li>Celes_Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Cloth</li>
+                <li>Celes_Cloth</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <MedicineIndustrial>1</MedicineIndustrial>
+        </products>
+        <displayPriority>1510</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_MakeMedicineAlternative_x4</defName>
+        <label>编织指令：医药 x4</label>
+        <description>编织指令：医药</description>
+        <jobString>正在编织医药</jobString>
+        <workAmount>2800</workAmount>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_Medicine_I</li>
+        </researchPrerequisites>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineHerbal</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_BioGel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                        <li>Celes_Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Cloth</li>
+                <li>Celes_Cloth</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <MedicineIndustrial>4</MedicineIndustrial>
+        </products>
+        <displayPriority>1515</displayPriority>
+    </RecipeDef>
+
+    <!-- ========== 实用配方 ========== -->
+
     <RecipeDef>
         <defName>Celes_MakeMechlinkAuthorization</defName><!-- 制作民用机控限制骇入器 --><!-- 暂未完成 -->
         <label>Celes_MakeMechlinkAuthorization</label>
@@ -20,7 +158,7 @@
         <recipeUsers>
             <li>CraftingSpot</li>
             <li>TableMachining</li>
-            <li>Celes_MultifunctionalTabA</li>
+            <li>Celes_LabNanoForge</li>
         </recipeUsers>
         <researchPrerequisites>
             <li>Celes_Mech_I</li>

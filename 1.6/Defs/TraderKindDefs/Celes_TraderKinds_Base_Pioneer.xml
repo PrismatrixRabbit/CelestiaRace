@@ -355,7 +355,7 @@
             <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
             <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
             <li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
-            <li Class="StockGenerator_BuyTradeTag"><tag>Celes_Need</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>Celes_TradeBase</tag></li>
             <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shell_Deadlife</thingDef></li>
             <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>VoidSculpture</thingDef></li>
             <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shard</thingDef></li>

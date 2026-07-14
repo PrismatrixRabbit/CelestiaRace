@@ -4,6 +4,118 @@
     <!-- ========== 高级资源 ========== -->
 
     <RecipeDef>
+        <defName>Celes_ForgeCommand_Substrate</defName><!-- 锻造指令：尘构基质 --><!-- 暂未完成 -->
+        <label>锻造指令：尘构基质</label>
+        <description>利用尘构物质制造尘构基质，总之就是这样那样。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_NanoMachine</ThingDef>
+            <ThingDef>Gold</ThingDef>
+            <ThingDef>CelesAlloy</ThingDef>
+            <ThingDef>Celes_Cloth</ThingDef>
+            <ThingDef>Celes_Substrate</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>Celes_Substrate</uiIconThing>
+        <jobString>正在锻造尘构机械单元</jobString>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>10000</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_III</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesAlloy</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <products>
+            <Celes_Substrate>1</Celes_Substrate>
+        </products>
+        <displayPriority>2025</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_ResortCommand_AdvanceCloth</defName><!-- 重序指令：尘化丝绸 --><!-- 暂未完成 -->
+        <label>重序指令：尘化丝绸</label>
+        <description>在恶魔菇产生的纤维基础上利用尘构物质重新排序纤维结构构建尘化丝绸。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_Cloth</ThingDef>
+            <ThingDef>DevilstrandCloth</ThingDef>
+            <ThingDef>CelesAdvanceCloth</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>CelesAdvanceCloth</uiIconThing>
+        <jobString>正在重序尘化丝绸</jobString>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <workAmount>6000</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_Bio_III</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DevilstrandCloth</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <products>
+            <CelesAdvanceCloth>50</CelesAdvanceCloth>
+        </products>
+        <displayPriority>1705</displayPriority>
+    </RecipeDef>
+
+    <!-- ========== 高级资源 ========== 
+
+    <RecipeDef>
         <defName>Make_CelesAdvanceCloth</defName>
         <label>reorganise Dust-Mech Silk</label>
         <description>Using Dust-Mech to reorganise Rimworld's native materials into Dust-Mech Silk.</description>
@@ -70,7 +182,7 @@
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
         <recipeUsers>
-            <li>Celes_MultifunctionalTabA</li>
+            <li>Celes_LabNanoForge</li>
         </recipeUsers>
         <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
         <skillRequirements>
@@ -122,111 +234,7 @@
         <products>
             <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
         </products>
-    </RecipeDef>
-
-    <!-- ========== 替代配方 ========== -->
-
-    <RecipeDef>
-        <defName>Celes_MakeMedicineAlternative</defName>
-        <label>make medicine(bio-enzyme gel)</label>
-        <description>make medicine by bio-enzyme gel.</description>
-        <jobString>making medicine by bio-enzyme gel.</jobString>
-        <workAmount>720</workAmount>
-        <effectWorking>Cremate</effectWorking>
-        <soundWorking>Recipe_Cremate</soundWorking>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
-        <recipeUsers>
-            <li>DrugLab</li>
-        </recipeUsers>
-        <researchPrerequisites>
-            <li>Celes_Medicine_I</li>
-        </researchPrerequisites>
-        <skillRequirements>
-            <Crafting>4</Crafting>
-            <Intellectual>4</Intellectual>
-        </skillRequirements>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>MedicineHerbal</li>
-                    </thingDefs>
-                </filter>
-                <count>2</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Celes_BioGel</li>
-                    </thingDefs>
-                </filter>
-                <count>2</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Cloth</li>
-                    </thingDefs>
-                </filter>
-                <count>3</count>
-            </li>
-        </ingredients>
-        <products>
-            <MedicineIndustrial>1</MedicineIndustrial>
-        </products>
-    </RecipeDef>
-
-    <RecipeDef>
-        <defName>Celes_MakeMedicineAlternative_x4</defName>
-        <label>make medicine(bio-enzyme gel) x4</label>
-        <description>make medicine by bio-enzyme gel.</description>
-        <jobString>making medicine by bio-enzyme gel.</jobString>
-        <workAmount>2820</workAmount>
-        <effectWorking>Cremate</effectWorking>
-        <soundWorking>Recipe_Cremate</soundWorking>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
-        <recipeUsers>
-            <li>DrugLab</li>
-        </recipeUsers>
-        <researchPrerequisites>
-            <li>Celes_Medicine_I</li>
-        </researchPrerequisites>
-        <skillRequirements>
-            <Crafting>4</Crafting>
-            <Intellectual>4</Intellectual>
-        </skillRequirements>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>MedicineHerbal</li>
-                    </thingDefs>
-                </filter>
-                <count>8</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Celes_BioGel</li>
-                    </thingDefs>
-                </filter>
-                <count>8</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Cloth</li>
-                    </thingDefs>
-                </filter>
-                <count>12</count>
-            </li>
-        </ingredients>
-        <products>
-            <MedicineIndustrial>4</MedicineIndustrial>
-        </products>
-    </RecipeDef>
+    </RecipeDef>-->
 
     <!--<RecipeDef>
         <defName>Celes_Make_NegativeAlloy</defName>
@@ -239,7 +247,7 @@
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
         <recipeUsers>
-            <li>Celes_MultifunctionalTabA</li>
+            <li>Celes_LabNanoForge</li>
         </recipeUsers>
         <researchPrerequisite>Celes_Manufactory_II_a</researchPrerequisite>
         <skillRequirements>
@@ -280,7 +288,7 @@
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
         <recipeUsers>
-            <li>Celes_MultifunctionalTabA</li>
+            <li>Celes_LabNanoForge</li>
         </recipeUsers>
         <researchPrerequisite>Celes_Manufactory_II_a</researchPrerequisite>
         <skillRequirements>

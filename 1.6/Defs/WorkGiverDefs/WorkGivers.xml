@@ -2,13 +2,13 @@
 <Defs>
 
 	<WorkGiverDef>
-		<defName>DoBillsCeles_MultifunctionalTabA</defName>
-		<label>make things at Celestia multifunctional tab</label>
+		<defName>DoBillsCeles_LabNanoForge</defName>
+		<label>make things at Celestia Lab Nano-Forge</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Smithing</workType>
 		<priorityInType>75</priorityInType>
 		<fixedBillGiverDefs>
-			<li>Celes_MultifunctionalTabA</li>
+			<li>Celes_LabNanoForge</li>
 		</fixedBillGiverDefs>
 		<verb>work</verb>
 		<gerund>working at</gerund>
@@ -46,68 +46,6 @@
 		</fixedBillGiverDefs>
 		<verb>tailor</verb>
 		<gerund>tailoring at</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
-		<defName>Celes_Refuel</defName>
-		<label>refuel buildings</label>
-		<giverClass>CelesFeature.WorkGiver_Celes_Refuel</giverClass>
-		<workType>Hauling</workType>
-		<verb>refuel</verb>
-		<gerund>refueling</gerund>
-		<priorityInType>140</priorityInType>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
-		<defName>Celes_Maintenance</defName>
-		<label>do maintenance</label>
-		<giverClass>CelesFeature.WorkGiver_Celes_Maintenance</giverClass>
-		<workType>Research</workType>
-		<verb>maintain at</verb>
-		<gerund>maintaining at</gerund>
-		<priorityInType>40</priorityInType>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<!-- <canBeDoneByMechs>false</canBeDoneByMechs> -->
-	</WorkGiverDef>
-
-	<WorkGiverDef>
-		<defName>Celes_LoadTransformer</defName>
-		<label>load transformer</label>
-		<giverClass>CelesFeature.WorkGiver_Celes_LoadTransformer</giverClass>
-		<workType>Hauling</workType>
-		<priorityInType>105</priorityInType>
-		<fixedBillGiverDefs>
-			<li>Celes_TransformTerminal</li>
-		</fixedBillGiverDefs>
-		<verb>load</verb>
-		<gerund>loading</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
-		<defName>Celes_WorkGiver_DoAutomaticBill</defName>
-		<label>operate</label>
-		<giverClass>CelesFeature.Celes_WorkGiver_DoAutomaticBill</giverClass>
-		<workType>Crafting</workType>
-		<priorityInType>100</priorityInType>
-		<fixedBillGiverDefs>
-			<li>Celes_ForgeTerminal</li>
-		</fixedBillGiverDefs>
-		<verb>operate</verb>
-		<gerund>operating</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>

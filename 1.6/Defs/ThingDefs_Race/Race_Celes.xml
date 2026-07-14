@@ -1123,5 +1123,12 @@
 			</hediffGiverSets>
 		</race>
 
+		<comps>
+			<li Class="CelesFeature.CompProperties_CelesRhythmInitializer">
+				<hediffToApply>Celes_DustMechRhythm_Standard</hediffToApply>
+				<initialSeverity>0.001</initialSeverity>  <!-- 可选，不填则用 Def 默认值 -->
+			</li>
+		</comps>
+
 	</AlienRace.ThingDef_AlienRace>
 </Defs>

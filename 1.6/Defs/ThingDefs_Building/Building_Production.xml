@@ -2,9 +2,9 @@
 <Defs>
 
     <ThingDef ParentName="BenchBase">
-        <defName>Celes_MultifunctionalTabA</defName><!-- 星铃加工台 --><!-- 待编辑 -->
-        <label>Celestia multifunctional tab</label>
-        <description>Multifunctional tab for assembling and disassembling various Celestia equipment, such as Celestia's advanced firearms and defences, all made to Celestia's specifications.</description>
+        <defName>Celes_LabNanoForge</defName><!-- 星铃小型纳米锻炉 --><!-- 待编辑 -->
+        <label>星铃小型纳米锻炉</label>
+        <description>一台小型的纳米锻炉，可以使用恰当的技术蓝图，使用尘构作为工具合成需要的物品。</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Celes/Building/Celes_MultifunctionalTabA/Celes_MultifunctionalTabA</texPath>
@@ -21,7 +21,7 @@
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
         <costList>
             <Steel>100</Steel>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <ComponentIndustrial>2</ComponentIndustrial>
         </costList>
         <altitudeLayer>Building</altitudeLayer>
         <fillPercent>0.5</fillPercent>
@@ -34,16 +34,16 @@
         </statBases>
         <size>(2,1)</size>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
-        <uiOrder>2510</uiOrder>
+        <uiOrder>1000</uiOrder>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
         <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<recipes>
+		<!--<recipes>
 			<li>ButcherCorpseMechanoid</li>
-		</recipes>
+		</recipes>-->
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
@@ -73,8 +73,9 @@
 			<li>Celes_MainTech_II</li>
 		</researchPrerequisites>
 		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
     </ThingDef>
 

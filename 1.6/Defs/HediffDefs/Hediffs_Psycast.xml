@@ -59,7 +59,7 @@
         <recipeMaker>
 			<researchPrerequisite>Celes_Bio_II</researchPrerequisite>
 			<recipeUsers>
-				<li>Celes_MultifunctionalTabA</li>
+				<li>Celes_LabNanoForge</li>
 			</recipeUsers>
             <skillRequirements>
                 <Crafting>6</Crafting>

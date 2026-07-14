@@ -10,8 +10,8 @@
 
     <RecipeDef ParentName="Celes_OwnSurgery">
         <defName>ExtractCelesNanoMachine</defName>
-        <label>Separate Dust-Mech from Blood</label>
-        <description>Celestia's blood is filled with Dust-Mech substances that constantly maintain their bodies, and some of them are in an initial state where they have not yet been instructed to reproduce themselves. \n\nThe purpose of this procedure is to isolate these initial state Dust-Mech substances while extracting Celestia's blood. This is an emergency option in extreme cases.Without enough blood, it is impossible to isolate enough Dust-Mech to be self-sustaining.</description>
+        <label>从血液中分离晶体</label>
+        <description>在星铃的血液中充盈着不断维护她们身体的尘构物质，而只有在稳态模式，其中一些处于尚未被施加指令，只能自我复制的初始状态。\n\n这一手术的目的便是在提取出星铃血液的同时，分离出这些初始状态尘构物质，而这些尘构会自主还原为我们所说的初始晶态材料。这是极端情况下的应急之选。如果没有足够的血液，便无法分离出足以自我维持的初始晶态材料。</description>
         <workerClass>Recipe_ExtractHemogen</workerClass>
         <jobString>Separating Dust-Mech from Blood.</jobString>
         <workAmount>500</workAmount>

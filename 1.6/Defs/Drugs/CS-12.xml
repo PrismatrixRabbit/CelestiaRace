@@ -44,11 +44,9 @@
             </outcomeDoers>
         </ingestible>
         <recipeMaker>
+            <label>编织指令：CS-12</label>
             <researchPrerequisite>Celes_Bio_II</researchPrerequisite>
-            <recipeUsers>
-                <li>DrugLab</li>
-            </recipeUsers>
-            <soundWorking>Recipe_Drug</soundWorking>
+            <displayPriority>1540</displayPriority>
         </recipeMaker>
         <costList>
             <Neutroamine>1</Neutroamine>

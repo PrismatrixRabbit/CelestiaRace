@@ -3,36 +3,33 @@
     
     <ResearchTabDef>
         <defName>Celes_ResearchTab</defName>
-        <label>celestia research</label>
-        <generalTitle>celestia research projects</generalTitle>
-        <generalDescription>.</generalDescription>
+        <label>星铃科技</label>
+        <generalTitle>星铃科技项目</generalTitle>
+        <generalDescription>通过推进这些研究项目破译星铃技术。这些来自遥远星系的访客对不少边缘世界科技都有改进方案，更掌握着一些难以复现的独特技术。</generalDescription>
     </ResearchTabDef>
-
+    
     <!-- ========== 过渡科技 ========== -->
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_I</defName><!-- 莹尘防风草 -->
-        <label>crystal orchid</label>
-        <description>Unlock the planting of ‘Crystal Orchid’, a strange plant whose fruits spontaneously take on a crystalline shape, grows slowly, and has extremely high requirements for the environment in which it grows. \n\nThe fruit of the crystal orchid has many properties that defy common sense, but has unusually harsh triggering conditions.</description>
-        <descriptionHyperlinks>
-            <ThingDef>Celes_RawParsnip</ThingDef>
-        </descriptionHyperlinks>
+        <defName>Celes_Plant_I</defName><!-- 莹尘防风草 -->
+        <label>莹尘防风草</label>
+        <description>解锁种植「莹尘防风草」。一种基因改造作物，其肉质根中富集了大量化工前体物质，可以轻易的被提取出使用。</description>
         <baseCost>300</baseCost>
         <techLevel>Medieval</techLevel>
         <researchViewX>0</researchViewX>
-        <researchViewY>1.8</researchViewY>
+        <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
             <li>Celes_ClassicStart</li>
         </tags>
     </ResearchProjectDef>
-
+    
     <!-- ========== 主要科技 ========== -->
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_II</defName><!-- 晶体融合加工 -->
-        <label>crystal catalytic process</label>
-        <description>Synchronise Celestia's pharmaceutical technology by extracting bio-enzyme gels from organic matter. Unlock Celestia's basic medicines, such as IAS-2 immune-activating stimulants, which prevents infections and plagues, and NS-90 nervous stimulants, which provides extra efficiency but causes fatigue.</description>
+        <defName>Celes_MainTech_II</defName><!-- 复制指令 -->
+        <label>复制指令</label>
+        <description>通过破译尘构指令符号集，初步理解如何利用电场诱导尘构自我复制。</description>
         <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -43,14 +40,14 @@
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
-        <discoveredLetterTitle>About: Self-replicating crystals</discoveredLetterTitle>
-        <discoveredLetterText>About: Self-replicating crystals</discoveredLetterText>
+        <discoveredLetterTitle>关于：尘构复制</discoveredLetterTitle>
+        <discoveredLetterText>这里之后用来介绍结晶器机制。</discoveredLetterText>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_II-5</defName><!-- 晶体场控锻造 -->
-        <label>Celes_MainTech_II-5</label>
-        <description>.</description>
+        <defName>Celes_MainTech_II-5</defName><!-- 锻造指令 -->
+        <label>锻造指令</label>
+        <description>尘构单元可以自然的用于材料的分子级加工。虽然当前的精度和加工速度都受限于我们对复杂尘构指令集编译的理解能力，但足以在一定程度上解决边缘世界"野生"钢铁材料的晶格缺陷问题。</description>
         <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -61,14 +58,12 @@
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
-        <discoveredLetterTitle>About: Self-replicating crystals</discoveredLetterTitle>
-        <discoveredLetterText>About: Self-replicating crystals</discoveredLetterText>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_III</defName><!-- 尘构纳米锻造 -->
-        <label>Dust-Mech technical interpretation</label>
-        <description>Decipher and research one of Celestia's unique technologies, Dust-Mech, a cybernetic-based programmable augmented nanomachine. Unlock the Dust-Mech emergency production method applicable to the Rimworld and unlock the actual standard Celestia technology.\n\n&lt;color=#87cefa&gt;"The Dust-Mech, known as the Adaptive Nano Calibration System, or ANCS, is a cybernetic-based augmented nanomachine developed by the Celestia civilisation. The Dust-Mech is capable of fusing different organisms with organisms, and organisms with machinery, and acts as a medium in which to acquire, transmit, and process information flows, and is highly adaptable when combined with intelligence. " - Parsed from Celestia's Self-explanatory Technology Core.&lt;/color&gt;</description>
+        <defName>Celes_MainTech_III</defName><!-- 复杂指令集编译 -->
+        <label>复杂指令集编译</label>
+        <description>基于尘构指令集进一步推进尘构技术的应用。无论是自行编译，换取还是盗取，一个更完整的尘构指令集都是必不可少的。\n\n&lt;color=#87cefa&gt;"尘构技术，适应性纳米校正系统(Nanotic Engineered Response Drones)，即N.E.R.D.。是一类基于控制论的增强纳米机械，能够在极端环境下自主运作，能够充当生物与机械系统之间的通用接口，感知，传递并处理多源信息流，并进一步将这些指令信息具象为物理世界的操作。" - 摘自星铃自译解技术核心&lt;/color&gt;</description>
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -86,11 +81,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_MainTech_IV</defName><!-- 适应性信息流 -->
-        <label>Dust-Mech reprogramming(WIP)</label>
-        <description>Dust-Mech reprogramming(WIP)</description>
-        <descriptionHyperlinks>
-            <ThingDef>CelesNanoManifold</ThingDef>
-        </descriptionHyperlinks>
+        <label>适应性信息流(WIP)</label>
+        <description>适应性信息流(WIP)</description>
         <baseCost>4000</baseCost>
         <techLevel>Ultra</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -109,10 +101,26 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_I</defName><!-- 星铃拓荒武器 -->
-        <label>Celestia pioneer weapons</label>
-        <description>Follow Celestia's standard to design pioneer weapons, allow for the creation of pioneer ice axes and the modification of simple firearms. \n\nThese antique-like designs are simply forged by forging them together with materials such as crystal capsules, yet they have the extraordinary performance of nano-precision rifling and self-airtightness.</description>
+        <label>星铃拓荒武器</label>
+        <description>依照星铃标准设计拓荒武器，允许制作拓荒冰镐，并改良简单枪械。注意：星铃的蓝图中只包括改进指南，而不包括武器本身的制造方案。\n\n这些古董般的设计，只是通过与晶蒴等材料一并锻造，就能有着纳米级精度的膛线与自气密的跨时代性能。</description>
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
+        <prerequisites>
+        </prerequisites>
+        <researchViewX>0</researchViewX>
+        <researchViewY>1.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Weapon_II</defName><!-- 星铃古典武器 -->
+        <label>星铃古典武器</label>
+        <description>按照星铃武器规范和弹药口径设计的古典武器，允许制作拓荒军刀等武器，并改良精准步枪。注意：星铃的蓝图中只包括改进指南，而不包括武器本身的制造方案。\n\n这种武器利用电化学推进发射弹药，有着夸张的能量密度，已经逼近一个工业文明所能企及的极限。这型号仍然用于星铃拓荒队的先锋小队中，或者被配发给前哨站居民防身，它们的历史却已经无从追溯。</description>
+        <baseCost>700</baseCost>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
             <li>Celes_MainTech_II</li>
         </prerequisites>
@@ -124,27 +132,9 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Weapon_II</defName><!-- 星铃古典武器 -->
-        <label>Celestia classical weapons</label>
-        <description>Classical weapons designed to Celestia's weapon specifications and ammunition calibres allowed for the crafting of weapons such as the Pathfinder Sabre and improved precision rifles. \n\nThis weapon utilises electrochemical propulsion to fire ammunition and has an exaggerated energy density. Still used in Celestia Topsy-Turvy pioneer squads or issued to outpost residents for self-defence, their history is untraceable.</description>
-        <baseCost>700</baseCost>
-        <techLevel>Industrial</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <prerequisites>
-            <li>Celes_Weapon_I</li>
-            <li>Celes_MainTech_II</li>
-        </prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>1.8</researchViewY>
-        <tab>Celes_ResearchTab</tab>
-        <tags>
-        </tags>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
         <defName>Celes_Weapon_III</defName><!-- 星铃制式武器 --><!-- 待编辑 -->
-        <label>Celestia standard-issue weapons(WIP)</label>
-        <description>Unlocks the crafting of Celestia standard firearms that emit high-energy polarised particle beams; the high-energy radiation attached to these weapons burns the target's body surface severely and interferes with the functioning of mechanics. It also allows the crafting of weapons such as Celestia standard monomolecular sabre. \n\nThese weapons had been phased out by the Celestia Navy for more than a century, but industry on the Rimworld did not support the production of naval weapons for the time being, and so these serviceable particle beam weapons became the standard for Celestia's pioneering teams as well.</description>
+        <label>星铃制式武器</label>
+        <description>解锁制作发射高能极化粒子束的星铃制式枪械，这些武器附带的高能辐射会对目标体表严重烧伤，并干扰机械体的运作。并允许制作制式单分子军刀等武器。\n\n这些武器曾被星铃海军淘汰百年有余，但基于边缘世界的工业暂不支持海军军规武器生产的现状，于是这些差强人意的粒子束武器便也成为拓荒队的标配。</description>
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -164,8 +154,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_IV</defName><!-- 试验性改造 --><!-- 待编辑 -->
-        <label>experimental modified weapons(WIP)</label>
-        <description>Allows for the manufacture of magnetic reconnection accelerators and radioactive high-energy plasma emitters, weapons derived from experimental modifications of old-time ship repair tools, but capable of bursting with exaggerated lethality.</description>
+        <label>试验性改造(WIP)</label>
+        <description>允许制造磁重联加速器与放射性高能等离子发射器，这种武器源于对旧时代飞船维修工具的试验性改造，但能爆发出夸张的杀伤力。</description>
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -184,8 +174,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_V</defName><!-- 北极星工程 -->
-        <label>Corona Borealis Programme(WIP)</label>
-        <description>Corona Borealis Programme(WIP)</description>
+        <label>北极星工程(WIP)</label>
+        <description>北极星工程(WIP)</description>
         <baseCost>10000</baseCost>
         <techLevel>Ultra</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -209,17 +199,17 @@
     <!-- ========== 生化科技 ========== -->
 
     <ResearchProjectDef>
-        <defName>Celes_Bio_I</defName><!-- 星铃生化标准 -->
-        <label>Celestia biochemical standard</label>
-        <description>Synchronise Celestia's pharmaceutical technology by extracting bio-enzyme gels from organic matter. Unlock Celestia's basic medicines, such as IAS-2 immune-activating stimulants, which prevents infections and plagues, and NS-90 nervous stimulants, which provides extra efficiency but causes fatigue.</description>
+        <defName>Celes_Bio_I</defName><!-- 编织指令 -->
+        <label>编织指令</label>
+        <description>尘构的指令集之中已经包含了对常见有机大分子的处理模型。借助这些精密的分子探针和人造酶，我们可以进一步优化我们的制药和材料技术。</description>
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_MainTech_II</li>
             <li>DrugProduction</li>
+            <li>Celes_Plant_I</li>
         </prerequisites>
         <hiddenPrerequisites>
-            <li>Celes_Apparel_I</li>
         </hiddenPrerequisites>
         <researchViewX>1</researchViewX>
         <researchViewY>3.0</researchViewY>
@@ -227,9 +217,9 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Bio_II</defName><!-- 星铃作战生化 -->
+        <defName>Celes_Bio_II</defName><!-- 分子药物编织 -->
         <label>Celestia combat biochemistry</label>
-        <description>Further analysis of Celestia's biochemical technology unlocks the creation of Celestia's combat drugs: CS-6 combat stimulants, which briefly stimulates tissue activity, and CS-12 combat hemostat, which accelerates wound healing. Please note that these drugs have deadly side effects at the cost of overloading cellular activity.</description>
+        <description>进一步解析星铃生化科技，解锁制作星铃作战药物。</description>
         <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -242,9 +232,9 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Bio_III</defName><!-- 尘构调用:灵能制药 -->
-        <label>Dust-Mech Call:Psychic Pharmaceuticals</label>
-        <description>Unlocks the crafting of "CPS-1 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances.</description>
+        <defName>Celes_Bio_III</defName><!-- 重序指令 -->
+        <label>重序指令</label>
+        <description>纯净的元素材料在边缘世界无法稳定供应，要创造更优质的材料，必须基于对现有材料的原子级重排序。\n\nUnlocks the crafting of "CPS-1 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances.</description>
         <baseCost>1500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -282,8 +272,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Medicine_I</defName><!-- 替代性制药 -->
-        <label>alternative medicine production</label>
-        <description>Slightly less efficient but highly self-sufficient use of bio-enzymatic gels as a feedstock to replace neutral amines in the production of medicine.</description>
+        <label>替代性制药</label>
+        <description>效率稍低但自给性极高，以介质凝胶为原料替代制药过程中的中性胺。</description>
         <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -495,7 +485,7 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_ManufactoryII</defName><!-- 模式化锻造理论 --><!-- 待编辑 -->
+        <defName>Celes_ManufactoryII</defName><!-- 大规模生产理论 --><!-- 待编辑 -->
         <label>Celes_ManufactoryII(WIP)</label>
         <description>Celes_ManufactoryII</description>
         <!-- 纳米离心机 纳米纤维织机 -->
@@ -518,8 +508,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_I</defName><!-- 星铃制衣标准 -->
-        <label>Celestia clothing standards</label>
-        <description>Based on complex clothing,further parsing the clothing standards which fit Celestia's body type. Unlock complex clothing for Celestia, such as trench coats, summer vests, and more.</description>
+        <label>星铃制衣标准</label>
+        <description>在复杂衣物的基础上，进一步研发贴合星铃体型的制衣标准。解锁适用于星铃复杂衣物，比如防风大衣，夏装背心等。</description>
         <baseCost>100</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
@@ -529,11 +519,11 @@
         <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
-    
+
     <ResearchProjectDef>
         <defName>Celes_Apparel_II</defName><!-- 星铃日常服装 -->
-        <label>Celestia daily wear</label>
-        <description>Allows for the creation of a variety of daily clothing styles common to Celestia society, such as various uniforms and stockings. These garments must be made on the Celestia tailoring tab to begin with.</description>
+        <label>星铃日常服装</label>
+        <description>允许制作星铃聚居地常见的各种日常服装款式，例如各种制服和丝袜。这些衣物开始必须在星铃的小型纳米锻炉上制作。</description>
         <baseCost>300</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -548,8 +538,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_III</defName><!-- 拓荒军队制服 -->
-        <label>pioneer military uniforms</label>
-        <description>Study the military clothing of the Celestia Pioneers, a uniform style that was once the uniform of the Celestia Marines and is now widely used in the Celestia Vanguard Squad.</description>
+        <label>拓荒军事制服</label>
+        <description>研究星铃拓荒队的军事服装，这种制服款式曾经是星铃海军陆战队的军装，如今则广泛的用于星铃先锋小队中。</description>
         <baseCost>1400</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -566,8 +556,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_III_a</defName><!-- 星铃专业服装 -->
-        <label>Celestia professional clothing</label>
-        <description>Study Celestia's professional clothing, most of which was developed during The Navigator Programme to adapt to unknown planetary environments and was used in a variety of special scenarios.</description>
+        <label>星铃专业服装</label>
+        <description>研究星铃拓荒队的专业服装，这些衣物大多是＂领航计划＂时期为了适应未知星球环境开发的特化服装，被用于各式特殊场景。</description>
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -582,8 +572,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_III_b</defName><!-- 星铃机械师服装 -->
-        <label>Celes_Apparel_III_b</label>
-        <description>Celes_Apparel_III_b</description>
+        <label>星铃机械师服装</label>
+        <description>研究适合星铃的机械师服装，这些衣物和星铃自身的灵能能力配合，可以提高星铃的机械体控制能力。</description>
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -601,8 +591,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_IV</defName><!-- 星铃动力突击装甲 -->
-        <label>Celestia power assault armour(WIP)</label>
-        <description>Unlocking the Celestia Power Assault Armour, based on the IEVA suits, combines a portion of the technology once used for the security forces of Celestia's Outer Rim domains to create a power assault armour that belongs to Celestia. \n\nThe standard power armour that was really used for Celestia's navy is difficult to make in the Rimworld, but this armour is also sufficient to face the intensity of conflict in the Rimworld.</description>
+        <label>星铃动力突击装甲(WIP)</label>
+        <description>解锁星铃动力突击盔甲，在太空活动防护服的基础上，结合一部分曾用于星铃外环星域治安部队的技术制作出属于星铃的动力突击装甲。\n\n那些真的会被母星系武装力量使用的标准动力装甲，连材料都在边缘世界难以制造，但这种装甲也足够面对边缘世界的冲突烈度。</description>
         <baseCost>6000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -624,8 +614,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_V</defName><!-- 北冕座项目 -->
-        <label>Corona Borealis Programme(WIP)</label>
-        <description>Corona Borealis Programme(WIP)</description>
+        <label>北冕座项目(WIP)</label>
+        <description>北冕座项目是星铃拓荒队自行研发的新一代动力装甲，这些装备上还能看见来自星铃母星系的一些余影。</description>
         <baseCost>10000</baseCost>
         <techLevel>Ultra</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -644,8 +634,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_VI</defName><!-- 英仙座工程 -->
-        <label>Corona Borealis Programme(WIP)</label>
-        <description>Corona Borealis Programme(WIP)</description>
+        <label>英仙座工程(WIP)</label>
+        <description>英仙座工程(WIP)</description>
         <baseCost>10000</baseCost>
         <techLevel>Ultra</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>

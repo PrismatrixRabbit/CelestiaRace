@@ -4,8 +4,9 @@
     <ThingDef Name="Celes_EarlyGunBase" ParentName="BaseMakeableGun" Abstract="True">
         <recipeMaker>
             <recipeUsers Inherit="false">
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
+            <displayPriority>5000</displayPriority>
         </recipeMaker>
         <weaponTags>
             <li>Celes_EarlyWeapon</li>
@@ -26,9 +27,9 @@
             <soundWorking>Recipe_Smith</soundWorking>
             <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
             <recipeUsers Inherit="false">
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
-            <displayPriority>210</displayPriority>
+            <displayPriority>5300</displayPriority>
         </recipeMaker>
         <weaponTags>
             <li>Celes_MidWeapon</li>

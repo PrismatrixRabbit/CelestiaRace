@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<loadFolders>
+	<v1.6>
+		<li>1.6</li>
+		<li>Contents</li>
+		<li IfModActive="fxz.glitterworlddestroyer.mk5">Glitterworlddestroyermk4</li>
+		<li IfModActive="Moyo_Mechanics_Alliance.alpha">Scenarios</li>
+    </v1.6>
+</loadFolders>

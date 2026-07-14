@@ -8,6 +8,17 @@
         <tradeTags Inherit="false">
             <li>Celes_Drugs</li>
         </tradeTags>
+        <recipeMaker>
+            <effectWorking>Cremate</effectWorking>
+            <soundWorking>Recipe_Drug</soundWorking>
+            <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+            <workSkill>Intellectual</workSkill>
+            <recipeUsers>
+                <li>Celes_LabNanoForge</li>
+            </recipeUsers>
+            <bulkRecipeCount>-1</bulkRecipeCount>
+            <displayPriority>1520</displayPriority>
+        </recipeMaker>
     </ThingDef>
 
     <ThingDef Name="Celes_MakeableDrugPillBase" ParentName="MakeableDrugPillBase" Abstract="True">
@@ -17,6 +28,9 @@
         <tradeTags Inherit="false">
             <li>Celes_Drugs</li>
         </tradeTags>
+        <recipeMaker>
+            <soundWorking>Recipe_Cremate</soundWorking>
+        </recipeMaker>
     </ThingDef>
 
 </Defs>

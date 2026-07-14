@@ -4,8 +4,9 @@
     <ThingDef Name="Celes_EarlyMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
         <recipeMaker>
             <recipeUsers Inherit="false">
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
+            <displayPriority>4000</displayPriority>
         </recipeMaker>
         <techLevel>Industrial</techLevel>
         <weaponTags>
@@ -22,8 +23,9 @@
     <ThingDef Name="Celes_MidMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
         <recipeMaker>
             <recipeUsers Inherit="false">
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
+            <displayPriority>4300</displayPriority>
         </recipeMaker>
         <techLevel>Industrial</techLevel>
         <weaponTags>

@@ -3,37 +3,575 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_IndustryProduction.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_Utility.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.5/Defs/ThingDefs_Item/Items_Utility.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Human.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Human.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Base.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Middle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Middle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_OverHead.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_OverHead.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/Drugs/CPS-1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Drugs/CPS-1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Drugs/CS-12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Drugs/CS-12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Drugs/CS-6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Drugs/CS-6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Drugs/DrugBases.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Drugs/DrugBases.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Drugs/IAS-2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Drugs/IAS-2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Drugs/NS-90.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Drugs/NS-90.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/Drugs/RS-1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Drugs/RS-1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/HediffDefs/BodyParts/Hediffs_BodyParts_Servant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/HediffDefs/BodyParts/Hediffs_BodyParts_Servant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/FactionDefs/AidOption.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/HediffDefs/Hediffs_Psycast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/HediffDefs/Hediffs_Psycast.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Work.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_Base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_Base.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_AdvancedResource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_AdvancedResource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_AutoProduction.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_BaseResourse.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_Utility.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_Utility.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ResearchProjectDefs/CelesResearchProjects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ResearchProjectDefs/CelesResearchProjects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Surgery/Surgery_DustMechRhythm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Surgery/Surgery_DustMechRhythm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/Surgery/Surgery_implant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Surgery/Surgery_implant.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingCategoryDefs/ThingCategories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingCategoryDefs/ThingCategories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_AutoProduction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_AutoProduction.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_AutoProduction.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Production.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Production.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_AdvancedResource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_AdvancedResource.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_BaseResourse.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Utility.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Utility.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Plants/Plants_Resources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Plants/Plants_Resources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Race/Race_Abyssia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Race/Race_Abyssia.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Race/Race_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Race/Race_Celes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryMelee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryMelee.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_SpacerMelee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_SpacerMelee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/TraderKindDefs/Celes_TraderKinds_Base_Pioneer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/TraderKindDefs/Celes_TraderKinds_Base_Pioneer.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/TraderKindDefs/Celes_TraderKinds_Caravan_Pioneer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/TraderKindDefs/Celes_TraderKinds_Caravan_Pioneer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ResearchProjectDef/CelesResearchProjects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ResearchProjectDef/CelesResearchProjects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Items_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Items_BaseResourse.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Plants_Resources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Plants_Resources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/Keyed/Key.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/Keyed/Key.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/WorkGivers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/WorkGivers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.AlienBackstoryDef/Backstory_CelesAdult_Outlander.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.AlienBackstoryDef/Backstory_CelesAdult_Space.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.AlienBackstoryDef/Backstory_CelesAdult_Special.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.AlienBackstoryDef/Backstory_CelesChild.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.ThingDef_AlienRace/Race_Abyssia.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/AlienRace.ThingDef_AlienRace/Race_Celestia.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ApparelLayerDef/Apparel_Layer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/BodyDef/Bodies_Abyssia.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/BodyDef/Bodies_Celes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/BodyPartDef/BodyParts_Abyssia.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/BodyPartDef/BodyParts_Celes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/CelesFeature.AidOptionDef/AidOption.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/CultureDef/Cultures.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/DamageDef/Celes_BulletDamage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/DesignationCategoryDef/DesignationCategories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/FactionDef/Factions_Celes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HairDef/Hairs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Apparel_Human.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/CPS-1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/CS-12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/CS-6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_BodyParts_Servant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_Bodyparts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_DustMechRhythm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Hediffs_Mechanitor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/IAS-2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/NS-90.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/RS-1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/HediffDefs/Radiation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/PawnKindDef/PawnKinds_General.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/PawnKindDef/PawnKinds_Human.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/QuestScriptDef/Celes_Scripts_Permits.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Hediffs_Bodyparts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Hediffs_Mechanitor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Items_Utility.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Nanomachine_Hediff.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Recipes_AdvancedResource.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Recipes_BaseResourse.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Surgery_DustMechRhythm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/RecipeDefs/Surgery_implant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ResearchProjectDef/CelesResearchProjects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ResearchTabDef/CelesResearchProjects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/RulePackDef/RulePacksNamers_Celes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/RulePackDef/RulePacks_LeaderTitles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ScenarioDef/Celes_Scenarios.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/TattooDef/Tattoo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingCategoryDef/ThingCategories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Apparel_Human.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Apparel_Middle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Apparel_OnSkin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Apparel_Shell.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Apparel_Underwear.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Building_Production.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/CPS-1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/CS-12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/CS-6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Celes_IndustryMelee.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Celes_IndustryRange.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Celes_SpacerMelee.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Celes_SpacerRange.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Celes_Special.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Ethereal_Artilleries.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Hediffs_Bodyparts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/IAS-2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Items_AdvancedResource.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Items_BaseResourse.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Items_Utility.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/NS-90.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/Plants_Resources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThingDef/RS-1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThoughtDef/NS-90.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThoughtDef/Thoughts_DustMechRhythm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/TraderKindDef/Celes_TraderKinds_Caravan_Pioneer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/TraderKindDef/Celes_TraderKinds_Visitor_Pioneer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/DefInjected/WorkGiverDef/WorkGivers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/Keyed/Key.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/Strings/Names/Celes_First.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/Strings/Names/Celes_Last.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/Strings/Names/Celes_Nick.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/Strings/Names/Celes_Number.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/Strings/Names/Celes_Position.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/ChineseSimplified (简体中文)/Strings/Names/Celes_Site.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/English/Keyed/Key.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/English/Strings/Names/Celes_First.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/English/Strings/Names/Celes_Last.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/English/Strings/Names/Celes_Nick.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/English/Strings/Names/Celes_Number.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/English/Strings/Names/Celes_Position.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Languages/English/Strings/Names/Celes_Site.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_west.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarL/CelesEarL_westm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_west.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/EarR/CelesEarR_westm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/misc/IMG_2692.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Ear/misc/IMG_2693.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Tail/CelesTail_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Tail/CelesTail_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Tail/CelesTail_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Tail/CelesTail_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Tail/CelesTail_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Addon/Tail/CelesTail_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/ApparelAddon/SummerVest/SummerVestAddon_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/ApparelAddon/SummerVest/SummerVestAddon_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/ApparelAddon/SummerVest/SummerVestAddon_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/ExploreCoat.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/ExploreVest.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/IMG_2769.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/IMG_2770.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/KitchenApron.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/LightLegArmour/LightLegArmour.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/LightLegArmour/LightLegArmour_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/StockingBlack/StockingBlack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/StockingBlack/StockingBlack_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/StockingBlack/StockingBlack_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/StockingBlack/StockingBlack_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/SuspenderBlack/SuspenderBlack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/SuspenderBlack/SuspenderBlack_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/SuspenderBlack/SuspenderBlack_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/SuspenderBlack/SuspenderBlack_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/TightBlack/TightBlack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/TightBlack/TightBlack_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/TightBlack/TightBlack_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Legwear/TightBlack/TightBlack_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/LightLegArmour.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/LightPowerArmour.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/MilitaryHat.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/Sunglasses.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/TacticalVest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/TrenchCoat/TrenchCoat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/TrenchCoat/TrenchCoat_Female_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/TrenchCoat/TrenchCoat_Female_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/TrenchCoat/TrenchCoat_Female_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/TrenchCoat/TrenchCoat_Female_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/TrenchCoat/TrenchCoat_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/TrenchCoat/TrenchCoat_Female_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/WinterHat.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/.废案/WinterSweater_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/KitchenApron/KitchenApron.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/KitchenApron/KitchenApron_Female_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/KitchenApron/KitchenApron_Female_eastm.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/KitchenApron/KitchenApron_Female_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/KitchenApron/KitchenApron_Female_northm.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/KitchenApron/KitchenApron_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/KitchenApron/KitchenApron_Female_southm.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/LightPowerArmour/LightPowerArmour.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/LightPowerArmour/LightPowerArmour_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/MidPowerArmour/MidPowerArmour.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/MidPowerArmour/MidPowerArmour_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/TacticalVest/TacticalVest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/TacticalVest/TacticalVest_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/TacticalVest/TacticalVest_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Middle/TacticalVest/TacticalVest_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Null/Null.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Null/Null_Female.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CivilianUniform/CivilianUniform_Female_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/ClassicalGown/ClassicalGown.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/ClassicalGown/ClassicalGown_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CombatSuitJK/CombatSuitJK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CombatSuitJK/CombatSuitJK_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CombatSuitJK/CombatSuitJK_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CombatSuitJK/CombatSuitJK_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CombatSuitTactical/CombatSuitTactical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/CombatSuitTactical/CombatSuitTactical_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/ExploreVest/ExploreVest.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/ExploreVest/ExploreVest_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/ExploreVest/ExploreVest_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/ExploreVest/ExploreVest_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/MilitaryUniform/MilitaryUniform.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/MilitaryUniform/MilitaryUniform_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/MilitaryUniform/MilitaryUniform_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/MilitaryUniform/MilitaryUniform_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/SummerVest/SummerVest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/SummerVest/SummerVest_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/SummerVest/SummerVest_Female_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/SummerVest/SummerVest_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/SummerVest/SummerVest_Female_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/SummerVest/SummerVest_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/SummerVest/SummerVest_Female_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/Tribal/Tribal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/Tribal/Tribal_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/Tribal/Tribal_Female_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/Tribal/Tribal_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/Tribal/Tribal_Female_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/Tribal/Tribal_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/Tribal/Tribal_Female_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/WinterSweater/WinterSweater.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/WinterSweater/WinterSweater_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/WinterSweater/WinterSweater_Female_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/WinterSweater/WinterSweater_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/WinterSweater/WinterSweater_Female_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/WinterSweater/WinterSweater_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OnSkin/WinterSweater/WinterSweater_Female_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OverHead/MilitaryHat/MilitaryHat.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OverHead/MilitaryHat/MilitaryHat_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OverHead/MilitaryHat/MilitaryHat_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OverHead/MilitaryHat/MilitaryHat_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OverHead/TacticalHelmet/TacticalHelmet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OverHead/TacticalHelmet/TacticalHelmet_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OverHead/TacticalHelmet/TacticalHelmet_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/OverHead/TacticalHelmet/TacticalHelmet_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ExploreCoat/ExploreCoat.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ExploreCoat/ExploreCoat_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ExploreCoat/ExploreCoat_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ExploreCoat/ExploreCoat_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/FieldCoat/FieldCoat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/FieldCoat/FieldCoat_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/FieldCoat/FieldCoat_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/FieldCoat/FieldCoat_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/LabCoat/LabCoat.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/LabCoat/LabCoat_Female_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/LabCoat/LabCoat_Female_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/LabCoat/LabCoat_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/MilitaryCoat/MilitaryCoat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/MilitaryCoat/MilitaryCoat_Female_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/MilitaryCoat/MilitaryCoat_Female_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/MilitaryCoat/MilitaryCoat_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Fat_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Fat_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Fat_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Hulk_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Hulk_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Hulk_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Male_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Male_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Male_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Thin_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Thin_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/ServantCoat/ServantCoat_Thin_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/SummerCoat/SummerCoat.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/SummerCoat/SummerCoat_Female_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/SummerCoat/SummerCoat_Female_eastm.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/SummerCoat/SummerCoat_Female_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/SummerCoat/SummerCoat_Female_northm.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/SummerCoat/SummerCoat_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/SummerCoat/SummerCoat_Female_southm.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/TrenchCoat/TrenchCoat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/TrenchCoat/TrenchCoat_Female_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/TrenchCoat/TrenchCoat_Female_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/TrenchCoat/TrenchCoat_Female_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/TrenchCoat/TrenchCoat_Female_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/TrenchCoat/TrenchCoat_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/TrenchCoat/TrenchCoat_Female_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/WinterCoat/WinterCoat.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/WinterCoat/WinterCoat_Female_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/WinterCoat/WinterCoat_Female_eastm.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/WinterCoat/WinterCoat_Female_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/WinterCoat/WinterCoat_Female_northm.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/WinterCoat/WinterCoat_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/WinterCoat/WinterCoat_Female_southm.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Shell/misc/ExploreCoat_Female_southm.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/ExploreUnderwear/ExploreUnderwear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/ExploreUnderwear/ExploreUnderwear_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/ExploreUnderwear/ExploreUnderwear_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/ExploreUnderwear/ExploreUnderwear_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/SwimsuitA/SwimsuitA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/SwimsuitA/SwimsuitA_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/SwimsuitA/SwimsuitA_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/SwimsuitA/SwimsuitA_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/SwimsuitB/SwimsuitB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/SwimsuitB/SwimsuitB_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/SwimsuitB/SwimsuitB_Female_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/SwimsuitB/SwimsuitB_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/SwimsuitB/SwimsuitB_Female_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/SwimsuitB/SwimsuitB_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/SwimsuitB/SwimsuitB_Female_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearA/UnderwearA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearA/UnderwearA_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearA/UnderwearA_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearA/UnderwearA_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearB/UnderwearB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearB/UnderwearB_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearB/UnderwearB_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearB/UnderwearB_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearC/UnderwearC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearC/UnderwearC_Female_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearC/UnderwearC_Female_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Apparel/Underwear/UnderwearC/UnderwearC_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Body/Naked_Female_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Body/Naked_Female_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Body/Naked_Female_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Body/Naked_Thin_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Body/Naked_Thin_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Body/Naked_Thin_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Body/R18ver/Naked_Female_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_MultifunctionalTabA/Celes_MultifunctionalTabA_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_MultifunctionalTabA/Celes_MultifunctionalTabA_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_MultifunctionalTabA/Celes_MultifunctionalTabA_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_MultifunctionalTabB/Celes_MultifunctionalTabB_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_MultifunctionalTabB/Celes_MultifunctionalTabB_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_MultifunctionalTabB/Celes_MultifunctionalTabB_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_PropagateRadiator/Celes_PropagateRadiator_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_PropagateRadiator/Celes_PropagateRadiator_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_PropagateRadiator/Celes_PropagateRadiator_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_PropagateTerminal/Celes_PropagateTerminal_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_PropagateTerminal/Celes_PropagateTerminal_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_PropagateTerminal/Celes_PropagateTerminal_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_TailoringTab/Celes_TailoringTab_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_TailoringTab/Celes_TailoringTab_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/Celes_TailoringTab/Celes_TailoringTab_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/CentralControlTower/CentralControlTower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/DrillTerminal/DrillTerminal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/ForgeTerminal/ForgeTerminal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/TransformTerminal/TransformTerminal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/misc/Celes_MultifunctionalTab_west.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/misc/Celes_PropagateCan_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/misc/Celes_PropagateCan_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/misc/Celes_PropagateCan_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Building/misc/Celes_TailoringTab_west.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/CPS1/CPS1_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/CPS1/CPS1_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/CPS1/CPS1_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/CS12/CS12_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/CS12/CS12_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/CS12/CS12_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/CS6/CS6_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/CS6/CS6_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/CS6/CS6_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/IAS2/IAS2_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/IAS2/IAS2_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/IAS2/IAS2_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/NS90/NS90_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/NS90/NS90_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/NS90/NS90_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/RS1/RS1_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/RS1/RS1_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Drugs/RS1/RS1_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Faction/CelesFactionVII_Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Faction/CelesFaction_Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB1_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB1_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB1_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB2_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB2_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB2_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB3_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB3_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB3_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairBack/CelesHairB_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair1_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair1_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair1_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair2_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair2_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair2_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair3_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair3_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair3_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/HairFront/CelesHair_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/Null/Null_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/Null/Null_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Hair/Null/Null_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN1_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN1_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN1_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN1_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN1_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN1_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN2_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN2_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN2_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN2_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN2_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN2_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN3_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN3_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN3_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN3_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN3_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN3_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN4_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN4_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN4_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN4_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN4_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN4_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN5_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN5_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN5_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN5_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN5_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN5_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN6_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN6_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN6_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN6_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN6_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN6_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN7_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN7_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN7_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN7_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN7_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN7_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN8_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN8_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN8_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN8_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN8_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN8_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN9_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN9_eastm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN9_north.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN9_northm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN9_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Head/CelesHeadN9_southm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/AdvancedResource/AdvanceCloth/AdvanceCloth_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/AdvancedResource/AdvanceCloth/AdvanceCloth_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/AdvancedResource/AdvanceCloth/AdvanceCloth_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/AdvancedResource/IndustrialChips/IndustrialChips_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/AdvancedResource/IndustrialChips/IndustrialChips_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/AdvancedResource/SpaceWeapenComponent/SpaceWeapenComponent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/Alloy/Alloy_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/Alloy/Alloy_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/BioGel/BioGel_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/BioGel/BioGel_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/BioGel/BioGel_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/NanoCrystallisedCorpse/NanoCrystallisedCorpse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/NanoMachine/NanoMachine_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/NanoMachine/NanoMachine_B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/NanoMachine/NanoMachine_C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/NanoMachineCrystal/NanoMachineCrystal_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/NanoMachineCrystal/NanoMachineCrystal_B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/NanoManifold/NanoManifold_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/NanoManifold/NanoManifold_B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/NanoManifold/NanoManifold_C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/RawCrystalOrchid/RawCrystalOrchid_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/RawCrystalOrchid/RawCrystalOrchid_B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/BaseResource/RottenNanoCrystallisedCorpse/RottenNanoCrystallisedCorpse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/MechlinkAuthorization/MechlinkAuthorization.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Misc/Alloy_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Misc/CelesCloth/CelesCloth_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Misc/CelesCloth/CelesCloth_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Misc/CelesCloth/CelesCloth_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Misc/Celes_NanoMachine_AbnormalVer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Misc/NegativeAlloy/NegativeAlloy_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Misc/NegativeAlloy/NegativeAlloy_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Misc/NegativeAlloy/NegativeAlloy_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Misc/PositiveAlloy/PositiveAlloy_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Misc/PositiveAlloy/PositiveAlloy_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Misc/PositiveAlloy/PositiveAlloy_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Unfinished/StoneChunks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Unfinished/UnfinishedCrystal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Utility/CelesKeyCard/CelesKeyCard_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Utility/CelesKeyCard/CelesKeyCard_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Utility/Celes_STC/Celes_STC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Utility/Celes_STCLock/Celes_STCLock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Utility/MRE/MRE_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Utility/MRE/MRE_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Utility/MRE/MRE_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Utility/MedicineCeles/MedicineCeles_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Utility/MedicineCeles/MedicineCeles_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Item/Utility/MedicineCeles/MedicineCeles_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Plant/Plant_CelesNano/Plant_CelesNanoA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Plant/Plant_CelesNanoImmature/Plant_CelesNanoImmatureA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Tattoo/Component/Component_east.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Tattoo/Component/Component_north.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Tattoo/Component/Component_south.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/UI/Icons/CS6_B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/UI/Icons/IndustrialChips_B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/UI/Icons/NanoMachineCrystal_B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/UI/Icons/StoneChunks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Early/Celes_BoltActionRifle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Early/Celes_Hatchet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Early/Celes_Revolver.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Early/Celes_SemiAutoRifle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Early/Celes_Shotgun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Grenade/CelesSlimeGrenade_Projectile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Grenade/CelesSlimeGrenade_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Grenade/CelesSlimeGrenade_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Mid/Celes_AutoShotgun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Mid/Celes_DMR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Mid/Celes_Dagger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Mid/Celes_IceAxe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Mid/Celes_SAssault.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Mid/Celes_SR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Mid/Celes_Saber.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Mid/RPG投射物.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Mid/RPG筒.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/Celes_ChargePistol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/Celes_ChargeRifle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/Celes_ChargeSMG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/Celes_ChargeSniperRifle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/Celes_HMG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/Celes_Launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/Celes_MonoDagger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/Celes_MonoSaber.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/Celes_RelicSword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/energy_bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Weapon/Spacer/energy_bulletb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Wounds/CrystallisedEye_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Wounds/CrystallisedEye_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Wounds/ServantMask_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Wounds/ServantMask_south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/Celes/Wounds/ServantMask_west.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +605,7 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2tWBj3dEwQo3UTSs9FNbOqp4BGP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -77,14 +615,19 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -178,6 +721,33 @@
       <workItem from="1758552842015" duration="124000" />
       <workItem from="1758818837463" duration="125000" />
       <workItem from="1758913646945" duration="246000" />
+      <workItem from="1766412798988" duration="1295000" />
+      <workItem from="1766840581166" duration="174000" />
+      <workItem from="1770617548424" duration="972000" />
+      <workItem from="1771313210024" duration="3080000" />
+      <workItem from="1772023261895" duration="2202000" />
+      <workItem from="1772038600392" duration="728000" />
+      <workItem from="1772643815545" duration="717000" />
+      <workItem from="1772984445094" duration="1451000" />
+      <workItem from="1774077834367" duration="1153000" />
+      <workItem from="1775030262755" duration="1045000" />
+      <workItem from="1775146040942" duration="4030000" />
+      <workItem from="1776605553272" duration="3678000" />
+      <workItem from="1779407793546" duration="397000" />
+      <workItem from="1780440739086" duration="376000" />
+      <workItem from="1781535181724" duration="135000" />
+      <workItem from="1781535350426" duration="401000" />
+      <workItem from="1781623245925" duration="1090000" />
+      <workItem from="1781659378267" duration="5470000" />
+      <workItem from="1783019086086" duration="5086000" />
+      <workItem from="1783145493210" duration="688000" />
+      <workItem from="1783170952801" duration="6709000" />
+      <workItem from="1783253396713" duration="9834000" />
+      <workItem from="1783742414780" duration="4529000" />
+      <workItem from="1783833671851" duration="16120000" />
+      <workItem from="1783868007122" duration="648000" />
+      <workItem from="1783911488770" duration="24724000" />
+      <workItem from="1784008677699" duration="1274000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -331,7 +901,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756919784584</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="总之提交一下">
+      <option name="closed" value="true" />
+      <created>1766413542748</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1766413542748</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,6 +949,29 @@
     <MESSAGE value="修bug" />
     <MESSAGE value="建筑修bug，ui调整，派系bug，各种bug" />
     <MESSAGE value="修兔子荣家湾生科兼容bug，建筑和工业科技树beta" />
-    <option name="LAST_COMMIT_MESSAGE" value="修兔子荣家湾生科兼容bug，建筑和工业科技树beta" />
+    <MESSAGE value="总之提交一下" />
+    <option name="LAST_COMMIT_MESSAGE" value="总之提交一下" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

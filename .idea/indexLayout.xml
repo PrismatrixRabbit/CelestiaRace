@@ -5,6 +5,7 @@
     <explicitIncludes />
     <explicitExcludes>
       <Path>1.4</Path>
+      <Path>1.5</Path>
     </explicitExcludes>
   </component>
 </project>

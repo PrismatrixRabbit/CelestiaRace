@@ -1,49 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- ========== 早期植物 ========== -->
+    <!-- ========== 介质凝胶 ========== -->
 
-    <!-- 莹尘防风草 -->
-    <ThingDef ParentName="PlantFoodRawBase">
-        <defName>Celes_RawParsnip</defName>
-        <label>crystal capsule</label>
-        <description>The fruit of the crystal orchid, in the form of crystals, is very hard to the touch but seems unexpectedly edible ...... But how to eat it is another question.</description>
+    <ThingDef ParentName="ResourceBase"><!-- 介质凝胶 -->
+        <defName>Celes_BioGel</defName>
+        <label>介质凝胶</label>
+        <description>一种从植物中提取的凝胶状物质，富集了大量有效化学前体物质，其中的某些物质也能在特定环境下被催化成丝。</description>
         <descriptionHyperlinks>
             <ThingDef>Plant_CelesParsnip</ThingDef>
         </descriptionHyperlinks>
-        <possessionCount>10</possessionCount>
         <graphicData>
-            <texPath>Celes/Item/BaseResource/RawCrystalOrchid</texPath>
+            <texPath>Celes/Item/BaseResource/BioGel</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
         </graphicData>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
-            <MaxHitPoints>60</MaxHitPoints>
-            <MarketValue>1.2</MarketValue>
+            <MaxHitPoints>75</MaxHitPoints>
+            <MarketValue>1.9</MarketValue>
             <Mass>0.02</Mass>
-            <Flammability>1.2</Flammability>
+            <Flammability>0.7</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
         </statBases>
-        <comps>
-            <li Class="CompProperties_Rottable">
-                <daysToRotStart>40</daysToRotStart>
-                <rotDestroys>true</rotDestroys>
-            </li>
-        </comps>
-        <ingestible>
-            <preferability>RawTasty</preferability>
-            <tasteThought></tasteThought>
-            <foodType>VegetableOrFruit</foodType>
-        </ingestible>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Celes_TradeBase</li>
+        </tradeTags>
     </ThingDef>
 
-    <!-- ========== 基础资源 ========== -->
+    <!-- ========== 尘构材料 ========== -->
 
-    <!-- 自复制晶体 -->
-    <ThingDef ParentName="ResourceBase">
+    <ThingDef ParentName="ResourceBase"><!-- 初始晶簇 --><!-- 贴图未更新 -->
+        <defName>Celes_InitialCrystalCluster</defName>
+        <label>初始晶簇</label>
+        <description>初始晶簇是包含惰性尘构复制单元的晶体块，它就像是一块种子，被大量的晶态材料包裹着。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_InitialCrystallineMaterial</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Celes/Item/DustMech/InitialCrystalCluster</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.90</drawSize>
+        </graphicData>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>120</MarketValue>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase"><!-- 初始晶态材料 --><!-- 贴图未更新 -->
+        <defName>Celes_InitialCrystallineMaterial</defName>
+        <label>初始晶态材料</label>
+        <description>初始晶态材料是一系列结构化排布的晶体，本身也能归类为尘构，但通常作为其他尘构单元的简单复制原料。在接受外部模板或指令前，保持类似干细胞那样的多功能分化潜能，是尘构物质的通用前体储备。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_InitialCrystalCluster</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Celes/Item/DustMech/InitialCrystallineMaterial</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.90</drawSize>
+        </graphicData>
+        <stackLimit>150</stackLimit>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>3</MarketValue>
+            <Mass>0.5</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase"><!-- 晶化尘构单元 -->
         <defName>Celes_NanoMachine</defName>
-        <label>Self-replicating crystals</label>
-        <description>The strange crystals extracted from the crystal capsule are transparent yet it seems as if something is flowing inside, the lattice duplicating and dying out in it. It could be used to make special items belonging to Celestia's technology.</description>
+        <label>晶化尘构单元</label>
+        <description>名为尘构的基准分子机械，本质是一种模块化，受限再编程性的纳米级工具组。晶化形态为便于通过外源场控注入预设指令的，处于自然稳态的高密度排布结构。可以简单理解为无线编码的硅-碳基ASIC单元。功能包括物质重构、有限的自组装、分布式传感器、信息转译、组织修复和靶向药物输送。</description>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Celes/Item/BaseResource/NanoMachine</texPath>
+            <texPath>Celes/Item/DustMech/NanoMachine</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.85</drawSize>
         </graphicData>
@@ -51,7 +98,7 @@
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
             <MaxHitPoints>50</MaxHitPoints>
-            <MarketValue>12</MarketValue>
+            <MarketValue>42</MarketValue>
             <Mass>0.01</Mass>
             <Flammability>0</Flammability>
             <DeteriorationRate>0.1</DeteriorationRate>
@@ -61,98 +108,16 @@
             <li>Celes_Manufactured</li>
         </thingCategories>
         <tradeTags>
-            <li>Celes_Need</li>
-        </tradeTags>
-        <!-- <allowedArchonexusCount>20</allowedArchonexusCount> 这玩意到底干啥的-->
-    </ThingDef>
-
-    <!-- 活磁流体 -->
-    <ThingDef ParentName="ResourceBase">
-        <defName>Celes_LivingFerrofluid</defName>
-        <label>Celes_LivingFerrofluid</label>
-        <description>Celes_LivingFerrofluid.</description>
-        <tickerType>Normal</tickerType>
-        <graphicData>
-            <texPath>Celes/Item/BaseResource/NanoMachine</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.85</drawSize>
-        </graphicData>
-        <stackLimit>75</stackLimit>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <intricate>true</intricate>
-        <statBases>
-            <MaxHitPoints>50</MaxHitPoints>
-            <MarketValue>12</MarketValue>
-            <Mass>0.001</Mass>
-            <Flammability>0</Flammability>
-            <DeteriorationRate>0.1</DeteriorationRate>
-        </statBases>
-        <thingCategories>
-            <li>Celes_Manufactured</li>
-        </thingCategories>
-        <tradeTags>
-            <li>Celes_Need</li>
+            <li>Celes_TradeBase</li>
         </tradeTags>
     </ThingDef>
 
-    <ThingDef ParentName="ResourceBase"><!-- 多能介质凝胶 -->
-        <defName>Celes_BioGel</defName>
-        <label>bio-enzyme gels</label>
-        <description>A potent bio-enzyme gel extracted from organic matter is used to make Celestia's various specialised medicines.</description>
-        <possessionCount>5</possessionCount>
-        <tickerType>Normal</tickerType>
-        <graphicData>
-            <texPath>Celes/Item/BaseResource/BioGel</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.85</drawSize>
-        </graphicData>
-        <stackLimit>50</stackLimit>
-        <healthAffectsPrice>true</healthAffectsPrice>
-        <statBases>
-            <MaxHitPoints>75</MaxHitPoints>
-            <MarketValue>12</MarketValue>
-            <Mass>0.05</Mass>
-            <Flammability>0.7</Flammability>
-        </statBases>
-        <thingCategories>
-            <li>Celes_Manufactured</li>
-        </thingCategories>
-        <tradeTags>
-            <li>Celes_Need</li>
-        </tradeTags>
-        <allowedArchonexusCount>20</allowedArchonexusCount>
-    </ThingDef>
+    <!-- ========== 基础资源 ========== -->
 
-    <ThingDef ParentName="ResourceBase">
-        <defName>CelesNanoManifold</defName>
-        <label>the Dust-Mech Manifold</label>
-        <description>A powerful and highly controllable programmable nanomachine, one of the roots of Celestia's civilisation, used extensively. But in places like the Rimworld, where supplies are scarce, Dust-Mech matter does not shape the world as it pleases.</description>
-        <possessionCount>5</possessionCount>
-        <tickerType>Normal</tickerType>
-        <graphicData>
-            <texPath>Celes/Item/BaseResource/NanoManifold</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.85</drawSize>
-        </graphicData>
-        <stackLimit>60</stackLimit>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <intricate>true</intricate>
-        <statBases>
-            <MaxHitPoints>50</MaxHitPoints>
-            <MarketValue>12</MarketValue>
-            <Mass>0.001</Mass>
-            <Flammability>0</Flammability>
-        </statBases>
-        <thingCategories>
-            <li>Celes_Manufactured</li>
-        </thingCategories>
-        <allowedArchonexusCount>20</allowedArchonexusCount>
-    </ThingDef>
-    
-    <ThingDef ParentName="ResourceBase">
+    <ThingDef ParentName="ResourceBase"><!-- 淬铃合金 -->
         <defName>CelesAlloy</defName>
-        <label>Chime Alloy</label>
-        <description>Chime Alloy is a special Field-Induced Phase Transformation Alloy, named for the sound it makes on impact. Conventional metals are mixed into high performance alloys when doped into the appropriate crystal capsule, which can be stimulated by a specific electric field to transform into a different crystal structure.\n\nIt is used to make all manner of Celestia instruments, though not looked upon favourably in the home system, its ease of manufacture has made it a hit in the hands of Celestia pioneers on the Rimworld.</description>
+        <label>淬铃合金</label>
+        <description>淬铃合金是藉由尘构锻造的三相共晶复合钢材，对于星铃是准军规合金材料。因其在撞击时发出的声音而得名。\n\n这种轻质合金极易加工，且高度耐用，但晶格结构影响了这种材料的抗剪拉性能。常被用于制造各种星铃器械。尽管在母星系统中并不受青睐，但其廉价泛用的特性使其在边缘世界的星铃拓荒者手中大受欢迎。</description>
         <graphicData>
             <texPath>Celes/Item/BaseResource/Alloy</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -163,7 +128,7 @@
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
             <MarketValue>4.0</MarketValue>
-            <Mass>0.2</Mass>
+            <Mass>0.3</Mass>
             <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
@@ -209,12 +174,115 @@
         </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <tradeTags>
-            <li>Celes_Need</li>
+            <li>Celes_TradeBase</li>
         </tradeTags>
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>
     
-    <!-- ========== 纳米化素材 ========== -->
+    <ThingDef ParentName="ResourceBase"><!-- 尘构机械单元 -->
+        <defName>Celes_ChipComponent</defName>
+        <label>尘构机械单元</label>
+        <description>尘构机械单元以定制尘构单元取代通用零部件的局部机械结构，是一种被设计为在机械结构中携带分子信息索引的新型零部件，让零部件的材料本身可以对外部环境做出反应，从自我修复到信号激发。换而言之，让零部件本身作为一种可以反馈数据的传感器。</description>
+        <possessionCount>2</possessionCount>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/ChipComponent</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>55</MarketValue>
+            <Mass>0.9</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Celes_TradeBase</li>
+        </tradeTags>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase"><!-- 再纺棉纱 --><!-- 待平衡 & 待修正贴图 -->
+        <defName>Celes_Cloth</defName>
+        <label>再纺棉纱</label>
+        <description>再纺棉纱是基于介质凝胶成丝，掺入塑钢纤维构造的高分子纤维材料。棉布也能在一定程度上取代凝胶成丝。\n\n再纺棉纱相较于棉布并没有显著的防护优势，但其纤维结构总体而言更易加工。</description>
+        <graphicData>
+            <texPath>Celes/Item/AdvancedResource/AdvanceCloth</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <MarketValue>2.2</MarketValue>
+            <Mass>0.03</Mass>
+            <StuffPower_Armor_Sharp>0.46</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.10</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.22</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>4.0</DeteriorationRate>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>30</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <WorkToMake>0.8</WorkToMake>
+                <Flammability>1.0</Flammability>
+                <MaxHitPoints>1.0</MaxHitPoints>
+                <Beauty>1.0</Beauty>
+            </statFactors>
+            <categories>
+                <li>Fabric</li>
+            </categories>
+            <color>(230,230,242)</color>
+            <!--<color>(180,220,240)</color>-->
+            <commonality>0.02</commonality>
+        </stuffProps>
+        <thingCategories>
+            <li>Textiles</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Celes_TradeBase</li>
+        </tradeTags>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+
+    <!--<ThingDef ParentName="ResourceBase">
+        <defName>CelesNanoManifold</defName>
+        <label>the Dust-Mech Manifold</label>
+        <description>A powerful and highly controllable programmable nanomachine, one of the roots of Celestia's civilisation, used extensively. But in places like the Rimworld, where supplies are scarce, Dust-Mech matter does not shape the world as it pleases.</description>
+        <possessionCount>5</possessionCount>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/NanoManifold</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>60</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>12</MarketValue>
+            <Mass>0.001</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>20</allowedArchonexusCount>
+    </ThingDef>
+    
+    
+     ========== 纳米化素材 ========== 
 
     <ThingDef ParentName="UnfinishedBase">
         <defName>Celes_UnfinishedCrystal</defName>
@@ -254,7 +322,7 @@
         <thingCategories>
             <li>Manufactured</li>
         </thingCategories>
-    </ThingDef>
+    </ThingDef>-->
 
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_NanoCrystallisedCorpse</defName>

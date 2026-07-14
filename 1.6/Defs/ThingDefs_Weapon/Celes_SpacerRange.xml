@@ -2,6 +2,12 @@
 <Defs>
     
     <ThingDef Name="Celes_SpacerGunBase" ParentName="BaseMakeableGun" Abstract="True">
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li>Celes_LabNanoForge</li>
+            </recipeUsers>
+            <displayPriority>5500</displayPriority>
+        </recipeMaker>
         <weaponTags>
             <li>Celes_SpacerWeapon</li>
         </weaponTags>
@@ -46,7 +52,7 @@
                 <Crafting>9</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
@@ -124,7 +130,7 @@
                 <Crafting>8</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
@@ -202,7 +208,7 @@
                 <Crafting>10</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
@@ -281,7 +287,7 @@
                 <Crafting>12</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
         </recipeMaker>
         <costList>
@@ -376,7 +382,7 @@
                 <Crafting>12</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
         </recipeMaker>
         <costList>

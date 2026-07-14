@@ -224,9 +224,9 @@
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<recipeUsers>
-			<li>Celes_MultifunctionalTabA</li>
+			<li>Celes_LabNanoForge</li>
 		</recipeUsers>
-		<researchPrerequisite>Celes_MainTech_II</researchPrerequisite>
+		<!--<researchPrerequisite>Celes_MainTech_II</researchPrerequisite>-->
 		<skillRequirements>
 			<Crafting>4</Crafting>
 			<Intellectual>6</Intellectual>

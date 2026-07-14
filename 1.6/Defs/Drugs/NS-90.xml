@@ -48,13 +48,13 @@
             </outcomeDoers>
         </ingestible>
         <recipeMaker>
+            <label>编织指令：NS-90</label>
             <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
-            <recipeUsers>
-                <li>DrugLab</li>
-            </recipeUsers>
+            <displayPriority>1530</displayPriority>
         </recipeMaker>
         <costList>
-            <Celes_BioGel>4</Celes_BioGel>
+            <Celes_NanoMachine>1</Celes_NanoMachine>
+            <Celes_BioGel>8</Celes_BioGel>
         </costList>
         <comps>
             <li Class="CompProperties_Drug">

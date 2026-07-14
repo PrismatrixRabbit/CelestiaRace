@@ -109,7 +109,7 @@
         <recipeMaker>
             <researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
             <recipeUsers>
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
             <displayPriority>307</displayPriority>
         </recipeMaker>
@@ -169,7 +169,7 @@
 		<recipeMaker>
 			<researchPrerequisite>Celes_Apparel_IV</researchPrerequisite>
 			<recipeUsers>
-				<li>Celes_MultifunctionalTabA</li>
+				<li>Celes_LabNanoForge</li>
 			</recipeUsers>
 			<displayPriority>307</displayPriority>
 		</recipeMaker>
@@ -236,7 +236,7 @@
         <recipeMaker>
             <researchPrerequisite>Celes_Apparel_V</researchPrerequisite>
             <recipeUsers>
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
             <displayPriority>307</displayPriority>
         </recipeMaker>
@@ -303,7 +303,7 @@
         <recipeMaker>
             <researchPrerequisite>Celes_Apparel_V</researchPrerequisite>
             <recipeUsers>
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
             <displayPriority>307</displayPriority>
         </recipeMaker>

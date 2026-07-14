@@ -175,7 +175,7 @@
 		<recipeMaker>
 			<researchPrerequisite>Celes_Apparel_III</researchPrerequisite>
 			<recipeUsers>
-				<li>Celes_MultifunctionalTabA</li>
+				<li>Celes_LabNanoForge</li>
 			</recipeUsers>
 			<displayPriority>301</displayPriority>
 		</recipeMaker>

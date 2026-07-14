@@ -3,10 +3,39 @@
 
     <!-- ========== 先进资源 ========== -->
 
-    <ThingDef ParentName="ResourceBase">
+    <ThingDef ParentName="ResourceBase"><!-- 尘构基质 -->
+        <defName>Celes_Substrate</defName>
+        <label>尘构基质</label>
+        <description>尘构基质是一类高度可编程的纳米积木，需要基于基准尘构加入复杂的物理构成，是准工程用尘构模式。</description>
+        <graphicData>
+            <texPath>Celes/Item/AdvancedResource/NanoManifold</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>350</MarketValue>
+            <Mass>0.2</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Celes_TradeBase</li>
+        </tradeTags>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase"><!-- 尘化丝绸 --><!-- 待平衡 & 待修正贴图 -->
         <defName>CelesAdvanceCloth</defName>
-        <label>Dust-Mech Silk</label>
-        <description>A high-strength fabric made using Dust-Mech to reconfigure microscopic fibre structures. The formula is adapted to the environment of the Rimworld and is used to make all types of Celestia advanced clothing.</description>
+        <label>尘化丝绸</label>
+        <description>一种先进的高生物相容性特种纺织面料，在可接受的成本内几乎完美的兼顾了强度和性能。但在边缘世界，可行性最高的复现方案几乎必须在恶魔菇产生的纤维基础上利用尘构物质重新排序纤维结构。\n\nA high-strength fabric made using Dust-Mech to reconfigure microscopic fibre structures. The formula is adapted to the environment of the Rimworld and is used to make all types of Celestia advanced clothing.</description>
         <graphicData>
             <texPath>Celes/Item/AdvancedResource/AdvanceCloth</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -89,9 +118,9 @@
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <recipeUsers>
-                <li>Celes_MultifunctionalTabA</li>
+                <li>Celes_LabNanoForge</li>
             </recipeUsers>
-            <researchPrerequisite>Celes_MainTech_II</researchPrerequisite>
+            <!--<researchPrerequisite>Celes_MainTech_II</researchPrerequisite>-->
             <skillRequirements>
                 <Crafting>6</Crafting>
                 <Intellectual>4</Intellectual>

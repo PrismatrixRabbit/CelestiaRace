@@ -55,10 +55,9 @@
             </outcomeDoers>
         </ingestible>
         <recipeMaker>
+            <label>编织指令：RS-1</label>
             <researchPrerequisite>Celes_Bio_IV</researchPrerequisite>
-            <recipeUsers>
-                <li>DrugLab</li>
-            </recipeUsers>
+            <displayPriority>1550</displayPriority>
         </recipeMaker>
         <costList>
             <Celes_BioGel>10</Celes_BioGel>
