@@ -28,23 +28,39 @@
                 <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
             </xenotypeChances>
         </xenotypeSet>
-        <startingHediffs>
-            <li MayRequire="Ludeon.RimWorld.Biotech">
-                <def>MechlinkImplant</def>
-                <chance>1.0</chance>
-                <severity>0.5</severity>
+        <modExtensions>
+            <li Class="CelesFeature.PawnKindStartingHediffExtension">
+                <startingHediffGroups>
+                    <li>
+                        <entries>
+                            <li>
+                                <def>MechlinkImplant</def>
+                                <weight>1.0</weight>
+                                <severity>0.5</severity>
+                                <part>Brain</part>
+                            </li>
+                        </entries>
+                    </li>
+                    
+                    <li>
+                        <entries>
+                            <li>
+                                <def>Celes_MechlinkRestriction</def>
+                                <weight>1.0</weight>
+                                <severity>0.5</severity>
+                                <part>Brain</part>
+                            </li>
+                            <li>
+                                <def>Celes_StandardMechlink</def>
+                                <weight>0.003</weight>
+                                <severity>0.5</severity>
+                                <part>Brain</part>
+                            </li>
+                        </entries>
+                    </li>
+                </startingHediffGroups>
             </li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">
-                <def>Celes_MechlinkRestriction</def>
-                <chance>1.0</chance>
-                <severity>0.5</severity>
-            </li>
-            <!--<li>
-                <def>Celes_DustMechRhythm_Standard</def>
-                <chance>1.0</chance>
-                <severity>0.5</severity>
-            </li>-->
-        </startingHediffs>
+        </modExtensions>
         <specificApparelRequirements>
             <li>
                 <bodyPartGroup>Torso</bodyPartGroup>

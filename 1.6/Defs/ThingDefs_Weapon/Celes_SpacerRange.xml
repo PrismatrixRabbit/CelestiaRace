@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    
-    <ThingDef Name="Celes_SpacerGunBase" ParentName="BaseMakeableGun" Abstract="True">
+
+    <ThingDef Name="Celes_SpacerGunBase" ParentName="BaseGun" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
         <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
             <recipeUsers Inherit="false">
                 <li>Celes_LabNanoForge</li>
             </recipeUsers>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
             <displayPriority>5500</displayPriority>
         </recipeMaker>
         <weaponTags>
@@ -17,11 +23,11 @@
         <thingCategories Inherit="false">
             <li>Celes_WeaponsRanged</li>
         </thingCategories>
-		<comps>
-			<li Class="CompProperties_Biocodable"/>
-		</comps>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
     </ThingDef>
-    
+
     <ThingDef ParentName="Celes_SpacerGunBase">
         <defName>Celes_Spacer_Rifle</defName>
         <label>Celestia standard assault rifle</label>
@@ -34,6 +40,16 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Plasteel>60</Plasteel>
+            <Celes_SpaceWeapenComponent>3</Celes_SpaceWeapenComponent>
+        </costList>
         <statBases>
             <WorkToMake>51000</WorkToMake>
             <Mass>5.0</Mass>
@@ -43,28 +59,9 @@
             <AccuracyLong>0.55</AccuracyLong>
             <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
         </statBases>
-		<weaponTags>
-			<li>Celes_SpacerWeaponAssault</li>
-		</weaponTags>
-        <recipeMaker>
-            <researchPrerequisite>Celes_Weapon_III</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>9</Crafting>
-            </skillRequirements>
-            <recipeUsers Inherit="False">
-                <li>Celes_LabNanoForge</li>
-            </recipeUsers>
-        </recipeMaker>
-        <costList>
-            <Plasteel>60</Plasteel>
-            <Celes_SpaceWeapenComponent>3</Celes_SpaceWeapenComponent>
-        </costList>
-		<equippedStatOffsets>
-			<ShootingAccuracyPawn>3.0</ShootingAccuracyPawn>
-		</equippedStatOffsets>
-        <thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>3.0</ShootingAccuracyPawn>
+        </equippedStatOffsets>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
@@ -98,8 +95,222 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+        <weaponTags>
+            <li>Celes_SpacerWeaponAssault</li>
+        </weaponTags>
     </ThingDef>
-	
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>CelesBullet_medium_energy</defName>
+        <label>medium polarised particle projectile</label>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Celes_Particle</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <speed>90</speed>
+            <armorPenetrationBase>0.6</armorPenetrationBase>
+            <stoppingPower>0.9</stoppingPower>
+            <extraDamages>
+                <li>
+                    <def>EMP</def>
+                    <amount>20</amount>
+                    <chance>0.8</chance>
+                </li>
+                <li>
+                    <def>Burn</def>
+                    <amount>20</amount>
+                    <chance>0.8</chance>
+                </li>
+            </extraDamages>
+        </projectile>
+    </ThingDef>
+
+    <!-- ===== 模式 A 弹头 ===== -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>CelesBullet_ModeA</defName>
+        <label>mode A projectile</label>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bulletb</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Celes_Particle</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+            <speed>90</speed>
+            <armorPenetrationBase>0.6</armorPenetrationBase>
+            <stoppingPower>0.9</stoppingPower>
+        </projectile>
+    </ThingDef>
+    <!-- ===== 模式 B 弹头 ===== -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>CelesBullet_ModeB</defName>
+        <label>mode B projectile</label>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Celes_ParticleB</damageDef>
+            <damageAmountBase>14</damageAmountBase>
+            <speed>120</speed>
+            <armorPenetrationBase>0.75</armorPenetrationBase>
+            <stoppingPower>3.0</stoppingPower>
+        </projectile>
+    </ThingDef>
+    <!-- ===== 双模式测试武器 ===== -->
+    <ThingDef ParentName="Celes_SpacerGunBase">
+        <defName>Celes_TestDualMode</defName>
+        <label>测试武器</label>
+        <description>A test weapon with two shooting modes. Mode A: rapid fire with light rounds. Mode B: single heavy shot.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/Celes_StandardRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+            <WorkToMake>51000</WorkToMake>
+            <Mass>5.0</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.60</AccuracyMedium>
+            <AccuracyLong>0.55</AccuracyLong>
+            <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>3.0</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <costList>
+            <Plasteel>60</Plasteel>
+            <Celes_SpaceWeapenComponent>3</Celes_SpaceWeapenComponent>
+        </costList>
+        <verbs>
+            <!-- 模式 A：连射 -->
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>CelesBullet_ModeA</defaultProjectile>
+                <warmupTime>1.0</warmupTime>
+                <range>34.9</range>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <burstShotCount>6</burstShotCount>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+            <!-- 模式 B：单发重击 -->
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>CelesBullet_ModeB</defaultProjectile>
+                <warmupTime>1.5</warmupTime>
+                <range>39.9</range>
+                <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities><li>Blunt</li></capacities>
+                <power>9</power><cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities><li>Blunt</li><li>Poke</li></capacities>
+                <power>9</power><cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <comps>
+                <li Class="CelesFeature.Celes_CompProperties_MultiVerb">
+                    <verbInfos>
+                        <li>
+                            <iconPath>UI/Abilities/FireBurst</iconPath>
+                            <defaultLabel>压制能量</defaultLabel>
+                            <defaultDesc>Fire a burst of light rounds at a moderate rate.</defaultDesc>
+                        </li>
+                        <li>
+                            <iconPath>UI/Abilities/FireSpew</iconPath>
+                            <defaultLabel>集束能量</defaultLabel>
+                            <defaultDesc>Fire a single heavy armor-piercing round.</defaultDesc>
+                        </li>
+                    </verbInfos>
+                </li>
+            <li Class="CelesFeature.Celes_CompProperties_WeaponGlow">
+                <texPath>Celes/Weapon/Spacer/Celes_StandardRiflem</texPath>
+                <drawSize>(1.0,1.0)</drawSize>
+                <layerDepth>0.01</layerDepth>
+                <useMultiMode>true</useMultiMode>
+                <!--<colorA>(0.843,0.973,1.000)</colorA>
+                <colorB>(0.843,0.761,1.000)</colorB>-->
+                <colorA>(0.75,1,1)</colorA>
+                <colorB>(0.75,0.3,0.6)</colorB>
+                <pulseCycleSeconds>3</pulseCycleSeconds>
+                <alphaMin>0.10</alphaMin>
+                <alphaMax>0.65</alphaMax>
+            </li>
+            <li Class="CelesFeature.Celes_CompProperties_MuzzleEffect">
+                <texPath>Celes/Weapon/Spacer/Celes_StandardRiflef</texPath>
+                <drawSize>(1.2,1.2)</drawSize>
+                <layerDepth>0.01</layerDepth>
+                <muzzleDistance>0.5</muzzleDistance>
+                <fadeInTime>0.05</fadeInTime>
+                <holdTime>0.1</holdTime>
+                <fadeOutTime>0.25</fadeOutTime>
+            </li>
+        </comps>
+        <weaponTags>
+            <li>Celes_SpacerWeaponAssault</li>
+        </weaponTags>
+    </ThingDef>
+
+
+    <HediffDef>
+        <defName>Celes_MultiVerbSelect</defName>
+        <label>multi verb select</label>
+        <description>Multi Verb Select.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="CelesFeature.Celes_HediffCompProperties_MultiVerbSelect" />
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+    
+    <!-- <ThingDef Name="Celes_SpacerGunBase" ParentName="BaseMakeableGun" Abstract="True">
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li>Celes_LabNanoForge</li>
+            </recipeUsers>
+            <displayPriority>5500</displayPriority>
+        </recipeMaker>
+        <weaponTags>
+            <li>Celes_SpacerWeapon</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_SpacerWeapon</li>
+        </tradeTags>
+        <thingCategories Inherit="false">
+            <li>Celes_WeaponsRanged</li>
+        </thingCategories>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+    </ThingDef>
+    
 	<ThingDef ParentName="Celes_SpacerGunBase">
         <defName>Celes_Spacer_SMG</defName>
         <label>Celestia standard submachine gun</label>
@@ -467,29 +678,6 @@
     </ThingDef>
     
     <ThingDef ParentName="BaseBullet">
-        <defName>CelesBullet_medium_energy</defName>
-        <label>medium polarised particle projectile</label>
-        <graphicData>
-            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-                <damageDef>Celes_Particle</damageDef>
-                <damageAmountBase>12</damageAmountBase>
-                <speed>90</speed>
-                <armorPenetrationBase>0.6</armorPenetrationBase>
-                <stoppingPower>0.9</stoppingPower>
-            <extraDamages>
-                <li>
-                    <def>EMP</def>
-                    <amount>20</amount>
-                    <chance>0.8</chance>
-                </li>
-            </extraDamages>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
         <defName>CelesBullet_big_energy</defName>
         <label>massive polarised particle projectile</label>
         <graphicData>
@@ -526,5 +714,5 @@
             <speed>65</speed>
             <explosionRadius>3.9</explosionRadius>
         </projectile>
-    </ThingDef>
+    </ThingDef>-->
 </Defs>

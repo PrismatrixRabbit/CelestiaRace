@@ -103,20 +103,7 @@
         <defName>Celes_MechlinkAuthorization</defName>
         <label>celestia civilian mechlink restriction hacker</label>
         <description>A hacker made using a mechlink hub found in the Rimworld, combined with Dust-Mech. Used to forcibly disarm Celestia's mechlink restrictions that were set at the hardware level, and updated to Celestia standard mechlink.</description>
-        <descriptionHyperlinks><RecipeDef>RemoveCelesMechlinkRestriction</RecipeDef></descriptionHyperlinks>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Beauty>-2</Beauty>
-            <Mass>1</Mass>
-            <MarketValue>500</MarketValue>
-            <DeteriorationRate>0</DeteriorationRate>
-        </statBases>
-        <graphicData>
-            <texPath>Celes/Item/MechlinkAuthorization/MechlinkAuthorization</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.0</drawSize>
-        </graphicData>
-        
+
         <thingClass>ThingWithComps</thingClass>
         <category>Item</category>
         <drawerType>MapMeshOnly</drawerType>
@@ -131,48 +118,48 @@
         <thingCategories>
             <li>BodyPartsMechtech</li>
         </thingCategories>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>-2</Beauty>
+            <Mass>1</Mass>
+            <MarketValue>500</MarketValue>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <graphicData>
+            <texPath>Celes/Item/MechlinkAuthorization/MechlinkAuthorization</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+
         <comps>
+            <li Class="CompProperties_Forbiddable"/>
+
+            <li Class="CompProperties_Usable">
+                <useJob>CelesRemoveMechlinkRestriction</useJob>
+                <useLabel>覆写民用机控限制</useLabel>
+            </li>
+
+            <li Class="CelesFeature.Celes_CompProperties_RemoveMechlinkRestriction">
+                <requisiteHediffs>
+                    <li>MechlinkImplant</li>
+                    <li>Celes_MechlinkRestriction</li>
+                </requisiteHediffs>
+                <hediffToRemove>Celes_MechlinkRestriction</hediffToRemove>
+                <hediffToAdd>Celes_StandardMechlink</hediffToAdd>
+                <bodyPart>Brain</bodyPart>
+                <letterDef>PositiveEvent</letterDef>
+                <letterLabel>民用机控限制已覆写: {PAWN_labelShort}</letterLabel>
+                <letterText>{PAWN} 的民用机控限制已被覆写为星铃标准机控链接。</letterText>
+            </li>
+
+            <li Class="CompProperties_UseEffectPlaySound">
+                <soundOnUsed>MechlinkInstalled</soundOnUsed>
+            </li>
+
             <li Class="CompProperties_UseEffectDestroySelf" />
         </comps>
     </ThingDef>
-
-    <RecipeDef ParentName="Celes_Surgery" MayRequire="Ludeon.RimWorld.Biotech">
-        <defName>RemoveCelesMechlinkRestriction</defName>
-        <label>civilian mechlink de-restrictor</label>
-        <description>Use Dust-Mech machinery to forcibly remove the civilian limitations of the Celestia mechlink hub and update it to a standard Celestia mechlink.</description>
-        <descriptionHyperlinks>
-            <ThingDef>Celes_MechlinkAuthorization</ThingDef>
-            <HediffDef>Celes_MechlinkRestriction</HediffDef>
-            <HediffDef>Celes_StandardMechlink</HediffDef>
-        </descriptionHyperlinks>
-        <workerClass>Recipe_AddHediff</workerClass>
-        <jobString>Removing civilian mechlink restriction.</jobString>
-        <workAmount>1000</workAmount>
-        <hideBodyPartNames>true</hideBodyPartNames>
-        <isViolation>false</isViolation>
-        <targetsBodyPart>false</targetsBodyPart>
-        <addsHediff>Celes_StandardMechlink</addsHediff>
-        <surgerySuccessChanceFactor>10</surgerySuccessChanceFactor>
-        <anesthetize>false</anesthetize>
-        <skillRequirements>
-            <Intellectual>4</Intellectual>
-        </skillRequirements>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Celes_MechlinkAuthorization</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>Celes_MechlinkAuthorization</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-    </RecipeDef>
 
     <!-- ========== 星铃STC ========== -->
     

@@ -555,13 +555,13 @@
 					<headOffset>(0,0)</headOffset>
 					<headOffsetDirectional>
 						<north>
-							<offset>(0, -0.09)</offset>
+							<offset>(0, -0.08)</offset>
 							<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
 								<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
 							</bodyTypes>
 						</north>
 						<south>
-							<offset>(0, -0.05)</offset>
+							<offset>(0, -0.08)</offset>
 							<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
 								<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
 							</bodyTypes>

@@ -19,28 +19,48 @@
         </additionalHediffs>
         <impactSoundType>Bullet</impactSoundType>
     </DamageDef>
-
+    
     <DamageDef ParentName="Bullet">
         <defName>Celes_Particle</defName>
-        <modExtensions>
-            <li Class="CelesFeature.Celes_DamageExtension_Multiplier">
-                <multiplier>0.5</multiplier>
-            </li>
-        </modExtensions>
         <label>polarised particle projectile</label>
         <deathMessage>{0} was shot by a polarised particle.</deathMessage>
-        <!--<additionalHediffs>
-            <li>
-                <hediff>Burn</hediff>
-                <severityPerDamageDealt>0.5</severityPerDamageDealt>
-                <inverseStatScaling>true</inverseStatScaling>
-                <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
-            </li>
-        </additionalHediffs>-->
         <impactSoundType>Bullet</impactSoundType>
         <buildingDamageFactorImpassable>3</buildingDamageFactorImpassable>
         <buildingDamageFactorPassable>1.5</buildingDamageFactorPassable>
         <plantDamageFactor>3</plantDamageFactor>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_DamageExtension_ExtraDamages">
+                <extraDamages>
+                    <li>
+                        <def>Burn</def>
+                        <amount>8</amount>
+                        <armorPenetration>2.0</armorPenetration>
+                        <chance>0.8</chance>
+                    </li>
+                </extraDamages>
+            </li>
+        </modExtensions>
+    </DamageDef>
+
+    <DamageDef ParentName="Bullet">
+        <defName>Celes_ParticleB</defName>
+        <label>polarised particle projectile</label>
+        <deathMessage>{0} was shot by a polarised particle.</deathMessage>
+        <impactSoundType>Bullet</impactSoundType>
+        <buildingDamageFactorImpassable>3</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>1.5</buildingDamageFactorPassable>
+        <plantDamageFactor>3</plantDamageFactor>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_DamageExtension_ExtraDamages">
+                <extraDamages>
+                    <li>
+                        <def>EMP</def>
+                        <amount>75</amount>
+                        <chance>1.0</chance>
+                    </li>
+                </extraDamages>
+            </li>
+        </modExtensions>
     </DamageDef>
     
     <DamageDef ParentName="Bullet">

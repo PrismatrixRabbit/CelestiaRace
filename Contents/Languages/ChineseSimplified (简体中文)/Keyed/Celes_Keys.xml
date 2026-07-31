@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- 机控替换 -->
+    <Celes_Keyed_MissingRequiredHediff>未拥有{0}</Celes_Keyed_MissingRequiredHediff>
+    <Celes_Keyed_MissingBodyPart>缺少身体部位: {0}</Celes_Keyed_MissingBodyPart>
+
+    <!-- 额外伤害stats -->
+    <Celes_Keyed_ExtraDamageStatLabel>额外伤害</Celes_Keyed_ExtraDamageStatLabel>
+    <Celes_Keyed_ExtraDamageStatDesc>此武器造成的额外伤害值。\n\n这可能会被目标的护甲抵消或减轻。</Celes_Keyed_ExtraDamageStatDesc>
+    <Celes_Keyed_ExtraDamageStatHeader>{0}</Celes_Keyed_ExtraDamageStatHeader>
+    <Celes_Keyed_ExtraDamageStatValue>伤害值：{0}</Celes_Keyed_ExtraDamageStatValue>
+    <Celes_Keyed_ExtraDamageStatPenetration>护甲穿透：{0}</Celes_Keyed_ExtraDamageStatPenetration>
+    <Celes_Keyed_ExtraDamageStatChance>触发概率：{0}</Celes_Keyed_ExtraDamageStatChance>
+    <Celes_Keyed_ExtraDamageStatGuaranteed>必定触发</Celes_Keyed_ExtraDamageStatGuaranteed>
+    
+</LanguageData>
