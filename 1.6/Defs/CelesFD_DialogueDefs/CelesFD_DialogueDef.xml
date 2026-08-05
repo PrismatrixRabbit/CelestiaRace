@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ═══ 根树：测试选项A树（替换现有 7c 硬编码） ═══ -->
+    <CelesFeature.CelesFD_DialogueTreeDef>
+        <defName>RootTree_TestA</defName>
+        <startNode>N_RootA</startNode>
+        <isRoot>true</isRoot>
+    </CelesFeature.CelesFD_DialogueTreeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_RootA</defName>
+        <nodeText>The field department communication system is ready. Communication system log initialization complete. Nothing's written here yet, so you can play this little game.</nodeText>
+        <options>
+            <li>
+                <label>What little game?</label>
+                <next>N_RootA_Relay</next>   <!-- 循环回自身 -->
+            </li>
+            <li>
+                <label>Test Dialogue: Little Game</label>
+                <recordText>Enter test dialogue</recordText>
+                <enterTree>GameTree_Station</enterTree>
+            </li>
+            <li>
+                <label>Debug: Check Status</label>
+                <next>N_DebugInspect</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_RootA_Relay</defName>
+        <nodeText>This little game!</nodeText>
+        <options>
+            <li>
+                <label>What little game?</label>
+                <next>N_RootA_Relay</next>   <!-- 循环回自身 -->
+            </li>
+            <li>
+                <label>Test Dialogue: Little Game</label>
+                <recordText>Enter test dialogue</recordText>
+                <enterTree>GameTree_Station</enterTree>
+            </li>
+            <li>
+                <label>Debug: F*** you!</label>
+                <next>N_RootA_02</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_RootA_02</defName>
+        <nodeText>Why are you so mean?</nodeText>
+        <options>
+            <li>
+                <label>Continue</label>
+                <next>N_RootA</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <!-- ═══ 调试预留节点：进入时 dev message（D3/D4/D6 实现） ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_DebugInspect</defName>
+        <nodeText>Debug state inspection.</nodeText>
+        <options>
+            <li>
+                <label>Return</label>
+                <next>N_RootA</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <!-- ═══ 文字游戏树：空间站 ═══ -->
+    <CelesFeature.CelesFD_DialogueTreeDef>
+        <defName>GameTree_Station</defName>
+        <startNode>N0</startNode>
+        <isRoot>false</isRoot>
+    </CelesFeature.CelesFD_DialogueTreeDef>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- N0 → 中央走廊                                 -->
+    <!-- ═══════════════════════════════════════════ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N0</defName>
+        <nodeText>你站在废弃空间站的中央走廊。应急灯忽明忽暗，远处传来金属撞击声。三条路通往不同的区域：机库、仓库、研究所。</nodeText>
+        <options>
+            <li><label>A. 机库</label><next>HANGAR_ENTRY</next></li>
+            <li><label>B. 仓库</label><next>WH</next></li>
+            <li><label>C. 研究所</label><next>LAB_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 机库区域入口（根据土匪存活状态分流）         -->
+    <!-- ═══════════════════════════════════════════ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>HANGAR_ENTRY</defName>
+        <nodeText>你前往机库。</nodeText>
+        <options>
+            <li>
+                <isBranch>true</isBranch>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>soldiers_dead</varName><value>0</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>继续</label>
+                        <next>HANGAR</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>soldiers_dead</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>继续</label>
+                        <next>HANGAR_SAFE</next>
+                    </li>
+                </branches>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- HANGAR：土匪存活 -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>HANGAR</defName>
+        <nodeText>机库像一座黑暗的教堂。一艘小型星际飞船停在中央，两个土匪样貌的人影在舷梯旁巡逻。附近有一个翻倒的工具箱。</nodeText>
+        <options>
+            <li><label>A. 潜入飞船</label><next>HANGAR_SHIP</next></li>
+            <li><label>B. 搜索工具箱</label><next>HANGAR_TOOLS_ENTRY</next></li>
+            <li><label>C. 返回走廊</label><next>N0</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- HANGAR_SAFE：土匪已死 -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>HANGAR_SAFE</defName>
+        <nodeText>机库像一座黑暗的教堂。一艘小型星际飞船停在中央，两具土匪的尸体倒在舷梯旁。附近有一个翻倒的工具箱。</nodeText>
+        <options>
+            <li><label>A. 登上飞船</label><next>HANGAR_COCKPIT</next></li>
+            <li><label>B. 搜索工具箱</label><next>HANGAR_TOOLS_ENTRY</next></li>
+            <li><label>C. 返回走廊</label><next>N0</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- 潜入飞船被土匪发现 -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>HANGAR_SHIP</defName>
+        <nodeText>你压低身形靠近飞船，但一个土匪转身发现了你，举起步枪喊道：“不许动！”</nodeText>
+        <options>
+            <li>
+                <label>A. 射击</label>
+                <next>HANGAR_SHOOT</next>
+                <conditions>
+                    <li><varName>weapon</varName><value>1</value><comparison>Equal</comparison></li>
+                </conditions>
+            </li>
+            <li>
+                <label>A. 扑上去</label>
+                <next>DEATH_SOLDIER</next>
+                <conditions>
+                    <li><varName>weapon</varName><value>0</value><comparison>Equal</comparison></li>
+                </conditions>
+            </li>
+            <li><label>B. 虚张声势</label><next>DEATH_SOLDIER</next></li>
+            <li><label>C. 撒腿就跑</label><next>HANGAR</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- 射杀土匪，进入飞船 -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>HANGAR_SHOOT</defName>
+        <nodeText>你迅速拔枪射击，两名土匪应声倒下。</nodeText>
+        <options>
+            <li>
+                <label>A. 进入飞船</label>
+                <next>HANGAR_COCKPIT</next>
+                <sets>
+                    <li><varName>soldiers_dead</varName><value>1</value><op>Set</op></li>
+                </sets>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 工具箱子模块                                 -->
+    <!-- ═══════════════════════════════════════════ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>HANGAR_TOOLS_ENTRY</defName>
+        <nodeText>你开始搜索工具箱。</nodeText>
+        <options>
+            <li>
+                <isBranch>true</isBranch>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>weapon</varName><value>0</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>继续</label>
+                        <next>HANGAR_TOOLS_WEAPON</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>weapon</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>继续</label>
+                        <next>HANGAR_TOOLS_NO_WEAPON</next>
+                    </li>
+                </branches>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>HANGAR_TOOLS_WEAPON</defName>
+        <nodeText>工具箱里有等离子切割器、旧扳手和一截电缆。</nodeText>
+        <options>
+            <li>
+                <label>A. 拿走切割器</label>
+                <next>HANGAR_TOOLS_TAKE</next>
+                <sets>
+                    <li><varName>weapon</varName><value>1</value><op>Set</op></li>
+                    <li><varName>hangar_tools_searched</varName><value>1</value><op>Set</op></li>
+                </sets>
+            </li>
+            <li><label>B. 继续搜索</label><next>HANGAR_TOOLS_SEARCH</next></li>
+            <li><label>C. 离开</label><next>HANGAR_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>HANGAR_TOOLS_NO_WEAPON</defName>
+        <nodeText>工具箱里只剩下旧扳手和一截电缆。</nodeText>
+        <options>
+            <li><label>A. 继续搜索</label><next>HANGAR_TOOLS_SEARCH</next></li>
+            <li><label>B. 离开</label><next>HANGAR_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>HANGAR_TOOLS_TAKE</defName>
+        <nodeText>你拿走了等离子切割器，它沉甸甸的，可以当武器。</nodeText>
+        <options>
+            <li><label>A. 继续</label><next>HANGAR_TOOLS_NO_WEAPON</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>HANGAR_TOOLS_SEARCH</defName>
+        <nodeText>你又仔细翻了一遍，除了冰冷的金属味什么都没有。</nodeText>
+        <options>
+            <li><label>A. 返回</label><next>HANGAR_TOOLS_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 飞船驾驶舱                                   -->
+    <!-- ═══════════════════════════════════════════ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>HANGAR_COCKPIT</defName>
+        <nodeText>你进入驾驶舱。主屏幕显示：飞行系统待机。</nodeText>
+        <options>
+            <li><label>A. 检查起飞</label><next>CHECK_ROUTER</next></li>
+            <li><label>B. 尝试点火</label><next>IGNITE_ROUTER</next></li>
+            <li><label>C. 返回机库</label><next>HANGAR_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══ 检查起飞路由（动态分支） ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>CHECK_ROUTER</defName>
+        <nodeText>你启动了飞船自检。</nodeText>
+        <options>
+            <li>
+                <isBranch>true</isBranch>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>检查起飞</label>
+                        <next>CHECK_NONE</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>ai_core_inserted</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>检查起飞</label>
+                        <next>CHECK_AI</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>fuel_injected</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>检查起飞</label>
+                        <next>CHECK_FUEL</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>ai_core_inserted</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>fuel_injected</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>检查起飞</label>
+                        <next>CHECK_BOTH</next>
+                    </li>
+                </branches>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══ 检查起飞具体状态 ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>CHECK_NONE</defName>
+        <nodeText>AI 核心插槽和燃料管线都是空的。</nodeText>
+        <options>
+            <li>
+                <label>A. 插入 AI 核心</label>
+                <next>INSERT_AI</next>
+                <conditions>
+                    <li><varName>ai_core</varName><value>1</value><comparison>Equal</comparison></li>
+                    <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
+                </conditions>
+            </li>
+            <li><label>B. 检查 AI 插槽</label><next>INSPECT_AI_SLOT_EMPTY</next></li>
+            <li>
+                <label>C. 注入燃料</label>
+                <next>INSERT_FUEL</next>
+                <conditions>
+                    <li><varName>fuel</varName><value>1</value><comparison>Equal</comparison></li>
+                    <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                </conditions>
+            </li>
+            <li><label>D. 检查燃料管线</label><next>INSPECT_FUEL_LINE_EMPTY</next></li>
+            <li><label>E. 返回机库</label><next>HANGAR_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>CHECK_AI</defName>
+        <nodeText>AI 核心已插入，燃料管线为空。</nodeText>
+        <options>
+            <li><label>A. 检查 AI 核心</label><next>INSPECT_AI</next></li>
+            <li>
+                <label>B. 注入燃料</label>
+                <next>INSERT_FUEL</next>
+                <conditions>
+                    <li><varName>fuel</varName><value>1</value><comparison>Equal</comparison></li>
+                    <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                </conditions>
+            </li>
+            <li><label>C. 检查燃料管线</label><next>INSPECT_FUEL_LINE_EMPTY</next></li>
+            <li><label>D. 返回机库</label><next>HANGAR_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>CHECK_FUEL</defName>
+        <nodeText>燃料已注入，AI 核心插槽为空。</nodeText>
+        <options>
+            <li>
+                <label>A. 插入 AI 核心</label>
+                <next>INSERT_AI</next>
+                <conditions>
+                    <li><varName>ai_core</varName><value>1</value><comparison>Equal</comparison></li>
+                    <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
+                </conditions>
+            </li>
+            <li><label>B. 检查 AI 插槽</label><next>INSPECT_AI_SLOT_EMPTY</next></li>
+            <li><label>C. 检查燃料箱</label><next>INSPECT_FUEL</next></li>
+            <li><label>D. 返回机库</label><next>HANGAR_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>CHECK_BOTH</defName>
+        <nodeText>AI 核心已插入，燃料已注入。飞船准备就绪。</nodeText>
+        <options>
+            <li><label>A. 检查 AI 核心</label><next>INSPECT_AI</next></li>
+            <li><label>B. 检查燃料箱</label><next>INSPECT_FUEL</next></li>
+            <li><label>C. 返回机库</label><next>HANGAR_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 插入 / 检查操作                              -->
+    <!-- ═══════════════════════════════════════════ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>INSERT_AI</defName>
+        <nodeText>你小心地将 AI 核心推入插槽；它咔嗒一声入位，指示灯随之亮起。</nodeText>
+        <options>
+            <li>
+                <label>A. 返回</label>
+                <next>HANGAR_COCKPIT</next>
+                <sets>
+                    <li><varName>ai_core_inserted</varName><value>1</value><op>Set</op></li>
+                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
+                </sets>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>INSERT_FUEL</defName>
+        <nodeText>你打开燃料阀；反物质燃料缓缓注入，管线发出微弱的辉光。</nodeText>
+        <options>
+            <li>
+                <label>A. 返回</label>
+                <next>HANGAR_COCKPIT</next>
+                <sets>
+                    <li><varName>fuel_injected</varName><value>1</value><op>Set</op></li>
+                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
+                </sets>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>INSPECT_AI</defName>
+        <nodeText>AI 核心已牢牢固定，淡蓝色的光沿着插槽微微波动。</nodeText>
+        <options>
+            <li><label>A. 返回</label><next>HANGAR_COCKPIT</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>INSPECT_AI_SLOT_EMPTY</defName>
+        <nodeText>AI 插槽是空的，接口上积满灰尘。</nodeText>
+        <options>
+            <li><label>A. 返回</label><next>HANGAR_COCKPIT</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>INSPECT_FUEL_LINE_EMPTY</defName>
+        <nodeText>燃料管线是干的，接口处结了一层霜。</nodeText>
+        <options>
+            <li><label>A. 返回</label><next>HANGAR_COCKPIT</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>INSPECT_FUEL</defName>
+        <nodeText>燃料箱已满，压力稳定在安全范围内。</nodeText>
+        <options>
+            <li><label>A. 返回</label><next>HANGAR_COCKPIT</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 点火路由                                     -->
+    <!-- ═══════════════════════════════════════════ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>IGNITE_ROUTER</defName>
+        <nodeText>你试着启动点火程序……</nodeText>
+        <options>
+            <li>
+                <isBranch>true</isBranch>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>尝试点火</label>
+                        <next>IGNITE_NONE</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>ai_core_inserted</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>尝试点火</label>
+                        <next>IGNITE_READY</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>fuel_injected</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>尝试点火</label>
+                        <next>IGNITE_READY</next>
+                    </li>
+                </branches>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>IGNITE_NONE</defName>
+        <nodeText>没有动力源；引擎没有反应。</nodeText>
+        <options>
+            <li><label>A. 返回机库</label><next>HANGAR_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>IGNITE_READY</defName>
+        <nodeText>飞船已有动力源。确认点火？</nodeText>
+        <options>
+            <li>
+                <isBranch>true</isBranch>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>ai_core_inserted</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>fuel_injected</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>A. 点火起飞</label>
+                        <next>END_TRUE</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>ai_core_inserted</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>A. 点火起飞</label>
+                        <next>END_CORE</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>fuel_injected</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>A. 点火起飞</label>
+                        <next>END_FUEL</next>
+                    </li>
+                </branches>
+            </li>
+            <li><label>B. 返回</label><next>HANGAR_COCKPIT</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 仓库区域                                     -->
+    <!-- ═══════════════════════════════════════════ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH</defName>
+        <nodeText>仓库寒冷刺骨，呼吸凝成白雾。左侧是货物区，右侧是办公室。</nodeText>
+        <options>
+            <li><label>A. 进入货物区</label><next>WH_CRATES_ENTRY</next></li>
+            <li><label>B. 进入办公室</label><next>WH_OFFICE_ENTRY</next></li>
+            <li><label>C. 返回走廊</label><next>N0</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══ 办公室子模块 ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_OFFICE_ENTRY</defName>
+        <nodeText>你穿过前往办公室的走廊……</nodeText>
+        <options>
+            <li>
+                <isBranch>true</isBranch>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>wh_office_searched</varName><value>0</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>进入办公室</label>
+                        <next>WH_OFFICE</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>wh_office_searched</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>进入办公室</label>
+                        <next>WH_OFFICE_SEARCHED</next>
+                    </li>
+                </branches>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_OFFICE</defName>
+        <nodeText>办公室文件散落一地。桌上一张员工卡上印着维护密码：5792。</nodeText>
+        <options>
+            <li>
+                <label>A. 拿走密码卡</label>
+                <next>WH_OFFICE_TAKE</next>
+                <conditions>
+                    <li><varName>wh_office_searched</varName><value>0</value><comparison>Equal</comparison></li>
+                </conditions>
+                <sets>
+                    <li><varName>password</varName><value>1</value><op>Set</op></li>
+                    <li><varName>wh_office_searched</varName><value>1</value><op>Set</op></li>
+                </sets>
+            </li>
+            <li><label>B. 翻看文件</label><next>WH_OFFICE_FILES</next></li>
+            <li><label>C. 返回仓库</label><next>WH</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_OFFICE_TAKE</defName>
+        <nodeText>你拿走了密码卡，上面印着 5792。</nodeText>
+        <options>
+            <li><label>A. 继续</label><next>WH_OFFICE_SEARCHED</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_OFFICE_SEARCHED</defName>
+        <nodeText>文件散落一地，但桌上的员工卡已经被你拿走了。</nodeText>
+        <options>
+            <li><label>A. 翻看文件</label><next>WH_OFFICE_FILES</next></li>
+            <li><label>B. 返回仓库</label><next>WH</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_OFFICE_FILES</defName>
+        <nodeText>文件中提到实验体逃逸，研究所已进入封锁模式。此外你发现一张手写便条：‘炮台密码：5792，别试0000。’</nodeText>
+        <options>
+            <li>
+                <label>A. 返回</label>
+                <next>WH</next>
+                <sets>
+                    <li><varName>password</varName><value>1</value><op>Set</op></li>
+                </sets>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══ 货物区子模块 ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_CRATES_ENTRY</defName>
+        <nodeText>你往货物区走去……</nodeText>
+        <options>
+            <li>
+                <isBranch>true</isBranch>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>monster_dead</varName><value>0</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>进入货物区</label>
+                        <next>WH_CRATES_ALIVE</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>monster_dead</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>进入货物区</label>
+                        <next>WH_CRATES_DEAD_ENTRY</next>
+                    </li>
+                </branches>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_CRATES_ALIVE</defName>
+        <nodeText>绕过大量障碍，你艰难抵达了货物区。货物区中央，一个背生尖刺的怪物正在啃食一具尸体。它身边的反物质燃料罐亮着微光。</nodeText>
+        <options>
+            <li>
+                <label>A. 取燃料</label>
+                <next>WH_FUEL_TAKEN</next>
+                <conditions>
+                    <li><varName>weapon</varName><value>1</value><comparison>Equal</comparison></li>
+                </conditions>
+                <sets>
+                    <li><varName>monster_dead</varName><value>1</value><op>Set</op></li>
+                    <li><varName>fuel</varName><value>1</value><op>Set</op></li>
+                </sets>
+            </li>
+            <li>
+                <label>A. 悄悄伸手</label>
+                <next>DEATH_MONSTER</next>
+                <conditions>
+                    <li><varName>weapon</varName><value>0</value><comparison>Equal</comparison></li>
+                </conditions>
+            </li>
+            <li><label>B. 扔金属碎片引开它</label><next>WH_CRATES_DISTRACT</next></li>
+            <li><label>C. 退回仓库</label><next>WH</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_CRATES_DISTRACT</defName>
+        <nodeText>金属碎片哐当一声砸在远处，怪物低吼着扑了过去。但几秒后它又回到了尸体旁。</nodeText>
+        <options>
+            <li><label>A. 继续</label><next>WH_CRATES_ALIVE</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_CRATES_DEAD_ENTRY</defName>
+        <nodeText>毕竟你已经来过这里，你轻车熟路的绕开了障碍物。</nodeText>
+        <options>
+            <li>
+                <isBranch>true</isBranch>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>fuel</varName><value>0</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>继续</label>
+                        <next>WH_CRATES_DEAD</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>fuel</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>继续</label>
+                        <next>WH_CRATES_DEAD_EMPTY</next>
+                    </li>
+                </branches>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_CRATES_DEAD</defName>
+        <nodeText>怪物的尸体蜷缩在角落，反物质燃料罐就躺在一旁。</nodeText>
+        <options>
+            <li>
+                <label>A. 取走燃料</label>
+                <next>WH_FUEL_TAKEN</next>
+                <conditions>
+                    <li><varName>fuel</varName><value>0</value><comparison>Equal</comparison></li>
+                </conditions>
+                <sets>
+                    <li><varName>fuel</varName><value>1</value><op>Set</op></li>
+                </sets>
+            </li>
+            <li><label>B. 检查尸体</label><next>WH_CRATES_BODY</next></li>
+            <li><label>C. 退回仓库</label><next>WH</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_CRATES_DEAD_EMPTY</defName>
+        <nodeText>怪物的尸体蜷缩在角落，但燃料罐已经不见了。</nodeText>
+        <options>
+            <li><label>A. 检查尸体</label><next>WH_CRATES_BODY</next></li>
+            <li><label>B. 退回仓库</label><next>WH</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_CRATES_BODY</defName>
+        <nodeText>怪物的尖刺上还挂着之前受害者的衣物碎片。没有其他有价值的东西。</nodeText>
+        <options>
+            <li><label>A. 返回</label><next>WH_CRATES_DEAD_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>WH_FUEL_TAKEN</defName>
+        <nodeText>你抓起燃料罐冲出货物区。燃料罐沉甸甸地塞进背包。</nodeText>
+        <options>
+            <li><label>A. 前往机库</label><next>HANGAR_ENTRY</next></li>
+            <li><label>B. 先回仓库搜刮</label><next>WH</next></li>
+            <li><label>C. 返回走廊</label><next>N0</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 研究所区域                                   -->
+    <!-- ═══════════════════════════════════════════ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_ENTRY</defName>
+        <nodeText>你往研究所方向前进……</nodeText>
+        <options>
+            <li>
+                <isBranch>true</isBranch>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>turret_off</varName><value>0</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>进入研究所</label>
+                        <next>LAB_DANGER</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>turret_off</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>进入研究所</label>
+                        <next>LAB_SAFE</next>
+                    </li>
+                </branches>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_DANGER</defName>
+        <nodeText>研究所入口处，一台自动炮台在轨道上缓慢扫射。门边的终端闪着微光，旁边靠着一具尸体。</nodeText>
+        <options>
+            <li><label>A. 硬冲</label><next>DEATH_TURRET</next></li>
+            <li>
+                <label>B. 破坏炮台</label>
+                <next>LAB_TURRET_DESTROY</next>
+                <conditions>
+                    <li><varName>weapon</varName><value>1</value><comparison>Equal</comparison></li>
+                </conditions>
+            </li>
+            <li><label>C. 使用终端</label><next>LAB_TERM</next></li>
+            <li><label>D. 返回走廊</label><next>N0</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_TURRET_DESTROY</defName>
+        <nodeText>你用切割器对准炮台的传感模块猛击，火花四溅后炮台瘫软下来。</nodeText>
+        <options>
+            <li>
+                <label>A. 继续</label>
+                <next>LAB_SAFE</next>
+                <sets>
+                    <li><varName>turret_off</varName><value>1</value><op>Set</op></li>
+                </sets>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_SAFE</defName>
+        <nodeText>研究所入口，炮台垂着枪口，轨道上布满了灰尘。门边的终端闪着微光。</nodeText>
+        <options>
+            <li><label>A. 进入实验室</label><next>LAB_INNER_ENTRY</next></li>
+            <li><label>B. 使用终端</label><next>LAB_TERM</next></li>
+            <li><label>C. 返回走廊</label><next>N0</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══ 终端子模块 ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_TERM</defName>
+        <nodeText>终端屏上显示：‘请输入维护密码。’</nodeText>
+        <options>
+            <li>
+                <label>A. 输入密码</label>
+                <next>LAB_TERM_DONE</next>
+                <conditions>
+                    <li><varName>password</varName><value>1</value><comparison>Equal</comparison></li>
+                </conditions>
+                <sets>
+                    <li><varName>turret_off</varName><value>1</value><op>Set</op></li>
+                </sets>
+            </li>
+            <li>
+                <label>A. 尝试默认密码</label>
+                <next>LAB_TERM_FAIL</next>
+                <conditions>
+                    <li><varName>password</varName><value>0</value><comparison>Equal</comparison></li>
+                </conditions>
+            </li>
+            <li><label>B. 取消</label><next>LAB_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_TERM_FAIL</defName>
+        <nodeText>密码错误。终端屏幕闪了一下。</nodeText>
+        <options>
+            <li><label>A. 返回</label><next>LAB_TERM</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_TERM_DONE</defName>
+        <nodeText>终端确认：‘防御炮台已离线。’你可以进入实验室了。</nodeText>
+        <options>
+            <li><label>A. 进入实验室</label><next>LAB_INNER_ENTRY</next></li>
+            <li><label>B. 返回仓库</label><next>WH</next></li>
+            <li><label>C. 返回走廊</label><next>N0</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══ 实验室内区 ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_INNER_ENTRY</defName>
+        <nodeText>实验室的走廊中异常整洁，大抵是那个炮台的原因。</nodeText>
+        <options>
+            <li>
+                <isBranch>true</isBranch>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>ai_core</varName><value>0</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>进入实验室</label>
+                        <next>LAB_INNER</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>ai_core</varName><value>1</value><comparison>Equal</comparison></li>
+                        </conditions>
+                        <label>进入实验室</label>
+                        <next>LAB_INNER_EMPTY</next>
+                    </li>
+                </branches>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_INNER</defName>
+        <nodeText>实验台上，AI核心悬浮在磁场中。它可解除任何停靠限制并引导飞船。</nodeText>
+        <options>
+            <li>
+                <label>A. 拿走核心</label>
+                <next>LAB_INNER_TAKEN</next>
+                <conditions>
+                    <li><varName>ai_core</varName><value>0</value><comparison>Equal</comparison></li>
+                </conditions>
+                <sets>
+                    <li><varName>ai_core</varName><value>1</value><op>Set</op></li>
+                </sets>
+            </li>
+            <li><label>B. 检查实验数据</label><next>LAB_INNER_DATA</next></li>
+            <li><label>C. 返回研究所入口</label><next>LAB_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_INNER_EMPTY</defName>
+        <nodeText>实验台上空荡荡的，曾经悬浮AI核心的磁场装置现在闲置着。</nodeText>
+        <options>
+            <li><label>A. 检查实验数据</label><next>LAB_INNER_DATA</next></li>
+            <li><label>B. 返回研究所入口</label><next>LAB_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_INNER_DATA</defName>
+        <nodeText>研究日志显示，AI核心是为飞船设计的自主导航单元，但被用于控制空间站。移除它将导致部分系统失效。</nodeText>
+        <options>
+            <li><label>A. 返回</label><next>LAB_INNER_ENTRY</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>LAB_INNER_TAKEN</defName>
+        <nodeText>你取下AI核心，房间灯光暗淡了一瞬。你拥有了离开空间站的钥匙之一。</nodeText>
+        <options>
+            <li><label>A. 前往机库</label><next>HANGAR_ENTRY</next></li>
+            <li><label>B. 去仓库</label><next>WH</next></li>
+            <li><label>C. 返回走廊</label><next>N0</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 死亡 / 结局（重置全部变量）                  -->
+    <!-- ═══════════════════════════════════════════ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>DEATH_TURRET</defName>
+        <nodeText>你刚冲入实验室，自动炮台立刻锁定你。三声短促的枪响后，你倒在了血泊中。——死亡：自动防卫炮台</nodeText>
+        <options>
+            <li>
+                <label>A. 重来</label>
+                <next>N0</next>
+                <sets>
+                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
+                    <li><varName>password</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
+                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                </sets>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>DEATH_MONSTER</defName>
+        <nodeText>你伸手去够燃料罐，怪物猛扑过来。你最后的意识是撕裂的剧痛。——死亡：空间站怪物</nodeText>
+        <options>
+            <li>
+                <label>A. 重来</label>
+                <next>N0</next>
+                <sets>
+                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
+                    <li><varName>password</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
+                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                </sets>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>DEATH_SOLDIER</defName>
+        <nodeText>你没有武器，徒手扑向土匪。子弹比你更快。你倒在冰冷的机库地板上。——死亡：敌对土匪</nodeText>
+        <options>
+            <li>
+                <label>A. 重来</label>
+                <next>N0</next>
+                <sets>
+                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
+                    <li><varName>password</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
+                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                </sets>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>END_TRUE</defName>
+        <nodeText>你将AI核心与反物质燃料同时接入。舰船主控亮起从未有过的深蓝色光晕，导航系统自动绘制出一条安全跃迁路径。你冲入超空间航道。——结局：完美逃脱</nodeText>
+        <options>
+            <li>
+                <label>A. 重玩</label>
+                <next>N0</next>
+                <sets>
+                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
+                    <li><varName>password</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
+                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                </sets>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>END_CORE</defName>
+        <nodeText>AI核心接管了飞船的基础控制，你用最后的后备能源滑出机库，漂流在黑暗中。至少你自由了。——结局：AI漂流</nodeText>
+        <options>
+            <li>
+                <label>A. 重玩</label>
+                <next>N0</next>
+                <sets>
+                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
+                    <li><varName>password</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
+                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                </sets>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>END_FUEL</defName>
+        <nodeText>手动点火，引擎轰鸣。你冲出了空间站，但导航系统一片空白。你只能凭借直觉选择方向。——结局：盲目远航</nodeText>
+        <options>
+            <li>
+                <label>A. 重玩</label>
+                <next>N0</next>
+                <sets>
+                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
+                    <li><varName>password</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
+                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
+                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
+                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                </sets>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+</Defs>

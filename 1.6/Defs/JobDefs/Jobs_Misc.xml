@@ -2,9 +2,16 @@
 <Defs>
 
     <JobDef>
-        <defName>CelesRemoveMechlinkRestriction</defName>
+        <defName>Celes_RemoveMechlinkRestriction</defName>
         <driverClass>JobDriver_UseItem</driverClass>
         <reportString>正在移除民用机控限制</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef>
+        <defName>CelesFD_UseAntenna</defName>
+        <driverClass>CelesFeature.CelesFD_JobDriver_UseAntenna</driverClass>
+        <reportString>使用星铃通讯天线</reportString>
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
     

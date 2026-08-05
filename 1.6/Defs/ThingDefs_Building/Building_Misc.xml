@@ -1,5 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>CelesFD_Antenna</defName>
+        <label>发信器</label>
+        <description>允许与星铃外勤部进行无线电联系的特殊通讯装置。</description>
+        <thingClass>CelesFeature.CelesFD_Building_Antenna</thingClass>
+        <graphicData>
+            <texPath>Celes/Building/Antenna/Antenna</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(5,5)</drawSize>
+            <drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0.9,3,0.9)</volume>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <blockWind>true</blockWind>
+        <rotatable>true</rotatable>
+        <castEdgeShadows>false</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <uiIconOffset>(0, 0.3)</uiIconOffset>
+        <uiIconScale>0.4</uiIconScale>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>2200</WorkToBuild>
+            <Flammability>0.6</Flammability>
+        </statBases>
+        <size>(1,1)</size>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+        </building>
+        <costList>
+            <Steel>120</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>200</basePowerConsumption>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+    </ThingDef>
+    
     <!--<ThingDef ParentName="BuildingBase">
         <defName>CelesAntenna</defName>
         <label>celestia antenna</label>

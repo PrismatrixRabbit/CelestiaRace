@@ -128,38 +128,6 @@
         </projectile>
     </ThingDef>
 
-    <!-- ===== 模式 A 弹头 ===== -->
-    <ThingDef ParentName="BaseBullet">
-        <defName>CelesBullet_ModeA</defName>
-        <label>mode A projectile</label>
-        <graphicData>
-            <texPath>Celes/Weapon/Spacer/energy_bulletb</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>Celes_Particle</damageDef>
-            <damageAmountBase>15</damageAmountBase>
-            <speed>90</speed>
-            <armorPenetrationBase>0.6</armorPenetrationBase>
-            <stoppingPower>0.9</stoppingPower>
-        </projectile>
-    </ThingDef>
-    <!-- ===== 模式 B 弹头 ===== -->
-    <ThingDef ParentName="BaseBullet">
-        <defName>CelesBullet_ModeB</defName>
-        <label>mode B projectile</label>
-        <graphicData>
-            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>Celes_ParticleB</damageDef>
-            <damageAmountBase>14</damageAmountBase>
-            <speed>120</speed>
-            <armorPenetrationBase>0.75</armorPenetrationBase>
-            <stoppingPower>3.0</stoppingPower>
-        </projectile>
-    </ThingDef>
     <!-- ===== 双模式测试武器 ===== -->
     <ThingDef ParentName="Celes_SpacerGunBase">
         <defName>Celes_TestDualMode</defName>
@@ -179,7 +147,7 @@
             <AccuracyTouch>0.65</AccuracyTouch>
             <AccuracyShort>0.75</AccuracyShort>
             <AccuracyMedium>0.60</AccuracyMedium>
-            <AccuracyLong>0.55</AccuracyLong>
+            <AccuracyLong>0.80</AccuracyLong>
             <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
@@ -195,10 +163,10 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_ModeA</defaultProjectile>
-                <warmupTime>1.0</warmupTime>
-                <range>34.9</range>
+                <warmupTime>1.4</warmupTime>
+                <range>28.9</range>
                 <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-                <burstShotCount>6</burstShotCount>
+                <burstShotCount>8</burstShotCount>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -208,10 +176,10 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>CelesBullet_ModeB</defaultProjectile>
-                <warmupTime>1.5</warmupTime>
-                <range>39.9</range>
+                <warmupTime>3.0</warmupTime>
+                <range>33.9</range>
                 <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-                <burstShotCount>3</burstShotCount>
+                <burstShotCount>2</burstShotCount>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -252,7 +220,7 @@
                 <!--<colorA>(0.843,0.973,1.000)</colorA>
                 <colorB>(0.843,0.761,1.000)</colorB>-->
                 <colorA>(0.75,1,1)</colorA>
-                <colorB>(0.75,0.3,0.6)</colorB>
+                <colorB>(0.6,0.3,0.75)</colorB>
                 <pulseCycleSeconds>3</pulseCycleSeconds>
                 <alphaMin>0.10</alphaMin>
                 <alphaMax>0.65</alphaMax>
@@ -271,7 +239,38 @@
             <li>Celes_SpacerWeaponAssault</li>
         </weaponTags>
     </ThingDef>
-
+    <!-- ===== 模式 A 弹头 ===== -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>CelesBullet_ModeA</defName>
+        <label>mode A projectile</label>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bulletb</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Celes_ParticleBlast</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <speed>90</speed>
+            <armorPenetrationBase>0.6</armorPenetrationBase>
+            <stoppingPower>0.9</stoppingPower>
+        </projectile>
+    </ThingDef>
+    <!-- ===== 模式 B 弹头 ===== -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>CelesBullet_ModeB</defName>
+        <label>mode B projectile</label>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Celes_ParticleBurn</damageDef>
+            <damageAmountBase>26</damageAmountBase>
+            <speed>120</speed>
+            <armorPenetrationBase>0.75</armorPenetrationBase>
+            <stoppingPower>3.0</stoppingPower>
+        </projectile>
+    </ThingDef>
 
     <HediffDef>
         <defName>Celes_MultiVerbSelect</defName>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    
+    <CelesFD_Keyed_OpenComms>联系星铃外勤部门</CelesFD_Keyed_OpenComms>
+
+    <CelesFD_Keyed_Tab_Welcome>欢迎</CelesFD_Keyed_Tab_Welcome>
+    <CelesFD_Keyed_Tab_Trade>交易</CelesFD_Keyed_Tab_Trade>
+    <CelesFD_Keyed_Tab_Armory>武备</CelesFD_Keyed_Tab_Armory>
+    <CelesFD_Keyed_Tab_Quest>任务</CelesFD_Keyed_Tab_Quest>
+    <CelesFD_Keyed_Tab_Logistics>物流</CelesFD_Keyed_Tab_Logistics>
+
+    <CelesFD_Keyed_Level>等级：{0}</CelesFD_Keyed_Level>
+    <CelesFD_Keyed_Fame>声望：{0}</CelesFD_Keyed_Fame>
+    <CelesFD_Keyed_Credit>信用额：{0}</CelesFD_Keyed_Credit>
+    <CelesFD_Keyed_QuantumKey>密钥：{0}</CelesFD_Keyed_QuantumKey>
+    <CelesFD_Keyed_TradeVolume>交易额：{0}</CelesFD_Keyed_TradeVolume>
+    
+    <CelesFD_Keyed_Greeting_Placeholder>通信系统日志初始化完成。</CelesFD_Keyed_Greeting_Placeholder>
+
+    <CelesFD_Keyed_Test_OptionA>什么游戏？</CelesFD_Keyed_Test_OptionA>
+    <CelesFD_Keyed_Test_InputA>啊？什么游戏？</CelesFD_Keyed_Test_InputA>
+    <CelesFD_Keyed_Test_ReplyB>这个游戏。</CelesFD_Keyed_Test_ReplyB>
+
+    <CelesFD_Keyed_Ticker_0>鱼说让我用这个立绘的。</CelesFD_Keyed_Ticker_0>
+    <CelesFD_Keyed_Ticker_1>这是一条占位跑马灯。</CelesFD_Keyed_Ticker_1>
+    <CelesFD_Keyed_Ticker_2>可是我还没睡够！</CelesFD_Keyed_Ticker_2>
+    <CelesFD_Keyed_Ticker_3>有zuzu啊</CelesFD_Keyed_Ticker_3>
+    <CelesFD_Keyed_Ticker_4>你知道吗你知道吗你知道吗你知道吗你知道吗你知道吗你知道吗</CelesFD_Keyed_Ticker_4>
+    <CelesFD_Keyed_Ticker_5>星铃真的还在更新哦？</CelesFD_Keyed_Ticker_5>
+    <CelesFD_Keyed_Ticker_6>我好饿！</CelesFD_Keyed_Ticker_6>
+    <CelesFD_Keyed_Ticker_7>字幕8字幕8字幕8字幕8</CelesFD_Keyed_Ticker_7>
+    <CelesFD_Keyed_Ticker_8>这不是一条占位跑马灯。</CelesFD_Keyed_Ticker_8>
+    <CelesFD_Keyed_Ticker_9>冷知识：</CelesFD_Keyed_Ticker_9>
+
+    <CelesFD_Keyed_ReturnToRoot>返回主页</CelesFD_Keyed_ReturnToRoot>
+    <CelesFD_Keyed_Test_Input>返回主页</CelesFD_Keyed_Test_Input>
+
+</LanguageData>

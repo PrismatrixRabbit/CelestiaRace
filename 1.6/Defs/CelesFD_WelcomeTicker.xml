@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <CelesFeature.CelesFD_TickerDef>
+        <defName>CelesFD_TickerDefault</defName>
+        <welcomeTicker>
+            <li>CelesFD_Keyed_Ticker_0</li>
+            <li>CelesFD_Keyed_Ticker_1</li>
+            <li>CelesFD_Keyed_Ticker_2</li>
+            <li>CelesFD_Keyed_Ticker_3</li>
+            <li>CelesFD_Keyed_Ticker_4</li>
+            <li>CelesFD_Keyed_Ticker_5</li>
+            <li>CelesFD_Keyed_Ticker_6</li>
+            <li>CelesFD_Keyed_Ticker_7</li>
+            <li>CelesFD_Keyed_Ticker_8</li>
+            <li>CelesFD_Keyed_Ticker_9</li>
+        </welcomeTicker>
+    </CelesFeature.CelesFD_TickerDef>
+</Defs>

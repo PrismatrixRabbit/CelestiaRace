@@ -86,7 +86,7 @@
             </options>
         </colorGenerator>
         <comps>
-            <li Class="CelesFeature.Celes_CompProperties_MutiFunctionalShield">
+            <li Class="CelesFeature.Celes_CompProperties_MultiFunctionalShield">
                 <energyOnReset>0.3</energyOnReset>
                 <startingTicksToReset>1800</startingTicksToReset>
                 

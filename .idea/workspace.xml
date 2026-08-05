@@ -11,16 +11,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_DialogueDefs/CelesFD_DialogueDef.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_WelcomeTicker.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/DefInjected/CelesFeature.CelesFD_DialogueNodeDef/CelesFD_DialogueDef.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Belt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Belt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Middle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Middle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/DamageDef/Celes_BulletDamage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/DamageDef/Celes_BulletDamage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_Base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_Base.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_IndustryProduction.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/HediffDefs/Hediff_Injuries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/HediffDefs/Hediff_Injuries.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Utility.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Utility.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Race/Race_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Race/Race_Celes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Addon/Ear/EarL/CelesEarL_west.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Textures/Celes/Addon/Ear/EarL/CelesEarL_west.PNG" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +208,12 @@
       <workItem from="1784727970299" duration="617000" />
       <workItem from="1785346492466" duration="2783000" />
       <workItem from="1785420174526" duration="9807000" />
-      <workItem from="1785500416163" duration="11239000" />
+      <workItem from="1785500416163" duration="11518000" />
+      <workItem from="1785593599817" duration="7635000" />
+      <workItem from="1785678105917" duration="3307000" />
+      <workItem from="1785747213271" duration="20390000" />
+      <workItem from="1785834411130" duration="17744000" />
+      <workItem from="1785927576289" duration="479000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -374,7 +383,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784010251584</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="武器多模式功能及hediff测试功能">
+      <option name="closed" value="true" />
+      <created>1785522360202</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1785522360202</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +433,8 @@
     <MESSAGE value="修兔子荣家湾生科兼容bug，建筑和工业科技树beta" />
     <MESSAGE value="总之提交一下" />
     <MESSAGE value="总体调整了各方面内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="总体调整了各方面内容" />
+    <MESSAGE value="武器多模式功能及hediff测试功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="武器多模式功能及hediff测试功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

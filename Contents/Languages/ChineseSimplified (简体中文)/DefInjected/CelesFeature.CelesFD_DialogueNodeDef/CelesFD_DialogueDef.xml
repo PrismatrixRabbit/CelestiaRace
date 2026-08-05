@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+        <N_RootA.nodeText>外勤部通讯系统已就绪。这里还没写东西，所以你可以玩玩这个小游戏。</N_RootA.nodeText>
+        <N_RootA.options.0.label>什么小游戏？</N_RootA.options.0.label>
+        <N_RootA.options.1.label>测试对话：小游戏</N_RootA.options.1.label>
+        <N_RootA.options.1.recordText>进入测试对话</N_RootA.options.1.recordText>
+        <N_RootA.options.2.label>调试：检查状态</N_RootA.options.2.label>
+
+        <N_RootA_Relay.nodeText>这个小游戏！</N_RootA_Relay.nodeText>
+        <N_RootA_Relay.options.0.label>什么小游戏？</N_RootA_Relay.options.0.label>
+        <N_RootA_Relay.options.1.label>测试对话：小游戏</N_RootA_Relay.options.1.label>
+        <N_RootA_Relay.options.1.recordText>进入测试对话</N_RootA_Relay.options.1.recordText>
+        <N_RootA_Relay.options.2.label>调试：我去你的！</N_RootA_Relay.options.2.label>
+
+        <N_RootA_02.nodeText>你这人怎么这么凶。</N_RootA_02.nodeText>
+        <N_RootA_02.options.0.label>继续</N_RootA_02.options.0.label>
+
+</LanguageData>

@@ -22,4 +22,137 @@
         </comps>
     </HediffDef>
 
+    <HediffDef ParentName="InjuryBase">
+        <defName>Celes_ParticleBurn</defName>
+        <label>粒子灼伤</label>
+        <labelNoun>a particle burn</labelNoun>
+        <description>A high-energy particle beam causes penetrating ablative trauma. The wound is cauterized instantly, reducing infection risk.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>sutured</labelTendedWellInner>
+                <labelSolidTendedWell>set</labelSolidTendedWell>
+            </li>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0.20</infectionChance>
+            </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>old particle burn</permanentLabel>
+                <instantlyPermanentLabel>permanent particle burn</instantlyPermanentLabel>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.0125</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+            <bleedRate>0.06</bleedRate>
+            <canMerge>false</canMerge>
+            <destroyedLabel>Ablated off</destroyedLabel>
+            <destroyedOutLabel>Ablated out</destroyedOutLabel>
+        </injuryProps>
+    </HediffDef>
+
+    <HediffDef ParentName="InjuryBase">
+        <defName>Celes_ParticleBlast</defName>
+        <label>粒子冲击</label>
+        <labelNoun>a particle blast</labelNoun>
+        <description>A diffuse particle shockwave causes severe internal contusion. No open wounds, but the intense concussion inflicts overwhelming pain.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>tended</labelTendedWellInner>
+                <labelSolidTendedWell>tended</labelSolidTendedWell>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.01875</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+            <bleedRate>0</bleedRate>
+            <canMerge>false</canMerge>
+            <destroyedLabel>Shattered</destroyedLabel>
+            <destroyedOutLabel>Shattered</destroyedOutLabel>
+        </injuryProps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Celes_IrradiatedSoftening</defName>
+        <label>辐照软化</label>
+        <labelNoun>irradiated softening</labelNoun>
+        <description>Particle beam irradiation has compromised the structural integrity of the target's armor. Further attacks will penetrate more easily.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.7, 0.5, 0.2)</defaultLabelColor>
+        <isBad>true</isBad>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>0.001</initialSeverity>
+        <stages>
+            <li>
+                <label>烧蚀</label>
+                <statFactors>
+                    <ArmorRating_Sharp>0.88</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.92</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.88</ArmorRating_Heat>
+                </statFactors>
+            </li>
+            <li>
+                <minSeverity>0.12</minSeverity>
+                <label>蚀痕</label>
+                <statFactors>
+                    <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.82</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.71</ArmorRating_Heat>
+                </statFactors>
+                <statOffsets>
+                    <ArmorRating_Sharp>-0.05</ArmorRating_Sharp>
+                    <ArmorRating_Heat>-0.05</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.28</minSeverity>
+                <label>软化</label>
+                <statFactors>
+                    <ArmorRating_Sharp>0.63</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.59</ArmorRating_Heat>
+                </statFactors>
+                <statOffsets>
+                    <ArmorRating_Sharp>-0.15</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>-0.07</ArmorRating_Blunt>
+                    <ArmorRating_Heat>-0.15</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.52</minSeverity>
+                <label>熔毁</label>
+                <statFactors>
+                    <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.50</ArmorRating_Heat>
+                </statFactors>
+                <statOffsets>
+                    <ArmorRating_Sharp>-0.20</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>-0.15</ArmorRating_Blunt>
+                    <ArmorRating_Heat>-0.20</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.80</minSeverity>
+                <label>汽化</label>
+                <statFactors>
+                    <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.50</ArmorRating_Heat>
+                </statFactors>
+                <statOffsets>
+                    <ArmorRating_Sharp>-0.20</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>-0.20</ArmorRating_Blunt>
+                    <ArmorRating_Heat>-0.20</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.8</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+    </HediffDef>
 </Defs>

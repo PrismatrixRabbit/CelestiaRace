@@ -136,7 +136,7 @@
             <li Class="CompProperties_Forbiddable"/>
 
             <li Class="CompProperties_Usable">
-                <useJob>CelesRemoveMechlinkRestriction</useJob>
+                <useJob>Celes_RemoveMechlinkRestriction</useJob>
                 <useLabel>覆写民用机控限制</useLabel>
             </li>
 
