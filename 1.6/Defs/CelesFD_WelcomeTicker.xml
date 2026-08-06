@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <!-- 跑马灯文本：英文源，中文翻译见 DefInjected/CelesFeature.CelesFD_TickerDef/CelesFD_WelcomeTicker.xml -->
     <CelesFeature.CelesFD_TickerDef>
         <defName>CelesFD_TickerDefault</defName>
         <welcomeTicker>
-            <li>CelesFD_Keyed_Ticker_0</li>
-            <li>CelesFD_Keyed_Ticker_1</li>
-            <li>CelesFD_Keyed_Ticker_2</li>
-            <li>CelesFD_Keyed_Ticker_3</li>
-            <li>CelesFD_Keyed_Ticker_4</li>
-            <li>CelesFD_Keyed_Ticker_5</li>
-            <li>CelesFD_Keyed_Ticker_6</li>
-            <li>CelesFD_Keyed_Ticker_7</li>
-            <li>CelesFD_Keyed_Ticker_8</li>
-            <li>CelesFD_Keyed_Ticker_9</li>
+            <li>Ticker 1</li>
+            <li>Ticker 2</li>
+            <li>Ticker 3</li>
+            <li>Ticker 4</li>
+            <li>Ticker 5</li>
+            <li>Ticker 6</li>
+            <li>Ticker 7</li>
+            <li>Ticker 8</li>
+            <li>Ticker 9</li>
+            <li>Ticker 10</li>
         </welcomeTicker>
     </CelesFeature.CelesFD_TickerDef>
 </Defs>

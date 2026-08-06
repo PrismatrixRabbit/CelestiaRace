@@ -1,318 +1,419 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<FactionDef ParentName="PlayerFactionBase">
-	<defName>Celes_PlayerFaction</defName>
-	<label>Celestia new outpost</label>
-	<description>An outpost formed by Celestia who had recently arrived on the planet.</description>
-	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-	<categoryTag>Celes_PlayerFaction</categoryTag>
-	<colorSpectrum>
-      <li>(0.58, 0.8, 0.92)</li>
-    </colorSpectrum>
-    <isPlayer>true</isPlayer>
-	<basicMemberKind>Celes_Colonist</basicMemberKind>
-	<pawnSingular>celestia colonist</pawnSingular>
-    <pawnsPlural>celestia colonists</pawnsPlural>
-	<techLevel>Industrial</techLevel>
-	<melaninRange>0</melaninRange>
-	<!--↓↓↓这里等着改↓↓↓-->
-	<!--NameMaker都等我写-->
-	<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-	<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-    <allowedCultures>
-		<li>CelesCulture</li>
-	</allowedCultures>
-	<!--<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-    </disallowedMemes>-->
-	<backstoryFilters>
-      <li>
-        <categories>
-          <li>Celes_Space</li>
-        </categories>
-      </li>
-    </backstoryFilters>
-	<factionIconPath>Celes/Faction/CelesFaction_Icon</factionIconPath>
-	<startingResearchTags>
-      <li>ClassicStart</li>
-      <li>Celes_ClassicStart</li>
-    </startingResearchTags>
-    <startingTechprintsResearchTags>
-      <li>ClassicStart</li>
-      <li>Celes_ClassicStart</li>
-      <li>ClassicStartTechprints</li>
-    </startingTechprintsResearchTags>
-    <apparelStuffFilter>
-      <thingDefs>
-        <li>CelesAdvanceCloth</li>
-      </thingDefs>
-	  <disallowedThingDefs>
-        <li>Hyperweave</li>
-      </disallowedThingDefs>
-    </apparelStuffFilter>
-	<!--↑↑↑这里等着改↑↑↑-->
-</FactionDef>
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>Celes_PlayerFaction</defName>
+        <label>Celestia new outpost</label>
+        <description>An outpost formed by Celestia who had recently arrived on the planet.</description>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <categoryTag>Celes_PlayerFaction</categoryTag>
+        <colorSpectrum>
+            <li>(0.58, 0.8, 0.92)</li>
+        </colorSpectrum>
+        <isPlayer>true</isPlayer>
+        <basicMemberKind>Celes_Colonist</basicMemberKind>
+        <pawnSingular>celestia colonist</pawnSingular>
+        <pawnsPlural>celestia colonists</pawnsPlural>
+        <techLevel>Industrial</techLevel>
+        <melaninRange>0</melaninRange>
+        <!--↓↓↓这里等着改↓↓↓-->
+        <!--NameMaker都等我写-->
+        <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <allowedCultures>
+            <li>CelesCulture</li>
+        </allowedCultures>
+        <!--<disallowedMemes>
+                <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+        </disallowedMemes>-->
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Celes_Space</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <factionIconPath>Celes/Faction/CelesFaction_Icon</factionIconPath>
+        <startingResearchTags>
+            <li>ClassicStart</li>
+            <li>Celes_ClassicStart</li>
+        </startingResearchTags>
+        <startingTechprintsResearchTags>
+            <li>ClassicStart</li>
+            <li>Celes_ClassicStart</li>
+            <li>ClassicStartTechprints</li>
+        </startingTechprintsResearchTags>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>CelesAdvanceCloth</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>Hyperweave</li>
+            </disallowedThingDefs>
+        </apparelStuffFilter>
+        <!--↑↑↑这里等着改↑↑↑-->
+    </FactionDef>
 
-<FactionDef ParentName="FactionBase">
-	<defName>Celes_Faction</defName>
-	<label>celestia pioneer</label>
-    <description>A group of Celestia who arrived on the planet some decades ago, a mix of Celestia's Seventh Fleet Navy and the Pioneers of the Aurora Generation ship. They possess many advanced and unique technologies, but are not proud of them. Most of the time, Celestia does not use their advanced weaponry, possibly because they have experienced some sort of technological regression, but it seems to be a habit they have developed against some sort of enemy. They still maintain some sort of technological production line, as if they had prepared for it beforehand, and are even actively and steadily restoring and recreating technology that has been lost. \n\n For the most part, they treat people kindly, happy to exchange haves and have-nots and form alliances with other factions, even if the other party is a stranger. But they also have no qualms about giving their enemies a heavy blow back. \n\n In recent times, Celestia had begun to support her friends with supplies and personnel. Contacting their field departments through the communication desk, they can exchange anything if you contribute.</description><!--等我写（-->
-	<colorSpectrum>
-      <li>(1, 1, 1)</li><!--等我改（-->
-    </colorSpectrum>
-	<categoryTag>Celes_Faction</categoryTag>
-	<pawnSingular>celestia</pawnSingular>
-    <pawnsPlural>celestias</pawnsPlural>
-	<listOrderPriority>50</listOrderPriority><!--这个可能小了要改，原版30，kiiro是240-->
-	<settlementGenerationWeight>1</settlementGenerationWeight>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
-	<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
-	<canMakeRandomly>true</canMakeRandomly>
-    <canSiege>true</canSiege>
-    <canStageAttacks>true</canStageAttacks>
-	<leaderTitle>pioneer commander-in-chief</leaderTitle><!--等我写（-->
-    <factionIconPath>Celes/Faction/CelesFactionVII_Icon</factionIconPath>
-    <techLevel>Spacer</techLevel>
-	<!--NameMaker都等我写-->
-    <factionNameMaker>CelesFaction_Namer</factionNameMaker>
-    <settlementNameMaker>CelesSettlement_Namer</settlementNameMaker>
-	<melaninRange>0</melaninRange>
-    <naturalEnemy>false</naturalEnemy>
-    <permanentEnemy>false</permanentEnemy>
-    <allowedCultures><li>CelesCulture</li></allowedCultures>
-    <arrivalLayerWhitelist>
-        <li>Surface</li>
-        <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
-    </arrivalLayerWhitelist>
-	<!--↓↓↓这里等着改↓↓↓-->
-	<!--什么异种啊文化啊戒律啊麻烦死了先占位-->
-	<requiredMemes>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
-    </requiredMemes>
-	<!-- 这是白名单和黑名单，不能共用，到时候再按需自取 -->
-    <allowedMemes>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
-    </allowedMemes>
-    <!-- <disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
-    </disallowedMemes> -->
-	<structureMemeWeights>
-      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
-    </structureMemeWeights>
-    <disallowedPrecepts>
-        <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
-    </disallowedPrecepts>
-	<xenotypeSet>
-      <xenotypeChances>
-	    <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
-      </xenotypeChances>
-    </xenotypeSet>
-    <!-- <permanentEnemyToEveryoneExcept>
-        <li>OutlanderCivil</li>
-        <li>TribeCivil</li>
-        <li>PlayerTribe</li>
-        <li>PlayerColony</li>
-        <li>Ancients</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Beggars</li>
-        <li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
-        <li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
-        <li MayRequire="Ludeon.RimWorld.Odyssey">TradersGuild</li>
-    </permanentEnemyToEveryoneExcept>
-	↑↑↑这里等着改↑↑↑ -->
-	<backstoryFilters>
-      <li>
-            <categories>
-                 <li>Celes_Outlander</li>
-            </categories>
-            <commonality>0.75</commonality>
-      </li>
-      <li>
-            <categories>
-                <li>Celes_Space</li>
-            </categories>
-            <commonality>0.25</commonality>
-      </li>
-        <!--<li>
-               <categories>
-                    <li>Celes_Military</li>这个留着的意思是背景可以在好几个里面随机，但我目前只写了一个
-             </categories>
-             <commonality>0.05</commonality>
-      </li>-->
-    </backstoryFilters>
-	<!--衣服可能要限制材质？-->
-	<!--<apparelStuffFilter>
-      <stuffCategoriesToAllow>
-      </stuffCategoriesToAllow>
-      <disallowedThingDefs>
-      </disallowedThingDefs>
-    </apparelStuffFilter>-->
-	<!--商队不太懂哦-->
-	<caravanTraderKinds>
-      <li>Celes_Caravan_Pioneer_BulkGoods</li>
-      <li>Celes_Caravan_Pioneer_CombatSupplier</li>
-      <li>Celes_Caravan_Pioneer_Exotic</li>
-    </caravanTraderKinds>
-    <visitorTraderKinds>
-      <li>Celes_Visitor_Pioneer_Standard</li>
-    </visitorTraderKinds>
-    <baseTraderKinds>
-      <li>Celes_Base_Pioneer_Standard</li>
-    </baseTraderKinds>
-	<allowedArrivalTemperatureRange>-45~50</allowedArrivalTemperatureRange>
-	<maxPawnCostPerTotalPointsCurve>
-      <points>
-          <li>(400, 100)</li>
-          <li>(850, 150)</li>
-          <li>(1750, 250)</li>
-          <li>(2000, 10000)</li>
-      </points>
-    </maxPawnCostPerTotalPointsCurve>
-	<!--这里抄了原版-->
-	<pawnGroupMakers>
-		<!-- 注释掉的是这个需要的pawn我们没写 -->
-		<!-- 拓荒队突袭-仆从 -->
-        <li>
-            <kindDef>Combat</kindDef>
-            <commonality>33</commonality>
-            <options>
-				<Celes_ArmedExplorer>3</Celes_ArmedExplorer>
-                <Celes_ServantUnitGunner>10</Celes_ServantUnitGunner>
-                <Celes_ServantUnitClaw>5</Celes_ServantUnitClaw>
-                <Celes_ServantUnitHammer>5</Celes_ServantUnitHammer>
-            </options>
-        </li>
-        <!-- 拓荒队突袭 -->
-        <li>
-            <kindDef>Combat</kindDef>
-            <commonality>33</commonality>
-            <options>
-                <Celes_ArmedExplorer>10</Celes_ArmedExplorer>
-                <Celes_ServantUnitGunner>3</Celes_ServantUnitGunner>
-                <Celes_ArmedExplorerSniper>3</Celes_ArmedExplorerSniper>
-                <Celes_OutlanderLeader>1</Celes_OutlanderLeader>
-                <Celes_ServantUnitClaw>5</Celes_ServantUnitClaw>
-                <Celes_ServantUnitHammer>5</Celes_ServantUnitHammer>
-            </options>
-        </li>
-        <!-- 先锋突袭 -->
-        <li>
-            <kindDef>Combat</kindDef>
-            <commonality>66</commonality>
-            <options>
-                <Celes_Scout>10</Celes_Scout>
-				<Celes_ScoutMelee>5</Celes_ScoutMelee>
-				<Celes_ScoutSniper>3</Celes_ScoutSniper>
-            </options>
-        </li>
-		<!-- 陆战队突袭-普通 -->
-		<li>
-			<kindDef>Combat</kindDef>
-			<commonality>17</commonality>
-			<options>
-				<Celes_Elite>5</Celes_Elite>
-				<Celes_EliteSniper>3</Celes_EliteSniper>
-				<Celes_EliteSupport>1</Celes_EliteSupport>
-                <Celes_EliteMelee>5</Celes_EliteMelee>
-				<Celes_OutlanderLeader>1</Celes_OutlanderLeader>
-			</options>
-		</li>
-		<!-- 陆战队突袭-压制性火力 -->
-		<li>
-			<kindDef>Combat</kindDef>
-			<commonality>8</commonality>
-            <!--<disallowedStrategies>
-                <li></li>
-            </disallowedStrategies>-->
-			<options>
-				<Celes_Elite>5</Celes_Elite>
-				<Celes_EliteSniper>3</Celes_EliteSniper>
-				<Celes_EliteSupport>3</Celes_EliteSupport>
-                <Celes_EliteMelee>2</Celes_EliteMelee>
-			</options>
-		</li>
-		<!-- 陆战队突袭-近卫突袭 -->
-		<li>
-			<kindDef>Combat</kindDef>
-			<commonality>8</commonality>
-			<options>
-				<Celes_Elite>10</Celes_Elite>
-				<Celes_EliteMelee>25</Celes_EliteMelee>
-			</options>
-		</li>
-      <li>
-        <kindDef>Peaceful</kindDef>
-        <options>
-			<Celes_ServantUnit>10</Celes_ServantUnit>
-			<Celes_ArmedExplorer>3</Celes_ArmedExplorer>
-        </options>
-      </li>
-      <li>
-        <kindDef>Trader</kindDef>
-        <traders>
-          <Celes_Trader>1</Celes_Trader>
-        </traders>
-        <carriers>
-            <Muffalo>6</Muffalo>
-            <Dromedary>5</Dromedary>
-            <Alpaca>2</Alpaca>
-            <Elephant>1</Elephant>
-        </carriers>
-        <guards>
-			<Celes_ArmedExplorer>5</Celes_ArmedExplorer>
-			<Celes_Scout>5</Celes_Scout>
-            <Celes_ServantUnit>10</Celes_ServantUnit>
-        </guards>
-      </li>
-      <li>
-        <kindDef>Settlement</kindDef>
-        <options>
-            <Celes_ServantUnit>10</Celes_ServantUnit>
-			<Celes_Outlander>10</Celes_Outlander>
-			<Celes_Scout>10</Celes_Scout>
-			<Celes_ScoutMelee>5</Celes_ScoutMelee>
-			<Celes_Elite>10</Celes_Elite>
-			<Celes_EliteSniper>3</Celes_EliteSniper>
-			<Celes_EliteSupport>3</Celes_EliteSupport>
-        </options>
-      </li>
-      <!--<li MayRequire="Ludeon.RimWorld.Ideology">
-        <kindDef>Miners</kindDef>
-        <commonality>1</commonality>
-        <options>
-          <Miner>1</Miner>
-        </options>
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <kindDef>Hunters</kindDef>
-        <commonality>1</commonality>
-        <options>
-          <Hunter>1</Hunter>
-        </options>
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <kindDef>Loggers</kindDef>
-        <commonality>1</commonality>
-        <options>
-          <Logger>1</Logger>
-        </options>
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <kindDef>Farmers</kindDef>
-        <commonality>1</commonality>
-        <options>
-          <Farmer>1</Farmer>
-        </options>
-      </li>-->
-    </pawnGroupMakers>
-    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-	<disallowedRaidAgeRestrictions>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
-	</disallowedRaidAgeRestrictions>
-</FactionDef>
+    <FactionDef ParentName="FactionBase">
+        <defName>Celes_BeaconFaction</defName>
+        <label>星铃外勤部</label>
+        <description>占位描述</description>
+        <colorSpectrum>
+            <li>(1.0, 1.0, 1.0)</li><!--等我改（-->
+        </colorSpectrum>
+        <categoryTag>Celes_BeaconFaction</categoryTag>
+        <pawnSingular>celestia</pawnSingular>
+        <pawnsPlural>celestias</pawnsPlural>
+        <techLevel>Spacer</techLevel>
+        <factionIconPath>Celes/Faction/CelesFaction_Icon</factionIconPath>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <!-- 不设 hidden（非隐藏，可外交）｜不设 settlementGenerationWeight（默认 0，无自动据点） -->
+        <factionNameMaker>CelesFaction_Namer</factionNameMaker>
+        <settlementNameMaker>CelesSettlement_Namer</settlementNameMaker>
+        <allowedCultures><li>CelesCulture</li></allowedCultures>
+        <backstoryFilters>
+            <li>
+                <categories><li>Celes_Space</li></categories>
+                <commonality>0.5</commonality>
+            </li>
+            <li>
+                <categories><li>Celes_Outlander</li></categories>
+                <commonality>0.5</commonality>
+            </li>
+        </backstoryFilters>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <caravanTraderKinds>
+            <li>Celes_Caravan_Pioneer_BulkGoods</li>
+            <li>Celes_Caravan_Pioneer_CombatSupplier</li>
+            <li>Celes_Caravan_Pioneer_Exotic</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Celes_Visitor_Pioneer_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Celes_Base_Pioneer_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-45~50</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(400, 100)</li>
+                <li>(850, 150)</li>
+                <li>(1750, 250)</li>
+                <li>(2000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>33</commonality>
+                <options>
+                    <Celes_ArmedExplorer>3</Celes_ArmedExplorer>
+                    <Celes_ServantUnitGunner>10</Celes_ServantUnitGunner>
+                    <Celes_ServantUnitClaw>5</Celes_ServantUnitClaw>
+                    <Celes_ServantUnitHammer>5</Celes_ServantUnitHammer>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <Celes_ServantUnit>10</Celes_ServantUnit>
+                    <Celes_ArmedExplorer>3</Celes_ArmedExplorer>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <Celes_Trader>1</Celes_Trader>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                </carriers>
+                <guards>
+                    <Celes_ArmedExplorer>5</Celes_ArmedExplorer>
+                    <Celes_ServantUnit>10</Celes_ServantUnit>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <Celes_ServantUnit>10</Celes_ServantUnit>
+                    <Celes_ArmedExplorer>10</Celes_ArmedExplorer>
+                    <Celes_Scout>10</Celes_Scout>
+                    <Celes_ScoutMelee>5</Celes_ScoutMelee>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <disallowedRaidAgeRestrictions>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+        </disallowedRaidAgeRestrictions>
+    </FactionDef>
+
+
+    <FactionDef ParentName="FactionBase">
+        <defName>Celes_Faction</defName>
+        <label>celestia pioneer</label>
+        <description>A group of Celestia who arrived on the planet some decades ago, a mix of Celestia's Seventh Fleet Navy and the Pioneers of the Aurora Generation ship. They possess many advanced and unique technologies, but are not proud of them. Most of the time, Celestia does not use their advanced weaponry, possibly because they have experienced some sort of technological regression, but it seems to be a habit they have developed against some sort of enemy. They still maintain some sort of technological production line, as if they had prepared for it beforehand, and are even actively and steadily restoring and recreating technology that has been lost. \n\n For the most part, they treat people kindly, happy to exchange haves and have-nots and form alliances with other factions, even if the other party is a stranger. But they also have no qualms about giving their enemies a heavy blow back. \n\n In recent times, Celestia had begun to support her friends with supplies and personnel. Contacting their field departments through the communication desk, they can exchange anything if you contribute.</description><!--等我写（-->
+        <colorSpectrum>
+            <li>(1, 1, 1)</li><!--等我改（-->
+        </colorSpectrum>
+        <categoryTag>Celes_Faction</categoryTag>
+        <pawnSingular>celestia</pawnSingular>
+        <pawnsPlural>celestias</pawnsPlural>
+        <listOrderPriority>50</listOrderPriority><!--这个可能小了要改，原版30，kiiro是240-->
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>pioneer commander-in-chief</leaderTitle><!--等我写（-->
+        <factionIconPath>Celes/Faction/CelesFactionVII_Icon</factionIconPath>
+        <techLevel>Spacer</techLevel>
+        <!--NameMaker都等我写-->
+        <factionNameMaker>CelesFaction_Namer</factionNameMaker>
+        <settlementNameMaker>CelesSettlement_Namer</settlementNameMaker>
+        <melaninRange>0</melaninRange>
+        <naturalEnemy>false</naturalEnemy>
+        <permanentEnemy>false</permanentEnemy>
+        <allowedCultures><li>CelesCulture</li></allowedCultures>
+        <arrivalLayerWhitelist>
+            <li>Surface</li>
+            <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+        </arrivalLayerWhitelist>
+        <!--↓↓↓这里等着改↓↓↓-->
+        <!--什么异种啊文化啊戒律啊麻烦死了先占位-->
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+        </requiredMemes>
+        <!-- 这是白名单和黑名单，不能共用，到时候再按需自取 -->
+        <allowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+        </allowedMemes>
+        <!-- <disallowedMemes>
+          <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+        </disallowedMemes> -->
+        <structureMemeWeights>
+            <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+        </structureMemeWeights>
+        <disallowedPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
+        </disallowedPrecepts>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <!-- <permanentEnemyToEveryoneExcept>
+            <li>OutlanderCivil</li>
+            <li>TribeCivil</li>
+            <li>PlayerTribe</li>
+            <li>PlayerColony</li>
+            <li>Ancients</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Beggars</li>
+            <li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+            <li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
+            <li MayRequire="Ludeon.RimWorld.Odyssey">TradersGuild</li>
+        </permanentEnemyToEveryoneExcept>
+        ↑↑↑这里等着改↑↑↑ -->
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Celes_Outlander</li>
+                </categories>
+                <commonality>0.75</commonality>
+            </li>
+            <li>
+                <categories>
+                    <li>Celes_Space</li>
+                </categories>
+                <commonality>0.25</commonality>
+            </li>
+            <!--<li>
+                   <categories>
+                        <li>Celes_Military</li>这个留着的意思是背景可以在好几个里面随机，但我目前只写了一个
+                 </categories>
+                 <commonality>0.05</commonality>
+          </li>-->
+        </backstoryFilters>
+        <!--衣服可能要限制材质？-->
+        <!--<apparelStuffFilter>
+          <stuffCategoriesToAllow>
+          </stuffCategoriesToAllow>
+          <disallowedThingDefs>
+          </disallowedThingDefs>
+        </apparelStuffFilter>-->
+        <!--商队不太懂哦-->
+        <caravanTraderKinds>
+            <li>Celes_Caravan_Pioneer_BulkGoods</li>
+            <li>Celes_Caravan_Pioneer_CombatSupplier</li>
+            <li>Celes_Caravan_Pioneer_Exotic</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Celes_Visitor_Pioneer_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Celes_Base_Pioneer_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-45~50</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(400, 100)</li>
+                <li>(850, 150)</li>
+                <li>(1750, 250)</li>
+                <li>(2000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <!--这里抄了原版-->
+        <pawnGroupMakers>
+            <!-- 注释掉的是这个需要的pawn我们没写 -->
+            <!-- 拓荒队突袭-仆从 -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>33</commonality>
+                <options>
+                    <Celes_ArmedExplorer>3</Celes_ArmedExplorer>
+                    <Celes_ServantUnitGunner>10</Celes_ServantUnitGunner>
+                    <Celes_ServantUnitClaw>5</Celes_ServantUnitClaw>
+                    <Celes_ServantUnitHammer>5</Celes_ServantUnitHammer>
+                </options>
+            </li>
+            <!-- 拓荒队突袭 -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>33</commonality>
+                <options>
+                    <Celes_ArmedExplorer>10</Celes_ArmedExplorer>
+                    <Celes_ServantUnitGunner>3</Celes_ServantUnitGunner>
+                    <Celes_ArmedExplorerSniper>3</Celes_ArmedExplorerSniper>
+                    <Celes_OutlanderLeader>1</Celes_OutlanderLeader>
+                    <Celes_ServantUnitClaw>5</Celes_ServantUnitClaw>
+                    <Celes_ServantUnitHammer>5</Celes_ServantUnitHammer>
+                </options>
+            </li>
+            <!-- 先锋突袭 -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>66</commonality>
+                <options>
+                    <Celes_Scout>10</Celes_Scout>
+                    <Celes_ScoutMelee>5</Celes_ScoutMelee>
+                    <Celes_ScoutSniper>3</Celes_ScoutSniper>
+                </options>
+            </li>
+            <!-- 陆战队突袭-普通 -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>17</commonality>
+                <options>
+                    <Celes_Elite>5</Celes_Elite>
+                    <Celes_EliteSniper>3</Celes_EliteSniper>
+                    <Celes_EliteSupport>1</Celes_EliteSupport>
+                    <Celes_EliteMelee>5</Celes_EliteMelee>
+                    <Celes_OutlanderLeader>1</Celes_OutlanderLeader>
+                </options>
+            </li>
+            <!-- 陆战队突袭-压制性火力 -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>8</commonality>
+                <!--<disallowedStrategies>
+                    <li></li>
+                </disallowedStrategies>-->
+                <options>
+                    <Celes_Elite>5</Celes_Elite>
+                    <Celes_EliteSniper>3</Celes_EliteSniper>
+                    <Celes_EliteSupport>3</Celes_EliteSupport>
+                    <Celes_EliteMelee>2</Celes_EliteMelee>
+                </options>
+            </li>
+            <!-- 陆战队突袭-近卫突袭 -->
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>8</commonality>
+                <options>
+                    <Celes_Elite>10</Celes_Elite>
+                    <Celes_EliteMelee>25</Celes_EliteMelee>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <Celes_ServantUnit>10</Celes_ServantUnit>
+                    <Celes_ArmedExplorer>3</Celes_ArmedExplorer>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <Celes_Trader>1</Celes_Trader>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <Celes_ArmedExplorer>5</Celes_ArmedExplorer>
+                    <Celes_Scout>5</Celes_Scout>
+                    <Celes_ServantUnit>10</Celes_ServantUnit>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <Celes_ServantUnit>10</Celes_ServantUnit>
+                    <Celes_Outlander>10</Celes_Outlander>
+                    <Celes_Scout>10</Celes_Scout>
+                    <Celes_ScoutMelee>5</Celes_ScoutMelee>
+                    <Celes_Elite>10</Celes_Elite>
+                    <Celes_EliteSniper>3</Celes_EliteSniper>
+                    <Celes_EliteSupport>3</Celes_EliteSupport>
+                </options>
+            </li>
+            <!--<li MayRequire="Ludeon.RimWorld.Ideology">
+              <kindDef>Miners</kindDef>
+              <commonality>1</commonality>
+              <options>
+                <Miner>1</Miner>
+              </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+              <kindDef>Hunters</kindDef>
+              <commonality>1</commonality>
+              <options>
+                <Hunter>1</Hunter>
+              </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+              <kindDef>Loggers</kindDef>
+              <commonality>1</commonality>
+              <options>
+                <Logger>1</Logger>
+              </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+              <kindDef>Farmers</kindDef>
+              <commonality>1</commonality>
+              <options>
+                <Farmer>1</Farmer>
+              </options>
+            </li>-->
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <disallowedRaidAgeRestrictions>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+        </disallowedRaidAgeRestrictions>
+    </FactionDef>
 
 </Defs>
