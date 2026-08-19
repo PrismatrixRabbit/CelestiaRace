@@ -11,20 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_DialogueDefs/CelesFD_DialogueDef.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_WelcomeTicker.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/DefInjected/CelesFeature.CelesFD_DialogueNodeDef/CelesFD_DialogueDef.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Belt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Belt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Middle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Middle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/DamageDef/Celes_BulletDamage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/DamageDef/Celes_BulletDamage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/HediffDefs/Hediff_Injuries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/HediffDefs/Hediff_Injuries.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_DialogueDefs/CelesFD_DialogueDef.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_WelcomeTicker.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_Base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_Base.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Utility.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Utility.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_SpacerRange.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About/About.xml" beforeDir="false" afterPath="$PROJECT_DIR$/About/About.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/DefInjected/CelesFeature.CelesFD_TickerDef/CelesFD_WelcomeTicker.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Number.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Number.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Position.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Position.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Site.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Site.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoadFolders.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LoadFolders.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +54,11 @@
     &quot;accountId&quot;: &quot;b221ca9f-0762-4f45-b4f2-176fc18c637f&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Downloads/X-性癖大世界 Ver 1.5.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/___奥朵特供世界书.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/奇妙的世界书DLC_幻想乡篇2026_06_14 (1).json" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -214,6 +220,20 @@
       <workItem from="1785747213271" duration="20390000" />
       <workItem from="1785834411130" duration="17744000" />
       <workItem from="1785927576289" duration="479000" />
+      <workItem from="1786006428652" duration="14389000" />
+      <workItem from="1786088846674" duration="6475000" />
+      <workItem from="1786181210259" duration="3555000" />
+      <workItem from="1786261908247" duration="2127000" />
+      <workItem from="1786288426143" duration="3724000" />
+      <workItem from="1786376908388" duration="2898000" />
+      <workItem from="1786444101670" duration="597000" />
+      <workItem from="1786467182920" duration="2776000" />
+      <workItem from="1786528125092" duration="5385000" />
+      <workItem from="1786697725021" duration="6234000" />
+      <workItem from="1786781261314" duration="4559000" />
+      <workItem from="1786870803126" duration="6640000" />
+      <workItem from="1787073187109" duration="1557000" />
+      <workItem from="1787134983025" duration="8966000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -391,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785522360202</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="对话系统修订。">
+      <option name="closed" value="true" />
+      <created>1786036398785</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1786036398785</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +462,8 @@
     <MESSAGE value="总之提交一下" />
     <MESSAGE value="总体调整了各方面内容" />
     <MESSAGE value="武器多模式功能及hediff测试功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="武器多模式功能及hediff测试功能" />
+    <MESSAGE value="对话系统修订。" />
+    <option name="LAST_COMMIT_MESSAGE" value="对话系统修订。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

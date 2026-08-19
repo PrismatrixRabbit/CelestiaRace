@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IncidentDef>
+        <defName>CelesFD_BeaconSignal</defName>
+        <label>信标站生成</label>
+        <category>Special</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <workerClass>CelesFeature.CelesFD_IncidentWorker_Beacon</workerClass>
+        <baseChance>0</baseChance>
+        <earliestDay>7</earliestDay>
+        <minRefireDays>99999</minRefireDays>
+        <letterDef>NeutralEvent</letterDef>
+        <letterLabel>信标站生成！</letterLabel>
+        <letterText>星铃外勤部在附近建立了信标站。\n{STATION}</letterText>
+    </IncidentDef>
+
+    <!-- 搬迁询问 letter（F5）：letterClass 需完全限定名（附录 D1 教训）；icon 省略用默认 -->
+    <LetterDef>
+        <defName>CelesFD_RelocationOffer</defName>
+        <letterClass>CelesFeature.CelesFD_ChoiceLetter_Relocation</letterClass>
+    </LetterDef>
+
+    <!-- 信标站系统静态 IncidentDef（仅作 letter 文案载体：baseChance=0 + 不挂叙事者，绝不自动触发；C# 经 SendIncidentLetter 读 def 字段生成） -->
+    <IncidentDef>
+        <defName>CelesFD_BeaconRequestSignal</defName>
+        <workerClass>CelesFeature.CelesFD_IncidentWorker_BeaconRequest</workerClass>
+        <category>Special</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <letterDef>NeutralEvent</letterDef>
+        <letterLabel>定位星铃信标站</letterLabel>
+        <letterText>根据星铃提供的坐标，我们已经定位了新的星铃信标站坐标。\n{STATION}</letterText>
+    </IncidentDef>
+
+    <IncidentDef>
+        <defName>CelesFD_BeaconAbandonSignal</defName>
+        <workerClass>CelesFeature.CelesFD_IncidentWorker_BeaconAbandon</workerClass>
+        <category>Special</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <letterDef>NeutralEvent</letterDef>
+        <letterLabel>失去星铃信标站定位</letterLabel>
+        <letterText>在此前星铃提供的信标站坐标位置，我们不再能追踪到星铃活动。最后定位的坐标位置：\n{STATION}</letterText>
+    </IncidentDef>
+
+    <IncidentDef>
+        <defName>CelesFD_RelocationOfferSignal</defName>
+        <workerClass>CelesFeature.CelesFD_IncidentWorker_RelocationOffer</workerClass>
+        <category>Special</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <letterDef>CelesFD_RelocationOffer</letterDef>
+        <letterLabel>星铃外勤部：基地搬迁协议</letterLabel>
+        <letterText>检测到您的殖民地已经迁移。星铃信标站是固定坐标设施，不随殖民地移动。\n是否接受星铃为您提供新的信标站坐标？我们将回收旧站并就近定位一个新站。\n\n当前旧站：{OLDSTATION}</letterText>
+    </IncidentDef>
+
+    <IncidentDef>
+        <defName>CelesFD_RelocationAcceptedSignal</defName>
+        <workerClass>CelesFeature.CelesFD_IncidentWorker_RelocationAccepted</workerClass>
+        <category>Special</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <letterDef>NeutralEvent</letterDef>
+        <letterLabel>定位星铃信标站</letterLabel>
+        <letterText>根据星铃提供的坐标，我们已经定位了新的星铃信标站坐标。\n{STATION}\n\n原信标站（{OLDSTATION}）已被回收。</letterText>
+    </IncidentDef>
+
+    <IncidentDef>
+        <defName>CelesFD_RelocationDoneSignal</defName>
+        <workerClass>CelesFeature.CelesFD_IncidentWorker_RelocationDone</workerClass>
+        <category>Special</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <letterDef>NeutralEvent</letterDef>
+        <letterLabel>星铃外勤部：信标站回收完成</letterLabel>
+        <letterText>旧信标站已被回收，但当前区域暂时无法定位新的信标站坐标。</letterText>
+    </IncidentDef>
+
+    <!-- F6：敌对冷却期满，星铃撤走信标站 -->
+    <IncidentDef>
+        <defName>CelesFD_BeaconMovedSignal</defName>
+        <workerClass>CelesFeature.CelesFD_IncidentWorker_BeaconMoved</workerClass>
+        <category>Special</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <letterDef>NeutralEvent</letterDef>
+        <letterLabel>信标站改变了坐标</letterLabel>
+        <letterText>你发现信标站改变了坐标：{STATION} 已不再能追踪到星铃活动。星铃外勤部已将信标站重新部署。</letterText>
+    </IncidentDef>
+
+    <!-- M6-6 突发订单（v4.3 B1：Incident 体系；触发 = 叙事者 SingleMTB 随机——Storyteller.xml Patch，mtbDays=20；
+         Worker 生成已接取突发单实例；baseChance=0 不进随机池，仅本 Comp 触发） -->
+    <IncidentDef>
+        <defName>CelesFD_UrgentOrderSignal</defName>
+        <workerClass>CelesFeature.CelesFD_IncidentWorker_UrgentOrder</workerClass>
+        <category>Special</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <baseChance>0</baseChance>
+        <letterDef>NeutralEvent</letterDef>
+        <letterLabel>紧急市场需求</letterLabel>
+        <letterText>这是对全市场的紧急需求。高优先级重要订单，已自动接取，请尽快装载交付。超时未介入的订单将自动作废，无端运力占用将违背合同约定。</letterText>
+    </IncidentDef>
+</Defs>

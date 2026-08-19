@@ -109,4 +109,116 @@
         <tickerType>Normal</tickerType>
         <filthLeaving>Filth_MachineBits</filthLeaving>
     </ThingDef>-->
+
+    <!-- ========== 里程碑 3：发射平台 + 货运单元（G2/G3a，货运单元为占位骨架，完整 Comp 见 G4） ========== -->
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>CelesFD_LaunchPad</defName>
+        <label>星铃发射平台</label>
+        <description>星铃外勤部的货运发射平台。货运单元需紧邻其对接口建造。平台消耗电力维持待机，发射时需电网承载额外大负载。</description>
+        <thingClass>CelesFeature.CelesFD_Building_PodLauncher</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Misc/PodLauncher</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,3)</drawSize>
+        </graphicData>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <size>(1,2)</size>
+        <rotatable>true</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1.0</fillPercent>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>3000</WorkToBuild>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <!-- 原版双档语义：basePowerConsumption=发射/工作态耗电（前摇暂态），idlePowerDraw=待机/常态耗电（前摇恢复值） -->
+                <basePowerConsumption>14400</basePowerConsumption>
+                <idlePowerDraw>100</idlePowerDraw>
+            </li>
+            <li Class="CelesFeature.CelesFD_CompProperties_LaunchCharge">
+                <chargeDurationTicks>1250</chargeDurationTicks>
+            </li>
+            <li Class="CompProperties_Flickable" />
+        </comps>
+        <modExtensions>
+            <li Class="CelesFeature.CelesFD_LaunchPortExtension">
+                <launchPadSource>true</launchPadSource>
+                <portOffset>(1,0,0)</portOffset>
+            </li>
+        </modExtensions>
+        <placeWorkers>
+            <li>CelesFeature.CelesFD_PlaceWorker_LaunchPortSource</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>CelesFD_CargoPod</defName>
+        <label>星铃货运单元</label>
+        <description>星铃外勤部的货运单元。仅可建造在发射平台对接口上，用于向星铃外勤部发送物资。</description>
+        <graphicData>
+            <texPath>Things/Special/DropPodMechanoid</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <rotatable>false</rotatable>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>false</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>1600</WorkToBuild>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <costList>
+            <Steel>60</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <comps>
+            <li Class="CelesFeature.CelesFD_CompProperties_Transporter">
+                <restEffectiveness>0.8</restEffectiveness>
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <massCapacity>1200</massCapacity>
+                <showMassInInspectString>true</showMassInInspectString>
+            </li>
+            <li Class="CelesFeature.CelesFD_CompProperties_Launchable">
+                <requiresFuelingPort>false</requiresFuelingPort>
+                <fixedLaunchDistanceMax>45</fixedLaunchDistanceMax>
+                <skyfallerLeaving>CelesFD_DropPodLeaving</skyfallerLeaving>
+            </li>
+        </comps>
+        <inspectorTabs>
+            <li>ITab_ContentsTransporter</li>
+        </inspectorTabs>
+        <dropPodFaller>CelesFD_DropPodIncoming</dropPodFaller>
+        <dropPodActive>CelesFD_ActiveDropPod</dropPodActive>
+        <modExtensions>
+            <li Class="CelesFeature.CelesFD_LaunchPortExtension">
+                <podPortOffset>(0,0,0)</podPortOffset>
+            </li>
+        </modExtensions>
+        <placeWorkers>
+            <li>CelesFeature.CelesFD_PlaceWorker_NeedsLaunchPort</li>
+        </placeWorkers>
+    </ThingDef>
+
 </Defs>

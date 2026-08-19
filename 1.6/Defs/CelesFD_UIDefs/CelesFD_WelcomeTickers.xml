@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- 跑马灯文本：英文源，中文翻译见 DefInjected/CelesFeature.CelesFD_TickerDef/CelesFD_WelcomeTicker.xml -->
+    <!-- 跑马灯文本：英文源，中文翻译见 DefInjected/CelesFeature.CelesFD_TickerDef/CelesFD_WelcomeTickers.xml -->
     <CelesFeature.CelesFD_TickerDef>
         <defName>CelesFD_TickerDefault</defName>
         <welcomeTicker>

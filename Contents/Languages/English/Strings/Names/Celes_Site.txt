@@ -1,6 +1,6 @@
-Battlefield Laboratory
-Outpost
-Camps
-Node
-Relay Station
-Outpost
+Battlefield Laboratory 
+Outpost 
+Camps 
+Node 
+Relay Station 
+Outpost 

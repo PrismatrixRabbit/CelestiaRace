@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <WorldObjectDef ParentName="Settlement">
+        <defName>CelesFD_BeaconStation</defName>
+        <label>信标站</label>
+        <description>星铃外勤部的信标站。</description>
+    </WorldObjectDef>
+</Defs>

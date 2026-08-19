@@ -24,6 +24,92 @@
                 <label>Debug: Check Status</label>
                 <next>N_DebugInspect</next>
             </li>
+            <li>
+                <label>F2 Test: Resource Comp</label>
+                <next>N_F2Test_Menu</next>
+            </li>
+            <li>
+                <label>信标站管理</label>
+                <next>N_Beacon_Main</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <!-- ═══ F2 测试节点（Resource Comp 验证，验证后可删） ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_F2Test_Menu</defName>
+        <nodeText>F2 Resource Comp 测试菜单。信用额随操作变化。建议先用"设为 10"再测支付。</nodeText>
+        <options>
+            <li>
+                <label>设为 10 信用额（Set 路径）</label>
+                <comps>
+                    <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_Resource">
+                        <resource>Credit</resource>
+                        <Set>10</Set>
+                    </li>
+                </comps>
+                <next>N_F2Test_OK</next>
+                <failNode>N_F2Test_NoCredit</failNode>
+            </li>
+            <li>
+                <label>获得 10 信用额（测试）</label>
+                <comps>
+                    <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_Resource">
+                        <resource>Credit</resource>
+                        <Add>10</Add>
+                    </li>
+                </comps>
+                <next>N_F2Test_OK</next>
+                <failNode>N_F2Test_NoCredit</failNode>
+            </li>
+            <li>
+                <label>支付 5 信用额（Add 负值 + checkNeed）</label>
+                <comps>
+                    <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_Resource">
+                        <resource>Credit</resource>
+                        <checkNeed>5</checkNeed>
+                        <Add>-5</Add>
+                    </li>
+                </comps>
+                <next>N_F2Test_OK</next>
+                <failNode>N_F2Test_NoCredit</failNode>
+            </li>
+            <li>
+                <label>动态选项测试（插值 + 注入）</label>
+                <next>N_F2Test_Dynamic</next>
+            </li>
+            <li>
+                <label>返回根树</label>
+                <next>N_RootA</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <!-- ═══ P0b 测试节点：nodeText 插值 + 动态选项注入（验证后可删） ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_F2Test_Dynamic</defName>
+        <nodeText>动态选项测试：当前 {beaconCount}/3 个信标站。下方为动态注入的站列表。</nodeText>
+        <entryComps>
+            <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_TestList" />
+        </entryComps>
+        <options>
+            <li><label>返回测试菜单</label><next>N_F2Test_Menu</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_F2Test_OK</defName>
+        <nodeText>操作成功，信用额已更新。</nodeText>
+        <options>
+            <li><label>返回测试菜单</label><next>N_F2Test_Menu</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_F2Test_NoCredit</defName>
+        <nodeText>信用额不足，操作被拒绝。</nodeText>
+        <options>
+            <li><label>返回测试菜单</label><next>N_F2Test_Menu</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -101,14 +187,14 @@
                 <branches>
                     <li>
                         <conditions>
-                            <li><varName>soldiers_dead</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>soldiers_dead</varName><Equal>0</Equal></li>
                         </conditions>
                         <label>继续</label>
                         <next>HANGAR</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>soldiers_dead</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>soldiers_dead</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>继续</label>
                         <next>HANGAR_SAFE</next>
@@ -146,14 +232,14 @@
                 <label>A. 射击</label>
                 <next>HANGAR_SHOOT</next>
                 <conditions>
-                    <li><varName>weapon</varName><value>1</value><comparison>Equal</comparison></li>
+                    <li><varName>weapon</varName><Equal>1</Equal></li>
                 </conditions>
             </li>
             <li>
                 <label>A. 扑上去</label>
                 <next>DEATH_SOLDIER</next>
                 <conditions>
-                    <li><varName>weapon</varName><value>0</value><comparison>Equal</comparison></li>
+                    <li><varName>weapon</varName><Equal>0</Equal></li>
                 </conditions>
             </li>
             <li><label>B. 虚张声势</label><next>DEATH_SOLDIER</next></li>
@@ -169,7 +255,7 @@
                 <label>A. 进入飞船</label>
                 <next>HANGAR_COCKPIT</next>
                 <sets>
-                    <li><varName>soldiers_dead</varName><value>1</value><op>Set</op></li>
+                    <li><varName>soldiers_dead</varName><Set>1</Set></li>
                 </sets>
             </li>
         </options>
@@ -186,14 +272,14 @@
                 <branches>
                     <li>
                         <conditions>
-                            <li><varName>weapon</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>weapon</varName><Equal>0</Equal></li>
                         </conditions>
                         <label>继续</label>
                         <next>HANGAR_TOOLS_WEAPON</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>weapon</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>weapon</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>继续</label>
                         <next>HANGAR_TOOLS_NO_WEAPON</next>
@@ -210,8 +296,8 @@
                 <label>A. 拿走切割器</label>
                 <next>HANGAR_TOOLS_TAKE</next>
                 <sets>
-                    <li><varName>weapon</varName><value>1</value><op>Set</op></li>
-                    <li><varName>hangar_tools_searched</varName><value>1</value><op>Set</op></li>
+                    <li><varName>weapon</varName><Set>1</Set></li>
+                    <li><varName>hangar_tools_searched</varName><Set>1</Set></li>
                 </sets>
             </li>
             <li><label>B. 继续搜索</label><next>HANGAR_TOOLS_SEARCH</next></li>
@@ -262,32 +348,32 @@
                 <branches>
                     <li>
                         <conditions>
-                            <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
-                            <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>ai_core_inserted</varName><Equal>0</Equal></li>
+                            <li><varName>fuel_injected</varName><Equal>0</Equal></li>
                         </conditions>
                         <label>检查起飞</label>
                         <next>CHECK_NONE</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>ai_core_inserted</varName><value>1</value><comparison>Equal</comparison></li>
-                            <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>ai_core_inserted</varName><Equal>1</Equal></li>
+                            <li><varName>fuel_injected</varName><Equal>0</Equal></li>
                         </conditions>
                         <label>检查起飞</label>
                         <next>CHECK_AI</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
-                            <li><varName>fuel_injected</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>ai_core_inserted</varName><Equal>0</Equal></li>
+                            <li><varName>fuel_injected</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>检查起飞</label>
                         <next>CHECK_FUEL</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>ai_core_inserted</varName><value>1</value><comparison>Equal</comparison></li>
-                            <li><varName>fuel_injected</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>ai_core_inserted</varName><Equal>1</Equal></li>
+                            <li><varName>fuel_injected</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>检查起飞</label>
                         <next>CHECK_BOTH</next>
@@ -305,8 +391,8 @@
                 <label>A. 插入 AI 核心</label>
                 <next>INSERT_AI</next>
                 <conditions>
-                    <li><varName>ai_core</varName><value>1</value><comparison>Equal</comparison></li>
-                    <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
+                    <li><varName>ai_core</varName><Equal>1</Equal></li>
+                    <li><varName>ai_core_inserted</varName><Equal>0</Equal></li>
                 </conditions>
             </li>
             <li><label>B. 检查 AI 插槽</label><next>INSPECT_AI_SLOT_EMPTY</next></li>
@@ -314,8 +400,8 @@
                 <label>C. 注入燃料</label>
                 <next>INSERT_FUEL</next>
                 <conditions>
-                    <li><varName>fuel</varName><value>1</value><comparison>Equal</comparison></li>
-                    <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                    <li><varName>fuel</varName><Equal>1</Equal></li>
+                    <li><varName>fuel_injected</varName><Equal>0</Equal></li>
                 </conditions>
             </li>
             <li><label>D. 检查燃料管线</label><next>INSPECT_FUEL_LINE_EMPTY</next></li>
@@ -331,8 +417,8 @@
                 <label>B. 注入燃料</label>
                 <next>INSERT_FUEL</next>
                 <conditions>
-                    <li><varName>fuel</varName><value>1</value><comparison>Equal</comparison></li>
-                    <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                    <li><varName>fuel</varName><Equal>1</Equal></li>
+                    <li><varName>fuel_injected</varName><Equal>0</Equal></li>
                 </conditions>
             </li>
             <li><label>C. 检查燃料管线</label><next>INSPECT_FUEL_LINE_EMPTY</next></li>
@@ -347,8 +433,8 @@
                 <label>A. 插入 AI 核心</label>
                 <next>INSERT_AI</next>
                 <conditions>
-                    <li><varName>ai_core</varName><value>1</value><comparison>Equal</comparison></li>
-                    <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
+                    <li><varName>ai_core</varName><Equal>1</Equal></li>
+                    <li><varName>ai_core_inserted</varName><Equal>0</Equal></li>
                 </conditions>
             </li>
             <li><label>B. 检查 AI 插槽</label><next>INSPECT_AI_SLOT_EMPTY</next></li>
@@ -376,8 +462,8 @@
                 <label>A. 返回</label>
                 <next>HANGAR_COCKPIT</next>
                 <sets>
-                    <li><varName>ai_core_inserted</varName><value>1</value><op>Set</op></li>
-                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
+                    <li><varName>ai_core_inserted</varName><Set>1</Set></li>
+                    <li><varName>ai_core</varName><Set>0</Set></li>
                 </sets>
             </li>
         </options>
@@ -390,8 +476,8 @@
                 <label>A. 返回</label>
                 <next>HANGAR_COCKPIT</next>
                 <sets>
-                    <li><varName>fuel_injected</varName><value>1</value><op>Set</op></li>
-                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
+                    <li><varName>fuel_injected</varName><Set>1</Set></li>
+                    <li><varName>fuel</varName><Set>0</Set></li>
                 </sets>
             </li>
         </options>
@@ -436,22 +522,22 @@
                 <branches>
                     <li>
                         <conditions>
-                            <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
-                            <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>ai_core_inserted</varName><Equal>0</Equal></li>
+                            <li><varName>fuel_injected</varName><Equal>0</Equal></li>
                         </conditions>
                         <label>尝试点火</label>
                         <next>IGNITE_NONE</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>ai_core_inserted</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>ai_core_inserted</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>尝试点火</label>
                         <next>IGNITE_READY</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>fuel_injected</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>fuel_injected</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>尝试点火</label>
                         <next>IGNITE_READY</next>
@@ -476,24 +562,24 @@
                 <branches>
                     <li>
                         <conditions>
-                            <li><varName>ai_core_inserted</varName><value>1</value><comparison>Equal</comparison></li>
-                            <li><varName>fuel_injected</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>ai_core_inserted</varName><Equal>1</Equal></li>
+                            <li><varName>fuel_injected</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>A. 点火起飞</label>
                         <next>END_TRUE</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>ai_core_inserted</varName><value>1</value><comparison>Equal</comparison></li>
-                            <li><varName>fuel_injected</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>ai_core_inserted</varName><Equal>1</Equal></li>
+                            <li><varName>fuel_injected</varName><Equal>0</Equal></li>
                         </conditions>
                         <label>A. 点火起飞</label>
                         <next>END_CORE</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>ai_core_inserted</varName><value>0</value><comparison>Equal</comparison></li>
-                            <li><varName>fuel_injected</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>ai_core_inserted</varName><Equal>0</Equal></li>
+                            <li><varName>fuel_injected</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>A. 点火起飞</label>
                         <next>END_FUEL</next>
@@ -525,14 +611,14 @@
                 <branches>
                     <li>
                         <conditions>
-                            <li><varName>wh_office_searched</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>wh_office_searched</varName><Equal>0</Equal></li>
                         </conditions>
                         <label>进入办公室</label>
                         <next>WH_OFFICE</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>wh_office_searched</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>wh_office_searched</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>进入办公室</label>
                         <next>WH_OFFICE_SEARCHED</next>
@@ -549,11 +635,11 @@
                 <label>A. 拿走密码卡</label>
                 <next>WH_OFFICE_TAKE</next>
                 <conditions>
-                    <li><varName>wh_office_searched</varName><value>0</value><comparison>Equal</comparison></li>
+                    <li><varName>wh_office_searched</varName><Equal>0</Equal></li>
                 </conditions>
                 <sets>
-                    <li><varName>password</varName><value>1</value><op>Set</op></li>
-                    <li><varName>wh_office_searched</varName><value>1</value><op>Set</op></li>
+                    <li><varName>password</varName><Set>1</Set></li>
+                    <li><varName>wh_office_searched</varName><Set>1</Set></li>
                 </sets>
             </li>
             <li><label>B. 翻看文件</label><next>WH_OFFICE_FILES</next></li>
@@ -583,7 +669,7 @@
                 <label>A. 返回</label>
                 <next>WH</next>
                 <sets>
-                    <li><varName>password</varName><value>1</value><op>Set</op></li>
+                    <li><varName>password</varName><Set>1</Set></li>
                 </sets>
             </li>
         </options>
@@ -598,14 +684,14 @@
                 <branches>
                     <li>
                         <conditions>
-                            <li><varName>monster_dead</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>monster_dead</varName><Equal>0</Equal></li>
                         </conditions>
                         <label>进入货物区</label>
                         <next>WH_CRATES_ALIVE</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>monster_dead</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>monster_dead</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>进入货物区</label>
                         <next>WH_CRATES_DEAD_ENTRY</next>
@@ -622,18 +708,18 @@
                 <label>A. 取燃料</label>
                 <next>WH_FUEL_TAKEN</next>
                 <conditions>
-                    <li><varName>weapon</varName><value>1</value><comparison>Equal</comparison></li>
+                    <li><varName>weapon</varName><Equal>1</Equal></li>
                 </conditions>
                 <sets>
-                    <li><varName>monster_dead</varName><value>1</value><op>Set</op></li>
-                    <li><varName>fuel</varName><value>1</value><op>Set</op></li>
+                    <li><varName>monster_dead</varName><Set>1</Set></li>
+                    <li><varName>fuel</varName><Set>1</Set></li>
                 </sets>
             </li>
             <li>
                 <label>A. 悄悄伸手</label>
                 <next>DEATH_MONSTER</next>
                 <conditions>
-                    <li><varName>weapon</varName><value>0</value><comparison>Equal</comparison></li>
+                    <li><varName>weapon</varName><Equal>0</Equal></li>
                 </conditions>
             </li>
             <li><label>B. 扔金属碎片引开它</label><next>WH_CRATES_DISTRACT</next></li>
@@ -656,14 +742,14 @@
                 <branches>
                     <li>
                         <conditions>
-                            <li><varName>fuel</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>fuel</varName><Equal>0</Equal></li>
                         </conditions>
                         <label>继续</label>
                         <next>WH_CRATES_DEAD</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>fuel</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>fuel</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>继续</label>
                         <next>WH_CRATES_DEAD_EMPTY</next>
@@ -680,10 +766,10 @@
                 <label>A. 取走燃料</label>
                 <next>WH_FUEL_TAKEN</next>
                 <conditions>
-                    <li><varName>fuel</varName><value>0</value><comparison>Equal</comparison></li>
+                    <li><varName>fuel</varName><Equal>0</Equal></li>
                 </conditions>
                 <sets>
-                    <li><varName>fuel</varName><value>1</value><op>Set</op></li>
+                    <li><varName>fuel</varName><Set>1</Set></li>
                 </sets>
             </li>
             <li><label>B. 检查尸体</label><next>WH_CRATES_BODY</next></li>
@@ -726,14 +812,14 @@
                 <branches>
                     <li>
                         <conditions>
-                            <li><varName>turret_off</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>turret_off</varName><Equal>0</Equal></li>
                         </conditions>
                         <label>进入研究所</label>
                         <next>LAB_DANGER</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>turret_off</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>turret_off</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>进入研究所</label>
                         <next>LAB_SAFE</next>
@@ -751,7 +837,7 @@
                 <label>B. 破坏炮台</label>
                 <next>LAB_TURRET_DESTROY</next>
                 <conditions>
-                    <li><varName>weapon</varName><value>1</value><comparison>Equal</comparison></li>
+                    <li><varName>weapon</varName><Equal>1</Equal></li>
                 </conditions>
             </li>
             <li><label>C. 使用终端</label><next>LAB_TERM</next></li>
@@ -766,7 +852,7 @@
                 <label>A. 继续</label>
                 <next>LAB_SAFE</next>
                 <sets>
-                    <li><varName>turret_off</varName><value>1</value><op>Set</op></li>
+                    <li><varName>turret_off</varName><Set>1</Set></li>
                 </sets>
             </li>
         </options>
@@ -789,17 +875,17 @@
                 <label>A. 输入密码</label>
                 <next>LAB_TERM_DONE</next>
                 <conditions>
-                    <li><varName>password</varName><value>1</value><comparison>Equal</comparison></li>
+                    <li><varName>password</varName><Equal>1</Equal></li>
                 </conditions>
                 <sets>
-                    <li><varName>turret_off</varName><value>1</value><op>Set</op></li>
+                    <li><varName>turret_off</varName><Set>1</Set></li>
                 </sets>
             </li>
             <li>
                 <label>A. 尝试默认密码</label>
                 <next>LAB_TERM_FAIL</next>
                 <conditions>
-                    <li><varName>password</varName><value>0</value><comparison>Equal</comparison></li>
+                    <li><varName>password</varName><Equal>0</Equal></li>
                 </conditions>
             </li>
             <li><label>B. 取消</label><next>LAB_ENTRY</next></li>
@@ -831,14 +917,14 @@
                 <branches>
                     <li>
                         <conditions>
-                            <li><varName>ai_core</varName><value>0</value><comparison>Equal</comparison></li>
+                            <li><varName>ai_core</varName><Equal>0</Equal></li>
                         </conditions>
                         <label>进入实验室</label>
                         <next>LAB_INNER</next>
                     </li>
                     <li>
                         <conditions>
-                            <li><varName>ai_core</varName><value>1</value><comparison>Equal</comparison></li>
+                            <li><varName>ai_core</varName><Equal>1</Equal></li>
                         </conditions>
                         <label>进入实验室</label>
                         <next>LAB_INNER_EMPTY</next>
@@ -855,10 +941,10 @@
                 <label>A. 拿走核心</label>
                 <next>LAB_INNER_TAKEN</next>
                 <conditions>
-                    <li><varName>ai_core</varName><value>0</value><comparison>Equal</comparison></li>
+                    <li><varName>ai_core</varName><Equal>0</Equal></li>
                 </conditions>
                 <sets>
-                    <li><varName>ai_core</varName><value>1</value><op>Set</op></li>
+                    <li><varName>ai_core</varName><Set>1</Set></li>
                 </sets>
             </li>
             <li><label>B. 检查实验数据</label><next>LAB_INNER_DATA</next></li>
@@ -900,17 +986,17 @@
                 <label>A. 重来</label>
                 <next>N0</next>
                 <sets>
-                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
-                    <li><varName>password</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
-                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                    <li><varName>weapon</varName><Set>0</Set></li>
+                    <li><varName>password</varName><Set>0</Set></li>
+                    <li><varName>ai_core</varName><Set>0</Set></li>
+                    <li><varName>fuel</varName><Set>0</Set></li>
+                    <li><varName>hangar_tools_searched</varName><Set>0</Set></li>
+                    <li><varName>wh_office_searched</varName><Set>0</Set></li>
+                    <li><varName>monster_dead</varName><Set>0</Set></li>
+                    <li><varName>soldiers_dead</varName><Set>0</Set></li>
+                    <li><varName>turret_off</varName><Set>0</Set></li>
+                    <li><varName>ai_core_inserted</varName><Set>0</Set></li>
+                    <li><varName>fuel_injected</varName><Set>0</Set></li>
                 </sets>
             </li>
         </options>
@@ -923,17 +1009,17 @@
                 <label>A. 重来</label>
                 <next>N0</next>
                 <sets>
-                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
-                    <li><varName>password</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
-                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                    <li><varName>weapon</varName><Set>0</Set></li>
+                    <li><varName>password</varName><Set>0</Set></li>
+                    <li><varName>ai_core</varName><Set>0</Set></li>
+                    <li><varName>fuel</varName><Set>0</Set></li>
+                    <li><varName>hangar_tools_searched</varName><Set>0</Set></li>
+                    <li><varName>wh_office_searched</varName><Set>0</Set></li>
+                    <li><varName>monster_dead</varName><Set>0</Set></li>
+                    <li><varName>soldiers_dead</varName><Set>0</Set></li>
+                    <li><varName>turret_off</varName><Set>0</Set></li>
+                    <li><varName>ai_core_inserted</varName><Set>0</Set></li>
+                    <li><varName>fuel_injected</varName><Set>0</Set></li>
                 </sets>
             </li>
         </options>
@@ -946,17 +1032,17 @@
                 <label>A. 重来</label>
                 <next>N0</next>
                 <sets>
-                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
-                    <li><varName>password</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
-                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                    <li><varName>weapon</varName><Set>0</Set></li>
+                    <li><varName>password</varName><Set>0</Set></li>
+                    <li><varName>ai_core</varName><Set>0</Set></li>
+                    <li><varName>fuel</varName><Set>0</Set></li>
+                    <li><varName>hangar_tools_searched</varName><Set>0</Set></li>
+                    <li><varName>wh_office_searched</varName><Set>0</Set></li>
+                    <li><varName>monster_dead</varName><Set>0</Set></li>
+                    <li><varName>soldiers_dead</varName><Set>0</Set></li>
+                    <li><varName>turret_off</varName><Set>0</Set></li>
+                    <li><varName>ai_core_inserted</varName><Set>0</Set></li>
+                    <li><varName>fuel_injected</varName><Set>0</Set></li>
                 </sets>
             </li>
         </options>
@@ -969,17 +1055,17 @@
                 <label>A. 重玩</label>
                 <next>N0</next>
                 <sets>
-                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
-                    <li><varName>password</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
-                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                    <li><varName>weapon</varName><Set>0</Set></li>
+                    <li><varName>password</varName><Set>0</Set></li>
+                    <li><varName>ai_core</varName><Set>0</Set></li>
+                    <li><varName>fuel</varName><Set>0</Set></li>
+                    <li><varName>hangar_tools_searched</varName><Set>0</Set></li>
+                    <li><varName>wh_office_searched</varName><Set>0</Set></li>
+                    <li><varName>monster_dead</varName><Set>0</Set></li>
+                    <li><varName>soldiers_dead</varName><Set>0</Set></li>
+                    <li><varName>turret_off</varName><Set>0</Set></li>
+                    <li><varName>ai_core_inserted</varName><Set>0</Set></li>
+                    <li><varName>fuel_injected</varName><Set>0</Set></li>
                 </sets>
             </li>
         </options>
@@ -992,17 +1078,17 @@
                 <label>A. 重玩</label>
                 <next>N0</next>
                 <sets>
-                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
-                    <li><varName>password</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
-                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                    <li><varName>weapon</varName><Set>0</Set></li>
+                    <li><varName>password</varName><Set>0</Set></li>
+                    <li><varName>ai_core</varName><Set>0</Set></li>
+                    <li><varName>fuel</varName><Set>0</Set></li>
+                    <li><varName>hangar_tools_searched</varName><Set>0</Set></li>
+                    <li><varName>wh_office_searched</varName><Set>0</Set></li>
+                    <li><varName>monster_dead</varName><Set>0</Set></li>
+                    <li><varName>soldiers_dead</varName><Set>0</Set></li>
+                    <li><varName>turret_off</varName><Set>0</Set></li>
+                    <li><varName>ai_core_inserted</varName><Set>0</Set></li>
+                    <li><varName>fuel_injected</varName><Set>0</Set></li>
                 </sets>
             </li>
         </options>
@@ -1015,19 +1101,99 @@
                 <label>A. 重玩</label>
                 <next>N0</next>
                 <sets>
-                    <li><varName>weapon</varName><value>0</value><op>Set</op></li>
-                    <li><varName>password</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel</varName><value>0</value><op>Set</op></li>
-                    <li><varName>hangar_tools_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>wh_office_searched</varName><value>0</value><op>Set</op></li>
-                    <li><varName>monster_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>soldiers_dead</varName><value>0</value><op>Set</op></li>
-                    <li><varName>turret_off</varName><value>0</value><op>Set</op></li>
-                    <li><varName>ai_core_inserted</varName><value>0</value><op>Set</op></li>
-                    <li><varName>fuel_injected</varName><value>0</value><op>Set</op></li>
+                    <li><varName>weapon</varName><Set>0</Set></li>
+                    <li><varName>password</varName><Set>0</Set></li>
+                    <li><varName>ai_core</varName><Set>0</Set></li>
+                    <li><varName>fuel</varName><Set>0</Set></li>
+                    <li><varName>hangar_tools_searched</varName><Set>0</Set></li>
+                    <li><varName>wh_office_searched</varName><Set>0</Set></li>
+                    <li><varName>monster_dead</varName><Set>0</Set></li>
+                    <li><varName>soldiers_dead</varName><Set>0</Set></li>
+                    <li><varName>turret_off</varName><Set>0</Set></li>
+                    <li><varName>ai_core_inserted</varName><Set>0</Set></li>
+                    <li><varName>fuel_injected</varName><Set>0</Set></li>
                 </sets>
             </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <!-- ═══ 信标站管理树（P1：查看/申请/放弃） ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_Main</defName>
+        <nodeText>信标站管理。您可以查看现有信标站或申请新信标站。</nodeText>
+        <options>
+            <li>
+                <label>查看信标站 / 申请放弃</label>
+                <next>N_Beacon_List</next>
+            </li>
+            <li>
+                <label>申请新信标站（5 信用额）</label>
+                <comps>
+                    <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_BeaconRequest">
+                        <creditCost>5</creditCost>
+                    </li>
+                </comps>
+                <next>N_Beacon_RequestOK</next>
+                <failNode>N_Beacon_RequestFail</failNode>
+            </li>
+            <li>
+                <label>返回根树</label>
+                <next>N_RootA</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_List</defName>
+        <nodeText>当前 {beaconCount}/3 个信标站。本清单列出所有信标站，选中特定信标站申请放弃。</nodeText>
+        <entryComps>
+            <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_BeaconList" />
+        </entryComps>
+        <options>
+            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_Confirm</defName>
+        <nodeText>确认放弃 {beaconTargetName}？</nodeText>
+        <entryComps>
+            <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_BeaconConfirmEntry" />
+        </entryComps>
+        <options>
+            <li>
+                <label>确认放弃</label>
+                <comps>
+                    <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_BeaconAbandon" />
+                </comps>
+                <next>N_Beacon_AbandonOK</next>
+                <failNode>N_Beacon_List</failNode>
+            </li>
+            <li><label>返回清单</label><next>N_Beacon_List</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_RequestOK</defName>
+        <nodeText>申请成功，星铃外勤部已在远处建立新信标站。</nodeText>
+        <options>
+            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_RequestFail</defName>
+        <nodeText>申请被拒绝：信用额不足、名额已满或无法找到合适位置。</nodeText>
+        <options>
+            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_AbandonOK</defName>
+        <nodeText>信标站已被放弃。</nodeText>
+        <options>
+            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 </Defs>

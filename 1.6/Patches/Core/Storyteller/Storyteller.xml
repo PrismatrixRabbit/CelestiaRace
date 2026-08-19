@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps</xpath>
+        <value>
+            <li Class="StorytellerCompProperties_SingleMTB">
+                <!-- mtbDays≈0：每 interval 必触发候选；"第 7 天后"由 IncidentDef.earliestDay（CanFireNow）控制；"全局一次"由 minRefireDays=99999（FiredTooRecently）控制 -->
+                <mtbDays>0.001</mtbDays>
+                <incident>CelesFD_BeaconSignal</incident>
+                <allowedTargetTags>
+                    <li>World</li>
+                </allowedTargetTags>
+            </li>
+            <li Class="StorytellerCompProperties_SingleMTB">
+                <!-- M6-6 突发订单：mtbDays=20 时间随机触发（天然兼容 dev 快进；Worker 内防重复/上限判定；mtbDays 建议值可调） -->
+                <mtbDays>20</mtbDays>
+                <incident>CelesFD_UrgentOrderSignal</incident>
+                <allowedTargetTags>
+                    <li>World</li>
+                </allowedTargetTags>
+            </li>
+        </value>
+    </Operation>
+</Patch>

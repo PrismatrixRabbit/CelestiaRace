@@ -14,5 +14,16 @@
         <reportString>使用星铃通讯天线</reportString>
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
-    
+
+    <!-- 尸体投入暂时注释（K7 搁置，恢复时取消注释并恢复 C# 3 文件） -->
+    <!--
+    <JobDef>
+        <defName>Celes_CorpseRefuel</defName>
+        <driverClass>CelesFeature.Celes_JobDriver_CorpseRefuel</driverClass>
+        <reportString>将 TargetB 投入 TargetA。</reportString>
+        <suspendable>false</suspendable>
+    </JobDef>
+    -->
+
+
 </Defs>

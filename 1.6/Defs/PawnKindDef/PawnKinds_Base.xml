@@ -3,7 +3,7 @@
 
     <PawnKindDef Name="Celes_PawnBase" Abstract="True">
         <race>Celes_Race</race>
-        <defaultFactionType>Celes_Faction</defaultFactionType>
+        <defaultFactionType>Celes_BeaconFaction</defaultFactionType>
         <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
         <invNutrition>3</invNutrition>
         <gearHealthRange>0.8~1.0</gearHealthRange>
@@ -99,7 +99,7 @@
 
     <PawnKindDef Name="Celes_ServantPawnBase" Abstract="True">
         <race>Human</race>
-        <defaultFactionType>Celes_Faction</defaultFactionType>
+        <defaultFactionType>Celes_BeaconFaction</defaultFactionType>
         <backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
         <techHediffsChance>0.03</techHediffsChance>
         <techHediffsMoney>50~800</techHediffsMoney>
@@ -186,7 +186,7 @@
 
     <PawnKindDef Name="Celes_AbyssiaPawnBase" Abstract="True">
         <race>Celes_Abyssia_Race</race>
-        <defaultFactionType>Celes_Faction</defaultFactionType>
+        <defaultFactionType>Celes_BeaconFaction</defaultFactionType>
         <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
         <invNutrition>3</invNutrition>
         <gearHealthRange>0.8~1.0</gearHealthRange>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 尘构晶簇：Mineable 建筑，原版开采系统零改动接入 -->
+  <!-- [事实] 结构参照原版 MineableSteel（Core Buildings_Natural.xml:91-113）与 RockBase 继承链 -->
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>Celes_CrystalCluster</defName>
+    <label>尘构晶簇</label>
+    <description>由晶体培育器或野外晶种催生的晶态物质簇。会随时间生长分级，采矿获得初始晶态材料。</description>
+    <thingClass>CelesFeature.Celes_CrystalCluster</thingClass>
+    <graphicData>
+      <texPath>Celes/Building/CrystalCluster/CrystalCluster_1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <rotatable>false</rotatable>
+    <tickerType>Long</tickerType>
+    <fillPercent>0.5</fillPercent>
+    <mineable>true</mineable>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <isInert>true</isInert>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <mineableThing>Celes_InitialCrystallineMaterial</mineableThing>
+      <mineableYield>10</mineableYield>
+      <mineableDropChance>1</mineableDropChance>
+    </building>
+    <comps>
+      <li Class="CelesFeature.Celes_CompProperties_CrystalCluster">
+        <levelGraphics>
+          <li>
+            <texPath>Celes/Building/CrystalCluster/CrystalCluster_1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </li>
+          <li>
+            <texPath>Celes/Building/CrystalCluster/CrystalCluster_2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </li>
+          <li>
+            <texPath>Celes/Building/CrystalCluster/CrystalCluster_3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </li>
+          <li>
+            <texPath>Celes/Building/CrystalCluster/CrystalCluster_4</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </li>
+        </levelGraphics>
+        <!-- dev 直接生成时的默认参数（培育器/晶种生成时由 InitGrowth 覆盖） -->
+        <pointToGrow>
+          <li>0</li>
+          <li>2</li>
+          <li>5</li>
+          <li>10</li>
+        </pointToGrow>
+        <!-- dev 兜底参数：临时测试同步木地板（培育器/晶种生成时由 InitGrowth 覆盖） -->
+        <terrainToGrow>
+          <li>WoodPlankFloor</li>
+        </terrainToGrow>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

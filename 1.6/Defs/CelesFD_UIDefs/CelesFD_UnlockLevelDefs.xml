@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- 开放等级体系（M2）：L0 基础 / L1 进阶 + 顺序配置。description 用 Def 基类字段（CS0108 规避） -->
+    <CelesFeature.CelesFD_UnlockLevelDef>
+        <defName>CelesFD_Level_L0</defName>
+        <title>初始合作</title>
+        <description>与星铃外勤部的初次合作。</description>
+        <fameRequire>0</fameRequire>
+        <tradeRequire>0</tradeRequire>
+        <isBase>true</isBase>
+        <openSlots>
+            <buy>2</buy>
+            <sell>2</sell>
+        </openSlots>
+        <internalSlots>
+            <buy>1</buy>
+            <sell>1</sell>
+        </internalSlots>
+        <preciousSlots>
+            <buy>0</buy>
+            <sell>0</sell>
+        </preciousSlots>
+        <marketPreciousChance>0</marketPreciousChance>
+        <maxTradeOrder>3</maxTradeOrder>
+    </CelesFeature.CelesFD_UnlockLevelDef>
+
+    <CelesFeature.CelesFD_UnlockLevelDef>
+        <defName>CelesFD_Level_L1</defName>
+        <title>正式合作</title>
+        <description>声望与交易额达到一定程度后的正式合作。</description>
+        <fameRequire>100</fameRequire>
+        <tradeRequire>500</tradeRequire>
+        <openSlots>
+            <buy>3</buy>
+            <sell>3</sell>
+        </openSlots>
+        <internalSlots>
+            <buy>2</buy>
+            <sell>2</sell>
+        </internalSlots>
+        <preciousSlots>
+            <buy>1</buy>
+            <sell>1</sell>
+        </preciousSlots>
+        <marketPreciousChance>20</marketPreciousChance>
+        <maxTradeOrder>5</maxTradeOrder>
+    </CelesFeature.CelesFD_UnlockLevelDef>
+
+    <CelesFeature.CelesFD_UnlockLevelConfigDef>
+        <defName>CelesFD_UnlockLevelConfigDefault</defName>
+        <unlockLevel>
+            <li>CelesFD_Level_L0</li>
+            <li>CelesFD_Level_L1</li>
+        </unlockLevel>
+    </CelesFeature.CelesFD_UnlockLevelConfigDef>
+</Defs>

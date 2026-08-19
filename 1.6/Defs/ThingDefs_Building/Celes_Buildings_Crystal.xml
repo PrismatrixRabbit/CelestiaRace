@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 晶体培育器（Type 3）：燃料驱动周期扩散晶簇 -->
+  <!-- [事实] tickerType=Normal 为 CompRefuelable 持续消耗模式的 ConfigError 硬约束（CompProperties_Refuelable.cs:152-155） -->
+  <!-- 贴图占位：Celes/Industry/Building/CrystalSeeder 需自备 -->
+  <!-- [事实] 继承原版 BuildingBase（Buildings_Base.xml:4）：category/selectable/thingClass 免费获得；
+       building 由 ThingDef.PostLoad 自动初始化（ThingDef.cs:1553-1556）——裸 Def 缺 category 曾致 NRE/无法选中/SetFactionDirect 三坑 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>Celes_CrystalSeeder</defName>
+    <label>晶体培育器</label>
+    <description>周期性在范围内可生长地板上催生尘构晶簇。需要燃料维持运转，无燃料时进入待机。晶簇生长至最高等级后可用自动标记开采。</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Celes/Building/CrystalSeeder/CrystalSeeder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.6</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+    <designationCategory>Celes_SpecialBuildings</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <tickerType>Normal</tickerType>
+    <placeWorkers>
+      <li>CelesFeature.PlaceWorker_CrystalGrowRadius</li>
+    </placeWorkers>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <!-- [事实] 用电器不传电：transmitsPower 默认 false（CompProperties_Power.cs:15），写 true 会成电力中继（电缆穿过） -->
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>300</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>5</fuelCapacity>
+        <fuelConsumptionRate>1.0</fuelConsumptionRate>
+        <consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
+        <fuelLabel>培育燃料</fuelLabel>
+        <outOfFuelMessage>燃料耗尽，培育停止。</outOfFuelMessage>
+      </li>
+      <li Class="CelesFeature.Celes_CompProperties_CrystalSeeder">
+        <ticksToGrow>10000</ticksToGrow>
+        <growRadius>9.9</growRadius>
+        <totalGrowChance>1.5</totalGrowChance>
+        <maxGrowChance>0.8</maxGrowChance>
+        <growStepDecrement>0.5</growStepDecrement>
+        <perDecreaseChance>0.15</perDecreaseChance>
+        <minGrowChance>0.05</minGrowChance>
+        <baseGrowDef>Celes_CrystalCluster</baseGrowDef>
+        <!-- 临时测试配置：木地板（玩家可自铺）；正式版恢复 Soil/SoilRich -->
+        <terrainToGrow>
+          <li>WoodPlankFloor</li>
+        </terrainToGrow>
+        <pointToGrow>
+          <li>0</li>
+          <li>2</li>
+          <li>5</li>
+          <li>10</li>
+        </pointToGrow>
+        <chanceToGrow>0.33</chanceToGrow>
+      </li>
+      <!-- 尸体投入暂时注释（K7 搁置，恢复时取消注释并恢复 C# 3 文件） -->
+      <!--
+      <li Class="CelesFeature.Celes_CompProperties_CorpseFuel">
+        <corpseBlacklist>
+          <li>Celes_NanoCrystallisedCorpse</li>
+          <li>Celes_RottenNanoCrystallisedCorpse</li>
+        </corpseBlacklist>
+        <maxCorpseCharge>2.0</maxCorpseCharge>
+      </li>
+      -->
+    </comps>
+  </ThingDef>
+
+  <!-- 野外晶种：自然生长源，次数上限自限，无燃料无电力 -->
+  <!-- [事实] 活跃/失活双贴图：graphicData = 失活态，activeGraphicData = 活跃态（Celes_CrystalSeedThing.Graphic 覆写切换） -->
+  <!-- 贴图占位：Celes/Industry/Crystal/CrystalSeed_Inactive / CrystalSeed_Active 需自备 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>Celes_CrystalSeed</defName>
+    <label>野外晶种</label>
+    <description>会自然催生尘构晶簇的活性晶体。每次生长判定消耗一次活性，判定次数耗尽后失活，范围内晶簇停止生长。</description>
+    <thingClass>CelesFeature.Celes_CrystalSeedThing</thingClass>
+    <!-- [事实] 覆写父类 Light：晶种放置支撑与晶簇生长判定模式 B 共用（C# 读 def.terrainAffordanceNeeded）；
+         所有原版地板 affordances 含 Medium（Terrain_Floors.xml:6-11） -->
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <graphicData>
+      <texPath>Celes/Building/CrystalSeeder/CrystalSeed_Inactive</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <size>(1,1)</size>
+    <designationCategory>Celes_SpecialBuildings</designationCategory>
+    <passability>Standable</passability>
+    <tickerType>Rare</tickerType>
+    <placeWorkers>
+      <li>CelesFeature.PlaceWorker_CrystalGrowRadius</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Celes_InitialCrystalCluster>1</Celes_InitialCrystalCluster>
+    </costList>
+    <comps>
+      <li Class="CelesFeature.Celes_CompProperties_CrystalSeed">
+        <attemptsLimit>45</attemptsLimit>
+        <ticksToGrow>2500</ticksToGrow>
+        <growRadius>9.9</growRadius>
+        <totalGrowChance>1.5</totalGrowChance>
+        <maxGrowChance>0.8</maxGrowChance>
+        <growStepDecrement>0.5</growStepDecrement>
+        <perDecreaseChance>0.15</perDecreaseChance>
+        <minGrowChance>0.05</minGrowChance>
+        <baseGrowDef>Celes_CrystalCluster</baseGrowDef>
+        <!-- 临时测试配置：模式 B（仅看支撑，Medium）；terrainToGrow 保留备用（切回模式 A 时用） -->
+        <terrainCheckMode>Affordance</terrainCheckMode>
+        <terrainToGrow>
+          <li>WoodPlankFloor</li>
+        </terrainToGrow>
+        <pointToGrow>
+          <li>0</li>
+          <li>2</li>
+          <li>5</li>
+          <li>10</li>
+        </pointToGrow>
+        <chanceToGrow>0.33</chanceToGrow>
+        <activeGraphicData>
+          <texPath>Celes/Building/CrystalSeeder/CrystalSeed_Active</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </activeGraphicData>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

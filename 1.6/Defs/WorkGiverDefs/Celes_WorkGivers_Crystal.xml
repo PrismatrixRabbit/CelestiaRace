@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- [事实] 结构参照原版 Refuel WorkGiverDef（Core WorkGivers.xml:1210-1220） -->
+  <!-- 尸体投入仅玩家强制触发（HasJobOnThing 恒 false），AI 不自动执行 -->
+  <!-- 尸体投入暂时注释（K7 搁置，恢复时取消注释并恢复 C# 3 文件） -->
+  <!--
+  <WorkGiverDef>
+    <defName>Celes_CorpseFuel</defName>
+    <giverClass>CelesFeature.Celes_WorkGiver_CorpseFuel</giverClass>
+    <workType>Hauling</workType>
+    <verb>投入培育器</verb>
+    <gerund>投入培育器中</gerund>
+    <priorityInType>160</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  -->
+
+</Defs>

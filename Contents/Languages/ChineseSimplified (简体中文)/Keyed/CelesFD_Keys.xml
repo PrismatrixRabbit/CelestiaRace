@@ -20,4 +20,164 @@
     <CelesFD_Keyed_ReturnToRoot>返回主页</CelesFD_Keyed_ReturnToRoot>
     <CelesFD_Keyed_Return_Record>返回主页</CelesFD_Keyed_Return_Record>
 
+    <!-- 信标站描述模板（可翻译：句式/前缀；数值与地理符号占位） -->
+    <CelesFD_Keyed_StationDesc>{0} - {1} (距离{2}格, 位于{3})</CelesFD_Keyed_StationDesc>
+
+    <!-- 搬迁询问 letter 按钮（F5） -->
+    <CelesFD_Keyed_Letter_RelocationAccept>接受新坐标</CelesFD_Keyed_Letter_RelocationAccept>
+    <CelesFD_Keyed_Letter_RelocationDecline>暂不接受</CelesFD_Keyed_Letter_RelocationDecline>
+    <CelesFD_Keyed_Letter_NoOldStation>（无）</CelesFD_Keyed_Letter_NoOldStation>
+
+    <!-- 里程碑 3：货运单元放置校验（G2） -->
+    <CelesFD_MustPlaceNearLaunchPad>必须紧邻星铃发射平台的对接口</CelesFD_MustPlaceNearLaunchPad>
+
+    <!-- 里程碑 3：发射状态机（G5） -->
+    <CelesFD_LaunchToFaction>发射至星铃外勤部</CelesFD_LaunchToFaction>
+    <CelesFD_LaunchToFactionDesc>向最近的信标站发射本货运单元（需装载完成，发射前需电网承载 0.5 小时以充能）。</CelesFD_LaunchToFactionDesc>
+    <CelesFD_NoBeaconStation>没有可用的信标站</CelesFD_NoBeaconStation>
+    <CelesFD_LaunchCharging>发射充能中</CelesFD_LaunchCharging>
+    <CelesFD_LaunchChargingInspect>发射充能中（剩余 {0}）</CelesFD_LaunchChargingInspect>
+    <CelesFD_ChargeInterrupted>发射中断：电网承载不足</CelesFD_ChargeInterrupted>
+    <CelesFD_LaunchGroupNoPower>本发射组部分发射器缺少电力</CelesFD_LaunchGroupNoPower>
+    <CelesFD_NothingToSend>无可发送货物</CelesFD_NothingToSend>
+
+    <!-- 里程碑 3：发货结算（G6 占位） -->
+    <CelesFD_Keyed_ShipmentArrivedTitle>货物已送达星铃外勤部</CelesFD_Keyed_ShipmentArrivedTitle>
+    <CelesFD_Keyed_ShipmentArrived>共 {0} 件货物，价值 {1} 白银，结算为 {2} 信用额</CelesFD_Keyed_ShipmentArrived>
+    <CelesFD_ShipmentLost>信标站已失效，货物丢失</CelesFD_ShipmentLost>
+
+    <!-- 里程碑 3：人员离场（G9 Test） -->
+    <CelesFD_DepartureFailInvalid>无法离场：该成员状态无效（已死亡 / 未在地图 / 已离场 / 非星铃殖民者）。</CelesFD_DepartureFailInvalid>
+    <CelesFD_DepartureFailDrop>无法离场：该成员携带的物品放不下来，传送中止。</CelesFD_DepartureFailDrop>
+    <CelesFD_DepartureFailReturn>无法返回：该成员不在世界中或已在地图。</CelesFD_DepartureFailReturn>
+    <CelesFD_DepartureFailNoMap>无法返回：当前没有可用的地图。</CelesFD_DepartureFailNoMap>
+    <CelesFD_DepartureFailNoCandidate>地图上没有星铃殖民者可供测试传送。</CelesFD_DepartureFailNoCandidate>
+    <CelesFD_DepartureFailNoWorldPawn>世界中没有已离场的星铃殖民者。</CelesFD_DepartureFailNoWorldPawn>
+
+    <!-- M0：正上子页（subPage）内容 -->
+    <CelesFD_Keyed_QuarterlyNews>本季度要闻</CelesFD_Keyed_QuarterlyNews>
+    <CelesFD_Keyed_LogisticsStatus>物流系统状态</CelesFD_Keyed_LogisticsStatus>
+    <CelesFD_Keyed_LogisticsNoStation>无站点可用</CelesFD_Keyed_LogisticsNoStation>
+    <CelesFD_Keyed_LogisticsStatusGood>良好</CelesFD_Keyed_LogisticsStatusGood>
+    <CelesFD_Keyed_LogisticsDefault>{0} - {1}，运行状态：{2}</CelesFD_Keyed_LogisticsDefault>
+    <CelesFD_Keyed_TradeTestHint>M0 测试：交易页订单区暂未实现。</CelesFD_Keyed_TradeTestHint>
+    <CelesFD_Keyed_TradeTestToggle>模拟选中订单</CelesFD_Keyed_TradeTestToggle>
+
+    <!-- M2：市场刷新与彩蛋 -->
+    <CelesFD_Keyed_NoCreditRefresh>信用额不足，无法刷新市场（需 {0}）</CelesFD_Keyed_NoCreditRefresh>
+    <CelesFD_Keyed_NoKeyRefresh>密钥不足，无法刷新市场（需 {0}）</CelesFD_Keyed_NoKeyRefresh>
+    <CelesFD_Keyed_EasterEggTitle>特殊订单出现</CelesFD_Keyed_EasterEggTitle>
+    <CelesFD_Keyed_EasterEggDesc>市场中出现了一份特殊订单。</CelesFD_Keyed_EasterEggDesc>
+
+    <!-- M2（v4.7）：发信器概况页距下一级 -->
+    <CelesFD_Keyed_NextLevel>距下一级：\n声望还需 {0}\n交易额还需 {1}</CelesFD_Keyed_NextLevel>
+    <CelesFD_Keyed_NextLevelMax>已达最高等级</CelesFD_Keyed_NextLevelMax>
+    <CelesFD_Keyed_NextLevelDebt>请还款</CelesFD_Keyed_NextLevelDebt>
+
+    <!-- 杂项规则（v4.8）：首次升级蓝信 -->
+    <CelesFD_Keyed_LevelUpTitle>星铃外勤部合作等级提升</CelesFD_Keyed_LevelUpTitle>
+    <CelesFD_Keyed_LevelUpDesc>您与星铃外勤部的合作等级已提升至 {0}。</CelesFD_Keyed_LevelUpDesc>
+
+    <!-- M5：交易页 UI -->
+    <CelesFD_Keyed_TradeFilterOpen>开</CelesFD_Keyed_TradeFilterOpen>
+    <CelesFD_Keyed_TradeFilterInternal>内</CelesFD_Keyed_TradeFilterInternal>
+    <CelesFD_Keyed_TradeFilterPrecious>珍</CelesFD_Keyed_TradeFilterPrecious>
+    <CelesFD_Keyed_TradeFilterEasterEgg>彩</CelesFD_Keyed_TradeFilterEasterEgg>
+    <CelesFD_Keyed_TradeFilterUrgent>突</CelesFD_Keyed_TradeFilterUrgent>
+    <CelesFD_Keyed_TradeFilterScattered>散</CelesFD_Keyed_TradeFilterScattered>
+    <CelesFD_Keyed_TradeFilterBulk>批</CelesFD_Keyed_TradeFilterBulk>
+    <CelesFD_Keyed_TradeFilterBuy>收</CelesFD_Keyed_TradeFilterBuy>
+    <CelesFD_Keyed_TradeFilterSell>售</CelesFD_Keyed_TradeFilterSell>
+    <CelesFD_Keyed_DirBuy>收购</CelesFD_Keyed_DirBuy>
+    <CelesFD_Keyed_DirSell>贩售</CelesFD_Keyed_DirSell>
+    <CelesFD_Keyed_Accept>接取</CelesFD_Keyed_Accept>
+    <CelesFD_Keyed_ConfirmAccept>确认？</CelesFD_Keyed_ConfirmAccept>
+    <CelesFD_Keyed_Abandon>放弃</CelesFD_Keyed_Abandon>
+    <CelesFD_Keyed_ConfirmAbandon>确认放弃？</CelesFD_Keyed_ConfirmAbandon>
+    <CelesFD_Keyed_Buy>购买</CelesFD_Keyed_Buy>
+    <CelesFD_Keyed_LockBtn>锁</CelesFD_Keyed_LockBtn>
+    <CelesFD_Keyed_LockFull>该类别槽位已满，无法锁定</CelesFD_Keyed_LockFull>
+    <CelesFD_Keyed_AcceptLimit>已达到最大承接订单数（{0}）</CelesFD_Keyed_AcceptLimit>
+    <CelesFD_Keyed_OrderQty>数量：{0}</CelesFD_Keyed_OrderQty>
+    <CelesFD_Keyed_Reward>报酬：{0}</CelesFD_Keyed_Reward>
+    <CelesFD_Keyed_Quote>报价：{0}</CelesFD_Keyed_Quote>
+    <CelesFD_Keyed_Progress>已交付 {0} / 需求 {1}</CelesFD_Keyed_Progress>
+    <CelesFD_Keyed_OrderDeadline>剩余：{0}</CelesFD_Keyed_OrderDeadline>
+    <CelesFD_Keyed_AbandonTitle>订单违约</CelesFD_Keyed_AbandonTitle>
+    <CelesFD_Keyed_AbandonDesc>您放弃了对「{0}」的履约。根据合同，外勤部已发起违约赔付流程：声望 -{1}，信用额 -{2}。</CelesFD_Keyed_AbandonDesc>
+    <CelesFD_Keyed_OverdueTitle>订单逾期</CelesFD_Keyed_OverdueTitle>
+    <CelesFD_Keyed_OverdueDesc>我们确认您没有按时完成订单「{0}」，已发起针对附带经济损失的赔付流程：声望 -{1}，信用额 -{2}。</CelesFD_Keyed_OverdueDesc>
+    <CelesFD_Keyed_PenaltyExtraTitle>违约追加重罚</CelesFD_Keyed_PenaltyExtraTitle>
+    <CelesFD_Keyed_PenaltyExtraDesc>由于您的连续违约记录（惩罚等级 {0}），外勤部对本次违约追加重罚：声望 -{1}，信用额 -{2}。</CelesFD_Keyed_PenaltyExtraDesc>
+    <CelesFD_Keyed_OrderSuccessTitle>订单完成</CelesFD_Keyed_OrderSuccessTitle>
+    <CelesFD_Keyed_OrderSuccessDesc>订单「{0}」已交付完成。报酬已入账：声望 +{1}，信用额 +{2}{3}。</CelesFD_Keyed_OrderSuccessDesc>
+    <CelesFD_Keyed_AlertOrderDeadline>订单即将到期</CelesFD_Keyed_AlertOrderDeadline>
+    <CelesFD_Keyed_AlertOrderDeadlinePlural>订单到期（{0} 份）</CelesFD_Keyed_AlertOrderDeadlinePlural>
+    <CelesFD_Keyed_AlertOrderDeadlineDesc>您有 {0} 份已接取订单将在不足一天内到期，请尽快装载并发射交付。</CelesFD_Keyed_AlertOrderDeadlineDesc>
+    <CelesFD_Keyed_AlertOrderDeadlineWarnDesc>您有 {0} 份已接取订单将在五天内到期，请尽快装载并发射交付。</CelesFD_Keyed_AlertOrderDeadlineWarnDesc>
+    <CelesFD_Keyed_AlertInTransit>货物运输中</CelesFD_Keyed_AlertInTransit>
+    <CelesFD_Keyed_AlertInTransitPlural>货物运输中（{0} 单）</CelesFD_Keyed_AlertInTransitPlural>
+    <CelesFD_Keyed_AlertInTransitDesc>您有 {0} 单在途货物，正在运往您的殖民地。</CelesFD_Keyed_AlertInTransitDesc>
+    <CelesFD_Keyed_NoCreditOrder>信用额不足，无法下单（需 {0} 信用额）</CelesFD_Keyed_NoCreditOrder>
+    <CelesFD_Keyed_NoKeyOrder>密钥不足，无法下单（需 {0} 密钥）</CelesFD_Keyed_NoKeyOrder>
+    <CelesFD_Keyed_OrderPlacedTitle>订单已下单</CelesFD_Keyed_OrderPlacedTitle>
+    <CelesFD_Keyed_OrderPlacedDesc>您的订单已确认，星铃空投将在 {0} 后抵达。</CelesFD_Keyed_OrderPlacedDesc>
+    <CelesFD_Keyed_OrderArrivedTitle>货物已抵达</CelesFD_Keyed_OrderArrivedTitle>
+    <CelesFD_Keyed_OrderArrivedDesc>您购买的 {0} 已通过星铃空投抵达。</CelesFD_Keyed_OrderArrivedDesc>
+    <CelesFD_Keyed_ArchiveDate>{0}.{1}.{2}</CelesFD_Keyed_ArchiveDate>
+    <CelesFD_Keyed_ArchiveDoneLabel>已完成</CelesFD_Keyed_ArchiveDoneLabel>
+    <CelesFD_Keyed_ArchiveFailedLabel>已失败</CelesFD_Keyed_ArchiveFailedLabel>
+    <CelesFD_Keyed_StandardTag>标准</CelesFD_Keyed_StandardTag>
+    <CelesFD_Keyed_ExpediteTag>加急</CelesFD_Keyed_ExpediteTag>
+    <CelesFD_Keyed_LogisticsInTransit>发送中物流</CelesFD_Keyed_LogisticsInTransit>
+    <CelesFD_Keyed_LogisticsHistory>已完成订单历史</CelesFD_Keyed_LogisticsHistory>
+    <CelesFD_Keyed_LogisticsRemain>剩余：{0}</CelesFD_Keyed_LogisticsRemain>
+    <CelesFD_Keyed_StageConfirming>确认订单中</CelesFD_Keyed_StageConfirming>
+    <CelesFD_Keyed_StageWarehouse>仓库调货中</CelesFD_Keyed_StageWarehouse>
+    <CelesFD_Keyed_StageFueling>加载燃油中</CelesFD_Keyed_StageFueling>
+    <CelesFD_Keyed_StageLoading>装载货物中</CelesFD_Keyed_StageLoading>
+    <CelesFD_Keyed_StageLaunchQueue>发射调度中</CelesFD_Keyed_StageLaunchQueue>
+    <CelesFD_Keyed_StageInTransit>正在运输中</CelesFD_Keyed_StageInTransit>
+    <CelesFD_Keyed_StageSkipPaperwork>跳过繁文缛节中</CelesFD_Keyed_StageSkipPaperwork>
+    <CelesFD_Keyed_StageTossCargo>通通丢进货仓中</CelesFD_Keyed_StageTossCargo>
+    <CelesFD_Keyed_StageBypassLaunch>绕过发射审批中</CelesFD_Keyed_StageBypassLaunch>
+    <CelesFD_Keyed_ArchiveDone>完成</CelesFD_Keyed_ArchiveDone>
+    <CelesFD_Keyed_ArchiveFailed>违约</CelesFD_Keyed_ArchiveFailed>
+    <CelesFD_Keyed_AcceptedOrders>已接取订单</CelesFD_Keyed_AcceptedOrders>
+    <CelesFD_Keyed_NoOrders>暂无订单</CelesFD_Keyed_NoOrders>
+    <CelesFD_Keyed_RefreshMarket>刷新市场</CelesFD_Keyed_RefreshMarket>
+    <CelesFD_Keyed_RefreshCostCredit>刷新市场（花费 {0} 信用额）</CelesFD_Keyed_RefreshCostCredit>
+    <CelesFD_Keyed_RefreshCostKey>刷新市场（花费 {0} 密钥）</CelesFD_Keyed_RefreshCostKey>
+    <CelesFD_Keyed_RefreshCooldown>冷却中</CelesFD_Keyed_RefreshCooldown>
+    <CelesFD_Keyed_ConfirmRefresh>花费 {0} 刷新市场？</CelesFD_Keyed_ConfirmRefresh>
+    <CelesFD_Keyed_RefreshRejected>刷新被拒绝（冷却或资源不足）</CelesFD_Keyed_RefreshRejected>
+    <CelesFD_Keyed_Cart>购物车</CelesFD_Keyed_Cart>
+    <CelesFD_Keyed_CartTotalMass>总重量：{0} kg</CelesFD_Keyed_CartTotalMass>
+    <CelesFD_Keyed_CartValue>总价值：{0} 银</CelesFD_Keyed_CartValue>
+    <CelesFD_Keyed_CartOverweight>超重——禁止继续添加，可超重下单</CelesFD_Keyed_CartOverweight>
+    <CelesFD_Keyed_RemoveFromCart>移除</CelesFD_Keyed_RemoveFromCart>
+    <CelesFD_Keyed_Price>价格</CelesFD_Keyed_Price>
+    <CelesFD_Keyed_GoodsQuote>货物报价</CelesFD_Keyed_GoodsQuote>
+    <CelesFD_Keyed_CreditAmount>{0} 信用额</CelesFD_Keyed_CreditAmount>
+    <CelesFD_Keyed_KeyAmount>{0} 密钥</CelesFD_Keyed_KeyAmount>
+    <CelesFD_Keyed_BothPrice>{0} 信用额 + {1} 密钥</CelesFD_Keyed_BothPrice>
+    <CelesFD_Keyed_Tax>税金</CelesFD_Keyed_Tax>
+    <CelesFD_Keyed_TaxExit>出境税</CelesFD_Keyed_TaxExit>
+    <CelesFD_Keyed_TaxAdmin>管理税</CelesFD_Keyed_TaxAdmin>
+    <CelesFD_Keyed_TaxRadio>边缘世界报务税</CelesFD_Keyed_TaxRadio>
+    <CelesFD_Keyed_TaxSystem>交易系统使用税</CelesFD_Keyed_TaxSystem>
+    <CelesFD_Keyed_Shipping>运费</CelesFD_Keyed_Shipping>
+    <CelesFD_Keyed_Discount>折扣</CelesFD_Keyed_Discount>
+    <CelesFD_Keyed_Total>总价</CelesFD_Keyed_Total>
+    <CelesFD_Keyed_AgreeTerms>同意《外勤部用户协议》(即使您的终端无法阅读)</CelesFD_Keyed_AgreeTerms>
+    <CelesFD_Keyed_SubscribeArrival>订阅星铃到货提醒服务</CelesFD_Keyed_SubscribeArrival>
+    <CelesFD_Keyed_Expedite>启用加急下单并同意《加急用户须知》</CelesFD_Keyed_Expedite>
+    <CelesFD_Keyed_FastStartup>授权星铃不使用快速启动.exe</CelesFD_Keyed_FastStartup>
+    <CelesFD_Keyed_AllowAds>授权星铃外勤部发送推送信息</CelesFD_Keyed_AllowAds>
+    <CelesFD_Keyed_PlaceOrder>标准下单</CelesFD_Keyed_PlaceOrder>
+    <CelesFD_Keyed_PlaceExpedite>加急空投</CelesFD_Keyed_PlaceExpedite>
+    <CelesFD_Keyed_NeedAgreeTerms>请先同意《外勤部用户协议》</CelesFD_Keyed_NeedAgreeTerms>
+    <CelesFD_Keyed_LogisticsBuilding>物流系统建设中</CelesFD_Keyed_LogisticsBuilding>
+    <CelesFD_Keyed_AbandonProcessing>违约处理将在订单结算模块上线后生效</CelesFD_Keyed_AbandonProcessing>
+
 </LanguageData>

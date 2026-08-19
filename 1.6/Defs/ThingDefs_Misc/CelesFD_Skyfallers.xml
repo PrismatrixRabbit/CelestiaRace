@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 星铃外勤部空投舱（机械空投仓外观，引用原版打包贴图 Things/Special/DropPodMechanoid） -->
+  <!-- 结构参照：Core Ethereal_Skyfallers.xml（DropPodIncoming/DropPodLeaving）+ Core Things_Special.xml（ActiveDropPod） -->
+
+  <ThingDef ParentName="DropPodIncoming">
+    <defName>CelesFD_DropPodIncoming</defName>
+    <label>星铃空投舱（抵达）</label>
+    <graphicData>
+      <texPath>Things/Special/DropPodMechanoid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>1.9</drawSize>
+    </graphicData>
+    <skyfaller>
+      <anticipationSound>DropPod_Fall_Mechanoid</anticipationSound>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="DropPodLeaving">
+    <defName>CelesFD_DropPodLeaving</defName>
+    <label>星铃空投舱（离场）</label>
+    <graphicData>
+      <texPath>Things/Special/DropPodMechanoid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>1.9</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="ActiveDropPod">
+    <defName>CelesFD_ActiveDropPod</defName>
+    <label>星铃空投舱</label>
+    <soundOpen>DropPod_Open_Mechanoid</soundOpen>
+    <graphicData>
+      <texPath>Things/Special/DropPodMechanoid</texPath>
+    </graphicData>
+  </ThingDef>
+
+</Defs>
