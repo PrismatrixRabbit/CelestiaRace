@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase" Name="Celes_CrateBase" Abstract="True">
+    <graphicData>
+      <texPath>Things/Special/DropPodMechanoid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.9,1.9)</drawSize>
+    </graphicData>
+    <thingClass>CelesFeature.CelesFD_Building_OrbitCrate</thingClass>
+    <building>
+      <expandHomeArea>false</expandHomeArea>
+    </building>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.6</fillPercent>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>400</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+  </ThingDef>
+
+  <!-- 普通垃圾箱容器（普通表 showContents=false 默认——显示内容） -->
+  <ThingDef ParentName="Celes_CrateBase">
+    <defName>CelesFD_OrbitTrashCrateNormal</defName>
+    <label>星铃轨道垃圾箱</label>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
+        <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- 战利品表：普通（轨道垃圾箱容器——2026-08-15 纯 XML 转化：普通坠落物 = 建筑容器；抽一项；showContents=false） -->
+  <CelesFeature.CelesFD_LootTableDef>
+    <defName>CelesFD_Loot_TrashNormal</defName>
+    <buildingDef>CelesFD_OrbitTrashCrateNormal</buildingDef>
+    <showContents>false</showContents>
+    <contents>
+      <li>
+        <thingDefName>Steel</thingDefName>
+        <amountRange>10~25</amountRange>
+        <weight>0.5</weight>
+      </li>
+      <li>
+        <thingDefName>ComponentIndustrial</thingDefName>
+        <amountRange>1~3</amountRange>
+        <weight>0.2</weight>
+      </li>
+      <li>
+        <thingDefName>MealSurvivalPack</thingDefName>
+        <amountRange>2~5</amountRange>
+        <weight>0.2</weight>
+      </li>
+      <li>
+        <thingDefName>Medicine</thingDefName>
+        <amountRange>1~1</amountRange>
+        <weight>0.05</weight>
+      </li>
+      <li>
+        <thingDefName>ComponentSpacer</thingDefName>
+        <amountRange>1~1</amountRange>
+        <weight>0.05</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_LootTableDef>
+
+  <!-- 危险垃圾箱容器（危险表 showContents=false——内容隐藏"未知内容"） -->
+  <ThingDef ParentName="Celes_CrateBase">
+    <defName>CelesFD_OrbitTrashCrateDanger</defName>
+    <label>星铃轨道垃圾箱</label>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
+        <crateDef>CelesFD_DropCrate_TrashDanger</crateDef>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- 战利品表：危险（轨道垃圾箱容器——可搜刮出 pawn；抽一项 RandomElementByWeight；showContents=false） -->
+  <CelesFeature.CelesFD_LootTableDef>
+    <defName>CelesFD_Loot_TrashDanger</defName>
+    <buildingDef>CelesFD_OrbitTrashCrateDanger</buildingDef>
+    <showContents>false</showContents>
+    <contents>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">
+        <type>PawnKind</type>
+        <pawnKindDefName>Fingerspike</pawnKindDefName>
+        <amountRange>1~2</amountRange>
+        <weight>0.3</weight>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">
+        <type>PawnKind</type>
+        <pawnKindDefName>Mech_Militor</pawnKindDefName>
+        <amountRange>1~2</amountRange>
+        <weight>0.3</weight>
+      </li>
+      <li>
+        <type>RefugeeInjured</type>
+        <amountRange>1~1</amountRange>
+        <weight>0.05</weight>
+      </li>
+      <li>
+        <type>Thing</type>
+        <thingDefName>Gold</thingDefName>
+        <amountRange>10~50</amountRange>
+        <weight>0.05</weight>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">
+        <type>Thing</type>
+        <thingDefName>GoldenCube</thingDefName>
+        <amountRange>1~1</amountRange>
+        <weight>0.01</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_LootTableDef>
+
+  <!-- 神秘垃圾箱容器 -->
+  <ThingDef ParentName="Celes_CrateBase">
+    <defName>CelesFD_OrbitTrashCrateMystery</defName>
+    <label>星铃轨道垃圾箱</label>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
+        <crateDef>CelesFD_DropCrate_TrashMystery</crateDef>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- 战利品表：神秘 -->
+  <CelesFeature.CelesFD_LootTableDef>
+    <defName>CelesFD_Loot_TrashMystery</defName>
+    <buildingDef>CelesFD_OrbitTrashCrateMystery</buildingDef>
+    <showContents>false</showContents>
+    <contents>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">
+        <type>Thing</type>
+        <thingDefName>GoldenCube</thingDefName>
+        <amountRange>1~1</amountRange>
+        <weight>0.5</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_LootTableDef>
+
+</Defs>

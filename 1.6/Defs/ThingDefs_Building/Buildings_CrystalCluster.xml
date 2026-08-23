@@ -27,9 +27,10 @@
       <isInert>true</isInert>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
-      <mineableThing>Celes_InitialCrystallineMaterial</mineableThing>
-      <mineableYield>10</mineableYield>
-      <mineableDropChance>1</mineableDropChance>
+      <mineableThing>Celes_NanoMachine</mineableThing>
+      <mineableYield>1</mineableYield>
+      <!-- [事实] mineableDropChance=0：关闭基类 Mineable 产出（Mineable.cs:68 判定），产出由 Comp.PostDestroy 按等级自产 -->
+      <mineableDropChance>0</mineableDropChance>
     </building>
     <comps>
       <li Class="CelesFeature.Celes_CompProperties_CrystalCluster">
@@ -62,6 +63,13 @@
         <terrainToGrow>
           <li>WoodPlankFloor</li>
         </terrainToGrow>
+        <!-- 各等级开采产出 1/2/4/16 -->
+        <yieldByLevel>
+          <li>1</li>
+          <li>2</li>
+          <li>4</li>
+          <li>16</li>
+        </yieldByLevel>
       </li>
     </comps>
   </ThingDef>

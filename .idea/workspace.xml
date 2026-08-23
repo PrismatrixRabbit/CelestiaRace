@@ -13,19 +13,12 @@
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_DialogueDefs/CelesFD_DialogueDef.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_WelcomeTicker.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_Base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_Base.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About/About.xml" beforeDir="false" afterPath="$PROJECT_DIR$/About/About.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/DefInjected/CelesFeature.CelesFD_TickerDef/CelesFD_WelcomeTicker.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Number.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Number.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Position.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Position.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Site.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/English/Strings/Names/Celes_Site.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoadFolders.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LoadFolders.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_MarketDefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_MarketDefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Celes_Buildings_Crystal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Crystal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Misc/CelesFD_Skyfallers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Misc/Celes_Skyfallers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Misc/Celes_CrystalCluster.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_CrystalCluster.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/CrystalSeeder/CrystalSeed_Active.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Textures/Celes/Building/CrystalSeeder/CrystalSeed_Active.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/CrystalSeeder/CrystalSeed_Inactive.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Textures/Celes/Building/CrystalSeeder/CrystalSeed_Inactive.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,6 +227,9 @@
       <workItem from="1786870803126" duration="6640000" />
       <workItem from="1787073187109" duration="1557000" />
       <workItem from="1787134983025" duration="8966000" />
+      <workItem from="1787158131951" duration="679000" />
+      <workItem from="1787473425310" duration="603000" />
+      <workItem from="1787493174245" duration="7198000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -419,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786036398785</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="外勤部系统阶段性完成">
+      <option name="closed" value="true" />
+      <created>1787158166908</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1787158166908</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +467,8 @@
     <MESSAGE value="总体调整了各方面内容" />
     <MESSAGE value="武器多模式功能及hediff测试功能" />
     <MESSAGE value="对话系统修订。" />
-    <option name="LAST_COMMIT_MESSAGE" value="对话系统修订。" />
+    <MESSAGE value="外勤部系统阶段性完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="外勤部系统阶段性完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

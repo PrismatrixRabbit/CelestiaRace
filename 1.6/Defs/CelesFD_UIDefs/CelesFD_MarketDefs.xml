@@ -159,31 +159,6 @@
         </includeThings>
     </CelesFeature.CelesFD_MarketClassDef>
 
-    <!-- 故意坏用例：同 entry 信用额单价 ∧ 总价（计价互斥）→ 预期 ConfigErrors 红字（含 defName + entry 点位） -->
-    <CelesFeature.CelesFD_MarketClassDef>
-        <defName>CelesFD_Test_BadPriceConflict</defName>
-        <title>测试：坏用例（计价互斥，预期报错）</title>
-        <category>Open</category>
-        <form>Scattered</form>
-        <isBuy>false</isBuy>
-        <validLevel>
-            <li>CelesFD_Level_L0</li>
-            <li>CelesFD_Level_L1</li>
-        </validLevel>
-        <includeThings>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Steel</li>
-                    </thingDefs>
-                </filter>
-                <thingAmount>1~50</thingAmount>
-                <thingPriceCredit>1</thingPriceCredit>
-                <orderTotalPriceCredit>10</orderTotalPriceCredit>
-            </li>
-        </includeThings>
-    </CelesFeature.CelesFD_MarketClassDef>
-
     <!-- 保底：validLevel 留空 = 全等级合法（保底豁免）；双 entry 供抽样 2~3 份独立订单；isLockable 忽略 → 预期 Log.Warning -->
     <CelesFeature.CelesFD_MarketClassDef>
         <defName>CelesFD_Test_Guaranteed</defName>

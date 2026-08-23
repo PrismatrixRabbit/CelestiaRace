@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <!-- 事件：普通（同原版货舱坠毁 ResourcePodCrash baseChance=1.0，概率略低 20%） -->
+  <IncidentDef>
+    <defName>CelesFD_NormalOrbitDropTrash</defName>
+    <label>星铃轨道垃圾箱坠落</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
+    <baseChance>0.8</baseChance>
+    <letterDef>NeutralEvent</letterDef>
+    <letterLabel>星铃轨道垃圾箱坠落</letterLabel>
+    <letterText>星铃轨道垃圾箱坠落在您的殖民地附近。其中或许有些有用的物资。</letterText>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropExtension">
+        <crates>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
+            <countRange>2~5</countRange>
+          </li>
+        </crates>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+
+  <!-- 事件：大量 -->
+  <IncidentDef>
+    <defName>CelesFD_HugeOrbitDropTrash</defName>
+    <label>大量星铃轨道垃圾箱坠落</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
+    <baseChance>0.5</baseChance>
+    <letterDef>PositiveEvent</letterDef>
+    <letterLabel>星铃轨道垃圾箱坠落</letterLabel>
+    <letterText>大量星铃轨道垃圾箱坠落在您的殖民地附近。其中或许有些有用的物资。</letterText>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropExtension">
+        <crates>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
+            <countRange>7~13</countRange>
+          </li>
+        </crates>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+
+  <!-- 事件：危险（概率略低 50%） -->
+  <IncidentDef>
+    <defName>CelesFD_DangerOrbitDropTrash</defName>
+    <label>星铃轨道垃圾箱坠落</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
+    <baseChance>0.5</baseChance>
+    <letterDef>NeutralEvent</letterDef>
+    <letterLabel>星铃轨道垃圾箱坠落</letterLabel>
+    <letterText>星铃轨道垃圾箱坠落在您的殖民地附近。请谨慎处理其中的内容物。</letterText>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropExtension">
+        <crates>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
+            <countRange>1~2</countRange>
+          </li>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashDanger</crateDef>
+            <countRange>1~3</countRange>
+          </li>
+        </crates>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+
+  <!-- 事件：神秘 -->
+  <IncidentDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>CelesFD_MysteryOrbitDropTrash</defName>
+    <label>星铃轨道垃圾箱坠落</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
+    <baseChance>0.1</baseChance>
+    <letterDef>NegativeEvent</letterDef>
+    <letterLabel>星铃轨道垃圾箱坠落</letterLabel>
+    <letterText>星铃轨道垃圾箱坠落在您的殖民地附近。氛围不对……</letterText>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropExtension">
+        <crates>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
+            <countRange>1~1</countRange>
+          </li>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashDanger</crateDef>
+            <countRange>1~3</countRange>
+          </li>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashMystery</crateDef>
+            <countRange>1~1</countRange>
+          </li>
+        </crates>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+
+  <!-- 事件：晶体（概率略低 50%） -->
+  <IncidentDef>
+    <defName>CelesFD_CrystalOrbitDrop</defName>
+    <label>星铃轨道垃圾箱坠落（晶体）</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
+    <baseChance>0.5</baseChance>
+    <letterDef>NeutralEvent</letterDef>
+    <letterLabel>星铃轨道垃圾箱坠落（晶体）</letterLabel>
+    <letterText>检测到星铃轨道晶体坠落的信号。这些晶体对星铃外勤部而言有着特殊价值。</letterText>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropExtension">
+        <crates>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
+            <countRange>1~2</countRange>
+          </li>
+          <li>
+            <crateDef>CelesFD_DropCrate_Crystal</crateDef>
+            <countRange>3~5</countRange>
+          </li>
+        </crates>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+</Defs>

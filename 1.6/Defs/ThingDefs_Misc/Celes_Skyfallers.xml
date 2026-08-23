@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 星铃外勤部空投舱 -->
+  
+  <!-- 结构参照：Core Ethereal_Skyfallers.xml（DropPodIncoming/DropPodLeaving）+ Core Things_Special.xml（ActiveDropPod） -->
+
+  <ThingDef ParentName="DropPodIncoming">
+    <defName>CelesFD_DropPodIncoming</defName>
+    <label>星铃空投舱（抵达）</label>
+    <graphicData>
+      <texPath>Things/Special/DropPodMechanoid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>1.9</drawSize>
+    </graphicData>
+    <skyfaller>
+      <anticipationSound>DropPod_Fall_Mechanoid</anticipationSound>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="DropPodLeaving">
+    <defName>CelesFD_DropPodLeaving</defName>
+    <label>星铃空投舱（离场）</label>
+    <graphicData>
+      <texPath>Things/Special/DropPodMechanoid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>1.9</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="ActiveDropPod">
+    <defName>CelesFD_ActiveDropPod</defName>
+    <label>星铃空投舱</label>
+    <soundOpen>DropPod_Open_Mechanoid</soundOpen>
+    <graphicData>
+      <texPath>Things/Special/DropPodMechanoid</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <!-- 事件空投舱 -->
+
+  <!-- 垃圾箱下降（普通——贴图 = 星铃空投舱；扩展绑普通 crate——2026-08-15 纯 XML 转化：普通坠落物 = 建筑容器） -->
+  
+  <CelesFeature.CelesFD_DropCrateDef>
+    <defName>CelesFD_DropCrate_TrashNormal</defName>
+    <fallerDef>CelesFD_Skyfaller_OrbitTrashNormal</fallerDef>
+    <lootTableDef>CelesFD_Loot_TrashNormal</lootTableDef>
+    <contents>
+      <li><type>Thing</type><thingDefName>Steel</thingDefName><amountRange>10~25</amountRange><weight>0.25</weight></li>
+      <li><thingDefName>ComponentIndustrial</thingDefName><amountRange>1~3</amountRange><weight>0.1</weight></li>
+      <li><thingDefName>MealSurvivalPack</thingDefName><amountRange>2~5</amountRange><weight>0.1</weight></li>
+      <li><thingDefName>Medicine</thingDefName><amountRange>1~1</amountRange><weight>0.025</weight></li>
+      <li><thingDefName>ComponentSpacer</thingDefName><amountRange>1~1</amountRange><weight>0.025</weight></li>
+      <li>
+        <type>Building</type>
+        <amountRange>1~1</amountRange>
+        <weight>0.5</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_DropCrateDef>
+
+  <!-- 垃圾箱下降基类（普通/危险共享——贴图 = 星铃空投舱；2026-08-15 继承链缩减：子类仅差异 defName/扩展 crateDef） -->
+  <ThingDef Name="Celes_OrbitTrashFallerBase" Abstract="True" ParentName="DropPodIncoming">
+    <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
+    <label>星铃轨道垃圾箱（降落）</label>
+    <graphicData>
+      <texPath>Things/Special/DropPodMechanoid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>1.9</drawSize>
+    </graphicData>
+    <skyfaller>
+      <anticipationSound>DropPod_Fall_Mechanoid</anticipationSound>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="Celes_OrbitTrashFallerBase">
+    <defName>CelesFD_Skyfaller_OrbitTrashNormal</defName>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
+        <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- 垃圾箱下降（危险——贴图 = 星铃空投舱；扩展绑危险 crate） -->
+
+  <CelesFeature.CelesFD_DropCrateDef>
+    <defName>CelesFD_DropCrate_TrashDanger</defName>
+    <fallerDef>CelesFD_Skyfaller_OrbitTrashDanger</fallerDef>
+    <lootTableDef>CelesFD_Loot_TrashDanger</lootTableDef>
+    <contents>
+      <li>
+        <type>Building</type>
+        <amountRange>1~1</amountRange>
+        <weight>1.0</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_DropCrateDef>
+
+  <ThingDef ParentName="Celes_OrbitTrashFallerBase">
+    <defName>CelesFD_Skyfaller_OrbitTrashDanger</defName>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
+        <crateDef>CelesFD_DropCrate_TrashDanger</crateDef>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- 垃圾箱下降（神秘——贴图 = 星铃空投舱；扩展绑神秘 crate） -->
+
+  <CelesFeature.CelesFD_DropCrateDef>
+    <defName>CelesFD_DropCrate_TrashMystery</defName>
+    <fallerDef>CelesFD_Skyfaller_OrbitTrashMystery</fallerDef>
+    <lootTableDef>CelesFD_Loot_TrashMystery</lootTableDef>
+    <contents>
+      <li>
+        <type>Building</type>
+        <amountRange>1~1</amountRange>
+        <weight>1.0</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_DropCrateDef>
+
+  <ThingDef ParentName="Celes_OrbitTrashFallerBase">
+    <defName>CelesFD_Skyfaller_OrbitTrashMystery</defName>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
+        <crateDef>CelesFD_DropCrate_TrashMystery</crateDef>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- 晶体下降（贴图 = Celes_CrystalSeed 建筑贴图） -->
+
+  <CelesFeature.CelesFD_DropCrateDef>
+    <defName>CelesFD_DropCrate_Crystal</defName>
+    <fallerDef>CelesFD_Skyfaller_OrbitCrystal</fallerDef>
+    <contents>
+      <li>
+        <type>Building</type>
+        <thingDefName>Celes_CrystalSeed</thingDefName>
+        <amountRange>1~1</amountRange>
+        <weight>1.0</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_DropCrateDef>
+
+  <ThingDef ParentName="DropPodIncoming">
+    <defName>CelesFD_Skyfaller_OrbitCrystal</defName>
+    <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
+    <label>星铃轨道晶体（降落）</label>
+    <graphicData>
+      <texPath>Celes/Building/CrystalSeeder/CrystalSeeder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>1.9</drawSize>
+    </graphicData>
+    <skyfaller>
+      <anticipationSound>DropPod_Fall</anticipationSound>
+    </skyfaller>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
+        <crateDef>CelesFD_DropCrate_Crystal</crateDef>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

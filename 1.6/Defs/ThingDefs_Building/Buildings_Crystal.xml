@@ -97,6 +97,10 @@
     <label>野外晶种</label>
     <description>会自然催生尘构晶簇的活性晶体。每次生长判定消耗一次活性，判定次数耗尽后失活，范围内晶簇停止生长。</description>
     <thingClass>CelesFeature.Celes_CrystalSeedThing</thingClass>
+    <!-- 2026-08-15 用户裁决：野生晶种（事件/自然生成）不自动扩居住区（AutoHomeAreaMaker.cs:13-17 实证） -->
+    <building>
+      <expandHomeArea>false</expandHomeArea>
+    </building>
     <!-- [事实] 覆写父类 Light：晶种放置支撑与晶簇生长判定模式 B 共用（C# 读 def.terrainAffordanceNeeded）；
          所有原版地板 affordances 含 Medium（Terrain_Floors.xml:6-11） -->
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -107,7 +111,6 @@
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <size>(1,1)</size>
-    <designationCategory>Celes_SpecialBuildings</designationCategory>
     <passability>Standable</passability>
     <tickerType>Rare</tickerType>
     <placeWorkers>
@@ -120,7 +123,7 @@
       <Flammability>0</Flammability>
     </statBases>
     <costList>
-      <Celes_InitialCrystalCluster>1</Celes_InitialCrystalCluster>
+      <Celes_NanoMachine>64</Celes_NanoMachine>
     </costList>
     <comps>
       <li Class="CelesFeature.Celes_CompProperties_CrystalSeed">
