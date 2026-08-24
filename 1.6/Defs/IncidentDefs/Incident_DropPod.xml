@@ -141,4 +141,34 @@
       </li>
     </modExtensions>
   </IncidentDef>
+
+
+  <!-- 事件：晶体（概率略低 50%） -->
+  <IncidentDef>
+    <defName>CelesFD_InitialCrystalOrbitDrop</defName>
+    <label>星铃轨道晶体坠落</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
+    <baseChance>0</baseChance>
+    <letterDef>NeutralEvent</letterDef>
+    <letterLabel>星铃轨道晶体坠落</letterLabel>
+    <letterText>检测到星铃轨道晶体坠落的信号。其中包含着相当高价值的晶体。</letterText>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropExtension">
+        <crates>
+          <li>
+            <crateDef>CelesFD_DropCrate_Crystal</crateDef>
+            <countRange>5~6</countRange>
+          </li>
+          <li>
+            <crateDef>CelesFD_DropCrate_InitialCrystal</crateDef>
+            <countRange>1~1</countRange>
+          </li>
+        </crates>
+      </li>
+    </modExtensions>
+  </IncidentDef>
 </Defs>

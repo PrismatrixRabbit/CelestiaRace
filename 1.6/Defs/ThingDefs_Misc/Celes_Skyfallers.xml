@@ -153,10 +153,10 @@
     <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
     <label>星铃轨道晶体（降落）</label>
     <graphicData>
-      <texPath>Celes/Building/CrystalSeeder/CrystalSeeder</texPath>
+      <texPath>Celes/Building/CrystalSeeder/CrystalSeed_Active</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutFlying</shaderType>
-      <drawSize>1.9</drawSize>
+      <drawSize>1.0</drawSize>
     </graphicData>
     <skyfaller>
       <anticipationSound>DropPod_Fall</anticipationSound>
@@ -164,6 +164,41 @@
     <modExtensions>
       <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
         <crateDef>CelesFD_DropCrate_Crystal</crateDef>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- 初始晶体下降（贴图 = Celes_CrystalInitialSeed 建筑贴图） -->
+
+  <CelesFeature.CelesFD_DropCrateDef>
+    <defName>CelesFD_DropCrate_InitialCrystal</defName>
+    <fallerDef>CelesFD_Skyfaller_OrbitCrystalInitial</fallerDef>
+    <contents>
+      <li>
+        <type>Building</type>
+        <thingDefName>Celes_CrystalInitialSeed</thingDefName>
+        <amountRange>1~1</amountRange>
+        <weight>1.0</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_DropCrateDef>
+
+  <ThingDef ParentName="DropPodIncoming">
+    <defName>CelesFD_Skyfaller_OrbitCrystalInitial</defName>
+    <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
+    <label>星铃轨道晶体（降落）</label>
+    <graphicData>
+      <texPath>Celes/Building/CrystalSeeder/CrystalInitialSeed_Active</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <skyfaller>
+      <anticipationSound>DropPod_Fall</anticipationSound>
+    </skyfaller>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
+        <crateDef>CelesFD_DropCrate_InitialCrystal</crateDef>
       </li>
     </modExtensions>
   </ThingDef>

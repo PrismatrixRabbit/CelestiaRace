@@ -27,7 +27,7 @@
       <isInert>true</isInert>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
-      <mineableThing>Celes_NanoMachine</mineableThing>
+      <mineableThing>Celes_InitialCrystallineMaterial</mineableThing>
       <mineableYield>1</mineableYield>
       <!-- [事实] mineableDropChance=0：关闭基类 Mineable 产出（Mineable.cs:68 判定），产出由 Comp.PostDestroy 按等级自产 -->
       <mineableDropChance>0</mineableDropChance>
@@ -59,10 +59,16 @@
           <li>5</li>
           <li>10</li>
         </pointToGrow>
-        <!-- dev 兜底参数：临时测试同步木地板（培育器/晶种生成时由 InitGrowth 覆盖） -->
+        <!-- dev 兜底参数（培育器/晶种生成时由 InitGrowth 覆盖）：两晶态地板 -->
         <terrainToGrow>
-          <li>WoodPlankFloor</li>
+          <li>Celes_CrystalFloor</li>
+          <li>Celes_CrystalSurface</li>
         </terrainToGrow>
+        <!-- 豁免地板：人工晶态表面/晶化表面铺到晶簇脚下不触发地板替换破坏 -->
+        <protectedTerrains>
+          <li>Celes_CrystalFloor</li>
+          <li>Celes_CrystalSurface</li>
+        </protectedTerrains>
         <!-- 各等级开采产出 1/2/4/16 -->
         <yieldByLevel>
           <li>1</li>

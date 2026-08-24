@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- 晶体培育器（Type 3）：燃料驱动周期扩散晶簇 -->
-  <!-- [事实] tickerType=Normal 为 CompRefuelable 持续消耗模式的 ConfigError 硬约束（CompProperties_Refuelable.cs:152-155） -->
-  <!-- 贴图占位：Celes/Industry/Building/CrystalSeeder 需自备 -->
-  <!-- [事实] 继承原版 BuildingBase（Buildings_Base.xml:4）：category/selectable/thingClass 免费获得；
-       building 由 ThingDef.PostLoad 自动初始化（ThingDef.cs:1553-1556）——裸 Def 缺 category 曾致 NRE/无法选中/SetFactionDirect 三坑 -->
+  <!-- ============ 生长判定链参数阐释 ============
+ 判定链算法（每次检测周期执行一次，培育器/晶种共用）：
+   1. 初始概率 C = totalGrowChance − perDecreaseChance × 范围内非最高级晶簇数
+      （进链前一次性计算；当次新生晶簇不参与本次削减）
+      若 C ≤ 0 → 取 minGrowChance（保底）
+   2. 判定链循环（while C > 0）：
+      单次判定概率 = min(C, maxGrowChance) → 掷骰
+      成功 → 在 growRadius 内随机可生长地板创建 1 级晶簇
+      无论成败 → C −= growStepDecrement → 回到循环头
+   3. 链结束后：范围内已有晶簇各以 chanceToGrow 概率积累 1 生长值
+      （生长值达到 pointToGrow 阈值即升级，升级由生长源驱动）
+
+ 各参数含义：
+   totalGrowChance（1.5）  —— 总生长概率，判定链的初始 C。
+                              数值越大，单次检测的判定次数越多（饱和晶簇数越高）。
+   maxGrowChance（0.8）    —— 单次判定概率上限。C 高于此值时掷骰概率封顶，
+                              用于控制单次判定成功率（防止总概率过高时次次必中）。
+   growStepDecrement（0.5）—— 判定链步进减量。每轮判定后 C 的固定削减量。
+                              越小 → 判定次数越多（链越长）；必须 > 0（否则死循环）。
+   perDecreaseChance（0.15）—— 每个非最高级晶簇对总概率的削减量。密度自限核心：
+                              范围内晶簇越多，下次检测的总概率越低，饱和后自然停止扩散。
+   minGrowChance（0.05）   —— 保底下限。削减导致 C ≤ 0 时仍保留一次低概率判定，
+                              保证高密度环境下不会完全停摆（仍有少量新簇机会）。
+   chanceToGrow（0.33）    —— 晶簇个体生长值积累概率。每次检测每晶簇独立掷骰，
+                              命中则生长值 +1（升级阈值见 pointToGrow）。
+
+ 示例（total=1.5 / max=0.8 / step=0.5 / 无晶簇时）：
+   轮1：C=1.5，判定概率=min(1.5,0.8)=0.8，判定后 C=1.0
+   轮2：C=1.0，判定概率=0.8，判定后 C=0.5
+   轮3：C=0.5，判定概率=0.5，判定后 C=0 → 链结束（最多 3 次判定）
+   密度自限示例（20 个晶簇）：C = 1.5 − 20×0.15 = −1.5 → 保底 0.05 → 仅 1 次判定
+ ============================================ -->
+  
+  <!-- 晶体培育器：燃料驱动周期扩散晶簇 -->
   <ThingDef ParentName="BuildingBase">
     <defName>Celes_CrystalSeeder</defName>
     <label>晶体培育器</label>
@@ -18,6 +47,7 @@
     <costList>
       <Steel>150</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
+      <Celes_InitialCrystalCluster>1</Celes_InitialCrystalCluster>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.6</fillPercent>
@@ -64,10 +94,13 @@
         <perDecreaseChance>0.15</perDecreaseChance>
         <minGrowChance>0.05</minGrowChance>
         <baseGrowDef>Celes_CrystalCluster</baseGrowDef>
-        <!-- 临时测试配置：木地板（玩家可自铺）；正式版恢复 Soil/SoilRich -->
+        <!-- 可生长地板：人工晶态表面 + 晶化表面（两地板均配） -->
         <terrainToGrow>
-          <li>WoodPlankFloor</li>
+          <li>Celes_CrystalFloor</li>
+          <li>Celes_CrystalSurface</li>
         </terrainToGrow>
+        <!-- 晶簇生成位置创建地板（layerable 晶化表面） -->
+        <spawnTerrain>Celes_CrystalSurface</spawnTerrain>
         <pointToGrow>
           <li>0</li>
           <li>2</li>
@@ -90,19 +123,14 @@
   </ThingDef>
 
   <!-- 野外晶种：自然生长源，次数上限自限，无燃料无电力 -->
-  <!-- [事实] 活跃/失活双贴图：graphicData = 失活态，activeGraphicData = 活跃态（Celes_CrystalSeedThing.Graphic 覆写切换） -->
-  <!-- 贴图占位：Celes/Industry/Crystal/CrystalSeed_Inactive / CrystalSeed_Active 需自备 -->
   <ThingDef ParentName="BuildingBase">
     <defName>Celes_CrystalSeed</defName>
     <label>野外晶种</label>
     <description>会自然催生尘构晶簇的活性晶体。每次生长判定消耗一次活性，判定次数耗尽后失活，范围内晶簇停止生长。</description>
     <thingClass>CelesFeature.Celes_CrystalSeedThing</thingClass>
-    <!-- 2026-08-15 用户裁决：野生晶种（事件/自然生成）不自动扩居住区（AutoHomeAreaMaker.cs:13-17 实证） -->
     <building>
       <expandHomeArea>false</expandHomeArea>
     </building>
-    <!-- [事实] 覆写父类 Light：晶种放置支撑与晶簇生长判定模式 B 共用（C# 读 def.terrainAffordanceNeeded）；
-         所有原版地板 affordances 含 Medium（Terrain_Floors.xml:6-11） -->
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <graphicData>
       <texPath>Celes/Building/CrystalSeeder/CrystalSeed_Inactive</texPath>
@@ -122,25 +150,29 @@
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0</Flammability>
     </statBases>
+    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
     <costList>
-      <Celes_NanoMachine>64</Celes_NanoMachine>
+      <Celes_InitialCrystallineMaterial>24</Celes_InitialCrystallineMaterial>
     </costList>
     <comps>
       <li Class="CelesFeature.Celes_CompProperties_CrystalSeed">
         <attemptsLimit>45</attemptsLimit>
         <ticksToGrow>2500</ticksToGrow>
         <growRadius>9.9</growRadius>
-        <totalGrowChance>1.5</totalGrowChance>
+        <totalGrowChance>0.8</totalGrowChance>
         <maxGrowChance>0.8</maxGrowChance>
-        <growStepDecrement>0.5</growStepDecrement>
-        <perDecreaseChance>0.15</perDecreaseChance>
+        <growStepDecrement>0.4</growStepDecrement>
+        <perDecreaseChance>0.10</perDecreaseChance>
         <minGrowChance>0.05</minGrowChance>
         <baseGrowDef>Celes_CrystalCluster</baseGrowDef>
-        <!-- 临时测试配置：模式 B（仅看支撑，Medium）；terrainToGrow 保留备用（切回模式 A 时用） -->
+        <!-- 生长表面 = 任意 Medium 支撑（Affordance 模式，用户裁决：不限于晶态地板）；terrainToGrow 保留备用 -->
         <terrainCheckMode>Affordance</terrainCheckMode>
         <terrainToGrow>
-          <li>WoodPlankFloor</li>
+          <li>Celes_CrystalFloor</li>
+          <li>Celes_CrystalSurface</li>
         </terrainToGrow>
+        <!-- 晶簇生成位置创建地板（layerable 晶化表面——感染表现） -->
+        <spawnTerrain>Celes_CrystalSurface</spawnTerrain>
         <pointToGrow>
           <li>0</li>
           <li>2</li>
@@ -152,6 +184,118 @@
           <texPath>Celes/Building/CrystalSeeder/CrystalSeed_Active</texPath>
           <graphicClass>Graphic_Single</graphicClass>
         </activeGraphicData>
+      </li>
+      <!-- 数值：45 次判定 × 0.25 = +11.25 → 最终半径 22.15（10.9 + 11.25）；硬上限 125 -->
+      <li Class="CelesFeature.Celes_CompProperties_CrystalBlight">
+        <startRadius>10.9</startRadius>
+        <radiusGrowPerCheck>0.25</radiusGrowPerCheck>
+        <expandCheckTicks>2500</expandCheckTicks>
+        <maxRadius>125</maxRadius>
+        <pawnHediff>ToxicBuildup</pawnHediff>
+        <hediffSeverityPerDay>1.0</hediffSeverityPerDay>
+        <plantHarmFrequencyPerArea>0.011</plantHarmFrequencyPerArea>
+        <leaflessPlantKillChance>0.35</leaflessPlantKillChance>
+        <ignoreSpecialTrees>true</ignoreSpecialTrees>
+        <messageOnCropDeath>true</messageOnCropDeath>
+      </li>
+      <!-- 晶化表面扩散（真菌状分叉+填充；失活即停；仅晶种系挂载） -->
+      <li Class="CelesFeature.Celes_CompProperties_CrystalTerrainSpread">
+        <spreadTerrain>Celes_CrystalSurface</spreadTerrain>
+        <spreadPerCheck>3</spreadPerCheck>
+        <branchChance>0.1</branchChance>
+        <maxTips>12</maxTips>
+        <minTips>3</minTips>
+        <thickenChance>0.6</thickenChance>
+        <neededAffordance>Light</neededAffordance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- 初始晶种：大型自然生长源，次数上限自限，无燃料无电力 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>Celes_CrystalInitialSeed</defName>
+    <label>初始晶种</label>
+    <description>会自然催生尘构晶簇的活性晶体。每次生长判定消耗一次活性，判定次数耗尽后失活，范围内晶簇停止生长。</description>
+    <thingClass>CelesFeature.Celes_CrystalSeedThing</thingClass>
+    <building>
+      <expandHomeArea>false</expandHomeArea>
+    </building>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <graphicData>
+      <texPath>Celes/Building/CrystalSeeder/CrystalInitialSeed_Inactive</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <size>(1,1)</size>
+    <passability>Standable</passability>
+    <tickerType>Rare</tickerType>
+    <placeWorkers>
+      <li>CelesFeature.PlaceWorker_CrystalGrowRadius</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <!-- [事实] 拆除 100% 返还：resourcesFractionWhenDeconstructed 默认 0.5（BuildableDef.cs:38），覆写 1 = 全返 -->
+    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    <costList>
+      <Celes_InitialCrystalCluster>1</Celes_InitialCrystalCluster>
+    </costList>
+    <comps>
+      <li Class="CelesFeature.Celes_CompProperties_CrystalSeed">
+        <attemptsLimit>99999</attemptsLimit>
+        <ticksToGrow>10000</ticksToGrow>
+        <growRadius>9.9</growRadius>
+        <totalGrowChance>1.5</totalGrowChance>
+        <maxGrowChance>0.8</maxGrowChance>
+        <growStepDecrement>0.5</growStepDecrement>
+        <perDecreaseChance>0.15</perDecreaseChance>
+        <minGrowChance>0.05</minGrowChance>
+        <baseGrowDef>Celes_CrystalCluster</baseGrowDef>
+        <!-- 生长表面 = 任意 Medium 支撑（Affordance 模式）；terrainToGrow 保留备用 -->
+        <terrainCheckMode>Affordance</terrainCheckMode>
+        <terrainToGrow>
+          <li>Celes_CrystalFloor</li>
+          <li>Celes_CrystalSurface</li>
+        </terrainToGrow>
+        <!-- 晶簇生成位置创建地板（layerable 晶化表面——感染表现） -->
+        <spawnTerrain>Celes_CrystalSurface</spawnTerrain>
+        <pointToGrow>
+          <li>0</li>
+          <li>2</li>
+          <li>5</li>
+          <li>10</li>
+        </pointToGrow>
+        <chanceToGrow>0.33</chanceToGrow>
+        <activeGraphicData>
+          <texPath>Celes/Building/CrystalSeeder/CrystalInitialSeed_Active</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </activeGraphicData>
+      </li>
+      <li Class="CelesFeature.Celes_CompProperties_CrystalBlight">
+        <startRadius>10.9</startRadius>
+        <radiusGrowPerCheck>0.01</radiusGrowPerCheck>
+        <expandCheckTicks>2500</expandCheckTicks>
+        <maxRadius>125</maxRadius>
+        <pawnHediff>ToxicBuildup</pawnHediff>
+        <hediffSeverityPerDay>1.0</hediffSeverityPerDay>
+        <plantHarmFrequencyPerArea>0.011</plantHarmFrequencyPerArea>
+        <leaflessPlantKillChance>0.35</leaflessPlantKillChance>
+        <ignoreSpecialTrees>true</ignoreSpecialTrees>
+        <messageOnCropDeath>true</messageOnCropDeath>
+      </li>
+      <!-- 晶化表面扩散（真菌状分叉+填充；失活即停） -->
+      <li Class="CelesFeature.Celes_CompProperties_CrystalTerrainSpread">
+        <spreadTerrain>Celes_CrystalSurface</spreadTerrain>
+        <spreadPerCheck>3</spreadPerCheck>
+        <branchChance>0.1</branchChance>
+        <maxTips>12</maxTips>
+        <minTips>3</minTips>
+        <thickenChance>0.6</thickenChance>
+        <neededAffordance>Light</neededAffordance>
       </li>
     </comps>
   </ThingDef>
