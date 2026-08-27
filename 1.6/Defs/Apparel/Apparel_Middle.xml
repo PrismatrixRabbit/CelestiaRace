@@ -164,7 +164,7 @@
 			<ComponentSpacer>4</ComponentSpacer>
 			<Plasteel>120</Plasteel>
             <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
-			<CelesAdvanceCloth>40</CelesAdvanceCloth>
+			<Celes_AdvancedCloth>40</Celes_AdvancedCloth>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Celes_Apparel_IV</researchPrerequisite>
@@ -231,7 +231,7 @@
             <ComponentSpacer>4</ComponentSpacer>
             <Plasteel>120</Plasteel>
             <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
-            <CelesAdvanceCloth>40</CelesAdvanceCloth>
+            <Celes_AdvancedCloth>40</Celes_AdvancedCloth>
         </costList>
         <recipeMaker>
             <researchPrerequisite>Celes_Apparel_V</researchPrerequisite>
@@ -298,7 +298,7 @@
             <ComponentSpacer>4</ComponentSpacer>
             <Plasteel>120</Plasteel>
             <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
-            <CelesAdvanceCloth>40</CelesAdvanceCloth>
+            <Celes_AdvancedCloth>40</Celes_AdvancedCloth>
         </costList>
         <recipeMaker>
             <researchPrerequisite>Celes_Apparel_V</researchPrerequisite>

@@ -33,7 +33,7 @@
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase"><!-- 尘化丝绸 --><!-- 待平衡 & 待修正贴图 -->
-        <defName>CelesAdvanceCloth</defName>
+        <defName>Celes_AdvancedCloth</defName>
         <label>尘化丝绸</label>
         <description>一种先进的高生物相容性特种纺织面料，在可接受的成本内几乎完美的兼顾了强度和性能。但在边缘世界，可行性最高的复现方案几乎必须在恶魔菇产生的纤维基础上利用尘构物质重新排序纤维结构。\n\nA high-strength fabric made using Dust-Mech to reconfigure microscopic fibre structures. The formula is adapted to the environment of the Rimworld and is used to make all types of Celestia advanced clothing.</description>
         <graphicData>
@@ -120,7 +120,7 @@
             <recipeUsers>
                 <li>Celes_LabNanoForge</li>
             </recipeUsers>
-            <!--<researchPrerequisite>Celes_MainTech_II</researchPrerequisite>-->
+            <!--<researchPrerequisite>Celes_MainTech_I</researchPrerequisite>-->
             <skillRequirements>
                 <Crafting>6</Crafting>
                 <Intellectual>4</Intellectual>

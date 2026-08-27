@@ -28,7 +28,7 @@
             <Celes_NanoMachine>3</Celes_NanoMachine>
         </products>
         <researchPrerequisites>
-            <li>Celes_MainTech_II</li>
+            <li>Celes_MainTech_I</li>
         </researchPrerequisites>
     </RecipeDef>
     

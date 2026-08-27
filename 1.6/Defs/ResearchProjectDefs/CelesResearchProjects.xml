@@ -27,7 +27,7 @@
     <!-- ========== 主要科技 ========== -->
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_II</defName><!-- 复制指令 -->
+        <defName>Celes_MainTech_I</defName><!-- 复制指令 -->
         <label>复制指令</label>
         <description>通过破译尘构指令符号集，初步理解如何利用电场诱导尘构自我复制。</description>
         <baseCost>700</baseCost>
@@ -45,13 +45,13 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_II-5</defName><!-- 锻造指令 -->
+        <defName>Celes_MainTech_II</defName><!-- 锻造指令 -->
         <label>锻造指令</label>
         <description>尘构单元可以自然的用于材料的分子级加工。虽然当前的精度和加工速度都受限于我们对复杂尘构指令集编译的理解能力，但足以在一定程度上解决边缘世界"野生"钢铁材料的晶格缺陷问题。</description>
         <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_MainTech_II</li>
+            <li>Celes_MainTech_I</li>
         </prerequisites>
         <researchViewX>1</researchViewX>
         <researchViewY>2.4</researchViewY>
@@ -69,7 +69,7 @@
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
             <li>MicroelectronicsBasics</li>
-            <li>Celes_MainTech_II-5</li>
+            <li>Celes_MainTech_II</li>
         </prerequisites>
         <requiredAnalyzed>
             <li>Celes_STC_MainTech_III</li>
@@ -122,7 +122,7 @@
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
-            <li>Celes_MainTech_II</li>
+            <li>Celes_MainTech_I</li>
         </prerequisites>
         <researchViewX>1</researchViewX>
         <researchViewY>1.8</researchViewY>
@@ -205,7 +205,7 @@
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_MainTech_II</li>
+            <li>Celes_MainTech_I</li>
             <li>DrugProduction</li>
             <li>Celes_Plant_I</li>
         </prerequisites>
@@ -395,7 +395,7 @@
             <li>Celes_Mech_I</li>
         </prerequisites>
         <hiddenPrerequisites>
-            <li>Celes_MainTech_II-5</li>
+            <li>Celes_MainTech_II</li>
         </hiddenPrerequisites>
         <researchViewX>2</researchViewX>
         <researchViewY>4.8</researchViewY>
@@ -466,14 +466,14 @@
     <!-- ========== 生产科技 ========== -->
 
     <ResearchProjectDef>
-        <defName>Celes_ManufactoryI</defName><!-- 模式化锻造理论 --><!-- 待编辑 -->
-        <label>Celes_ManufactoryI(WIP)</label>
-        <description>Celes_ManufactoryI</description>
+        <defName>Celes_Manufactory_I</defName><!-- 模式化锻造理论 --><!-- 待编辑 -->
+        <label>Celes_Manufactory_I(WIP)</label>
+        <description>Celes_Manufactory_I</description>
         <!-- 纳米离心机 纳米纤维织机 -->
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_MainTech_II-5</li>
+            <li>Celes_MainTech_II</li>
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
@@ -485,14 +485,14 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_ManufactoryII</defName><!-- 大规模生产理论 --><!-- 待编辑 -->
-        <label>Celes_ManufactoryII(WIP)</label>
-        <description>Celes_ManufactoryII</description>
+        <defName>Celes_Manufactory_II</defName><!-- 大规模生产理论 --><!-- 待编辑 -->
+        <label>Celes_Manufactory_II(WIP)</label>
+        <description>Celes_Manufactory_II</description>
         <!-- 纳米离心机 纳米纤维织机 -->
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>Celes_ManufactoryI</li>
+            <li>Celes_Manufactory_I</li>
             <li>Celes_MainTech_III</li>
         </prerequisites>
         <hiddenPrerequisites>
@@ -652,4 +652,17 @@
         </tags>
     </ResearchProjectDef>
 
+
+    <ResearchProjectDef>
+        <defName>Celes_CelestiaFreqDecrypt</defName>
+        <label>破译星铃频段</label>
+        <description>对坠落晶簇中蕴含的信号结构进行逆向分析，破译星铃外勤部的通讯频段编码，从而建造兼容的通讯发信器。</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>0</researchViewX>
+        <researchViewY>5.4</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
 </Defs>

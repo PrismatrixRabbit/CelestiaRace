@@ -143,7 +143,9 @@
   </IncidentDef>
 
 
-  <!-- 事件：晶体（概率略低 50%） -->
+  <!-- ═══ 开局任务链事件 1：初始晶体坠落（2026-08-25） ═══
+       触发 = 叙事者 SingleMTB（Storyteller.xml）+ earliestDay=7 + minRefireDays=99999（F3 同款组合：第 7 天后仅一次）；
+       baseChance=0 防随机池；Worker 内：星铃派系存在前置 + 置位 CrystalEventTick（道歉信 3700 起算） -->
   <IncidentDef>
     <defName>CelesFD_InitialCrystalOrbitDrop</defName>
     <label>星铃轨道晶体坠落</label>
@@ -153,6 +155,8 @@
     </targetTags>
     <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
     <baseChance>0</baseChance>
+    <earliestDay>7</earliestDay>
+    <minRefireDays>99999</minRefireDays>
     <letterDef>NeutralEvent</letterDef>
     <letterLabel>星铃轨道晶体坠落</letterLabel>
     <letterText>检测到星铃轨道晶体坠落的信号。其中包含着相当高价值的晶体。</letterText>

@@ -39,7 +39,7 @@
         <label>初始晶簇</label>
         <description>初始晶簇是包含惰性尘构复制单元的晶体块，它就像是一块种子，被大量的晶态材料包裹着。</description>
         <descriptionHyperlinks>
-            <ThingDef>Celes_InitialCrystallineMaterial</ThingDef>
+            <ThingDef>Celes_CrystallineMaterial</ThingDef>
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Celes/Item/DustMech/InitialCrystalCluster</texPath>
@@ -60,14 +60,14 @@
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase"><!-- 初始晶态材料 --><!-- 贴图未更新 -->
-        <defName>Celes_InitialCrystallineMaterial</defName>
+        <defName>Celes_CrystallineMaterial</defName>
         <label>初始晶态材料</label>
         <description>初始晶态材料是一系列结构化排布的晶体，本身也能归类为尘构，但通常作为其他尘构单元的简单复制原料。在接受外部模板或指令前，保持类似干细胞那样的多功能分化潜能，是尘构物质的通用前体储备。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_InitialCrystalCluster</ThingDef>
         </descriptionHyperlinks>
         <graphicData>
-            <texPath>Celes/Item/DustMech/InitialCrystallineMaterial</texPath>
+            <texPath>Celes/Item/DustMech/CrystallineMaterial</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.90</drawSize>
         </graphicData>

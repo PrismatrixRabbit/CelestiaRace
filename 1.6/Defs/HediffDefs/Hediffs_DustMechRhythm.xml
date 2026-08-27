@@ -10,8 +10,8 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_Standard</defName>
-        <label>Celes_DustMechRhythm_Standard</label>
-        <description>Celes_DustMechRhythm_Standard</description>
+        <label>尘构节律(稳态)</label>
+        <description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于稳定状态。\n\n自出生起，星铃的血液中就流淌着尘构物质，主要充当着人机交互媒介的植入物，在边缘世界就显得用途局限。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Dormant</HediffDef>
@@ -44,7 +44,7 @@
                 </hediffs>
                 <stages>0~</stages>
                 <mtbHours>0</mtbHours>
-                <message>{0} is no longer .</message>
+                <message>{0}的稳态尘构节律被替换了.</message>
                 <messageType>SilentInput</messageType>
                 <onlyMessageForColonistsOrPrisoners>true</onlyMessageForColonistsOrPrisoners>
             </li>
@@ -60,8 +60,8 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_ProtocolIII</defName>
-        <label>Celes_DustMechRhythm_ProtocolIII</label>
-        <description>Celes_DustMechRhythm_ProtocolIII</description>
+        <label>尘构节律(协议三)</label>
+        <description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于特殊的活跃状态。\n\n作为星铃生存协议的一部分，当星铃机体的意识水平下降到一定程度时，流淌在血液中的尘构便会试图强行维系星铃的生存。尘构物质参与进循环系统，辅助运输，抑制出血，快速修补血管网络，在创伤处构建纳米网格，并阻断大脑高级功能避免生理与心理的进一步损伤。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
         </descriptionHyperlinks>
@@ -72,7 +72,7 @@
         <tendable>true</tendable>
         <stages>
             <li>
-                <label>Exhaustion</label>
+                <label>疲劳</label>
                 <statOffsets>
                     <InjuryHealingFactor>0.75</InjuryHealingFactor>
                     <RestFallRateFactor>1.0</RestFallRateFactor>
@@ -94,7 +94,7 @@
                 </makeImmuneTo>
             </li>
             <li>
-                <label>Stress</label>
+                <label>活性</label>
                 <minSeverity>0.34</minSeverity>
                 <statOffsets>
                     <InjuryHealingFactor>1.0</InjuryHealingFactor>
@@ -113,7 +113,7 @@
                 </makeImmuneTo>
             </li>
             <li>
-                <label>Prepare</label>
+                <label>预备</label>
                 <minSeverity>0.98</minSeverity>
                 <painFactor>0.9</painFactor>
                 <totalBleedFactor>0.5</totalBleedFactor>
@@ -139,15 +139,15 @@
             <li Class="HediffCompProperties_MessageAboveSeverity">
                 <severity>0.99</severity>
                 <messageType>CautionInput</messageType>
-                <message>{0} has triggered the Protocol III.</message>
+                <message>{0}触发了尘构节律（协议三）.</message>
             </li>
         </comps>
     </HediffDef>
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_Activity</defName>
-        <label>Celes_DustMechRhythm_Activity</label>
-        <description>Celes_DustMechRhythm_Activity</description>
+        <label>尘构节律(活性)</label>
+        <description>周期性波动的尘构机械，协调着该个体的机体机能，正处于活跃状态。\n\n在特殊指令的刺激下，尘构机械正修补并全面强化着个体的身体机能，但代价则是在全身各处穿行的尘构物质对免疫系统与神经末梢的无害强烈刺激。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Dormant</HediffDef>
@@ -161,7 +161,7 @@
         <maxSeverity>1.0</maxSeverity>
         <stages>
             <li>
-                <label>Working</label>
+                <label>活性</label>
                 <painOffset>0.4</painOffset>
                 <statOffsets>
                     <ImmunityGainSpeed>0.35</ImmunityGainSpeed>
@@ -200,7 +200,7 @@
                 </capMods>
             </li>
             <li>
-                <label>Prepare</label>
+                <label>预备</label>
                 <minSeverity>0.980</minSeverity>
                 <painOffset>0.2</painOffset>
                 <statOffsets>
@@ -252,8 +252,8 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_ActivitySurgery</defName>
-        <label>Celes_DustMechRhythm_Activity</label>
-        <description>Celes_DustMechRhythm_Activity</description>
+        <label>尘构节律(活性)</label>
+        <description>周期性波动的尘构机械，协调着该个体的机体机能，正处于活跃状态。\n\n在特殊指令的刺激下，尘构机械正修补并全面强化着个体的身体机能，但代价则是在全身各处穿行的尘构物质对免疫系统与神经末梢的无害强烈刺激。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Dormant</HediffDef>
@@ -267,7 +267,7 @@
         <maxSeverity>0.003</maxSeverity>
         <stages>
             <li>
-                <label>Prepare</label>
+                <label>预备</label>
                 <painOffset>0.2</painOffset>
                 <statOffsets>
                     <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
@@ -311,8 +311,8 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_Dormant</defName>
-        <label>Celes_DustMechRhythm_Dormant</label>
-        <description>Celes_DustMechRhythm_Dormant</description>
+        <label>尘构节律(疲劳)</label>
+        <description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于应激状态。\n\n尘构机械刚刚经历了剧烈的消耗，连带着星铃的机体陷入过度疲劳的状态。这种无害的疲劳状态需要大约一天恢复。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
@@ -361,8 +361,8 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_Military</defName>
-        <label>Celes_DustMechRhythm_Military</label>
-        <description>Celes_DustMechRhythm_Military</description>
+        <label>尘构节律(军规)</label>
+        <description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于稳定状态。\n\n该个体体内的尘构物质被调整到了一个运行模式，在这个模式下的尘构物质会全面强化个体的战斗能力，但会削弱些许工作能力。在星铃的母星系，调整到军规节律往往需要对象经历严苛的审查和检测。但在检测条件受限的边缘世界，这种节律似乎被稍稍滥用了。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <RecipeDef>Celes_ActiveDustMechRhythm_Standard</RecipeDef>
@@ -413,8 +413,8 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_ProtocolII</defName>
-        <label>Celes_DustMechRhythm_ProtocolII</label>
-        <description>Celes_DustMechRhythm_ProtocolII</description>
+        <label>尘构节律(协议二)</label>
+        <description>在星铃体内周期性波动的尘构机械，协调着星铃的机体机能，正处于特殊的活跃状态。\n\n作为星铃生存协议的一部分，这个协议通常只有在极其极端的条件下才会触发，军规节律则会绕过这个限制。流淌在血液中的尘构同样试图维持星铃的生存，但这一次是通过消灭威胁生存的对象，通过全面强化个体的作战能力。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Military</HediffDef>
         </descriptionHyperlinks>
@@ -424,7 +424,7 @@
         <maxSeverity>1.0</maxSeverity>
         <stages>
             <li>
-                <label>Exhaustion</label>
+                <label>疲劳</label>
                 <statFactors>
                     <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
                     <RestFallRateFactor>0.5</RestFallRateFactor>
@@ -447,7 +447,7 @@
                 </makeImmuneTo>
             </li>
             <li>
-                <label>Stress</label>
+                <label>活性</label>
                 <minSeverity>0.66</minSeverity>
                 <hungerRateFactor>0.1</hungerRateFactor>
                 <statFactors>
@@ -502,7 +502,7 @@
             <li Class="HediffCompProperties_MessageAboveSeverity">
                 <severity>0.99</severity>
                 <messageType>CautionInput</messageType>
-                <message>{0} has triggered the Protocol II.</message>
+                <message>{0}触发了尘构节律（协议二）.</message>
             </li>
         </comps>
     </HediffDef>
@@ -832,14 +832,9 @@
                             <li>Heart</li>
                         </partsToAffect>
                     </li>
-                    <li Class="HediffGiver_RandomDrugEffect">
+                    <li Class="HediffGiver_Random">
                         <hediff>Dementia</hediff>
-                        <severityToMtbDaysCurve>
-                            <points>
-                                <li>(0.25, 1)</li>
-                                <li>(0.01, 0.25)</li>
-                            </points>
-                        </severityToMtbDaysCurve>
+                        <mtbDays>146</mtbDays>
                         <partsToAffect>
                             <li>Brain</li>
                         </partsToAffect>
@@ -963,14 +958,9 @@
                             <li>Heart</li>
                         </partsToAffect>
                     </li>
-                    <li Class="HediffGiver_RandomDrugEffect">
+                    <li Class="HediffGiver_Random">
                         <hediff>Dementia</hediff>
-                        <severityToMtbDaysCurve>
-                            <points>
-                                <li>(1.00, 0.25)</li>
-                                <li>(0.01, 0.15)</li>
-                            </points>
-                        </severityToMtbDaysCurve>
+                        <mtbDays>37</mtbDays>
                         <partsToAffect>
                             <li>Brain</li>
                         </partsToAffect>
@@ -1323,4 +1313,148 @@
         </renderNodeProperties>
     </HediffDef>
 
+    <!-- ========== 毒性反应 ========== -->
+
+    <HediffDef ParentName="Celes_DustMechRhythmBase">
+        <defName>Celes_DustMechInfection</defName>
+        <label>尘构机械感染</label>
+        <description>.</description>
+        <canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+        <makesSickThought>true</makesSickThought>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.1</severityPerDay>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_Jumper">
+                <targetHediff>Celes_DustMechRhythm_Extreme</targetHediff>
+                <minToJump>false</minToJump>
+                <useRace>True</useRace>
+                <specialRace>
+                    <li>Celes_Race</li>
+                </specialRace>
+                <hediffForSpRace>Celes_DustMechRhythm_Dormant</hediffForSpRace>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>initial</label>
+                <becomeVisible>false</becomeVisible>
+            </li>
+            <li>
+                <label>initial</label>
+                <minSeverity>0.04</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>minor</label>
+                <minSeverity>0.2</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>moderate</label>
+                <minSeverity>0.40</minSeverity>
+                <vomitMtbDays>5</vomitMtbDays>
+                <painOffset>0.25</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>146</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>serious</label>
+                <minSeverity>0.60</minSeverity>
+                <vomitMtbDays>1</vomitMtbDays>
+                <painOffset>0.60</painOffset>
+                <statOffsets>
+                    <RestFallRateFactor>1.0</RestFallRateFactor>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.25</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>37</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>Working</label>
+                <minSeverity>0.80</minSeverity>
+                <vomitMtbDays>0.5</vomitMtbDays>
+                <painOffset>0.80</painOffset>
+                <lifeThreatening>true</lifeThreatening>
+                <statOffsets>
+                    <RestFallRateFactor>3.0</RestFallRateFactor>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
+                </makeImmuneTo>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_RandomDrugEffect">
+                        <hediff>ChemicalDamageSevere</hediff>
+                        <severityToMtbDaysCurve>
+                            <points>
+                                <li>(1.00, 0.25)</li>
+                                <li>(0.01, 0.15)</li>
+                            </points>
+                        </severityToMtbDaysCurve>
+                        <partsToAffect>
+                            <li>Liver</li>
+                            <li>Kidney</li>
+                            <li>Lung</li>
+                            <li>Stomach</li>
+                            <li>Heart</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>12</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
+            </li>
+        </stages>
+    </HediffDef>
+    
 </Defs>

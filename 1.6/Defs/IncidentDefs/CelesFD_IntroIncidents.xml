@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ═══ 开局任务链：道歉信事件（2026-08-25） ═══
+       主事件 CelesFD_ApologyLetter = else 默认文案 + 触发载体（GameComponent 3700 定时 def.Worker.TryExecute）；
+       4 文本变体（CelesFD_ApologyText_*）仅作文本载体（letterText 原版字段 [MustTranslate] + defInjected 翻译，
+       baseChance=0 + category=Special 永不进随机池——F3 教训实证）；
+       Worker 按剧本分组查对应 def 的 letterText → Find.LetterStack.ReceiveLetter 无转至重载（LetterStack.cs:50 实证） -->
+
+  <!-- 主事件：剧本 else（迁徙） -->
+  <IncidentDef>
+    <defName>CelesFD_ApologyLetter</defName>
+    <label>来自星铃的道歉信</label>
+    <category>Special</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+    <workerClass>CelesFeature.CelesFD_IncidentWorker_Apology</workerClass>
+    <baseChance>0</baseChance>
+    <letterDef>NeutralEvent</letterDef>
+    <letterLabel>来自星铃的道歉信</letterLabel>
+    <letterText>这里是星铃外勤部。
+星铃外勤部对于向你方所在地投放自增殖尘构晶簇深感歉意，对于我方没有及时更新本地的所有权信息的错误，已经做出深刻检讨。根据我们的观测，你方于前段时间迁徙至此地。已经更新你方为这片区域的新住民。
+尘构晶簇的所有权已完全转交给你方。你方可以自由处理晶簇及对应增生物。
+对于我方造成的不便，正在向你方传输星铃发信器相关技术，我方已经正式登记你们为已授权的访问者，并将通过该渠道为你方提供赔偿。</letterText>
+  </IncidentDef>
+
+  <!-- 文本变体：经典（迫降） -->
+  <IncidentDef>
+    <defName>CelesFD_ApologyText_Classic</defName>
+    <label>来自星铃的道歉信</label>
+    <category>Special</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+    <workerClass>CelesFeature.CelesFD_IncidentWorker_Apology</workerClass>
+    <baseChance>0</baseChance>
+    <letterDef>NeutralEvent</letterDef>
+    <letterLabel>来自星铃的道歉信</letterLabel>
+    <letterText>这里是星铃外勤部。
+星铃外勤部对于向你方所在地投放自增殖尘构晶簇深感歉意，对于我方没有及时更新本地的所有权信息的错误，已经做出深刻检讨。根据我们的观测，你方于前段时间迫降在此地。已经更新你方为这片区域的新住民。
+尘构晶簇的所有权已完全转交给你方。考虑到你方的技术水平，你方可以自由处理晶簇及对应增生物。
+对于我方造成的不便，正在向你方传输星铃发信器相关技术，我方已经正式登记你们为已授权的访问者，并将通过该渠道为你方提供赔偿。</letterText>
+  </IncidentDef>
+
+  <!-- 文本变体：失落的部落 -->
+  <IncidentDef>
+    <defName>CelesFD_ApologyText_Tribal</defName>
+    <label>来自星铃的道歉信</label>
+    <category>Special</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+    <workerClass>CelesFeature.CelesFD_IncidentWorker_Apology</workerClass>
+    <baseChance>0</baseChance>
+    <letterDef>NeutralEvent</letterDef>
+    <letterLabel>来自星铃的道歉信</letterLabel>
+    <letterText>这里是星铃外勤部。
+概要而言，我们因为不知道你们是这里的新居民，而错误投放了具有毒性和危害的晶体，我们诚恳道歉，并且保证不再犯下相同错误，并且愿意在力所能及的范围做出赔偿。
+你们可以自由处理晶体，考虑到你们的技术水准，我们建议尽可能快速做拆除处理。
+同时，考虑到你们的技术水准，我们对这份信息可以传到到你们手中做悲观预期。但我们已经向你方传输星铃发信器相关技术，我方已经正式登记你们为已授权的访问者，并将通过该渠道为你方提供赔偿。</letterText>
+  </IncidentDef>
+
+  <!-- 文本变体：富有的探险家/赤裸的暴行/机械师 -->
+  <IncidentDef>
+    <defName>CelesFD_ApologyText_Explorer</defName>
+    <label>来自星铃的道歉信</label>
+    <category>Special</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+    <workerClass>CelesFeature.CelesFD_IncidentWorker_Apology</workerClass>
+    <baseChance>0</baseChance>
+    <letterDef>NeutralEvent</letterDef>
+    <letterLabel>来自星铃的道歉信</letterLabel>
+    <letterText>这里是星铃外勤部。
+星铃外勤部对于向你方所在地投放自增殖尘构晶簇深感歉意，对于我方没有及时更新本地的所有权信息的错误，已经做出深刻检讨。根据我们的观测，你方于前段时间迫降在此地。已经更新你方为这片区域的新住民。
+尘构晶簇的所有权已完全转交给你方。注意到你方在迫降时仅有一份生物信号，我方建议你方谨慎处理晶簇及对应增生物，注意毒性污染。
+对于我方造成的不便，正在向你方传输星铃发信器相关技术，我方已经正式登记你们为已授权的访问者，并将通过该渠道为你方提供赔偿。</letterText>
+  </IncidentDef>
+
+  <!-- 文本变体：星铃默认剧本（Celes_Scenarios——极光号方舟科考队） -->
+  <IncidentDef>
+    <defName>CelesFD_ApologyText_Celestia</defName>
+    <label>来自星铃的道歉信</label>
+    <category>Special</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+    <workerClass>CelesFeature.CelesFD_IncidentWorker_Apology</workerClass>
+    <baseChance>0</baseChance>
+    <letterDef>NeutralEvent</letterDef>
+    <letterLabel>来自星铃的道歉信</letterLabel>
+    <letterText>这里是星铃外勤部。
+星铃外勤部对于向你方所在地投放自增殖尘构晶簇深感歉意，对于我方没有及时更新本地的所有权信息的错误，已经做出深刻检讨……
+稍等。
+星铃同胞？这里是极光号方舟科考队，重复，这里是极光号方舟科考队。
+北极星号发生了什么？
+我们正在尽可能的救援仍然存活的北极星号幸存者。
+请尽快联系我们。
+正在传输极光号标准发信器相关技术，请尽快通过约定频道联系我们。
+另注：本地尘构晶簇对你们未来的生存大有帮助，且对星铃无毒性，失活周期两天，届时你们可以开采那些晶体。</letterText>
+  </IncidentDef>
+</Defs>

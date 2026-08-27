@@ -43,6 +43,7 @@
     <graphicData>
       <texPath>Celes/Building/CrystalSeeder/CrystalSeeder</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.0,2.0)</drawSize>
     </graphicData>
     <costList>
       <Steel>150</Steel>
@@ -152,7 +153,7 @@
     </statBases>
     <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
     <costList>
-      <Celes_InitialCrystallineMaterial>24</Celes_InitialCrystallineMaterial>
+      <Celes_CrystallineMaterial>24</Celes_CrystallineMaterial>
     </costList>
     <comps>
       <li Class="CelesFeature.Celes_CompProperties_CrystalSeed">
@@ -191,7 +192,7 @@
         <radiusGrowPerCheck>0.25</radiusGrowPerCheck>
         <expandCheckTicks>2500</expandCheckTicks>
         <maxRadius>125</maxRadius>
-        <pawnHediff>ToxicBuildup</pawnHediff>
+        <pawnHediff>Celes_DustMechInfection</pawnHediff>
         <hediffSeverityPerDay>1.0</hediffSeverityPerDay>
         <plantHarmFrequencyPerArea>0.011</plantHarmFrequencyPerArea>
         <leaflessPlantKillChance>0.35</leaflessPlantKillChance>
@@ -280,7 +281,7 @@
         <radiusGrowPerCheck>0.01</radiusGrowPerCheck>
         <expandCheckTicks>2500</expandCheckTicks>
         <maxRadius>125</maxRadius>
-        <pawnHediff>ToxicBuildup</pawnHediff>
+        <pawnHediff>Celes_DustMechInfection</pawnHediff>
         <hediffSeverityPerDay>1.0</hediffSeverityPerDay>
         <plantHarmFrequencyPerArea>0.011</plantHarmFrequencyPerArea>
         <leaflessPlantKillChance>0.35</leaflessPlantKillChance>

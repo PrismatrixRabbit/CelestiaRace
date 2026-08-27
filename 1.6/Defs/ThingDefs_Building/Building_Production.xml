@@ -7,9 +7,9 @@
         <description>一台小型的纳米锻炉，可以使用恰当的技术蓝图，使用尘构作为工具合成需要的物品。</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
-            <texPath>Celes/Building/Celes_MultifunctionalTabA/Celes_MultifunctionalTabA</texPath>
+            <texPath>Celes/Building/LabNanoForge/LabNanoForge</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(2.5,1.5)</drawSize>
+            <drawSize>(4.0,2.5)</drawSize>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
@@ -32,7 +32,7 @@
             <Flammability>1.0</Flammability>
             <Cleanliness>0</Cleanliness>
         </statBases>
-        <size>(2,1)</size>
+        <size>(3,1)</size>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <uiOrder>1000</uiOrder>
         <passability>PassThroughOnly</passability>
@@ -70,7 +70,7 @@
 		</building>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
-			<li>Celes_MainTech_II</li>
+			<li>Celes_MainTech_I</li>
 		</researchPrerequisites>
 		<placeWorkers>
             <li>PlaceWorker_ShowFacilitiesConnections</li>

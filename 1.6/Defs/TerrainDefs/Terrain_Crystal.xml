@@ -10,7 +10,7 @@
     <description>由纳米机械构成的晶态地表，结构稳定，可为建造提供中等支撑。可被拆除还原为原始地形。</description>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Celes/Terrain/CrystalFloor</texturePath>
-    <color>(108,78,55)</color>
+    <!-- [事实] 不写 color：DrawColor 默认白（TerrainDef.cs:308-318）——完整彩色贴图不应 tint（曾照抄木地板棕色 (108,78,55) 致整体棕蒙版） -->
     <statBases>
       <WorkToBuild>100</WorkToBuild>
       <Flammability>0</Flammability>
@@ -37,7 +37,7 @@
     <description>活性晶簇扩散产生的晶态覆层。仅提供轻支撑，拆除后还原为原始地形。</description>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Celes/Terrain/CrystalSurface</texturePath>
-    <color>(108,78,55)</color>
+    <!-- [事实] 不写 color：默认白无 tint（同人工晶态表面——曾照抄木地板棕色致棕蒙版） -->
     <!-- [事实] 支撑判定 = GetAffordances().Contains(needed) 精确匹配（GenGrid.cs:208-211）——无"Medium 隐含 Light"层级；
          显式全列 Light + Medium + Heavy（用户裁决保留重）+ Walkable：培育器 Light 放置 / 晶种 Medium 生长判定 / 扩散 Light 判定均满足
          [事实] XML 继承对 <li> 列表为"追加合并"——覆写必须 Inherit="false" -->

@@ -27,7 +27,7 @@
       <isInert>true</isInert>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
-      <mineableThing>Celes_InitialCrystallineMaterial</mineableThing>
+      <mineableThing>Celes_CrystallineMaterial</mineableThing>
       <mineableYield>1</mineableYield>
       <!-- [事实] mineableDropChance=0：关闭基类 Mineable 产出（Mineable.cs:68 判定），产出由 Comp.PostDestroy 按等级自产 -->
       <mineableDropChance>0</mineableDropChance>

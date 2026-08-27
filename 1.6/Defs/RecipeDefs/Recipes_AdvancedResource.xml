@@ -74,9 +74,9 @@
         <descriptionHyperlinks>
             <ThingDef>Celes_Cloth</ThingDef>
             <ThingDef>DevilstrandCloth</ThingDef>
-            <ThingDef>CelesAdvanceCloth</ThingDef>
+            <ThingDef>Celes_AdvancedCloth</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>CelesAdvanceCloth</uiIconThing>
+        <uiIconThing>Celes_AdvancedCloth</uiIconThing>
         <jobString>正在重序尘化丝绸</jobString>
         <effectWorking>Tailor</effectWorking>
         <soundWorking>Recipe_Tailor</soundWorking>
@@ -108,7 +108,7 @@
             </li>
         </ingredients>
         <products>
-            <CelesAdvanceCloth>50</CelesAdvanceCloth>
+            <Celes_AdvancedCloth>50</Celes_AdvancedCloth>
         </products>
         <displayPriority>1705</displayPriority>
     </RecipeDef>
@@ -167,7 +167,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <CelesAdvanceCloth>20</CelesAdvanceCloth>
+            <Celes_AdvancedCloth>20</Celes_AdvancedCloth>
         </products>
     </RecipeDef>
 

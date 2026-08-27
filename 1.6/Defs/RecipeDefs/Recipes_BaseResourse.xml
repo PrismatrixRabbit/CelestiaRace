@@ -9,10 +9,10 @@
         <description>以母岩为基础自我复制，在人工调频的前提下较为低效。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_InitialCrystalCluster</ThingDef>
-            <ThingDef>Celes_InitialCrystallineMaterial</ThingDef>
+            <ThingDef>Celes_CrystallineMaterial</ThingDef>
             <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>Celes_InitialCrystallineMaterial</uiIconThing>
+        <uiIconThing>Celes_InitialCrystalCluster</uiIconThing>
         <jobString>正在复制晶体</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
@@ -23,7 +23,7 @@
             <li>Celes_LabNanoForge</li>
         </recipeUsers>
         <researchPrerequisites>
-            <li>Celes_MainTech_II</li>
+            <li>Celes_MainTech_I</li>
         </researchPrerequisites>
         <ingredients>
             <li>
@@ -40,7 +40,7 @@
                         <li>Celes_InitialCrystalCluster</li>
                     </thingDefs>
                 </filter>
-                <count>4</count>
+                <count>1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -49,7 +49,7 @@
             </categories>
         </fixedIngredientFilter>
         <products>
-            <Celes_InitialCrystallineMaterial>1</Celes_InitialCrystallineMaterial>
+            <Celes_CrystallineMaterial>1</Celes_CrystallineMaterial>
         </products>
         <displayPriority>1005</displayPriority>
     </RecipeDef>
@@ -59,7 +59,7 @@
         <label>复制指令：调频</label>
         <description>通过手动调频对尘构执行复制指令。</description>
         <descriptionHyperlinks>
-            <ThingDef>Celes_InitialCrystallineMaterial</ThingDef>
+            <ThingDef>Celes_CrystallineMaterial</ThingDef>
             <ThingDef>Celes_BioGel</ThingDef>
             <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
@@ -74,13 +74,13 @@
             <li>Celes_LabNanoForge</li>
         </recipeUsers>
         <researchPrerequisites>
-            <li>Celes_MainTech_II</li>
+            <li>Celes_MainTech_I</li>
         </researchPrerequisites>
         <ingredients>
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Celes_InitialCrystallineMaterial</li>
+                        <li>Celes_CrystallineMaterial</li>
                     </thingDefs>
                 </filter>
                 <count>4</count>
@@ -123,7 +123,7 @@
             <li>Celes_LabNanoForge</li>
         </recipeUsers>
         <researchPrerequisites>
-            <li>Celes_MainTech_II-5</li>
+            <li>Celes_MainTech_II</li>
         </researchPrerequisites>
         <ingredients>
             <li>
@@ -177,7 +177,7 @@
             <li>Celes_LabNanoForge</li>
         </recipeUsers>
         <researchPrerequisites>
-            <li>Celes_MainTech_II-5</li>
+            <li>Celes_MainTech_II</li>
         </researchPrerequisites>
         <ingredients>
             <li>

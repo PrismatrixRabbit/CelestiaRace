@@ -88,11 +88,11 @@
             </li>
             <li>
                 <apparelLayer>OnSkin</apparelLayer>
-                <stuff>CelesAdvanceCloth</stuff>
+                <stuff>Celes_AdvancedCloth</stuff>
             </li>
             <li>
                 <apparelLayer>Shell</apparelLayer>
-                <stuff>CelesAdvanceCloth</stuff>
+                <stuff>Celes_AdvancedCloth</stuff>
             </li>
 		</specificApparelRequirements>
 	</PawnKindDef>

@@ -3,12 +3,13 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps</xpath>
         <value>
+            <!-- 2026-08-25 开局任务链：信标站第 7 天 SingleMTB 移除——改由"首建发信器"监听触发（GameComponent.TryCheckFirstAntenna → def.Worker.TryExecute） -->
             <li Class="StorytellerCompProperties_SingleMTB">
-                <!-- mtbDays≈0：每 interval 必触发候选；"第 7 天后"由 IncidentDef.earliestDay（CanFireNow）控制；"全局一次"由 minRefireDays=99999（FiredTooRecently）控制 -->
+                <!-- 开局任务链事件 1：轨道晶体坠落——mtbDays≈0 每 interval 必触发候选；"第 7 天后"由 IncidentDef.earliestDay 控制；"全局一次"由 minRefireDays=99999 控制（F3 同款组合，三场景验证过） -->
                 <mtbDays>0.001</mtbDays>
-                <incident>CelesFD_BeaconSignal</incident>
+                <incident>CelesFD_InitialCrystalOrbitDrop</incident>
                 <allowedTargetTags>
-                    <li>World</li>
+                    <li>Map_PlayerHome</li>
                 </allowedTargetTags>
             </li>
             <li Class="StorytellerCompProperties_SingleMTB">

@@ -213,7 +213,7 @@
 		<recipeUsers>
 			<li>Celes_LabNanoForge</li>
 		</recipeUsers>
-		<!--<researchPrerequisite>Celes_MainTech_II</researchPrerequisite>-->
+		<!--<researchPrerequisite>Celes_MainTech_I</researchPrerequisite>-->
 		<skillRequirements>
 			<Crafting>4</Crafting>
 			<Intellectual>6</Intellectual>

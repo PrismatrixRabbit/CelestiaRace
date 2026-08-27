@@ -48,11 +48,14 @@
                 <basePowerConsumption>200</basePowerConsumption>
             </li>
         </comps>
+        <researchPrerequisites>
+            <li>Celes_CelestiaFreqDecrypt</li>
+        </researchPrerequisites>
         <placeWorkers>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
     </ThingDef>
-    
+
     <!--<ThingDef ParentName="BuildingBase">
         <defName>CelesAntenna</defName>
         <label>celestia antenna</label>
