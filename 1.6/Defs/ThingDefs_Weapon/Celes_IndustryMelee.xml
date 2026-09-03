@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
     <ThingDef Name="Celes_EarlyMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
@@ -41,8 +41,8 @@
     
     <ThingDef ParentName="Celes_EarlyMeleeBase">
         <defName>Celes_Hatchet</defName>
-        <label>Celestia pioneering hatchet</label>
-        <description>A modern design topiary hand axe, ergonomic yet lightweight and durable. The killing power is not outstanding, but the superior construction can be easily used for harvesting crops and cutting down trees.</description>
+        <label>星铃拓荒手斧</label>
+        <description>一把现代化设计的拓荒手斧，符合人体工学而轻便耐用。杀伤力并不出众，但胜在其上的结构可以很方便的用于收获作物和砍树。</description>
         <graphicData>
             <texPath>Celes/Weapon/Early/Celes_Hatchet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -79,7 +79,7 @@
         </weaponClasses>
         <tools>
             <li>
-                <label>handle</label>
+                <label>斧柄</label>
                 <capacities>
                     <li>Poke</li>
                 </capacities>
@@ -87,7 +87,7 @@
                 <cooldownTime>2</cooldownTime>
             </li>
             <li>
-                <label>edge</label>
+                <label>斧刃</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
@@ -99,8 +99,8 @@
     
     <ThingDef ParentName="Celes_MidMeleeBase">
         <defName>Celes_IceAxe</defName>
-        <label>Celestia pioneering ice axe</label>
-        <description>A modern design pioneering ice axe, ergonomic yet lightweight and durable. It can help the user to climb mountain crags more easily, and can be used in extreme cases to aid in mineral gathering. Also, it hurts quite a bit to hit.</description>
+        <label>星铃拓荒冰镐</label>
+        <description>一把现代化设计的拓荒冰镐，符合人体工学而轻便耐用。可以帮助使用者更方便的攀爬山岳峭壁，极端情况下也能用于辅助采集矿物。另外，打人挺疼。</description>
         <graphicData>
             <texPath>Celes/Weapon/Mid/Celes_IceAxe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -133,7 +133,7 @@
         </weaponClasses>
         <tools>
             <li>
-                <label>handle</label>
+                <label>镐柄</label>
                 <capacities>
                     <li>Poke</li>
                 </capacities>
@@ -141,7 +141,7 @@
                 <cooldownTime>2</cooldownTime>
             </li>
             <li>
-                <label>adze</label>
+                <label>镐刃</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
@@ -153,8 +153,8 @@
     
     <ThingDef ParentName="Celes_MidMeleeBase">
         <defName>CelesSaberIndustrial</defName>
-        <label>Celestia pioneering saber</label>
-        <description>A classic saber, looking imposing and atmospheric, often held for use by Celestia outpost officers. But this weapon is no looker. When actually used in combat, this weapon can also be deadly in the right hands.</description>
+        <label>星铃拓荒军刀</label>
+        <description>一把古典的军刀，看着威风而大气，常常被星铃前哨站官员持用。但这把武器可不是样子货。当真正用于战斗时，这把武器也能在合适的人手中发挥致命的威力。</description>
         <graphicData>
             <texPath>Celes/Weapon/Mid/Celes_Saber</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -188,7 +188,7 @@
         </recipeMaker>
         <tools>
             <li>
-                <label>point</label>
+                <label>刀尖</label>
                 <capacities>
                     <li>Stab</li>
                 </capacities>
@@ -197,7 +197,7 @@
                 <armorPenetration>0.33</armorPenetration>
             </li>
             <li>
-                <label>edge</label>
+                <label>刀刃</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
@@ -206,7 +206,7 @@
                 <armorPenetration>0.33</armorPenetration>
             </li>
             <li>
-                <label>handle</label>
+                <label>手柄</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
@@ -219,8 +219,8 @@
     
     <ThingDef ParentName="Celes_MidMeleeBase">
         <defName>CelesDagger</defName>
-        <label>Celestia pioneering dagger</label>
-        <description>A classical dagger, both an everyday tool and a lethal weapon, is widely used by Celestia.</description>
+        <label>星铃拓荒匕首</label>
+        <description>一把古典的匕首，既是日常工具也是致命武器，被星铃们广泛的使用。</description>
         <graphicData>
             <texPath>Celes/Weapon/Mid/Celes_Dagger</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -252,7 +252,7 @@
         </recipeMaker>
         <tools>
             <li>
-                <label>point</label>
+                <label>刀尖</label>
                 <capacities>
                     <li>Stab</li>
                 </capacities>
@@ -261,7 +261,7 @@
                 <armorPenetration>0.25</armorPenetration>
             </li>
             <li>
-                <label>edge</label>
+                <label>刀刃</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
@@ -270,7 +270,7 @@
                 <armorPenetration>0.25</armorPenetration>
             </li>
             <li>
-                <label>handle</label>
+                <label>刀柄</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>

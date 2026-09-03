@@ -9,13 +9,13 @@
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>
             <li>
-                <label>Celes_DustMechRhythm_ProtocolII_Thought</label>
-                <description>.</description>
+                <label>协议二：坚守任务</label>
+                <description>坚守任务！永不言弃！</description>
                 <baseMoodEffect>20</baseMoodEffect>
             </li>
             <li>
-                <label>Celes_DustMechRhythm_ProtocolII_Thought</label>
-                <description>.</description>
+                <label>协议二：坚守任务</label>
+                <description>坚守任务！永不言弃！</description>
                 <baseMoodEffect>20</baseMoodEffect>
             </li>
         </stages>
@@ -31,23 +31,23 @@
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>
             <li>
-                <label>Celes_DustMechRhythm_ProtocolII_Thought</label>
-                <description>.</description>
+                <label>侍从建构(尘构活跃)</label>
+                <description>完成使命，为了神圣的服侍。</description>
                 <baseMoodEffect>20</baseMoodEffect>
             </li>
             <li>
-                <label>Celes_DustMechRhythm_ProtocolII_Thought</label>
-                <description>.</description>
+                <label>侍从建构(尘构充足)</label>
+                <description>需要……完成使命，为了……服侍。</description>
                 <baseMoodEffect>20</baseMoodEffect>
             </li>
             <li>
-                <label>Celes_DustMechRhythm_ProtocolII_Thought</label>
-                <description>.</description>
+                <label>侍从建构(尘构匮乏)</label>
+                <description>我需要完成使命，为了服侍殖民地。</description>
                 <baseMoodEffect>15</baseMoodEffect>
             </li>
             <li>
-                <label>Celes_DustMechRhythm_ProtocolII_Thought</label>
-                <description>.</description>
+                <label>侍从建构(尘构宕机)</label>
+                <description>……我头晕眼花，我为什么在这里……？</description>
                 <baseMoodEffect>0</baseMoodEffect>
             </li>
         </stages>

@@ -17,9 +17,14 @@
     <modExtensions>
       <li Class="CelesFeature.CelesFD_OrbitDropExtension">
         <crates>
+          <!-- W-2a-fix 拆分（2026-09-03）：TrashNormal → 散货版 + 建筑版（原 2~5 混合 → 等量对半，占位待实测定稿） -->
           <li>
-            <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
-            <countRange>2~5</countRange>
+            <crateDef>CelesFD_DropCrate_TrashNormalThing</crateDef>
+            <countRange>1~2</countRange>
+          </li>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashNormalBuilding</crateDef>
+            <countRange>1~2</countRange>
           </li>
         </crates>
       </li>
@@ -42,9 +47,14 @@
     <modExtensions>
       <li Class="CelesFeature.CelesFD_OrbitDropExtension">
         <crates>
+          <!-- W-2a-fix 拆分：原 7~13 混合 → 等量对半（占位） -->
           <li>
-            <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
-            <countRange>7~13</countRange>
+            <crateDef>CelesFD_DropCrate_TrashNormalThing</crateDef>
+            <countRange>3~6</countRange>
+          </li>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashNormalBuilding</crateDef>
+            <countRange>3~6</countRange>
           </li>
         </crates>
       </li>
@@ -67,9 +77,14 @@
     <modExtensions>
       <li Class="CelesFeature.CelesFD_OrbitDropExtension">
         <crates>
+          <!-- W-2a-fix 拆分：原 1~2 混合 → 等量对半（占位） -->
           <li>
-            <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
-            <countRange>1~2</countRange>
+            <crateDef>CelesFD_DropCrate_TrashNormalThing</crateDef>
+            <countRange>1~1</countRange>
+          </li>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashNormalBuilding</crateDef>
+            <countRange>1~1</countRange>
           </li>
           <li>
             <crateDef>CelesFD_DropCrate_TrashDanger</crateDef>
@@ -96,9 +111,14 @@
     <modExtensions>
       <li Class="CelesFeature.CelesFD_OrbitDropExtension">
         <crates>
+          <!-- W-2a-fix 拆分：原 1~1 混合 → 等量对半（0~1 占位——50/50 近似） -->
           <li>
-            <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
-            <countRange>1~1</countRange>
+            <crateDef>CelesFD_DropCrate_TrashNormalThing</crateDef>
+            <countRange>0~1</countRange>
+          </li>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashNormalBuilding</crateDef>
+            <countRange>0~1</countRange>
           </li>
           <li>
             <crateDef>CelesFD_DropCrate_TrashDanger</crateDef>
@@ -129,9 +149,14 @@
     <modExtensions>
       <li Class="CelesFeature.CelesFD_OrbitDropExtension">
         <crates>
+          <!-- W-2a-fix 拆分：原 1~2 混合 → 等量对半（占位） -->
           <li>
-            <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
-            <countRange>1~2</countRange>
+            <crateDef>CelesFD_DropCrate_TrashNormalThing</crateDef>
+            <countRange>1~1</countRange>
+          </li>
+          <li>
+            <crateDef>CelesFD_DropCrate_TrashNormalBuilding</crateDef>
+            <countRange>1~1</countRange>
           </li>
           <li>
             <crateDef>CelesFD_DropCrate_Crystal</crateDef>

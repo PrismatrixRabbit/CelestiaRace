@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <TraderKindDef>
     <defName>Celes_Caravan_Pioneer_BulkGoods</defName><!--星铃物流商队-->
-    <label>bulk goods trader</label>
+    <label>星铃物流商队</label>
     <stockGenerators>
 
       <!-- Resources -->
@@ -20,7 +20,7 @@
         <countRange>-5~3</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>Celes_SpaceWeapenComponent</thingDef>
+        <thingDef>Celes_AdvancedComponent</thingDef>
         <countRange>-7~4</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -182,7 +182,7 @@
 
   <TraderKindDef>
     <defName>Celes_Caravan_Pioneer_CombatSupplier</defName><!--星铃军火商队-->
-    <label>combat supplier</label>
+    <label>星铃军火商队</label>
     <stockGenerators>
 
       <!-- Resources -->
@@ -203,7 +203,7 @@
         <countRange>-3~1</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>Celes_SpaceWeapenComponent</thingDef>
+        <thingDef>Celes_AdvancedComponent</thingDef>
         <countRange>1~6</countRange>
       </li>
       
@@ -313,7 +313,7 @@
 
   <TraderKindDef>
     <defName>Celes_Caravan_Pioneer_Exotic</defName><!--星铃拓殖商队-->
-    <label>exotic goods trader</label>
+    <label>星铃拓殖商队</label>
     <stockGenerators>
 
       <!-- Resources -->
@@ -342,7 +342,7 @@
         <countRange>0~1</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>Celes_SpaceWeapenComponent</thingDef>
+        <thingDef>Celes_AdvancedComponent</thingDef>
         <countRange>2~6</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">

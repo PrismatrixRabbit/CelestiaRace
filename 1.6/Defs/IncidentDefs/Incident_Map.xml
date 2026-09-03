@@ -97,17 +97,27 @@
     </IncidentDef>
 
     <!-- M6-6 突发订单（v4.3 B1：Incident 体系；触发 = 叙事者 SingleMTB 随机——Storyteller.xml Patch，mtbDays=20；
-         Worker 生成已接取突发单实例；baseChance=0 不进随机池，仅本 Comp 触发） -->
+         Worker 生成已接取突发单实例；baseChance=0 不进随机池，仅本 Comp 触发）。
+         FD-G31（2026-09-02，玩家反馈 17 天 3 连发）：minRefireDays=3 重发下限——StorytellerComp_SingleMTB 自身
+         无防重发（每 1000 tick MTB 检查，StorytellerComp_SingleMTB.cs 实证），唯一拦截 = IncidentWorker.cs:158-169
+         的 def.minRefireDays 天数比较；未配置时理论上可连发 -->
     <IncidentDef>
         <defName>CelesFD_UrgentOrderSignal</defName>
         <workerClass>CelesFeature.CelesFD_IncidentWorker_UrgentOrder</workerClass>
         <category>Special</category>
+        <!-- FD-G33 修正版（2026-09-02）：targetTags 改为纯 Map_PlayerHome（晶体坠落 CelesFD_InitialCrystalOrbitDrop
+             同款模式）。首版"World+Map_PlayerHome 并存"违反原版约束（IncidentDef.cs:223-225：World 目标必须独占——
+             Config error "allows world target type along with other targets"）。纯地图标签后：常规 dev（地图视图，
+             GetTarget 回退 CurrentMap）可触发；叙事者路径经 Storyteller.xml Comp 的 allowedTargetTags 同步改
+             Map_PlayerHome 保持自然触发（worker 不使用 parms.target，无功能差异）。注意：minRefireDays 的重发记录
+             挂在目标 StoryState 上（多玩家地图时按地图计——与晶体同款语义，接受） -->
         <targetTags>
-            <li>World</li>
+            <li>Map_PlayerHome</li>
         </targetTags>
         <baseChance>0</baseChance>
+        <minRefireDays>3</minRefireDays>
         <letterDef>NeutralEvent</letterDef>
         <letterLabel>紧急市场需求</letterLabel>
-        <letterText>这是对全市场的紧急需求。高优先级重要订单，已自动接取，请尽快装载交付。超时未介入的订单将自动作废，无端运力占用将违背合同约定。</letterText>
+        <letterText>这是星铃外勤部对全市场的紧急需求。高优先级重要订单，已自动接取，请尽快装载交付。超时未介入的订单将自动作废，无端运力占用将违背合同约定。</letterText>
     </IncidentDef>
 </Defs>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
     <ThingDef Name="Celes_EarlyGunBase" ParentName="BaseMakeableGun" Abstract="True">
@@ -44,8 +44,8 @@
     
     <ThingDef ParentName="Celes_EarlyGunBase">
         <defName>Celes_Early_Rifle</defName>
-        <label>Celestia Pioneer bolter rifle</label>
-        <description>An old configuration bolt action rifle, emergency but really effective, long range and accurate but with a worrying rate of fire. Uses Celestia standard 8.5mm rounds. \n\nIf it wasn't for some kind of emergency, this thing would be lying around in a museum.</description>
+        <label>星铃拓荒栓动步枪</label>
+        <description>一把老式构型的栓动步枪，应急但确实有效，射程远而精准，但射速堪忧。使用星铃制式8.5mm子弹。\n\n如果不是某种紧急情况，这玩意应该在博物馆里躺着。</description>
         <graphicData>
             <texPath>Celes/Weapon/Early/Celes_BoltActionRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -94,7 +94,7 @@
         </verbs>
         <tools>
             <li>
-                <label>stock</label>
+                <label>枪托</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
@@ -102,7 +102,7 @@
                 <cooldownTime>2</cooldownTime>
             </li>
             <li>
-                <label>barrel</label>
+                <label>枪管</label>
                 <capacities>
                     <li>Blunt</li>
                     <li>Poke</li>
@@ -115,7 +115,7 @@
     
     <ThingDef ParentName="BaseBullet">
         <defName>CelesBullet_EarlyRifle</defName>
-        <label>Celestia standard 8.5mm bullet</label>
+        <label>星铃制式8.5mm子弹</label>
         <projectile>
             <damageDef>Bullet</damageDef>
             <damageAmountBase>21</damageAmountBase>
@@ -131,8 +131,8 @@
     
     <ThingDef ParentName="Celes_EarlyGunBase">
         <defName>Celes_Early_ShotGun</defName>
-        <label>Celestia Pioneer semi-auto shotgun</label>
-        <description>An older configuration semi-automatic shotgun with deadly firepower but short range. Uses Celestia standard 20GA. buckshot. \n\nIf it wasn't for some kind of emergency, this stuff would most likely only be in textbooks.</description>
+        <label>星铃拓荒半自动霰弹枪</label>
+        <description>一把老式构型的半自动霰弹枪，火力致命，但射程较短。使用星铃制式20铅径霰弹枪子弹。\n\n如果不是某种紧急情况，这玩意多半只会出现在教材上。</description>
         <graphicData>
             <texPath>Celes/Weapon/Early/Celes_Shotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -183,7 +183,7 @@
         </verbs>
         <tools>
             <li>
-                <label>stock</label>
+                <label>枪托</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
@@ -191,7 +191,7 @@
                 <cooldownTime>2</cooldownTime>
             </li>
             <li>
-                <label>barrel</label>
+                <label>枪管</label>
                 <capacities>
                     <li>Blunt</li>
                     <li>Poke</li>
@@ -204,7 +204,7 @@
     
     <ThingDef ParentName="BaseBullet">
         <defName>CelesBullet_ShotGun</defName>
-        <label>Celestia standard 20GA. buckshot</label>
+        <label>星铃制式20铅径鹿弹</label>
         <projectile>
             <damageDef>Bullet</damageDef>
             <damageAmountBase>4</damageAmountBase>
@@ -220,8 +220,8 @@
     
     <ThingDef ParentName="Celes_EarlyGunBase">
         <defName>Celes_Early_Revolver</defName>
-        <label>Celestia Pioneer revolver</label>
-        <description>A large calibre revolver in an older configuration, used to effectively kill soft targets, with exaggerated lethality at close range and against the wrist. Uses Celestia standard 12.7mm bullet. \n\nIf it wasn't for some kind of emergency, this thing would probably only be played with in the hands of some private collector.</description>
+        <label>星铃拓荒左轮</label>
+        <description>一把老式构型的大口径左轮手枪，用于有效的杀伤软目标，在近距离有夸张的杀伤力，对手腕也是。使用星铃制式15.2mm子弹。\n\n如果不是某种紧急情况，这玩意大概只会在某个私人收藏家的手里被把玩。</description>
         <graphicData>
             <texPath>Celes/Weapon/Early/Celes_Revolver</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -269,7 +269,7 @@
         </verbs>
         <tools>
             <li>
-                <label>grip</label>
+                <label>握柄</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
@@ -277,7 +277,7 @@
                 <cooldownTime>2</cooldownTime>
             </li>
             <li>
-                <label>barrel</label>
+                <label>枪管</label>
                 <capacities>
                     <li>Blunt</li>
                     <li>Poke</li>
@@ -305,8 +305,8 @@
     
     <ThingDef ParentName="Celes_EarlyGunBase">
         <defName>Celes_Early_SemiRifle</defName>
-        <label>Celestia Pioneer semi-auto rifle</label>
-        <description>A semi-automatic rifle in an older configuration, with a faster rate of fire and more suppressive power, but with reduced accuracy. Uses Celestia 8.5mm bullet. \n\n If it wasn't for some kind of emergency, this stuff would probably only be used as a talking point on the internet.</description>
+        <label>星铃拓荒半自动步枪</label>
+        <description>一把老式构型的半自动步枪，射速较快而压制力较强，但射击精度有所降低。使用星铃制式8.5mm子弹。\n\n如果不是某种紧急情况，这玩意大概只会在网络上用来作为谈资。</description>
         <graphicData>
             <texPath>Celes/Weapon/Early/Celes_SemiAutoRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -355,7 +355,7 @@
         </verbs>
         <tools>
             <li>
-                <label>stock</label>
+                <label>枪托</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
@@ -363,7 +363,7 @@
                 <cooldownTime>2</cooldownTime>
             </li>
             <li>
-                <label>barrel</label>
+                <label>枪管枪管</label>
                 <capacities>
                     <li>Blunt</li>
                     <li>Poke</li>
@@ -376,8 +376,8 @@
     
     <ThingDef ParentName="Celes_MidGunBase">
         <defName>Celes_Mid_ShotGun</defName>
-        <label>Celestia classic automatic shotgun</label>
-        <description>A classically constructed automatic shotgun that is extremely lethal at close range, but has worrying accuracy and range. Uses Celestia standard 20GA. buckshot.</description>
+        <label>星铃古典自动霰弹枪</label>
+        <description>一把古典构型的自动霰弹枪，在近距离的杀伤力极度恐怖，但精度和射程都堪忧。使用星铃制式20铅径霰弹枪子弹。</description>
         <graphicData>
             <texPath>Celes/Weapon/Mid/Celes_AutoShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -428,7 +428,7 @@
             </verbs>
             <tools>
                 <li>
-                    <label>stock</label>
+                    <label>枪托</label>
                     <capacities>
                         <li>Blunt</li>
                     </capacities>
@@ -449,8 +449,8 @@
 
     <ThingDef ParentName="Celes_MidGunBase">
         <defName>Celes_Mid_SAssault</defName>
-        <label>Celestia classic assault rifle</label>
-        <description>A classically constructed assault rifle with mediocre but good range, firepower, and accuracy, widely used by Celestia's vanguard squads. Uses Celestia standard 5.7mm bullet.</description>
+        <label>星铃古典突击步枪</label>
+        <description>一把古典构型的突击步枪，射程，火力，精度都平庸但良好，广泛用于星铃拓荒队的先锋小队。使用星铃制式5.7mm子弹。</description>
         <graphicData>
             <texPath>Celes/Weapon/Mid/Celes_SAssault</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -501,7 +501,7 @@
         </verbs>
         <tools>
             <li>
-                <label>stock</label>
+                <label>枪托</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
@@ -509,7 +509,7 @@
                 <cooldownTime>2</cooldownTime>
             </li>
             <li>
-                <label>barrel</label>
+                <label>枪管</label>
                 <capacities>
                     <li>Blunt</li>
                     <li>Poke</li>
@@ -522,7 +522,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>CelesBullet_AR</defName>
-        <label>Celestia standard 5.7mm bullet</label>
+        <label>星铃制式5.7mm子弹</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -538,8 +538,8 @@
 
     <ThingDef ParentName="Celes_MidGunBase">
         <defName>Celes_Mid_DMR</defName>
-        <label>Celestia classic DMR</label>
-        <description>A classically constructed DMR with a slightly slower but accurate rate of fire and a large range, often used as a precision shooter for Celestia Pioneer. Uses Celestia standard 8.5mm bullet.</description>
+        <label>星铃古典精确射手步枪</label>
+        <description>一把古典构型的精确射手步枪，射速稍慢但精准，有着较大的射程，常被用于星铃拓荒队的精确射手。使用星铃制式8.5mm子弹。</description>
         <graphicData>
             <texPath>Celes/Weapon/Mid/Celes_DMR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -590,7 +590,7 @@
         </verbs>
         <tools>
             <li>
-                <label>stock</label>
+                <label>枪托</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
@@ -598,7 +598,7 @@
                 <cooldownTime>2</cooldownTime>
             </li>
             <li>
-                <label>barrel</label>
+                <label>枪管</label>
                 <capacities>
                     <li>Blunt</li>
                     <li>Poke</li>
@@ -611,8 +611,8 @@
 
     <ThingDef ParentName="Celes_MidGunBase">
         <defName>Celes_Mid_SR</defName>
-        <label>Celestia classic sniper rifle</label>
-        <description>A classically constructed sniper rifle, even with a collapsible stock it is still not easy to carry, a highly accurate tactical weapon with a very slow rate of fire but a huge range, even Celestia doesn't often use this large sniper rifle. Uses Celestia's standard 15.2mm bullet.</description>
+        <label>星铃古典狙击枪</label>
+        <description>一把古典构型的狙击枪，即使有着可折叠式枪托仍然不便于携带，高度精准的战术级武器，射速极慢但射程极大，即使是星铃也不常使用这种大型狙击枪。使用星铃制式15.2mm子弹。</description>
         <graphicData>
             <texPath>Celes/Weapon/Mid/Celes_SR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -664,7 +664,7 @@
         </verbs>
         <tools>
             <li>
-                <label>stock</label>
+                <label>枪托</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
@@ -672,7 +672,7 @@
                 <cooldownTime>2</cooldownTime>
             </li>
             <li>
-                <label>barrel</label>
+                <label>枪管</label>
                 <capacities>
                     <li>Blunt</li>
                     <li>Poke</li>
@@ -685,7 +685,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>CelesBullet_SR</defName>
-        <label>Celestia standard 15.2mm bullet</label>
+        <label>星铃制式15.2mm子弹</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Big</texPath>
             <graphicClass>Graphic_Single</graphicClass>

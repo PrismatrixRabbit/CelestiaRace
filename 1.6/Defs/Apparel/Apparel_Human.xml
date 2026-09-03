@@ -3,8 +3,8 @@
     
     <ThingDef ParentName="ApparelBase">
         <defName>Celes_ServantCoat</defName>
-        <label>Celes_ServantCoat</label>
-        <description>Celes_ServantCoat</description>
+        <label>侍仆维生装置侍仆防护长袍</label>
+        <description>侍仆维生装置穿戴起来极其难受的长袍，附带大量无创体外循环装置，深入喉管的软管会剥夺穿戴者的语言能力。它会提醒穿戴者的身份，并通过不时的电刺激从心理层面驯化穿戴者，减少穿戴者反抗的机会。</description>
         <costStuffCount>80</costStuffCount>
         <techLevel>Industrial</techLevel>
         <stuffCategories>
@@ -85,8 +85,8 @@
 
     <HediffDef>
         <defName>Celes_ServantCoat</defName>
-        <label>Celes_ServantCoat</label>
-        <description>Celes_ServantCoat</description>
+        <label>侍仆维生装置侍仆防护长袍</label>
+        <description>侍仆维生装置穿戴起来极其难受的长袍，附带大量无创体外循环装置，深入喉管的软管会剥夺穿戴者的语言能力。它会提醒穿戴者的身份，并通过不时的电刺激从心理层面驯化穿戴者，减少穿戴者反抗的机会。</description>
         <hediffClass>HediffWithComps</hediffClass>
         <stages>
             <li>

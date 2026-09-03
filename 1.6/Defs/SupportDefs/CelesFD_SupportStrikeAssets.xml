@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ═══ 制式步枪空投（CelesFD_SupportSpaceWeaponDrop——用户追加 2026-09-03）═══ -->
+
+  <!-- crate：容器模式 + spawnAll 固定清单（2× Celes_Spacer_Rifle）；playerOwned=true -->
+  <CelesFeature.CelesFD_DropCrateDef>
+    <defName>CelesFD_DropCrate_SpaceWeaponDrop</defName>
+    <fallerDef>CelesFD_Faller_SpaceWeaponPod</fallerDef>
+    <lootTableDef>CelesFD_Loot_SpaceWeaponDrop</lootTableDef>
+    <playerOwned>true</playerOwned>
+  </CelesFeature.CelesFD_DropCrateDef>
+
+  <!-- 战利品表：2× 星铃制式突击步枪（spawnAll；品质不设=默认） -->
+  <CelesFeature.CelesFD_LootTableDef>
+    <defName>CelesFD_Loot_SpaceWeaponDrop</defName>
+    <buildingDef>CelesFD_Building_SupportPod</buildingDef>
+    <showContents>true</showContents>
+    <spawnAll>true</spawnAll>
+    <contents>
+      <li>
+        <thingDefName>Celes_Spacer_Rifle</thingDefName>
+        <amountRange>2~2</amountRange>
+        <weight>1</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_LootTableDef>
+
+  <!-- faller：同 SupportPod（Decelerate 减速姿态 + Reducer 贴图 + 垂直滑入 + 无爆炸） -->
+  <ThingDef ParentName="DropPodIncoming">
+    <defName>CelesFD_Faller_SpaceWeaponPod</defName>
+    <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
+    <label>星铃武备空投舱（降落）</label>
+    <graphicData>
+      <texPath>Celes/Building/DropPod/DropPodCelestiaReducer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>Decelerate</movementType>
+      <anticipationSound>DropPod_Fall</anticipationSound>
+      <angleCurve>
+        <points>
+          <li>(0, 0)</li>
+          <li>(9999, 0)</li>
+        </points>
+      </angleCurve>
+    </skyfaller>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
+        <crateDef>CelesFD_DropCrate_SpaceWeaponDrop</crateDef>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- ═══ W-2b 终版资产（三轮需求合并 2026-09-03；数值全部占位 XML 可调）═══ -->
+
+  <!-- ── 伤害 def 族（用户裁决：我方爆炸/灼烧伤害显式 def 化——未来降伤降穿唯一调参点；
+         克隆源：Bomb（Damages_Misc）/Flame（Damages_Environmental）实证字段） ── -->
+  <DamageDef>
+    <defName>CelesFD_Damage_OrdnanceBomb</defName>
+    <label>轨道爆轰</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} 被轨道爆轰撕碎。</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+    <plantDamageFactor>4</plantDamageFactor>
+    <corpseDamageFactor>0.5</corpseDamageFactor>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>CelesFD_Damage_OrdnanceFlame</defName>
+    <label>轨道燃烧</label>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>false</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} 被轨道燃烧灼烧至死。</deathMessage>
+    <hediff>Burn</hediff>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>10</defaultDamage>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastFlame</explosionCellFleck>
+    <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+    <soundExplosion>Explosion_Flame</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>CelesFD_Damage_OrdnanceBeam</defName>
+    <label>轨道灼烧</label>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>false</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} 被轨道激光灼烧至死。</deathMessage>
+    <hediff>Burn</hediff>
+    <armorCategory>Heat</armorCategory>
+    <defaultDamage>23</defaultDamage>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+  </DamageDef>
+
+  <!-- ── 自定伤害 def：轨道狙击（Bullet 范式——锐穿 = armorCategory Sharp） ── -->
+  <DamageDef>
+    <defName>CelesFD_Damage_Sniper</defName>
+    <label>轨道磁轨炮</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} 被轨道磁轨炮贯穿。</deathMessage>
+    <hediff>Gunshot</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+
+  <!-- ── 狙击弹丸：300 伤 / 2.0 穿（armorPenetrationBase 实证）；起点=目标上空（代码控制） ── -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>CelesFD_Proj_Sniper</defName>
+    <label>轨道磁轨炮弹</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellHighExplosive</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>CelesFD_Damage_Sniper</damageDef>
+      <damageAmountBase>300</damageAmountBase>
+      <armorPenetrationBase>2</armorPenetrationBase>
+      <speed>95</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ── a-2：爆炸性垃圾箱建筑（原生 CompExplosive：血量引信 0.5 + 被毁爆 + 终结爆 r2.9） ── -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>CelesFD_Building_ExplosiveCrate</defName>
+    <label>星铃爆炸性垃圾箱</label>
+    <description>坠落的星铃武备垃圾箱。受到剧烈冲击后会进入爆炸倒计时。</description>
+    <graphicData>
+      <texPath>Celes/Building/DropPod/DropPodCelestia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.6</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>CelesFD_Damage_OrdnanceBomb</explosiveDamageType>
+        <startWickHitPointsPercent>0.99</startWickHitPointsPercent>
+        <explodeOnKilled>true</explodeOnKilled>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ── a-3：燃烧性垃圾箱建筑（Flame 终结爆 r2.9 无燃料渍） ── -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>CelesFD_Building_IncendiaryCrate</defName>
+    <label>星铃燃烧性垃圾箱</label>
+    <description>坠落的星铃武备垃圾箱。受到剧烈冲击后会进入燃烧爆炸倒计时。</description>
+    <graphicData>
+      <texPath>Celes/Building/DropPod/DropPodCelestia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.6</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>CelesFD_Damage_OrdnanceFlame</explosiveDamageType>
+        <chanceToStartFire>0.22</chanceToStartFire>
+        <startWickHitPointsPercent>0.99</startWickHitPointsPercent>
+        <explodeOnKilled>true</explodeOnKilled>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ── a-2/a-3 crate：Building 条目模式（无 lootTable/容器化） ── -->
+  <CelesFeature.CelesFD_DropCrateDef>
+    <defName>CelesFD_DropCrate_ExplosiveCrate</defName>
+    <fallerDef>CelesFD_Faller_ExplosiveCrate</fallerDef>
+    <contents>
+      <li>
+        <type>Building</type>
+        <thingDefName>CelesFD_Building_ExplosiveCrate</thingDefName>
+        <amountRange>1~1</amountRange>
+        <weight>1.0</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_DropCrateDef>
+
+  <CelesFeature.CelesFD_DropCrateDef>
+    <defName>CelesFD_DropCrate_IncendiaryCrate</defName>
+    <fallerDef>CelesFD_Faller_IncendiaryCrate</fallerDef>
+    <contents>
+      <li>
+        <type>Building</type>
+        <thingDefName>CelesFD_Building_IncendiaryCrate</thingDefName>
+        <amountRange>1~1</amountRange>
+        <weight>1.0</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_DropCrateDef>
+
+  <!-- ── a-2 faller：ConstantSpeed+垂直；落地爆 OrdnanceBomb r4.9 ── -->
+  <ThingDef ParentName="DropPodIncoming">
+    <defName>CelesFD_Faller_ExplosiveCrate</defName>
+    <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
+    <label>星铃爆炸性垃圾箱（降落）</label>
+    <graphicData>
+      <texPath>Celes/Building/DropPod/DropPodCelestia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <anticipationSound>DropPod_Fall</anticipationSound>
+      <angleCurve>
+        <points>
+          <li>(0, 0)</li>
+          <li>(9999, 0)</li>
+        </points>
+      </angleCurve>
+    </skyfaller>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
+        <crateDef>CelesFD_DropCrate_ExplosiveCrate</crateDef>
+      </li>
+      <li Class="CelesFeature.CelesFD_SkyfallerImpactExtension">
+        <explosionRadius>4.9</explosionRadius>
+        <explosionDamage>CelesFD_Damage_OrdnanceBomb</explosionDamage>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- ── a-3 faller：落地爆 OrdnanceFlame r4.9 + pre 洒燃料 0.25（先洒后燃） ── -->
+  <ThingDef ParentName="DropPodIncoming">
+    <defName>CelesFD_Faller_IncendiaryCrate</defName>
+    <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
+    <label>星铃燃烧性垃圾箱（降落）</label>
+    <graphicData>
+      <texPath>Celes/Building/DropPod/DropPodCelestia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <anticipationSound>DropPod_Fall</anticipationSound>
+      <angleCurve>
+        <points>
+          <li>(0, 0)</li>
+          <li>(9999, 0)</li>
+        </points>
+      </angleCurve>
+    </skyfaller>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
+        <crateDef>CelesFD_DropCrate_IncendiaryCrate</crateDef>
+      </li>
+      <li Class="CelesFeature.CelesFD_SkyfallerImpactExtension">
+        <explosionRadius>4.9</explosionRadius>
+        <explosionDamage>CelesFD_Damage_OrdnanceFlame</explosionDamage>
+        <chanceToStartFire>0.22</chanceToStartFire>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- ── 弹幕弹·高爆（W-2b 修复：统一我方类纯效果舱——原版类 Tick 异常+不消失的根因规避）；
+         固定短飞行 30 tick + speed 5（视觉高度=tick×speed=150 格——节奏与高度解耦） ── -->
+  <ThingDef ParentName="DropPodIncoming">
+    <defName>CelesFD_Faller_BarrageShellHE</defName>
+    <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
+    <label>星铃弹幕弹（高爆）</label>
+    <graphicData>
+      <texPath>Celes/Building/DropPod/DropPodCelestia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <anticipationSound>MortarRound_PreImpact</anticipationSound>
+      <angleCurve>
+        <points>
+          <li>(0, 0)</li>
+          <li>(9999, 0)</li>
+        </points>
+      </angleCurve>
+    </skyfaller>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_SkyfallerImpactExtension">
+        <explosionRadius>4.9</explosionRadius>
+        <explosionDamage>CelesFD_Damage_OrdnanceBomb</explosionDamage>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- ── 弹幕弹·燃烧（pre 燃料 + 起火 0.22——四轮修复：此前漏配起火字段=无火根因） ── -->
+  <ThingDef ParentName="DropPodIncoming">
+    <defName>CelesFD_Faller_BarrageShellIncendiary</defName>
+    <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
+    <label>星铃弹幕弹（燃烧）</label>
+    <graphicData>
+      <texPath>Celes/Building/DropPod/DropPodCelestia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <anticipationSound>MortarRound_PreImpact</anticipationSound>
+      <angleCurve>
+        <points>
+          <li>(0, 0)</li>
+          <li>(9999, 0)</li>
+        </points>
+      </angleCurve>
+    </skyfaller>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_SkyfallerImpactExtension">
+        <explosionRadius>4.9</explosionRadius>
+        <explosionDamage>CelesFD_Damage_OrdnanceFlame</explosionDamage>
+        <chanceToStartFire>0.22</chanceToStartFire>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- ── 烟幕舱（W-2b 修复：常速下落[用户裁决]；固定短飞行；气体独立成圈 gasRadius——
+         单次 AddGas(radius) 不再随爆叠加） ── -->
+  <ThingDef ParentName="DropPodIncoming">
+    <defName>CelesFD_Faller_SmokePod</defName>
+    <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
+    <label>星铃烟幕舱（降落）</label>
+    <graphicData>
+      <texPath>Celes/Building/DropPod/DropPodCelestiaReducer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <anticipationSound>DropPod_Fall</anticipationSound>
+      <angleCurve>
+        <points>
+          <li>(0, 0)</li>
+          <li>(9999, 0)</li>
+        </points>
+      </angleCurve>
+    </skyfaller>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_SkyfallerImpactExtension">
+        <explosionRadius>0.9</explosionRadius>
+        <explosionDamage>Smoke</explosionDamage>
+        <postExplosionGasType>BlindSmoke</postExplosionGasType>
+        <gasRadius>7.9</gasRadius>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- ── 弹幕排程器（Ethereal；贴图 = 现成空贴图占位——用户提供路径） ── -->
+  <ThingDef>
+    <defName>CelesFD_BarrageController</defName>
+    <label>支援排程器</label>
+    <thingClass>CelesFeature.CelesFD_BarrageController</thingClass>
+    <category>Ethereal</category>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Celes/Hair/Null/Null_north</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <!-- ── 跟踪光束：狙击瞄准线（锁定圈 r10；速度 30 格/s；跟丢 2s 放弃；末刻弹丸自上空；
+         细红斜拉束 + 两段渲染[末段 1.1 格仅无顶时]） ── -->
+  <ThingDef>
+    <defName>CelesFD_ThingTrackingBeam_SniperAim</defName>
+    <label>轨道磁轨</label>
+    <thingClass>CelesFeature.CelesFD_Thing_TrackingBeam</thingClass>
+    <category>Ethereal</category>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+    <!-- CompOrbitalBeam 回归（OrbitalStrike.StartStrike :55 无空安全——NRE 根治；
+         动画被 C# StartStrike 覆写掐灭[1 tick]，视觉由两段自绘接管） -->
+    <comps>
+      <li Class="CompProperties_OrbitalBeam">
+        <width>0.2</width>
+        <color>(255, 20, 20, 180)</color>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_TrackingBeamExtension">
+        <initialLockRadius>10</initialLockRadius>
+        <followSpeed>30</followSpeed>
+        <lostGiveUpTicks>120</lostGiveUpTicks>
+        <fireProjectileDef>CelesFD_Proj_Sniper</fireProjectileDef>
+        <fireOriginHeight>40</fireOriginHeight>
+        <beamWidth>0.2</beamWidth>
+        <beamColor>(255, 20, 20, 180)</beamColor>
+        <endSegmentLength>1.1</endSegmentLength>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- ── 跟踪光束：跟随激光（锁定圈 r10；速度 4 格/s；待机原地造伤；周期 30tick×23 伤 AP2.0 r1.4；
+         细亮橙黄斜拉束 + 束底光圈 Mote_PowerBeam[glowScale 1.5] + 两段渲染） ── -->
+  <ThingDef>
+    <defName>CelesFD_ThingTrackingBeam_FollowingBeam</defName>
+    <label>轨道激光</label>
+    <thingClass>CelesFeature.CelesFD_Thing_TrackingBeam</thingClass>
+    <category>Ethereal</category>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+    <comps>
+      <li Class="CompProperties_OrbitalBeam">
+        <width>0.2</width>
+        <color>(255, 200, 0, 180)</color>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_TrackingBeamExtension">
+        <initialLockRadius>10</initialLockRadius>
+        <followSpeed>4</followSpeed>
+        <lostGiveUpTicks>0</lostGiveUpTicks>
+        <intervalTicks>30</intervalTicks>
+        <damageDef>CelesFD_Damage_OrdnanceBeam</damageDef>
+        <damageAmount>23</damageAmount>
+        <armorPenetration>2</armorPenetration>
+        <damageRadius>1.9</damageRadius>
+        <beamWidth>0.2</beamWidth>
+        <beamColor>(255, 200, 0, 180)</beamColor>
+        <endSegmentLength>1.1</endSegmentLength>
+        <glowScale>6</glowScale>
+        <beamSound>OrbitalBeam</beamSound>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

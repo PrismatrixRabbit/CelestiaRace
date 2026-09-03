@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>Celes_Race</defName>
-		<label>celestia race</label>
-		<description>They are a race of rabbits from a Shining World genetically engineered laboratory, modified to adapt to low gravity and artificial environments in a space colony specialising in post-apocalyptic combat.For a long time they have lived in all corners of their home galaxy, which is not limited to habitable planets. \n\nAfter a plague, or rather a devastating catastrophe, that swept through the home system, which they do not wish to reveal, they began to disperse to various worlds ...... or were unlucky enough to crash-land on one, pursuing and hunting a mysterious parasitic creature.</description>
+		<label>星铃</label>
+		<description>她们是一群来自闪耀世界基因改造实验室的兔子种族，被改造为适应低重力和人工环境的太空殖民地，专精于后启示录作战。长久以来生活在母星系内不局限于宜居星球表面的各个角落。\n\n在一场她们不愿意透露的席卷母星系的瘟疫——或者更确切地说，一场毁灭性的灾难后——她们开始散布到各个世界……或者倒霉坠毁在某个世界，追寻并捕猎一种神秘的寄生生物。</description>
 		<alienRace>
 			<generalSettings>
 				<immuneToXenophobia>true</immuneToXenophobia>
@@ -946,7 +946,7 @@
 		</statBases>
 		<tools>
 			<li>
-				<label>left fist</label>
+				<label>左拳</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -963,7 +963,7 @@
 				</surpriseAttack>
 			</li>
 			<li>
-				<label>right fist</label>
+				<label>右拳</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -980,7 +980,7 @@
 				</surpriseAttack>
 			</li>
 			<li>
-				<label>teeth</label>
+				<label>牙</label>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
@@ -992,7 +992,7 @@
 				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
 			</li>
 			<li>
-				<label>head</label>
+				<label>头</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>

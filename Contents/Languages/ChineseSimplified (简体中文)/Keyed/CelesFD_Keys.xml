@@ -58,10 +58,21 @@
     <CelesFD_Keyed_QuarterlyNews>本季度要闻</CelesFD_Keyed_QuarterlyNews>
     <CelesFD_Keyed_LogisticsStatus>物流系统状态</CelesFD_Keyed_LogisticsStatus>
     <CelesFD_Keyed_LogisticsNoStation>无站点可用</CelesFD_Keyed_LogisticsNoStation>
+
+    <!-- W-1：星铃支援呼叫器（武备支援侧） -->
+    <CelesFD_Keyed_CallSupport>呼叫支援</CelesFD_Keyed_CallSupport>
+    <CelesFD_Keyed_CallSupportDesc>打开支援呼叫菜单，选择已购入的武备支援并指定落点。</CelesFD_Keyed_CallSupportDesc>
+    <CelesFD_Keyed_NoSupportAvailable>没有可用的武备支援。请先在外勤部购买支援。</CelesFD_Keyed_NoSupportAvailable>
+    <CelesFD_Keyed_NoSupportCharges>{0} 的支援次数已用完。</CelesFD_Keyed_NoSupportCharges>
+    <CelesFD_Keyed_SupportCalledTitle>支援呼叫已发出</CelesFD_Keyed_SupportCalledTitle>
+    <CelesFD_Keyed_SupportCalledDesc>{0} 正在前往：{1}（占位：W-2 接入真实坠落）</CelesFD_Keyed_SupportCalledDesc>
+    <CelesFD_Keyed_SupportPending>该支援正在审批中，暂不可用。</CelesFD_Keyed_SupportPending>
+    <CelesFD_Keyed_CallingSupport>正在呼叫支援：{0}。</CelesFD_Keyed_CallingSupport>
+    <CelesFD_Keyed_SupportCallNoManipulation>该殖民者没有操作能力，无法呼叫支援。</CelesFD_Keyed_SupportCallNoManipulation>
+    <CelesFD_Keyed_SelectPawnFirst>请先选中一名殖民者。</CelesFD_Keyed_SelectPawnFirst>
     <CelesFD_Keyed_LogisticsStatusGood>良好</CelesFD_Keyed_LogisticsStatusGood>
     <CelesFD_Keyed_LogisticsDefault>{0} - {1}，运行状态：{2}</CelesFD_Keyed_LogisticsDefault>
-    <CelesFD_Keyed_TradeTestHint>M0 测试：交易页订单区暂未实现。</CelesFD_Keyed_TradeTestHint>
-    <CelesFD_Keyed_TradeTestToggle>模拟选中订单</CelesFD_Keyed_TradeTestToggle>
+    <!-- FD-G29（2026-09-02）：TradeTestHint/TradeTestToggle 死键删除（M0 临时文案，全工程无引用） -->
 
     <!-- M2：市场刷新与彩蛋 -->
     <CelesFD_Keyed_NoCreditRefresh>信用额不足，无法刷新市场（需 {0}）</CelesFD_Keyed_NoCreditRefresh>
@@ -180,4 +191,14 @@
     <CelesFD_Keyed_LogisticsBuilding>物流系统建设中</CelesFD_Keyed_LogisticsBuilding>
     <CelesFD_Keyed_AbandonProcessing>违约处理将在订单结算模块上线后生效</CelesFD_Keyed_AbandonProcessing>
 
+    <!-- W-2a：支援倒计时警报（统一"即将抵达/正在进行：x秒"——2026-09-03 裁决；格式 00:00秒） -->
+    <CelesFD_Keyed_SupportAlertDesc>武备抵达中</CelesFD_Keyed_SupportAlertDesc>
+    <CelesFD_Keyed_SupportIncomingLine>{0} 即将抵达：{1}</CelesFD_Keyed_SupportIncomingLine>
+    <CelesFD_Keyed_SupportOngoingLine>{0} 正在进行：{1}</CelesFD_Keyed_SupportOngoingLine>
+    <!-- W-2b：支援失效弹窗（用户裁决——非事件的我方支援失效提示；激光用末段熄灭体现无弹窗） -->
+    <CelesFD_Keyed_SupportFailedSniper>轨道狙击失败：{0}</CelesFD_Keyed_SupportFailedSniper>
+    <CelesFD_Keyed_SniperFailNoTarget>未捕获目标</CelesFD_Keyed_SniperFailNoTarget>
+    <CelesFD_Keyed_SniperFailLost>目标丢失</CelesFD_Keyed_SniperFailLost>
+    <CelesFD_Keyed_SniperFailRoof>目标位于不可拆除屋顶下</CelesFD_Keyed_SniperFailRoof>
+    <CelesFD_Keyed_SupportFailedBeaconRoof>信标呼叫失效：落点位于不可拆除屋顶下（未消耗支援次数）</CelesFD_Keyed_SupportFailedBeaconRoof>
 </LanguageData>

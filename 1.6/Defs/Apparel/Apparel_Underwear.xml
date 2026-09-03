@@ -81,8 +81,8 @@
 
     <ThingDef ParentName="Celes_Underwear_I"> <!--星铃内衣A款--> <!--待编辑-->
         <defName>Celes_UnderwearA</defName>
-        <label>celestia underwear A</label>
-        <description>celestia underwear A.</description>
+        <label>星铃内衣</label>
+        <description>。</description>
         <costStuffCount>20</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -116,8 +116,8 @@
 
     <ThingDef ParentName="Celes_Underwear_I"> <!--星铃内衣B款--> <!--待编辑-->
         <defName>Celes_UnderwearB</defName>
-        <label>celestia underwear B</label>
-        <description>celestia underwear B.</description>
+        <label>星铃吊带内衣</label>
+        <description>。</description>
         <costStuffCount>20</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -151,8 +151,8 @@
 
     <ThingDef ParentName="Celes_Underwear_I"> <!--星铃内衣C款--> <!--待编辑-->
         <defName>Celes_UnderwearC</defName>
-        <label>celestia underwear C</label>
-        <description>celestia underwear C.</description>
+        <label>星铃轻薄内衣</label>
+        <description>。</description>
         <costStuffCount>20</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -188,8 +188,8 @@
 
     <ThingDef ParentName="Celes_Underwear_II"> <!--星铃泳装A款--> <!--待编辑-->
         <defName>Celes_SwimsuitA</defName>
-        <label>celestia swimsuit A</label>
-        <description>celestia swimsuit A.</description>
+        <label>星铃三点式泳装</label>
+        <description>。</description>
         <costStuffCount>20</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -231,8 +231,8 @@
 
     <ThingDef ParentName="Celes_Underwear_II"> <!--星铃泳装B款--> <!--待编辑-->
         <defName>Celes_SwimsuitB</defName>
-        <label>celestia swimsuit B</label>
-        <description>celestia swimsuit B.</description>
+        <label>星铃V字泳衣</label>
+        <description>。</description>
         <costStuffCount>20</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -276,8 +276,8 @@
 
     <ThingDef ParentName="Celes_Underwear_III_a"> <!--星铃科考队内衣--> <!--待编辑-->
         <defName>Celes_ExploreUnderwear</defName>
-        <label>celestia explore underwear</label>
-        <description>celestia explore underwear.</description>
+        <label>星铃科考队内衣</label>
+        <description>。</description>
         <costStuffCount>20</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>

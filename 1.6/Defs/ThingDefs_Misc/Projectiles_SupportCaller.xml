@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- W-1.5：支援呼叫信标弹（投掷物）——结构照 Proj_GrenadeEMP（RangedIndustrialGrenades.xml:263-276）：
+         BaseGrenadeProjectile（speed 12/arcHeightFactor 2/shadowSize 0.4）+ 自定义 thingClass（落地检测+生成信标）
+         贴图 = 原版 EMP 手榴弹系列占位（用户裁决）；落地生成信标 = Projectile_SpawnsThing 模式（Anomaly Grenade_TurretPack 同款） -->
+    <ThingDef ParentName="BaseGrenadeProjectile">
+        <defName>CelesFD_Proj_SupportCaller</defName>
+        <label>支援呼叫信标弹</label>
+        <thingClass>CelesFeature.CelesFD_Projectile_SupportCaller</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/GrenadeEMP</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <spawnsThingDef>CelesFD_SupportBeacon</spawnsThingDef>
+        </projectile>
+    </ThingDef>
+
+</Defs>

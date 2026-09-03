@@ -1,9 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
 <PawnKindDef ParentName="Celes_PawnBase">
     <defName>Celes_Colonist</defName>
-    <label>celestia colonist</label>
+    <labelPlural>星铃殖民者</labelPlural>
+    <labelMale>星铃殖民者</labelMale>
+    <labelMalePlural>星铃殖民者</labelMalePlural>
+    <labelFemale>星铃殖民者</labelFemale>
+    <labelFemalePlural>星铃殖民者</labelFemalePlural>
+    <label>星铃殖民者</label>
     <combatPower>20</combatPower>
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
@@ -42,7 +47,12 @@
     
     <PawnKindDef Name="Celes_Outlander" ParentName="Celes_PawnBase">
         <defName>Celes_Outlander</defName>
-        <label>celestia outlander</label>
+        <labelPlural>星铃拓荒者</labelPlural>
+        <labelMale>星铃拓荒者</labelMale>
+        <labelMalePlural>星铃拓荒者</labelMalePlural>
+        <labelFemale>星铃拓荒者</labelFemale>
+        <labelFemalePlural>星铃拓荒者</labelFemalePlural>
+        <label>星铃拓荒者</label>
         <combatPower>45</combatPower>
         <itemQuality>Normal</itemQuality>
         <isFighter>false</isFighter>
@@ -99,7 +109,12 @@
 
 	<PawnKindDef ParentName="Celes_Outlander">
 		<defName>Celes_OutlanderLeader</defName>
-		<label>celestia outlander leader</label>
+		<labelPlural>星铃拓荒领袖</labelPlural>
+		<labelMale>星铃拓荒领袖</labelMale>
+		<labelMalePlural>星铃拓荒领袖</labelMalePlural>
+		<labelFemale>星铃拓荒领袖</labelFemale>
+		<labelFemalePlural>星铃拓荒领袖</labelFemalePlural>
+		<label>星铃拓荒领袖</label>
 		<combatPower>85</combatPower>
 		<itemQuality>Excellent</itemQuality>
 		<factionLeader>true</factionLeader>
@@ -127,7 +142,12 @@
 
 	<PawnKindDef ParentName="Celes_PawnBase">
         <defName>Celes_Trader</defName>
-        <label>celestia trader</label>
+        <labelPlural>星铃行商</labelPlural>
+        <labelMale>星铃行商</labelMale>
+        <labelMalePlural>星铃行商</labelMalePlural>
+        <labelFemale>星铃行商</labelFemale>
+        <labelFemalePlural>星铃行商</labelFemalePlural>
+        <label>星铃行商</label>
         <trader>true</trader>
         <combatPower>45</combatPower>
         <itemQuality>Normal</itemQuality>
@@ -166,7 +186,12 @@
 
 	<PawnKindDef Name="Celes_ArmedExplorer" ParentName="Celes_CombatPawnBase">
 		<defName>Celes_ArmedExplorer</defName>
-		<label>celestia armed pioneer</label>
+		<labelPlural>星铃武装拓荒队员</labelPlural>
+		<labelMale>星铃武装拓荒队员</labelMale>
+		<labelMalePlural>星铃武装拓荒队员</labelMalePlural>
+		<labelFemale>星铃武装拓荒队员</labelFemale>
+		<labelFemalePlural>星铃武装拓荒队员</labelFemalePlural>
+		<label>星铃武装拓荒队员</label>
 		<combatPower>60</combatPower>
 		<itemQuality>Normal</itemQuality>
 		<isFighter>true</isFighter>
@@ -221,7 +246,12 @@
 
 	<PawnKindDef ParentName="Celes_ArmedExplorer">
 		<defName>Celes_ArmedExplorerSniper</defName>
-		<label>celestia armed pioneer sniper</label>
+		<labelPlural>星铃武装拓荒神射手</labelPlural>
+		<labelMale>星铃武装拓荒神射手</labelMale>
+		<labelMalePlural>星铃武装拓荒神射手</labelMalePlural>
+		<labelFemale>星铃武装拓荒神射手</labelFemale>
+		<labelFemalePlural>星铃武装拓荒神射手</labelFemalePlural>
+		<label>星铃武装拓荒神射手</label>
 		<combatPower>65</combatPower>
 		<itemQuality>Good</itemQuality>
 		<weaponTags Inherit="false">
@@ -233,7 +263,12 @@
 
 	<PawnKindDef Name="Celes_Scout" ParentName="Celes_CombatPawnBase">
         <defName>Celes_Scout</defName>
-        <label>celestia vanguard</label>
+        <labelPlural>星铃先锋</labelPlural>
+        <labelMale>星铃先锋</labelMale>
+        <labelMalePlural>星铃先锋</labelMalePlural>
+        <labelFemale>星铃先锋</labelFemale>
+        <labelFemalePlural>星铃先锋</labelFemalePlural>
+        <label>星铃先锋</label>
         <combatPower>85</combatPower>
         <itemQuality>Normal</itemQuality>
         <isFighter>true</isFighter>
@@ -297,7 +332,12 @@
 
 	<PawnKindDef ParentName="Celes_Scout">
 		<defName>Celes_ScoutSniper</defName>
-		<label>celestia vanguard sniper</label>
+		<labelPlural>星铃先锋狙击手</labelPlural>
+		<labelMale>星铃先锋狙击手</labelMale>
+		<labelMalePlural>星铃先锋狙击手</labelMalePlural>
+		<labelFemale>星铃先锋狙击手</labelFemale>
+		<labelFemalePlural>星铃先锋狙击手</labelFemalePlural>
+		<label>星铃先锋狙击手</label>
 		<combatPower>95</combatPower>
 		<itemQuality>Good</itemQuality>
 		<weaponMoney>1500~10000</weaponMoney>
@@ -310,7 +350,12 @@
 
 	<PawnKindDef ParentName="Celes_Scout">
 		<defName>Celes_ScoutMelee</defName>
-		<label>celestia vanguard guard</label>
+		<labelPlural>星铃先锋近卫</labelPlural>
+		<labelMale>星铃先锋近卫</labelMale>
+		<labelMalePlural>星铃先锋近卫</labelMalePlural>
+		<labelFemale>星铃先锋近卫</labelFemale>
+		<labelFemalePlural>星铃先锋近卫</labelFemalePlural>
+		<label>星铃先锋近卫</label>
 		<combatPower>85</combatPower>
 		<itemQuality>Normal</itemQuality>
 		<apparelTags>
@@ -325,7 +370,12 @@
 
 	<PawnKindDef Name="Celes_Elite" ParentName="Celes_CombatPawnBase">
 		<defName>Celes_Elite</defName>
-		<label>celestia regular marine</label>
+		<labelPlural>星铃海军陆战队步兵</labelPlural>
+		<labelMale>星铃海军陆战队步兵</labelMale>
+		<labelMalePlural>星铃海军陆战队步兵</labelMalePlural>
+		<labelFemale>星铃海军陆战队步兵</labelFemale>
+		<labelFemalePlural>星铃海军陆战队步兵</labelFemalePlural>
+		<label>星铃海军陆战队步兵</label>
 		<combatPower>135</combatPower>
 		<itemQuality>Good</itemQuality>
 		<isFighter>true</isFighter>
@@ -380,7 +430,12 @@
 
 	<PawnKindDef ParentName="Celes_Elite">
 		<defName>Celes_EliteSniper</defName>
-		<label>celestia regular marine sniper</label>
+		<labelPlural>星铃海军陆战队狙击手</labelPlural>
+		<labelMale>星铃海军陆战队狙击手</labelMale>
+		<labelMalePlural>星铃海军陆战队狙击手</labelMalePlural>
+		<labelFemale>星铃海军陆战队狙击手</labelFemale>
+		<labelFemalePlural>星铃海军陆战队狙击手</labelFemalePlural>
+		<label>星铃海军陆战队狙击手</label>
 		<combatPower>140</combatPower>
 		<itemQuality>Excellent</itemQuality>
 		<weaponTags Inherit="false">
@@ -392,7 +447,12 @@
 
 	<PawnKindDef ParentName="Celes_Elite">
 		<defName>Celes_EliteSupport</defName>
-		<label>celestia regular marine supporter</label>
+		<labelPlural>星铃海军陆战队支援兵</labelPlural>
+		<labelMale>星铃海军陆战队支援兵</labelMale>
+		<labelMalePlural>星铃海军陆战队支援兵</labelMalePlural>
+		<labelFemale>星铃海军陆战队支援兵</labelFemale>
+		<labelFemalePlural>星铃海军陆战队支援兵</labelFemalePlural>
+		<label>星铃海军陆战队支援兵</label>
 		<combatPower>155</combatPower>
 		<itemQuality>Excellent</itemQuality>
 		<weaponMoney>3500~10000</weaponMoney>
@@ -405,7 +465,12 @@
 
 	<PawnKindDef ParentName="Celes_Elite">
 		<defName>Celes_EliteMelee</defName>
-		<label>celestia regular marine guard</label>
+		<labelPlural>星铃海军陆战队近卫</labelPlural>
+		<labelMale>星铃海军陆战队近卫</labelMale>
+		<labelMalePlural>星铃海军陆战队近卫</labelMalePlural>
+		<labelFemale>星铃海军陆战队近卫</labelFemale>
+		<labelFemalePlural>星铃海军陆战队近卫</labelFemalePlural>
+		<label>星铃海军陆战队近卫</label>
 		<combatPower>135</combatPower>
 		<itemQuality>Good</itemQuality>
 		<apparelTags>

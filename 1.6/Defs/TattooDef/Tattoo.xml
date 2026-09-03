@@ -19,7 +19,7 @@
 
     <TattooDef>
         <defName>Celes_TattooNullB</defName>
-        <label>Celestia Body Mechanisms</label>
+        <label>星铃体表机械</label>
         <texPath>Celes/Hair/Null/Null</texPath>
         <tattooType>Body</tattooType>
         <category>Celes_Style</category>
@@ -31,7 +31,7 @@
     
     <TattooDef>
         <defName>Celes_TattooNullH</defName>
-        <label>Celestia Face Mechanisms</label>
+        <label>星铃面部机械</label>
         <texPath>Celes/Hair/Null/Null</texPath>
         <tattooType>Face</tattooType>
         <category>Celes_Style</category>

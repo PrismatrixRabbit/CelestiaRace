@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
     <ThingDef ParentName="Celes_MakeableDrugBase">
         <defName>Celes_CPS1M</defName>
-        <label>CPS-1 combat psychic stimulants</label>
-        <description>A synthetic Dust-Mech preparation used to enhance the user's psychic combat abilities and directly increase psyfocus.CPS-1 inherits Celestia's usual cellular activity overload from its combat drugs, and its aftereffects are somewhat lethal. \n\nBy overactivating the nerves, the user will feel pain more easily, but will also be able to dissipate neural heat and gather psyfocus more quickly. As a side effect, the user will also be more focused in combat, but overfocused and sensitive nerves slow down daily tasks.</description>
+        <label>CPS-1作战灵能强化剂</label>
+        <description>一种合成尘构制剂，用于提高使用者的灵能作战能力并直接增加精神力。CPS-1继承了星铃作战药物一贯的细胞活性过载，其后效有一定致命性。\n\n通过过度活跃神经，使用者会更容易感到疼痛，但也能更快的耗散心灵熵并凝聚精神力。作为某种＂副作用＂，使用者也会在战斗中更加专注……但过度专注和敏感的神经反而拖慢了日常工作的速度。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_CPS1_HighSample</HediffDef>
             <HediffDef>Celes_CPS1_After</HediffDef>
@@ -33,8 +33,8 @@
                     <offset>(0.18, 0, 0)</offset>
                 </northDefault>
             </ingestHoldOffsetStanding>
-            <ingestCommandString>Inject {0}</ingestCommandString>
-            <ingestReportString>Injecting {0}</ingestReportString>
+            <ingestCommandString>注射{0}</ingestCommandString>
+            <ingestReportString>正在注射{0}</ingestReportString>
             <useEatingSpeedStat>false</useEatingSpeedStat>
             <chairSearchRadius>0</chairSearchRadius>
             <outcomeDoers>
@@ -72,9 +72,9 @@
     <HediffDef>
         <defName>Celes_CPS1_HighSample</defName>
         <hediffClass>Hediff_High</hediffClass>
-        <label>CPS-1 stimulant is taking effect.</label>
-        <labelNoun>CPS-1 effect</labelNoun>
-        <description>The CPS-1 Dust-Mech substance flowing in the bloodstream was increasing the user's psychic combat ability.</description>
+        <label>CPS-1作战灵能强化剂</label>
+        <labelNoun>CPS-1效果</labelNoun>
+        <description>流淌在血液中的CPS-1尘构物质正在提高使用者的灵能作战能力。</description>
         <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
         <initialSeverity>0.001</initialSeverity>
         <maxSeverity>0.002</maxSeverity>
@@ -101,9 +101,9 @@
     <HediffDef>
         <defName>Celes_CPS1_High</defName>
         <hediffClass>Hediff_High</hediffClass>
-        <label>CPS-1 stimulant is taking effect.</label>
-        <labelNoun>CPS-1 effect</labelNoun>
-        <description>The CPS-1 Dust-Mech substance flowing in the bloodstream was increasing the user's psychic combat ability.</description>
+        <label>CPS-1作战灵能强化剂</label>
+        <labelNoun>CPS-1效果</labelNoun>
+        <description>流淌在血液中的CPS-1尘构物质正在提高使用者的灵能作战能力。</description>
         <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>
@@ -137,7 +137,7 @@
                 <painFactor>1.3</painFactor>
                 <restFallFactor>0.3</restFallFactor>
                 <minSeverity>0.51</minSeverity>
-                <label>overdose</label>
+                <label>过量</label>
                 <statOffsets>
                     <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
                     <ShootingAccuracyPawn>10.0</ShootingAccuracyPawn>
@@ -164,9 +164,9 @@
 
     <HediffDef>
         <defName>Celes_CPS1_After</defName>
-        <label>CPS-1 after effect</label>
-        <labelNoun>a CPS-1 after effect</labelNoun>
-        <description>The organism is recovering from an overload of cellular activity caused by CPS-1, and lack of appropriate treatment may lead to death.</description>
+        <label>CPS-1后效应</label>
+        <labelNoun>CPS-1后效应</labelNoun>
+        <description>机体正在由CPS-1导致的细胞活性过载中恢复，缺乏合适的治疗可能导致死亡。</description>
         <hediffClass>Hediff_High</hediffClass>
         <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
         <makesSickThought>true</makesSickThought>
@@ -214,7 +214,7 @@
             </li>
             <li>
                 <minSeverity>0.80</minSeverity>
-                <label>dangerous</label>
+                <label>致命</label>
                 <lifeThreatening>true</lifeThreatening>
                 <vomitMtbDays>0.2</vomitMtbDays>
                 <hungerRateFactor>1.5</hungerRateFactor>

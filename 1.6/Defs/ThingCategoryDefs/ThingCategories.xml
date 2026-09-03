@@ -5,14 +5,14 @@
 
     <ThingCategoryDef>
         <defName>Celes_Manufactured</defName>
-        <label>celestia manufactured</label>
+        <label>星铃工业制品</label>
         <parent>Manufactured</parent>
         <iconPath>Celes/UI/Icons/IndustrialChips_B</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>Celes_Drugs</defName>
-        <label>celestia drugs</label>
+        <label>星铃药品</label>
         <parent>Manufactured</parent>
         <iconPath>Celes/UI/Icons/CS6_B</iconPath>
     </ThingCategoryDef>
@@ -21,19 +21,19 @@
 
     <ThingCategoryDef>
         <defName>Celes_Weapons</defName>
-        <label>celestia weapons</label>
+        <label>星铃武器</label>
         <parent>Weapons</parent>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>Celes_WeaponsMelee</defName>
-        <label>celestia melee weapons</label>
+        <label>星铃近战武器</label>
         <parent>Celes_Weapons</parent>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>Celes_WeaponsRanged</defName>
-        <label>celestia ranged weapons</label>
+        <label>星铃远程武器</label>
         <parent>Celes_Weapons</parent>
     </ThingCategoryDef>
 
@@ -41,31 +41,31 @@
     
     <ThingCategoryDef>
         <defName>Celes_Apparel</defName>
-        <label>celestia apparel</label>
+        <label>星铃衣物</label>
         <parent>Apparel</parent>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>Celes_Apparel_Daily</defName>
-        <label>celestia daily apparel</label>
+        <label>星铃日常衣物</label>
         <parent>Celes_Apparel</parent>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>Celes_Apparel_Military</defName>
-        <label>celestia military apparel</label>
+        <label>星铃军事衣物</label>
         <parent>Celes_Apparel</parent>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>Celes_Apparel_Hat</defName>
-        <label>celestia hat</label>
+        <label>星铃头饰</label>
         <parent>Celes_Apparel</parent>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>Celes_Apparel_Misc</defName>
-        <label>celestia apparel misc</label>
+        <label>星铃衣物杂项</label>
         <parent>Celes_Apparel</parent>
     </ThingCategoryDef>
 

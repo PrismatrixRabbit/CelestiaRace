@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <ThingDef ParentName="Celes_MakeableDrugBase">
         <defName>Celes_IAS2M</defName>
-        <label>IAS-2 immunoagonist stimulants</label>
-        <description>A drug for preventing varieties infections before they take hold. Blocks cancer, infection, malaria, sleeping sickness, plague. Must be taken every five days to remain effective.\n\nThis drug only prevents new infections. It does not cure existing infections - even those that are not yet discovered.</description>
+        <label>IAS-2免疫增强剂</label>
+        <description>一种改良的合成药物，全面提升了使用者的免疫机能，并在血液中维持特殊药物。阻断疟疾，昏睡病，瘟疫等疾病的传染，抑制伤口感染，并对各类寄生虫的幼虫及虫卵具有毒害作用。\n\n注意：这种药物如同佩诺西林一样，无法治疗已经患上的疾病，只能用于预防。</description>
         <possessionCount>10</possessionCount>
         <descriptionHyperlinks><HediffDef>Celes_IASHigh</HediffDef></descriptionHyperlinks>
         <graphicData>
@@ -52,8 +52,8 @@
     <HediffDef>
         <defName>Celes_IASHigh</defName>
         <hediffClass>Hediff_High</hediffClass>
-        <label>IAS-2 immune-activating stimulants</label>
-        <description>The IAS-2 chemicals flowing through the bloodstream are preventing disease from occurring, but this does not stop the disease that has already occurred.</description>
+        <label>IAS-2免疫增强剂</label>
+        <description>流淌在血液中的IAS-2化学物质正在预防疾病的发生，但这无法阻止已经发生的疾病。</description>
         <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>

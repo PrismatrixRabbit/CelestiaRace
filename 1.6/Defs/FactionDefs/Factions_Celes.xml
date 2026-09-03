@@ -3,8 +3,8 @@
 
     <FactionDef ParentName="PlayerFactionBase">
         <defName>Celes_PlayerFaction</defName>
-        <label>Celestia new outpost</label>
-        <description>An outpost formed by Celestia who had recently arrived on the planet.</description>
+        <label>星铃新前哨</label>
+        <description>一个由新近抵达这颗行星的星铃组建的前哨。</description>
         <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
         <categoryTag>Celes_PlayerFaction</categoryTag>
         <colorSpectrum>
@@ -12,8 +12,8 @@
         </colorSpectrum>
         <isPlayer>true</isPlayer>
         <basicMemberKind>Celes_Colonist</basicMemberKind>
-        <pawnSingular>celestia colonist</pawnSingular>
-        <pawnsPlural>celestia colonists</pawnsPlural>
+        <pawnSingular>星铃殖民者</pawnSingular>
+        <pawnsPlural>星铃殖民者</pawnsPlural>
         <techLevel>Industrial</techLevel>
         <melaninRange>0</melaninRange>
         <!--↓↓↓这里等着改↓↓↓-->

@@ -19,33 +19,16 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
-		<defName>DoBillsCeles_MultifunctionalTabB</defName>
-		<label>make things at Celestia multifunctional tab</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Smithing</workType>
-		<priorityInType>75</priorityInType>
-		<fixedBillGiverDefs>
-			<li>Celes_MultifunctionalTabB</li>
-		</fixedBillGiverDefs>
-		<verb>work</verb>
-		<gerund>working at</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
 		<defName>DoBillsCeles_TailoringTab</defName>
-		<label>make apparel</label>
+		<label>制作衣物</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Tailoring</workType>
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
 			<li>Celes_TailoringTab</li>
 		</fixedBillGiverDefs>
-		<verb>tailor</verb>
-		<gerund>tailoring at</gerund>
+		<verb>制作</verb>
+		<gerund>制作于</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>

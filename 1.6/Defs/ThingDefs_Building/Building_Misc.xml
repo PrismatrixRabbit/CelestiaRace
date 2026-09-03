@@ -44,7 +44,7 @@
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
-                <shortCircuitInRain>true</shortCircuitInRain>
+                <shortCircuitInRain>false</shortCircuitInRain>   <!-- FD-G34（2026-09-02）：原配置 true 为错误——原版默认 false（CompProperties_Power.cs:21），仅显式 true 的建筑露天雨中短路（ShortCircuitUtility.TryShortCircuitInRain 实证）；发信器/发射平台与原版常规电力建筑一致不短路 -->
                 <basePowerConsumption>200</basePowerConsumption>
             </li>
         </comps>
@@ -147,7 +147,7 @@
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
-                <shortCircuitInRain>true</shortCircuitInRain>
+                <shortCircuitInRain>false</shortCircuitInRain>   <!-- FD-G34（2026-09-02）：原配置 true 为错误——原版默认 false（CompProperties_Power.cs:21），仅显式 true 的建筑露天雨中短路（ShortCircuitUtility.TryShortCircuitInRain 实证）；发信器/发射平台与原版常规电力建筑一致不短路 -->
                 <!-- 原版双档语义：basePowerConsumption=发射/工作态耗电（前摇暂态），idlePowerDraw=待机/常态耗电（前摇恢复值） -->
                 <basePowerConsumption>14400</basePowerConsumption>
                 <idlePowerDraw>100</idlePowerDraw>
@@ -163,6 +163,9 @@
                 <portOffset>(1,0,0)</portOffset>
             </li>
         </modExtensions>
+        <researchPrerequisites>
+            <li>Celes_CelestiaFreqDecrypt</li>
+        </researchPrerequisites>
         <placeWorkers>
             <li>CelesFeature.CelesFD_PlaceWorker_LaunchPortSource</li>
         </placeWorkers>
@@ -174,9 +177,9 @@
         <label>星铃货运单元</label>
         <description>星铃外勤部的货运单元。仅可建造在发射平台对接口上，用于向星铃外勤部发送物资。</description>
         <graphicData>
-            <texPath>Things/Special/DropPodMechanoid</texPath>
+            <texPath>Celes/Building/DropPod/DropPodCelestia</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(2,2)</drawSize>
+            <drawSize>(3,3)</drawSize>
         </graphicData>
         <size>(1,1)</size>
         <rotatable>false</rotatable>
@@ -219,6 +222,9 @@
                 <podPortOffset>(0,0,0)</podPortOffset>
             </li>
         </modExtensions>
+        <researchPrerequisites>
+            <li>Celes_CelestiaFreqDecrypt</li>
+        </researchPrerequisites>
         <placeWorkers>
             <li>CelesFeature.CelesFD_PlaceWorker_NeedsLaunchPort</li>
         </placeWorkers>

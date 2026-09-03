@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- W-1/W-1.5：星铃支援呼叫信标（特殊槽位装备）——W-1.5 投掷式：手榴弹表现（投掷物+误差+音效），落地生成信标+垂直光柱
+         结构照 Apparel_PackTurret（Anomaly Apparel_Packs.xml:181-318）：CompApparelVerbOwner 子类 + <verbs> 全 XML 配置
+         ParentName=ApparelNoQualityBase（原版 Apparel_Various.xml:4）：无 CompQuality——品质根因 = ApparelBase 追加的 CompQuality（Apparel_Various.xml:36-41），
+         comps 继承为覆盖语义，不能"减掉"，必须换 base；OrbitalUtilityBase（RangedSpecial.xml:32，原版轨道目标指示器）同为该 base 的轨道呼叫类参照
+         图形为原版打包纹理占位（机制笔记：ContentFinder 按逻辑路径命中打包资源）；正式图形待美术 -->
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>CelesFD_SupportCaller</defName>
+        <label>星铃支援呼叫信标</label>
+        <description>星铃外勤部配发的战术支援呼叫终端。穿戴后可将呼叫信标投掷至目标区域：信标落地后升起源自地面的垂直光柱，随后星铃将向该实际落点提供已购入的武备支援。</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/EMPGrenades</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.5,0.5)</drawSize>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <tickerType>Normal</tickerType>
+        <smeltable>false</smeltable>
+        <statBases>
+            <Mass>2</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>CelesFD_SupportCallerLayer</li>
+            </layers>
+            <!-- 无视年龄可装备：默认 developmentalStageFilter 仅 Adult（ApparelProperties.cs:162-165，Biotech 激活时过滤），
+                 显式覆盖为全阶段（原版逗号分隔标志语法，Core Drugs 同款） -->
+            <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+            <!-- 装备音效：Interact_Grenade（原版手榴弹交互音，RangedIndustrialGrenades.xml:216——JobDriver_Wear.cs:93 播放） -->
+            <soundWear>Interact_Grenade</soundWear>
+            <!-- 无 wornGraphicPath/wornGraphicData：穿戴层不渲染（ApparelGraphicRecordGetter.cs:15-19 空路径返回 null 图形）
+                 呼叫信标穿在身上不可见，仅背包/落地图形使用 graphicData -->
+        </apparel>
+        <comps>
+            <li Class="CelesFeature.CelesFD_CompProperties_SupportCaller">
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+            </li>
+        </comps>
+        <verbs>
+            <li>
+                <verbClass>CelesFeature.CelesFD_Verb_SupportCall</verbClass>
+                <label>投掷呼叫信标</label>
+                <defaultProjectile>CelesFD_Proj_SupportCaller</defaultProjectile>
+                <warmupTime>1.5</warmupTime>
+                <range>24</range>
+                <burstShotCount>1</burstShotCount>
+                <onlyManualCast>true</onlyManualCast>
+                <hasStandardCommand>false</hasStandardCommand>
+                <drawAimPie>true</drawAimPie>
+                <targetable>true</targetable>
+                <targetParams>
+                    <canTargetPawns>false</canTargetPawns>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>ThrowGrenade</soundCast>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                <canGoWild>false</canGoWild>
+            </li>
+        </verbs>
+    </ThingDef>
+
+</Defs>

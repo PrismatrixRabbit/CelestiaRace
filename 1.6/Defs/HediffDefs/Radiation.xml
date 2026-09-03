@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <HediffDef>
         <defName>CelesRadiation</defName>
         <hediffClass>HediffWithComps</hediffClass>
-        <label>radioactive plasma exposure</label>
-        <labelNoun>radioactive plasma exposure.</labelNoun>
-        <description>The aftermath of exposure to some kind of Celestia's radioactive plasma weapon, with generalised pain with occasional burns that require medication to heal slowly. \n\nAnd in the case of mechanical bodies, this internal irradiation amounts to some kind of slow and long-lasting EMP that gradually reduces the enemy's data-processing capabilities.</description>
+        <label>放射性等离子暴露</label>
+        <labelNoun>放射性等离子暴露</labelNoun>
+        <description>暴露于某种星铃的放射性等离子体武器中的后遗症，全身疼痛并带有不定期的烧伤症状，需要服用药物才能缓慢治愈。\n\n而对于机械体，这种内照射相当于某种缓慢而长效的EMP，会逐渐降低敌人的数据处理能力。</description>
         <isBad>true</isBad>
         <maxSeverity>1</maxSeverity>
         <tendable>true</tendable>

@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- 人工晶态表面：玩家可建造地板（1 纳米机），中支撑，可拆除还原（layerable） -->
-  <!-- [事实] 结构参照原版 FloorBase（Core Terrain_Floors.xml:4-27）：layerable=true + tags Floor + Walkable -->
-  <!-- 贴图占位：Celes/Terrain/CrystalFloor.png 需自备 -->
   <TerrainDef ParentName="FloorBase">
     <defName>Celes_CrystalFloor</defName>
     <label>人工晶态表面</label>
-    <description>由纳米机械构成的晶态地表，结构稳定，可为建造提供中等支撑。可被拆除还原为原始地形。</description>
+    <description>由尘构构成的晶态地表，可以为晶簇生长提供基底。可被拆除还原为原始地形。</description>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Celes/Terrain/CrystalFloor</texturePath>
-    <!-- [事实] 不写 color：DrawColor 默认白（TerrainDef.cs:308-318）——完整彩色贴图不应 tint（曾照抄木地板棕色 (108,78,55) 致整体棕蒙版） -->
     <statBases>
       <WorkToBuild>100</WorkToBuild>
       <Flammability>0</Flammability>
@@ -18,9 +14,10 @@
     <costList>
       <Celes_NanoMachine>1</Celes_NanoMachine>
     </costList>
+    <researchPrerequisites>
+      <li>Celes_MainTech_I</li>
+    </researchPrerequisites>
     <designationCategory>Celes_SpecialBuildings</designationCategory>
-    <!-- 用户裁决：支撑保留重型——全列 Light + Medium + Heavy + Walkable（与原版 FloorBase 同）
-         [事实] XML 继承对 <li> 列表为"追加合并"（XmlInheritance.cs:373+）——覆写必须 Inherit="false" 清空父（:284-310） -->
     <affordances Inherit="false">
       <li>Light</li>
       <li>Medium</li>
@@ -29,26 +26,18 @@
     </affordances>
   </TerrainDef>
 
-  <!-- 晶化表面：机制生成（晶簇位置/扩散感染），不可建造，轻支撑，无返还，可拆除还原 -->
-  <!-- 贴图占位：Celes/Terrain/CrystalSurface.png 需自备 -->
   <TerrainDef ParentName="FloorBase">
     <defName>Celes_CrystalSurface</defName>
     <label>晶化表面</label>
-    <description>活性晶簇扩散产生的晶态覆层。仅提供轻支撑，拆除后还原为原始地形。</description>
+    <description>活性晶簇扩散产生的晶态覆层，可以为晶簇生长提供基底。拆除后还原为原始地形。</description>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Celes/Terrain/CrystalSurface</texturePath>
-    <!-- [事实] 不写 color：默认白无 tint（同人工晶态表面——曾照抄木地板棕色致棕蒙版） -->
-    <!-- [事实] 支撑判定 = GetAffordances().Contains(needed) 精确匹配（GenGrid.cs:208-211）——无"Medium 隐含 Light"层级；
-         显式全列 Light + Medium + Heavy（用户裁决保留重）+ Walkable：培育器 Light 放置 / 晶种 Medium 生长判定 / 扩散 Light 判定均满足
-         [事实] XML 继承对 <li> 列表为"追加合并"——覆写必须 Inherit="false" -->
     <affordances Inherit="false">
       <li>Light</li>
       <li>Medium</li>
       <li>Heavy</li>
       <li>Walkable</li>
     </affordances>
-    <!-- [事实] designationCategory 由 FloorBase 继承（Terrain_Floors.xml:16=Floors）——机制生成地板不可建造：
-         Inherit="false" 空节点清空（BuildableByPlayer = designationCategory != null，BuildableDef.cs:144） -->
     <designationCategory Inherit="false" />
   </TerrainDef>
 

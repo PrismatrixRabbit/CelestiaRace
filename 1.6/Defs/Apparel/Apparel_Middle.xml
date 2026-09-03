@@ -5,8 +5,8 @@
 
     <ThingDef ParentName="Celes_ApparelBase"><!--厨房围裙-->
         <defName>Celes_KitchenApron</defName>
-        <label>celestia kitchen apron</label>
-        <description>A simple kitchen apron will keep things clean while cooking.</description>
+        <label>星铃厨房围裙</label>
+        <description>一件简单的厨房围裙，可以保持烹饪时的洁净。</description>
 		<techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Celes/Apparel/Middle/KitchenApron/KitchenApron</texPath>
@@ -63,8 +63,8 @@
 
     <ThingDef ParentName="Celes_ArmorMachineableBase"><!--战术背心-->
         <defName>Celes_TacticalVest</defName>
-        <label>celestia tactical vest</label>
-        <description>Tactical vest for Celestia with inserted ballistic inserts, comes with several hanging pockets to increase the user's speed of changing ammunition and provide efficient protection for the torso.</description>
+        <label>星铃战术背心</label>
+        <description>适用于星铃的战术背心，插有防弹插板，附带数个挂袋，可以提高使用者的换弹速度并对躯干提供高效的保护。</description>
 		<techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Celes/Apparel/Middle/TacticalVest/TacticalVest</texPath>
@@ -127,8 +127,8 @@
 	
 	<ThingDef ParentName="Celes_ApparelArmorPowerBase"><!--轻型动力甲-->
 		<defName>Celes_LightPowerArmour</defName>
-		<label>celestia sentinel sadira power armour</label>
-		<description>Modified from the Celestia IEVA suit of Sadira Power Armour, this armour is a lighter version.</description>
+		<label>哨卫型天苑动力护甲</label>
+		<description>改良自星铃IEVA套装的天苑动力护甲，这款护甲是轻量化版本。</description>
 		<graphicData>
 			<texPath>Celes/Apparel/Middle/LightPowerArmour/LightPowerArmour</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -163,7 +163,7 @@
 		<costList>
 			<ComponentSpacer>4</ComponentSpacer>
 			<Plasteel>120</Plasteel>
-            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
+            <Celes_AdvancedComponent>1</Celes_AdvancedComponent>
 			<Celes_AdvancedCloth>40</Celes_AdvancedCloth>
 		</costList>
 		<recipeMaker>
@@ -230,7 +230,7 @@
         <costList>
             <ComponentSpacer>4</ComponentSpacer>
             <Plasteel>120</Plasteel>
-            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
+            <Celes_AdvancedComponent>1</Celes_AdvancedComponent>
             <Celes_AdvancedCloth>40</Celes_AdvancedCloth>
         </costList>
         <recipeMaker>

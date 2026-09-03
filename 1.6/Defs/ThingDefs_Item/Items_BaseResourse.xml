@@ -37,9 +37,10 @@
     <ThingDef ParentName="ResourceBase"><!-- 初始晶簇 --><!-- 贴图未更新 -->
         <defName>Celes_InitialCrystalCluster</defName>
         <label>初始晶簇</label>
-        <description>初始晶簇是包含惰性尘构复制单元的晶体块，它就像是一块种子，被大量的晶态材料包裹着。</description>
+        <description>初始晶簇是包含惰性尘构复制单元的晶体块，它就像是一块种子，被大量的晶态材料包裹着。在接受外部模板或指令前，保持类似干细胞那样的多功能分化潜能。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_CrystallineMaterial</ThingDef>
+            <ThingDef>Celes_CrystalInitialSeed</ThingDef>
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Celes/Item/DustMech/InitialCrystalCluster</texPath>
@@ -62,7 +63,7 @@
     <ThingDef ParentName="ResourceBase"><!-- 初始晶态材料 --><!-- 贴图未更新 -->
         <defName>Celes_CrystallineMaterial</defName>
         <label>初始晶态材料</label>
-        <description>初始晶态材料是一系列结构化排布的晶体，本身也能归类为尘构，但通常作为其他尘构单元的简单复制原料。在接受外部模板或指令前，保持类似干细胞那样的多功能分化潜能，是尘构物质的通用前体储备。</description>
+        <description>初始晶态材料是一系列结构化排布的晶体，本身也能归类为尘构，但通常作为其他尘构单元的简单复制原料。是尘构物质的通用前体储备。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_InitialCrystalCluster</ThingDef>
         </descriptionHyperlinks>
@@ -82,6 +83,38 @@
         <thingCategories>
             <li>Celes_Manufactured</li>
         </thingCategories>
+        
+        <comps>
+            <li Class="CompProperties_CompAnalyzableUnlockResearch">
+                <analysisID>356174224</analysisID>
+                <requiresMechanitor>false</requiresMechanitor>
+
+                <!-- Analyzable -->
+
+                <analysisDurationHours>0.5</analysisDurationHours>
+                <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+                <completedLetterLabel>Signal chip studied: {RESEARCH} unlocked</completedLetterLabel>
+                <completedLetter>By studying the signal chip, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+                <completedLetterDef>PositiveEvent</completedLetterDef>
+
+                <!-- Interactable -->
+
+                <activateTexPath>UI/Icons/Study</activateTexPath>
+
+                <activateLabelString>Analyze...</activateLabelString>
+                <activateDescString>Analyze the signal chip.</activateDescString>
+                <jobString>Analyze signal chip</jobString>
+                <guiLabelString>Choose who should analyze this</guiLabelString>
+                <inspectString>Can be analyzed by a colonist.</inspectString>
+
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+                </targetingParameters>
+            </li>
+        </comps>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase"><!-- 晶化尘构单元 -->
@@ -180,12 +213,12 @@
     </ThingDef>
     
     <ThingDef ParentName="ResourceBase"><!-- 尘构机械单元 -->
-        <defName>Celes_ChipComponent</defName>
+        <defName>Celes_NanoComponent</defName>
         <label>尘构机械单元</label>
         <description>尘构机械单元以定制尘构单元取代通用零部件的局部机械结构，是一种被设计为在机械结构中携带分子信息索引的新型零部件，让零部件的材料本身可以对外部环境做出反应，从自我修复到信号激发。换而言之，让零部件本身作为一种可以反馈数据的传感器。</description>
         <possessionCount>2</possessionCount>
         <graphicData>
-            <texPath>Celes/Item/BaseResource/ChipComponent</texPath>
+            <texPath>Celes/Item/BaseResource/NanoComponent</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Metal_Drop</soundInteract>
@@ -214,7 +247,7 @@
         <label>再纺棉纱</label>
         <description>再纺棉纱是基于介质凝胶成丝，掺入塑钢纤维构造的高分子纤维材料。棉布也能在一定程度上取代凝胶成丝。\n\n再纺棉纱相较于棉布并没有显著的防护优势，但其纤维结构总体而言更易加工。</description>
         <graphicData>
-            <texPath>Celes/Item/AdvancedResource/AdvanceCloth</texPath>
+            <texPath>Celes/Item/BaseResource/BaseCloth</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -255,6 +288,48 @@
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>
 
+    <ThingDef ParentName="ResourceBase" Name="ReplicationMaterial"><!-- 尘构复制基质 -->
+        <defName>Celes_ReplicationMaterial</defName>
+        <label>尘构复制基质</label>
+        <description>尘构复制基质，晶体培育器的基本燃料。</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/ReplicationMaterial</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>25</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <MarketValue>0.9</MarketValue>
+            <Flammability>0</Flammability>
+            <Beauty>-8</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-2</Cleanliness>
+            <Mass>1</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Celes_TradeBase</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ReplicationMaterial"><!-- 生物质尘构复制基质 -->
+        <defName>Celes_FleshReplicationMaterial</defName>
+        <label>生物质尘构复制基质</label>
+        <description>尘构复制基质，晶体培育器的基本燃料。这份由生物质制造。</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/FleshReplicationMaterial</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+    </ThingDef>
+    
     <!--<ThingDef ParentName="ResourceBase">
         <defName>CelesNanoManifold</defName>
         <label>the Dust-Mech Manifold</label>
@@ -326,8 +401,8 @@
 
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_NanoCrystallisedCorpse</defName>
-        <label>crystalline corpse</label>
-        <description>For some reason, human corpses that have been almost completely transformed by Dust-Mech have initial state Dust-Mech on them that has crystallised and can be dismantled for recycling and to produce neutral amines as a by-product.</description>
+        <label>晶化尸体</label>
+        <description>出于某种原因，被几乎完全晶体化的人类尸体，其上的晶体可以被拆解回收，并作为副产品产出中性胺。</description>
         <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Celes/Item/BaseResource/NanoCrystallisedCorpse/NanoCrystallisedCorpse</texPath>
@@ -352,8 +427,8 @@
     
     <ThingDef ParentName="UnfinishedBase">
         <defName>Celes_RottenNanoCrystallisedCorpse</defName>
-        <label>Rotten crystalline corpse</label>
-        <description>For some reason, human corpses that have been almost completely transformed by Dust-Mech have initial state Dust-Mech on them that has crystallised and can be dismantled for recycling and to produce neutral amines as a by-product.</description>
+        <label>腐朽的晶化尸体</label>
+        <description>出于某种原因，被几乎完全晶体化的人类尸体，其上的晶体可以被拆解回收。但无论是尸体本身过于陈旧，还是晶体化过程中的差错，其已经无法作为副产品产出中性胺。</description>
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>
             <MarketValue>12</MarketValue>

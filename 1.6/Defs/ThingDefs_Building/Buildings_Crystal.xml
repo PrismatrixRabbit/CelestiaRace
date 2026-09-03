@@ -39,6 +39,10 @@
     <defName>Celes_CrystalSeeder</defName>
     <label>晶体培育器</label>
     <description>周期性在范围内可生长地板上催生尘构晶簇。需要燃料维持运转，无燃料时进入待机。晶簇生长至最高等级后可用自动标记开采。</description>
+    <descriptionHyperlinks>
+      <ThingDef>Celes_InitialCrystalCluster</ThingDef>
+      <ThingDef>Celes_CrystallineMaterial</ThingDef>
+    </descriptionHyperlinks>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Celes/Building/CrystalSeeder/CrystalSeeder</texPath>
@@ -57,18 +61,20 @@
     <designationCategory>Celes_SpecialBuildings</designationCategory>
     <passability>PassThroughOnly</passability>
     <tickerType>Normal</tickerType>
-    <placeWorkers>
-      <li>CelesFeature.PlaceWorker_CrystalGrowRadius</li>
-    </placeWorkers>
     <statBases>
       <WorkToBuild>5000</WorkToBuild>
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
+    <researchPrerequisites>
+      <li>Celes_MainTech_I</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>CelesFeature.PlaceWorker_CrystalGrowRadius</li>
+    </placeWorkers>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <!-- [事实] 用电器不传电：transmitsPower 默认 false（CompProperties_Power.cs:15），写 true 会成电力中继（电缆穿过） -->
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>300</basePowerConsumption>
         <idlePowerDraw>50</idlePowerDraw>
@@ -77,14 +83,15 @@
       <li Class="CompProperties_Refuelable">
         <fuelFilter>
           <thingDefs>
-            <li>Chemfuel</li>
+            <li>Celes_ReplicationMaterial</li>
+            <li>Celes_FleshReplicationMaterial</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>5</fuelCapacity>
         <fuelConsumptionRate>1.0</fuelConsumptionRate>
         <consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
-        <fuelLabel>培育燃料</fuelLabel>
-        <outOfFuelMessage>燃料耗尽，培育停止。</outOfFuelMessage>
+        <fuelLabel>复制基质</fuelLabel>
+        <outOfFuelMessage>基质耗尽，培育停止。</outOfFuelMessage>
       </li>
       <li Class="CelesFeature.Celes_CompProperties_CrystalSeeder">
         <ticksToGrow>10000</ticksToGrow>
@@ -110,7 +117,6 @@
         </pointToGrow>
         <chanceToGrow>0.33</chanceToGrow>
       </li>
-      <!-- 尸体投入暂时注释（K7 搁置，恢复时取消注释并恢复 C# 3 文件） -->
       <!--
       <li Class="CelesFeature.Celes_CompProperties_CorpseFuel">
         <corpseBlacklist>
@@ -127,7 +133,10 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Celes_CrystalSeed</defName>
     <label>野外晶种</label>
-    <description>会自然催生尘构晶簇的活性晶体。每次生长判定消耗一次活性，判定次数耗尽后失活，范围内晶簇停止生长。</description>
+    <description>会自然催生尘构晶簇的活性晶体。会吸收并毒害附近的植物和动物，一定时间后失活，失活后范围内晶簇停止生长。但其范围内的尘构毒性不会消失。</description>
+    <descriptionHyperlinks>
+      <ThingDef>Celes_CrystallineMaterial</ThingDef>
+    </descriptionHyperlinks>
     <thingClass>CelesFeature.Celes_CrystalSeedThing</thingClass>
     <building>
       <expandHomeArea>false</expandHomeArea>
@@ -216,7 +225,10 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Celes_CrystalInitialSeed</defName>
     <label>初始晶种</label>
-    <description>会自然催生尘构晶簇的活性晶体。每次生长判定消耗一次活性，判定次数耗尽后失活，范围内晶簇停止生长。</description>
+    <description>会自然催生尘构晶簇的核心活性晶体，拆除以获得初始晶簇。会吸收并毒害附近的植物和动物，一定时间后失活，失活后范围内晶簇停止生长。但其范围内的尘构毒性不会消失。</description>
+    <descriptionHyperlinks>
+      <ThingDef>Celes_InitialCrystalCluster</ThingDef>
+    </descriptionHyperlinks>
     <thingClass>CelesFeature.Celes_CrystalSeedThing</thingClass>
     <building>
       <expandHomeArea>false</expandHomeArea>

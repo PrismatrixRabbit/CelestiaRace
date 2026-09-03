@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- ═══ 开局任务链对话树（2026-08-25） ═══
-         根树状态机 = StartRootTree 遍历 isRoot 树、conditions 满足第一个命中（DialogueEngine.cs:233-243 实证）
-         顺序（本文件内顺序）：① 道歉树B(星铃) → ② 道歉树C(过期) → ③ 道歉树A(常态) → ④ 主树 → ⑤ 彩蛋树(兜底)
-         对话变量：
-           ApologyTriggered（GameComponent 字段 → RefreshDialogueVars 单向同步）
-           ApologyScenario（同上；4=星铃）
-           ApologyViewed（纯对话变量——道歉树 entryComps SetVariable 置位，引擎持久化，防双向不同步）
-           EasterEggDone（纯对话变量——彩蛋树选项 sets 置位）
-           Level/Relation/ApologyExpired/playerFactionName（RefreshDialogueVars 动态计算）
-         补偿发放 = 进入节点即发（entryComps 挂 Resource comp——OnNodeEntered 覆写实证）
-         占位文本【待用户补充】标注为 "[占位]" -->
-
-    <!-- ═══ ① 道歉树 B（星铃剧本：极光号科考队叙事；不受 2 象过期限制——用户裁决） ═══ -->
+    <!-- ═══ ① 道歉树 B（星铃剧本：极光号科考队） ═══ -->
     <CelesFeature.CelesFD_DialogueTreeDef>
         <defName>RootTree_ApologyB</defName>
         <startNode>N_ApologyB_Intro</startNode>
@@ -20,7 +8,7 @@
         <conditions>
             <li><varName>ApologyTriggered</varName><Equal>1</Equal></li>
             <li><varName>ApologyViewed</varName><Equal>0</Equal></li>
-            <li><varName>ApologyCelestia</varName><Equal>1</Equal></li>
+            <li><varName>ApologyScenario</varName><Equal>4</Equal></li>
         </conditions>
     </CelesFeature.CelesFD_DialogueTreeDef>
 
@@ -66,7 +54,7 @@
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <!-- ═══ ② 道歉树 C（过期：道歉触发 2 象后才联系——补偿缩水 0/300，需"索要赔偿"互动） ═══ -->
+    <!-- ═══ ② 道歉树 C（过期：道歉触发 2 象后才联系） ═══ -->
     <CelesFeature.CelesFD_DialogueTreeDef>
         <defName>RootTree_ApologyC</defName>
         <startNode>N_ApologyC_Intro</startNode>
@@ -74,7 +62,8 @@
         <conditions>
             <li><varName>ApologyTriggered</varName><Equal>1</Equal></li>
             <li><varName>ApologyViewed</varName><Equal>0</Equal></li>
-            <li><varName>ApologyCelestia</varName><Equal>0</Equal></li>
+            <li><varName>ApologyScenario</varName><Equal>4</Equal></li>
+            <li><Not>true</Not></li>
             <li><varName>ApologyExpired</varName><Equal>1</Equal></li>
         </conditions>
     </CelesFeature.CelesFD_DialogueTreeDef>
@@ -140,7 +129,7 @@
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <!-- ═══ ③ 道歉树 A（常态：道歉触发 2 象内联系——补偿 5/300） ═══ -->
+    <!-- ═══ ③ 道歉树 A（常态） ═══ -->
     <CelesFeature.CelesFD_DialogueTreeDef>
         <defName>RootTree_ApologyA</defName>
         <startNode>N_ApologyA_Intro</startNode>
@@ -148,7 +137,8 @@
         <conditions>
             <li><varName>ApologyTriggered</varName><Equal>1</Equal></li>
             <li><varName>ApologyViewed</varName><Equal>0</Equal></li>
-            <li><varName>ApologyCelestia</varName><Equal>0</Equal></li>
+            <li><varName>ApologyScenario</varName><Equal>4</Equal></li>
+            <li><Not>true</Not></li>
             <li><varName>ApologyExpired</varName><Equal>0</Equal></li>
         </conditions>
     </CelesFeature.CelesFD_DialogueTreeDef>
@@ -195,13 +185,15 @@
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <!-- ═══ ④ 主树（等级 0/1 × 关系 敌/中/盟 6 差分文本；含信标站管理入口保全 F4） ═══ -->
+    <!-- ═══ ④ 主树（等级 0/1 × 关系 敌/中/盟 6 差分文本；含信标站管理入口） ═══ -->
     <CelesFeature.CelesFD_DialogueTreeDef>
         <defName>RootTree_Main</defName>
         <startNode>N_Main_Intro</startNode>
         <isRoot>true</isRoot>
         <conditions>
-            <li><varName>MainAccessible</varName><Equal>1</Equal></li>
+            <li><varName>ApologyViewed</varName><Equal>1</Equal></li>
+            <li><varName>EasterEggDone</varName><Equal>1</Equal></li>
+            <li><Or>true</Or></li>
         </conditions>
     </CelesFeature.CelesFD_DialogueTreeDef>
 
@@ -380,8 +372,6 @@
         <options>
             <li>
                 <label>结束</label>
-                <!-- 等效关闭页面（2026-08-25）：CloseWindow comp 移除发信器窗口；
-                     ConfigErrors 要求 next/failNode 非空——窗口已关不可见，二者指向自身停留 -->
                 <comps>
                     <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_CloseWindow" />
                 </comps>
@@ -391,7 +381,7 @@
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <!-- ═══ ⑤ 彩蛋树（默认兜底：道歉信未触发时黑入频段——"你是怎么黑入这个频段的……？！"；结束进主树） ═══ -->
+    <!-- ═══ ⑤ 彩蛋树（道歉信未触发时黑入频段——"你是怎么黑入这个频段的……？！"；结束进主树） ═══ -->
     <CelesFeature.CelesFD_DialogueTreeDef>
         <defName>RootTree_EasterEgg</defName>
         <startNode>N_EasterEgg_Intro</startNode>
@@ -412,4 +402,86 @@
             <li><label>[占位]（继续询问）</label><next>N_EasterEgg_Intro</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
+
+
+    <!-- ═══ 信标站管理树（查看/申请/放弃） ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_Main</defName>
+        <nodeText>信标站管理。您可以查看现有信标站或申请新信标站。</nodeText>
+        <options>
+            <li>
+                <label>查看信标站 / 申请放弃</label>
+                <next>N_Beacon_List</next>
+            </li>
+            <li>
+                <label>申请新信标站（5 信用额）</label>
+                <comps>
+                    <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_BeaconRequest">
+                        <creditCost>5</creditCost>
+                    </li>
+                </comps>
+                <next>N_Beacon_RequestOK</next>
+                <failNode>N_Beacon_RequestFail</failNode>
+            </li>
+            <li>
+                <label>返回主菜单</label>
+                <next>N_Main_Options</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_List</defName>
+        <nodeText>当前 {beaconCount}/3 个信标站。本清单列出所有信标站，选中特定信标站申请放弃。</nodeText>
+        <entryComps>
+            <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_BeaconList" />
+        </entryComps>
+        <options>
+            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_Confirm</defName>
+        <nodeText>确认放弃 {beaconTargetName}？</nodeText>
+        <entryComps>
+            <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_BeaconConfirmEntry" />
+        </entryComps>
+        <options>
+            <li>
+                <label>确认放弃</label>
+                <comps>
+                    <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_BeaconAbandon" />
+                </comps>
+                <next>N_Beacon_AbandonOK</next>
+                <failNode>N_Beacon_List</failNode>
+            </li>
+            <li><label>返回清单</label><next>N_Beacon_List</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_RequestOK</defName>
+        <nodeText>申请成功，星铃外勤部已在远处建立新信标站。</nodeText>
+        <options>
+            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_RequestFail</defName>
+        <nodeText>申请被拒绝：信用额不足、名额已满或无法找到合适位置。</nodeText>
+        <options>
+            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_Beacon_AbandonOK</defName>
+        <nodeText>信标站已被放弃。</nodeText>
+        <options>
+            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    
 </Defs>

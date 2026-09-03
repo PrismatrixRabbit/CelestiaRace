@@ -13,4 +13,11 @@
         <drawOrder>-1</drawOrder>
     </ApparelLayerDef>
 
+    <!-- W-1：星铃支援呼叫器专属槽位（自定 apparel layer，照 Celes_Underwear 模式） -->
+    <ApparelLayerDef>
+        <defName>CelesFD_SupportCallerLayer</defName>
+        <label>support caller</label>
+        <drawOrder>-1</drawOrder>
+    </ApparelLayerDef>
+
 </Defs>

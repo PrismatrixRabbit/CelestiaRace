@@ -3,7 +3,12 @@
 
     <PawnKindDef Name="Celes_ServantUnit" ParentName="Celes_ServantPawnBase">
         <defName>Celes_ServantUnit</defName>
-        <label>servant unit</label>
+        <labelPlural>星铃通用侍仆</labelPlural>
+        <labelMale>星铃通用侍仆</labelMale>
+        <labelMalePlural>星铃通用侍仆</labelMalePlural>
+        <labelFemale>星铃通用侍仆</labelFemale>
+        <labelFemalePlural>星铃通用侍仆</labelFemalePlural>
+        <label>星铃通用侍仆</label>
         <combatPower>40</combatPower>
         <itemQuality>Normal</itemQuality>
         <isFighter>true</isFighter>
@@ -31,7 +36,12 @@
 
     <PawnKindDef ParentName="Celes_ServantUnit">
         <defName>Celes_ServantUnitClaw</defName>
-        <label>farm servant unit</label>
+        <labelPlural>星铃农用侍仆</labelPlural>
+        <labelMale>星铃农用侍仆</labelMale>
+        <labelMalePlural>星铃农用侍仆</labelMalePlural>
+        <labelFemale>星铃农用侍仆</labelFemale>
+        <labelFemalePlural>星铃农用侍仆</labelFemalePlural>
+        <label>星铃农用侍仆</label>
         
         <startingHediffs>
             <li>
@@ -44,7 +54,12 @@
 
     <PawnKindDef ParentName="Celes_ServantUnit">
         <defName>Celes_ServantUnitHammer</defName>
-        <label>construct servant unit</label>
+        <labelPlural>星铃工建侍仆</labelPlural>
+        <labelMale>星铃工建侍仆</labelMale>
+        <labelMalePlural>星铃工建侍仆</labelMalePlural>
+        <labelFemale>星铃工建侍仆</labelFemale>
+        <labelFemalePlural>星铃工建侍仆</labelFemalePlural>
+        <label>星铃工建侍仆</label>
 
         <startingHediffs>
             <li>

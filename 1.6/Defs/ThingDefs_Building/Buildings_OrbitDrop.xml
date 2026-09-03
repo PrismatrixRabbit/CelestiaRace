@@ -2,9 +2,9 @@
 <Defs>
   <ThingDef ParentName="BuildingBase" Name="Celes_CrateBase" Abstract="True">
     <graphicData>
-      <texPath>Things/Special/DropPodMechanoid</texPath>
+      <texPath>Celes/Building/DropPod/DropPodCelestia</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.9,1.9)</drawSize>
+      <drawSize>(3,3)</drawSize>
     </graphicData>
     <thingClass>CelesFeature.CelesFD_Building_OrbitCrate</thingClass>
     <building>
@@ -24,15 +24,26 @@
     <costList>
       <Steel>20</Steel>
     </costList>
+    <!-- W-2a-fix（2026-09-03 全量打包）：垃圾箱容器统一开态贴图（Building_Grave 模式反转——A2-11；
+         三子类均无自有 modExtensions → 继承基类此扩展） -->
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OpenGraphicExtension">
+        <openGraphicData>
+          <texPath>Celes/Building/DropPod/DropPodCelestiaEmpty</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(3,3)</drawSize>
+        </openGraphicData>
+      </li>
+    </modExtensions>
   </ThingDef>
 
-  <!-- 普通垃圾箱容器（普通表 showContents=false 默认——显示内容） -->
+  <!-- 普通垃圾箱容器（普通表 showContents=false 默认——显示内容；W-2a-fix：ext 改指建筑版 crate） -->
   <ThingDef ParentName="Celes_CrateBase">
     <defName>CelesFD_OrbitTrashCrateNormal</defName>
     <label>星铃轨道垃圾箱</label>
     <modExtensions>
       <li Class="CelesFeature.CelesFD_OrbitDropFallerExtension">
-        <crateDef>CelesFD_DropCrate_TrashNormal</crateDef>
+        <crateDef>CelesFD_DropCrate_TrashNormalBuilding</crateDef>
       </li>
     </modExtensions>
   </ThingDef>
@@ -142,6 +153,53 @@
         <thingDefName>GoldenCube</thingDefName>
         <amountRange>1~1</amountRange>
         <weight>0.5</weight>
+      </li>
+    </contents>
+  </CelesFeature.CelesFD_LootTableDef>
+
+  <!-- ═══ W-2a：武备支援空投舱容器（a-1 早期武备空投）═══ -->
+
+  <!-- 支援舱容器：普通贴图 + 开态贴图（Empty）——Building_Grave 模式反转（A2-11；CelesFD_OpenGraphicExtension） -->
+  <ThingDef ParentName="Celes_CrateBase">
+    <defName>CelesFD_Building_SupportPod</defName>
+    <label>星铃武备空投舱</label>
+    <modExtensions>
+      <li Class="CelesFeature.CelesFD_OpenGraphicExtension">
+        <openGraphicData>
+          <texPath>Celes/Building/DropPod/DropPodCelestiaEmpty</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(3,3)</drawSize>
+        </openGraphicData>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- 战利品表：早期武备（spawnAll = 固定清单全给——三件武器品质均一般[Normal]、匕首玻璃钢材质；
+       defNames 实证：Gun_BoltActionRifle / Gun_Revolver / MeleeWeapon_Knife / Plasteel） -->
+  <CelesFeature.CelesFD_LootTableDef>
+    <defName>CelesFD_Loot_SupportPodStarter</defName>
+    <buildingDef>CelesFD_Building_SupportPod</buildingDef>
+    <showContents>true</showContents>
+    <spawnAll>true</spawnAll>
+    <contents>
+      <li>
+        <thingDefName>Gun_BoltActionRifle</thingDefName>
+        <amountRange>1~1</amountRange>
+        <weight>1</weight>
+        <qualityRange>Normal~Normal</qualityRange>
+      </li>
+      <li>
+        <thingDefName>Gun_Revolver</thingDefName>
+        <amountRange>1~1</amountRange>
+        <weight>1</weight>
+        <qualityRange>Normal~Normal</qualityRange>
+      </li>
+      <li>
+        <thingDefName>MeleeWeapon_Knife</thingDefName>
+        <amountRange>1~1</amountRange>
+        <weight>1</weight>
+        <stuffDefName>Plasteel</stuffDefName>
+        <qualityRange>Normal~Normal</qualityRange>
       </li>
     </contents>
   </CelesFeature.CelesFD_LootTableDef>

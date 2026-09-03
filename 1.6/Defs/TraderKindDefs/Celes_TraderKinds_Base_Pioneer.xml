@@ -19,7 +19,7 @@
                 <countRange>6~20</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
-                <thingDef>Celes_SpaceWeapenComponent</thingDef>
+                <thingDef>Celes_AdvancedComponent</thingDef>
                 <countRange>2~6</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">

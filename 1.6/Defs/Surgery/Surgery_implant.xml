@@ -13,19 +13,19 @@
         <label>从血液中分离晶体</label>
         <description>在星铃的血液中充盈着不断维护她们身体的尘构物质，而只有在稳态模式，其中一些处于尚未被施加指令，只能自我复制的初始状态。\n\n这一手术的目的便是在提取出星铃血液的同时，分离出这些初始状态尘构物质，而这些尘构会自主还原为我们所说的初始晶态材料。这是极端情况下的应急之选。如果没有足够的血液，便无法分离出足以自我维持的初始晶态材料。</description>
         <workerClass>Recipe_ExtractHemogen</workerClass>
-        <jobString>Separating Dust-Mech from Blood.</jobString>
+        <jobString>正在从血液中分离晶体</jobString>
         <workAmount>500</workAmount>
         <hideBodyPartNames>true</hideBodyPartNames>
         <targetsBodyPart>false</targetsBodyPart>
         <isViolation>true</isViolation>
         <descriptionHyperlinks>
-            <ThingDef>Celes_NanoMachine</ThingDef>
+            <ThingDef>Celes_CrystallineMaterial</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>Celes_NanoMachine</uiIconThing>
+        <uiIconThing>Celes_CrystallineMaterial</uiIconThing>
         <anesthetize>false</anesthetize>
         <workSkillLearnFactor>2</workSkillLearnFactor>
         <products>
-            <Celes_NanoMachine>3</Celes_NanoMachine>
+            <Celes_CrystallineMaterial>4</Celes_CrystallineMaterial>
         </products>
         <researchPrerequisites>
             <li>Celes_MainTech_I</li>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
     <ResearchTabDef>
@@ -29,19 +29,22 @@
     <ResearchProjectDef>
         <defName>Celes_MainTech_I</defName><!-- 复制指令 -->
         <label>复制指令</label>
-        <description>通过破译尘构指令符号集，初步理解如何利用电场诱导尘构自我复制。</description>
+        <description>通过破译尘构指令符号集，初步理解如何利用电场诱导尘构自我复制。\n\n对于边缘世界，最大的难点或许是……怎么搞到一些初始晶态物质用于研究。</description>
         <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Electricity</li>
         </prerequisites>
+        <requiredAnalyzed>
+            <li>Celes_CrystallineMaterial</li>
+        </requiredAnalyzed>
         <researchViewX>0</researchViewX>
         <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
         <discoveredLetterTitle>关于：尘构复制</discoveredLetterTitle>
-        <discoveredLetterText>这里之后用来介绍结晶器机制。</discoveredLetterText>
+        <discoveredLetterText>你的研究人员向你解释了尘构的增殖原理：\n\n总的来说，需要先获得一个自增殖源。初始晶态材料已经丧失了这种多能分化能力，有限的消息指向了一种物品，“初始晶簇”。在这之后，就可以利用星铃的纳米锻炉手动复制少量的尘构，或者搭建一个培育器并配置人工生长环境让其自然增殖。</discoveredLetterText>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -63,7 +66,7 @@
     <ResearchProjectDef>
         <defName>Celes_MainTech_III</defName><!-- 复杂指令集编译 -->
         <label>复杂指令集编译</label>
-        <description>基于尘构指令集进一步推进尘构技术的应用。无论是自行编译，换取还是盗取，一个更完整的尘构指令集都是必不可少的。\n\n&lt;color=#87cefa&gt;"尘构技术，适应性纳米校正系统(Nanotic Engineered Response Drones)，即N.E.R.D.。是一类基于控制论的增强纳米机械，能够在极端环境下自主运作，能够充当生物与机械系统之间的通用接口，感知，传递并处理多源信息流，并进一步将这些指令信息具象为物理世界的操作。" - 摘自星铃自译解技术核心&lt;/color&gt;</description>
+        <description>我们终于知晓了这些奇异晶体的构成，尘构物质。\n\n破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。\n\n&lt;color=#87cefa&gt;＂尘构，学名适应性纳米校正系统(Adaptive Nano Calibration System)，即ANCS。是由星铃文明研发的，基于控制论的增强纳米机械。尘构能够融合不同的生物与生物，生物与机械，并且充当媒介在其中获取，传递，并处理信息流，在与智能结合的情况下，具有高度的适应性。＂————解析自星铃自译解技术核心&lt;/color&gt;</description>
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -81,8 +84,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_MainTech_IV</defName><!-- 适应性信息流 -->
-        <label>适应性信息流(WIP)</label>
-        <description>适应性信息流(WIP)</description>
+        <label>尘构重编程(正在制作)</label>
+        <description>在星铃的理论体系，物质世界由且仅由三部分组成：物质，能量，信息。星铃早已知晓物质与能量是如何实现统一，而通过尘构物质，星铃实现了物质与信息的统一。通过给予尘构现有方法的重编程，我们或许可以无穷逼近将一切归于索拉里斯之海的可能性。</description>
         <baseCost>4000</baseCost>
         <techLevel>Ultra</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -154,7 +157,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_IV</defName><!-- 试验性改造 --><!-- 待编辑 -->
-        <label>试验性改造(WIP)</label>
+        <label>试验性改造武器(正在制作)</label>
         <description>允许制造磁重联加速器与放射性高能等离子发射器，这种武器源于对旧时代飞船维修工具的试验性改造，但能爆发出夸张的杀伤力。</description>
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
@@ -174,7 +177,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_V</defName><!-- 北极星工程 -->
-        <label>北极星工程(WIP)</label>
+        <label>北极星工程(即将推出)</label>
         <description>北极星工程(WIP)</description>
         <baseCost>10000</baseCost>
         <techLevel>Ultra</techLevel>
@@ -218,7 +221,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Bio_II</defName><!-- 分子药物编织 -->
-        <label>Celestia combat biochemistry</label>
+        <label>星铃作战生化</label>
         <description>进一步解析星铃生化科技，解锁制作星铃作战药物。</description>
         <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
@@ -234,7 +237,7 @@
     <ResearchProjectDef>
         <defName>Celes_Bio_III</defName><!-- 重序指令 -->
         <label>重序指令</label>
-        <description>纯净的元素材料在边缘世界无法稳定供应，要创造更优质的材料，必须基于对现有材料的原子级重排序。\n\nUnlocks the crafting of "CPS-1 Combat Psychic Stimulants", which drastically strengthens the user's psychic powers through the direct ingestion of specially encoded Dust-Mech substances.</description>
+        <description>解锁制作「CPS-1作战灵能强化剂」，通过直接摄入特殊编码的尘构物质大幅强化使用者的精神力。</description>
         <baseCost>1500</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -254,8 +257,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Bio_IV</defName><!-- 高危试验性药物 -->
-        <label>High-risk experimental medicines</label>
-        <description>Unlocks the crafting of "RS-1 Experimental Stimulants", a dangerously efficient final resort obtained by overriding the commands of Luciferium using Dust-Mech. \n\nThe overwriting and overloading of Luciferium using Dust-Mech did solve the nano-mechanical mixture's shortcomings in co-ordination ability, but it also made the drug more unstable - which then manifested itself in RS-1's high probability of coma and heart attack side effects.</description>
+        <label>高危试验性药物</label>
+        <description>解锁制作「RS-1试验性强化剂」，通过利用尘构对路西法合剂的指令进行覆写，得到的一种危险高效的最终手段。\n\n利用尘构对路西法合剂的覆写和过载确实解决了这种纳米机械混合物在协调能力上的缺陷，但也让这种药物变得更不稳定——这便体现在RS-1高概率的昏迷与心脏病副作用上。</description>
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -287,8 +290,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_NanoImplant_I</defName><!-- 生体转译 -->
-        <label>Invasive Implantation</label>
-        <description>Unlocks "Invasive Dust-Mech Implantation" surgery, an extreme enhancement that uses Dust-Mech substances to replace some bodily functions, most of the time with side effects that are in the controllable range for Celestia. \n\nThe Celestia's technology manual says so ...... but it doesn't say what side effects it would have on races other than Celestia.</description>
+        <label>生体转译</label>
+        <description>解锁「尘构重激活」手术，通过自复制晶体植入或调整星铃体内的固有节律。这项手术通常适用于血液尘构系统因为未知原因失活的星铃，而在边缘世界，也同样适用于尘构节律混乱的产妇和新生儿。\n\n星铃的技术说明是这么说的……但上面没有说对星铃之外的种族会有什么作用。</description>
         <descriptionHyperlinks>
         </descriptionHyperlinks>
         <baseCost>500</baseCost>
@@ -299,14 +302,14 @@
         <researchViewX>2</researchViewX>
         <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
-        <discoveredLetterTitle>About: Invasive Implantation</discoveredLetterTitle>
-        <discoveredLetterText>About: Invasive Implantation</discoveredLetterText>
+        <discoveredLetterTitle>关于：尘构重激活</discoveredLetterTitle>
+        <discoveredLetterText>你的研究人员大致解译了这项星铃的全新技术：\n\n现在，你可以通过自复制晶体，为尘构节律失活的个体或者新生儿重建尘构节律，又或者用其调整星铃体内尘构节律的活性，活性尘构节律可以在短期内全面提高星铃的工作能力并带有短暂的疲劳副作用。\n\n而对于未开化物种，由于某种保护性限制，这一技术会无法使用。但对于并非星铃又并非未开化物种的个体……尚且缺乏记录。</discoveredLetterText>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>Celes_NanoImplant_II</defName><!-- 劣化信息论改造 -->
-        <label>degraded cybernetic modification</label>
-        <description>Unlocks "Degraded Cybernetic Modification" surgery, which is generally used on creatures that have been accidentally highly assimilated by the Dust-Mech, and the formula has been tailored for Rimworld materials. \n\nThis technology is restricted to uncivilised animals by the Celestia Technology Regulatory Commission, But in fact only a simple positive or negative modification is needed to use it for humans. In the Rimworld, humans and animals don't seem to be so distinct.</description>
+        <label>劣化信息论改造（正在制作）</label>
+        <description>解锁「劣化信息论改造」手术，这种改造一般运用于由于极低概率事件意外被尘构高度同化的生物，配方已经针对边缘世界的物资进行针对性调整。\n\n这种技术被技术监管委员会限定只能用于未开化动物，但事实上只需要修改一个"+"号就能用于人类。在边缘世界，人类和动物似乎并不是那么泾渭分明……\n\n作为这个技术的副产物，允许制作「侍仆防护长袍」。</description>
         <descriptionHyperlinks>
         </descriptionHyperlinks>
         <baseCost>300</baseCost>
@@ -323,8 +326,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Prosthesis_I</defName><!-- 尘构调用:活械调用 -->
-        <label>Dust-Mech Call:Signal Transcoding(WIP)</label>
-        <description>Dust-Mech Call:Signal Transcoding(WIP)</description>
+        <label>尘构调用:活械转译\n(即将推出)</label>
+        <description>活械转译技术也在做呢，别急别急。</description>
         <baseCost>2000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -345,7 +348,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Prosthesis_II</defName><!-- 超控统合 -->
-        <label>Dust-Mech Call:Signal Transcoding(WIP)</label>
+        <label>超控统合</label>
         <description>Dust-Mech Call:Signal Transcoding(WIP)</description>
         <baseCost>2000</baseCost>
         <techLevel>Spacer</techLevel>
@@ -367,7 +370,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Mech_I</defName><!-- 星铃信息论基础 --><!-- 待编辑 -->
-        <label>Celes_Mech_I(WIP)</label>
+        <label>星铃信息论基础</label>
         <description>Celes_Mech_I</description>
         <!-- 机械体培育器 机械体充电桩 旋翼工作无人机 四轮工作无人机 机控装备 -->
         <baseCost>300</baseCost>
@@ -380,13 +383,13 @@
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
-        <discoveredLetterTitle>Celes_Mech_I</discoveredLetterTitle>
-        <discoveredLetterText>Celes_Mech_I</discoveredLetterText>
+        <discoveredLetterTitle>新信息破译</discoveredLetterTitle>
+        <discoveredLetterText>你的研究人员新近破译到一段来自星铃的讯息：\n\n“这里是星铃拓荒队，这条消息向所有能够接受到本消息的个人/团体/组织/政治实体通告：\n\n星铃拓荒队已经开放外勤部门信道，任何对星铃拓荒队做出贡献的个人/团体/组织/政治实体，现在可以凭借贡献兑换密钥，进而兑换来自星铃的支援。这条消息会周期性重复。\n\n对于听不懂这些东西的聪明蛋，你只需要知道现在呼叫星铃，给星铃办事，好处很多。消息结束。”</discoveredLetterText>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>Celes_Mech_II</defName><!-- 机械神经模式 -->
-        <label>Celes_Mech_II(WIP)</label>
+        <label>机械神经模式</label>
         <description>Celes_Mech_II</description>
         <!-- 犬形辅助仿生机械 改良机控装备 -->
         <baseCost>300</baseCost>
@@ -406,7 +409,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Mech_III</defName><!-- 晶体拟电突触 --><!-- 待编辑 -->
-        <label>Celes_Mech_III(WIP)</label>
+        <label>晶体拟电突触</label>
         <description>Celes_Mech_III</description>
         <!-- 犬形辅助仿生机械 改良机控装备 -->
         <baseCost>300</baseCost>
@@ -426,7 +429,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Mech_IV</defName><!-- 融合思维理论 --><!-- 待编辑 -->
-        <label>Celes_Mech_IV(WIP)</label>
+        <label>融合思维理论</label>
         <description>Celes_Mech_IV</description>
         <!-- 犬形辅助仿生机械 改良机控装备 -->
         <baseCost>300</baseCost>
@@ -446,7 +449,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Mech_V</defName><!-- 欧米伽心智 --><!-- 待编辑 -->
-        <label>Celes_Mech_V(WIP)</label>
+        <label>欧米伽心智</label>
         <description>Celes_Mech_V</description>
         <!-- 犬形辅助仿生机械 改良机控装备 -->
         <baseCost>300</baseCost>
@@ -467,7 +470,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Manufactory_I</defName><!-- 模式化锻造理论 --><!-- 待编辑 -->
-        <label>Celes_Manufactory_I(WIP)</label>
+        <label>晶体场控锻造</label>
         <description>Celes_Manufactory_I</description>
         <!-- 纳米离心机 纳米纤维织机 -->
         <baseCost>500</baseCost>
@@ -486,7 +489,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Manufactory_II</defName><!-- 大规模生产理论 --><!-- 待编辑 -->
-        <label>Celes_Manufactory_II(WIP)</label>
+        <label>尘构纳米锻造</label>
         <description>Celes_Manufactory_II</description>
         <!-- 纳米离心机 纳米纤维织机 -->
         <baseCost>500</baseCost>
@@ -591,7 +594,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_IV</defName><!-- 星铃动力突击装甲 -->
-        <label>星铃动力突击装甲(WIP)</label>
+        <label>星铃动力突击装甲(正在制作)</label>
         <description>解锁星铃动力突击盔甲，在太空活动防护服的基础上，结合一部分曾用于星铃外环星域治安部队的技术制作出属于星铃的动力突击装甲。\n\n那些真的会被母星系武装力量使用的标准动力装甲，连材料都在边缘世界难以制造，但这种装甲也足够面对边缘世界的冲突烈度。</description>
         <baseCost>6000</baseCost>
         <techLevel>Spacer</techLevel>
@@ -614,7 +617,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_V</defName><!-- 北冕座项目 -->
-        <label>北冕座项目(WIP)</label>
+        <label>北冕座项目(即将推出)</label>
         <description>北冕座项目是星铃拓荒队自行研发的新一代动力装甲，这些装备上还能看见来自星铃母星系的一些余影。</description>
         <baseCost>10000</baseCost>
         <techLevel>Ultra</techLevel>
@@ -634,7 +637,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Apparel_VI</defName><!-- 英仙座工程 -->
-        <label>英仙座工程(WIP)</label>
+        <label>英仙座工程(即将推出)</label>
         <description>英仙座工程(WIP)</description>
         <baseCost>10000</baseCost>
         <techLevel>Ultra</techLevel>

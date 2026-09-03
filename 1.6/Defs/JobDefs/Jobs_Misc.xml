@@ -15,6 +15,14 @@
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
 
+    <!-- W-1：支援呼叫（原地施放 + 自定义文案/诊断；GetReport 覆写于 CelesFD_JobDriver_SupportCall） -->
+    <JobDef>
+        <defName>CelesFD_SupportCall</defName>
+        <driverClass>CelesFeature.CelesFD_JobDriver_SupportCall</driverClass>
+        <reportString>正在呼叫支援</reportString>
+        <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+    </JobDef>
+
     <!-- 尸体投入暂时注释（K7 搁置，恢复时取消注释并恢复 C# 3 文件） -->
     <!--
     <JobDef>

@@ -25,8 +25,8 @@
 
     <ThingDef ParentName="Celes_SpacerMeleeBase">
         <defName>CelesSaberSpacer</defName>
-        <label>Celestia standard mono saber</label>
-        <description>A Celestia standard mono saber, a redesign of the classic model. Uses a fairly lethal monomolecular blade, with an additional short burst of EMP damage when attacking.</description>
+        <label>星铃制式单分子军刀</label>
+        <description>一把星铃制式标准的单分子军刀，对古典款军刀的重设计。使用相当致命的单分子刀刃，在攻击时会额外附带短暂的EMP伤害。</description>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_MonoSaber</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -35,7 +35,7 @@
         <uiIconScale>1.0</uiIconScale>
         <costList>
             <Plasteel>80</Plasteel>
-            <Celes_SpaceWeapenComponent>2</Celes_SpaceWeapenComponent>
+            <Celes_AdvancedComponent>2</Celes_AdvancedComponent>
         </costList>
 		<statBases>
             <WorkToMake>45000</WorkToMake>
@@ -57,7 +57,7 @@
         </recipeMaker>
         <tools>
             <li>
-                <label>point</label>
+                <label>刀尖</label>
                 <capacities>
                     <li>Stab</li>
                 </capacities>
@@ -73,7 +73,7 @@
                 </extraMeleeDamages>
             </li>
             <li>
-                <label>edge</label>
+                <label>刀刃</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
@@ -89,7 +89,7 @@
                 </extraMeleeDamages>
             </li>
             <li>
-                <label>handle</label>
+                <label>刀柄</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
@@ -102,8 +102,8 @@
 
     <ThingDef ParentName="Celes_SpacerMeleeBase">
         <defName>CelesMonoDagger</defName>
-        <label>Celestia standard mono dagger</label>
-        <description>A Celestia standard mono dagger, a redesign of the classic model. Uses a fairly lethal monomolecular blade, with an additional short burst of EMP damage when attacking.</description>
+        <label>星铃制式单分子匕首</label>
+        <description>一把星铃制式标准的单分子匕首，对古典款匕首的重设计。使用相当致命的单分子刀刃，在攻击时会额外附带短暂的EMP伤害。</description>
         <graphicData>
             <texPath>Celes/Weapon/Spacer/Celes_MonoDagger</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -112,7 +112,7 @@
         <uiIconScale>1.0</uiIconScale>
         <costList>
             <Plasteel>25</Plasteel>
-            <Celes_SpaceWeapenComponent>1</Celes_SpaceWeapenComponent>
+            <Celes_AdvancedComponent>1</Celes_AdvancedComponent>
         </costList>
 		<statBases>
             <WorkToMake>35000</WorkToMake>
@@ -131,7 +131,7 @@
         </recipeMaker>
         <tools>
             <li>
-                <label>point</label>
+                <label>刀尖</label>
                 <capacities>
                     <li>Stab</li>
                 </capacities>
@@ -147,7 +147,7 @@
                 </extraMeleeDamages>
             </li>
             <li>
-                <label>edge</label>
+                <label>刀刃</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
@@ -163,7 +163,7 @@
                 </extraMeleeDamages>
             </li>
             <li>
-                <label>handle</label>
+                <label>刀柄</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
@@ -206,8 +206,8 @@
 
   <ThingDef ParentName="Celes_UltraMeleeBase">
     <defName>CelesRelicSword</defName>
-    <label>"The Dawn"</label>
-    <description>An ancient weapon from Celestia's home planet, probably the standard plasma longsword of the Celestia Navy, with a deadly single-molecule blade encased in hot plasma. Known today as "The Dawn" for its morale-boosting qualities, the technology to make it has likely been lost.</description>
+    <label>“黎明”</label>
+    <description>一把来自星铃母星的古老武器，可能是星铃海军标配的等离子体长剑，在高温等离子体内包裹的是致命的单分子刀刃。因为这种武器如今对士气的鼓舞而被称为“黎明”，其制造技术很可能已经遗失。</description>
     <graphicData>
         <texPath>Celes/Weapon/Spacer/Celes_RelicSword</texPath>
         <graphicClass>Graphic_Single</graphicClass>
@@ -226,7 +226,7 @@
     </equippedStatOffsets>
 		<tools>
             <li>
-                <label>point</label>
+                <label>剑尖</label>
                 <capacities>
                     <li>Stab</li>
                 </capacities>
@@ -247,7 +247,7 @@
                 </extraMeleeDamages>
             </li>
             <li>
-                <label>blade</label>
+                <label>剑刃</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
@@ -268,7 +268,7 @@
                 </extraMeleeDamages>
             </li>
             <li>
-                <label>handle</label>
+                <label>剑柄</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>

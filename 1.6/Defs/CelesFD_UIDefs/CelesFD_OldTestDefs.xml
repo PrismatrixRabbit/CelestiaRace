@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ═══ 测试选项A树；测试节点保留备用 ═══ -->
+    <CelesFeature.CelesFD_DialogueTreeDef>
+        <defName>RootTree_TestA</defName>
+        <startNode>N_RootA</startNode>
+        <isRoot>false</isRoot>
+    </CelesFeature.CelesFD_DialogueTreeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_RootA</defName>
+        <nodeText>The field department communication system is ready. Communication system log initialization complete. Nothing's written here yet, so you can play this little game.</nodeText>
+        <options>
+            <li>
+                <label>What little game?</label>
+                <next>N_RootA_Relay</next>   <!-- 循环回自身 -->
+            </li>
+            <li>
+                <label>Test Dialogue: Little Game</label>
+                <recordText>Enter test dialogue</recordText>
+                <enterTree>GameTree_Station</enterTree>
+            </li>
+            <li>
+                <label>Debug: Check Status</label>
+                <next>N_DebugInspect</next>
+            </li>
+            <li>
+                <label>F2 Test: Resource Comp</label>
+                <next>N_F2Test_Menu</next>
+            </li>
+            <li>
+                <label>信标站管理</label>
+                <next>N_Beacon_Main</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <!-- ═══ 测试节点（Resource Comp 示例） ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_F2Test_Menu</defName>
+        <nodeText>F2 Resource Comp 测试菜单。信用额随操作变化。建议先用"设为 10"再测支付。</nodeText>
+        <options>
+            <li>
+                <label>设为 10 信用额（Set 路径）</label>
+                <comps>
+                    <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_Resource">
+                        <resource>Credit</resource>
+                        <Set>10</Set>
+                    </li>
+                </comps>
+                <next>N_F2Test_OK</next>
+                <failNode>N_F2Test_NoCredit</failNode>
+            </li>
+            <li>
+                <label>获得 10 信用额（测试）</label>
+                <comps>
+                    <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_Resource">
+                        <resource>Credit</resource>
+                        <Add>10</Add>
+                    </li>
+                </comps>
+                <next>N_F2Test_OK</next>
+                <failNode>N_F2Test_NoCredit</failNode>
+            </li>
+            <li>
+                <label>支付 5 信用额（Add 负值 + checkNeed）</label>
+                <comps>
+                    <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_Resource">
+                        <resource>Credit</resource>
+                        <checkNeed>5</checkNeed>
+                        <Add>-5</Add>
+                    </li>
+                </comps>
+                <next>N_F2Test_OK</next>
+                <failNode>N_F2Test_NoCredit</failNode>
+            </li>
+            <li>
+                <label>动态选项测试（插值 + 注入）</label>
+                <next>N_F2Test_Dynamic</next>
+            </li>
+            <li>
+                <label>返回根树</label>
+                <next>N_RootA</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <!-- ═══ 测试节点：nodeText 插值 + 动态选项注入示例 ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_F2Test_Dynamic</defName>
+        <nodeText>动态选项测试：当前 {beaconCount}/3 个信标站。下方为动态注入的站列表。</nodeText>
+        <entryComps>
+            <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_TestList" />
+        </entryComps>
+        <options>
+            <li><label>返回测试菜单</label><next>N_F2Test_Menu</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_F2Test_OK</defName>
+        <nodeText>操作成功，信用额已更新。</nodeText>
+        <options>
+            <li><label>返回测试菜单</label><next>N_F2Test_Menu</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_F2Test_NoCredit</defName>
+        <nodeText>信用额不足，操作被拒绝。</nodeText>
+        <options>
+            <li><label>返回测试菜单</label><next>N_F2Test_Menu</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_RootA_Relay</defName>
+        <nodeText>This little game!</nodeText>
+        <options>
+            <li>
+                <label>What little game?</label>
+                <next>N_RootA_Relay</next>   <!-- 循环回自身 -->
+            </li>
+            <li>
+                <label>Test Dialogue: Little Game</label>
+                <recordText>Enter test dialogue</recordText>
+                <enterTree>GameTree_Station</enterTree>
+            </li>
+            <li>
+                <label>Debug: F*** you!</label>
+                <next>N_RootA_02</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_RootA_02</defName>
+        <nodeText>Why are you so mean?</nodeText>
+        <options>
+            <li>
+                <label>Continue</label>
+                <next>N_RootA</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <!-- ═══ 调试预留节点：进入时 dev message ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_DebugInspect</defName>
+        <nodeText>Debug state inspection.</nodeText>
+        <options>
+            <li>
+                <label>Return</label>
+                <next>N_RootA</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+</Defs>

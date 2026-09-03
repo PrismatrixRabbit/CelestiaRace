@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="Celes_MakeableDrugBase">
         <defName>Celes_RS1M</defName>
-        <label>RS-1 Experimental Stimulants</label>
-        <description>A synthetic Dust-Mech agent that drastically and comprehensively strengthens the user's body, making it a powerful and unrivalled war machine. Note, however, that the ingestion of RS-1 is accompanied by a high probability of coma and cardiac side effects. \n\nThe drug is essentially a Luciferium that has been tweaked with instructions, and by using the Dust-Mech to override and overload the instructions of the Luciferian concoction, the developers of RS-1 have managed to solve the nanomachine mixture's deficiencies in co-ordination and difficulty in expelling from the body, but with that comes a high degree of instability due to the cross-influence of the Dust-Mech and Luciferium.</description>
+        <label>RS-1试验性强化剂</label>
+        <description>一种合成尘构制剂，大幅全面强化使用者的身体机能，使其成为强大无匹的战争机器。但注意，摄入RS-1的同时伴随着高概率的昏迷与心脏病副作用。\n\n这种药物本质上是被调整了指令的路西法合剂，通过利用尘构对路西法合剂的指令进行覆写和过载，RS-1的研发者成功解决了这种纳米机械混合物在协调能力上的缺陷和难以排出身体的问题，但随之而来的是尘构和路西法合剂的交叉影响导致的高度不稳定。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_RS1_High</HediffDef>
             <HediffDef>Celes_RS1Stun</HediffDef>
@@ -31,8 +31,8 @@
                     <offset>(0.18,0,0)</offset>
                 </northDefault>
             </ingestHoldOffsetStanding>
-            <ingestCommandString>Inject {0}</ingestCommandString>
-            <ingestReportString>Injecting {0}.</ingestReportString>
+            <ingestCommandString>注射{0}</ingestCommandString>
+            <ingestReportString>正在注射{0}</ingestReportString>
             <useEatingSpeedStat>false</useEatingSpeedStat>
             <chairSearchRadius>0</chairSearchRadius>
             <outcomeDoers>
@@ -78,8 +78,8 @@
     
     <HediffDef>
         <defName>Celes_RS1_High</defName>
-        <label>RS-1 effecting</label>
-        <description>The reprogrammed Luciferium in the body is improving the host's bodily functions across the board and will be nullified by Dust-Mech decomposition after some time.</description>
+        <label>RS-1试验性强化剂</label>
+        <description>体内被重编程的路西法合剂正在全面改善宿主的身体机能，并将在一段时间后被尘构分解无效化。</description>
         <hediffClass>Hediff_High</hediffClass>
         <maxSeverity>1</maxSeverity>
         <isBad>false</isBad>
@@ -140,8 +140,8 @@
     
     <HediffDef ParentName="DiseaseBase">
         <defName>Celes_RS1Stun</defName>
-        <label>stress shock</label>
-        <description>The unstable Luciferium caused the user's body to go into a harmless state of protective shock, which would take at least a day to recover from.</description>
+        <label>应激性休克</label>
+        <description>不稳定的路西法合剂导致使用者的身体进入了无害的保护性休克状态，这会花费至少一天来恢复。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_RS1M</ThingDef>
             <HediffDef>Celes_RS1_High</HediffDef>

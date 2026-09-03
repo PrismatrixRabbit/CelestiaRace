@@ -9,8 +9,8 @@
         <showBubble>true</showBubble>
         <stages>
             <li>
-                <label>on duty</label>
-                <description>I have a job to do.</description>
+                <label>外勤援助</label>
+                <description>嘁……外族的殖民地不管怎么看都是垃圾堆呢……烦人……要不是部里工钱给够我才不想来……</description>
                 <baseMoodEffect>10</baseMoodEffect>
             </li>
         </stages>

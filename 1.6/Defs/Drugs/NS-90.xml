@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
     <ThingDef ParentName="Celes_MakeableDrugPillBase">
         <defName>Celes_NS90M</defName>
-        <label>NS-90 nervous stimulants</label>
-        <description>A modified synthetic stimulant that quickly restores the user's resting value and reduces the need for sleep, allowing the user to concentrate more on work. \n\nCompared to wake-up, NS-90 is not addictive, but it is highly tolerable and brings on pain and hunger. Overdose can lead to severe headaches and violent tendencies ...... but it does increase productivity more, use with caution.</description>
+        <label>NS-90神经兴奋剂</label>
+        <description>一种改良的合成兴奋剂，快速恢复使用者的休息值并减少睡眠需求，让使用者更能集中于工作。\n\n相比于清醒丸，NS-90不具成瘾性，但其极易被耐受且带来疼痛和饥饿。过量使用会导致剧烈的头疼和暴力倾向……但确实可以更多的提高工作效率，谨慎使用。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_NS90_High</HediffDef>
             <HediffDef>Celes_NerveStimulateTolerance</HediffDef>
@@ -70,9 +70,9 @@
     <HediffDef>
         <defName>Celes_NS90_High</defName>
         <hediffClass>Hediff_High</hediffClass>
-        <label>NS-90 CNS</label>
-        <labelNoun>a NS-90 CNS high</labelNoun>
-        <description>The NS-90 chemicals that flow through the bloodstream are helping users stay awake and focused.</description>
+        <label>NS-90神经兴奋剂</label>
+        <labelNoun>NS-90效果</labelNoun>
+        <description>流淌在血液中的NS-90化学物质正在帮助使用者维持清醒，并集中注意力。</description>
         <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>
@@ -111,7 +111,7 @@
                 </statFactors>
             </li>
             <li>
-                <label>overdose</label>
+                <label>过量</label>
                 <minSeverity>0.35</minSeverity>
                 <painOffset>0.30</painOffset>
                 <socialFightChanceFactor>3.0</socialFightChanceFactor>
@@ -139,7 +139,7 @@
                 </statFactors>
             </li>
             <li>
-                <label>severe overdose</label>
+                <label>严重过量</label>
                 <minSeverity>0.70</minSeverity>
                 <painOffset>0.75</painOffset>
                 <socialFightChanceFactor>5.0</socialFightChanceFactor>
@@ -183,18 +183,18 @@
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>
             <li>
-                <label>NS-90 excitement</label>
-                <description>Full of energy! Time to get to work!</description>
+                <label>NS-90兴奋</label>
+                <description>精神十足！该干活了！</description>
                 <baseMoodEffect>3</baseMoodEffect>
             </li>
             <li>
-                <label>NS-90 excitement(overdose)</label>
-                <description>I feel like I have inexhaustible energy! Where's the work?</description>
+                <label>NS-90兴奋(过量)</label>
+                <description>我感觉我有用不完的精力！哪儿有活干？！</description>
                 <baseMoodEffect>7</baseMoodEffect>
             </li>
             <li>
-                <label>NS-90 excitement(severe overdose)</label>
-                <description>I feel like my heart is restless and I can't stay idle! Get out of my way!</description>
+                <label>NS-90兴奋(严重过量)</label>
+                <description>我感觉我的心口躁动个不停，我闲不下来！别挡道！</description>
                 <baseMoodEffect>10</baseMoodEffect>
             </li>
         </stages>
@@ -236,8 +236,8 @@
     
     <HediffDef>
         <defName>Celes_NerveStimulateTolerance</defName>
-        <label>NS-90 tolerant brain fog</label>
-        <description>Forced maintenance of arousal via NS-90 causes the nervous system to develop severe tolerance and fall into a state of brain fog, with a reduced ability to be conscious and more easily fatigued.</description>
+        <label>NS-90耐受性脑雾</label>
+        <description>通过NS-90强行维持兴奋使得神经系统产生严重耐受并陷入脑雾状态，意识能力降低且更容易疲劳。</description>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
         <maxSeverity>1.0</maxSeverity>
@@ -254,7 +254,7 @@
         <stages>
             <li>
                 <minSeverity>0</minSeverity>
-                <label>small</label>
+                <label>微弱</label>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -267,7 +267,7 @@
             </li>
             <li>
                 <minSeverity>0.50</minSeverity>
-                <label>large</label>
+                <label>严重</label>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -280,7 +280,7 @@
             </li>
             <li>
                 <minSeverity>0.80</minSeverity>
-                <label>massive</label>
+                <label>极重</label>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -302,18 +302,18 @@
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>
             <li>
-                <label>NS-90 tolerant brain fog(small)</label>
-                <description>A bit of a daze ......</description>
+                <label>NS-90耐受性脑雾(微弱)</label>
+                <description>有点迷糊……</description>
                 <baseMoodEffect>-1</baseMoodEffect>
             </li>
             <li>
-                <label>NS-90 tolerant brain fog(large)</label>
-                <description>I feel a bit dizzy, but it's not right, is it an illusion ......?</description>
+                <label>NS-90耐受性脑雾(严重)</label>
+                <description>我觉得有点头晕，但又不对，是错觉吗……</description>
                 <baseMoodEffect>-3</baseMoodEffect>
             </li>
             <li>
-                <label>NS-90 tolerant brain fog(massive)</label>
-                <description>I feel like I'm mentally fatigued, but I'm clearly not ...... I'm having such a hard time concentrating ......</description>
+                <label>NS-90耐受性脑雾(极重)</label>
+                <description>我感觉我的精神很疲劳，可我明明不累……我有那么一点没法集中注意……</description>
                 <baseMoodEffect>-7</baseMoodEffect>
             </li>
         </stages>
@@ -323,8 +323,8 @@
 
     <HediffDef ParentName="DiseaseBase">
         <defName>Celes_NS90_After</defName>
-        <label>NS-90 acute brain fog</label>
-        <description>Perhaps due to work overload or a drug overdose, the patient developed severe cognitive dissonance, which required at least half a day to adjust and recover.</description>
+        <label>NS-90急性脑雾</label>
+        <description>或许是因为工作过量，又或是药物过量，患者产生了严重的认知失调现象，这至少需要半天的时间调整恢复。</description>
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>30000~60000</disappearsAfterTicks>

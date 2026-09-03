@@ -40,9 +40,9 @@
                 </race>
             </li>
         </modExtensions>
-        <label>Celes_ActiveDustMechRhythm_Standard</label>
-        <description>Celes_ActiveDustMechRhythm_Standard</description>
-        <jobString>Celes_ActiveDustMechRhythm_Standard</jobString>
+        <label>活化尘构节律</label>
+        <description>通过特定手段活化尘构节律。</description>
+        <jobString>正在活化尘构节律</jobString>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
@@ -97,9 +97,9 @@
                 </race>
             </li>
         </modExtensions>
-        <label>Celes_RemoveDustMechRhythm_ActivityForCeles</label>
-        <description>Celes_RemoveDustMechRhythm_ActivityForCeles</description>
-        <jobString>Celes_RemoveDustMechRhythm_ActivityForCeles</jobString>
+        <label>去活化尘构节律</label>
+        <description>对个体去活化尘构机械。</description>
+        <jobString>正在去活化尘构节律</jobString>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
@@ -162,9 +162,9 @@
                 </race>
             </li>
         </modExtensions>
-        <label>Celes_MilitarizeDustMechRhythm_Standard</label>
-        <description>Celes_MilitarizeDustMechRhythm_Standard</description>
-        <jobString>Celes_MilitarizeDustMechRhythm_Standard</jobString>
+        <label>尘构节律军事化</label>
+        <description>尘构节律军事化。</description>
+        <jobString>正在军事化尘构节律</jobString>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Military</HediffDef>
@@ -221,9 +221,9 @@
                 </race>
             </li>
         </modExtensions>
-        <label>Celes_DemilitarizeDustMechRhythm_Standard</label>
-        <description>Celes_DemilitarizeDustMechRhythm_Standard</description>
-        <jobString>Celes_DemilitarizeDustMechRhythm_Standard</jobString>
+        <label>尘构节律非军事化</label>
+        <description>尘构节律非军事化。</description>
+        <jobString>正在非军事化尘构节律</jobString>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Military</HediffDef>
@@ -285,9 +285,9 @@
                 </DisallowWhenHediff>
             </li>
         </modExtensions>
-        <label>Celes_ImplantDustMechRhythm</label>
-        <description>Celes_ImplantDustMechRhythm</description>
-        <jobString>Celes_ImplantDustMechRhythm</jobString>
+        <label>尘构激活</label>
+        <description>通过自复制晶体的侵入式调整，我们可以为尘构节律失活的星铃植入尘构节律。当然也可以是人类植入尘构节律。纵使我们并不确定这样的后果。</description>
+        <jobString>正在激活尘构</jobString>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
@@ -338,9 +338,9 @@
                 </AllowWhenHediff>
             </li>
         </modExtensions>
-        <label>Celes_RemoveDustMechRhythm_ActivityForHuman</label>
-        <description>Celes_RemoveDustMechRhythm_ActivityForHuman</description>
-        <jobString>Celes_RemoveDustMechRhythm_ActivityForHuman</jobString>
+        <label>停机尘构物质</label>
+        <description>对机体中的尘构物质释放停机指令。</description>
+        <jobString>正在停机尘构物质</jobString>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
@@ -394,15 +394,15 @@
                 </AllowWhenHediff>
             </li>
         </modExtensions>
-        <label>remove celestia nanomachine infection from infected person</label>
-        <description>.</description>
+        <label>尘构离心抑制</label>
+        <description>去活化尘构节律(过活性)。过度增殖以至于已经在血液中形成晶体的尘构物质可以在这个过程中被离心析出，而其中一些处于尚未被施加指令，只能自我复制的初始状态。通过类似分离星铃血液中的自复制晶体的方法，我们可以在这个阶段分离出晶体。需要进一步指令停机尘构物质。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Serve</HediffDef>
         </descriptionHyperlinks>
         <workerClass>CelesFeature.Celes_RecipeSurgery</workerClass>
-        <jobString>Removing nanomachine infection.</jobString>
+        <jobString>正在离心并抑制尘构</jobString>
         <workAmount>1500</workAmount>
         <hideBodyPartNames>true</hideBodyPartNames>
         <targetsBodyPart>false</targetsBodyPart>
@@ -456,9 +456,9 @@
                 </DisallowWhenHediff>
             </li>
         </modExtensions>
-        <label>Celes_SetDustMechRhythm_Serve</label>
-        <description>Celes_SetDustMechRhythm_Serve</description>
-        <jobString>Celes_SetDustMechRhythm_Serve</jobString>
+        <label>设置侍从构建</label>
+        <description>设置侍从构建</description>
+        <jobString>正在设置侍从构建</jobString>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Military</HediffDef>

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
     <ThingDef ParentName="OrbitalStrikeBase">
         <defName>CelesArtilleryStrike</defName>
-        <label>celes artillery strike</label>
+        <label>轨道指示束</label>
         <thingClass>CelesFeature.CelesArtilleryStrike</thingClass>
         <comps>
             <li Class="CompProperties_OrbitalBeam">

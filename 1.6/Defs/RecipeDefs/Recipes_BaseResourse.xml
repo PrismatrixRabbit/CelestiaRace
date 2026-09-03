@@ -47,6 +47,9 @@
             <categories>
                 <li>StoneChunks</li>
             </categories>
+            <thingDefs>
+                <li>Celes_InitialCrystalCluster</li>
+            </thingDefs>
         </fixedIngredientFilter>
         <products>
             <Celes_CrystallineMaterial>1</Celes_CrystallineMaterial>
@@ -94,6 +97,12 @@
                 <count>4</count>
             </li>
         </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Celes_CrystallineMaterial</li>
+                <li>Celes_BioGel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
         <products>
             <Celes_NanoMachine>1</Celes_NanoMachine>
         </products>
@@ -164,9 +173,9 @@
         <descriptionHyperlinks>
             <ThingDef>Steel</ThingDef>
             <ThingDef>Celes_NanoMachine</ThingDef>
-            <ThingDef>Celes_ChipComponent</ThingDef>
+            <ThingDef>Celes_NanoComponent</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>Celes_ChipComponent</uiIconThing>
+        <uiIconThing>Celes_NanoComponent</uiIconThing>
         <jobString>正在锻造尘构机械单元</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
@@ -198,7 +207,7 @@
             </li>
         </ingredients>
         <products>
-            <Celes_ChipComponent>2</Celes_ChipComponent>
+            <Celes_NanoComponent>2</Celes_NanoComponent>
         </products>
         <displayPriority>2020</displayPriority>
     </RecipeDef>
@@ -255,6 +264,91 @@
             <Celes_Cloth>50</Celes_Cloth>
         </products>
         <displayPriority>1505</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_MakeReplicationMaterial</defName><!-- 提取尘构复制基质 --><!-- 暂未完成 -->
+        <label>提取尘构复制基质</label>
+        <description>提取尘构复制基质。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_ReplicationMaterial</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>Celes_ReplicationMaterial</uiIconThing>
+        <jobString>正在提取尘构复制基质</jobString>
+        <effectWorking>CutStone</effectWorking>
+        <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+        <workAmount>1200</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+            <li>TableStonecutter</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_I</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <Celes_ReplicationMaterial>1</Celes_ReplicationMaterial>
+        </products>
+        <displayPriority>1002</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_MakeFleshReplicationMaterial</defName><!-- 提取尘构复制基质 --><!-- 暂未完成 -->
+        <label>提取尘构复制基质（生物质）</label>
+        <description>从生物质提取尘构复制基质。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_FleshReplicationMaterial</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>Celes_FleshReplicationMaterial</uiIconThing>
+        <jobString>正在提取尘构复制基质</jobString>
+        <effectWorking>ButcherFlesh</effectWorking>
+        <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+        <workAmount>1600</workAmount>
+        <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+            <li>TableButcher</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_I</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <customSummary>protein</customSummary>
+                    <categories>
+                    <li>MeatRaw</li>
+                    </categories>
+                </filter>
+                <count>7</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>MeatRaw</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <Celes_FleshReplicationMaterial>1</Celes_FleshReplicationMaterial>
+        </products>
+        <displayPriority>1003</displayPriority>
     </RecipeDef>
 
 </Defs>

@@ -660,8 +660,8 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_ActivityForHuman</defName>
-        <label>Celes_DustMechRhythm_Activity</label>
-        <description>Celes_DustMechRhythm_Activity</description>
+        <label>尘构节律(活性)</label>
+        <description>周期性波动的尘构机械，协调着该个体的机体机能，正处于活跃状态。\n\n在特殊指令的刺激下，尘构机械正修补并全面强化着个体的身体机能，但代价则是在全身各处穿行的尘构物质对免疫系统与神经末梢的无害强烈刺激。但对于这个个体，增殖速度似乎有些过快了……</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Standard</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Dormant</HediffDef>
@@ -760,8 +760,8 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_Overactivity</defName>
-        <label>Celes_DustMechRhythm_Overactivity</label>
-        <description>Celes_DustMechRhythm_Overactivity</description>
+        <label>尘构节律(过活性)</label>
+        <description>周期性波动的尘构机械，协调着该个体的机体机能，正处于过度活跃状态，需要立刻介入。\n\n由于个体与星铃的基因相似性，尘构机械正不断增殖并试图修补并全面强化个体。但由于基因组中缺乏尘构抑制序列，这些尘构无法停止自发增殖，甚至有不少停留在自我复制的初始状态，并逐渐引起强烈的炎症反应，有致命风险。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
             <RecipeDef>Celes_ImplantDustMechRhythm</RecipeDef>
@@ -773,7 +773,7 @@
         <maxSeverity>1.0</maxSeverity>
         <stages>
             <li>
-                <label>Working</label>
+                <label>过活性</label>
                 <painOffset>0.75</painOffset>
                 <lifeThreatening>true</lifeThreatening>
                 <statOffsets>
@@ -842,7 +842,7 @@
                 </hediffGivers>
             </li>
             <li>
-                <label>Overworking</label>
+                <label>协议极限</label>
                 <minSeverity>0.25</minSeverity>
                 <painOffset>0.6</painOffset>
                 <lifeThreatening>true</lifeThreatening>
@@ -909,8 +909,8 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_Extreme</defName>
-        <label>Celes_DustMechRhythm_Extreme</label>
-        <description>Celes_DustMechRhythm_Extreme</description>
+        <label>尘构节律(协议突破)</label>
+        <description>周期性波动的尘构机械，协调着该个体的机体机能，已经突破标准协议，需要立刻介入。\n\n由于个体与星铃的基因相似性，尘构机械正不断增殖并试图修补并全面强化个体。但由于基因组中缺乏尘构抑制序列，这些尘构无法停止自发增殖，并已经不可避免的替换了一部分机体功能，无法安全分离。这些越过了协议限制的尘构物质最终会完全替换宿主的身体并摧毁智能，似乎只能通过另一种纳米机械治愈。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Overactivity</HediffDef>
@@ -1008,8 +1008,8 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_DormantHuman</defName>
-        <label>Celes_DustMechRhythm_DormantHuman</label>
-        <description>Celes_DustMechRhythm_DormantHuman</description>
+        <label>尘构节律(疲劳)</label>
+        <description>尘构物质正在缓慢自我分解，并促使副产物脱离机体。\n\n该个体的细胞刚刚经历了过度的活跃，正陷入疲劳状态。这种无害的疲劳状态需要大约一天恢复。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
             <HediffDef>Celes_DustMechRhythm_Overactivity</HediffDef>
@@ -1021,7 +1021,7 @@
         <maxSeverity>1.0</maxSeverity>
         <stages>
             <li>
-                <label>minor</label>
+                <label>尘构活跃</label>
                 <painOffset>0.10</painOffset>
                 <statFactors>
                     <InjuryHealingFactor>0.5</InjuryHealingFactor>
@@ -1054,8 +1054,8 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechRhythm_Serve</defName>
-        <label>Celes_DustMechRhythm_Serve</label>
-        <description>Celes_DustMechRhythm_Serve</description>
+        <label>尘构节律(侍从构建)</label>
+        <description>周期性波动的尘构机械，协调着该个体的机体机能，正处于稳定状态。\n\n秉承着“以人为本”的理念，藉由星铃科考队的实验性技术，已经对该个体完成了仆从化改造。通过抑制无意义的高级脑区活动，个体摒弃了大部分的能量需求与休息需求。这些能量将被分配给尘构机械用以强化更有意义的个体素质。而代价则是些微的意识水平减退。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_DustMechRhythm_Activity</HediffDef>
             <RecipeDef>Celes_SetDustMechRhythm_Serve</RecipeDef>

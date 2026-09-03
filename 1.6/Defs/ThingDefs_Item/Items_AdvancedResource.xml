@@ -86,8 +86,8 @@
     
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_IndustrialChips</defName>
-        <label>Celestia industrial chips</label>
-        <description>A chip that is widely used by Celestia, and in our hands can only be used to make certain Celestia devices, but there seems to be a great demand for it from the Celestia Toppers.</description>
+        <label>星铃工业芯片</label>
+        <description>一种采取特殊工艺，结构新奇，被星铃广泛运用的芯片。在我们手中只能用于制造某些星铃装置，但星铃拓荒队似乎对此有很大的需求。</description>
         <possessionCount>2</possessionCount>
         <graphicData>
             <texPath>Celes/Item/AdvancedResource/IndustrialChips</texPath>
@@ -134,12 +134,12 @@
     </ThingDef>
     
     <ThingDef ParentName="ResourceBase">
-        <defName>Celes_SpaceWeapenComponent</defName>
-        <label>Celestia high-tech component</label>
-        <description>A series of parts containing high-precision coils, ion batteries, and other components that seem to be used in the construction of some Celestia's instruments.</description>
+        <defName>Celes_AdvancedComponent</defName>
+        <label>星铃尖端零件</label>
+        <description>一系列包含高精度线圈，离子电池等组件的零件，似乎可以用于制造一些星铃的器械。</description>
         <possessionCount>2</possessionCount>
         <graphicData>
-            <texPath>Celes/Item/AdvancedResource/SpaceWeapenComponent/SpaceWeapenComponent</texPath>
+            <texPath>Celes/Item/AdvancedResource/AdvancedComponent/AdvancedComponent</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Metal_Drop</soundInteract>
