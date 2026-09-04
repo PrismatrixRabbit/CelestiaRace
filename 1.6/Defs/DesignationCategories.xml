@@ -3,7 +3,7 @@
     
     <DesignationCategoryDef>
         <defName>Celes_SpecialBuildings</defName>
-        <label>celestia buildings</label>
+        <label>星铃建筑</label>
         <order>30</order>
         <specialDesignatorClasses>
             <li>Designator_Cancel</li>

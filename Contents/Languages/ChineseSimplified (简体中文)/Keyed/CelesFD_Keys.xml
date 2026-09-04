@@ -201,4 +201,21 @@
     <CelesFD_Keyed_SniperFailLost>目标丢失</CelesFD_Keyed_SniperFailLost>
     <CelesFD_Keyed_SniperFailRoof>目标位于不可拆除屋顶下</CelesFD_Keyed_SniperFailRoof>
     <CelesFD_Keyed_SupportFailedBeaconRoof>信标呼叫失效：落点位于不可拆除屋顶下（未消耗支援次数）</CelesFD_Keyed_SupportFailedBeaconRoof>
+    <!-- W-3：武备页 UI + 冷却/额度/刷新（2026-09-04） -->
+    <CelesFD_Keyed_ArmoryQuotaLine>本象可用武备数量 {0}/{1}</CelesFD_Keyed_ArmoryQuotaLine>
+    <CelesFD_Keyed_ArmoryRefreshButton>刷新（{0}密钥）</CelesFD_Keyed_ArmoryRefreshButton>
+    <CelesFD_Keyed_ArmoryRefreshConfirm>确认刷新？</CelesFD_Keyed_ArmoryRefreshConfirm>
+    <CelesFD_Keyed_ArmoryCooldown>冷却：{0}秒</CelesFD_Keyed_ArmoryCooldown>
+    <CelesFD_Keyed_ArmoryCooldownActive>{0} 冷却中：{1}</CelesFD_Keyed_ArmoryCooldownActive>
+    <CelesFD_Keyed_ArmoryQuotaExhausted>本象无可用武备额度（见外勤部武备页）</CelesFD_Keyed_ArmoryQuotaExhausted>
+    <CelesFD_Keyed_ArmoryOccupiesQuota>占用武备额度：{0}</CelesFD_Keyed_ArmoryOccupiesQuota>
+    <CelesFD_Keyed_ArmoryItemLine>{0} ······ {1}{2}</CelesFD_Keyed_ArmoryItemLine>
+    <CelesFD_Keyed_ArmoryApplyTime>申请需{0}小时</CelesFD_Keyed_ArmoryApplyTime>
+    <CelesFD_Keyed_ArmoryLevelLocked>访问拒绝：等级不足</CelesFD_Keyed_ArmoryLevelLocked>
+    <CelesFD_Keyed_ArmoryInsufficientFunds>余额不足</CelesFD_Keyed_ArmoryInsufficientFunds>
+    <CelesFD_Keyed_ArmoryNoKeyRefresh>密钥不足（需{0}）</CelesFD_Keyed_ArmoryNoKeyRefresh>
+    <CelesFD_Keyed_ArmoryCheckout>确认支付</CelesFD_Keyed_ArmoryCheckout>
+    <CelesFD_Keyed_ArmoryTotal>总计：{0}密钥 {1}信用额</CelesFD_Keyed_ArmoryTotal>
+    <CelesFD_Keyed_ArmoryDraftCleared>审批已提交</CelesFD_Keyed_ArmoryDraftCleared>
+    <CelesFD_Keyed_LogisticsIncoming>货物购买 即将抵达：{0}秒</CelesFD_Keyed_LogisticsIncoming>
 </LanguageData>

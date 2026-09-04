@@ -188,6 +188,7 @@
         <passability>PassThroughOnly</passability>
         <castEdgeShadows>false</castEdgeShadows>
         <fillPercent>0.5</fillPercent>
+        <uiIconScale>0.4</uiIconScale>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <statBases>
             <MaxHitPoints>250</MaxHitPoints>

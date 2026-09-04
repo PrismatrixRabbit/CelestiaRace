@@ -476,7 +476,7 @@
         <lostGiveUpTicks>0</lostGiveUpTicks>
         <intervalTicks>30</intervalTicks>
         <damageDef>CelesFD_Damage_OrdnanceBeam</damageDef>
-        <damageAmount>23</damageAmount>
+        <damageAmount>38</damageAmount>
         <armorPenetration>2</armorPenetration>
         <damageRadius>1.9</damageRadius>
         <beamWidth>0.2</beamWidth>

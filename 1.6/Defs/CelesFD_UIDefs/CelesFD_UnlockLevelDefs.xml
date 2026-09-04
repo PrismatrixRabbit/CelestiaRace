@@ -22,6 +22,7 @@
         </preciousSlots>
         <marketPreciousChance>0</marketPreciousChance>
         <maxTradeOrder>3</maxTradeOrder>
+        <weaponQuotaPerQuadrum>4</weaponQuotaPerQuadrum>
     </CelesFeature.CelesFD_UnlockLevelDef>
 
     <CelesFeature.CelesFD_UnlockLevelDef>
@@ -44,6 +45,7 @@
         </preciousSlots>
         <marketPreciousChance>20</marketPreciousChance>
         <maxTradeOrder>5</maxTradeOrder>
+        <weaponQuotaPerQuadrum>8</weaponQuotaPerQuadrum>
     </CelesFeature.CelesFD_UnlockLevelDef>
 
     <CelesFeature.CelesFD_UnlockLevelConfigDef>

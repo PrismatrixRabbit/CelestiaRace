@@ -7,6 +7,8 @@
          dev 存档若残留引用将报缺 def 警告，无害） -->
     <CelesFeature.CelesFD_SupportDef>
         <defName>CelesFD_SupportTestWeaponDrop</defName>
+        <uiIcon>Celes/UI/CelesFD_Icons/B_BaseGun</uiIcon>
+        <cooldownTicks>1800</cooldownTicks>
         <label>拓荒武备空投</label>
         <description>武备测试：精确落位的减速坠落空投舱，落地为可搜刮容器，内含基础武备清单。</description>
         <supportType>CombatEquipment</supportType>
@@ -28,10 +30,12 @@
 
     <CelesFeature.CelesFD_SupportDef>
         <defName>CelesFD_SupportSpaceWeaponDrop</defName>
+        <uiIcon>Celes/UI/CelesFD_Icons/B_SpaceGun</uiIcon>
+        <cooldownTicks>1800</cooldownTicks>
         <label>制式步枪空投</label>
         <description>武备测试：精确落位的减速坠落空投舱，落地为可搜刮容器，内含制式步枪。</description>
         <supportType>CombatEquipment</supportType>
-        <unlockLevel>0</unlockLevel>
+        <unlockLevel>1</unlockLevel>
         <creditCost>50</creditCost>
         <keyCost>0</keyCost>
         <applyDelayHours>0</applyDelayHours>
@@ -52,6 +56,8 @@
     <!-- a-2：定点爆炸性垃圾箱（散射 r2.9 均匀 + 落地爆 4.9 + 血量引信 0.5 + 终结爆 2.9） -->
     <CelesFeature.CelesFD_SupportDef>
         <defName>CelesFD_SupportTestExplosiveCrate</defName>
+        <uiIcon>Celes/UI/CelesFD_Icons/R_ExplosiveTrash</uiIcon>
+        <cooldownTicks>1800</cooldownTicks>
         <label>协议：摔炮垃圾箱</label>
         <description>武备测试：误差坠落的爆炸性垃圾箱，落地爆炸，受创后进入爆炸倒计时。</description>
         <supportType>CombatEquipment</supportType>
@@ -72,6 +78,8 @@
     <!-- a-3：定点燃烧性垃圾箱（Flame 落地爆 4.9+先洒燃料；终结爆 2.9 无燃料） -->
     <CelesFeature.CelesFD_SupportDef>
         <defName>CelesFD_SupportTestIncendiaryCrate</defName>
+        <uiIcon>Celes/UI/CelesFD_Icons/R_FlammableTrash</uiIcon>
+        <cooldownTicks>1800</cooldownTicks>
         <label>协议：焦巴脆烤炉</label>
         <description>武备测试：误差坠落的燃烧性垃圾箱，落地引燃并洒落可燃液体。</description>
         <supportType>CombatEquipment</supportType>
@@ -92,10 +100,13 @@
     <!-- c：渐进弹幕（3×5 / 排内 0.3s / 排间 1.5s / 格距 5 / 高爆弹幕弹） -->
     <CelesFeature.CelesFD_SupportDef>
         <defName>CelesFD_SupportTestProgressiveBarrage</defName>
-        <label>火力：渐进弹幕</label>
+        <hasOngoingTimer>true</hasOngoingTimer>
+        <uiIcon>Celes/UI/CelesFD_Icons/R_ForwardShell</uiIcon>
+        <cooldownTicks>3600</cooldownTicks>
+        <label>火力：轨道游走火力网</label>
         <description>武备测试：沿投掷方向的渐进弹幕覆盖。</description>
         <supportType>CombatEquipment</supportType>
-        <unlockLevel>0</unlockLevel>
+        <unlockLevel>1</unlockLevel>
         <creditCost>200</creditCost>
         <keyCost>1</keyCost>
         <maxTotal>32</maxTotal>
@@ -114,7 +125,9 @@
     <!-- c：一字烟幕（5 点 / 0.5s 错峰 / 间距 5 / 单点 r7.9） -->
     <CelesFeature.CelesFD_SupportDef>
         <defName>CelesFD_SupportTestSmokeLine</defName>
-        <label>协议：扬雾加湿器</label>
+        <uiIcon>Celes/UI/CelesFD_Icons/R_Smoke</uiIcon>
+        <cooldownTicks>1800</cooldownTicks>
+        <label>火力：轨道烟幕</label>
         <description>武备测试：沿投掷线垂线方向铺开的烟幕带。</description>
         <supportType>CombatEquipment</supportType>
         <unlockLevel>0</unlockLevel>
@@ -134,11 +147,14 @@
     <!-- c：混杂弹幕（r16.9 ×15 发 ×18 tick 间隔，高爆/燃烧随机） -->
     <CelesFeature.CelesFD_SupportDef>
         <defName>CelesFD_SupportTestMixedBarrage</defName>
+        <hasOngoingTimer>true</hasOngoingTimer>
+        <uiIcon>Celes/UI/CelesFD_Icons/R_TrashRain</uiIcon>
+        <cooldownTicks>3600</cooldownTicks>
         <previewRadius>16.9</previewRadius>
         <label>协议：轨道垃圾雨</label>
         <description>武备测试：大范围随机混杂弹幕覆盖。</description>
         <supportType>CombatEquipment</supportType>
-        <unlockLevel>0</unlockLevel>
+        <unlockLevel>1</unlockLevel>
         <creditCost>300</creditCost>
         <keyCost>2</keyCost>
         <maxTotal>32</maxTotal>
@@ -158,8 +174,10 @@
     <!-- c：定点狙击（2s 瞄准线跟踪 → 末刻 300 伤 / 2.0 锐穿；无目标不射） -->
     <CelesFeature.CelesFD_SupportDef>
         <defName>CelesFD_SupportTestSniper</defName>
+        <uiIcon>Celes/UI/CelesFD_Icons/R_RailGun</uiIcon>
+        <cooldownTicks>3600</cooldownTicks>
         <previewRadius>10</previewRadius>
-        <label>火力：轨道磁轨</label>
+        <label>火力：轨道磁轨炮</label>
         <description>武备测试：轨道狙击——瞄准线锁定范围内最大体型敌人后射出高穿透弹丸。</description>
         <supportType>CombatEquipment</supportType>
         <unlockLevel>0</unlockLevel>
@@ -177,11 +195,13 @@
     <!-- c：跟随激光（17s / 0.5s×23 Flame / r1.4 无敌我识别 / 跟随有敌对识别 / 无目标原地） -->
     <CelesFeature.CelesFD_SupportDef>
         <defName>CelesFD_SupportTestFollowingBeam</defName>
+        <uiIcon>Celes/UI/CelesFD_Icons/R_Laser</uiIcon>
+        <cooldownTicks>3600</cooldownTicks>
         <previewRadius>10</previewRadius>
         <label>火力：轨道激光</label>
         <description>武备测试：轨道灼烧激光，持续跟随范围内最大体型敌人。</description>
         <supportType>CombatEquipment</supportType>
-        <unlockLevel>0</unlockLevel>
+        <unlockLevel>1</unlockLevel>
         <creditCost>150</creditCost>
         <keyCost>1</keyCost>
         <maxTotal>32</maxTotal>
