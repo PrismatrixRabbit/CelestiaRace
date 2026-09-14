@@ -18,11 +18,15 @@
         <applyDelayHours>0</applyDelayHours>
         <maxTotal>32</maxTotal>
         <arrivalDelayTicks>300</arrivalDelayTicks>
-        <!-- 精确落位：信标格本体（无误差） -->
-        <landingRule Class="CelesFeature.CelesFD_LandingRule_Exact" />
-        <!-- a-1：坠落容器（Decelerate 减速姿态 faller + spawnAll 固定清单） -->
-        <effect Class="CelesFeature.CelesFD_Effect_CrateDrop">
-            <crateDef>CelesFD_DropCrate_SupportPodStarter</crateDef>
+        <!-- 精确落位：信标格本体（W-5：Grid 1×1；requireWalkable=false——容器落点由 faller 落地 TryFindPlaceNear 兜底） -->
+        <landingRule Class="CelesFeature.CelesFD_LandingRule_Grid">
+            <forwardCount>1</forwardCount>
+            <lateralCount>1</lateralCount>
+            <requireWalkable>false</requireWalkable>
+        </landingRule>
+        <!-- a-1：即刻投放（faller 扩展绑定 crateDef——Decelerate 减速姿态 + spawnAll 固定清单链） -->
+        <effect Class="CelesFeature.CelesFD_Effect_Drop">
+            <fallerDef>CelesFD_Faller_SupportPod</fallerDef>
         </effect>
         <!-- 防御型默认色：浅蓝（用户定稿——光柱颜色 XML (r,g,b,a) 0-255） -->
         <beamColor>(135, 206, 250, 242)</beamColor>
@@ -41,11 +45,15 @@
         <applyDelayHours>0</applyDelayHours>
         <maxTotal>32</maxTotal>
         <arrivalDelayTicks>300</arrivalDelayTicks>
-        <!-- 精确落位：信标格本体（无误差） -->
-        <landingRule Class="CelesFeature.CelesFD_LandingRule_Exact" />
-        <!-- a-1：坠落容器（Decelerate 减速姿态 faller + spawnAll 固定清单） -->
-        <effect Class="CelesFeature.CelesFD_Effect_CrateDrop">
-            <crateDef>CelesFD_DropCrate_SpaceWeaponDrop</crateDef>
+        <!-- 精确落位：信标格本体（W-5：Grid 1×1；requireWalkable=false——容器落点由 faller 落地 TryFindPlaceNear 兜底） -->
+        <landingRule Class="CelesFeature.CelesFD_LandingRule_Grid">
+            <forwardCount>1</forwardCount>
+            <lateralCount>1</lateralCount>
+            <requireWalkable>false</requireWalkable>
+        </landingRule>
+        <!-- a-1：即刻投放（faller 扩展绑定 crateDef——Decelerate 减速姿态 + spawnAll 固定清单链） -->
+        <effect Class="CelesFeature.CelesFD_Effect_Drop">
+            <fallerDef>CelesFD_Faller_SpaceWeaponPod</fallerDef>
         </effect>
         <!-- 防御型默认色：浅蓝（用户定稿——光柱颜色 XML (r,g,b,a) 0-255） -->
         <beamColor>(135, 206, 250, 242)</beamColor>
@@ -66,10 +74,13 @@
         <keyCost>0</keyCost>
         <maxTotal>32</maxTotal>
         <arrivalDelayTicks>300</arrivalDelayTicks>
-        <landingRule Class="CelesFeature.CelesFD_LandingRule_UniformScatter">
-            <radius>3</radius>
+        <!-- W-5：散布取 1（r2.9——x.9 约定，修正旧 radius=3 笔误；requireWalkable=true 建筑链） -->
+        <landingRule Class="CelesFeature.CelesFD_LandingRule_Scatter">
+            <radius>2.9</radius>
+            <count>1</count>
+            <requireWalkable>true</requireWalkable>
         </landingRule>
-        <effect Class="CelesFeature.CelesFD_Effect_CrateStrike">
+        <effect Class="CelesFeature.CelesFD_Effect_Drop">
             <fallerDef>CelesFD_Faller_ExplosiveCrate</fallerDef>
         </effect>
         <beamColor>(255, 20, 20, 180)</beamColor>
@@ -88,10 +99,13 @@
         <keyCost>0</keyCost>
         <maxTotal>32</maxTotal>
         <arrivalDelayTicks>300</arrivalDelayTicks>
-        <landingRule Class="CelesFeature.CelesFD_LandingRule_UniformScatter">
-            <radius>3</radius>
+        <!-- W-5：散布取 1（r2.9——x.9 约定，修正旧 radius=3 笔误；requireWalkable=true 建筑链） -->
+        <landingRule Class="CelesFeature.CelesFD_LandingRule_Scatter">
+            <radius>2.9</radius>
+            <count>1</count>
+            <requireWalkable>true</requireWalkable>
         </landingRule>
-        <effect Class="CelesFeature.CelesFD_Effect_CrateStrike">
+        <effect Class="CelesFeature.CelesFD_Effect_Drop">
             <fallerDef>CelesFD_Faller_IncendiaryCrate</fallerDef>
         </effect>
         <beamColor>(255, 20, 20, 180)</beamColor>
@@ -111,13 +125,19 @@
         <keyCost>1</keyCost>
         <maxTotal>32</maxTotal>
         <arrivalDelayTicks>300</arrivalDelayTicks>
-        <effect Class="CelesFeature.CelesFD_Effect_ProgressiveBarrage">
-            <rows>5</rows>
-            <columns>3</columns>
-            <sameRowIntervalTicks>18</sameRowIntervalTicks>
-            <rowIntervalTicks>90</rowIntervalTicks>
-            <cellSpacing>5</cellSpacing>
-            <fallerDef>CelesFD_Faller_BarrageShellHE</fallerDef>
+        <!-- W-5：网格 5×3（forward=投掷线方向 5 排 × lateral 3 列；弹幕不建建筑 → 不要求 Walkable） -->
+        <landingRule Class="CelesFeature.CelesFD_LandingRule_Grid">
+            <forwardCount>5</forwardCount>
+            <lateralCount>3</lateralCount>
+            <spacing>5</spacing>
+            <requireWalkable>false</requireWalkable>
+        </landingRule>
+        <effect Class="CelesFeature.CelesFD_Effect_Barrage">
+            <fallerDefs>
+                <li>CelesFD_Faller_BarrageShellHE</li>
+            </fallerDefs>
+            <forwardIntervalTicks>90</forwardIntervalTicks>
+            <lateralIntervalTicks>18</lateralIntervalTicks>
         </effect>
         <beamColor>(255, 20, 20, 180)</beamColor>
     </CelesFeature.CelesFD_SupportDef>
@@ -135,11 +155,18 @@
         <keyCost>0</keyCost>
         <maxTotal>32</maxTotal>
         <arrivalDelayTicks>300</arrivalDelayTicks>
-        <effect Class="CelesFeature.CelesFD_Effect_SmokeLine">
-            <dropCount>5</dropCount>
-            <intervalTicks>30</intervalTicks>
+        <!-- W-5：网格 1×5（lateral 沿投掷线垂线展开 5 点；弹幕不建建筑 → 不要求 Walkable） -->
+        <landingRule Class="CelesFeature.CelesFD_LandingRule_Grid">
+            <forwardCount>1</forwardCount>
+            <lateralCount>5</lateralCount>
             <spacing>5</spacing>
-            <fallerDef>CelesFD_Faller_SmokePod</fallerDef>
+            <requireWalkable>false</requireWalkable>
+        </landingRule>
+        <effect Class="CelesFeature.CelesFD_Effect_Barrage">
+            <fallerDefs>
+                <li>CelesFD_Faller_SmokePod</li>
+            </fallerDefs>
+            <lateralIntervalTicks>30</lateralIntervalTicks>
         </effect>
         <beamColor>(255, 20, 20, 180)</beamColor>
     </CelesFeature.CelesFD_SupportDef>
@@ -159,14 +186,18 @@
         <keyCost>2</keyCost>
         <maxTotal>32</maxTotal>
         <arrivalDelayTicks>300</arrivalDelayTicks>
-        <effect Class="CelesFeature.CelesFD_Effect_MixedBarrage">
+        <!-- W-5：散布取 15（r16.9；requireWalkable=true——垃圾箱建筑链） -->
+        <landingRule Class="CelesFeature.CelesFD_LandingRule_Scatter">
             <radius>16.9</radius>
             <count>15</count>
-            <intervalTicks>18</intervalTicks>
+            <requireWalkable>true</requireWalkable>
+        </landingRule>
+        <effect Class="CelesFeature.CelesFD_Effect_Barrage">
             <fallerDefs>
                 <li>CelesFD_Faller_ExplosiveCrate</li>
                 <li>CelesFD_Faller_IncendiaryCrate</li>
             </fallerDefs>
+            <scatterIntervalTicks>18</scatterIntervalTicks>
         </effect>
         <beamColor>(255, 20, 20, 180)</beamColor>
     </CelesFeature.CelesFD_SupportDef>

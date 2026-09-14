@@ -42,8 +42,6 @@
     <CelesFD_NothingToSend>无可发送货物</CelesFD_NothingToSend>
 
     <!-- 里程碑 3：发货结算（G6 占位） -->
-    <CelesFD_Keyed_ShipmentArrivedTitle>货物已送达星铃外勤部</CelesFD_Keyed_ShipmentArrivedTitle>
-    <CelesFD_Keyed_ShipmentArrived>共 {0} 件货物，价值 {1} 白银，结算为 {2} 信用额</CelesFD_Keyed_ShipmentArrived>
     <CelesFD_ShipmentLost>信标站已失效，货物丢失</CelesFD_ShipmentLost>
 
     <!-- 里程碑 3：人员离场（G9 Test） -->
@@ -63,7 +61,6 @@
     <CelesFD_Keyed_CallSupport>呼叫支援</CelesFD_Keyed_CallSupport>
     <CelesFD_Keyed_CallSupportDesc>打开支援呼叫菜单，选择已购入的武备支援并指定落点。</CelesFD_Keyed_CallSupportDesc>
     <CelesFD_Keyed_NoSupportAvailable>没有可用的武备支援。请先在外勤部购买支援。</CelesFD_Keyed_NoSupportAvailable>
-    <CelesFD_Keyed_NoSupportCharges>{0} 的支援次数已用完。</CelesFD_Keyed_NoSupportCharges>
     <CelesFD_Keyed_SupportCalledTitle>支援呼叫已发出</CelesFD_Keyed_SupportCalledTitle>
     <CelesFD_Keyed_SupportCalledDesc>{0} 正在前往：{1}（占位：W-2 接入真实坠落）</CelesFD_Keyed_SupportCalledDesc>
     <CelesFD_Keyed_SupportPending>该支援正在审批中，暂不可用。</CelesFD_Keyed_SupportPending>
@@ -118,7 +115,6 @@
     <CelesFD_Keyed_AbandonDesc>您放弃了对「{0}」的履约。根据合同，外勤部已发起违约赔付流程：声望 -{1}，信用额 -{2}。</CelesFD_Keyed_AbandonDesc>
     <CelesFD_Keyed_OverdueTitle>订单逾期</CelesFD_Keyed_OverdueTitle>
     <CelesFD_Keyed_OverdueDesc>我们确认您没有按时完成订单「{0}」，已发起针对附带经济损失的赔付流程：声望 -{1}，信用额 -{2}。</CelesFD_Keyed_OverdueDesc>
-    <CelesFD_Keyed_PenaltyExtraTitle>违约追加重罚</CelesFD_Keyed_PenaltyExtraTitle>
     <CelesFD_Keyed_PenaltyExtraDesc>由于您的连续违约记录（惩罚等级 {0}），外勤部对本次违约追加重罚：声望 -{1}，信用额 -{2}。</CelesFD_Keyed_PenaltyExtraDesc>
     <CelesFD_Keyed_OrderSuccessTitle>订单完成</CelesFD_Keyed_OrderSuccessTitle>
     <CelesFD_Keyed_OrderSuccessDesc>订单「{0}」已交付完成。报酬已入账：声望 +{1}，信用额 +{2}{3}。</CelesFD_Keyed_OrderSuccessDesc>
@@ -135,6 +131,7 @@
     <CelesFD_Keyed_OrderPlacedDesc>您的订单已确认，星铃空投将在 {0} 后抵达。</CelesFD_Keyed_OrderPlacedDesc>
     <CelesFD_Keyed_OrderArrivedTitle>货物已抵达</CelesFD_Keyed_OrderArrivedTitle>
     <CelesFD_Keyed_OrderArrivedDesc>您购买的 {0} 已通过星铃空投抵达。</CelesFD_Keyed_OrderArrivedDesc>
+    <CelesFD_Keyed_LogisticsVoidArrivedDesc>您购买的 {0} 已通过星铃空投抵达。星铃友情提示您：星铃不对失效的收货地址问题负责。</CelesFD_Keyed_LogisticsVoidArrivedDesc>
     <CelesFD_Keyed_ArchiveDate>{0}.{1}.{2}</CelesFD_Keyed_ArchiveDate>
     <CelesFD_Keyed_ArchiveDoneLabel>已完成</CelesFD_Keyed_ArchiveDoneLabel>
     <CelesFD_Keyed_ArchiveFailedLabel>已失败</CelesFD_Keyed_ArchiveFailedLabel>
@@ -167,11 +164,9 @@
     <CelesFD_Keyed_CartValue>总价值：{0} 银</CelesFD_Keyed_CartValue>
     <CelesFD_Keyed_CartOverweight>超重——禁止继续添加，可超重下单</CelesFD_Keyed_CartOverweight>
     <CelesFD_Keyed_RemoveFromCart>移除</CelesFD_Keyed_RemoveFromCart>
-    <CelesFD_Keyed_Price>价格</CelesFD_Keyed_Price>
     <CelesFD_Keyed_GoodsQuote>货物报价</CelesFD_Keyed_GoodsQuote>
     <CelesFD_Keyed_CreditAmount>{0} 信用额</CelesFD_Keyed_CreditAmount>
     <CelesFD_Keyed_KeyAmount>{0} 密钥</CelesFD_Keyed_KeyAmount>
-    <CelesFD_Keyed_BothPrice>{0} 信用额 + {1} 密钥</CelesFD_Keyed_BothPrice>
     <CelesFD_Keyed_Tax>税金</CelesFD_Keyed_Tax>
     <CelesFD_Keyed_TaxExit>出境税</CelesFD_Keyed_TaxExit>
     <CelesFD_Keyed_TaxAdmin>管理税</CelesFD_Keyed_TaxAdmin>
@@ -184,12 +179,10 @@
     <CelesFD_Keyed_SubscribeArrival>订阅星铃到货提醒服务</CelesFD_Keyed_SubscribeArrival>
     <CelesFD_Keyed_Expedite>启用加急下单并同意《加急用户须知》</CelesFD_Keyed_Expedite>
     <CelesFD_Keyed_FastStartup>授权星铃不使用快速启动.exe</CelesFD_Keyed_FastStartup>
-    <CelesFD_Keyed_AllowAds>授权星铃外勤部发送推送信息</CelesFD_Keyed_AllowAds>
+    <CelesFD_Keyed_AllowAds>授权不拒收星铃外勤部按需发送的推送信息</CelesFD_Keyed_AllowAds>
     <CelesFD_Keyed_PlaceOrder>标准下单</CelesFD_Keyed_PlaceOrder>
     <CelesFD_Keyed_PlaceExpedite>加急空投</CelesFD_Keyed_PlaceExpedite>
     <CelesFD_Keyed_NeedAgreeTerms>请先同意《外勤部用户协议》</CelesFD_Keyed_NeedAgreeTerms>
-    <CelesFD_Keyed_LogisticsBuilding>物流系统建设中</CelesFD_Keyed_LogisticsBuilding>
-    <CelesFD_Keyed_AbandonProcessing>违约处理将在订单结算模块上线后生效</CelesFD_Keyed_AbandonProcessing>
 
     <!-- W-2a：支援倒计时警报（统一"即将抵达/正在进行：x秒"——2026-09-03 裁决；格式 00:00秒） -->
     <CelesFD_Keyed_SupportAlertDesc>武备抵达中</CelesFD_Keyed_SupportAlertDesc>
@@ -209,7 +202,6 @@
     <CelesFD_Keyed_ArmoryCooldownActive>{0} 冷却中：{1}</CelesFD_Keyed_ArmoryCooldownActive>
     <CelesFD_Keyed_ArmoryQuotaExhausted>本象无可用武备额度（见外勤部武备页）</CelesFD_Keyed_ArmoryQuotaExhausted>
     <CelesFD_Keyed_ArmoryOccupiesQuota>占用武备额度：{0}</CelesFD_Keyed_ArmoryOccupiesQuota>
-    <CelesFD_Keyed_ArmoryItemLine>{0} ······ {1}{2}</CelesFD_Keyed_ArmoryItemLine>
     <CelesFD_Keyed_ArmoryApplyTime>申请需{0}小时</CelesFD_Keyed_ArmoryApplyTime>
     <CelesFD_Keyed_ArmoryLevelLocked>访问拒绝：等级不足</CelesFD_Keyed_ArmoryLevelLocked>
     <CelesFD_Keyed_ArmoryInsufficientFunds>余额不足</CelesFD_Keyed_ArmoryInsufficientFunds>
@@ -218,4 +210,98 @@
     <CelesFD_Keyed_ArmoryTotal>总计：{0}密钥 {1}信用额</CelesFD_Keyed_ArmoryTotal>
     <CelesFD_Keyed_ArmoryDraftCleared>审批已提交</CelesFD_Keyed_ArmoryDraftCleared>
     <CelesFD_Keyed_LogisticsIncoming>货物购买 即将抵达：{0}秒</CelesFD_Keyed_LogisticsIncoming>
+    <CelesFD_Keyed_SupportCallerGiftTitle>星铃外勤部赠礼</CelesFD_Keyed_SupportCallerGiftTitle>
+    <CelesFD_Keyed_SupportCallerGiftDesc>感谢您首次购买武备支援。我们随单附赠了一台星铃支援呼叫信标，已通过空投送达。装备后即可呼叫已购入的武备支援。</CelesFD_Keyed_SupportCallerGiftDesc>
+    <!-- W-5 清理：硬编码中文 Keyed 化（8 键）+ icon 灰度 -->
+    <CelesFD_Keyed_ArmoryPriceLabel>单价：</CelesFD_Keyed_ArmoryPriceLabel>
+    <CelesFD_Keyed_ArmoryNoSelection>未选中武备</CelesFD_Keyed_ArmoryNoSelection>
+    <CelesFD_Keyed_ArmoryAvailPending>可用：{0} 审批中：{1}</CelesFD_Keyed_ArmoryAvailPending>
+    <CelesFD_Keyed_ArmoryPersonnelPlaceholder>人员支援
+（即将上线）</CelesFD_Keyed_ArmoryPersonnelPlaceholder>
+    <CelesFD_Keyed_SupportFallbackLabel>星铃支援</CelesFD_Keyed_SupportFallbackLabel>
+    <CelesFD_Keyed_TimeFormat>{0}:{1}秒</CelesFD_Keyed_TimeFormat>
+    <CelesFD_Keyed_Yes>是</CelesFD_Keyed_Yes>
+    <CelesFD_Keyed_No>否</CelesFD_Keyed_No>
+    <!-- ═══ R-1 人员支援（2026-09-06）═══ -->
+    <CelesFD_Keyed_PersonnelPrice>{0}信用额/日×{1}天+保险{2}</CelesFD_Keyed_PersonnelPrice>
+    <CelesFD_Keyed_PersonnelDaysN>{0}天</CelesFD_Keyed_PersonnelDaysN>
+    <CelesFD_Keyed_PersonnelAlreadySent>支援已发出</CelesFD_Keyed_PersonnelAlreadySent>
+    <CelesFD_Keyed_PersonnelEarlyRecall>提前召回</CelesFD_Keyed_PersonnelEarlyRecall>
+    <CelesFD_Keyed_PersonnelArrived>{0} 已抵达。</CelesFD_Keyed_PersonnelArrived>
+    <CelesFD_Keyed_PersonnelFailDef>无效的支援类型。</CelesFD_Keyed_PersonnelFailDef>
+    <CelesFD_Keyed_PersonnelFailDays>天数超出范围。</CelesFD_Keyed_PersonnelFailDays>
+    <CelesFD_Keyed_PersonnelFailCredit>信用额不足。</CelesFD_Keyed_PersonnelFailCredit>
+    <CelesFD_Keyed_PersonnelIncoming>{0} 即将抵达：{1}</CelesFD_Keyed_PersonnelIncoming>
+    <CelesFD_Keyed_PersonnelIncomingDesc>星铃外勤部的人员增援即将抵达。</CelesFD_Keyed_PersonnelIncomingDesc>
+    <CelesFD_Keyed_PersonnelLeaving>{0} 即将离开：{1}小时后</CelesFD_Keyed_PersonnelLeaving>
+    <CelesFD_Keyed_PersonnelLeavingDesc>该增援小队的驻留期即将结束。</CelesFD_Keyed_PersonnelLeavingDesc>
+    <CelesFD_Keyed_PersonnelQuestDesc>来自{0} 的{1} 将停留{2}天</CelesFD_Keyed_PersonnelQuestDesc>
+    <CelesFD_Keyed_PStage1>确认支援中</CelesFD_Keyed_PStage1>
+    <CelesFD_Keyed_PStage2>人员集合中</CelesFD_Keyed_PStage2>
+    <CelesFD_Keyed_PStage3>加载燃油中</CelesFD_Keyed_PStage3>
+    <CelesFD_Keyed_PStage4>人员登机中</CelesFD_Keyed_PStage4>
+    <CelesFD_Keyed_PStage5>发射调度中</CelesFD_Keyed_PStage5>
+    <CelesFD_Keyed_PStage6>正在支援中</CelesFD_Keyed_PStage6>
+    <CelesFD_Keyed_PStageE1>超快紧急集合中</CelesFD_Keyed_PStageE1>
+    <CelesFD_Keyed_PStageE2>全员加速登机中</CelesFD_Keyed_PStageE2>
+    <CelesFD_Keyed_PStageE3>快速通道起飞中</CelesFD_Keyed_PStageE3>
+    <!-- ═══ R-1 UI 改造（2026-09-06 终版）═══ -->
+    <CelesFD_Keyed_ArmoryApplyTimeNow>即时审批</CelesFD_Keyed_ArmoryApplyTimeNow>
+    <CelesFD_Keyed_PersonnelArriveH>{0}小时抵达</CelesFD_Keyed_PersonnelArriveH>
+    <CelesFD_Keyed_PersonnelArriveNow>即刻抵达</CelesFD_Keyed_PersonnelArriveNow>
+    <CelesFD_Keyed_PersonnelPriceHeader>价格明细：</CelesFD_Keyed_PersonnelPriceHeader>
+    <CelesFD_Keyed_PersonnelFuelRow>燃油费：{0}/人</CelesFD_Keyed_PersonnelFuelRow>
+    <CelesFD_Keyed_PersonnelWageRow>雇佣金：{0}/日</CelesFD_Keyed_PersonnelWageRow>
+    <CelesFD_Keyed_PersonnelInsuranceRow>保险预付：{0}</CelesFD_Keyed_PersonnelInsuranceRow>
+    <CelesFD_Keyed_PersonnelExtraRow>额外金额：{0}</CelesFD_Keyed_PersonnelExtraRow>
+    <CelesFD_Keyed_PersonnelFuelCalc>燃油 {0}×{1}人 = {2}</CelesFD_Keyed_PersonnelFuelCalc>
+    <CelesFD_Keyed_PersonnelWageCalc>雇佣 {0}×{1}天 = {2}</CelesFD_Keyed_PersonnelWageCalc>
+    <CelesFD_Keyed_PersonnelInsuranceCalc>保险 {0}</CelesFD_Keyed_PersonnelInsuranceCalc>
+    <CelesFD_Keyed_PersonnelExtraCalc>额外金额：{0}</CelesFD_Keyed_PersonnelExtraCalc>
+    <CelesFD_Keyed_PersonnelLineTotal>总价：{0}</CelesFD_Keyed_PersonnelLineTotal>
+    <CelesFD_Keyed_ArmoryCheckoutEmpty>请选中需购买的武备或人员支援</CelesFD_Keyed_ArmoryCheckoutEmpty>
+    <CelesFD_Keyed_PersonnelFailKey>密钥不足（需 {0} 密钥）</CelesFD_Keyed_PersonnelFailKey>
+    <CelesFD_Keyed_PersonnelRoster>编制：{0}</CelesFD_Keyed_PersonnelRoster>
+    <CelesFD_Keyed_PersonnelRecallConfirm>确认召回？</CelesFD_Keyed_PersonnelRecallConfirm>
+    <CelesFD_Keyed_PersonnelRecallRefund>由于提前召回，星铃外勤部退还了{0}。</CelesFD_Keyed_PersonnelRecallRefund>
+    <!-- 细节批（2026-09-06 终版） -->
+    <CelesFD_Keyed_TradeCheckoutEmpty>请先选择要购买的订单</CelesFD_Keyed_TradeCheckoutEmpty>
+    <CelesFD_Keyed_AgreeArmory>同意《外勤部用户协议》与《外勤部支援须知》</CelesFD_Keyed_AgreeArmory>
+    <CelesFD_Keyed_AgreeArmoryFirst>请先同意《外勤部用户协议》与《外勤部支援须知》</CelesFD_Keyed_AgreeArmoryFirst>
+    <CelesFD_Keyed_PersonnelNotArrived>即将抵达</CelesFD_Keyed_PersonnelNotArrived>
+    <!-- ？帮助三篇（R-1 UI 改造——内容对照已实现行为编纂） -->
+    <CelesFD_Keyed_InfoArmory>【武备支援】左栏按市场等级展示可购买的支援，选定数量结算后需等待审批（即时至数小时）。审批完成后，装备星铃支援信标呼叫器即可在任意地点投掷信标呼叫该支援。每象限有武备额度限制，可花费密钥刷新额度。
+【人员支援】右栏为星铃外勤部增援小队。费用由燃油费（按人数）、雇佣金（按停留天数）、保险预付款与额外金额组成，选定天数后与武备一同结算。小队按申请模式（标准24小时 / 加急1小时 / 即刻）抵达，落地模式由小队配置决定。含机械体的小队由随队专员监管指挥。驻留期结束前12小时将收到撤离预警。同一个小队在场期间无法再次申请。</CelesFD_Keyed_InfoArmory>
+    <CelesFD_Keyed_InfoTrade>外勤部市场：左栏为当前在售订单，可搜索或按类别筛选；部分订单需达到更高市场等级方可购买。接取订单后须在期限内交付，逾期将触发违约惩罚（声望与信用额，多次违约惩罚加重）；未介入的突发订单超时后会自动消失，不予追责。右栏购物车汇总本次采购，支持切换加急（运费加倍，1小时送达）。结算使用信用额与密钥。市场周期性自动补货，也可花费信用额与密钥手动刷新。</CelesFD_Keyed_InfoTrade>
+    <CelesFD_Keyed_InfoLogistics>物流跟踪：左栏为运输中的订单与增援。物品订单按阶段推进（确认、出入库、加油、装载、调度），抵达前进入最后倒计时；人员增援显示集合与起飞进度，同样在抵达前进入倒计时。右栏为已完成的外勤档案，仅保留最近记录。下单时可订阅到货提醒，抵达时将以信件通知。</CelesFD_Keyed_InfoLogistics>
+
+    <!-- R-2 结算 letter -->
+    <CelesFD_Keyed_SettleBriefTitle>撤离简报</CelesFD_Keyed_SettleBriefTitle>
+    <CelesFD_Keyed_SettleExpired>星铃援助的{0} 已经到期。</CelesFD_Keyed_SettleExpired>
+    <CelesFD_Keyed_SettleWiped>星铃援助的{0} 已确认全部损失。</CelesFD_Keyed_SettleWiped>
+    <CelesFD_Keyed_SettleRecalled>星铃援助的{0} 已按您的请求提前撤离。</CelesFD_Keyed_SettleRecalled>
+    <CelesFD_Keyed_SettleNoTarget>星铃援助的{0} 未在降落点发现支援对象，已自行提前撤离。</CelesFD_Keyed_SettleNoTarget>
+    <CelesFD_Keyed_SettleStatus>星铃方确认，小队的状态是：{0}。</CelesFD_Keyed_SettleStatus>
+    <CelesFD_Keyed_SettleFamePos>星铃外勤部奖励了{0}声望，</CelesFD_Keyed_SettleFamePos>
+    <CelesFD_Keyed_SettleFameNeg>星铃外勤部扣除了{0}声望，</CelesFD_Keyed_SettleFameNeg>
+    <CelesFD_Keyed_SettleInsPos>并返还了{0}信用额的保险金。</CelesFD_Keyed_SettleInsPos>
+    <CelesFD_Keyed_SettleInsNeg>并扣押了保证金额外扣除{0}信用额。</CelesFD_Keyed_SettleInsNeg>
+    <CelesFD_Keyed_SettleInsFull>并扣押了全部保证金。</CelesFD_Keyed_SettleInsFull>
+    <CelesFD_Keyed_SettleRecallRefund>由于提前召回，退还了{0}信用额的雇佣金。</CelesFD_Keyed_SettleRecallRefund>
+    <CelesFD_Keyed_UpdateTitle>状态更新</CelesFD_Keyed_UpdateTitle>
+    <CelesFD_Keyed_UpdateReturn>{0} 的{1}名队员已安全返回星铃。</CelesFD_Keyed_UpdateReturn>
+    <CelesFD_Keyed_UpdateTier>重新评估后，小队状态由{0}调整为{1}。</CelesFD_Keyed_UpdateTier>
+    <CelesFD_Keyed_UpdateSettle>星铃外勤部追加了{0}声望，并补退了{1}信用额的保险金。</CelesFD_Keyed_UpdateSettle>
+    <!-- R-2 阶段文本 -->
+    <CelesFD_Keyed_StageIntact>完整</CelesFD_Keyed_StageIntact>
+    <CelesFD_Keyed_StageMissing>失踪</CelesFD_Keyed_StageMissing>
+    <CelesFD_Keyed_Stage0>基本完整</CelesFD_Keyed_Stage0>
+    <CelesFD_Keyed_Stage1>部分损失</CelesFD_Keyed_Stage1>
+    <CelesFD_Keyed_Stage2>大量损失</CelesFD_Keyed_Stage2>
+    <CelesFD_Keyed_Stage3>重要损失</CelesFD_Keyed_Stage3>
+    <CelesFD_Keyed_StageDescMissing>星铃外勤部确认小队遭受了不可挽回的损失。</CelesFD_Keyed_StageDescMissing>
+    <CelesFD_Keyed_StageDesc0>星铃外勤部确认小队基本完整返回。</CelesFD_Keyed_StageDesc0>
+    <CelesFD_Keyed_StageDesc1>星铃外勤部确认小队遭受了一定损失。</CelesFD_Keyed_StageDesc1>
+    <CelesFD_Keyed_StageDesc2>星铃外勤部确认小队遭受了严重损失。</CelesFD_Keyed_StageDesc2>
+    <CelesFD_Keyed_StageDesc3>星铃外勤部确认小队遭受了不可挽回的损失。</CelesFD_Keyed_StageDesc3>
 </LanguageData>

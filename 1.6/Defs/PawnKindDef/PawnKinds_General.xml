@@ -234,14 +234,40 @@
 		</inventoryOptions>
 		<initialWillRange>5~7</initialWillRange>
 		<initialResistanceRange>15~24</initialResistanceRange>
+		
+		<modExtensions Inherit="false">
+			<li Class="CelesFeature.PawnKindStartingHediffExtension">
+				<startingHediffGroups>
+					<li>
+						<entries>
+							<li>
+								<def>MechlinkImplant</def>
+								<weight>1.0</weight>
+								<severity>0.5</severity>
+								<part>Brain</part>
+							</li>
+						</entries>
+					</li>
 
-		<startingHediffs>
-			<li MayRequire="Ludeon.RimWorld.Biotech">
-				<def>Celes_StandardMechlink</def>
-				<chance>0.3</chance>
-				<severity>0.5</severity>
+					<li>
+						<entries>
+							<li>
+								<def>Celes_MechlinkRestriction</def>
+								<weight>0.7</weight>
+								<severity>0.5</severity>
+								<part>Brain</part>
+							</li>
+							<li>
+								<def>Celes_StandardMechlink</def>
+								<weight>0.3</weight>
+								<severity>0.5</severity>
+								<part>Brain</part>
+							</li>
+						</entries>
+					</li>
+				</startingHediffGroups>
 			</li>
-		</startingHediffs>
+		</modExtensions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Celes_ArmedExplorer">

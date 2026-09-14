@@ -317,7 +317,8 @@
     <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
     <label>星铃弹幕弹（高爆）</label>
     <graphicData>
-      <texPath>Celes/Building/DropPod/DropPodCelestia</texPath>
+      <!-- W-5 贴图替换（用户 2026-09-04）：原版高爆迫击炮弹（drawSize 实测定，XML 可调） -->
+      <texPath>Things/Projectile/ShellHighExplosive</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutFlying</shaderType>
       <drawSize>(2,2)</drawSize>
@@ -331,6 +332,14 @@
           <li>(9999, 0)</li>
         </points>
       </angleCurve>
+      <!-- W-5 修正（用户 2026-09-05）：弹丸贴图朝向反转——rotationCurve 无条件叠加的额外旋转
+           （Skyfaller.GetDrawPositionAndRotation :304-307；原版陨石同款机制），angleCurve 保持 0 不动滑入路径 -->
+      <rotationCurve>
+        <points>
+          <li>(0, 180)</li>
+          <li>(9999, 180)</li>
+        </points>
+      </rotationCurve>
     </skyfaller>
     <modExtensions>
       <li Class="CelesFeature.CelesFD_SkyfallerImpactExtension">
@@ -379,7 +388,8 @@
     <thingClass>CelesFeature.CelesFD_Skyfaller_OrbitCrate</thingClass>
     <label>星铃烟幕舱（降落）</label>
     <graphicData>
-      <texPath>Celes/Building/DropPod/DropPodCelestiaReducer</texPath>
+      <!-- W-5 贴图替换（用户 2026-09-04）：原版烟雾弹（drawSize 实测定，XML 可调） -->
+      <texPath>Things/Projectile/ShellSmoke</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutFlying</shaderType>
       <drawSize>(3,3)</drawSize>
@@ -393,6 +403,13 @@
           <li>(9999, 0)</li>
         </points>
       </angleCurve>
+      <!-- W-5 修正（用户 2026-09-05）：弹丸贴图朝向反转（同 BarrageShellHE——弹丸贴图上向约定 + 垂直下落） -->
+      <rotationCurve>
+        <points>
+          <li>(0, 180)</li>
+          <li>(9999, 180)</li>
+        </points>
+      </rotationCurve>
     </skyfaller>
     <modExtensions>
       <li Class="CelesFeature.CelesFD_SkyfallerImpactExtension">
@@ -479,7 +496,7 @@
         <damageAmount>38</damageAmount>
         <armorPenetration>2</armorPenetration>
         <damageRadius>1.9</damageRadius>
-        <beamWidth>0.2</beamWidth>
+        <beamWidth>1.6</beamWidth>
         <beamColor>(255, 200, 0, 180)</beamColor>
         <endSegmentLength>1.1</endSegmentLength>
         <glowScale>6</glowScale>

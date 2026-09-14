@@ -30,9 +30,6 @@
                 </hediffs>
                 <stages>0~</stages>
                 <mtbHours>0</mtbHours>
-                <message>{0} is no longer .</message>
-                <messageType>SilentInput</messageType>
-                <onlyMessageForColonistsOrPrisoners>true</onlyMessageForColonistsOrPrisoners>
             </li>
         </comps>
     </HediffDef>
@@ -104,21 +101,32 @@
 
     <HediffDef ParentName="ImplantHediffBase" MayRequire="Ludeon.RimWorld.Biotech">
         <defName>Celes_FieldAidRestrict</defName>
-        <label>战地支援限制</label>
-        <description>Celestia Command has added restrictions to the Field Support Team to avoid risks to the mechlink.</description>
+        <label>外勤支援协议</label>
+        <description>外勤支援协议</description>
         <maxSeverity>1.0</maxSeverity>
+        <initialSeverity>1.0</initialSeverity>
         <isBad>false</isBad>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-0.0625</severityPerDay>
+                <severityPerDay>-0.01</severityPerDay><!-- 0.01/day when support -->
                 <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li Class="HediffCompProperties_RemoveIfOtherHediff" MayRequire="Ludeon.RimWorld.Biotech">
+                <hediffs>
+                    <li>Celes_StandardMechlink</li>
+                </hediffs>
+                <stages>0~</stages>
+                <mtbHours>0</mtbHours>
             </li>
         </comps>
         <stages>
             <li>
                 <statFactors>
-                    <MechBandwidth>0</MechBandwidth>
+                    <MechBandwidth>2.86</MechBandwidth>
                 </statFactors>
+                <statOffsets>
+                    <MechBandwidth>9</MechBandwidth>
+                </statOffsets>
             </li>
         </stages>
     </HediffDef>

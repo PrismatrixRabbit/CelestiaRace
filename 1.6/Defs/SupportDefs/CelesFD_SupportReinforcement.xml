@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ═══ R-1：人员增援正式 QuestScriptDef（2026-09-06；探针 def 演进——P13 v6/P16 v2 全结论内嵌）═══
+       slate 预置（ExecuteArrival）：map（P1 必设）/asker(Faction——经 <faction> 直连字段，factionOf 是
+       SlateRef<Thing> 会静默失败)/helpers/workers(滤机械——WorkDisabled 豁免)/stayTicks/
+       resolvedQuestName/resolvedQuestDescription（文法旁路）
+       R-2 时 QuestNode_Leave 替换为 G9 传送离场 QuestPart（归还先行——P11 时序） -->
+  <QuestScriptDef>
+    <defName>CelesFD_QuestDef_SupportReinforcement</defName>
+    <label>星铃外勤部·增援</label>
+    <autoAccept>true</autoAccept>
+    <randomlySelectable>false</randomlySelectable>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_JoinPlayer">
+          <pawns>$helpers</pawns>
+          <joinPlayer>true</joinPlayer>
+        </li>
+        <li Class="QuestNode_ExtraFaction">
+          <faction>$asker</faction>
+          <pawns>$helpers</pawns>
+          <factionType>HomeFaction</factionType>
+          <areHelpers>true</areHelpers>
+          <inSignalsRemovePawn>
+            <li>helpers.RanWild</li>
+            <li>helpers.BecameMutant</li>
+          </inSignalsRemovePawn>
+        </li>
+        <li Class="QuestNode_SetAllApparelLocked">
+          <pawns>$helpers</pawns>
+        </li>
+        <!-- 工作禁用：$workers = 滤除机械后的 $helpers（机械豁免）；$workTags = per-def 配置
+             （SupportDef.workTagsToDisable → slate——C2 修复，QuestScriptDef 不再固定值） -->
+        <li Class="QuestNode_WorkDisabled">
+          <pawns>$workers</pawns>
+          <disabledWorkTags>$workTags</disabledWorkTags>
+        </li>
+        <!-- 驻留到期 → SupportLeave 离场序列（Bug1 修复：删预告 letter+Sequence——到期即实际撤离+结算 letter） -->
+        <li Class="QuestNode_Delay">
+          <delayTicks>$stayTicks</delayTicks>
+          <node Class="CelesFeature.CelesFD_QuestNode_SupportLeave">
+            <pawns>$helpers</pawns>
+            <supportDefName>$supportDefName</supportDefName>
+            <isEarlyRecall>false</isEarlyRecall>
+          </node>
+        </li>
+        <!-- 任务名/描述 slate 旁路（名=支援名；描述="来自#派系 的#支援名 将停留#天数"） -->
+        <li Class="QuestNode_ResolveQuestName" />
+        <li Class="QuestNode_ResolveQuestDescription" />
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+</Defs>

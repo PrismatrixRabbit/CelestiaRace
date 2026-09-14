@@ -14,6 +14,7 @@
     <rotatable>false</rotatable>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.6</fillPercent>
     <statBases>

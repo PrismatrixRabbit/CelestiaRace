@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ═══ R-1 人员支援测试资产（2026-09-06，用户示例规格 + 全机制测试增援）═══
+     ⚠ 本文件为 .pending——RimWorld 只加载 .xml；SupportDef 人员字段（personnel/dailyWage/
+     insuranceCost/arrivalMode/landingMode/maxStayDays/completenessTiers 逐档结构）落码后
+     改名为 .xml 启用（测试资产先行纪律——W-2a 同模式）。
+     字段规格：文档 17 §2.1（v2.2 逐档结构）/ 文档 18 §3.1。
+     结算模型（C4 四轮裁决）：档内扣除 = insuranceCost × multiplier（<1 退差 /=1 全扣
+     />1 全扣+超出部分扣信用额罚款）；声望输出可负。 -->
+<Defs>
+
+    <!-- ═══ 全机制测试增援（Y_Test——20% 步进完整度可控）═══
+         基准 = 3×20(人) + 2×20(机械) = 100 → 每损失 1 名 = −20%：
+         5 存活=100% / 4=80% / 3=60% / 2=40% / 1=20% / 0=0%
+         档位 0.80/0.60/0.40 刻意对齐步进边界（80% 恰落第 2 档——严格大于语义可测）
+         数值全互异便于日志判读：+10/0、+6/0.5、+2/1.0、−6/1.5
+         混编人+机械：同批测机械生成（无带宽）/ WorkDisabled 豁免 / 变野重置 -->
+    <CelesFeature.CelesFD_SupportDef>
+        <defName>CelesFD_SupportTestPersonnelAll</defName>
+        <label>测试增援</label>
+        <description>测试：等权重混编小队（3 武装拓荒队员 + 2 搬运机），每损失一名完整度 -20%；四档结算数值互异便于判读。</description>
+        <supportType>Personnel</supportType>
+        <uiIcon>Celes/UI/CelesFD_Icons/Y_Test</uiIcon>
+        <unlockLevel>0</unlockLevel>
+        <creditCost>0</creditCost>
+        <keyCost>0</keyCost>
+        <maxTotal>32</maxTotal>
+        <arrivalDelayTicks>300</arrivalDelayTicks>
+        <hasOngoingTimer>false</hasOngoingTimer>
+        <!-- 人员字段（R-1） -->
+        <arrivalMode>Standard</arrivalMode>
+        <landingMode>TradeBeacon</landingMode>
+        <dailyWage>100</dailyWage>
+        <fuelFeePerPawn>100</fuelFeePerPawn>
+        <insuranceCost>300</insuranceCost>
+        <maxStayDays>7</maxStayDays>
+        <workTagsToDisable>Firefighting, Cleaning</workTagsToDisable>   <!-- 占位 XML 可调（C2 per-def 化） -->
+        <personnel>
+            <li><pawnKind>Celes_ArmedExplorer</pawnKind><amount>3</amount><weight>20</weight><isMechanitor>true</isMechanitor></li>
+            <li><pawnKind>Mech_Lifter</pawnKind><amount>2</amount><weight>20</weight></li>
+        </personnel>
+        <!-- 四档（3 节点 + 兜底；兜底档不配 threshold） -->
+        <completenessTiers>
+            <li><threshold>0.80</threshold><fameOutput>10</fameOutput><multiplier>0</multiplier></li>
+            <li><threshold>0.60</threshold><fameOutput>6</fameOutput><multiplier>0.5</multiplier></li>
+            <li><threshold>0.40</threshold><fameOutput>2</fameOutput><multiplier>1.0</multiplier></li>
+            <li><fameOutput>-6</fameOutput><multiplier>1.5</multiplier></li>
+        </completenessTiers>
+    </CelesFeature.CelesFD_SupportDef>
+
+    <!-- ═══ 示例一：标准工业小队（用户规格 2026-09-06）═══
+         基准 = 26 + 2×2 + 2×2 + 6 = 40；落点=标准（货物模式）；其余模式未注明暂 Standard -->
+    <CelesFeature.CelesFD_SupportDef>
+        <defName>CelesFD_SupportIndustrySquad</defName>
+        <label>标准工业小队增援</label>
+        <description>来自星铃外勤部的工业增援小队，可承担建造与搬运作业。</description>
+        <supportType>Personnel</supportType>
+        <uiIcon>Celes/UI/CelesFD_Icons/Y_Industry</uiIcon>
+        <unlockLevel>0</unlockLevel>
+        <creditCost>0</creditCost>
+        <keyCost>0</keyCost>
+        <maxTotal>32</maxTotal>
+        <arrivalDelayTicks>300</arrivalDelayTicks>
+        <hasOngoingTimer>false</hasOngoingTimer>
+        <arrivalMode>Standard</arrivalMode>
+        <landingMode>TradeBeacon</landingMode>
+        <dailyWage>200</dailyWage>
+        <fuelFeePerPawn>100</fuelFeePerPawn>
+        <insuranceCost>200</insuranceCost>
+        <maxStayDays>7</maxStayDays>
+        <workTagsToDisable>Firefighting, Cleaning</workTagsToDisable>   <!-- 占位 XML 可调（C2 per-def 化） -->
+        <personnel>
+            <li><pawnKind>Celes_ArmedExplorer</pawnKind><amount>1</amount><weight>26</weight><isMechanitor>true</isMechanitor></li>
+            <li><pawnKind>Mech_Constructoid</pawnKind><amount>2</amount><weight>2</weight></li>
+            <li><pawnKind>Mech_Lifter</pawnKind><amount>2</amount><weight>2</weight></li>
+            <li><pawnKind>Mech_Tunneler</pawnKind><amount>1</amount><weight>6</weight></li>
+        </personnel>
+        <!-- 0.80 / 0.65 / 0.40 -->
+        <completenessTiers>
+            <li><threshold>0.80</threshold><fameOutput>10</fameOutput><multiplier>0</multiplier></li>
+            <li><threshold>0.65</threshold><fameOutput>8</fameOutput><multiplier>0.3</multiplier></li>
+            <li><threshold>0.40</threshold><fameOutput>4</fameOutput><multiplier>0.8</multiplier></li>
+            <li><fameOutput>-4</fameOutput><multiplier>1.0</multiplier></li>
+        </completenessTiers>
+    </CelesFeature.CelesFD_SupportDef>
+
+    <!-- ═══ 示例二：标准作战小队（基准 = 16+16+4×2+6+8 = 54）═══ -->
+    <CelesFeature.CelesFD_SupportDef>
+        <defName>CelesFD_SupportCombatSquad</defName>
+        <label>标准作战小队增援</label>
+        <description>来自星铃外勤部的作战增援小队，人形战力与机械火力混编。</description>
+        <supportType>Personnel</supportType>
+        <uiIcon>Celes/UI/CelesFD_Icons/Y_Combat</uiIcon>
+        <unlockLevel>0</unlockLevel>
+        <creditCost>0</creditCost>
+        <keyCost>0</keyCost>
+        <maxTotal>32</maxTotal>
+        <arrivalDelayTicks>300</arrivalDelayTicks>
+        <hasOngoingTimer>false</hasOngoingTimer>
+        <arrivalMode>Expedited</arrivalMode>
+        <landingMode>TradeBeacon</landingMode>
+        <dailyWage>200</dailyWage>
+        <fuelFeePerPawn>200</fuelFeePerPawn>
+        <insuranceCost>350</insuranceCost>
+        <maxStayDays>7</maxStayDays>
+        <workTagsToDisable>Firefighting, Cleaning</workTagsToDisable>   <!-- 占位 XML 可调（C2 per-def 化） -->
+        <personnel>
+            <li><pawnKind>Celes_Scout</pawnKind><amount>1</amount><weight>16</weight><isMechanitor>true</isMechanitor></li>
+            <li><pawnKind>Celes_ScoutSniper</pawnKind><amount>1</amount><weight>16</weight></li>
+            <li><pawnKind>Mech_Scyther</pawnKind><amount>2</amount><weight>4</weight></li>
+            <li><pawnKind>Mech_Pikeman</pawnKind><amount>1</amount><weight>6</weight></li>
+            <li><pawnKind>Mech_CentipedeGunner</pawnKind><amount>1</amount><weight>8</weight></li>
+        </personnel>
+        <!-- 0.80 / 0.70 / 0.40 -->
+        <completenessTiers>
+            <li><threshold>0.80</threshold><fameOutput>10</fameOutput><multiplier>0</multiplier></li>
+            <li><threshold>0.70</threshold><fameOutput>8</fameOutput><multiplier>0.3</multiplier></li>
+            <li><threshold>0.40</threshold><fameOutput>4</fameOutput><multiplier>0.5</multiplier></li>
+            <li><fameOutput>-4</fameOutput><multiplier>1.0</multiplier></li>
+        </completenessTiers>
+    </CelesFeature.CelesFD_SupportDef>
+
+    <!-- ═══ 示例三：精英作战小队（基准 = 1×2+1+1+1×2 = 7；1 级市场等级；边缘类袭击/支援选点——用户裁决 2026-09-06）═══ -->
+    <CelesFeature.CelesFD_SupportDef>
+        <defName>CelesFD_SupportEliteSquad</defName>
+        <label>精英作战小队增援</label>
+        <description>来自星铃外勤部的海军陆战队精英小队。</description>
+        <supportType>Personnel</supportType>
+        <uiIcon>Celes/UI/CelesFD_Icons/Y_CombatII</uiIcon>
+        <unlockLevel>1</unlockLevel>
+        <creditCost>0</creditCost>
+        <keyCost>1</keyCost>   <!-- 额外金额：1 密钥（用户规格） -->
+        <maxTotal>32</maxTotal>
+        <arrivalDelayTicks>300</arrivalDelayTicks>
+        <hasOngoingTimer>false</hasOngoingTimer>
+        <arrivalMode>Instant</arrivalMode>
+        <landingMode>MapEdge</landingMode>
+        <dailyWage>400</dailyWage>
+        <fuelFeePerPawn>400</fuelFeePerPawn>
+        <insuranceCost>800</insuranceCost>
+        <maxStayDays>7</maxStayDays>
+        <workTagsToDisable>Firefighting, Cleaning</workTagsToDisable>   <!-- 占位 XML 可调（C2 per-def 化） -->
+        <personnel>
+            <li><pawnKind>Celes_Elite</pawnKind><amount>2</amount><weight>1</weight></li>
+            <li><pawnKind>Celes_EliteSniper</pawnKind><amount>1</amount><weight>1</weight></li>
+            <li><pawnKind>Celes_EliteSupport</pawnKind><amount>1</amount><weight>1</weight></li>
+            <li><pawnKind>Celes_EliteMelee</pawnKind><amount>2</amount><weight>1</weight></li>
+        </personnel>
+        <!-- 0.85 / 0.51 / 0.35；末档 1.4 → 800 全扣 + 320 信用额罚款（= 800×(1.4−1)） -->
+        <completenessTiers>
+            <li><threshold>0.85</threshold><fameOutput>20</fameOutput><multiplier>0</multiplier></li>
+            <li><threshold>0.51</threshold><fameOutput>8</fameOutput><multiplier>0.5</multiplier></li>
+            <li><threshold>0.35</threshold><fameOutput>4</fameOutput><multiplier>0.7</multiplier></li>
+            <li><fameOutput>-12</fameOutput><multiplier>1.4</multiplier></li>
+        </completenessTiers>
+    </CelesFeature.CelesFD_SupportDef>
+
+</Defs>

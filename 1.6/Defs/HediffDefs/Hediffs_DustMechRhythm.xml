@@ -44,9 +44,6 @@
                 </hediffs>
                 <stages>0~</stages>
                 <mtbHours>0</mtbHours>
-                <message>{0}的稳态尘构节律被替换了.</message>
-                <messageType>SilentInput</messageType>
-                <onlyMessageForColonistsOrPrisoners>true</onlyMessageForColonistsOrPrisoners>
             </li>
             <!--<li Class="HediffCompProperties_SeverityPerDay">
                 <severityPerDay>0.16</severityPerDay>
