@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- ═══ FD 小收尾（2026-09-25）：欢迎页文本统一 RulePack ═══
+         合并原 SubPageDef.newsPool（要闻 5 条）+ TickerDef.welcomeTicker（跑马灯 10 条）。
+         中文源直写（对齐 RulePacks_Market 先例）；英文挂账后续统一做。
+         消费方：Page_Welcome（要闻子页 / 跑马灯）+ GameComponent.RefreshNews -->
+    <RulePackDef>
+        <defName>CelesFD_WelcomeTexts</defName>
+        <label>星铃欢迎页文本</label>
+        <rulePack>
+            <rulesStrings>
+                <!-- 要闻（原 newsPool）——r_welcome_news -->
+                <li>r_welcome_news->星铃外勤部开放了新的市场通道，欢迎关注交易页。</li>
+                <li>r_welcome_news->信用额结算汇率保持稳定。</li>
+                <li>r_welcome_news->近期运输航线拥堵，加急订单建议提前预约。</li>
+                <li>r_welcome_news->外勤部提醒各殖民地定期维护信标站设备。</li>
+                <li>r_welcome_news->新的物资需求清单已送达交易频道。</li>
+                <!-- 跑马灯（原 welcomeTicker DefInjected 中文）——r_welcome_ticker -->
+                <li>r_welcome_ticker->鱼说让我用这个立绘的。</li>
+                <li>r_welcome_ticker->这是一条占位跑马灯。</li>
+                <li>r_welcome_ticker->可是我还没睡够！</li>
+                <li>r_welcome_ticker->有zuzu啊</li>
+                <li>r_welcome_ticker->你知道吗你知道吗你知道吗你知道吗你知道吗你知道吗你知道吗</li>
+                <li>r_welcome_ticker->星铃真的还在更新哦？</li>
+                <li>r_welcome_ticker->我好饿！</li>
+                <li>r_welcome_ticker->字幕8字幕8字幕8</li>
+                <li>r_welcome_ticker->这不是一条占位跑马灯。</li>
+                <li>r_welcome_ticker->冷知识：</li>
+                <!-- ═══ 条件规则测试（2026-09-25）：验证 ConstantConstraint 过滤链 ═══
+                     条件写在关键词后的参数列表——GrammarResolver.cs:513 自动排除不匹配项 -->
+                <li>r_welcome_ticker(Level==0)->【条件测试】等级0：欢迎加入星铃外勤部合作网络，初始合作通道已开启。</li>
+                <li>r_welcome_ticker(Level==1)->【条件测试】等级1：更高等级的物资通道现已开放，可关注交易页新增订单。</li>
+                <li>r_welcome_ticker(ApologyTriggered==1)->【条件测试】晶体事故的后续清理仍在进行中，请留意后续通报。</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

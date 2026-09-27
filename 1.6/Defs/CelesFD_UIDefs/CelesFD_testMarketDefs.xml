@@ -54,7 +54,8 @@
         </includeThings>
     </CelesFeature.CelesFD_MarketClassDef>
 
-    <!-- T3'（v2 2026-08-15）：布料材质出售——v2 约束需物品源：categories=Apparel（候选=全部衣物）+ stuffCategoriesToAllow=Fabric（装填侧材质校验）；
+    <!-- T3'（v2 2026-08-15；批 2.5 修复 2026-09-24）：布料材质出售——物品源 categories=Apparel（候选=全部衣物）；
+         stuffCategoriesToAllow=Fabric 迁至 entry 层（原在 filter 内会污染 allowedDefs——ResolveReferences :421 把 Fabric 材质 def 塞进候选集）；
          StuffCategoryDef 名称为 Fabric（v4.6 实证修正——'Cloth' 仅为 ThingDef 布料物品，非材质类别） -->
     <CelesFeature.CelesFD_MarketClassDef>
         <defName>CelesFD_Test_ClothStuff</defName>
@@ -73,10 +74,10 @@
                     <categories>
                         <li>Apparel</li>
                     </categories>
-                    <stuffCategoriesToAllow>
-                        <li>Fabric</li>
-                    </stuffCategoriesToAllow>
                 </filter>
+                <stuffCategoriesToAllow>
+                    <li>Fabric</li>
+                </stuffCategoriesToAllow>
                 <thingAmount>1~50</thingAmount>
                 <thingPriceCredit>2</thingPriceCredit>
             </li>
@@ -311,4 +312,5 @@
             </li>
         </includeThings>
     </CelesFeature.CelesFD_MarketClassDef>
+
 </Defs>

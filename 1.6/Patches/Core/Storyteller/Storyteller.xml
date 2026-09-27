@@ -5,7 +5,9 @@
         <value>
             <!-- 2026-08-25 开局任务链：信标站第 7 天 SingleMTB 移除——改由"首建发信器"监听触发（GameComponent.TryCheckFirstAntenna → def.Worker.TryExecute） -->
             <li Class="StorytellerCompProperties_SingleMTB">
-                <!-- 开局任务链事件 1：轨道晶体坠落——mtbDays≈0 每 interval 必触发候选；"第 7 天后"由 IncidentDef.earliestDay 控制；"全局一次"由 minRefireDays=99999 控制（F3 同款组合，三场景验证过） -->
+                <!-- 开局任务链事件 1：轨道晶体坠落——mtbDays≈0 每 interval 必触发候选；"第 7 天后"由 IncidentDef.earliestDay 控制；
+                 "全局一次"由 Worker 执行体自查 GameComponent.CrystalEventTriggered 控制（2026-09-20 修正：minRefireDays 按地图
+                 记录且 forced 派发不写——玩家环境叙事者倍率 mod 连发实证；mtb 必中设计下单靠 CanFireNow 闸不免疫 forced） -->
                 <mtbDays>0.001</mtbDays>
                 <incident>CelesFD_InitialCrystalOrbitDrop</incident>
                 <allowedTargetTags>

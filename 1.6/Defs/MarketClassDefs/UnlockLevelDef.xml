@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <CelesFeature.CelesFD_UnlockLevelConfigDef>
+        <defName>CelesFD_UnlockLevelConfigDefault</defName>
+        <unlockLevel>
+            <li>CelesFD_Level_L0</li>
+            <li>CelesFD_Level_L1</li>
+            <li>CelesFD_Level_L2</li>
+            <!--<li>CelesFD_Level_L3</li>
+            <li>CelesFD_Level_L4</li>
+            <li>CelesFD_Level_L5</li>
+            <li>CelesFD_Level_L6</li>-->
+        </unlockLevel>
+    </CelesFeature.CelesFD_UnlockLevelConfigDef>
+    
+    <CelesFeature.CelesFD_UnlockLevelDef>
+        <defName>CelesFD_Level_L0</defName>
+        <title>WATCHLIST</title>
+        <description>观察名单</description>
+        <!-- 大概是那种，你也是访客，但是星铃正在观察你，或者等待你把赔偿还清，或者觉得你还有利用的可能性 -->
+        <fameRequire>-50</fameRequire>
+        <tradeRequire>0</tradeRequire>
+        <isBase>true</isBase>
+        <openSlots>
+            <buy>3</buy>
+            <sell>2</sell>
+        </openSlots>
+        <internalSlots>
+            <buy>0</buy>
+            <sell>0</sell>
+        </internalSlots>
+        <preciousSlots>
+            <buy>0</buy>
+            <sell>0</sell>
+        </preciousSlots>
+        <marketPreciousChance>0</marketPreciousChance>
+        <maxTradeOrder>2</maxTradeOrder>
+        <weaponQuotaPerQuadrum>4</weaponQuotaPerQuadrum>
+    </CelesFeature.CelesFD_UnlockLevelDef>
+
+    <CelesFeature.CelesFD_UnlockLevelDef>
+        <defName>CelesFD_Level_L1</defName>
+        <title>GUEST</title>
+        <description>访客</description>
+        <!-- 你是访客，如果你来看，会有些订单能丢给你，但是你来还是不来星铃没什么所谓 -->
+        <fameRequire>10</fameRequire>
+        <tradeRequire>0</tradeRequire>
+        <openSlots>
+            <buy>3</buy>
+            <sell>2</sell>
+        </openSlots>
+        <internalSlots>
+            <buy>0</buy>
+            <sell>0</sell>
+        </internalSlots>
+        <preciousSlots>
+            <buy>0</buy>
+            <sell>0</sell>
+        </preciousSlots>
+        <marketPreciousChance>0</marketPreciousChance>
+        <maxTradeOrder>2</maxTradeOrder>
+        <weaponQuotaPerQuadrum>4</weaponQuotaPerQuadrum>
+    </CelesFeature.CelesFD_UnlockLevelDef>
+
+    <CelesFeature.CelesFD_UnlockLevelDef>
+        <defName>CelesFD_Level_L2</defName>
+        <title>PROSPECT</title>
+        <description>潜在客户</description>
+        <!-- 这里是正式开始沟通。看起来你有发展和星铃交易的意象，星铃也觉得你应该很有前途，星铃愿意和你开放更多资源，但是通常来说仅限于此 -->
+        <!-- 数值等调整吧 -->
+        <fameRequire>50</fameRequire>
+        <tradeRequire>80</tradeRequire>
+        <sendLevelUpMessage>true</sendLevelUpMessage>
+        <levelUpMessageTitle>星铃外勤部开放等级提升</levelUpMessageTitle>
+        <levelUpMessageDesc>星铃外勤部很荣幸通知您：\n我们已经提升您在星铃外勤部的权限等级。\n现在，我们会为您发放更多和更有价值的订单，并提升您的订单接取数限制。期待与您的进一步合作深化。</levelUpMessageDesc>
+        <openSlots>
+            <buy>4</buy>
+            <sell>3</sell>
+        </openSlots>
+        <internalSlots>
+            <buy>0</buy>
+            <sell>0</sell>
+        </internalSlots>
+        <preciousSlots>
+            <buy>1</buy>
+            <sell>1</sell>
+        </preciousSlots>
+        <marketPreciousChance>10</marketPreciousChance>
+        <maxTradeOrder>3</maxTradeOrder>
+        <weaponQuotaPerQuadrum>6</weaponQuotaPerQuadrum>
+    </CelesFeature.CelesFD_UnlockLevelDef>
+
+    <CelesFeature.CelesFD_UnlockLevelDef>
+        <defName>CelesFD_Level_L3</defName>
+        <title>PARTNER</title>
+        <description>合作伙伴</description>
+        <!-- 你迈过了一个门槛，你现在是星铃真正的合作伙伴了。星铃愿意和你分享更多的机会和资源，同时也会偏袒你一些 -->
+        <!-- 数值等调整吧 -->
+        <fameRequire>600</fameRequire>
+        <tradeRequire>200</tradeRequire>
+        <openSlots>
+            <buy>5</buy>
+            <sell>3</sell>
+        </openSlots>
+        <internalSlots>
+            <buy>2</buy>
+            <sell>2</sell>
+        </internalSlots>
+        <preciousSlots>
+            <buy>1</buy>
+            <sell>1</sell>
+        </preciousSlots>
+        <marketPreciousChance>15</marketPreciousChance>
+        <maxTradeOrder>3</maxTradeOrder>
+        <weaponQuotaPerQuadrum>8</weaponQuotaPerQuadrum>
+    </CelesFeature.CelesFD_UnlockLevelDef>
+
+    <CelesFeature.CelesFD_UnlockLevelDef>
+        <defName>CelesFD_Level_L4</defName>
+        <title>KEY_PARTNER</title>
+        <description>关键伙伴</description>
+        <!-- 你是合作伙伴里面比较高级的那一种，你看起来活跃性很高，但是没什么本质差别，你还差临门一脚 -->
+        <!-- 数值等调整吧 -->
+        <fameRequire>1250</fameRequire>
+        <tradeRequire>800</tradeRequire>
+        <openSlots>
+            <buy>6</buy>
+            <sell>4</sell>
+        </openSlots>
+        <internalSlots>
+            <buy>4</buy>
+            <sell>2</sell>
+        </internalSlots>
+        <preciousSlots>
+            <buy>1</buy>
+            <sell>1</sell>
+        </preciousSlots>
+        <marketPreciousChance>20</marketPreciousChance>
+        <maxTradeOrder>4</maxTradeOrder>
+        <weaponQuotaPerQuadrum>12</weaponQuotaPerQuadrum>
+    </CelesFeature.CelesFD_UnlockLevelDef>
+
+    <CelesFeature.CelesFD_UnlockLevelDef>
+        <defName>CelesFD_Level_L5</defName>
+        <title>LUMINARY</title>
+        <description>显赫对象</description>
+        <!-- 你绝对是星铃最重要的那一批协作者，通常来说这意味着你是星铃的重要殖民地，资源供给商，或者……好吧，星铃不一定平起平坐的看待你，但是如果星铃有什么需要多半会优先想到你 -->
+        <!-- 数值等调整吧 -->
+        <fameRequire>3750</fameRequire>
+        <tradeRequire>2500</tradeRequire>
+        <openSlots>
+            <buy>6</buy>
+            <sell>5</sell>
+        </openSlots>
+        <internalSlots>
+            <buy>4</buy>
+            <sell>3</sell>
+        </internalSlots>
+        <preciousSlots>
+            <buy>2</buy>
+            <sell>2</sell>
+        </preciousSlots>
+        <marketPreciousChance>25</marketPreciousChance>
+        <maxTradeOrder>5</maxTradeOrder>
+        <weaponQuotaPerQuadrum>16</weaponQuotaPerQuadrum>
+    </CelesFeature.CelesFD_UnlockLevelDef>
+
+    <CelesFeature.CelesFD_UnlockLevelDef>
+        <defName>CelesFD_Level_L6</defName>
+        <title>ASSET</title>
+        <description>重要资产</description>
+        <!-- 这是一个终局目标，达到这个等级，意味着你在星铃外勤部有相当重要的地位，以至于星铃其他部门绝对听说过你，你的殖民地在整个方舟科考队中都是知名的 -->
+        <!-- 数值等调整吧 -->
+        <fameRequire>6250</fameRequire>
+        <tradeRequire>6000</tradeRequire>
+        <openSlots>
+            <buy>8</buy>
+            <sell>6</sell>
+        </openSlots>
+        <internalSlots>
+            <buy>5</buy>
+            <sell>3</sell>
+        </internalSlots>
+        <preciousSlots>
+            <buy>3</buy>
+            <sell>2</sell>
+        </preciousSlots>
+        <marketPreciousChance>30</marketPreciousChance>
+        <maxTradeOrder>6</maxTradeOrder>
+        <weaponQuotaPerQuadrum>32</weaponQuotaPerQuadrum>
+    </CelesFeature.CelesFD_UnlockLevelDef>
+
+</Defs>

@@ -11,6 +11,13 @@
     </ThingCategoryDef>
 
     <ThingCategoryDef>
+        <defName>Celes_Cargo</defName>
+        <label>星铃货组</label>
+        <parent>Celes_Manufactured</parent>
+        <iconPath>Celes/Item/Cargo/Cargo_Material</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
         <defName>Celes_Drugs</defName>
         <label>星铃药品</label>
         <parent>Manufactured</parent>

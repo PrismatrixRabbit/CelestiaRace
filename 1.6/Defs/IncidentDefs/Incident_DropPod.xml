@@ -142,8 +142,8 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
-    <baseChance>0.5</baseChance>
-    <letterDef>NeutralEvent</letterDef>
+    <baseChance>0.3</baseChance>
+    <letterDef>NegativeEvent</letterDef>
     <letterLabel>星铃轨道垃圾箱坠落（晶体）</letterLabel>
     <letterText>检测到星铃轨道晶体坠落的信号。这些晶体对星铃外勤部而言有着特殊价值。</letterText>
     <modExtensions>
@@ -169,8 +169,11 @@
 
 
   <!-- ═══ 开局任务链事件 1：初始晶体坠落（2026-08-25） ═══
-       触发 = 叙事者 SingleMTB（Storyteller.xml）+ earliestDay=7 + minRefireDays=99999（F3 同款组合：第 7 天后仅一次）；
-       baseChance=0 防随机池；Worker 内：星铃派系存在前置 + 置位 CrystalEventTick（道歉信 3700 起算） -->
+       触发 = 叙事者 SingleMTB（Storyteller.xml）+ earliestDay=7；baseChance=0 防随机池；Worker 内置位 CrystalEventTick（道歉信 3700 起算）。
+       2026-09-20 修正认知（玩家反馈 forced 连发）："全局一次"不再由 minRefireDays=99999 保证——其记录按地图存于
+       StoryState 且 forced 派发不写记录（StoryState.Notify_IncidentFired 实证；叙事者倍率类 mod 以 forced 派发 → 连发）。
+       全局一次 = Worker 执行体自查 GameComponent.CrystalEventTriggered（含 gc 存在性双闸，forced 亦受辖）；
+       minRefireDays=99999 保留作 per-map 兜底；派系门禁见 Worker（缺失时不进池/不执行，含全部轨道坠落事件） -->
   <IncidentDef>
     <defName>CelesFD_InitialCrystalOrbitDrop</defName>
     <label>星铃轨道晶体坠落</label>
@@ -182,7 +185,7 @@
     <baseChance>0</baseChance>
     <earliestDay>7</earliestDay>
     <minRefireDays>99999</minRefireDays>
-    <letterDef>NeutralEvent</letterDef>
+    <letterDef>NegativeEvent</letterDef>
     <letterLabel>星铃轨道晶体坠落</letterLabel>
     <letterText>检测到星铃轨道晶体坠落的信号。其中包含着相当高价值的晶体。</letterText>
     <modExtensions>

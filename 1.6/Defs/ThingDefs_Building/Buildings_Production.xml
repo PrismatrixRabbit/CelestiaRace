@@ -26,11 +26,18 @@
         <altitudeLayer>Building</altitudeLayer>
         <fillPercent>0.5</fillPercent>
         <useHitPoints>True</useHitPoints>
+        <!-- 批 4：BuildingBase 继承链默认 MapMeshOnly——不注册动态绘制则 PostDraw（连接标志）不执行；
+             MapMeshAndRealTime=贴图烘焙+PostDraw 实时（TestTerminal 同款，工作台族标准双通道） -->
+        <drawerType>MapMeshAndRealTime</drawerType>
         <statBases>
             <WorkToBuild>3000</WorkToBuild>
             <MaxHitPoints>250</MaxHitPoints>
             <Flammability>1.0</Flammability>
             <Cleanliness>0</Cleanliness>
+            <WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
+            
+            <Celes_WarmUpDuration>12500</Celes_WarmUpDuration>
+            <Celes_UnconnectedEfficiency>0.35</Celes_UnconnectedEfficiency>
         </statBases>
         <size>(3,1)</size>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
@@ -41,9 +48,9 @@
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
         <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<!--<recipes>
-			<li>ButcherCorpseMechanoid</li>
-		</recipes>-->
+        <recipes>
+            <li>Celes_TestRecipe_Component</li>
+        </recipes>
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
@@ -64,6 +71,14 @@
                 </linkableFacilities>
             </li>
 			<li Class="CompProperties_Breakdownable"/>
+            <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
+                <baseThreadsCost>4</baseThreadsCost>
+                <haveWarmUpCount>true</haveWarmUpCount>
+                <warmUpTicks>12500</warmUpTicks>
+
+                <markTexPath>Celes/UI/Overlays/ThreadMark</markTexPath>
+                <linkHeight>1.7</linkHeight>
+            </li>
         </comps>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
@@ -76,6 +91,7 @@
             <li>PlaceWorker_ShowFacilitiesConnections</li>
             <li>PlaceWorker_ReportWorkSpeedPenalties</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowThreadConnection</li>
 		</placeWorkers>
     </ThingDef>
 
@@ -139,6 +155,11 @@
                 </linkableFacilities>
             </li>
 			<li Class="CompProperties_Breakdownable"/>
+            <!--
+            <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
+                <baseThreadsCost>4</baseThreadsCost>
+            </li>
+            -->
         </comps>
         <placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>

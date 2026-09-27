@@ -27,7 +27,7 @@
     <!--
     <JobDef>
         <defName>Celes_CorpseRefuel</defName>
-        <driverClass>CelesFeature.Celes_JobDriver_CorpseRefuel</driverClass>
+        <driverClass>CelesFeature.CelesIM_JobDriver_CorpseRefuel</driverClass>
         <reportString>将 TargetB 投入 TargetA。</reportString>
         <suspendable>false</suspendable>
     </JobDef>

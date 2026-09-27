@@ -6,9 +6,9 @@
         <description>带宽工业系统测试用中枢建筑。产出编译线程，供范围内的终端设备连接。</description>
         <thingClass>Building</thingClass>
         <graphicData>
-            <texPath>Celes/Building/LabNanoForge/LabNanoForge</texPath>
+            <texPath>Celes/Building/SimplifiedControlTower/SimplifiedControlTower</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(2.5,2.5)</drawSize>
+            <drawSize>(15,15)</drawSize>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
@@ -18,9 +18,11 @@
         </graphicData>
         <tickerType>Normal</tickerType>
         <drawerType>MapMeshAndRealTime</drawerType>
-        <size>(2,2)</size>
-        <altitudeLayer>Building</altitudeLayer>
+        <size>(3,3)</size>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
         <fillPercent>0.5</fillPercent>
+        <uiIconScale>0.4</uiIconScale>
+        <uiIconOffset>(0, 0.3)</uiIconOffset>
         <useHitPoints>true</useHitPoints>
         <costList>
             <Steel>100</Steel>
@@ -37,19 +39,19 @@
                 <basePowerConsumption>300</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable" />
-            <li Class="CelesFeature.CompProperties_ThreadProducer">
+            <li Class="CelesFeature.CelesIM_CompProperties_ThreadProducer">
                 <baseThreadsProduce>8</baseThreadsProduce>
                 <connectRadius>24.9</connectRadius>
                 <overloadCount>7500</overloadCount>
-
-                <indicatorTexPath>Celes/Building/Celes_Indicator_ThreadLine</indicatorTexPath>
-                <indicatorDrawSize>(1.0, 1.5)</indicatorDrawSize>
-                <indicatorVerticalOffset>1.3</indicatorVerticalOffset>
+                <!-- 批 3 B3：中枢端连点 z+ 偏移（伪 3D 视觉高度；按贴图塔顶实际位置实测定稿） -->
+                <linkHeight>5.6</linkHeight>
+                <!-- E+F：自定义中枢故障维修资源（原版 CompBreakdownable 已禁用——下方 comp 已移除） -->
+                <faultRepairResource>ComponentIndustrial</faultRepairResource>
+                <faultRepairCount>2</faultRepairCount>
             </li>
-            <li Class="CompProperties_Breakdownable"/>
         </comps>
         <placeWorkers>
-            <li>CelesFeature.PlaceWorker_ShowThreadConnection</li>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowThreadConnection</li>
         </placeWorkers>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <constructEffect>ConstructMetal</constructEffect>
@@ -59,6 +61,60 @@
         <defName>Celes_TestTerminal</defName>
         <label>测试终端</label>
         <description>带宽工业系统测试用终端建筑。连接至中枢后消耗编译线程进行生产。</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Celes/Building/LegacyElectroicComputer/LegacyElectroicComputer</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(7,4)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <size>(4,2)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>true</useHitPoints>
+        <costList>
+            <Steel>50</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <WorkToBuild>1500</WorkToBuild>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>150</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
+                <baseThreadsCost>4</baseThreadsCost>
+                <haveWarmUpCount>false</haveWarmUpCount>
+                <warmUpTicks>12500</warmUpTicks>
+                <!-- 批 3 B3：连接状态标志（贴图路径 XML 可配；高度按终端贴图顶端实测定稿） -->
+                <markTexPath>Celes/UI/Overlays/ThreadMark</markTexPath>
+                <linkHeight>2.2</linkHeight>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowThreadConnection</li>
+        </placeWorkers>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <constructEffect>ConstructMetal</constructEffect>
+    </ThingDef>
+
+    <!-- ═══ 批 2：预热启用变体（B2 验证资产——haveWarmUpCount=true，保留无预热原版对照）═══ -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>Celes_TestTerminalWarmup</defName>
+        <label>测试终端（预热）</label>
+        <description>带宽工业系统测试用终端建筑（预热变体）：连接后需完成预热倒计时（12500 tick），用于验证预热三态（活跃递减/无信号冻结/断联清零）。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Celes/Building/LabNanoForge/LabNanoForge</texPath>
@@ -92,17 +148,17 @@
                 <basePowerConsumption>150</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable" />
-            <li Class="CelesFeature.CompProperties_ThreadConsumer">
+            <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
                 <baseThreadsCost>4</baseThreadsCost>
-                <produceEffic>1.0</produceEffic>
-                <canWorkOffline>true</canWorkOffline>
-                <offlineFactor>0.5</offlineFactor>
-                <haveWarmUpCount>false</haveWarmUpCount>
+                <haveWarmUpCount>true</haveWarmUpCount>
                 <warmUpTicks>12500</warmUpTicks>
+
+                <markTexPath>Celes/UI/Overlays/ThreadMark</markTexPath>
+                <linkHeight>1.2</linkHeight>
             </li>
         </comps>
         <placeWorkers>
-            <li>CelesFeature.PlaceWorker_ShowThreadConnection</li>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowThreadConnection</li>
         </placeWorkers>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <constructEffect>ConstructMetal</constructEffect>
@@ -114,21 +170,24 @@
         <description>扩展编译线程连接范围的中继设备。</description>
         <thingClass>Building</thingClass>
         <graphicData>
-            <texPath>Celes/Building/LabNanoForge/LabNanoForge</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1.0,1.0)</drawSize>
-            <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
+            <texPath>Celes/Building/RelayNode/RelayNode</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(5,5)</drawSize>
+            <drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0.9,3,0.9)</volume>
+            </shadowData>
         </graphicData>
         <tickerType>Normal</tickerType>
         <drawerType>MapMeshAndRealTime</drawerType>
+        <!-- 批 3 B3：连线由中继 PostDraw 绘制——恒绘防视野剔除（放大看对端时线不消失；
+             DynamicDrawManager.CullJob 对 drawOffscreen=true 跳过 viewRect 判定，轨道打击基类同款先例） -->
+        <drawOffscreen>true</drawOffscreen>
         <size>(1,1)</size>
         <altitudeLayer>Building</altitudeLayer>
         <fillPercent>0.5</fillPercent>
+        <uiIconOffset>(0, 0.3)</uiIconOffset>
+        <uiIconScale>0.4</uiIconScale>
         <useHitPoints>true</useHitPoints>
         <costList>
             <Steel>75</Steel>
@@ -140,26 +199,15 @@
             <Flammability>1.0</Flammability>
         </statBases>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>200</basePowerConsumption>
-            </li>
-            <li Class="CompProperties_Flickable" />
-            <li Class="CelesFeature.CompProperties_ThreadRelay">
+            <li Class="CelesFeature.CelesIM_CompProperties_ThreadRelay">
                 <connectionLimit>3</connectionLimit>
                 <connectRadius>7.9</connectRadius>
-
-                <indicatorTexPath>Celes/Building/Celes_Indicator_ThreadLine</indicatorTexPath>
-                <indicatorDrawSize>(1.0, 1.5)</indicatorDrawSize>
-                <indicatorVerticalOffset>1.3</indicatorVerticalOffset>
-
-                <childIndicatorTexPath>Celes/Building/Celes_Indicator_ThreadLineRelay</childIndicatorTexPath>
-                <childIndicatorDrawSize>(0.6, 1.0)</childIndicatorDrawSize>
-                <childIndicatorVerticalOffset>1.3</childIndicatorVerticalOffset>
+                <!-- 批 3 B3：中继端连点 z+ 偏移（伪 3D 视觉高度；按贴图顶端实测定稿） -->
+                <linkHeight>2.0</linkHeight>
             </li>
         </comps>
         <placeWorkers>
-            <li>CelesFeature.PlaceWorker_ShowThreadConnection</li>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowThreadConnection</li>
         </placeWorkers>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <constructEffect>ConstructMetal</constructEffect>

@@ -14,7 +14,7 @@
                 <volume>(0.9,3,0.9)</volume>
             </shadowData>
         </graphicData>
-        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
         <blockWind>true</blockWind>
@@ -44,9 +44,10 @@
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
-                <shortCircuitInRain>false</shortCircuitInRain>   <!-- FD-G34（2026-09-02）：原配置 true 为错误——原版默认 false（CompProperties_Power.cs:21），仅显式 true 的建筑露天雨中短路（ShortCircuitUtility.TryShortCircuitInRain 实证）；发信器/发射平台与原版常规电力建筑一致不短路 -->
+                <shortCircuitInRain>false</shortCircuitInRain>
                 <basePowerConsumption>200</basePowerConsumption>
             </li>
+            <li Class="CompProperties_Flickable" />
         </comps>
         <researchPrerequisites>
             <li>Celes_CelestiaFreqDecrypt</li>
@@ -121,14 +122,14 @@
         <description>星铃外勤部的货运发射平台。货运单元需紧邻其对接口建造。平台消耗电力维持待机，发射时需电网承载额外大负载。</description>
         <thingClass>CelesFeature.CelesFD_Building_PodLauncher</thingClass>
         <graphicData>
-            <texPath>Things/Building/Misc/PodLauncher</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(2,3)</drawSize>
+            <texPath>Celes/Building/LaunchPad/LaunchPad</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,4)</drawSize>
         </graphicData>
         <drawerType>MapMeshAndRealTime</drawerType>
-        <size>(1,2)</size>
+        <size>(3,1)</size>
         <rotatable>true</rotatable>
-        <altitudeLayer>Building</altitudeLayer>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
         <passability>Impassable</passability>
         <castEdgeShadows>true</castEdgeShadows>
         <fillPercent>1.0</fillPercent>
@@ -147,8 +148,7 @@
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
-                <shortCircuitInRain>false</shortCircuitInRain>   <!-- FD-G34（2026-09-02）：原配置 true 为错误——原版默认 false（CompProperties_Power.cs:21），仅显式 true 的建筑露天雨中短路（ShortCircuitUtility.TryShortCircuitInRain 实证）；发信器/发射平台与原版常规电力建筑一致不短路 -->
-                <!-- 原版双档语义：basePowerConsumption=发射/工作态耗电（前摇暂态），idlePowerDraw=待机/常态耗电（前摇恢复值） -->
+                <shortCircuitInRain>false</shortCircuitInRain>
                 <basePowerConsumption>14400</basePowerConsumption>
                 <idlePowerDraw>100</idlePowerDraw>
             </li>
@@ -160,7 +160,7 @@
         <modExtensions>
             <li Class="CelesFeature.CelesFD_LaunchPortExtension">
                 <launchPadSource>true</launchPadSource>
-                <portOffset>(1,0,0)</portOffset>
+                <portOffset>(0,0,-1)</portOffset>
             </li>
         </modExtensions>
         <researchPrerequisites>

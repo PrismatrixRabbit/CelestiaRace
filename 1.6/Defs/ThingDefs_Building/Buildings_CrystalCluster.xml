@@ -7,7 +7,7 @@
     <defName>Celes_CrystalCluster</defName>
     <label>尘构晶簇</label>
     <description>由晶体培育器或野外晶种催生的晶态物质簇。会随时间生长分级，采矿获得初始晶态材料。</description>
-    <thingClass>CelesFeature.Celes_CrystalCluster</thingClass>
+    <thingClass>CelesFeature.CelesIM_CrystalCluster</thingClass>
     <graphicData>
       <texPath>Celes/Building/CrystalCluster/CrystalCluster_1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -33,7 +33,7 @@
       <mineableDropChance>0</mineableDropChance>
     </building>
     <comps>
-      <li Class="CelesFeature.Celes_CompProperties_CrystalCluster">
+      <li Class="CelesFeature.CelesIM_CompProperties_CrystalCluster">
         <levelGraphics>
           <li>
             <texPath>Celes/Building/CrystalCluster/CrystalCluster_1</texPath>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ═══ 批 4（一类生产）测试配方：验证效率因子链（Phase 2 T2.1-T2.7）
+         workTableSpeedStat 走默认（RecipeDef.cs:490 = WorkTableWorkSpeedFactor）零配置；
+         数值占位（B4 模板预设：12 钢→1 零部件 5000 work）═══ -->
+    <RecipeDef>
+        <defName>Celes_TestRecipe_Component</defName>
+        <label>测试组装零部件</label>
+        <description>带宽工业系统效率因子测试配方。</description>
+        <jobString>正在组装零部件</jobString>
+        <workAmount>5000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+        </ingredients>
+        <products>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </products>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+    </RecipeDef>
+</Defs>

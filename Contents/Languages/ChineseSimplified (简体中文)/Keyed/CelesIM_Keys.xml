@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ═══ CelesIM 轨道二 Keyed 文本 ═══
+     纪律依据：《星铃_UI文本插入与行高规范》（同目录）——
+     ① 键内零 .NET 格式说明符（Grammar Resolver 渲染空），数值 C# 预格式化后传入
+     ② 多行 = 单行键值 + 字面 \n（引擎 DirectXmlLoaderSimple.cs:35 转换；原版/轨道一先例）
+     ③ 零尾随空白；DEV 文本豁免；DefInjected 挂账用户自理 -->
+<LanguageData>
+
+    <!-- ── Gizmo 标题（IThreadNode）── -->
+    <CelesIM_Keyed_GizmoThreads>编译线程</CelesIM_Keyed_GizmoThreads>
+    <CelesIM_Keyed_GizmoConnections>连接数</CelesIM_Keyed_GizmoConnections>
+
+    <!-- ── 中枢 Inspect 五态 ── -->
+    <CelesIM_Keyed_HubInspectInterference>中枢干扰\n线程产出: 0\n已占用: 0</CelesIM_Keyed_HubInspectInterference>
+    <CelesIM_Keyed_HubInspectFault>中枢超载故障\n线程产出: 0\n已占用: 0</CelesIM_Keyed_HubInspectFault>
+    <CelesIM_Keyed_HubInspectOverloadOffline>编译线程产出: {0}\n已占用: {1}\n负载率: {2}\n超载! 中枢离线，恢复电力后继续倒计时</CelesIM_Keyed_HubInspectOverloadOffline>
+    <CelesIM_Keyed_HubInspectOverloadCountdown>编译线程产出: {0}\n已占用: {1}\n负载率: {2}\n超载! {3}后故障</CelesIM_Keyed_HubInspectOverloadCountdown>
+    <CelesIM_Keyed_HubInspectNormal>编译线程产出: {0}\n已占用: {1}\n负载率: {2}</CelesIM_Keyed_HubInspectNormal>
+
+    <!-- ── 启用线程连接（终端专属开关，2026-09-23）── -->
+    <CelesIM_Keyed_ThreadSwitchLabel>启用线程连接</CelesIM_Keyed_ThreadSwitchLabel>
+    <CelesIM_Keyed_ThreadSwitchDesc>关闭后终端手动断开线程连接（解除绑定并清空预热进度），且不再自动连接；开启后恢复并立即尝试连接。</CelesIM_Keyed_ThreadSwitchDesc>
+
+    <!-- ── 重置线程连接（终端/中继统一 label，desc 分述范围）── -->
+    <CelesIM_Keyed_ResetConnection>重置线程连接</CelesIM_Keyed_ResetConnection>
+    <CelesIM_Keyed_ResetConnectionDescTerminal>手动重置编译线程连接，优先连接至非当前目标的中枢。</CelesIM_Keyed_ResetConnectionDescTerminal>
+    <CelesIM_Keyed_ResetConnectionDescRelay>手动重置编译线程连接，优先连接至非当前目标的父级。</CelesIM_Keyed_ResetConnectionDescRelay>
+
+    <!-- ── 终端 Inspect ── -->
+    <CelesIM_Keyed_TerminalInspect>占用线程: {0}\n连接状态: {1}\n尘构机效率: {2}</CelesIM_Keyed_TerminalInspect>
+    <CelesIM_Keyed_ThreadLinkFactor>尘构机效率: x{0}</CelesIM_Keyed_ThreadLinkFactor>
+    <!-- ── 尘构机效率：Inspect 括号原因词 + stat 详情报文行（2026-09-26，全 Keyed 便于调整）── -->
+    <CelesIM_Keyed_ReasonWarming>预热中</CelesIM_Keyed_ReasonWarming>
+    <CelesIM_Keyed_EffOffline>未连接线程</CelesIM_Keyed_EffOffline>
+    <CelesIM_Keyed_EffWarming>预热进程</CelesIM_Keyed_EffWarming>
+    <!-- ── 批 4 终版：依赖线程网络 stat 是/否（反转显示）── -->
+    <CelesIM_Keyed_DepYes>是</CelesIM_Keyed_DepYes>
+    <CelesIM_Keyed_DepNo>否</CelesIM_Keyed_DepNo>
+    <CelesIM_Keyed_StatusNotConnected>未连接</CelesIM_Keyed_StatusNotConnected>
+    <CelesIM_Keyed_StatusNoSignal>无信号（绑定保留）</CelesIM_Keyed_StatusNoSignal>
+    <CelesIM_Keyed_StatusConnected>已连接: {0}</CelesIM_Keyed_StatusConnected>
+    <CelesIM_Keyed_WarmingUp>（预热进程{0}% 预计{1}）</CelesIM_Keyed_WarmingUp>
+    <CelesIM_Keyed_WarmUpEtaNA>--小时</CelesIM_Keyed_WarmUpEtaNA>
+
+    <!-- ── 中继 Inspect 与模式 ── -->
+    <CelesIM_Keyed_RelayInspect>{0}\n{1}\n连接数: {2} / {3}</CelesIM_Keyed_RelayInspect>
+    <CelesIM_Keyed_Accessible>允许终端接入</CelesIM_Keyed_Accessible>
+    <CelesIM_Keyed_AccessibleDesc>关闭后中继信号塔转为仅转发模式，已连接的终端将断开并尝试重连至其他目标。</CelesIM_Keyed_AccessibleDesc>
+    <CelesIM_Keyed_ModeAccessible>允许终端接入</CelesIM_Keyed_ModeAccessible>
+    <CelesIM_Keyed_ModeForwardOnly>仅转发</CelesIM_Keyed_ModeForwardOnly>
+
+    <!-- ── Alert：中枢超载 ── -->
+    <CelesIM_Keyed_AlertOverloadLabel>中枢超载</CelesIM_Keyed_AlertOverloadLabel>
+    <CelesIM_Keyed_AlertOverloadDesc>星铃编译中枢的线程负载超过其产出上限，正在超载运行。若不及时处理，中枢将因超载而故障，需要消耗资源维修。</CelesIM_Keyed_AlertOverloadDesc>
+    <CelesIM_Keyed_AlertOverloadFaultLabel>中枢超载故障</CelesIM_Keyed_AlertOverloadFaultLabel>
+    <CelesIM_Keyed_AlertOverloadContinueLabel>中枢超载：继续运行将故障</CelesIM_Keyed_AlertOverloadContinueLabel>
+    <CelesIM_Keyed_AlertOverloadCountdownLabel>中枢超载: {0}后故障</CelesIM_Keyed_AlertOverloadCountdownLabel>
+
+    <!-- ── Alert：中枢干扰 ── -->
+    <CelesIM_Keyed_AlertInterferenceLabel>中枢干扰宕机</CelesIM_Keyed_AlertInterferenceLabel>
+    <CelesIM_Keyed_AlertInterferenceDesc>地图上存在多个活跃的星铃编译中枢，其频率重叠会导致互相干扰，可能至少有一个因信号干扰而宕机。</CelesIM_Keyed_AlertInterferenceDesc>
+
+    <!-- ── 维修 WorkGiver ── -->
+    <CelesIM_Keyed_NoFaultResource>缺少中枢故障维修资源</CelesIM_Keyed_NoFaultResource>
+
+    <!-- ── 晶体系（第一轮代码补 Keyed）── -->
+    <CelesIM_Keyed_CrystalLevel>晶体等级: {0}</CelesIM_Keyed_CrystalLevel>
+    <CelesIM_Keyed_BlightRadius>枯萎半径: {0} (+{1}/天)</CelesIM_Keyed_BlightRadius>
+    <CelesIM_Keyed_CrystalSeedStatus>状态: {0}</CelesIM_Keyed_CrystalSeedStatus>
+    <CelesIM_Keyed_CrystalSeedActive>活性</CelesIM_Keyed_CrystalSeedActive>
+    <CelesIM_Keyed_CrystalSeedInactive>失活</CelesIM_Keyed_CrystalSeedInactive>
+    <CelesIM_Keyed_AutoMarkLabel>自动标记开采</CelesIM_Keyed_AutoMarkLabel>
+    <CelesIM_Keyed_AutoMarkDesc>开启后每次生长检测自动为已达最高等级的晶簇标记开采指令。</CelesIM_Keyed_AutoMarkDesc>
+    <CelesIM_Keyed_AutoMarkStatus>自动标记开采: {0}</CelesIM_Keyed_AutoMarkStatus>
+    <CelesIM_Keyed_On>开</CelesIM_Keyed_On>
+    <CelesIM_Keyed_Off>关</CelesIM_Keyed_Off>
+
+</LanguageData>

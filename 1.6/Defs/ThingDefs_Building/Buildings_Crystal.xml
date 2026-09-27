@@ -66,11 +66,12 @@
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
+    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
     <researchPrerequisites>
       <li>Celes_MainTech_I</li>
     </researchPrerequisites>
     <placeWorkers>
-      <li>CelesFeature.PlaceWorker_CrystalGrowRadius</li>
+      <li>CelesFeature.CelesIM_PlaceWorker_CrystalGrowRadius</li>
     </placeWorkers>
     <comps>
       <li Class="CompProperties_Power">
@@ -93,7 +94,7 @@
         <fuelLabel>复制基质</fuelLabel>
         <outOfFuelMessage>基质耗尽，培育停止。</outOfFuelMessage>
       </li>
-      <li Class="CelesFeature.Celes_CompProperties_CrystalSeeder">
+      <li Class="CelesFeature.CelesIM_CompProperties_CrystalSeeder">
         <ticksToGrow>10000</ticksToGrow>
         <growRadius>9.9</growRadius>
         <totalGrowChance>1.5</totalGrowChance>
@@ -118,7 +119,7 @@
         <chanceToGrow>0.33</chanceToGrow>
       </li>
       <!--
-      <li Class="CelesFeature.Celes_CompProperties_CorpseFuel">
+      <li Class="CelesFeature.CelesIM_CompProperties_CorpseFuel">
         <corpseBlacklist>
           <li>Celes_NanoCrystallisedCorpse</li>
           <li>Celes_RottenNanoCrystallisedCorpse</li>
@@ -152,7 +153,7 @@
     <passability>Standable</passability>
     <tickerType>Rare</tickerType>
     <placeWorkers>
-      <li>CelesFeature.PlaceWorker_CrystalGrowRadius</li>
+      <li>CelesFeature.CelesIM_PlaceWorker_CrystalGrowRadius</li>
     </placeWorkers>
     <rotatable>false</rotatable>
     <statBases>
@@ -165,7 +166,7 @@
       <Celes_CrystallineMaterial>24</Celes_CrystallineMaterial>
     </costList>
     <comps>
-      <li Class="CelesFeature.Celes_CompProperties_CrystalSeed">
+      <li Class="CelesFeature.CelesIM_CompProperties_CrystalSeed">
         <attemptsLimit>45</attemptsLimit>
         <ticksToGrow>2500</ticksToGrow>
         <growRadius>9.9</growRadius>
@@ -196,7 +197,7 @@
         </activeGraphicData>
       </li>
       <!-- 数值：45 次判定 × 0.25 = +11.25 → 最终半径 22.15（10.9 + 11.25）；硬上限 125 -->
-      <li Class="CelesFeature.Celes_CompProperties_CrystalBlight">
+      <li Class="CelesFeature.CelesIM_CompProperties_CrystalBlight">
         <startRadius>10.9</startRadius>
         <radiusGrowPerCheck>0.25</radiusGrowPerCheck>
         <expandCheckTicks>2500</expandCheckTicks>
@@ -209,7 +210,7 @@
         <messageOnCropDeath>true</messageOnCropDeath>
       </li>
       <!-- 晶化表面扩散（真菌状分叉+填充；失活即停；仅晶种系挂载） -->
-      <li Class="CelesFeature.Celes_CompProperties_CrystalTerrainSpread">
+      <li Class="CelesFeature.CelesIM_CompProperties_CrystalTerrainSpread">
         <spreadTerrain>Celes_CrystalSurface</spreadTerrain>
         <spreadPerCheck>3</spreadPerCheck>
         <branchChance>0.1</branchChance>
@@ -244,7 +245,7 @@
     <passability>Standable</passability>
     <tickerType>Rare</tickerType>
     <placeWorkers>
-      <li>CelesFeature.PlaceWorker_CrystalGrowRadius</li>
+      <li>CelesFeature.CelesIM_PlaceWorker_CrystalGrowRadius</li>
     </placeWorkers>
     <rotatable>false</rotatable>
     <statBases>
@@ -252,13 +253,12 @@
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0</Flammability>
     </statBases>
-    <!-- [事实] 拆除 100% 返还：resourcesFractionWhenDeconstructed 默认 0.5（BuildableDef.cs:38），覆写 1 = 全返 -->
     <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
     <costList>
       <Celes_InitialCrystalCluster>1</Celes_InitialCrystalCluster>
     </costList>
     <comps>
-      <li Class="CelesFeature.Celes_CompProperties_CrystalSeed">
+      <li Class="CelesFeature.CelesIM_CompProperties_CrystalSeed">
         <attemptsLimit>99999</attemptsLimit>
         <ticksToGrow>10000</ticksToGrow>
         <growRadius>9.9</growRadius>
@@ -288,7 +288,7 @@
           <graphicClass>Graphic_Single</graphicClass>
         </activeGraphicData>
       </li>
-      <li Class="CelesFeature.Celes_CompProperties_CrystalBlight">
+      <li Class="CelesFeature.CelesIM_CompProperties_CrystalBlight">
         <startRadius>10.9</startRadius>
         <radiusGrowPerCheck>0.01</radiusGrowPerCheck>
         <expandCheckTicks>2500</expandCheckTicks>
@@ -301,7 +301,7 @@
         <messageOnCropDeath>true</messageOnCropDeath>
       </li>
       <!-- 晶化表面扩散（真菌状分叉+填充；失活即停） -->
-      <li Class="CelesFeature.Celes_CompProperties_CrystalTerrainSpread">
+      <li Class="CelesFeature.CelesIM_CompProperties_CrystalTerrainSpread">
         <spreadTerrain>Celes_CrystalSurface</spreadTerrain>
         <spreadPerCheck>3</spreadPerCheck>
         <branchChance>0.1</branchChance>

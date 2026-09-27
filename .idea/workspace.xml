@@ -11,14 +11,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/Market_L1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_Cargo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_UnlockLevelDefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_UnlockLevelDefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/DesignationCategories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/DesignationCategories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/SupportDefs/CelesFD_SupportStrikeAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/SupportDefs/CelesFD_SupportStrikeAssets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/SupportDefs/SupportDefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/SupportDefs/SupportDefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_IntroTrees.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_IntroTrees.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_MarketDefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_testMarketDefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_SubPageDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_UnlockLevelDefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/UnlockLevelDef.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_WelcomeTickers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_DropPod.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_DropPod.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/JobDefs/Jobs_Misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingCategoryDefs/ThingCategories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingCategoryDefs/ThingCategories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_IndustryModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Building_Production.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Crystal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Crystal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_CrystalCluster.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_CrystalCluster.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/Celes_WorkGivers_Crystal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/Celes_WorkGivers_Crystal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Patches/Core/Storyteller/Storyteller.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Patches/Core/Storyteller/Storyteller.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/DefInjected/CelesFeature.CelesFD_TickerDef/CelesFD_WelcomeTickers.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/Antenna/Antenna.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Textures/Celes/Building/Antenna/Antenna.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/CentralControlTower/CentralControlTower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/UI/Overlays/Celes_ThreadLack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/UI/Overlays/Celes_ThreadOverload.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +262,31 @@
       <workItem from="1788207458126" duration="3733000" />
       <workItem from="1788285546192" duration="735000" />
       <workItem from="1788355423354" duration="8935000" />
-      <workItem from="1788459475248" duration="9016000" />
+      <workItem from="1788459475248" duration="9634000" />
+      <workItem from="1788533901179" duration="180000" />
+      <workItem from="1788535515567" duration="2791000" />
+      <workItem from="1788624834692" duration="2202000" />
+      <workItem from="1788640463481" duration="5258000" />
+      <workItem from="1788655960893" duration="37000" />
+      <workItem from="1788693519977" duration="6734000" />
+      <workItem from="1789219014342" duration="4060000" />
+      <workItem from="1789389058615" duration="2934000" />
+      <workItem from="1789568878448" duration="2639000" />
+      <workItem from="1789576254438" duration="2805000" />
+      <workItem from="1789844587453" duration="609000" />
+      <workItem from="1789856475332" duration="4221000" />
+      <workItem from="1789972992356" duration="2835000" />
+      <workItem from="1790052233077" duration="5761000" />
+      <workItem from="1790182871392" duration="1389000" />
+      <workItem from="1790211217201" duration="2150000" />
+      <workItem from="1790217652305" duration="4922000" />
+      <workItem from="1790273717019" duration="5974000" />
+      <workItem from="1790304121533" duration="11982000" />
+      <workItem from="1790374999529" duration="1147000" />
+      <workItem from="1790376621968" duration="15259000" />
+      <workItem from="1790403698372" duration="2978000" />
+      <workItem from="1790424556876" duration="3774000" />
+      <workItem from="1790477100508" duration="26834000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -471,7 +512,23 @@
       <option name="project" value="LOCAL" />
       <updated>1788465143392</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="武备支援完美收工！">
+      <option name="closed" value="true" />
+      <created>1788486443450</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1788486443450</updated>
+    </task>
+    <task id="LOCAL-00030" summary="支援系统完工？">
+      <option name="closed" value="true" />
+      <created>1789389094522</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1789389094522</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,8 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="111" />
-    <MESSAGE value="烧伤附着" />
     <MESSAGE value="渲染调整，平衡性调整" />
     <MESSAGE value="增添贴图，初步修正尘构节律" />
     <MESSAGE value="尘构节律修复（人类配方待完成）" />
@@ -517,7 +572,9 @@
     <MESSAGE value="晶簇扩散机制" />
     <MESSAGE value="准备替换翻译" />
     <MESSAGE value="支援系统更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="支援系统更新" />
+    <MESSAGE value="武备支援完美收工！" />
+    <MESSAGE value="支援系统完工？" />
+    <option name="LAST_COMMIT_MESSAGE" value="支援系统完工？" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

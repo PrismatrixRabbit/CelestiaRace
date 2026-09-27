@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ═══ CelesIM 轨道二 JobDefs（E+F 批 2026-09-13：自定义中枢故障维修链）═══
+     复刻原版 FixBrokenDownBuilding（Core JobDefs + JobDriver_FixBrokenDownBuilding.cs 实证）；
+     数量/时长经 ThreadProducer CompProperties XML 配置 -->
+<Defs>
+  <JobDef>
+    <defName>CelesIM_FixHubFault</defName>
+    <driverClass>CelesFeature.CelesIM_JobDriver_FixHubFault</driverClass>
+    <reportString>维修TargetA的中枢故障。</reportString>
+    <suspendable>false</suspendable>
+  </JobDef>
+</Defs>

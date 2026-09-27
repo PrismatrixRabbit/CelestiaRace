@@ -267,7 +267,7 @@
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Main_Txt_L0Neutral</defName>
-        <nodeText>这里是星铃外勤部，访客{playerFactionName}，请表明来意。</nodeText>
+        <nodeText>这里是星铃外勤部，{playerLevelWord}{playerFactionName}，请表明来意。</nodeText>
         <options>
             <li><label>继续</label><next>N_Main_Options</next></li>
         </options>
@@ -275,7 +275,7 @@
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Main_Txt_L0Ally</defName>
-        <nodeText>欢迎，访客{playerFactionName}，今天有什么想要交易的？</nodeText>
+        <nodeText>欢迎，{playerLevelWord}{playerFactionName}，今天有什么想要交易的？</nodeText>
         <options>
             <li><label>继续</label><next>N_Main_Options</next></li>
         </options>
@@ -283,7 +283,7 @@
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Main_Txt_L1Hostile</defName>
-        <nodeText>交易者{playerFactionName}。我们得通知您，由于您近期的表现，各信标站可能会主动断开和你们的通讯。</nodeText>
+        <nodeText>{playerLevelWord}{playerFactionName}。我们得通知您，由于您近期的表现，各信标站可能会主动断开和你们的通讯。</nodeText>
         <options>
             <li><label>继续</label><next>N_Main_Options</next></li>
         </options>
@@ -291,7 +291,7 @@
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Main_Txt_L1Neutral</defName>
-        <nodeText>这里是星铃外勤部，交易者{playerFactionName}，请表明来意。</nodeText>
+        <nodeText>这里是星铃外勤部，{playerLevelWord}{playerFactionName}，请表明来意。</nodeText>
         <options>
             <li><label>继续</label><next>N_Main_Options</next></li>
         </options>
@@ -299,7 +299,7 @@
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Main_Txt_L1Ally</defName>
-        <nodeText>欢迎，交易者{playerFactionName}，今天有什么想要交易的？</nodeText>
+        <nodeText>欢迎，{playerLevelWord}{playerFactionName}，今天有什么想要交易的？</nodeText>
         <options>
             <li><label>继续</label><next>N_Main_Options</next></li>
         </options>

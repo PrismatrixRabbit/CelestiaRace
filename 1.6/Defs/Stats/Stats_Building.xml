@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ═══ 批 4 终版（数值链重构 2026-09-26）——我方四 stat ═══
+         · 显示门禁统一=自定义 StatWorker 覆写 ShouldShowFor（thing 挂 CelesIM_CompThreadConsumer 才显示——
+           仅我方建筑；原版惯用覆写手法，先例 StatWorker_Mechanitor 等 5 处）
+         · 「尘构机效率」显示点：①工作速度系数详情乘数行（StatPart 注入）②Inspect 行③本 stat 行+详情报文
+         · priority 999/998/997/996：Building 组内降序（StatsReportUtility :280-281），全库组内最小 1000——
+           确定排在全部原版条目之后 ═══ -->
+
+    <!-- 依赖线程网络：canWorkOffline 的 stat 化（1=可离网工作 / 0=依赖——未连接不可工作，
+         bill 拦截 patch CelesIM_Patch_WorkTableBillsUsable 消费）；显示反转（值1→否/值0→是） -->
+    <StatDef>
+        <defName>Celes_ThreadDependency</defName>
+        <label>依赖线程网络</label>
+        <description>该建筑是否需要连接编译线程网络才能工作。</description>
+        <category>Building</category>
+        <defaultBaseValue>1</defaultBaseValue>
+        <toStringStyle>Integer</toStringStyle>
+        <workerClass>CelesFeature.CelesIM_StatWorker_ThreadDependency</workerClass>
+        <displayPriorityInCategory>999</displayPriorityInCategory>
+    </StatDef>
+
+    <!-- 未连接效率乘数（原 MinEfficiencyFactor 改名接管——offlineFactor 的 stat 化）：
+         统一效率式起点 floor + (1−floor) × 热度；default 0.1=依赖型预热起点（不配即得），
+         可离网型 statBases 配值（LabNanoForge 0.35 / TailoringTab 0.5）；
+         依赖型隐藏本行（worker 条件） -->
+    <StatDef>
+        <defName>Celes_UnconnectedEfficiency</defName>
+        <label>未连接效率乘数</label>
+        <description>未连接编译线程网络时的工作效率乘数，也是预热效率的起始值。</description>
+        <category>Building</category>
+        <defaultBaseValue>0.1</defaultBaseValue>
+        <toStringStyle>PercentZero</toStringStyle>
+        <workerClass>CelesFeature.CelesIM_StatWorker_UnconnectedEfficiency</workerClass>
+        <displayPriorityInCategory>998</displayPriorityInCategory>
+    </StatDef>
+
+    <!-- 尘构终端预热时长：statBases 写 ticks 原值（与 Consumer comp 的 warmUpTicks 同值——两处同步纪律）；
+         WorkAmount 样式=原版工作量显示（ticks ÷60 分钟制，WorkToBuild 同款视觉语言） -->
+    <StatDef>
+        <defName>Celes_WarmUpDuration</defName>
+        <label>尘构终端预热时长</label>
+        <description>尘构终端接入编译线程网络后，恢复全速工作所需的预热时间。</description>
+        <category>Building</category>
+        <defaultBaseValue>0</defaultBaseValue>
+        <toStringStyle>WorkAmount</toStringStyle>
+        <workerClass>CelesFeature.CelesIM_StatWorker_ThreadConsumerOnly</workerClass>
+        <displayPriorityInCategory>997</displayPriorityInCategory>
+    </StatDef>
+
+    <!-- 尘构机效率：单一真相源 stat——GetWorkSpeedFactor 转发读此 stat；parts 单式统一
+         （ThreadProgress：val ×= floor+(1−floor)×热度——全态单一公式）；
+         详情报文=基础值/信息行（未连接线程·预热进程，保留措辞互斥显示）/最终值 -->
+    <StatDef>
+        <defName>Celes_ThreadLinkEfficiency</defName>
+        <label>尘构机效率</label>
+        <description>尘构终端的编译线程网络效率乘数。</description>
+        <category>Building</category>
+        <defaultBaseValue>1</defaultBaseValue>
+        <toStringStyle>PercentZero</toStringStyle>
+        <workerClass>CelesFeature.CelesIM_StatWorker_ThreadConsumerOnly</workerClass>
+        <parts>
+            <li Class="CelesFeature.CelesIM_StatPart_ThreadProgress" />
+        </parts>
+        <displayPriorityInCategory>996</displayPriorityInCategory>
+    </StatDef>
+</Defs>

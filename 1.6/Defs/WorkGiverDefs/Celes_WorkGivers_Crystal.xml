@@ -7,7 +7,7 @@
   <!--
   <WorkGiverDef>
     <defName>Celes_CorpseFuel</defName>
-    <giverClass>CelesFeature.Celes_WorkGiver_CorpseFuel</giverClass>
+    <giverClass>CelesFeature.CelesIM_WorkGiver_CorpseFuel</giverClass>
     <workType>Hauling</workType>
     <verb>投入培育器</verb>
     <gerund>投入培育器中</gerund>
