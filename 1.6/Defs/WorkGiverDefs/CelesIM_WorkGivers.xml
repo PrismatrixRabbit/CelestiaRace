@@ -16,4 +16,25 @@
     </requiredCapacities>
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
+
+  <!-- ═══ 批 5（二类生产·U1 2026-09-29）：自动生产机做单 ═══
+       WorkGiver_DoBill 的 fixedBillGiverDefs 白名单——缺此 giver 则无 pawn 扫描该建筑
+      （无自动接单+右键无优先选项；ThingIsUsableBillGiver 白名单外直接 false，无通用回退）
+       先例：DoBillsCeles_LabNanoForge（本 mod）+ DoBillsMechGestator（Biotech，workType 同为 Smithing） -->
+  <WorkGiverDef>
+    <defName>CelesIM_DoBills_AutoProducer</defName>
+    <label>操作自动生产机</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>70</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Celes_TestAutoProducer</li>
+    </fixedBillGiverDefs>
+    <verb>操作</verb>
+    <gerund>操作于</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
 </Defs>

@@ -2,6 +2,7 @@
 <Defs>
     <ThingDef ParentName="ResourceBase" Name="Celes_CargoBase" Abstract="True">
         <thingClass>CelesFeature.CelesIM_CargoCrate</thingClass>
+        <tradeability>None</tradeability>
         <stackLimit>5</stackLimit>
         <thingCategories>
             <li>Celes_Cargo</li>

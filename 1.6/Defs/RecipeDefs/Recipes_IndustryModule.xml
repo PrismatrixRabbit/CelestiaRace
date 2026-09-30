@@ -26,4 +26,71 @@
             <li>Celes_LabNanoForge</li>
         </recipeUsers>
     </RecipeDef>
+
+    <!-- ═══ 批 5（二类生产）a 模型配方族（视觉修订批 2026-09-30 重构：父类+内容物 ext）═══
+         父类承载：jobString/workAmount/soundWorking（培育器同款工作段音）+ 默认内容物（CelesIM_FormingGraphicExt——
+         内容物=配方侧定义，本批裁决：父类默认图而非自动显示产物）；li 跨继承追加，消费侧 last-wins=子配方可覆盖；
+         均省略 gestationCycles（=0 单周期——布线补丁失效时降级裸 Bill_Autonomous，裁决 R3）；
+         无 workSkill（自主产线——品质产物由 PostProcessProduct prefix 品质闸兜底，D1）；
+         由 Celes_TestAutoProducer 建筑侧 <recipes> 单侧链接（配方不写 recipeUsers——AllRecipes 两源合并会重复） -->
+    <RecipeDef Name="Celes_AutoRecipe_Base" Abstract="True">
+        <jobString>正在操作自动生产线</jobString>
+        <workAmount>1800</workAmount>
+        <soundWorking MayRequire="Ludeon.RimWorld.Biotech">MechGestatorCycle_Initiating</soundWorking>
+        <modExtensions>
+            <li Class="CelesFeature.CelesIM_FormingGraphicExt">
+                <graphic>
+                    <texPath>Celes/Building/ShaperNanoForge/ShaperNanoForge_Content</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(5,5)</drawSize>
+                </graphic>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+    <RecipeDef ParentName="Celes_AutoRecipe_Base">
+        <defName>Celes_AutoRecipe_MakeSpacerRifle</defName>
+        <label>自动组装星铃步枪</label>
+        <description>自动生产线组装星铃制式突击步枪（无品质产物——a 模型基准项）。</description>
+        <formingTicks>60000</formingTicks>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <products>
+            <Celes_Spacer_Rifle>1</Celes_Spacer_Rifle>
+        </products>
+    </RecipeDef>
+    <RecipeDef ParentName="Celes_AutoRecipe_Base">
+        <!-- 品质闸对照项：产物 CelesSaberSpacer 经 BaseMeleeWeapon_Sharp_Quality 链带 CompQuality——
+             提取时应触发黄字+强制普通品质（D1），控制台无红字；
+             内容物临时走产物图轨道（useProductGraphic——覆盖链验证：Forming 期显示军刀本体） -->
+        <defName>Celes_AutoRecipe_MakeSaber</defName>
+        <label>自动组装星铃军刀</label>
+        <description>自动生产线组装星铃军刀（带品质产物——品质闸对照项）。</description>
+        <formingTicks>30000</formingTicks>
+        <modExtensions>
+            <li Class="CelesFeature.CelesIM_FormingGraphicExt">
+                <useProductGraphic>true</useProductGraphic>
+            </li>
+        </modExtensions>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <products>
+            <CelesSaberSpacer>1</CelesSaberSpacer>
+        </products>
+    </RecipeDef>
 </Defs>

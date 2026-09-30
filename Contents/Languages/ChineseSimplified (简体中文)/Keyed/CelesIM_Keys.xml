@@ -33,9 +33,11 @@
     <CelesIM_Keyed_ReasonWarming>预热中</CelesIM_Keyed_ReasonWarming>
     <CelesIM_Keyed_EffOffline>未连接线程</CelesIM_Keyed_EffOffline>
     <CelesIM_Keyed_EffWarming>预热进程</CelesIM_Keyed_EffWarming>
-    <!-- ── 批 4 终版：依赖线程网络 stat 是/否（反转显示）── -->
+    <!-- ── 依赖线程网络 stat 是/否（值义反转修订 2026-09-27：1=依赖→是，直读）── -->
     <CelesIM_Keyed_DepYes>是</CelesIM_Keyed_DepYes>
     <CelesIM_Keyed_DepNo>否</CelesIM_Keyed_DepNo>
+    <!-- ── 依赖型未连接=无法工作（Inspect 效率行替代数值+报文原因行+floatmenu 灰显原因，2026-09-27）── -->
+    <CelesIM_Keyed_CannotWorkUnlinked>无法工作（未连接）</CelesIM_Keyed_CannotWorkUnlinked>
     <CelesIM_Keyed_StatusNotConnected>未连接</CelesIM_Keyed_StatusNotConnected>
     <CelesIM_Keyed_StatusNoSignal>无信号（绑定保留）</CelesIM_Keyed_StatusNoSignal>
     <CelesIM_Keyed_StatusConnected>已连接: {0}</CelesIM_Keyed_StatusConnected>
@@ -74,5 +76,12 @@
     <CelesIM_Keyed_AutoMarkStatus>自动标记开采: {0}</CelesIM_Keyed_AutoMarkStatus>
     <CelesIM_Keyed_On>开</CelesIM_Keyed_On>
     <CelesIM_Keyed_Off>关</CelesIM_Keyed_Off>
+
+    <!-- ── 批 5 二类生产（品质闸 D1——黄字 Log.Warning 消费，{0}=产物标签）── -->
+    <CelesIM_Keyed_QualityForced>自动生产线不支持品质产物：{0} 已强制为普通品质</CelesIM_Keyed_QualityForced>
+
+    <!-- ── 批 5 二类生产（锻造周期 Inspect——2026-09-30 裁决：孕育→锻造；{0}=剩余时间串预格式化，{1}=周期总数）── -->
+    <CelesIM_Keyed_CurrentForgeCycle>当前锻造周期: {0}</CelesIM_Keyed_CurrentForgeCycle>
+    <CelesIM_Keyed_RemainingForgeCycles>剩余锻造周期: {0} (共 {1})</CelesIM_Keyed_RemainingForgeCycles>
 
 </LanguageData>

@@ -96,8 +96,8 @@
             <li Class="CompProperties_Flickable" />
             <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
                 <baseThreadsCost>4</baseThreadsCost>
-                <haveWarmUpCount>false</haveWarmUpCount>
-                <warmUpTicks>12500</warmUpTicks>
+
+
                 <!-- 批 3 B3：连接状态标志（贴图路径 XML 可配；高度按终端贴图顶端实测定稿） -->
                 <markTexPath>Celes/UI/Overlays/ThreadMark</markTexPath>
                 <linkHeight>2.2</linkHeight>
@@ -141,6 +141,8 @@
             <WorkToBuild>1500</WorkToBuild>
             <MaxHitPoints>120</MaxHitPoints>
             <Flammability>1.0</Flammability>
+            <!-- 批 5 前置修订：预热时长单源化（原 comp warmUpTicks 12500 迁此） -->
+            <Celes_WarmUpDuration>12500</Celes_WarmUpDuration>
         </statBases>
         <comps>
             <li Class="CompProperties_Power">
@@ -150,8 +152,8 @@
             <li Class="CompProperties_Flickable" />
             <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
                 <baseThreadsCost>4</baseThreadsCost>
-                <haveWarmUpCount>true</haveWarmUpCount>
-                <warmUpTicks>12500</warmUpTicks>
+
+
 
                 <markTexPath>Celes/UI/Overlays/ThreadMark</markTexPath>
                 <linkHeight>1.2</linkHeight>
@@ -209,6 +211,84 @@
         <placeWorkers>
             <li>CelesFeature.CelesIM_PlaceWorker_ShowThreadConnection</li>
         </placeWorkers>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <constructEffect>ConstructMetal</constructEffect>
+    </ThingDef>
+
+    <!-- ═══ 批 5（二类生产·U1 2026-09-29）：a 模型管线测试建筑
+         字段对照母本 MechGestatorBase（Biotech Buildings_Production.xml:5-40）+ BenchBase 链 + LabNanoForge；
+         comps 逐单元补挂（InteractionGate/UpgradeRecipe/Byproduct 随 U3/U4/U5）；贴图占位（ForgeTerminal 单图），正式美术挂账 ═══ -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>Celes_TestAutoProducer</defName>
+        <label>测试自动生产机</label>
+        <description>带宽工业系统批5测试建筑：二类生产管线验证（自动生产工作台）。贴图占位。</description>
+        <thingClass>CelesFeature.CelesIM_Building_AutoProducer</thingClass>
+        <graphicData>
+            <texPath>Celes/Building/ShaperNanoForge/ShaperNanoForge</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(5,5)</drawSize>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <size>(3,3)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.5</fillPercent>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <pathCost>42</pathCost>
+        <surfaceType>Item</surfaceType>
+        <containedPawnsSelectable>true</containedPawnsSelectable>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <useHitPoints>true</useHitPoints>
+        <uiOrder>1050</uiOrder>
+        <costList>
+            <Steel>150</Steel>
+        </costList>
+        <statBases>
+            <WorkToBuild>3000</WorkToBuild>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>0</Cleanliness>
+            <WorkTableWorkSpeedFactor>2.0</WorkTableWorkSpeedFactor>
+
+            <!-- 批 5 前置修订：值义反转——1=依赖/0=可离网；本 def 原意可离网（旧值义 1）→ 迁移为 0 -->
+            <Celes_ThreadDependency>1</Celes_ThreadDependency>
+            <Celes_UnconnectedEfficiency>0.1</Celes_UnconnectedEfficiency>
+        </statBases>
+        <recipes>
+            <li>Celes_AutoRecipe_MakeSpacerRifle</li>
+            <li>Celes_AutoRecipe_MakeSaber</li>
+        </recipes>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>350</basePowerConsumption>
+                <!-- Q2 待机电力（2026-09-30 批复，值参考母本 MechGestator）：消费方=建筑 Tick 250t 分档 -->
+                <idlePowerDraw>50</idlePowerDraw>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
+                <baseThreadsCost>4</baseThreadsCost>
+                <markTexPath>Celes/UI/Overlays/ThreadMark</markTexPath>
+                <linkHeight>1.7</linkHeight>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowThreadConnection</li>
+        </placeWorkers>
+        <building>
+            <ai_chillDestination>false</ai_chillDestination>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <constructEffect>ConstructMetal</constructEffect>
     </ThingDef>

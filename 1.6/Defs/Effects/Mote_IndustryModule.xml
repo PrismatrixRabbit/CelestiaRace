@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- ═══ 批 5 视觉修订批：锻造流光 mote 族（2026-09-30）
+         母本=裂解扫描仪 SubcoreRipscanner（Mote_Visual.xml:405-485 + Building_SubcoreScanner.cs:389-393）：
+         · MoteAttached 附着 + needsMaintenance 生命周期（断维持 0.35s 自动淡出=冻结淡出）
+         · 流光本体=MoteSoftScannerGlow shader 扫描线（_ScanSpeed/_ScanPow 参数化，非贴图序列；值占位实测调）
+         · altitudeLayer 自母本的 MoteOverhead 下调至 BuildingOnTop——为内容物（MoteOverhead）让位（三层裁决）
+         · 蓝色 tint=线程网络主题色（0.4,0.7,1.0——Consumer markColorActive 同值先例）
+         · 单南向起步（建筑 Graphic_Single 不旋转）——建筑转 Multi 时补 east/west/north 同族+per-rotation 字典
+         · drawSize (5,5)=与建筑同画布同规格（640x640，实测校准） ═══ -->
+    <ThingDef Name="Celes_ForgeMoteBase" ParentName="MoteBase" Abstract="True">
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <mote>
+            <fadeInTime>0.35</fadeInTime>
+            <fadeOutTime>0.35</fadeOutTime>
+            <solidTime>999999</solidTime>
+            <needsMaintenance>True</needsMaintenance>
+            <fadeOutUnmaintained>True</fadeOutUnmaintained>
+        </mote>
+        <graphicData>
+            <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+            <color>(0.4, 0.7, 1.0, 1.0)</color>
+            <shaderType>MoteSoftScannerGlow</shaderType>
+            <shaderParameters>
+                <_ScanSpeed>0.5</_ScanSpeed>
+                <_ScanPow>7</_ScanPow>
+            </shaderParameters>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="Celes_ForgeMoteBase">
+        <defName>Celes_Mote_ForgeGlow_South</defName>
+        <graphicData>
+            <texPath>Celes/Building/ShaperNanoForge/ShaperNanoForge_Glow_south</texPath>
+            <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+</Defs>

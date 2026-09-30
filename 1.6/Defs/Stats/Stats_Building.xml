@@ -7,14 +7,15 @@
          · priority 999/998/997/996：Building 组内降序（StatsReportUtility :280-281），全库组内最小 1000——
            确定排在全部原版条目之后 ═══ -->
 
-    <!-- 依赖线程网络：canWorkOffline 的 stat 化（1=可离网工作 / 0=依赖——未连接不可工作，
-         bill 拦截 patch CelesIM_Patch_WorkTableBillsUsable 消费）；显示反转（值1→否/值0→是） -->
+    <!-- 依赖线程网络：canWorkOffline 的 stat 化（值义反转修订 2026-09-27：1=依赖——未连接不可工作，
+         0=可离网——宽默认；bill 双闸拦截 patch 消费[CurrentlyUsableForBills+UsableForBillsAfterFueling]）；
+         label 直读是/否（零反转）；依赖型未连接=效率归零+「无法工作（未连接）」 -->
     <StatDef>
         <defName>Celes_ThreadDependency</defName>
         <label>依赖线程网络</label>
         <description>该建筑是否需要连接编译线程网络才能工作。</description>
         <category>Building</category>
-        <defaultBaseValue>1</defaultBaseValue>
+        <defaultBaseValue>0</defaultBaseValue>
         <toStringStyle>Integer</toStringStyle>
         <workerClass>CelesFeature.CelesIM_StatWorker_ThreadDependency</workerClass>
         <displayPriorityInCategory>999</displayPriorityInCategory>
@@ -35,7 +36,8 @@
         <displayPriorityInCategory>998</displayPriorityInCategory>
     </StatDef>
 
-    <!-- 尘构终端预热时长：statBases 写 ticks 原值（与 Consumer comp 的 warmUpTicks 同值——两处同步纪律）；
+    <!-- 尘构终端预热时长（单源化 2026-09-27）：唯一源——计算（TickWarmup/WarmUpFactor/冷却）与显示全走本 stat；
+         default 0=无预热（不配即无预热机制，comp 的 haveWarmUpCount/warmUpTicks 已废弃）；
          WorkAmount 样式=原版工作量显示（ticks ÷60 分钟制，WorkToBuild 同款视觉语言） -->
     <StatDef>
         <defName>Celes_WarmUpDuration</defName>
