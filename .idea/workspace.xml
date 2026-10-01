@@ -13,16 +13,11 @@
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/BodyAndParts/Bodies_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/BodyAndParts/Bodies_Celes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/BodyAndParts/BodyParts_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/BodyAndParts/BodyParts_Celes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/RulePacks/RulePacks_Market.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RulePacks/RulePacks_Market.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Stats/Stats_Building.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Stats/Stats_Building.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Production.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Production.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Cargo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Cargo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/CelesIM_WorkGivers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/CelesIM_WorkGivers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesIM_Keys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesIM_Keys.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/ForgeTerminal/ForgeTerminal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Spacer/Celes_StandardRifle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Spacer/Celes_StandardRifle.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,6 +273,7 @@
       <workItem from="1790562112556" duration="17198000" />
       <workItem from="1790650928983" duration="13110000" />
       <workItem from="1790757579287" duration="3508000" />
+      <workItem from="1790836218508" duration="4327000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />

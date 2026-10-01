@@ -265,6 +265,8 @@
         <recipes>
             <li>Celes_AutoRecipe_MakeSpacerRifle</li>
             <li>Celes_AutoRecipe_MakeSaber</li>
+            <li>Celes_AutoRecipe_MakeMechTest</li>
+            <li>Celes_AutoRecipe_MakeMechCleaner</li>
         </recipes>
         <comps>
             <li Class="CompProperties_Power">

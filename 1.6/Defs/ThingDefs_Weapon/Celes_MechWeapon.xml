@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ═══ 批 5 U2：机械体专用武器（2026-10-01）═══
+         Celes_MechTestWeapon = Celes_Spacer_Rifle 完整内容拷贝（graphic/verbs 双模式/三 comp/stats），
+         改造三处：①weaponTags 换专属 Celes_MechTestWeapon（池内唯一——Celes_MechTest kind 的
+         weaponMoney 9999~9999 定值预算下必然唯一命中；与 Celes_SpacerWeapon 池隔离，星铃 NPC
+         生成池不收录）②父类挂 BaseGun（不继承 Celes_SpacerGunBase 的 tag/制造链）③verbs 的
+         弹头连带拷贝改名（CelesBullet_MechTest_ModeA/B——defaultProjectile 不悬空）。
+         Celes_MultiVerbSelect HediffDef 为运行时共享资源不拷贝（原 def 仍在本 mod 内）。 -->
+    <ThingDef ParentName="BaseGun">
+        <defName>Celes_MechTestWeapon</defName>
+        <label>测试型机械步枪</label>
+        <description>星铃工业系统产线验证用武器。与星铃制式突击步枪完全相同的火控系统，存在压制与集束两种射击模式。</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/Celes_StandardRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <costList>
+            <Plasteel>60</Plasteel>
+            <Celes_AdvancedComponent>3</Celes_AdvancedComponent>
+        </costList>
+        <statBases>
+            <WorkToMake>51000</WorkToMake>
+            <Mass>5.0</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.60</AccuracyMedium>
+            <AccuracyLong>0.80</AccuracyLong>
+            <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>3.0</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <verbs>
+            <!-- 模式 A：连射 -->
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>CelesBullet_MechTest_ModeA</defaultProjectile>
+                <warmupTime>1.4</warmupTime>
+                <range>28.9</range>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <burstShotCount>8</burstShotCount>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+            <!-- 模式 B：双发重击 -->
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>CelesBullet_MechTest_ModeB</defaultProjectile>
+                <warmupTime>3.0</warmupTime>
+                <range>33.9</range>
+                <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                <burstShotCount>2</burstShotCount>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>枪托</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>枪管</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_Biocodable" />
+            <li Class="CelesFeature.Celes_CompProperties_MultiVerb">
+                <verbInfos>
+                    <li>
+                        <iconPath>UI/Abilities/FireBurst</iconPath>
+                        <defaultLabel>压制能量</defaultLabel>
+                        <defaultDesc>Fire a burst of light rounds at a moderate rate.</defaultDesc>
+                    </li>
+                    <li>
+                        <iconPath>UI/Abilities/FireSpew</iconPath>
+                        <defaultLabel>集束能量</defaultLabel>
+                        <defaultDesc>Fire a single heavy armor-piercing round.</defaultDesc>
+                    </li>
+                </verbInfos>
+            </li>
+            <li Class="CelesFeature.Celes_CompProperties_WeaponGlow">
+                <texPath>Celes/Weapon/Spacer/Celes_StandardRiflem</texPath>
+                <drawSize>(1.0,1.0)</drawSize>
+                <layerDepth>0.01</layerDepth>
+                <useMultiMode>true</useMultiMode>
+                <colorA>(0.75,1,1)</colorA>
+                <colorB>(0.6,0.3,0.75)</colorB>
+                <pulseCycleSeconds>3</pulseCycleSeconds>
+                <alphaMin>0.10</alphaMin>
+                <alphaMax>0.65</alphaMax>
+            </li>
+            <li Class="CelesFeature.Celes_CompProperties_MuzzleEffect">
+                <texPath>Celes/Weapon/Spacer/Celes_StandardRiflef</texPath>
+                <drawSize>(1.2,1.2)</drawSize>
+                <layerDepth>0.01</layerDepth>
+                <muzzleDistance>0.5</muzzleDistance>
+                <fadeInTime>0.05</fadeInTime>
+                <holdTime>0.1</holdTime>
+                <fadeOutTime>0.25</fadeOutTime>
+            </li>
+        </comps>
+        <weaponTags>
+            <li>Celes_MechTestWeapon</li>
+        </weaponTags>
+    </ThingDef>
+
+    <!-- ═══ 弹头连带拷贝（原 CelesBullet_medium_energy_ModeA/B 改名）═══ -->
+    <!-- 模式 A 弹头 -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>CelesBullet_MechTest_ModeA</defName>
+        <label>压制粒子束射弹</label>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bulletb</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Celes_ParticleBlast</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <speed>90</speed>
+            <armorPenetrationBase>0.6</armorPenetrationBase>
+            <stoppingPower>0.9</stoppingPower>
+        </projectile>
+    </ThingDef>
+    <!-- 模式 B 弹头 -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>CelesBullet_MechTest_ModeB</defName>
+        <label>集束压制粒子束射弹</label>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Celes_ParticleBurn</damageDef>
+            <damageAmountBase>26</damageAmountBase>
+            <speed>120</speed>
+            <armorPenetrationBase>0.75</armorPenetrationBase>
+            <stoppingPower>3.0</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+</Defs>

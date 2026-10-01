@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ═══ 批 5 U2：Celes 机械体族（2026-10-01）═══
+         自写父类树（不继承 Core BaseMechanoid 族——后续必然与原版分化，裁决 10-01）：
+           Celes_BaseMechanoid（共同根）
+             ├ Celes_BaseMechanoidWalker（人形层 → Celes_MechTest，参照 Core BaseMechanoidWalker/Mech_Lancer）
+             └ Celes_LightMechanoid（轻量层 → Celes_MechCleaner，参照 Biotech LightMechanoid/Mech_Cleansweeper）
+           kind 侧同构：Celes_BaseMechanoidKind → Celes_LightMechanoidKind → Celes_NonCombatLightMechanoidKind
+         Biotech 专属字段全部 MayRequire 守卫（本 mod 未声明 Biotech 依赖，无 DLC 静默降级）；
+         老年版（lifeStageAges 第二条+Ancient 贴图）不保留（裁决 10-01：单条 lifeStage）；
+         阵营遮罩以注释留位（maskPath+CutoutWithOverlay 成对启用，缺一无效）。 -->
+
+    <!-- ═══════════ 抽象父类 · race 侧 ═══════════ -->
+
+    <ThingDef Name="Celes_BaseMechanoid" ParentName="BasePawn" Abstract="True">
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <PsychicSensitivity>0.5</PsychicSensitivity>
+            <ToxicResistance>1</ToxicResistance>
+            <Flammability>0</Flammability>
+            <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+            <ComfyTemperatureMax>250</ComfyTemperatureMax>
+            <MeatAmount>0</MeatAmount>
+            <ArmorRating_Heat>2.00</ArmorRating_Heat>
+            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">1</BandwidthCost>
+            <ControlTakingTime MayRequire="Ludeon.RimWorld.Biotech">12</ControlTakingTime>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.33</MechEnergyLossPerHP>
+            <WastepacksPerRecharge MayRequire="Ludeon.RimWorld.Biotech">5</WastepacksPerRecharge>
+            <WorkSpeedGlobal MayRequire="Ludeon.RimWorld.Biotech">0.5</WorkSpeedGlobal>
+        </statBases>
+        <receivesSignals>true</receivesSignals>
+        <tradeability>None</tradeability>
+        <race>
+            <fleshType>Mechanoid</fleshType>
+            <needsRest>false</needsRest>
+            <hasGenders>false</hasGenders>
+            <foodType>None</foodType>
+            <lifeExpectancy>2500</lifeExpectancy>
+            <bloodDef>Filth_MachineBits</bloodDef>
+            <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
+            <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+            <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+            <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
+            <canFlyInVacuum>true</canFlyInVacuum>
+        </race>
+        <comps>
+            <li Class="CompProperties_CanBeDormant">
+                <compClass>CompMechanoid</compClass>
+            </li>
+            <li Class="CompProperties_WakeUpDormant">
+                <wakeUpOnDamage>true</wakeUpOnDamage>
+                <wakeUpCheckRadius>30</wakeUpCheckRadius>
+                <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_OverseerSubject">
+                <needsOverseerEffect>MechUncontrolled</needsOverseerEffect>
+                <delayUntilFeralCheck>60000</delayUntilFeralCheck>
+                <feralMtbDays>10</feralMtbDays>
+                <feralCascadeRadialDistance>25</feralCascadeRadialDistance>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_MechRepairable" />
+        </comps>
+    </ThingDef>
+
+    <!-- 人形层（参照 Core BaseMechanoidWalker，Races_Mechanoid.xml:272） -->
+    <ThingDef Name="Celes_BaseMechanoidWalker" ParentName="Celes_BaseMechanoid" Abstract="True">
+        <statBases>
+            <MoveSpeed>4.7</MoveSpeed>
+            <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+        </statBases>
+        <race>
+            <intelligence>ToolUser</intelligence>
+            <thinkTreeMain>Mechanoid</thinkTreeMain>
+            <baseBodySize>1.0</baseBodySize>
+            <mechWeightClass>Medium</mechWeightClass>
+        </race>
+        <butcherProducts>
+            <Steel>15</Steel>
+        </butcherProducts>
+    </ThingDef>
+
+    <!-- 轻量层（参照 Biotech LightMechanoid，Races_Mechanoids_Light.xml:4；body 指本 mod 自建 body） -->
+    <ThingDef Name="Celes_LightMechanoid" ParentName="Celes_BaseMechanoid" Abstract="True">
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <MoveSpeed>3.4</MoveSpeed>
+            <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+            <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.66</MechEnergyLossPerHP>
+        </statBases>
+        <race>
+            <body>Celes_MechCleaner_Body</body>
+            <intelligence>ToolUser</intelligence>
+            <thinkTreeMain>Mechanoid</thinkTreeMain>
+            <baseBodySize>0.7</baseBodySize>
+            <mechWeightClass>Light</mechWeightClass>
+        </race>
+        <butcherProducts>
+            <Steel>10</Steel>
+        </butcherProducts>
+        <tools>
+            <li>
+                <label>头部</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!-- ═══════════ 抽象父类 · PawnKind 侧 ═══════════ -->
+
+    <PawnKindDef Name="Celes_BaseMechanoidKind" Abstract="True">
+        <defaultFactionDef>Mechanoid</defaultFactionDef>
+        <aiAvoidCover>true</aiAvoidCover>
+        <destroyGearOnDrop>true</destroyGearOnDrop>
+        <canStrip>false</canStrip>
+        <minGenerationAge MayRequire="Ludeon.RimWorld.Biotech">200</minGenerationAge>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+    </PawnKindDef>
+
+    <PawnKindDef Name="Celes_LightMechanoidKind" ParentName="Celes_BaseMechanoidKind" Abstract="True">
+        <weaponMoney>9999~9999</weaponMoney>
+        <combatPower>10</combatPower>
+        <weaponTags />
+        <techHediffsChance>1</techHediffsChance>
+        <techHediffsMoney>9999~9999</techHediffsMoney>
+    </PawnKindDef>
+
+    <!-- 非战斗限定（参照 Biotech NonCombatLightMechanoidKind：isFighter false——清洁机同款限定） -->
+    <PawnKindDef Name="Celes_NonCombatLightMechanoidKind" ParentName="Celes_LightMechanoidKind" Abstract="True">
+        <isFighter>false</isFighter>
+    </PawnKindDef>
+
+    <!-- ═══════════ 具体机械体 ①：清洁机（参照 Mech_Cleansweeper，非战斗无武装）═══════════ -->
+
+    <ThingDef ParentName="Celes_LightMechanoid">
+        <defName>Celes_MechCleaner</defName>
+        <label>清洁机</label>
+        <description>一台由星铃工业系统生产的轻型清洁机械体。宽大的履带机构使它可以长时间稳定地在殖民地内穿行，执行清扫任务。没有配备任何武器。</description>
+        <!-- UI 图标（bill 菜单等 DefIcon 场景）：race def 无 graphicData → ResolveIcon 无图 → uiIcon 恒 BadTex
+             → ThingIcon 守卫直接不画（Widgets.cs:525）=空白。原版 mech race 同空白（固有形态）；
+             此处显式指路修复。配方级 uiIconPath 无效——FloatMenuOption 绘制 shownItem(=ProducedThingDef)
+             非 null 优先遮蔽 iconTex 分支（FloatMenuOption.cs:398-411） -->
+        <uiIconPath>Celes/Pawn/Mechanoid/Celes_MechCleaner_south</uiIconPath>
+        <statBases>
+            <CleaningSpeed>0.5</CleaningSpeed>
+        </statBases>
+        <race>
+            <mechEnabledWorkTypes>
+                <li>Cleaning</li>
+            </mechEnabledWorkTypes>
+            <baseBodySize>0.3</baseBodySize>
+            <lifeStageAges>
+                <li>
+                    <def>MechanoidFullyFormed</def>
+                    <minAge>0</minAge>
+                    <soundWounded MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+                    <soundDeath MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Cleansweeper_Death</soundDeath>
+                    <soundCall MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Cleansweeper_Call</soundCall>
+                </li>
+            </lifeStageAges>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="Celes_NonCombatLightMechanoidKind">
+        <defName>Celes_MechCleaner</defName>
+        <label>清洁机</label>
+        <race>Celes_MechCleaner</race>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Celes/Pawn/Mechanoid/Celes_MechCleaner</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>0.7</drawSize>
+                    <drawOffset>(0, 0, -0.3)</drawOffset>
+                    <!-- 阵营遮罩留位（未来填）：启用时两行成对解除注释，并放置遮罩贴图
+                         Celes/Pawn/Mechanoid/AllegianceOverlays/Celes_MechCleaner_*
+                    <maskPath>Celes/Pawn/Mechanoid/AllegianceOverlays/Celes_MechCleaner</maskPath>
+                    <shaderType>CutoutWithOverlay</shaderType>
+                    -->
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!-- ═══════════ 具体机械体 ②：测试机械体（参照 Mech_Lancer，确定性初始武器）═══════════ -->
+
+    <ThingDef ParentName="Celes_BaseMechanoidWalker">
+        <defName>Celes_MechTest</defName>
+        <label>测试机械体</label>
+        <description>一台用于星铃工业系统产线验证的人形机械体。三目视觉传感器阵列与标准星铃步枪使其可作为武装升级程序的测试平台。</description>
+        <!-- UI 图标：同 Celes_MechCleaner 注释（race 无 graphicData 的 DefIcon 空白修复） -->
+        <uiIconPath>Celes/Pawn/Mechanoid/Celes_MechTest_south</uiIconPath>
+        <statBases>
+            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">3</BandwidthCost>
+        </statBases>
+        <tools>
+            <li>
+                <label>左拳</label>
+                <labelNoLocation>拳</labelNoLocation>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li>
+                <label>右拳</label>
+                <labelNoLocation>拳</labelNoLocation>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li>
+                <label>头部</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8.5</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <body>Celes_MechTest_Body</body>
+            <baseHealthScale>0.72</baseHealthScale>
+            <detritusLeavings>
+                <li>
+                    <def>ChunkMechanoidSlag</def>
+                    <texOverrideIndex>11</texOverrideIndex>
+                    <spawnChance>0.1</spawnChance>
+                </li>
+                <li>
+                    <def>ChunkMechanoidSlag</def>
+                    <texOverrideIndex>12</texOverrideIndex>
+                    <spawnChance>0.1</spawnChance>
+                </li>
+            </detritusLeavings>
+            <lifeStageAges>
+                <li>
+                    <def>MechanoidFullyFormed</def>
+                    <minAge>0</minAge>
+                    <soundWounded MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Lancer_Wounded</soundWounded>
+                    <soundDeath MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Lancer_Death</soundDeath>
+                    <soundCall MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Lancer_Call</soundCall>
+                </li>
+            </lifeStageAges>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="Celes_BaseMechanoidKind">
+        <defName>Celes_MechTest</defName>
+        <label>测试机械体</label>
+        <race>Celes_MechTest</race>
+        <combatPower>190</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Celes/Pawn/Mechanoid/Celes_MechTest</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.5</drawSize>
+                    <!-- 阵营遮罩留位（未来填）：启用时两行成对解除注释，并放置遮罩贴图
+                         Celes/Pawn/Mechanoid/AllegianceOverlays/Celes_MechTest_*
+                    <maskPath>Celes/Pawn/Mechanoid/AllegianceOverlays/Celes_MechTest</maskPath>
+                    <shaderType>CutoutWithOverlay</shaderType>
+                    -->
+                    <shadowData>
+                        <volume>(0.4, 0.8, 0.4)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <!-- 专属 tag（池内唯一=weaponMoney 9999 定值预算下必然唯一命中；F5-27 双层机制）——
+             武装升级轴（U4）的目标武器位即此 def -->
+        <weaponMoney>9999~9999</weaponMoney>
+        <weaponTags>
+            <li>Celes_MechTestWeapon</li>
+        </weaponTags>
+    </PawnKindDef>
+
+</Defs>
