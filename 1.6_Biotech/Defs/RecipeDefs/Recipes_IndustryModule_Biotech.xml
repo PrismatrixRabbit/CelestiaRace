@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ═══ 批 5 U2：b 模型配方族（Pawn 产出，2026-10-02 · 10-02 迁入 Biotech 条件目录+机械师全链修订）═══
+         本文件位于 Defs_Biotech 条件目录（D33）——目录加载即 Biotech 必激活；
+         判别器=D12（ProducedThingDef.category==Pawn——C# 侧 ThingCategory.Pawn 枚举，非 ThingCategoryDefOf）；
+         产物=双机械体（同目录 Race_Mech_Celes.xml）；
+         ★mechanitorOnlyRecipe=true（D32 修订 10-02）：机械师限定全链复用原版——
+           开始权拦截+「非机械师」灰显（Bill.cs:266 base 链免费）+挂单条件弹窗（ITab_Bills.cs:106-109
+           原版接管：地图无空闲机械师时弹原版文案）+bill 配置窗「任意机械师」选项（Dialog_BillConfig:524）；
+           带宽检查由 C# 侧 ShouldDoNow/PawnAllowedToStartAnew 覆写补充（自算等价 HasBandwidthForBill）；
+         多周期语义：周期间=人工工作段（原料总量一次投入全程躺容器，非再装料——Diabolus cycles=12 佐证）；
+         内容物双态（方案 A 裁决 10-02）：Forming 期=ext.graphic 半成品图（Celes_HalfGestatedMech，
+         母本 HalfGestatedMechSmall 64px 拷贝）→ Formed 后自动切容器内 Pawn 本体图（C# 侧序0+尺寸守卫）；
+         ext li 跨继承追加 last-wins 覆盖父类默认图（军刀 useProductGraphic 同机制）；
+         原料=Lancer 培育配方母本三料（钢75+玻璃钢75+零部件4——原版 SubcoreRegular 系 Biotech 物品故换零部件；数值占位实测后定稿）；
+         cycles：MakeMechTest=2（多周期回环主验证，D20 已知耦合=布线失效红字可见）；
+                 MakeMechCleaner=1（单周期对照轨）；均省略 workSkill（Pawn 无品质，品质闸天然放行） -->
+    <RecipeDef ParentName="Celes_AutoRecipe_Base">
+        <defName>Celes_AutoRecipe_MakeMechTest</defName>
+        <label>自动锻造测试机械体</label>
+        <description>自动生产线锻造测试机械体（b 模型主验证项——多周期锻造产出活体 Pawn，初始必然携带测试型机械步枪）。此配方需要机械师操作：首个操作的机械师将被绑定，全部锻造周期与提取须由其完成，且须保证带宽余量。</description>
+        <jobString>正在锻造测试机械体</jobString>
+        <mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
+        <formingTicks>90000</formingTicks>
+        <gestationCycles>2</gestationCycles>
+        <modExtensions>
+            <li Class="CelesFeature.CelesIM_FormingGraphicExt">
+                <graphic>
+                    <texPath>Celes/Pawn/Mechanoid/Celes_HalfGestatedMech</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(0.45,0.45)</drawSize>
+                </graphic>
+            </li>
+            <!-- U2 增补（10-02）：操作者绑定开关（仅 Pawn 产物配方生效）——挂单弹窗提示/首工作者绑定/
+                 他人灰显/死亡冻结全链由此开启；Cleaner 对照轨不挂 -->
+            <li Class="CelesFeature.CelesIM_PawnProductExt">
+                <bindOperator>true</bindOperator>
+            </li>
+        </modExtensions>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <products>
+            <Celes_MechTest>1</Celes_MechTest>
+        </products>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="Celes_AutoRecipe_Base">
+        <defName>Celes_AutoRecipe_MakeMechCleaner</defName>
+        <label>自动锻造清洁机</label>
+        <description>自动生产线锻造轻型清洁机械体（单周期对照轨——非战斗无武装，产出后可执行清扫工作）。需要机械师操作且占用带宽。</description>
+        <jobString>正在锻造清洁机</jobString>
+        <mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
+        <formingTicks>60000</formingTicks>
+        <gestationCycles>1</gestationCycles>
+        <modExtensions>
+            <li Class="CelesFeature.CelesIM_FormingGraphicExt">
+                <graphic>
+                    <texPath>Celes/Pawn/Mechanoid/Celes_HalfGestatedMech</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(0.3,0.3)</drawSize>
+                </graphic>
+            </li>
+        </modExtensions>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <products>
+            <Celes_MechCleaner>1</Celes_MechCleaner>
+        </products>
+    </RecipeDef>
+</Defs>

@@ -17,7 +17,11 @@
       <change beforePath="$PROJECT_DIR$/1.6/Defs/BodyAndParts/BodyParts_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/BodyAndParts/BodyParts_Celes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Spacer/Celes_StandardRifle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Spacer/Celes_StandardRifle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Race/Race_Mech_Celes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_MechWeapon.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesIM_Keys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesIM_Keys.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Pawn/Mechanoid/Celes_MechCleaner_east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoadFolders.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LoadFolders.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +277,9 @@
       <workItem from="1790562112556" duration="17198000" />
       <workItem from="1790650928983" duration="13110000" />
       <workItem from="1790757579287" duration="3508000" />
-      <workItem from="1790836218508" duration="4327000" />
+      <workItem from="1790836218508" duration="4872000" />
+      <workItem from="1790924167690" duration="4268000" />
+      <workItem from="1790999934616" duration="810000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -523,7 +529,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790527859230</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="暂时能用的机械体生产机">
+      <option name="closed" value="true" />
+      <created>1790876413667</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1790876413667</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +558,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="增添贴图，初步修正尘构节律" />
     <MESSAGE value="尘构节律修复（人类配方待完成）" />
     <MESSAGE value="我们星铃爷的飞船终于会落在信标里了&#10;以及我们的破烂机仆会刷新了" />
     <MESSAGE value="尘构仆从及背景修正" />
@@ -569,7 +582,8 @@
     <MESSAGE value="武备支援完美收工！" />
     <MESSAGE value="支援系统完工？" />
     <MESSAGE value="市场订单与信息重构，rulepack化，货组增添，工业系统实装，部分建筑贴图替换" />
-    <option name="LAST_COMMIT_MESSAGE" value="市场订单与信息重构，rulepack化，货组增添，工业系统实装，部分建筑贴图替换" />
+    <MESSAGE value="暂时能用的机械体生产机" />
+    <option name="LAST_COMMIT_MESSAGE" value="暂时能用的机械体生产机" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

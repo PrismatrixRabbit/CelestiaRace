@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- ═══ 批 5 U2 修订（D33，2026-10-02）：b 模型配方→建筑 recipes 条件链接 ═══
+         本文件位于 Defs_Biotech 条件目录（LoadFolders IfModActive=Biotech）——
+         Biotech 未激活时本 patch 不加载=建筑 recipes 无悬空引用；
+         激活时给 Celes_TestAutoProducer 的 recipes 追加 b 两配方。 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>//ThingDef[defName="Celes_TestAutoProducer"]/recipes</xpath>
+        <value>
+            <li>Celes_AutoRecipe_MakeMechTest</li>
+            <li>Celes_AutoRecipe_MakeMechCleaner</li>
+        </value>
+    </Operation>
+</Patch>

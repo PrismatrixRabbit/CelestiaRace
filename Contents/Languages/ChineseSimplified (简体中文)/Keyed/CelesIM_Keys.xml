@@ -84,4 +84,15 @@
     <CelesIM_Keyed_CurrentForgeCycle>当前锻造周期: {0}</CelesIM_Keyed_CurrentForgeCycle>
     <CelesIM_Keyed_RemainingForgeCycles>剩余锻造周期: {0} (共 {1})</CelesIM_Keyed_RemainingForgeCycles>
 
+    <!-- ── 批 5 U2 增补（操作者绑定 D31——2026-10-02）── -->
+    <CelesIM_Keyed_NeedsOperationToContinue>需要操作以继续锻造</CelesIM_Keyed_NeedsOperationToContinue>
+    <CelesIM_Keyed_NeedsOperatorToContinue>需要{0}以继续锻造</CelesIM_Keyed_NeedsOperatorToContinue>
+
+    <!-- ── 批 5 U2 修订（D32 机械师全链+Inspect 原版结构——2026-10-02；键全自建复制原版译文，
+         不依赖原版键存活性；术语统一=锻造）── -->
+    <CelesIM_Keyed_AlreadyAssigned>已分配 ({0})</CelesIM_Keyed_AlreadyAssigned>
+    <CelesIM_Keyed_NotEnoughBandwidth>带宽不足</CelesIM_Keyed_NotEnoughBandwidth>
+    <CelesIM_Keyed_Forging>正在锻造{0}</CelesIM_Keyed_Forging>
+    <CelesIM_Keyed_ForgedMech>已锻造{0}（需要{1}来完成）</CelesIM_Keyed_ForgedMech>
+
 </LanguageData>

@@ -48,33 +48,4 @@
         <beautyRelated>false</beautyRelated>
     </BodyPartDef>
 
-    <!-- ═══ 批 5 U2：机械体自建件（2026-10-01）——Mech_Light 腿位同位拷改（SmallMechanicalLeg/Foot 替换）；
-         frostbiteVulnerability 不写=0（裁决清零：消费点仅失温冻伤池 BodyDef.cs:139，无其他联动）═══ -->
-    <BodyPartDef>
-        <defName>Celes_MechanicalDriveUnit</defName>
-        <label>驱动机构</label>
-        <hitPoints>10</hitPoints>
-        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-        <skinCovered>false</skinCovered>
-        <solid>true</solid>
-        <alive>false</alive>
-        <bleedRate>0</bleedRate>
-        <tags>
-            <li>MovingLimbCore</li>
-        </tags>
-    </BodyPartDef>
-
-    <BodyPartDef>
-        <defName>Celes_MechanicalTrackUnit</defName>
-        <label>履带机构</label>
-        <hitPoints>5</hitPoints>
-        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-        <skinCovered>false</skinCovered>
-        <solid>true</solid>
-        <alive>false</alive>
-        <bleedRate>0</bleedRate>
-        <tags>
-            <li>MovingLimbSegment</li>
-        </tags>
-    </BodyPartDef>
 </Defs>

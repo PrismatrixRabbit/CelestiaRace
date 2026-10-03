@@ -265,8 +265,9 @@
         <recipes>
             <li>Celes_AutoRecipe_MakeSpacerRifle</li>
             <li>Celes_AutoRecipe_MakeSaber</li>
-            <li>Celes_AutoRecipe_MakeMechTest</li>
-            <li>Celes_AutoRecipe_MakeMechCleaner</li>
+            <!-- b 模型两配方（MakeMechTest/MakeMechCleaner）随 Defs_Biotech 条件目录（D33）——
+                 此处不硬链（无 Biotech 时配方 def 不存在=悬空红字），由 Defs_Biotech/Patches/
+                 Biotech_Recipes_Link.xml 按条件追加 -->
         </recipes>
         <comps>
             <li Class="CompProperties_Power">
@@ -281,6 +282,18 @@
                 <markTexPath>Celes/UI/Overlays/ThreadMark</markTexPath>
                 <linkHeight>1.7</linkHeight>
             </li>
+            <!-- ═══ U2 追加（2026-10-02）：三态状态指示灯（贴图对位方案）═══
+                 texPath 写基础名（不带 _south）——引擎按朝向解析变体族（_north/_east/_south/_west，
+                 同 Glow 族命名约定）；现仅 _south 一张时缺向回退=引擎 offset 旋转复用（全朝向正确）；
+                 红=未工作/装料/等待操作/冻结，蓝=锻造中，绿=完成待取；实心 Cutout 染色无 R 通道坑；
+                 drawSize 与底图一致=640² 画布 1:1 对位（灯点画布位=世界位） -->
+            <li Class="CelesFeature.CelesIM_CompProperties_StatusLight">
+                <texPath>Celes/Building/ShaperNanoForge/ShaperNanoForge_Light</texPath>
+                <drawSize>(5,5)</drawSize>
+                <colorIdle>(0.9, 0.2, 0.2)</colorIdle>
+                <colorWorking>(0.4, 0.7, 1.0)</colorWorking>
+                <colorComplete>(0.3, 0.9, 0.4)</colorComplete>
+            </li>
         </comps>
         <placeWorkers>
             <li>PlaceWorker_ReportWorkSpeedPenalties</li>
@@ -290,6 +303,24 @@
         <building>
             <ai_chillDestination>false</ai_chillDestination>
             <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <barDrawData>
+                <north>
+                    <preRotationOffset>(-1.04, -1.05)</preRotationOffset>
+                    <size>(0.7, 0.13)</size>
+                </north>
+                <south>
+                    <preRotationOffset>(0, -1.05)</preRotationOffset>
+                    <size>(1.5, 0.13)</size>
+                </south>
+                <east>
+                    <preRotationOffset>(0, -1.05)</preRotationOffset>
+                    <size>(1.5, 0.13)</size>
+                </east>
+                <west>
+                    <preRotationOffset>(0, -1.05)</preRotationOffset>
+                    <size>(1.5, 0.13)</size>
+                </west>
+            </barDrawData>
         </building>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <constructEffect>ConstructMetal</constructEffect>

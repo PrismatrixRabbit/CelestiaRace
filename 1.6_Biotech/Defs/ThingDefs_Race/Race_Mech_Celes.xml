@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- ═══ 批 5 U2：Celes 机械体族（2026-10-01）═══
+    <!-- ═══ 批 5 U2：Celes 机械体族（2026-10-01 · 10-02 迁入 Biotech 条件目录）═══
          自写父类树（不继承 Core BaseMechanoid 族——后续必然与原版分化，裁决 10-01）：
            Celes_BaseMechanoid（共同根）
              ├ Celes_BaseMechanoidWalker（人形层 → Celes_MechTest，参照 Core BaseMechanoidWalker/Mech_Lancer）
              └ Celes_LightMechanoid（轻量层 → Celes_MechCleaner，参照 Biotech LightMechanoid/Mech_Cleansweeper）
            kind 侧同构：Celes_BaseMechanoidKind → Celes_LightMechanoidKind → Celes_NonCombatLightMechanoidKind
-         Biotech 专属字段全部 MayRequire 守卫（本 mod 未声明 Biotech 依赖，无 DLC 静默降级）；
+         本文件位于 Defs_Biotech 条件目录（LoadFolders IfModActive=Biotech，D33 裁决 10-02）——
+         目录加载即 Biotech 必激活，MayRequire 字段级守卫已全部撤除（b/d 模型=Biotech 依赖内容，
+         架构澄清 D32）；无 Biotech 环境整目录不加载=本文件不存在；
          老年版（lifeStageAges 第二条+Ancient 贴图）不保留（裁决 10-01：单条 lifeStage）；
          阵营遮罩以注释留位（maskPath+CutoutWithOverlay 成对启用，缺一无效）。 -->
 
@@ -24,12 +26,12 @@
             <ComfyTemperatureMax>250</ComfyTemperatureMax>
             <MeatAmount>0</MeatAmount>
             <ArmorRating_Heat>2.00</ArmorRating_Heat>
-            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">1</BandwidthCost>
-            <ControlTakingTime MayRequire="Ludeon.RimWorld.Biotech">12</ControlTakingTime>
+            <BandwidthCost>1</BandwidthCost>
+            <ControlTakingTime>12</ControlTakingTime>
             <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
-            <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.33</MechEnergyLossPerHP>
-            <WastepacksPerRecharge MayRequire="Ludeon.RimWorld.Biotech">5</WastepacksPerRecharge>
-            <WorkSpeedGlobal MayRequire="Ludeon.RimWorld.Biotech">0.5</WorkSpeedGlobal>
+            <MechEnergyLossPerHP>0.33</MechEnergyLossPerHP>
+            <WastepacksPerRecharge>5</WastepacksPerRecharge>
+            <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
         </statBases>
         <receivesSignals>true</receivesSignals>
         <tradeability>None</tradeability>
@@ -40,10 +42,10 @@
             <foodType>None</foodType>
             <lifeExpectancy>2500</lifeExpectancy>
             <bloodDef>Filth_MachineBits</bloodDef>
-            <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
+            <nameGenerator>NamerMech</nameGenerator>
             <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
             <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
-            <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
+            <thinkTreeConstant>MechConstant</thinkTreeConstant>
             <canFlyInVacuum>true</canFlyInVacuum>
         </race>
         <comps>
@@ -55,13 +57,13 @@
                 <wakeUpCheckRadius>30</wakeUpCheckRadius>
                 <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
             </li>
-            <li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_OverseerSubject">
+            <li Class="CompProperties_OverseerSubject">
                 <needsOverseerEffect>MechUncontrolled</needsOverseerEffect>
                 <delayUntilFeralCheck>60000</delayUntilFeralCheck>
                 <feralMtbDays>10</feralMtbDays>
                 <feralCascadeRadialDistance>25</feralCascadeRadialDistance>
             </li>
-            <li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_MechRepairable" />
+            <li Class="CompProperties_MechRepairable" />
         </comps>
     </ThingDef>
 
@@ -90,7 +92,7 @@
             <MoveSpeed>3.4</MoveSpeed>
             <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
             <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
-            <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.66</MechEnergyLossPerHP>
+            <MechEnergyLossPerHP>0.66</MechEnergyLossPerHP>
         </statBases>
         <race>
             <body>Celes_MechCleaner_Body</body>
@@ -123,7 +125,7 @@
         <aiAvoidCover>true</aiAvoidCover>
         <destroyGearOnDrop>true</destroyGearOnDrop>
         <canStrip>false</canStrip>
-        <minGenerationAge MayRequire="Ludeon.RimWorld.Biotech">200</minGenerationAge>
+        <minGenerationAge>200</minGenerationAge>
         <forceNormalGearQuality>true</forceNormalGearQuality>
     </PawnKindDef>
 
@@ -163,9 +165,9 @@
                 <li>
                     <def>MechanoidFullyFormed</def>
                     <minAge>0</minAge>
-                    <soundWounded MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Cleansweeper_Wounded</soundWounded>
-                    <soundDeath MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Cleansweeper_Death</soundDeath>
-                    <soundCall MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Cleansweeper_Call</soundCall>
+                    <soundWounded>Pawn_Mech_Cleansweeper_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Cleansweeper_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Cleansweeper_Call</soundCall>
                 </li>
             </lifeStageAges>
         </race>
@@ -205,7 +207,7 @@
         <!-- UI 图标：同 Celes_MechCleaner 注释（race 无 graphicData 的 DefIcon 空白修复） -->
         <uiIconPath>Celes/Pawn/Mechanoid/Celes_MechTest_south</uiIconPath>
         <statBases>
-            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">3</BandwidthCost>
+            <BandwidthCost>3</BandwidthCost>
         </statBases>
         <tools>
             <li>
@@ -261,9 +263,12 @@
                 <li>
                     <def>MechanoidFullyFormed</def>
                     <minAge>0</minAge>
-                    <soundWounded MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Lancer_Wounded</soundWounded>
-                    <soundDeath MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Lancer_Death</soundDeath>
-                    <soundCall MayRequire="Ludeon.RimWorld.Biotech">Pawn_Mech_Lancer_Call</soundCall>
+                    <!-- 音效名修正（10-02）：Pawn_Mech_Lancer_* 系不存在的 def——Lancer 原版沿用
+                         Pikeman 音效（Core Races_Mechanoid.xml 实配；def 在 Core SoundDefs/Pawn_Mech_Vox.xml:110）。
+                         原名系资产批笔误，撤 MayRequire 后交叉引用错误暴露（守卫下曾静默缺失） -->
+                    <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
                 </li>
             </lifeStageAges>
         </race>
