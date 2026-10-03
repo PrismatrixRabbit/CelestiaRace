@@ -13,15 +13,13 @@
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/BodyAndParts/Bodies_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/BodyAndParts/Bodies_Celes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/BodyAndParts/BodyParts_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/BodyAndParts/BodyParts_Celes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/JobDefs/CelesIM_Jobs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/JobDefs/CelesIM_Jobs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Stats/Stats_Building.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Stats/Stats_Building.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Race/Race_Mech_Celes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_MechWeapon.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Production.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Production.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/CelesIM_WorkGivers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/CelesIM_WorkGivers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesIM_Keys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesIM_Keys.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Pawn/Mechanoid/Celes_MechCleaner_east.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoadFolders.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LoadFolders.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +277,7 @@
       <workItem from="1790757579287" duration="3508000" />
       <workItem from="1790836218508" duration="4872000" />
       <workItem from="1790924167690" duration="4268000" />
-      <workItem from="1790999934616" duration="810000" />
+      <workItem from="1790999934616" duration="5227000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -537,7 +535,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790876413667</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="机械体生产完工！">
+      <option name="closed" value="true" />
+      <created>1791000946385</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1791000946385</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,7 +564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="尘构节律修复（人类配方待完成）" />
     <MESSAGE value="我们星铃爷的飞船终于会落在信标里了&#10;以及我们的破烂机仆会刷新了" />
     <MESSAGE value="尘构仆从及背景修正" />
     <MESSAGE value="一大堆衣服" />
@@ -583,7 +588,8 @@
     <MESSAGE value="支援系统完工？" />
     <MESSAGE value="市场订单与信息重构，rulepack化，货组增添，工业系统实装，部分建筑贴图替换" />
     <MESSAGE value="暂时能用的机械体生产机" />
-    <option name="LAST_COMMIT_MESSAGE" value="暂时能用的机械体生产机" />
+    <MESSAGE value="机械体生产完工！" />
+    <option name="LAST_COMMIT_MESSAGE" value="机械体生产完工！" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

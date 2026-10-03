@@ -63,6 +63,8 @@
         <workerClass>CelesFeature.CelesIM_StatWorker_ThreadConsumerOnly</workerClass>
         <parts>
             <li Class="CelesFeature.CelesIM_StatPart_ThreadProgress" />
+            <li Class="CelesFeature.CelesIM_StatPart_StarlinkTuning" />
+            <li Class="CelesFeature.CelesIM_StatPart_Overclock" />
         </parts>
         <displayPriorityInCategory>996</displayPriorityInCategory>
     </StatDef>

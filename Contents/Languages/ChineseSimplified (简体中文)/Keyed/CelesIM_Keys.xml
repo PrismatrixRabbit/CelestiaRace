@@ -11,11 +11,11 @@
     <CelesIM_Keyed_GizmoConnections>连接数</CelesIM_Keyed_GizmoConnections>
 
     <!-- ── 中枢 Inspect 五态 ── -->
-    <CelesIM_Keyed_HubInspectInterference>中枢干扰\n线程产出: 0\n已占用: 0</CelesIM_Keyed_HubInspectInterference>
-    <CelesIM_Keyed_HubInspectFault>中枢超载故障\n线程产出: 0\n已占用: 0</CelesIM_Keyed_HubInspectFault>
-    <CelesIM_Keyed_HubInspectOverloadOffline>编译线程产出: {0}\n已占用: {1}\n负载率: {2}\n超载! 中枢离线，恢复电力后继续倒计时</CelesIM_Keyed_HubInspectOverloadOffline>
-    <CelesIM_Keyed_HubInspectOverloadCountdown>编译线程产出: {0}\n已占用: {1}\n负载率: {2}\n超载! {3}后故障</CelesIM_Keyed_HubInspectOverloadCountdown>
-    <CelesIM_Keyed_HubInspectNormal>编译线程产出: {0}\n已占用: {1}\n负载率: {2}</CelesIM_Keyed_HubInspectNormal>
+    <CelesIM_Keyed_ProducerInspectInterference>中枢干扰\n线程产出: 0\n已占用: 0</CelesIM_Keyed_ProducerInspectInterference>
+    <CelesIM_Keyed_ProducerInspectFault>中枢超载故障\n线程产出: 0\n已占用: 0</CelesIM_Keyed_ProducerInspectFault>
+    <CelesIM_Keyed_ProducerInspectOverloadOffline>编译线程产出: {0}\n已占用: {1}\n负载率: {2}\n超载! 中枢离线，恢复电力后继续倒计时</CelesIM_Keyed_ProducerInspectOverloadOffline>
+    <CelesIM_Keyed_ProducerInspectOverloadCountdown>编译线程产出: {0}\n已占用: {1}\n负载率: {2}\n超载! {3}后故障</CelesIM_Keyed_ProducerInspectOverloadCountdown>
+    <CelesIM_Keyed_ProducerInspectNormal>编译线程产出: {0}\n已占用: {1}\n负载率: {2}</CelesIM_Keyed_ProducerInspectNormal>
 
     <!-- ── 启用线程连接（终端专属开关，2026-09-23）── -->
     <CelesIM_Keyed_ThreadSwitchLabel>启用线程连接</CelesIM_Keyed_ThreadSwitchLabel>
@@ -94,5 +94,13 @@
     <CelesIM_Keyed_NotEnoughBandwidth>带宽不足</CelesIM_Keyed_NotEnoughBandwidth>
     <CelesIM_Keyed_Forging>正在锻造{0}</CelesIM_Keyed_Forging>
     <CelesIM_Keyed_ForgedMech>已锻造{0}（需要{1}来完成）</CelesIM_Keyed_ForgedMech>
+
+    <!-- ── 批 6 D36（星铃调频——尘构机效率 InfoCard 分解行；{0}=乘数百分比，C# 预格式化）── -->
+    <CelesIM_Keyed_StarlinkTuning>星铃调频 ×{0}</CelesIM_Keyed_StarlinkTuning>
+
+    <!-- ── 批 6 C（超频 Toggle+效率分解行；{0}=乘数百分比，C# 预格式化）── -->
+    <CelesIM_Keyed_OverclockLabel>超频</CelesIM_Keyed_OverclockLabel>
+    <CelesIM_Keyed_OverclockDesc>以双倍线程占用换取尘构机效率加倍。终端失电、断开线程连接或失去超频器链接时自动关停（不会自动重开）。</CelesIM_Keyed_OverclockDesc>
+    <CelesIM_Keyed_OverclockStatLine>超频 ×{0}</CelesIM_Keyed_OverclockStatLine>
 
 </LanguageData>

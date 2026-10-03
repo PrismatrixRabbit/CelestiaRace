@@ -78,6 +78,12 @@
                 <markTexPath>Celes/UI/Overlays/ThreadMark</markTexPath>
                 <linkHeight>1.7</linkHeight>
             </li>
+            <!-- 批 6 收尾修正：星铃调频形态 B（操作者=星铃 race 正在本台工作 → 尘构机效率 ×1.2，
+                 经 P1 postfix 自动传导工作速度系数；显示全链免费——尘构机效率行/工作速度系数行
+                 （BenchBase 继承）/InfoCard 分解行） -->
+            <li Class="CelesFeature.CelesIM_CompProperties_StarlinkTuning">
+                <mode>OperatorAtWork</mode>
+            </li>
         </comps>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>

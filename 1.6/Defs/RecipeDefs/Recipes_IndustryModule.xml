@@ -93,5 +93,37 @@
             <CelesSaberSpacer>1</CelesSaberSpacer>
         </products>
     </RecipeDef>
+    <RecipeDef ParentName="Celes_AutoRecipe_Base">
+        <!-- 批 6 D：锁定配方（默认隐藏——终端链接携 unlockRecipeTags ⊇ 本 lockedTags 的解锁
+             增幅器且其激活时可见+可挂单；断链回隐藏，已挂单保留=原版 research 语义）。
+             可见性经 workerClass 子类覆写 AvailableOnNow（RecipeDef.cs:12 字段名实证——
+             非 recipeWorkerClass；零 Harmony，预核 4 定案）。
+             modExtensions 为 li 跨继承追加（本文件父类注释同款）——父类内容物图自动携带，子级只挂锁 ext -->
+        <defName>Celes_AutoRecipe_MakeLockedRifle</defName>
+        <label>自动组装加密型星铃步枪</label>
+        <description>自动生产线组装加密型星铃突击步枪（配方解锁测试项——需链接解锁增幅器）。</description>
+        <formingTicks>30000</formingTicks>
+        <workerClass>CelesFeature.CelesIM_RecipeWorker_Locked</workerClass>
+        <modExtensions>
+            <li Class="CelesFeature.CelesIM_RecipeLockExt">
+                <lockedTags>
+                    <li>Celes_TestRecipeLock</li>
+                </lockedTags>
+            </li>
+        </modExtensions>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <products>
+            <Celes_Spacer_Rifle>1</Celes_Spacer_Rifle>
+        </products>
+    </RecipeDef>
 
 </Defs>

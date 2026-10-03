@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ═══ CelesIM 轨道二 WorkGiverDefs（E+F 批 2026-09-13）═══
      复刻原版 FixBrokenDownBuilding（Core WorkGivers.xml:606-617 实证：Construction/120/Manipulation/prioritizeSustains）；
-     数据源 = 线程网络管理器注册表（FaultedHubsForReading），零全图扫描 -->
+     数据源 = 线程网络管理器注册表（FaultedProducersForReading），零全图扫描 -->
 <Defs>
   <WorkGiverDef>
-    <defName>CelesIM_FixHubFault</defName>
+    <defName>CelesIM_FixProducerFault</defName>
     <label>维修中枢故障</label>
-    <giverClass>CelesFeature.CelesIM_WorkGiver_FixHubFault</giverClass>
+    <giverClass>CelesFeature.CelesIM_WorkGiver_FixProducerFault</giverClass>
     <workType>Construction</workType>
     <priorityInType>120</priorityInType>
     <verb>维修中枢故障</verb>

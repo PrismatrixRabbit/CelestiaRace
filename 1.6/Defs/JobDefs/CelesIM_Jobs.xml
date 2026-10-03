@@ -4,8 +4,8 @@
      数量/时长经 ThreadProducer CompProperties XML 配置 -->
 <Defs>
   <JobDef>
-    <defName>CelesIM_FixHubFault</defName>
-    <driverClass>CelesFeature.CelesIM_JobDriver_FixHubFault</driverClass>
+    <defName>CelesIM_FixProducerFault</defName>
+    <driverClass>CelesFeature.CelesIM_JobDriver_FixProducerFault</driverClass>
     <reportString>维修TargetA的中枢故障。</reportString>
     <suspendable>false</suspendable>
   </JobDef>
