@@ -68,4 +68,98 @@
         </parts>
         <displayPriorityInCategory>996</displayPriorityInCategory>
     </StatDef>
+
+    <!-- ═══ 批 7 中枢电力重构（D44-D54）——七 stat 族（显示为主）═══ -->
+
+    <!-- 「当前功率修正」（中枢）：实际耗电单一真相源——CompProducerPower 读此写 PowerOutput（唯一写点）；
+         值链=基础值(worker 读电力 props=1600) → 加值 part（D46 先加）→ 乘区 part（协调器 ×3 连乘
+         ≤×9）→ minValue=1 钳制（StatWorker.FinalizeValue:823-826，零代码下限 D51）；
+         详情=原版式拆分行（desc/基础值/加值·乘区行/最终值——StatWorker 组装链 :889-901） -->
+    <StatDef>
+        <defName>Celes_ProducerPowerAdjust</defName>
+        <label>当前功率修正</label>
+        <description>中枢当前的实际电力消耗（单位 W）：基础耗电经全部中枢调整设备加减、协调器乘区后取值，最低 1W。</description>
+        <category>Building</category>
+        <defaultBaseValue>0</defaultBaseValue>
+        <minValue>1</minValue>
+        <toStringStyle>Integer</toStringStyle>
+        <workerClass>CelesFeature.CelesIM_StatWorker_ProducerPower</workerClass>
+        <parts>
+            <li Class="CelesFeature.CelesIM_StatPart_ProducerPowerOffset" />
+            <li Class="CelesFeature.CelesIM_StatPart_ProducerPowerFactor" />
+        </parts>
+        <displayPriorityInCategory>995</displayPriorityInCategory>
+    </StatDef>
+
+    <!-- 「编译线程产出」（中枢）：TotalCapacity 现算（含调整设备加成与托管回流） -->
+    <StatDef>
+        <defName>Celes_ProducerThreadOutput</defName>
+        <label>编译线程产出</label>
+        <description>该中枢当前可对外提供的编译线程总量（含调整设备加成）。</description>
+        <category>Building</category>
+        <defaultBaseValue>0</defaultBaseValue>
+        <toStringStyle>Integer</toStringStyle>
+        <workerClass>CelesFeature.CelesIM_StatWorker_ProducerThreadOutput</workerClass>
+        <displayPriorityInCategory>994</displayPriorityInCategory>
+    </StatDef>
+
+    <!-- 「增幅」（设备）：ext.boostPerUnit -->
+    <StatDef>
+        <defName>Celes_DeviceBoost</defName>
+        <label>增幅</label>
+        <description>该设备为中枢提供的编译线程增量。</description>
+        <category>Building</category>
+        <defaultBaseValue>0</defaultBaseValue>
+        <toStringStyle>Integer</toStringStyle>
+        <workerClass>CelesFeature.CelesIM_StatWorker_DeviceBoost</workerClass>
+        <displayPriorityInCategory>993</displayPriorityInCategory>
+    </StatDef>
+
+    <!-- 「占用」（设备）：消费者 baseThreadsCost -->
+    <StatDef>
+        <defName>Celes_DeviceThreadCost</defName>
+        <label>占用</label>
+        <description>该设备占用的编译线程数量。</description>
+        <category>Building</category>
+        <defaultBaseValue>0</defaultBaseValue>
+        <toStringStyle>Integer</toStringStyle>
+        <workerClass>CelesFeature.CelesIM_StatWorker_DeviceThreadCost</workerClass>
+        <displayPriorityInCategory>992</displayPriorityInCategory>
+    </StatDef>
+
+    <!-- 「中枢负载增幅」（设备）：ext.producerPowerOffset（+W/−W）或 producerPowerFactor（×） -->
+    <StatDef>
+        <defName>Celes_DeviceProducerLoad</defName>
+        <label>中枢负载增幅</label>
+        <description>该设备对中枢电力负载的影响（加值 W 或乘区）。</description>
+        <category>Building</category>
+        <defaultBaseValue>0</defaultBaseValue>
+        <toStringStyle>Integer</toStringStyle>
+        <workerClass>CelesFeature.CelesIM_StatWorker_DeviceProducerLoad</workerClass>
+        <displayPriorityInCategory>991</displayPriorityInCategory>
+    </StatDef>
+
+    <!-- 「连接数」（设备）：自身 facility props.maxSimultaneous（单一真相源） -->
+    <StatDef>
+        <defName>Celes_DeviceConnCount</defName>
+        <label>连接数</label>
+        <description>同一目标最多可连接的该设备数量。</description>
+        <category>Building</category>
+        <defaultBaseValue>0</defaultBaseValue>
+        <toStringStyle>Integer</toStringStyle>
+        <workerClass>CelesFeature.CelesIM_StatWorker_DeviceConnCount</workerClass>
+        <displayPriorityInCategory>990</displayPriorityInCategory>
+    </StatDef>
+
+    <!-- 「连接范围」（设备）：自身 facility props.maxDistance（单一真相源） -->
+    <StatDef>
+        <defName>Celes_DeviceConnRange</defName>
+        <label>连接范围</label>
+        <description>该设备的设施链接距离上限。</description>
+        <category>Building</category>
+        <defaultBaseValue>0</defaultBaseValue>
+        <toStringStyle>FloatTwo</toStringStyle>
+        <workerClass>CelesFeature.CelesIM_StatWorker_DeviceConnRange</workerClass>
+        <displayPriorityInCategory>989</displayPriorityInCategory>
+    </StatDef>
 </Defs>

@@ -2,8 +2,8 @@
 <Defs>
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_TestCore</defName>
-        <label>测试中枢</label>
-        <description>带宽工业系统测试用中枢建筑。产出编译线程，供范围内的终端设备连接。</description>
+        <label>中枢</label>
+        <description>带宽工业系统的中枢建筑。产出编译线程，供范围内的终端设备连接；可加装中枢调整设备（增幅器/平衡器/高级增幅器/协调器）调整线程产出与电力负载。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Celes/Building/SimplifiedControlTower/SimplifiedControlTower</texPath>
@@ -36,24 +36,26 @@
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>300</basePowerConsumption>
+                <basePowerConsumption>1600</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable" />
+            <!-- 批 7 修订（文本 order）：当前功率修正行置于编译线程产出行之前（comp 序=Inspect 行序） -->
+            <li Class="CelesFeature.CelesIM_CompProperties_ProducerPower" />
             <li Class="CelesFeature.CelesIM_CompProperties_ThreadProducer">
                 <baseThreadsProduce>8</baseThreadsProduce>
-                <connectRadius>24.9</connectRadius>
+                <connectRadius>6.9</connectRadius>
                 <overloadCount>7500</overloadCount>
-                <!-- 批 3 B3：中枢端连点 z+ 偏移（伪 3D 视觉高度；按贴图塔顶实际位置实测定稿） -->
                 <linkHeight>5.6</linkHeight>
-                <!-- E+F：自定义中枢故障维修资源（原版 CompBreakdownable 已禁用——下方 comp 已移除） -->
+                
                 <faultRepairResource>ComponentIndustrial</faultRepairResource>
                 <faultRepairCount>2</faultRepairCount>
             </li>
-            <!-- 批 6 B（D41）：中枢增幅器白名单——受影响侧主动扫描建立链接（纯 facility 直连不经中继）；
-                 轴1「每中枢最多链接 N 台 B」=塔 def maxSimultaneous，轴2「每台 B 只服务 1 中枢」=maxLinkedTargets -->
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>
                     <li>Celes_TestProducerAmplifier</li>
+                    <li>Celes_TestBalancer</li>
+                    <li>Celes_TestAdvAmplifier</li>
+                    <li>Celes_TestCoordinator</li>
                 </linkableFacilities>
             </li>
         </comps>
@@ -65,117 +67,8 @@
     </ThingDef>
 
     <ThingDef ParentName="BuildingBase">
-        <defName>Celes_TestTerminal</defName>
-        <label>测试终端</label>
-        <description>带宽工业系统测试用终端建筑。连接至中枢后消耗编译线程进行生产。</description>
-        <thingClass>Building</thingClass>
-        <graphicData>
-            <texPath>Celes/Building/LegacyElectroicComputer/LegacyElectroicComputer</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(7,4)</drawSize>
-            <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-        </graphicData>
-        <tickerType>Normal</tickerType>
-        <drawerType>MapMeshAndRealTime</drawerType>
-        <size>(4,2)</size>
-        <altitudeLayer>Building</altitudeLayer>
-        <fillPercent>0.5</fillPercent>
-        <useHitPoints>true</useHitPoints>
-        <costList>
-            <Steel>50</Steel>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
-        <statBases>
-            <WorkToBuild>1500</WorkToBuild>
-            <MaxHitPoints>120</MaxHitPoints>
-            <Flammability>1.0</Flammability>
-        </statBases>
-        <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>150</basePowerConsumption>
-            </li>
-            <li Class="CompProperties_Flickable" />
-            <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
-                <baseThreadsCost>4</baseThreadsCost>
-
-
-                <!-- 批 3 B3：连接状态标志（贴图路径 XML 可配；高度按终端贴图顶端实测定稿） -->
-                <markTexPath>Celes/UI/Overlays/ThreadMark</markTexPath>
-                <linkHeight>2.2</linkHeight>
-            </li>
-        </comps>
-        <placeWorkers>
-            <li>CelesFeature.CelesIM_PlaceWorker_ShowThreadConnection</li>
-        </placeWorkers>
-        <designationCategory>Celes_SpecialBuildings</designationCategory>
-        <constructEffect>ConstructMetal</constructEffect>
-    </ThingDef>
-
-    <!-- ═══ 批 2：预热启用变体（B2 验证资产——haveWarmUpCount=true，保留无预热原版对照）═══ -->
-    <ThingDef ParentName="BuildingBase">
-        <defName>Celes_TestTerminalWarmup</defName>
-        <label>测试终端（预热）</label>
-        <description>带宽工业系统测试用终端建筑（预热变体）：连接后需完成预热倒计时（12500 tick），用于验证预热三态（活跃递减/无信号冻结/断联清零）。</description>
-        <thingClass>Building</thingClass>
-        <graphicData>
-            <texPath>Celes/Building/LabNanoForge/LabNanoForge</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(2.5,1.5)</drawSize>
-            <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-        </graphicData>
-        <tickerType>Normal</tickerType>
-        <drawerType>MapMeshAndRealTime</drawerType>
-        <size>(1,1)</size>
-        <altitudeLayer>Building</altitudeLayer>
-        <fillPercent>0.5</fillPercent>
-        <useHitPoints>true</useHitPoints>
-        <costList>
-            <Steel>50</Steel>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
-        <statBases>
-            <WorkToBuild>1500</WorkToBuild>
-            <MaxHitPoints>120</MaxHitPoints>
-            <Flammability>1.0</Flammability>
-            <!-- 批 5 前置修订：预热时长单源化（原 comp warmUpTicks 12500 迁此） -->
-            <Celes_WarmUpDuration>12500</Celes_WarmUpDuration>
-        </statBases>
-        <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>150</basePowerConsumption>
-            </li>
-            <li Class="CompProperties_Flickable" />
-            <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
-                <baseThreadsCost>4</baseThreadsCost>
-
-
-
-                <markTexPath>Celes/UI/Overlays/ThreadMark</markTexPath>
-                <linkHeight>1.2</linkHeight>
-            </li>
-        </comps>
-        <placeWorkers>
-            <li>CelesFeature.CelesIM_PlaceWorker_ShowThreadConnection</li>
-        </placeWorkers>
-        <designationCategory>Celes_SpecialBuildings</designationCategory>
-        <constructEffect>ConstructMetal</constructEffect>
-    </ThingDef>
-
-    <ThingDef ParentName="BuildingBase">
         <defName>Celes_TestRelay</defName>
-        <label>测试中继信号塔</label>
+        <label>中继信号塔</label>
         <description>扩展编译线程连接范围的中继设备。</description>
         <thingClass>Building</thingClass>
         <graphicData>
@@ -206,12 +99,15 @@
             <WorkToBuild>2000</WorkToBuild>
             <MaxHitPoints>150</MaxHitPoints>
             <Flammability>1.0</Flammability>
+            <Mass>8</Mass>
         </statBases>
         <comps>
+            <!-- 批 7（需求 0）：7 连接数 / 范围 4.9 -->
             <li Class="CelesFeature.CelesIM_CompProperties_ThreadRelay">
-                <connectionLimit>3</connectionLimit>
-                <connectRadius>7.9</connectRadius>
-                <!-- 批 3 B3：中继端连点 z+ 偏移（伪 3D 视觉高度；按贴图顶端实测定稿） -->
+                <connectionLimit>7</connectionLimit>
+                <connectRadius>4.9</connectRadius>
+                <forwardOnlyRadiusBonus>4</forwardOnlyRadiusBonus>
+                
                 <linkHeight>2.0</linkHeight>
             </li>
         </comps>
@@ -220,6 +116,63 @@
         </placeWorkers>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <constructEffect>ConstructMetal</constructEffect>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+    </ThingDef>
+
+    <!-- 批 7（需求 0）：高级中继信号塔——低连接数、超远范围（3 / 24.9） -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>Celes_TestRelayAdv</defName>
+        <label>高级中继信号塔</label>
+        <description>扩展编译线程连接范围的高级中继设备：连接数低，但范围极远。</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Celes/Building/RelayNode/RelayNode</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(5,5)</drawSize>
+            <drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0.9,3,0.9)</volume>
+            </shadowData>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <drawOffscreen>true</drawOffscreen>
+        <size>(1,1)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <uiIconOffset>(0, 0.3)</uiIconOffset>
+        <uiIconScale>0.4</uiIconScale>
+        <useHitPoints>true</useHitPoints>
+        <costList>
+            <Steel>75</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <WorkToBuild>2000</WorkToBuild>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>8</Mass>
+        </statBases>
+        <comps>
+            <li Class="CelesFeature.CelesIM_CompProperties_ThreadRelay">
+                <connectionLimit>3</connectionLimit>
+                <connectRadius>16.9</connectRadius>
+                <forwardOnlyRadiusBonus>10</forwardOnlyRadiusBonus>
+                <linkHeight>2.0</linkHeight>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowThreadConnection</li>
+        </placeWorkers>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <constructEffect>ConstructMetal</constructEffect>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
     </ThingDef>
 
     <!-- ═══ 批 5（二类生产·U1 2026-09-29）：a 模型管线测试建筑
@@ -370,10 +323,67 @@
 
     <!-- B 中枢增幅器（Producer Effect）：无需线程仅耗电；每台+4 线程产出（计入 TotalCapacity 直显）。
          每中枢最多 4 台（轴1），每台只连 1 个中枢（轴2） -->
+    <!-- 批 7（需求 1 / D45）：中枢增幅器——+8 线程 / +2000W 中枢负载；限 4 台；贴图自测试终端移交（D50） -->
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_TestProducerAmplifier</defName>
-        <label>测试中枢增幅器</label>
-        <description>链接中枢的增益设施：提升中枢的编译线程产出。必须放置在中枢附近直接链接（纯设施链接，不经过中继）。仅耗电，不占用线程。</description>
+        <label>中枢增幅器</label>
+        <description>链接中枢的增益设施：提升中枢的编译线程产出 +8，同时增加中枢 2000W 电力负载。必须直连中枢或经中枢协调器托管（纯设施链接，不经过中继）。</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Celes/Building/LegacyElectroicComputer/LegacyElectroicComputer</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(7,4)</drawSize>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <size>(4,2)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.5</fillPercent>
+        <pathCost>42</pathCost>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.35</staticSunShadowHeight>
+        <useHitPoints>true</useHitPoints>
+        <costList>
+            <Steel>100</Steel>
+        </costList>
+        <statBases>
+            <WorkToBuild>1800</WorkToBuild>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>25</Mass>
+        </statBases>
+        <comps>
+            <!-- 批 7：自带电力移除（D45 需求 1——负载改挂中枢：producerPowerOffset +2000W）；
+                 ProducerDevice 族基=开关（D44）+CanBeActive 单门；maxDistance 6.9=中枢连接半径（D54） -->
+            <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
+                <compClass>CelesFeature.CelesIM_CompFacility_ProducerDevice</compClass>
+                <maxSimultaneous>4</maxSimultaneous>
+                <maxLinkedTargets>1</maxLinkedTargets>
+                <maxDistance>6.9</maxDistance>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="CelesFeature.CelesIM_AmplifierExt">
+                <boostPerUnit>8</boostPerUnit>
+                <producerPowerOffset>2000</producerPowerOffset>
+            </li>
+        </modExtensions>
+        <placeWorkers>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowProducerLinks</li>
+        </placeWorkers>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <constructEffect>ConstructMetal</constructEffect>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+    </ThingDef>
+
+    <!-- 批 7（需求 2）：中枢平衡器——降低中枢 1600W 电力负载；占用 2 线程（设施+消费者双身份） -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>Celes_TestBalancer</defName>
+        <label>中枢平衡器</label>
+        <description>链接中枢的调节设施：降低中枢 1600W 电力负载，同时占用 2 编译线程。必须直连中枢或经中枢协调器托管；断线程即失效。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Celes/Building/Celes_Amplifier</texPath>
@@ -396,27 +406,153 @@
             <WorkToBuild>1800</WorkToBuild>
             <MaxHitPoints>100</MaxHitPoints>
             <Flammability>1.0</Flammability>
+            <Celes_ThreadDependency>1</Celes_ThreadDependency>
+            <Mass>10</Mass>
         </statBases>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>100</basePowerConsumption>
-            </li>
             <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
-                <maxSimultaneous>4</maxSimultaneous>
+                <compClass>CelesFeature.CelesIM_CompFacility_ProducerDevice</compClass>
+                <maxSimultaneous>2</maxSimultaneous>
                 <maxLinkedTargets>1</maxLinkedTargets>
+                <maxDistance>6.9</maxDistance>
+            </li>
+            <!-- 批 7（需求 2）：线程消费者身份——占用 2 线程（断线程→CanBeActive 失活→电力减项停） -->
+            <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
+                <baseThreadsCost>2</baseThreadsCost>
             </li>
         </comps>
         <modExtensions>
             <li Class="CelesFeature.CelesIM_AmplifierExt">
-                <boostPerUnit>4</boostPerUnit>
+                <producerPowerOffset>-1600</producerPowerOffset>
             </li>
         </modExtensions>
         <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowProducerLinks</li>
         </placeWorkers>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <constructEffect>ConstructMetal</constructEffect>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+    </ThingDef>
+
+    <!-- 批 7（需求 3）：中枢高级增幅器——+20 线程 / +3600W 中枢负载；限 2 台 -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>Celes_TestAdvAmplifier</defName>
+        <label>中枢高级增幅器</label>
+        <description>链接中枢的高级增益设施：提升中枢的编译线程产出 +20，同时增加中枢 3600W 电力负载。必须直连中枢或经中枢协调器托管。</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Celes/Building/Celes_Amplifier</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,3)</drawSize>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <size>(1,2)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.5</fillPercent>
+        <pathCost>42</pathCost>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.35</staticSunShadowHeight>
+        <useHitPoints>true</useHitPoints>
+        <costList>
+            <Steel>100</Steel>
+        </costList>
+        <statBases>
+            <WorkToBuild>1800</WorkToBuild>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>10</Mass>
+        </statBases>
+        <comps>
+            <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
+                <compClass>CelesFeature.CelesIM_CompFacility_ProducerDevice</compClass>
+                <maxSimultaneous>2</maxSimultaneous>
+                <maxLinkedTargets>1</maxLinkedTargets>
+                <maxDistance>6.9</maxDistance>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="CelesFeature.CelesIM_AmplifierExt">
+                <boostPerUnit>20</boostPerUnit>
+                <producerPowerOffset>3600</producerPowerOffset>
+            </li>
+        </modExtensions>
+        <placeWorkers>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowProducerLinks</li>
+        </placeWorkers>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <constructEffect>ConstructMetal</constructEffect>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+    </ThingDef>
+
+    <!-- 批 7（需求 4 / D45）：中枢协调器——扩容枢纽（被视作中枢：以中枢同限托管增幅器族；
+         自身不产加成、电力 ×3 乘区（≤2 台=×9）；必须紧贴中枢（maxDistance 2.5=斜角可放最小中心距 D54）；
+         协调器不在任何白名单内=协调器互链天然阻断 -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>Celes_TestCoordinator</defName>
+        <label>中枢协调器</label>
+        <description>中枢的扩容枢纽：可像中枢一样托管增幅器/平衡器（加成回流至其直连中枢），并将中枢电力乘 3。必须紧贴中枢放置；协调器之间不可互相连接。</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Celes/Building/Celes_Amplifier</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,3)</drawSize>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <size>(1,2)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.5</fillPercent>
+        <pathCost>42</pathCost>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.35</staticSunShadowHeight>
+        <useHitPoints>true</useHitPoints>
+        <costList>
+            <Steel>100</Steel>
+        </costList>
+        <statBases>
+            <WorkToBuild>1800</WorkToBuild>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>10</Mass>
+        </statBases>
+        <comps>
+            <!-- 对上：中枢设施——紧贴中枢（maxDistance 2.5）；中枢侧接纳 ≤2 台（maxSimultaneous） -->
+            <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
+                <compClass>CelesFeature.CelesIM_CompFacility_ProducerDevice</compClass>
+                <maxSimultaneous>2</maxSimultaneous>
+                <maxLinkedTargets>1</maxLinkedTargets>
+                <maxDistance>6.9</maxDistance>
+            </li>
+            <!-- 对下：受影响侧宿主（被视作中枢）——托管增幅器族 -->
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>Celes_TestProducerAmplifier</li>
+                    <li>Celes_TestBalancer</li>
+                    <li>Celes_TestAdvAmplifier</li>
+                </linkableFacilities>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="CelesFeature.CelesIM_AmplifierExt">
+                <producerPowerFactor>3</producerPowerFactor>
+            </li>
+        </modExtensions>
+        <placeWorkers>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowProducerLinks</li>
+        </placeWorkers>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <constructEffect>ConstructMetal</constructEffect>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
     </ThingDef>
 
     <!-- A 工具柜型增幅器：需线程不耗电（断链失活）；尘构机效率 +0.1（statOffsets 原生注入+显示）。
@@ -447,6 +583,7 @@
             <WorkToBuild>1800</WorkToBuild>
             <MaxHitPoints>100</MaxHitPoints>
             <Flammability>1.0</Flammability>
+            <Mass>10</Mass>
         </statBases>
         <comps>
             <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
@@ -467,14 +604,19 @@
         </placeWorkers>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <constructEffect>ConstructMetal</constructEffect>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
     </ThingDef>
 
     <!-- C 超频器：链接终端解锁超频 Toggle（建造需科技——未解锁不可建造；建了并链接即可超频）。
-         严格 1:1（轴1=1/轴2=1）；自身仅耗电；效率×2 与线程占用×2 均作用于终端 -->
+         严格 1:1（轴1=1/轴2=1）；批 7（Q3/D47）：0 电——带宽=激活时终端占用×2（现行机制不变）；
+         效率×2 与线程占用×2 均作用于终端 -->
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_TestOverclocker</defName>
-        <label>测试超频器</label>
-        <description>链接尘构终端后解锁终端的超频开关：以双倍线程占用换取尘构机效率加倍。与终端严格一对一链接。需要研究超频技术后才能建造。</description>
+        <label>超频器</label>
+        <description>链接尘构终端后解锁终端的超频开关：以双倍线程占用换取尘构机效率加倍。与终端严格一对一链接。需要研究超频技术后才能建造。自身零耗电。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Celes/Building/Celes_Amplifier</texPath>
@@ -501,12 +643,10 @@
             <WorkToBuild>1800</WorkToBuild>
             <MaxHitPoints>100</MaxHitPoints>
             <Flammability>1.0</Flammability>
+            <Mass>10</Mass>
         </statBases>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>100</basePowerConsumption>
-            </li>
+            <!-- 批 7（Q3）：自带电力移除——0 电（带宽成本经终端占用体现） -->
             <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
                 <maxSimultaneous>1</maxSimultaneous>
                 <maxLinkedTargets>1</maxLinkedTargets>
@@ -518,17 +658,22 @@
             </li>
         </modExtensions>
         <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowProducerLinks</li>
         </placeWorkers>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <constructEffect>ConstructMetal</constructEffect>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
     </ThingDef>
 
-    <!-- D 解锁增幅器：携配方解锁标签（链接终端后锁定配方可见+可挂单）。严格 1:1（轴1=1/轴2=1） -->
+    <!-- D 解锁增幅器：携配方解锁标签（链接终端后锁定配方可见+可挂单）。严格 1:1（轴1=1/轴2=1）；
+         批 7（D49/Q3）：0 电 + ≥1 线程/台（依赖型消费者）——不工作（断线程）不激活配方 -->
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_TestRecipeUnlocker</defName>
-        <label>测试解锁增幅器</label>
-        <description>链接尘构终端后解锁带锁配方（默认隐藏的特殊配方）。与终端严格一对一链接，断开链接后配方重新隐藏。</description>
+        <label>配方解锁增幅器</label>
+        <description>链接尘构终端后解锁带锁配方（默认隐藏的特殊配方）。与终端严格一对一链接，断开链接后配方重新隐藏。占用 1 编译线程；未在工作状态时配方不激活。自身零耗电。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Celes/Building/Celes_Amplifier</texPath>
@@ -552,15 +697,19 @@
             <WorkToBuild>1800</WorkToBuild>
             <MaxHitPoints>100</MaxHitPoints>
             <Flammability>1.0</Flammability>
+            <Celes_ThreadDependency>1</Celes_ThreadDependency>
+            <Mass>10</Mass>
         </statBases>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>100</basePowerConsumption>
-            </li>
+            <!-- 批 7（D49）：自带电力移除 + 消费者身份（≥1 线程/台，XML 可配）；
+                 Threaded=消费者门接入 CanBeActive——断线程即失活→锁定配方回隐藏（RecipeWorker_Locked 读门） -->
             <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
+                <compClass>CelesFeature.CelesIM_CompFacility_Threaded</compClass>
                 <maxSimultaneous>1</maxSimultaneous>
                 <maxLinkedTargets>1</maxLinkedTargets>
+            </li>
+            <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
+                <baseThreadsCost>1</baseThreadsCost>
             </li>
         </comps>
         <modExtensions>
@@ -571,9 +720,13 @@
             </li>
         </modExtensions>
         <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>CelesFeature.CelesIM_PlaceWorker_ShowProducerLinks</li>
         </placeWorkers>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <constructEffect>ConstructMetal</constructEffect>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
     </ThingDef>
 </Defs>

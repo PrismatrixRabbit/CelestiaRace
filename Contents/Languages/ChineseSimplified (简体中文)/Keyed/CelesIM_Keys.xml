@@ -103,4 +103,14 @@
     <CelesIM_Keyed_OverclockDesc>以双倍线程占用换取尘构机效率加倍。终端失电、断开线程连接或失去超频器链接时自动关停（不会自动重开）。</CelesIM_Keyed_OverclockDesc>
     <CelesIM_Keyed_OverclockStatLine>超频 ×{0}</CelesIM_Keyed_OverclockStatLine>
 
+    <!-- ── 批 7（中枢电力重构：当前功率修正——{0}=C# 预格式化值含单位 W）── -->
+    <CelesIM_Keyed_ProducerPowerInspect>当前功率修正: {0}</CelesIM_Keyed_ProducerPowerInspect>
+    <CelesIM_Keyed_ProducerPowerSourceLine>{0}: {1}</CelesIM_Keyed_ProducerPowerSourceLine>
+    <CelesIM_Keyed_CoordinatorName>中枢协调器</CelesIM_Keyed_CoordinatorName>
+
+    <!-- ── 批 7 P2（设备连接状态行——无效态/多目标）── -->
+    <CelesIM_Keyed_DeviceLinkStatus>连接状态: {0}</CelesIM_Keyed_DeviceLinkStatus>
+    <CelesIM_Keyed_DeviceInactive>（无效）</CelesIM_Keyed_DeviceInactive>
+    <CelesIM_Keyed_DeviceLinkMulti>已连接: {0} 台</CelesIM_Keyed_DeviceLinkMulti>
+
 </LanguageData>
