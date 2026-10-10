@@ -11,11 +11,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_BaseWeapon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_StandardMelee.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_StandardRange.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Stats/Stats_Building.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Stats/Stats_Building.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/DamageDef/Celes_BulletDamage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/DamageDef/Celes_BulletDamage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_General.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_General.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_Human.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/PawnKindDef/PawnKinds_Human.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ResearchProjectDefs/CelesResearchProjects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ResearchProjectDefs/CelesResearchProjects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ResearchProjectDefs/ResearchProjects_IndustryModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Scenario/Celes_Scenarios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Scenario/Celes_Scenarios.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryMelee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryMelee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/TraderKindDefs/Celes_TraderKinds_Base_Pioneer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/TraderKindDefs/Celes_TraderKinds_Base_Pioneer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/TraderKindDefs/Celes_TraderKinds_Caravan_Pioneer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/TraderKindDefs/Celes_TraderKinds_Caravan_Pioneer.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesIM_Keys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesIM_Keys.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Pawn/Mechanoid/Celes_MechTest_south.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Textures/Celes/Pawn/Mechanoid/Celes_MechTest_south.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Early/Celes_BoltActionRifle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Early/Celes_Hatchet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Early/Celes_Revolver.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Early/Celes_SemiAutoRifle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Early/Celes_Shotgun.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +292,13 @@
       <workItem from="1790836218508" duration="4872000" />
       <workItem from="1790924167690" duration="4268000" />
       <workItem from="1790999934616" duration="6443000" />
-      <workItem from="1791113804250" duration="4317000" />
+      <workItem from="1791113804250" duration="5056000" />
+      <workItem from="1791186254227" duration="2771000" />
+      <workItem from="1791219997372" duration="3003000" />
+      <workItem from="1791283166138" duration="16710000" />
+      <workItem from="1791422961005" duration="11287000" />
+      <workItem from="1791571255601" duration="2698000" />
+      <workItem from="1791634012669" duration="20145000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -548,7 +572,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791054576298</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="工业系统完工！">
+      <option name="closed" value="true" />
+      <created>1791134884713</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1791134884713</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="尘构仆从及背景修正" />
     <MESSAGE value="一大堆衣服" />
     <MESSAGE value="自动生产设施" />
     <MESSAGE value="适配1.6" />
@@ -594,7 +625,8 @@
     <MESSAGE value="暂时能用的机械体生产机" />
     <MESSAGE value="机械体生产完工！" />
     <MESSAGE value="超绝大辅助建筑" />
-    <option name="LAST_COMMIT_MESSAGE" value="超绝大辅助建筑" />
+    <MESSAGE value="工业系统完工！" />
+    <option name="LAST_COMMIT_MESSAGE" value="工业系统完工！" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

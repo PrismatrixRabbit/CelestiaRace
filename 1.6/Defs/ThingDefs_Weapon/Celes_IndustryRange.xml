@@ -1,92 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    
-    <ThingDef Name="Celes_EarlyGunBase" ParentName="BaseMakeableGun" Abstract="True">
-        <recipeMaker>
-            <recipeUsers Inherit="false">
-                <li>Celes_LabNanoForge</li>
-            </recipeUsers>
-            <displayPriority>5000</displayPriority>
-        </recipeMaker>
-        <weaponTags>
-            <li>Celes_EarlyWeapon</li>
-        </weaponTags>
-        <tradeTags>
-            <li>Celes_EarlyWeapon</li>
-        </tradeTags>
-        <thingCategories Inherit="false">
-            <li>Celes_WeaponsRanged</li>
-        </thingCategories>
-    </ThingDef>
-    
-    <ThingDef Name="Celes_MidGunBase" ParentName="BaseGunWithQuality" Abstract="True">
-        <recipeMaker>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <effectWorking>Smith</effectWorking>
-            <soundWorking>Recipe_Smith</soundWorking>
-            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-            <recipeUsers Inherit="false">
-                <li>Celes_LabNanoForge</li>
-            </recipeUsers>
-            <displayPriority>5300</displayPriority>
-        </recipeMaker>
-        <weaponTags>
-            <li>Celes_MidWeapon</li>
-        </weaponTags>
-        <tradeTags>
-            <li>Celes_MidWeapon</li>
-        </tradeTags>
-        <thingCategories Inherit="false">
-            <li>Celes_WeaponsRanged</li>
-        </thingCategories>
-    </ThingDef>
-    
-    <ThingDef ParentName="Celes_EarlyGunBase">
-        <defName>Celes_Early_Rifle</defName>
-        <label>星铃拓荒栓动步枪</label>
-        <description>一把老式构型的栓动步枪，应急但确实有效，射程远而精准，但射速堪忧。使用星铃制式8.5mm子弹。\n\n如果不是某种紧急情况，这玩意应该在博物馆里躺着。</description>
+    <!--==================================== 星铃拓荒型转轮手枪 ====================================-->
+
+    <ThingDef ParentName="Celes_BaseHumanMakeableGun">
+        <defName>Celes_IndustryRevolver</defName>
+        <label>星铃拓荒型转轮手枪</label>
+        <description>一种大口径的双动式转轮手枪，使用星铃特种13mm子弹。这种手枪采用了特殊的配重构型优化全枪后座，可靠耐用，通常用于贴身防卫。</description>
         <graphicData>
-            <texPath>Celes/Weapon/Early/Celes_BoltActionRifle</texPath>
+            <texPath>Celes/Weapon/Industry/IndustryRevolver</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-            <drawSize>1.1</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.8</drawSize>
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
-        <soundInteract>Interact_Rifle</soundInteract>
+        <soundInteract>Interact_Revolver</soundInteract>
         <statBases>
-            <WorkToMake>45000</WorkToMake>
-            <Mass>4.0</Mass>
-            <AccuracyTouch>0.63</AccuracyTouch>
-            <AccuracyShort>0.85</AccuracyShort>
-            <AccuracyMedium>0.90</AccuracyMedium>
-            <AccuracyLong>0.85</AccuracyLong>
-            <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+            <WorkToMake>15000</WorkToMake>
+            <Mass>3.0</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.73</AccuracyShort>
+            <AccuracyMedium>0.57</AccuracyMedium>
+            <AccuracyLong>0.40</AccuracyLong>
+            <RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
         </statBases>
-        <weaponTags>
-            <li>Celes_EarlyWeaponSniper</li>
-        </weaponTags>
         <costList>
-            <CelesAlloy>40</CelesAlloy>
-            <WoodLog>20</WoodLog>
-            <ComponentIndustrial>4</ComponentIndustrial>
+            <Steel>60</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
                 <li>Celes_Weapon_I</li>
-                <li>Gunsmithing</li>
             </researchPrerequisites>
             <skillRequirements>
-                <Crafting>6</Crafting>
+                <Crafting>5</Crafting>
             </skillRequirements>
+            <displayPriority>5508</displayPriority>
         </recipeMaker>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>CelesBullet_EarlyRifle</defaultProjectile>
-                <warmupTime>2.3</warmupTime>
-                <range>39.9</range>
+                <defaultProjectile>Celes_BulletIndustryLSp</defaultProjectile>
+                <warmupTime>0.5</warmupTime>
+                <range>15.9</range>
+                <soundCast>Shot_Revolver</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>枪托</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>枪管</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+
+        <weaponClasses>
+            <li>ShortShots</li>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>Celes_IndustryRangeRevolver</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_IndustryRange</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Celes_BulletIndustryLSp</defName>
+        <label>星铃特种13mm子弹</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <!--<armorPenetrationBase>0.27</armorPenetrationBase>-->
+            <stoppingPower>2.0</stoppingPower>
+            <speed>55</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+    <!--==================================== 星铃拓荒型精确步枪 ====================================-->
+    
+    <ThingDef ParentName="Celes_BaseHumanMakeableGun">
+        <defName>Celes_IndustryRifle</defName>
+        <label>星铃拓荒型精确步枪</label>
+        <description>一种导气式半自动步枪，使用星铃制式8.5mm子弹。这种步枪射程远而精准，制造简单耐用，维护方便，可以用于狩猎、驱离野兽或者站岗防身。\n\n也能通过切换快慢机来全自动射击，但这样通常来说压不住枪而且肩膀会酸得抬不起来。</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Industry/IndustryRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <WorkToMake>15000</WorkToMake>
+            <Mass>4.0</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.85</AccuracyShort>
+            <AccuracyMedium>0.90</AccuracyMedium>
+            <AccuracyLong>0.85</AccuracyLong>
+            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <HuntingStealth>2.0</HuntingStealth>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>60</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>Celes_Weapon_I</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>5510</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Celes_BulletIndustryM</defaultProjectile>
+                <warmupTime>1.5</warmupTime>
+                <range>36.9</range>
                 <soundCast>Shot_BoltActionRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -111,16 +166,34 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+        <comps Inherit="False">
+            <li Class="CompProperties_Biocodable"/>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_EquippableAbility">
+                <abilityDef>Celes_Ability_IndustryRifle</abilityDef>
+            </li>
+        </comps>
+        
+        <weaponClasses>
+            <li>LongShots</li>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>Celes_IndustryRangeSniper</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_IndustryRange</li>
+        </tradeTags>
     </ThingDef>
-    
+
     <ThingDef ParentName="BaseBullet">
-        <defName>CelesBullet_EarlyRifle</defName>
+        <defName>Celes_BulletIndustryM</defName>
         <label>星铃制式8.5mm子弹</label>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>21</damageAmountBase>
+            <damageAmountBase>18</damageAmountBase>
             <armorPenetrationBase>0.32</armorPenetrationBase>
-            <stoppingPower>2.0</stoppingPower>
+            <stoppingPower>1.5</stoppingPower>
             <speed>75</speed>
         </projectile>
         <graphicData>
@@ -129,53 +202,77 @@
         </graphicData>
     </ThingDef>
     
-    <ThingDef ParentName="Celes_EarlyGunBase">
-        <defName>Celes_Early_ShotGun</defName>
-        <label>星铃拓荒半自动霰弹枪</label>
-        <description>一把老式构型的半自动霰弹枪，火力致命，但射程较短。使用星铃制式20铅径霰弹枪子弹。\n\n如果不是某种紧急情况，这玩意多半只会出现在教材上。</description>
+    <AbilityDef>
+        <defName>Celes_Ability_IndustryRifle</defName>
+        <label>快慢机切换</label>
+        <description>将保险切至全自动以爆发一串连射，但这样肩膀会很痛，得缓好一会。</description>
+        <iconPath>Celes/UI/Icons/IndustrialChips_B</iconPath>
+        <cooldownTicksRange>2500</cooldownTicksRange>
+        <showPsycastEffects>false</showPsycastEffects>
+        <verbProperties>
+            <verbClass>Verb_AbilityShoot</verbClass>
+            <defaultProjectile>Celes_BulletIndustryM</defaultProjectile>
+            <range>21.9</range>
+            <warmupTime>1.2</warmupTime>
+            <burstShotCount>3</burstShotCount>
+            <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+            <accuracyTouch>0.55</accuracyTouch>
+            <accuracyShort>0.65</accuracyShort>
+            <accuracyMedium>0.55</accuracyMedium>
+            <accuracyLong>0.45</accuracyLong>
+            <soundCast>Shot_BoltActionRifle</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <ai_IsWeapon>false</ai_IsWeapon>
+            <targetParams>
+                <canTargetLocations>false</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+    <!--==================================== 星铃拓荒型霰弹枪 ====================================-->
+
+    <ThingDef ParentName="Celes_BaseHumanMakeableGun">
+        <defName>Celes_IndustryShotgun</defName>
+        <label>星铃拓荒型霰弹枪</label>
+        <description>一种大口径泵动式霰弹枪，使用星铃特种25mm子弹。在极近距离上发射威力惊人的霰弹，可以用于破门、清障或近距离防身。由于其使用了带有膛线的枪管所以理论上算是卡宾枪……？\n\n也能装填特制的闪光弹，致盲射程内的所有人。</description>
         <graphicData>
-            <texPath>Celes/Weapon/Early/Celes_Shotgun</texPath>
+            <texPath>Celes/Weapon/Industry/IndustryShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <drawSize>1.0</drawSize>
         </graphicData>
-        <uiIconScale>1.2</uiIconScale>
+        <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_Shotgun</soundInteract>
         <statBases>
-            <WorkToMake>35000</WorkToMake>
+            <WorkToMake>19500</WorkToMake>
             <Mass>3.5</Mass>
-            <AccuracyTouch>0.90</AccuracyTouch>
-            <AccuracyShort>0.88</AccuracyShort>
-            <AccuracyMedium>0.75</AccuracyMedium>
-            <AccuracyLong>0.60</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
         </statBases>
-		<weaponTags>
-			<li>Celes_EarlyWeaponShotGun</li>
-		</weaponTags>
         <costList>
-            <CelesAlloy>40</CelesAlloy>
-            <WoodLog>20</WoodLog>
-            <ComponentIndustrial>4</ComponentIndustrial>
+            <Steel>85</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
                 <li>Celes_Weapon_I</li>
-                <li>Gunsmithing</li>
             </researchPrerequisites>
             <skillRequirements>
-                <Crafting>6</Crafting>
+                <Crafting>5</Crafting>
             </skillRequirements>
+            <displayPriority>5512</displayPriority>
         </recipeMaker>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>CelesBullet_ShotGun</defaultProjectile>
-                <warmupTime>0.6</warmupTime>
+                <defaultProjectile>Celes_BulletIndustryShotgun</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
                 <range>14.9</range>
-                <burstShotCount>8</burstShotCount>
-                <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>3</muzzleFlashScale>
@@ -200,300 +297,154 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
-    </ThingDef>
-    
-    <ThingDef ParentName="BaseBullet">
-        <defName>CelesBullet_ShotGun</defName>
-        <label>星铃制式20铅径鹿弹</label>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>4</damageAmountBase>
-            <stoppingPower>3.0</stoppingPower>
-            <armorPenetrationBase>0.15</armorPenetrationBase>
-            <speed>60</speed>
-        </projectile>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_small</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-    </ThingDef>
-    
-    <ThingDef ParentName="Celes_EarlyGunBase">
-        <defName>Celes_Early_Revolver</defName>
-        <label>星铃拓荒左轮</label>
-        <description>一把老式构型的大口径左轮手枪，用于有效的杀伤软目标，在近距离有夸张的杀伤力，对手腕也是。使用星铃制式15.2mm子弹。\n\n如果不是某种紧急情况，这玩意大概只会在某个私人收藏家的手里被把玩。</description>
-        <graphicData>
-            <texPath>Celes/Weapon/Early/Celes_Revolver</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-            <drawSize>0.9</drawSize>
-        </graphicData>
-        <uiIconScale>1.2</uiIconScale>
-        <soundInteract>Interact_Revolver</soundInteract>
-        <statBases>
-            <WorkToMake>25000</WorkToMake>
-            <Mass>2.0</Mass>
-            <AccuracyTouch>0.50</AccuracyTouch>
-            <AccuracyShort>0.43</AccuracyShort>
-            <AccuracyMedium>0.37</AccuracyMedium>
-            <AccuracyLong>0.30</AccuracyLong>
-            <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
-        </statBases>
+        <comps Inherit="False">
+            <li Class="CompProperties_Biocodable"/>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_EquippableAbilityReloadable">
+                <abilityDef>Celes_Ability_IndustryShotgun</abilityDef>
+                <maxCharges>3</maxCharges>
+                <ammoDef>Steel</ammoDef>
+                <ammoCountPerCharge>15</ammoCountPerCharge>
+                <baseReloadTicks>60</baseReloadTicks>
+                <soundReload>Standard_Reload</soundReload>
+                <chargeNoun>闪光弹</chargeNoun>
+            </li>
+        </comps>
+
+        <weaponClasses>
+            <li>ShortShots</li>
+            <li>RangedHeavy</li>
+        </weaponClasses>
         <weaponTags>
-            <li>Celes_EarlyWeapon</li>
+            <li>Celes_IndustryRangeClose</li>
         </weaponTags>
-        <costList>
-            <CelesAlloy>30</CelesAlloy>
-            <ComponentIndustrial>3</ComponentIndustrial>
-        </costList>
-        <recipeMaker>
-            <researchPrerequisites>
-                <li>Celes_Weapon_I</li>
-                <li>Gunsmithing</li>
-            </researchPrerequisites>
-            <skillRequirements>
-                <Crafting>6</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>CelesBullet_SR</defaultProjectile>
-                <warmupTime>1.0</warmupTime>
-                <range>17.9</range>
-                <soundCast>Shot_Revolver</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
-        </verbs>
-        <tools>
-            <li>
-                <label>握柄</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>枪管</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
+        <tradeTags>
+            <li>Celes_IndustryRange</li>
+        </tradeTags>
     </ThingDef>
 
-    <!-- <ThingDef ParentName="BaseBullet">
-        <defName>CelesBullet_Revolver</defName>
-        <label>Celestia standard 12.7mm bullet</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Big</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
+    <ThingDef ParentName="BaseBullet">
+        <defName>Celes_BulletIndustryShotgun</defName>
+        <label>星铃特种25mm子弹</label>
         <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>20</damageAmountBase>
-            <stoppingPower>2</stoppingPower>
+            <damageDef>Celes_ShotgunBullet</damageDef>
+            <damageAmountBase>32</damageAmountBase>
+            <armorPenetrationBase>0.16</armorPenetrationBase>
+            <stoppingPower>3.0</stoppingPower>
             <speed>55</speed>
         </projectile>
-    </ThingDef> -->
-    
-    <ThingDef ParentName="Celes_EarlyGunBase">
-        <defName>Celes_Early_SemiRifle</defName>
-        <label>星铃拓荒半自动步枪</label>
-        <description>一把老式构型的半自动步枪，射速较快而压制力较强，但射击精度有所降低。使用星铃制式8.5mm子弹。\n\n如果不是某种紧急情况，这玩意大概只会在网络上用来作为谈资。</description>
         <graphicData>
-            <texPath>Celes/Weapon/Early/Celes_SemiAutoRifle</texPath>
+            <texPath>Things/Projectile/Bullet_Shotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
+        </graphicData>
+    </ThingDef>
+
+    <AbilityDef>
+        <defName>Celes_Ability_IndustryShotgun</defName>
+        <label>25mm闪光弹</label>
+        <description>装填特种闪光弹丸以致盲射程内的敌人。</description>
+        <iconPath>Celes/UI/Icons/IndustrialChips_B</iconPath>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>14.9</range>
+            <warmupTime>1.4</warmupTime>
+            <soundCast>BulletImpact_Metal</soundCast>
+            <requireLineOfSight>true</requireLineOfSight>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CelesFeature.Celes_CompProperties_AbilityConeApplyHediff">
+                <hediffDef>Celes_Hediff_ShotgunBlind</hediffDef>
+                <bodypartTagTarget>SightSource</bodypartTagTarget>
+                <severityFixed>1</severityFixed>
+                <chance>1</chance>
+                <range>14.9</range>
+                <coneSizeDegrees>25</coneSizeDegrees>
+                <flashFleckDef>Celes_Fleck_Flash</flashFleckDef>
+                <flashScale>120</flashScale>
+                <stunDamage>4</stunDamage>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <HediffDef>
+        <defName>Celes_Hediff_ShotgunBlind</defName>
+        <label>强光致盲</label>
+        <description>被强光压制视觉，短时内视力大幅下降。</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>true</isBad>
+        <stages>
+            <li>
+                <partEfficiencyOffset>-0.9</partEfficiencyOffset>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>600</disappearsAfterTicks>
+            </li>
+        </comps>
+    </HediffDef>
+    
+    <FleckDef ParentName="FleckBase">
+        <defName>Celes_Fleck_Flash</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.05</fadeInTime>
+        <solidTime>0</solidTime>
+        <fadeOutTime>0.05</fadeOutTime>
+        <graphicData>
+            <texPath>Things/Mote/ShotFlash</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(1, 0.97, 0.9)</color>
+        </graphicData>
+    </FleckDef>
+
+    <!--==================================== 星铃拓荒型冲锋枪 ====================================-->
+
+    <ThingDef ParentName="Celes_BaseHumanMakeableGun">
+        <defName>Celes_IndustrySMG</defName>
+        <label>星铃拓荒型冲锋枪</label>
+        <description>一种紧凑的小口径冲锋枪，使用星铃制式5.7mm子弹。为紧凑室内环境打造，成本低廉结构可靠，被星铃科考队广泛装备。</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Industry/IndustrySMG</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
             <drawSize>1.0</drawSize>
         </graphicData>
-        <uiIconScale>1.2</uiIconScale>
-        <soundInteract>Interact_Rifle</soundInteract>
+        <uiIconScale>1.0</uiIconScale>
+        <soundInteract>Interact_SMG</soundInteract>
         <statBases>
-            <WorkToMake>35000</WorkToMake>
-            <Mass>3.5</Mass>
-            <AccuracyTouch>0.47</AccuracyTouch>
-            <AccuracyShort>0.55</AccuracyShort>
-            <AccuracyMedium>0.45</AccuracyMedium>
-            <AccuracyLong>0.40</AccuracyLong>
-            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+            <WorkToMake>22000</WorkToMake>
+            <Mass>2.5</Mass>
+            <AccuracyTouch>0.88</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.35</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
         </statBases>
-		<weaponTags>
-			<li>Celes_EarlyWeaponAssault</li>
-		</weaponTags>
         <costList>
-            <CelesAlloy>40</CelesAlloy>
-            <WoodLog>25</WoodLog>
+            <Steel>80</Steel>
             <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
                 <li>Celes_Weapon_I</li>
-                <li>Gunsmithing</li>
             </researchPrerequisites>
             <skillRequirements>
-                <Crafting>6</Crafting>
+                <Crafting>5</Crafting>
             </skillRequirements>
+            <displayPriority>5514</displayPriority>
         </recipeMaker>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>CelesBullet_EarlyRifle</defaultProjectile>
-                <warmupTime>0.9</warmupTime>
-                <range>27.9</range>
-                <soundCast>Shot_BoltActionRifle</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>6</muzzleFlashScale>
-            </li>
-        </verbs>
-        <tools>
-            <li>
-                <label>枪托</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>枪管枪管</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
-    
-    <ThingDef ParentName="Celes_MidGunBase">
-        <defName>Celes_Mid_ShotGun</defName>
-        <label>星铃古典自动霰弹枪</label>
-        <description>一把古典构型的自动霰弹枪，在近距离的杀伤力极度恐怖，但精度和射程都堪忧。使用星铃制式20铅径霰弹枪子弹。</description>
-        <graphicData>
-            <texPath>Celes/Weapon/Mid/Celes_AutoShotgun</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-            <drawSize>1.0</drawSize>
-        </graphicData>
-        <uiIconScale>1.0</uiIconScale>
-        <soundInteract>Interact_Rifle</soundInteract>
-        <statBases>
-            <WorkToMake>50000</WorkToMake>
-            <Mass>4.5</Mass>
-            <AccuracyTouch>0.55</AccuracyTouch>
-            <AccuracyShort>0.62</AccuracyShort>
-            <AccuracyMedium>0.55</AccuracyMedium>
-            <AccuracyLong>0.25</AccuracyLong>
-            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-        </statBases>
-        <weaponTags>
-            <li>Celes_MidWeaponAssault</li>
-        </weaponTags>
-        <costList>
-            <CelesAlloy>80</CelesAlloy>
-            <ComponentIndustrial>10</ComponentIndustrial>
-            <Celes_NanoMachine>5</Celes_NanoMachine>
-        </costList>
-        <recipeMaker>
-            <researchPrerequisites>
-                <li>Celes_Weapon_II</li>
-                <li>GasOperation</li>
-            </researchPrerequisites>
-            <skillRequirements>
-                <Crafting>7</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-            <verbs>
-                <li>
-                    <verbClass>Verb_Shoot</verbClass>
-                    <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>CelesBullet_ShotGun</defaultProjectile>
-                    <warmupTime>0.6</warmupTime>
-                    <range>12.9</range>
-                    <burstShotCount>6</burstShotCount>
-                    <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-                    <soundCast>Shot_Shotgun</soundCast>
-                    <soundCastTail>GunTail_Heavy</soundCastTail>
-                    <muzzleFlashScale>3</muzzleFlashScale>
-                </li>
-            </verbs>
-            <tools>
-                <li>
-                    <label>枪托</label>
-                    <capacities>
-                        <li>Blunt</li>
-                    </capacities>
-                    <power>9</power>
-                    <cooldownTime>2</cooldownTime>
-                </li>
-                <li>
-                    <label>barrel</label>
-                    <capacities>
-                        <li>Blunt</li>
-                        <li>Poke</li>
-                    </capacities>
-                    <power>9</power>
-                    <cooldownTime>2</cooldownTime>
-                </li>
-            </tools>
-    </ThingDef>
-
-    <ThingDef ParentName="Celes_MidGunBase">
-        <defName>Celes_Mid_SAssault</defName>
-        <label>星铃古典突击步枪</label>
-        <description>一把古典构型的突击步枪，射程，火力，精度都平庸但良好，广泛用于星铃拓荒队的先锋小队。使用星铃制式5.7mm子弹。</description>
-        <graphicData>
-            <texPath>Celes/Weapon/Mid/Celes_SAssault</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-            <drawSize>1.0</drawSize>
-        </graphicData>
-        <uiIconScale>1.0</uiIconScale>
-        <soundInteract>Interact_Rifle</soundInteract>
-        <statBases>
-            <WorkToMake>50000</WorkToMake>
-            <Mass>3.5</Mass>
-            <AccuracyTouch>0.65</AccuracyTouch>
-            <AccuracyShort>0.70</AccuracyShort>
-            <AccuracyMedium>0.70</AccuracyMedium>
-            <AccuracyLong>0.50</AccuracyLong>
-            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
-        </statBases>
-        <weaponTags>
-            <li>Celes_MidWeaponAssault</li>
-        </weaponTags>
-        <costList>
-            <CelesAlloy>80</CelesAlloy>
-            <ComponentIndustrial>10</ComponentIndustrial>
-            <Celes_NanoMachine>5</Celes_NanoMachine>
-        </costList>
-        <recipeMaker>
-            <researchPrerequisites>
-                <li>Celes_Weapon_II</li>
-                <li>PrecisionRifling</li>
-            </researchPrerequisites>
-            <skillRequirements>
-                <Crafting>7</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>CelesBullet_AR</defaultProjectile>
-                <warmupTime>1.0</warmupTime>
-                <range>33.9</range>
+                <defaultProjectile>Celes_BulletIndustryS</defaultProjectile>
+                <warmupTime>0.8</warmupTime>
+                <range>24.9</range>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <burstShotCount>3</burstShotCount>
-                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
                 <soundCast>Shot_AssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -518,185 +469,33 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+
+        <weaponClasses>
+            <li>ShortShots</li>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>Celes_IndustryRangeClose</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_IndustryRange</li>
+        </tradeTags>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
-        <defName>CelesBullet_AR</defName>
+        <defName>Celes_BulletIndustryS</defName>
         <label>星铃制式5.7mm子弹</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <!--<armorPenetrationBase>0.27</armorPenetrationBase>
+            <stoppingPower>2.0</stoppingPower>-->
+            <speed>50</speed>
+        </projectile>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>13</damageAmountBase>
-            <speed>70</speed>
-            <stoppingPower>0.5</stoppingPower>
-            <armorPenetrationBase>0.25</armorPenetrationBase>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="Celes_MidGunBase">
-        <defName>Celes_Mid_DMR</defName>
-        <label>星铃古典精确射手步枪</label>
-        <description>一把古典构型的精确射手步枪，射速稍慢但精准，有着较大的射程，常被用于星铃拓荒队的精确射手。使用星铃制式8.5mm子弹。</description>
-        <graphicData>
-            <texPath>Celes/Weapon/Mid/Celes_DMR</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-            <drawSize>1.0</drawSize>
-        </graphicData>
-        <uiIconScale>1.2</uiIconScale>
-        <soundInteract>Interact_Rifle</soundInteract>
-        <statBases>
-            <WorkToMake>55000</WorkToMake>
-            <Mass>4.0</Mass>
-            <AccuracyTouch>0.65</AccuracyTouch>
-            <AccuracyShort>0.85</AccuracyShort>
-            <AccuracyMedium>0.85</AccuracyMedium>
-            <AccuracyLong>0.75</AccuracyLong>
-            <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
-        </statBases>
-        <weaponTags>
-            <li>Celes_MidWeaponSniper</li>
-        </weaponTags>
-        <costList>
-            <CelesAlloy>120</CelesAlloy>
-            <ComponentIndustrial>10</ComponentIndustrial>
-            <Celes_NanoMachine>5</Celes_NanoMachine>
-        </costList>
-        <recipeMaker>
-            <researchPrerequisites>
-                <li>Celes_Weapon_II</li>
-                <li>PrecisionRifling</li>
-            </researchPrerequisites>
-            <skillRequirements>
-                <Crafting>7</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>CelesBullet_EarlyRifle</defaultProjectile>
-                <warmupTime>3.0</warmupTime>
-                <range>39.9</range>
-                <burstShotCount>2</burstShotCount>
-                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-                <soundCast>Shot_BoltActionRifle</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>6</muzzleFlashScale>
-            </li>
-        </verbs>
-        <tools>
-            <li>
-                <label>枪托</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>枪管</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
-
-    <ThingDef ParentName="Celes_MidGunBase">
-        <defName>Celes_Mid_SR</defName>
-        <label>星铃古典狙击枪</label>
-        <description>一把古典构型的狙击枪，即使有着可折叠式枪托仍然不便于携带，高度精准的战术级武器，射速极慢但射程极大，即使是星铃也不常使用这种大型狙击枪。使用星铃制式15.2mm子弹。</description>
-        <graphicData>
-            <texPath>Celes/Weapon/Mid/Celes_SR</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-            <drawSize>1.3</drawSize>
-        </graphicData>
-        <uiIconScale>1.0</uiIconScale>
-        <soundInteract>Interact_Rifle</soundInteract>
-        <statBases>
-            <WorkToMake>65000</WorkToMake>
-            <Mass>5.5</Mass>
-            <AccuracyTouch>0.40</AccuracyTouch>
-            <AccuracyShort>0.72</AccuracyShort>
-            <AccuracyMedium>0.80</AccuracyMedium>
-            <AccuracyLong>0.90</AccuracyLong>
-            <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
-        </statBases>
-		<weaponTags>
-			<li>Celes_MidWeaponSniper</li>
-		</weaponTags>
-        <costList>
-            <CelesAlloy>160</CelesAlloy>
-            <ComponentIndustrial>14</ComponentIndustrial>
-            <Celes_NanoMachine>5</Celes_NanoMachine>
-        </costList>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.25</MoveSpeed>
-        </equippedStatOffsets>
-        <recipeMaker>
-            <researchPrerequisites>
-                <li>Celes_Weapon_II</li>
-                <li>PrecisionRifling</li>
-            </researchPrerequisites>
-            <skillRequirements>
-                <Crafting>8</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>CelesBullet_SR</defaultProjectile>
-                <warmupTime>3.5</warmupTime>
-                <range>53.9</range>
-                <soundCast>Shot_SniperRifle</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
-        </verbs>
-        <tools>
-            <li>
-                <label>枪托</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>枪管</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>CelesBullet_SR</defName>
-        <label>星铃制式15.2mm子弹</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Big</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>38</damageAmountBase>
-            <stoppingPower>2</stoppingPower>
-            <armorPenetrationBase>0.4</armorPenetrationBase>
-            <speed>120</speed>
-        </projectile>
     </ThingDef>
     
 </Defs>

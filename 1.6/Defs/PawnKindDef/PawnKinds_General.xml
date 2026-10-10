@@ -79,11 +79,10 @@
         <apparelDisallowTags>
         </apparelDisallowTags>
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-        <weaponMoney>400~1000</weaponMoney>
+        <weaponMoney>200~1000</weaponMoney>
         <weaponTags Inherit="false">
-            <li>Celes_EarlyWeaponAssault</li>
-			<li>Celes_EarlyWeaponShotGun</li>
-			<li>Celes_EarlyMelee</li>
+            <li>Celes_IndustryRangeClose</li>
+			<li>Celes_IndustryMelee</li>
         </weaponTags>
         <backstoryFilters>
             <li>
@@ -160,7 +159,7 @@
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
         <weaponMoney>1250~10000</weaponMoney>
         <weaponTags Inherit="false">
-            <li>Celes_MidWeaponAssault</li>
+            <li>Celes_IndustryRangeRevolver</li>
         </weaponTags>
         <backstoryFilters>
             <li>
@@ -202,8 +201,7 @@
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		<weaponMoney>750~10000</weaponMoney>
 		<weaponTags Inherit="false">
-			<li>Celes_EarlyWeaponAssault</li>
-			<li>Celes_EarlyWeaponShotGun</li>
+			<li>Celes_IndustryRangeClose</li>
 		</weaponTags>
 		<backstoryFilters>
 			<li>
@@ -281,7 +279,7 @@
 		<combatPower>65</combatPower>
 		<itemQuality>Good</itemQuality>
 		<weaponTags Inherit="false">
-			<li>Celes_EarlyWeaponSniper</li>
+			<li>Celes_IndustryRangeSniper</li>
 		</weaponTags>
 		<initialWillRange>5~7</initialWillRange>
 		<initialResistanceRange>15~24</initialResistanceRange>
@@ -305,7 +303,7 @@
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
         <weaponMoney>1250~10000</weaponMoney>
         <weaponTags Inherit="false">
-            <li>Celes_MidWeaponAssault</li>
+            <li>Celes_IndustryRangeClose</li>
         </weaponTags>
         <backstoryFilters>
             <li>
@@ -368,7 +366,7 @@
 		<itemQuality>Good</itemQuality>
 		<weaponMoney>1500~10000</weaponMoney>
 		<weaponTags Inherit="false">
-			<li>Celes_MidWeaponSniper</li>
+			<li>Celes_IndustryRangeSniper</li>
 		</weaponTags>
 		<initialWillRange>5~7</initialWillRange>
 		<initialResistanceRange>15~24</initialResistanceRange>

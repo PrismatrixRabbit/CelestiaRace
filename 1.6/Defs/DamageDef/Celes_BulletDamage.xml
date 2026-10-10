@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <DamageDef ParentName="Bullet">
+        <defName>Celes_ShotgunBullet</defName>
+        <!--<label>子弹伤</label>
+        <deathMessage>{0}被枪射杀了。</deathMessage>-->
+        <buildingDamageFactor>5</buildingDamageFactor>
+        <buildingDamageFactorImpassable>0.75</buildingDamageFactorImpassable>
+    </DamageDef>
+    
+    <DamageDef ParentName="Bullet">
         <defName>Celes_ParticleBurn</defName>
         <label>粒子灼伤</label>
         <deathMessage>{0} has been pierced by a focused particle beam.</deathMessage>

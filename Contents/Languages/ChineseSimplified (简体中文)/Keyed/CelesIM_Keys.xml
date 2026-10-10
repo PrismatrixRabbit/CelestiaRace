@@ -100,7 +100,7 @@
 
     <!-- ── 批 6 C（超频 Toggle+效率分解行；{0}=乘数百分比，C# 预格式化）── -->
     <CelesIM_Keyed_OverclockLabel>超频</CelesIM_Keyed_OverclockLabel>
-    <CelesIM_Keyed_OverclockDesc>以双倍线程占用换取尘构机效率加倍。终端失电、断开线程连接或失去超频器链接时自动关停（不会自动重开）。</CelesIM_Keyed_OverclockDesc>
+    <CelesIM_Keyed_OverclockDesc>以额外线程占用换取尘构机效率提升；仅在超频开启时解锁特权配方（关停后已挂单不追溯）。终端失电、断开线程连接或失去超频器链接时自动关停（不会自动重开）。</CelesIM_Keyed_OverclockDesc>
     <CelesIM_Keyed_OverclockStatLine>超频 ×{0}</CelesIM_Keyed_OverclockStatLine>
 
     <!-- ── 批 7（中枢电力重构：当前功率修正——{0}=C# 预格式化值含单位 W）── -->

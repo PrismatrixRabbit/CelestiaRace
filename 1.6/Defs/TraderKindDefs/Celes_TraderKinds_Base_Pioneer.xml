@@ -177,11 +177,11 @@
 
             <!-- Weapons -->
             <li Class="StockGenerator_MarketValue">
-                <tradeTag>Celes_EarlyMelee</tradeTag>
+                <tradeTag>Celes_IndustryMelee</tradeTag>
                 <countRange>2~4</countRange>
             </li>
             <li Class="StockGenerator_MarketValue">
-                <tradeTag>Celes_EarlyWeapon</tradeTag>
+                <tradeTag>Celes_IndustryRange</tradeTag>
                 <countRange>3~6</countRange>
             </li>
             <li Class="StockGenerator_MarketValue">

@@ -79,7 +79,7 @@
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <weaponMoney>750~10000</weaponMoney>
         <weaponTags Inherit="false">
-            <li>Celes_EarlyWeaponAssault</li>
+            <li>Celes_IndustryRangeClose</li>
         </weaponTags>
         <apparelMoney>1250~2500</apparelMoney>
 

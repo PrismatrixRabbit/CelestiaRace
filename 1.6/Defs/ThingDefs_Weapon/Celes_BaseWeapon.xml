@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--==================================== Ranged ====================================-->
+
+    <ThingDef Name="Celes_BaseHumanMakeableGun" ParentName="BaseGun" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <techLevel>Industrial</techLevel>
+        <smeltable>true</smeltable>
+        <relicChance>0</relicChance>
+        <thingCategories Inherit="false">
+            <li>Celes_WeaponsRanged</li>
+        </thingCategories>
+        <weaponTags>
+            <li>Celes_Weapon</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_Weapon</li>
+        </tradeTags>
+        <statBases>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers Inherit="false">
+                <li>Celes_LabNanoForge</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+            <displayPriority>5500</displayPriority>
+        </recipeMaker>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef Name="Celes_BaseMechGun" ParentName="BaseGun" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <smeltable>false</smeltable>
+        <relicChance>0</relicChance>
+        <tradeability>None</tradeability>
+        <destroyOnDrop>true</destroyOnDrop>
+        <weaponTags>
+        </weaponTags>
+    </ThingDef>
+    
+    <!--==================================== Melee ====================================-->
+    
+    <ThingDef Name="Celes_BaseMeleeWeapon" ParentName="BaseMeleeWeapon" Abstract="True">
+        <weaponClasses>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <relicChance>0</relicChance>
+        <weaponTags Inherit="false">
+            <li>Celes_Weapon</li>
+        </weaponTags>
+        <tradeTags Inherit="false">
+            <li>Celes_Weapon</li>
+        </tradeTags>
+        <thingCategories Inherit="false">
+            <li>Celes_WeaponsMelee</li>
+        </thingCategories>
+    </ThingDef>
+    
+</Defs>

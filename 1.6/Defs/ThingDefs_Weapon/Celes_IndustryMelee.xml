@@ -1,24 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    
-    <ThingDef Name="Celes_EarlyMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
+    <ThingDef ParentName="Celes_BaseMeleeWeapon">
+        <defName>Celes_Hatchet</defName>
+        <label>星铃拓荒型手斧</label>
+        <description>科考队制式的割砍两用工具，正面是宽大的斧刃，背面带有短镰刃。其基于边缘世界本土资源条件设计，制造简单轻便耐用，可以用于收获作物、砍伐树木或清理杂草。也堪堪能作为武器。</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Industry/Hatchet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <costList>
+            <Steel>35</Steel>
+            <WoodLog>25</WoodLog>
+        </costList>
+        <statBases>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>0.85</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedStatOffsets>
+            <PlantWorkSpeed>0.4</PlantWorkSpeed>
+        </equippedStatOffsets>
         <recipeMaker>
-            <recipeUsers Inherit="false">
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
                 <li>Celes_LabNanoForge</li>
             </recipeUsers>
-            <displayPriority>4000</displayPriority>
+            <researchPrerequisites>
+                <li>Celes_Weapon_I</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+            <displayPriority>5010</displayPriority>
         </recipeMaker>
-        <techLevel>Industrial</techLevel>
+        <tools>
+            <li>
+                <label>斧柄</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.18</armorPenetration>
+            </li>
+            <li>
+                <label>斧刃</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>0.30</armorPenetration>
+            </li>
+            <li>
+                <label>镰刃</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>13</power>
+                <cooldownTime>1.4</cooldownTime>
+                <armorPenetration>0.30</armorPenetration>
+            </li>
+        </tools>
         <weaponTags>
-            <li>Celes_EarlyMelee</li>
+            <li>Celes_IndustryMelee</li>
         </weaponTags>
         <tradeTags>
-            <li>Celes_EarlyMelee</li>
+            <li>Celes_IndustryMelee</li>
         </tradeTags>
-        <thingCategories Inherit="false">
-            <li>Celes_WeaponsMelee</li>
-        </thingCategories>
     </ThingDef>
+
+    <ThingDef ParentName="Celes_BaseMeleeWeapon">
+        <defName>Celes_GeologyHammer</defName>
+        <label>星铃拓荒型地质锤</label>
+        <description>科考队制式的地质勘探锤，一端呈锤面，另一端为楔形镐头。其基于边缘世界本土资源条件设计，制造简单轻便耐用，可以用于采集地质样本……但在边缘世界，也勉强能当做趁手的采矿工具。它堪堪能作为武器。</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Industry/GeologyHammer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <costList>
+            <Steel>40</Steel>
+            <WoodLog>25</WoodLog>
+        </costList>
+        <statBases>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>1.0</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MiningSpeed>0.4</MiningSpeed>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+                <li>Celes_LabNanoForge</li>
+            </recipeUsers>
+            <researchPrerequisites>
+                <li>Celes_Weapon_I</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+            <displayPriority>5012</displayPriority>
+        </recipeMaker>
+        <tools>
+            <li>
+                <label>锤柄</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.18</armorPenetration>
+            </li>
+            <li>
+                <label>锤头</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>0.32</armorPenetration>
+            </li>
+            <li>
+                <label>镐头</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>13</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>0.30</armorPenetration>
+            </li>
+        </tools>
+        <weaponClasses Inherit="false">
+            <li>Melee</li>
+            <li>MeleeBlunt</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>Celes_IndustryMelee</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_IndustryMelee</li>
+        </tradeTags>
+    </ThingDef>
+
+
 
     <ThingDef Name="Celes_MidMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
         <recipeMaker>
@@ -39,117 +173,6 @@
         </thingCategories>
     </ThingDef>
     
-    <ThingDef ParentName="Celes_EarlyMeleeBase">
-        <defName>Celes_Hatchet</defName>
-        <label>星铃拓荒手斧</label>
-        <description>一把现代化设计的拓荒手斧，符合人体工学而轻便耐用。杀伤力并不出众，但胜在其上的结构可以很方便的用于收获作物和砍树。</description>
-        <graphicData>
-            <texPath>Celes/Weapon/Early/Celes_Hatchet</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-            <drawSize>1</drawSize>
-        </graphicData>
-        <uiIconScale>1.0</uiIconScale>
-        <costList>
-            <Steel>45</Steel>
-        </costList>
-        <statBases>
-            <WorkToMake>7000</WorkToMake>
-            <Mass>0.85</Mass>
-        </statBases>
-        <equippedAngleOffset>-65</equippedAngleOffset>
-        <equippedStatOffsets>
-            <PlantWorkSpeed>0.4</PlantWorkSpeed>
-        </equippedStatOffsets>
-        <recipeMaker>
-            <recipeUsers>
-                <li>FueledSmithy</li>
-                <li>ElectricSmithy</li>
-            </recipeUsers>
-            <researchPrerequisites>
-                <li>Celes_MainTech_I</li>
-                <li>Smithing</li>
-            </researchPrerequisites>
-            <skillRequirements>
-                <Crafting>4</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <weaponClasses>
-            <li>Melee</li>
-        </weaponClasses>
-        <tools>
-            <li>
-                <label>斧柄</label>
-                <capacities>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>斧刃</label>
-                <capacities>
-                    <li>Cut</li>
-                </capacities>
-                <power>8</power>
-                <cooldownTime>1.2</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
-    
-    <ThingDef ParentName="Celes_MidMeleeBase">
-        <defName>Celes_IceAxe</defName>
-        <label>星铃拓荒冰镐</label>
-        <description>一把现代化设计的拓荒冰镐，符合人体工学而轻便耐用。可以帮助使用者更方便的攀爬山岳峭壁，极端情况下也能用于辅助采集矿物。另外，打人挺疼。</description>
-        <graphicData>
-            <texPath>Celes/Weapon/Mid/Celes_IceAxe</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-            <drawSize>1</drawSize>
-        </graphicData>
-        <uiIconScale>1.0</uiIconScale>
-        <costList>
-			<Steel>50</Steel>
-        </costList>
-        <statBases>
-            <WorkToMake>15000</WorkToMake>
-            <Mass>0.9</Mass>
-        </statBases>
-        <equippedAngleOffset>-65</equippedAngleOffset>
-        <equippedStatOffsets>
-            <MiningSpeed>0.4</MiningSpeed>
-        </equippedStatOffsets>
-        <recipeMaker>
-            <researchPrerequisites>
-                <li>Celes_Weapon_I</li>
-                <li>Smithing</li>
-            </researchPrerequisites>
-            <skillRequirements>
-                <Crafting>5</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <weaponClasses>
-            <li>Melee</li>
-        </weaponClasses>
-        <tools>
-            <li>
-                <label>镐柄</label>
-                <capacities>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>镐刃</label>
-                <capacities>
-                    <li>Cut</li>
-                </capacities>
-                <power>6</power>
-                <cooldownTime>0.8</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
     
     <ThingDef ParentName="Celes_MidMeleeBase">
         <defName>CelesSaberIndustrial</defName>

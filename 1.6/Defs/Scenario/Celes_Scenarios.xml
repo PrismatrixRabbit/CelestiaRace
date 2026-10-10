@@ -119,11 +119,11 @@
 		<!-- 这下面也肯定要换星铃武器和防具的 -->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Celes_Early_SemiRifle</thingDef>
+          <thingDef>Celes_IndustryRifle</thingDef>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>CelesDagger</thingDef>
+          <thingDef>Celes_IndustryRevolver</thingDef>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>

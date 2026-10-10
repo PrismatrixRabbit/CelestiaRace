@@ -104,11 +104,12 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_I</defName><!-- 星铃拓荒武器 -->
-        <label>星铃拓荒武器</label>
-        <description>依照星铃标准设计拓荒武器，允许制作拓荒冰镐，并改良简单枪械。注意：星铃的蓝图中只包括改进指南，而不包括武器本身的制造方案。\n\n这些古董般的设计，只是通过与晶蒴等材料一并锻造，就能有着纳米级精度的膛线与自气密的跨时代性能。</description>
-        <baseCost>500</baseCost>
+        <label>星铃拓荒武器组</label>
+        <description>制作基于星铃技术改进的简单手动操作枪械。比如星铃拓荒系列武器组。这些尘构锻造的产物没有品质差异。\n\n这份技术是科考队对于那些极端无趣的无烟火药武器的改进，包括对简单枪械和冷兵器的完整重构，主要基于人体工学和材料学上的设计做出改进。其外观和使用方法和古地球使用的栓动步枪、冲锋枪并没有显著差异，但内部却从小到膛线精度、大到人机功效的角度都超越了这些先辈。</description>
+        <baseCost>1000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
+            <li>Gunsmithing</li>
         </prerequisites>
         <researchViewX>0</researchViewX>
         <researchViewY>1.8</researchViewY>
@@ -119,8 +120,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Weapon_II</defName><!-- 星铃古典武器 -->
-        <label>星铃古典武器</label>
-        <description>按照星铃武器规范和弹药口径设计的古典武器，允许制作拓荒军刀等武器，并改良精准步枪。注意：星铃的蓝图中只包括改进指南，而不包括武器本身的制造方案。\n\n这种武器利用电化学推进发射弹药，有着夸张的能量密度，已经逼近一个工业文明所能企及的极限。这型号仍然用于星铃拓荒队的先锋小队中，或者被配发给前哨站居民防身，它们的历史却已经无从追溯。</description>
+        <label>高能储能模式</label>
+        <description>解锁制作依赖高能储能模式的枪械，如试制加速步枪和焊接工具。\n\n尘构物质突破了对传统储能物质的设计和制造方法。通过分子级装配，我们可以合成组装远超前人想象的极高能物质。例如使用电点火，ONC发射药，磁重接加速的实验性亚音速步枪「试制加速步枪」，与喷射定向等离子体束流的「科考队焊接工具」。另外，这套加工技术的副产物：加工精度，也能顺带用于锻造科考队使用的军刀。</description>
         <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>

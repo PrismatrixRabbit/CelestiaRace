@@ -267,18 +267,18 @@
                 <colorWorking>(0.4, 0.7, 1.0)</colorWorking>
                 <colorComplete>(0.3, 0.9, 0.4)</colorComplete>
             </li>
-            <!-- 批 6 A/C/D：增幅器白名单（受影响侧主动扫描；各 def 轴1上限=各自 maxSimultaneous 互不挤占） -->
+            <!-- 批 6 A/C（D57 起 D 并入超频器）：增幅器白名单（受影响侧主动扫描；各 def 轴1上限=各自 maxSimultaneous 互不挤占） -->
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>
                     <li>Celes_TestToolCabinet</li>
                     <li>Celes_TestOverclocker</li>
-                    <li>Celes_TestRecipeUnlocker</li>
                 </linkableFacilities>
             </li>
-            <!-- 批 6 C：超频 comp（Toggle 出现于终端侧=「连接时终端获得」；解锁唯一条件=超频器链接） -->
+            <!-- 超频 comp（Toggle 出现于终端侧=「连接时终端获得」；解锁唯一条件=超频器链接）；
+                 D57 数值：效率×2.5 / 线程×1.5（XML 可配；props 默认 2.0 不变） -->
             <li Class="CelesFeature.CelesIM_CompProperties_Overclock">
-                <efficiencyFactor>2.0</efficiencyFactor>
-                <threadCostFactor>2.0</threadCostFactor>
+                <efficiencyFactor>2.5</efficiencyFactor>
+                <threadCostFactor>1.5</threadCostFactor>
                 <iconPath>Celes/UI/Icons/ThreadConnect</iconPath>
             </li>
         </comps>
@@ -610,13 +610,15 @@
         </thingCategories>
     </ThingDef>
 
-    <!-- C 超频器：链接终端解锁超频 Toggle（建造需科技——未解锁不可建造；建了并链接即可超频）。
-         严格 1:1（轴1=1/轴2=1）；批 7（Q3/D47）：0 电——带宽=激活时终端占用×2（现行机制不变）；
-         效率×2 与线程占用×2 均作用于终端 -->
+    <!-- 超频器（D57 合并版·配方解锁器已并入）：链接终端解锁超频 Toggle；
+         开启后 ①终端效率/线程按终端 def 配置倍率修正 ②其携带的解锁标签生效
+         （仅在超频激活时——锁定配方可见+可挂单，关停即失效、已挂单不追溯）。
+         严格 1:1（轴1=1/轴2=1）；自身零耗电、不占线程（成本=终端侧倍率）。
+         建造门已移除（原超频科技随 D57 清理） -->
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_TestOverclocker</defName>
         <label>超频器</label>
-        <description>链接尘构终端后解锁终端的超频开关：以双倍线程占用换取尘构机效率加倍。与终端严格一对一链接。需要研究超频技术后才能建造。自身零耗电。</description>
+        <description>链接尘构终端后解锁终端的超频开关：以额外的线程占用换取尘构机效率提升。仅在超频开启时，其解锁标签生效（锁定配方可见+可挂单）。与终端严格一对一链接。自身零耗电。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Celes/Building/Celes_Amplifier</texPath>
@@ -632,9 +634,6 @@
         <castEdgeShadows>true</castEdgeShadows>
         <staticSunShadowHeight>0.35</staticSunShadowHeight>
         <useHitPoints>true</useHitPoints>
-        <researchPrerequisites>
-            <li>Celes_Research_Overclock</li>
-        </researchPrerequisites>
         <costList>
             <Steel>100</Steel>
             <ComponentIndustrial>1</ComponentIndustrial>
@@ -646,7 +645,6 @@
             <Mass>10</Mass>
         </statBases>
         <comps>
-            <!-- 批 7（Q3）：自带电力移除——0 电（带宽成本经终端占用体现） -->
             <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
                 <maxSimultaneous>1</maxSimultaneous>
                 <maxLinkedTargets>1</maxLinkedTargets>
@@ -655,65 +653,6 @@
         <modExtensions>
             <li Class="CelesFeature.CelesIM_AmplifierExt">
                 <unlockOverclock>true</unlockOverclock>
-            </li>
-        </modExtensions>
-        <placeWorkers>
-            <li>CelesFeature.CelesIM_PlaceWorker_ShowProducerLinks</li>
-        </placeWorkers>
-        <designationCategory>Celes_SpecialBuildings</designationCategory>
-        <constructEffect>ConstructMetal</constructEffect>
-        <minifiedDef>MinifiedThing</minifiedDef>
-        <thingCategories>
-            <li>BuildingsMisc</li>
-        </thingCategories>
-    </ThingDef>
-
-    <!-- D 解锁增幅器：携配方解锁标签（链接终端后锁定配方可见+可挂单）。严格 1:1（轴1=1/轴2=1）；
-         批 7（D49/Q3）：0 电 + ≥1 线程/台（依赖型消费者）——不工作（断线程）不激活配方 -->
-    <ThingDef ParentName="BuildingBase">
-        <defName>Celes_TestRecipeUnlocker</defName>
-        <label>配方解锁增幅器</label>
-        <description>链接尘构终端后解锁带锁配方（默认隐藏的特殊配方）。与终端严格一对一链接，断开链接后配方重新隐藏。占用 1 编译线程；未在工作状态时配方不激活。自身零耗电。</description>
-        <thingClass>Building</thingClass>
-        <graphicData>
-            <texPath>Celes/Building/Celes_Amplifier</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(2,3)</drawSize>
-        </graphicData>
-        <tickerType>Normal</tickerType>
-        <size>(1,2)</size>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <fillPercent>0.5</fillPercent>
-        <pathCost>42</pathCost>
-        <castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>0.35</staticSunShadowHeight>
-        <useHitPoints>true</useHitPoints>
-        <costList>
-            <Steel>80</Steel>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
-        <statBases>
-            <WorkToBuild>1800</WorkToBuild>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Flammability>1.0</Flammability>
-            <Celes_ThreadDependency>1</Celes_ThreadDependency>
-            <Mass>10</Mass>
-        </statBases>
-        <comps>
-            <!-- 批 7（D49）：自带电力移除 + 消费者身份（≥1 线程/台，XML 可配）；
-                 Threaded=消费者门接入 CanBeActive——断线程即失活→锁定配方回隐藏（RecipeWorker_Locked 读门） -->
-            <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
-                <compClass>CelesFeature.CelesIM_CompFacility_Threaded</compClass>
-                <maxSimultaneous>1</maxSimultaneous>
-                <maxLinkedTargets>1</maxLinkedTargets>
-            </li>
-            <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
-                <baseThreadsCost>1</baseThreadsCost>
-            </li>
-        </comps>
-        <modExtensions>
-            <li Class="CelesFeature.CelesIM_AmplifierExt">
                 <unlockRecipeTags>
                     <li>Celes_TestRecipeLock</li>
                 </unlockRecipeTags>
@@ -729,4 +668,7 @@
             <li>BuildingsMisc</li>
         </thingCategories>
     </ThingDef>
+
+    <!-- 配方解锁器（D）已于 D57 并入超频器（Celes_TestOverclocker）——本 def 删除；
+         正式内容期随测试资产族一并清理（见指南卷六作业单） -->
 </Defs>
