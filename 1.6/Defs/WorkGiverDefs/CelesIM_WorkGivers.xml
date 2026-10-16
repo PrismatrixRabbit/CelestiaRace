@@ -28,7 +28,9 @@
     <workType>Smithing</workType>
     <priorityInType>70</priorityInType>
     <fixedBillGiverDefs>
-      <li>Celes_TestAutoProducer</li>
+      <li>Celes_NanoForgeShaper</li>
+      <li>Celes_NanoForgeForger</li>
+      <li>Celes_NanoForgeConstructor</li>
     </fixedBillGiverDefs>
     <verb>操作</verb>
     <gerund>操作于</gerund>

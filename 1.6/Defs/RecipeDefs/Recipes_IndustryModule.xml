@@ -1,38 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- ═══ 批 4（一类生产）测试配方：验证效率因子链（Phase 2 T2.1-T2.7）
-         workTableSpeedStat 走默认（RecipeDef.cs:490 = WorkTableWorkSpeedFactor）零配置；
-         数值占位（B4 模板预设：12 钢→1 零部件 5000 work）═══ -->
-    <RecipeDef>
-        <defName>Celes_TestRecipe_Component</defName>
-        <label>测试组装零部件</label>
-        <description>带宽工业系统效率因子测试配方。</description>
-        <jobString>正在组装零部件</jobString>
-        <workAmount>5000</workAmount>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Steel</li>
-                    </thingDefs>
-                </filter>
-                <count>12</count>
-            </li>
-        </ingredients>
-        <products>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </products>
-        <recipeUsers>
-            <li>Celes_LabNanoForge</li>
-        </recipeUsers>
-    </RecipeDef>
 
     <!-- ═══ 批 5（二类生产）a 模型配方族（视觉修订批 2026-09-30 重构：父类+内容物 ext）═══
          父类承载：jobString/workAmount/soundWorking（培育器同款工作段音）+ 默认内容物（CelesIM_FormingGraphicExt——
          内容物=配方侧定义，本批裁决：父类默认图而非自动显示产物）；li 跨继承追加，消费侧 last-wins=子配方可覆盖；
          均省略 gestationCycles（=0 单周期——布线补丁失效时降级裸 Bill_Autonomous，裁决 R3）；
          无 workSkill（自主产线——品质产物由 PostProcessProduct prefix 品质闸兜底，D1）；
-         由 Celes_TestAutoProducer 建筑侧 <recipes> 单侧链接（配方不写 recipeUsers——AllRecipes 两源合并会重复） -->
+         由建筑侧 <recipes> 单侧链接（配方不写 recipeUsers——AllRecipes 两源合并会重复；现三座纳米锻炉 recipes 为空块=挂载待定） -->
     <RecipeDef Name="Celes_AutoRecipe_Base" Abstract="True">
         <jobString>正在操作自动生产线</jobString>
         <workAmount>1800</workAmount>
@@ -40,9 +14,9 @@
         <modExtensions>
             <li Class="CelesFeature.CelesIM_FormingGraphicExt">
                 <graphic>
-                    <texPath>Celes/Building/ShaperNanoForge/ShaperNanoForge_Content</texPath>
+                    <texPath>Celes/Building/NanoForgeShaper/NanoForgeShaper_Content</texPath>
                     <graphicClass>Graphic_Single</graphicClass>
-                    <drawSize>(5,5)</drawSize>
+                    <drawSize>(3,3)</drawSize>
                 </graphic>
             </li>
         </modExtensions>

@@ -15,7 +15,7 @@
       <Celes_NanoMachine>1</Celes_NanoMachine>
     </costList>
     <researchPrerequisites>
-      <li>Celes_MainTech_I</li>
+      <li>Celes_Bio_I</li>
     </researchPrerequisites>
     <designationCategory>Celes_SpecialBuildings</designationCategory>
     <affordances Inherit="false">

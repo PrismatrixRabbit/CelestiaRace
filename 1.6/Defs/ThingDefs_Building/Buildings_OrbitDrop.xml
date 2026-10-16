@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  <ThingDef>
+    <defName>CelesFD_SupportBeacon</defName>
+    <label>支援呼叫信标</label>
+    <thingClass>CelesFeature.CelesFD_SupportBeacon</thingClass>
+    <category>Ethereal</category>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <altitudeLayer>Item</altitudeLayer>
+    <graphicData>
+      <texPath>Things/Projectile/GrenadeEMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.0,1.0)</drawSize>
+    </graphicData>
+    <comps>
+      <li>
+        <compClass>CelesFeature.CelesFD_CompSupportBeam</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
   <ThingDef ParentName="BuildingBase" Name="Celes_CrateBase" Abstract="True">
     <graphicData>
       <texPath>Celes/Building/DropPod/DropPodCelestia</texPath>

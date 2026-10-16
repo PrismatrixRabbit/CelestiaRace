@@ -33,12 +33,91 @@
    轮3：C=0.5，判定概率=0.5，判定后 C=0 → 链结束（最多 3 次判定）
    密度自限示例（20 个晶簇）：C = 1.5 − 20×0.15 = −1.5 → 保底 0.05 → 仅 1 次判定
  ============================================ -->
-  
+
+  <!-- 尘构晶簇：Mineable 建筑，原版开采系统零改动接入 -->
+  <!-- [事实] 结构参照原版 MineableSteel（Core Buildings_Natural.xml:91-113）与 RockBase 继承链 -->
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>Celes_CrystalCluster</defName>
+    <label>尘晶晶簇</label>
+    <description>由某种更大的结构催生的次生晶簇，可以开采出尘晶碎片，会提取和富集地下的特定矿物质以生长。生长有体积上限，通常来说达到上限后再开采收益是最高的。</description>
+    <thingClass>CelesFeature.CelesIM_CrystalCluster</thingClass>
+    <graphicData>
+      <texPath>Celes/Building/CrystalCluster/CrystalCluster_1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <rotatable>false</rotatable>
+    <tickerType>Long</tickerType>
+    <fillPercent>0.5</fillPercent>
+    <mineable>true</mineable>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <isInert>true</isInert>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <mineableThing>Celes_CrystallineMaterial</mineableThing>
+      <mineableYield>1</mineableYield>
+      <!-- [事实] mineableDropChance=0：关闭基类 Mineable 产出（Mineable.cs:68 判定），产出由 Comp.PostDestroy 按等级自产 -->
+      <mineableDropChance>0</mineableDropChance>
+    </building>
+    <comps>
+      <li Class="CelesFeature.CelesIM_CompProperties_CrystalCluster">
+        <levelGraphics>
+          <li>
+            <texPath>Celes/Building/CrystalCluster/CrystalCluster_1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </li>
+          <li>
+            <texPath>Celes/Building/CrystalCluster/CrystalCluster_2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </li>
+          <li>
+            <texPath>Celes/Building/CrystalCluster/CrystalCluster_3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </li>
+          <li>
+            <texPath>Celes/Building/CrystalCluster/CrystalCluster_4</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </li>
+        </levelGraphics>
+        <!-- dev 直接生成时的默认参数（培育器/晶种生成时由 InitGrowth 覆盖） -->
+        <pointToGrow>
+          <li>0</li>
+          <li>2</li>
+          <li>5</li>
+          <li>10</li>
+        </pointToGrow>
+        <!-- 各等级开采产出 1/2/4/16 -->
+        <yieldByLevel>
+          <li>1</li>
+          <li>2</li>
+          <li>4</li>
+          <li>16</li>
+        </yieldByLevel>
+        <!-- dev 兜底参数（培育器/晶种生成时由 InitGrowth 覆盖）：两晶态地板 -->
+        <terrainToGrow>
+          <li>Celes_CrystalFloor</li>
+          <li>Celes_CrystalSurface</li>
+        </terrainToGrow>
+        <!-- 豁免地板：人工晶态表面/晶化表面铺到晶簇脚下不触发地板替换破坏 -->
+        <protectedTerrains>
+          <li>Celes_CrystalFloor</li>
+          <li>Celes_CrystalSurface</li>
+        </protectedTerrains>
+      </li>
+    </comps>
+  </ThingDef>
+
   <!-- 晶体培育器：燃料驱动周期扩散晶簇 -->
   <ThingDef ParentName="BuildingBase">
     <defName>Celes_CrystalSeeder</defName>
     <label>晶体培育器</label>
-    <description>周期性在范围内可生长地板上催生尘构晶簇。需要燃料维持运转，无燃料时进入待机。晶簇生长至最高等级后可用自动标记开采。</description>
+    <description>内含尘晶晶种的晶体培育器，会在周围的「人工晶态表面」上催生更小型的尘晶晶簇。需要「人工晶态表面」维持运转，无燃料时进入待机。晶簇生长至最高等级后可用自动标记开采。</description>
     <descriptionHyperlinks>
       <ThingDef>Celes_InitialCrystalCluster</ThingDef>
       <ThingDef>Celes_CrystallineMaterial</ThingDef>
@@ -56,22 +135,29 @@
     </costList>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.6</fillPercent>
+    <uiIconScale>0.4</uiIconScale>
+    <uiIconOffset>(0, 0)</uiIconOffset>
     <castEdgeShadows>true</castEdgeShadows>
-    <size>(2,2)</size>
+    <size>(1,1)</size>
     <designationCategory>Celes_SpecialBuildings</designationCategory>
     <passability>PassThroughOnly</passability>
     <tickerType>Normal</tickerType>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <statBases>
       <WorkToBuild>5000</WorkToBuild>
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>1.0</Flammability>
+      <!-- F4：依赖型线程终端——断链=无法工作（inspect 文字与生长冻结行为一致；不配 WarmUpDuration=无预热） -->
+      <Celes_ThreadDependency>1</Celes_ThreadDependency>
     </statBases>
     <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
     <researchPrerequisites>
-      <li>Celes_MainTech_I</li>
+      <li>Celes_Bio_I</li>
     </researchPrerequisites>
     <placeWorkers>
       <li>CelesFeature.CelesIM_PlaceWorker_CrystalGrowRadius</li>
+      <!-- F4：放置时预览线程连接（尘构机同款） -->
+      <li>CelesFeature.CelesIM_PlaceWorker_ShowThreadConnection</li>
     </placeWorkers>
     <comps>
       <li Class="CompProperties_Power">
@@ -85,14 +171,24 @@
         <fuelFilter>
           <thingDefs>
             <li>Celes_ReplicationMaterial</li>
-            <li>Celes_FleshReplicationMaterial</li>
+            <li>Celes_ReplicationMaterialFlesh</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>5</fuelCapacity>
         <fuelConsumptionRate>1.0</fuelConsumptionRate>
         <consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
+        <!-- F3b：锁定缺料图标为尘晶培养底料（双燃料下 AnyAllowedDef 取值顺序不可控，原版字段钦定；
+             路径=贴图实体位置 目录/同名.png——物品 def 的 texPath 短路径此处不适用，勿互抄。
+             燃料目标量可调两行已按用户裁决删除：原版装填 job 无配置即自动装填，可调目标量非必需） -->
+        <fuelIconPath>Celes/Item/BaseResource/ReplicationMaterial/ReplicationMaterial</fuelIconPath>
         <fuelLabel>复制基质</fuelLabel>
         <outOfFuelMessage>基质耗尽，培育停止。</outOfFuelMessage>
+      </li>
+      <!-- F4：线程终端（断链冻结生长＋Lack 脉动/连接标志视觉自动获得；参数镜像尘构机参照） -->
+      <li Class="CelesFeature.CelesIM_CompProperties_ThreadConsumer">
+        <baseThreadsCost>4</baseThreadsCost>
+        <markTexPath>Celes/UI/Overlays/ThreadMark</markTexPath>
+        <linkHeight>1.7</linkHeight>
       </li>
       <li Class="CelesFeature.CelesIM_CompProperties_CrystalSeeder">
         <ticksToGrow>10000</ticksToGrow>
@@ -130,11 +226,11 @@
     </comps>
   </ThingDef>
 
-  <!-- 野外晶种：自然生长源，次数上限自限，无燃料无电力 -->
+  <!-- 尘晶柱：自然生长源，次数上限自限，无燃料无电力 -->
   <ThingDef ParentName="BuildingBase">
     <defName>Celes_CrystalSeed</defName>
-    <label>野外晶种</label>
-    <description>会自然催生尘构晶簇的活性晶体。会吸收并毒害附近的植物和动物，一定时间后失活，失活后范围内晶簇停止生长。但其范围内的尘构毒性不会消失。</description>
+    <label>尘晶柱</label>
+    <description>柱状的尘晶，会在周围催生更小型的尘晶晶簇，本身也可以开采出尘晶碎片。因为不明原因的突变对周围的植物和动物会有毒害作用，好在物理破坏可以摧毁其活性。\n\n尘晶柱会提取和富集地下的特定矿物质，往周围生产和释放微小的晶体孢子，这些孢子在接触到固态表面后就会开始形成尘晶晶簇。正常来说不应该在有机物上生长……但好在大多数情况下晶簇是打不过免疫系统的，但是植物就不好说了。</description>
     <descriptionHyperlinks>
       <ThingDef>Celes_CrystallineMaterial</ThingDef>
     </descriptionHyperlinks>
@@ -158,7 +254,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToBuild>2000</WorkToBuild>
-      <MaxHitPoints>200</MaxHitPoints>
+      <MaxHitPoints>75</MaxHitPoints>
       <Flammability>0</Flammability>
     </statBases>
     <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
@@ -222,11 +318,11 @@
     </comps>
   </ThingDef>
 
-  <!-- 初始晶种：大型自然生长源，次数上限自限，无燃料无电力 -->
+  <!-- 尘晶母岩：大型自然生长源，次数上限自限，无燃料无电力 -->
   <ThingDef ParentName="BuildingBase">
     <defName>Celes_CrystalInitialSeed</defName>
-    <label>初始晶种</label>
-    <description>会自然催生尘构晶簇的核心活性晶体，拆除以获得初始晶簇。会吸收并毒害附近的植物和动物，一定时间后失活，失活后范围内晶簇停止生长。但其范围内的尘构毒性不会消失。</description>
+    <label>尘晶母岩</label>
+    <description>大型而特殊的尘晶柱，有着比其他尘晶柱更高的活性，可以拆解出特殊的尘晶晶种。尘晶晶种对于星铃的材料生产有着特殊的意义。\n尘晶母岩会在周围催生更小型的尘晶晶簇。因为不明原因的突变对周围的植物和动物会有毒害作用，好在物理破坏可以摧毁其活性。\n\n尘晶母岩会提取和富集地下的特定矿物质，往周围生产和释放微小的晶体孢子，这些孢子在接触到固态表面后就会开始形成尘晶晶簇。正常来说不应该在有机物上生长……但好在大多数情况下晶簇是打不过免疫系统的，但是植物就不好说了。</description>
     <descriptionHyperlinks>
       <ThingDef>Celes_InitialCrystalCluster</ThingDef>
     </descriptionHyperlinks>
@@ -250,7 +346,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToBuild>2000</WorkToBuild>
-      <MaxHitPoints>200</MaxHitPoints>
+      <MaxHitPoints>75</MaxHitPoints>
       <Flammability>0</Flammability>
     </statBases>
     <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>

@@ -310,7 +310,7 @@
 	<ThingDef ParentName="Celes_Shell_III"><!--星铃冬季军礼服-->
 	<defName>Celes_MilitaryCoat</defName>
 	<label>星铃冬季军礼服</label>
-	<description>参照星铃海军军礼服设计的冬季军装，删减了许多针对太空环境的设计。\n\n满腔热情是不少星铃入伍的契机，而其次大概就是一袭帅气的军装。而在事实上属于星铃海军编制的拓荒队，自然也就沿用了这份来自太空的赠礼。</description>
+	<description>参照星铃海军军礼服设计的冬季军装，删减了许多针对太空环境的设计。\n\n满腔热情是不少星铃入伍的契机，而其次大概就是一袭帅气的军装。而科考队为军事编制下的人员保留了这份来自母星的赠礼。</description>
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>

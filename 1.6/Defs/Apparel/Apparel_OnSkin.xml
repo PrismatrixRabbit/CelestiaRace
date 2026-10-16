@@ -335,7 +335,7 @@
 	<ThingDef ParentName="Celes_OnSkin_III"><!--星铃夏季军礼服-->
 		<defName>Celes_MilitaryUniform</defName>
 		<label>星铃夏季军礼服</label>
-		<description>参照星铃海军军礼服设计的夏季军装，删减了许多针对太空环境的设计。\n\n＂沿袭了来自星铃海军军礼服的戗驳领双排扣设计，兼顾稳重，威严与优雅。高弹性面料在凸显军人刚硬曲线的同时丝毫不会影响到身体敏捷……＂星铃征兵的小册子里是这么介绍拓荒队军礼服的来历的。</description>
+		<description>参照星铃海军军礼服设计的夏季军装，删减了许多针对太空环境的设计。\n\n＂沿袭了来自星铃海军军礼服的戗驳领双排扣设计，兼顾稳重，威严与优雅。高弹性面料在凸显军人刚硬曲线的同时丝毫不会影响到身体敏捷……＂星铃征兵的小册子里是这么介绍科考队军礼服的来历的。</description>
 		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef ParentName="OrbitalUtilityBase">
+    <!--<ThingDef ParentName="OrbitalUtilityBase">
         <defName>CelesArtilleryTargeter</defName>
-        <label>星铃拓荒队炮击指示器</label>
-        <description>星铃拓荒队炮击指示器，用于指引一次来自星铃海军的超视距火力覆盖。</description>
+        <label>星铃科考队炮击指示器</label>
+        <description>星铃科考队炮击指示器，用于指引一次来自星铃海军的超视距火力覆盖。</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponSpecial/OrbitalTargeterBombardment/OrbitalTargeterBombardment</texPath>
             <drawSize>(0.7,0.7)</drawSize>
@@ -65,6 +65,6 @@
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
             </li>
         </comps>
-    </ThingDef>
+    </ThingDef>-->
     
 </Defs>

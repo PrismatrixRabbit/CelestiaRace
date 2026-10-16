@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+    <!-- ========== 发信器 ========== -->
+
     <ThingDef ParentName="BuildingBase">
         <defName>CelesFD_Antenna</defName>
-        <label>发信器</label>
+        <label>外勤部发信器</label>
         <description>允许与星铃外勤部进行无线电联系的特殊通讯装置。</description>
         <thingClass>CelesFeature.CelesFD_Building_Antenna</thingClass>
         <graphicData>
@@ -114,7 +116,7 @@
         <filthLeaving>Filth_MachineBits</filthLeaving>
     </ThingDef>-->
 
-    <!-- ========== 里程碑 3：发射平台 + 货运单元（G2/G3a，货运单元为占位骨架，完整 Comp 见 G4） ========== -->
+    <!-- ========== 货运&发射平台 ========== -->
 
     <ThingDef ParentName="BuildingBase">
         <defName>CelesFD_LaunchPad</defName>
@@ -230,5 +232,71 @@
             <li>CelesFeature.CelesFD_PlaceWorker_NeedsLaunchPort</li>
         </placeWorkers>
     </ThingDef>
+    
+    <!-- ========== 发电机 ========== -->
 
+    <ThingDef ParentName="BuildingBase">
+        <defName>Celes_RTPVGenerator</defName>
+        <label>同位素发电机</label>
+        <description>内置 RTPV 换能组件的同位素发电机：利用放射性同位素衰变持续发电，无需燃料、无需人员看管。</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <!-- TODO:贴图待填（现用中继塔图占位，尺寸随正式美术调整） -->
+            <texPath>Celes/Building/RTPVGenerator/RTPVGenerator</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(6,6)</drawSize>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <size>(1,1)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.4</fillPercent>
+        <uiIconOffset>(0, 0.3)</uiIconOffset>
+        <uiIconScale>0.4</uiIconScale>
+        <pathCost>42</pathCost>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.5</staticSunShadowHeight>
+        <canOverlapZones>false</canOverlapZones>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <useHitPoints>true</useHitPoints>
+        <uiOrder>1110</uiOrder>
+        <costList>
+            <Steel>100</Steel>
+            <CelesAlloy>240</CelesAlloy>
+            <Celes_NanoComponent>4</Celes_NanoComponent>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Celes_RTPVTransducer>1</Celes_RTPVTransducer>
+        </costList>
+        <statBases>
+            <WorkToBuild>30000</WorkToBuild>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <!-- TODO:Mass 占位（实测定稿） -->
+            <Mass>24</Mass>
+        </statBases>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>Celes_CelestiaFreqDecrypt</li>
+        </researchPrerequisites>
+        <comps>
+            <!-- 负 basePowerConsumption＝发电（VanometricPowerCell 同款挂法；无 Flickable） -->
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-1600</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(227,233,168,0)</glowColor>
+            </li>
+        </comps>
+        <designationCategory>Celes_SpecialBuildings</designationCategory>
+        <constructEffect>ConstructMetal</constructEffect>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+    </ThingDef>
+    
 </Defs>

@@ -57,14 +57,14 @@
 
     <FactionDef ParentName="FactionBase">
         <defName>Celes_BeaconFaction</defName>
-        <label>星铃外勤部</label>
+        <label>方舟科考队外勤部</label>
         <description>占位描述</description>
         <colorSpectrum>
             <li>(1.0, 1.0, 1.0)</li><!--等我改（-->
         </colorSpectrum>
         <categoryTag>Celes_BeaconFaction</categoryTag>
-        <pawnSingular>celestia</pawnSingular>
-        <pawnsPlural>celestias</pawnsPlural>
+        <pawnSingular>星铃</pawnSingular>
+        <pawnsPlural>星铃们</pawnsPlural>
         <techLevel>Spacer</techLevel>
         <factionIconPath>Celes/Faction/CelesFaction_Icon</factionIconPath>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -159,10 +159,10 @@
             <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
         </disallowedRaidAgeRestrictions>
 
-        <!-- ===== 意识形态 Ideology（领航主义：固定理性·集体，无随机）===== -->
+        <!-- ===== 意识形态 Ideology（群星航路：固定理性·集体，无随机）===== -->
         <!-- fixedIdeo 走 MakeFixedIdeo 分支；forcedMemes 完全锁死 meme（GenerateRandomMemes 直接返回）；requiredPreceptsOnly 只保留必需戒律，无随机议题 -->
         <fixedIdeo>true</fixedIdeo>
-        <ideoName>领航主义</ideoName>
+        <ideoName>群星航路</ideoName>
         <forcedMemes>
             <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>

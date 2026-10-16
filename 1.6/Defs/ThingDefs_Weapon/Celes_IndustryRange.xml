@@ -101,7 +101,7 @@
     <ThingDef ParentName="Celes_BaseHumanMakeableGun">
         <defName>Celes_IndustryRifle</defName>
         <label>星铃拓荒型精确步枪</label>
-        <description>一种导气式半自动步枪，使用星铃制式8.5mm子弹。这种步枪射程远而精准，制造简单耐用，维护方便，可以用于狩猎、驱离野兽或者站岗防身。\n\n也能通过切换快慢机来全自动射击，但这样通常来说压不住枪而且肩膀会酸得抬不起来。</description>
+        <description>一种导气式半自动步枪，使用星铃旧式8.5mm子弹。这种步枪射程远而精准，制造简单耐用，维护方便，可以用于狩猎、驱离野兽或者站岗防身。\n\n也能通过切换快慢机来全自动射击，但这样通常来说压不住枪而且肩膀会酸得抬不起来。</description>
         <graphicData>
             <texPath>Celes/Weapon/Industry/IndustryRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -188,7 +188,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>Celes_BulletIndustryM</defName>
-        <label>星铃制式8.5mm子弹</label>
+        <label>星铃旧式8.5mm子弹</label>
         <projectile>
             <damageDef>Bullet</damageDef>
             <damageAmountBase>18</damageAmountBase>
@@ -405,7 +405,7 @@
     <ThingDef ParentName="Celes_BaseHumanMakeableGun">
         <defName>Celes_IndustrySMG</defName>
         <label>星铃拓荒型冲锋枪</label>
-        <description>一种紧凑的小口径冲锋枪，使用星铃制式5.7mm子弹。为紧凑室内环境打造，成本低廉结构可靠，被星铃科考队广泛装备。</description>
+        <description>一种紧凑的小口径冲锋枪，使用星铃旧式5.7mm子弹。为紧凑室内环境打造，成本低廉结构可靠，被星铃科考队广泛装备。</description>
         <graphicData>
             <texPath>Celes/Weapon/Industry/IndustrySMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -484,7 +484,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>Celes_BulletIndustryS</defName>
-        <label>星铃制式5.7mm子弹</label>
+        <label>星铃旧式5.7mm子弹</label>
         <projectile>
             <damageDef>Bullet</damageDef>
             <damageAmountBase>12</damageAmountBase>

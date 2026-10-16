@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- ========== 复制指令 ========== -->
+    <!-- ========== 指令解译 ========== -->
 
     <RecipeDef>
-        <defName>Celes_MakeNanoMachineFromCluster</defName><!-- 复制指令：自增 --><!-- 暂未完成 -->
-        <label>复制指令：自增</label>
-        <description>以母岩为基础自我复制，在人工调频的前提下较为低效。</description>
+        <defName>Celes_CopyCommand_Neumann</defName><!-- 复制指令：Neumann -->
+        <label>复制指令集：自增</label>
+        <description>逐条输入指令，以利用尘构自身的冯诺依曼机特性自我复制，这一过程极其耗时耗力，而且会浪费大量的材料，但好歹能生产一些尘构。</description>
         <descriptionHyperlinks>
-            <ThingDef>Celes_InitialCrystalCluster</ThingDef>
-            <ThingDef>Celes_CrystallineMaterial</ThingDef>
             <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>Celes_InitialCrystalCluster</uiIconThing>
-        <jobString>正在复制晶体</jobString>
+        <uiIconThing>Celes_NanoMachine</uiIconThing>
+        <jobString>正在输入复制指令</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>600</workAmount>
+        <workAmount>23000</workAmount>
         <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
         <workSkill>Intellectual</workSkill>
+        <workSkillLearnFactor>0</workSkillLearnFactor>
+        <skillRequirements>
+            <Intellectual>6</Intellectual>
+        </skillRequirements>
+        <allowMixingIngredients>true</allowMixingIngredients>
         <recipeUsers>
             <li>Celes_LabNanoForge</li>
         </recipeUsers>
         <researchPrerequisites>
             <li>Celes_MainTech_I</li>
         </researchPrerequisites>
+        <unfinishedThingDef>Celes_UnfinishedCrystal</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -32,7 +36,64 @@
                         <li>StoneChunks</li>
                     </categories>
                 </filter>
-                <count>2</count>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <Celes_NanoMachine>2</Celes_NanoMachine>
+        </products>
+        <displayPriority>1004</displayPriority>
+    </RecipeDef>
+    
+    <RecipeDef>
+        <defName>Celes_CopyCommand_Culture</defName><!-- 复制指令集：培育 -->
+        <label>复制指令集：增殖</label>
+        <description>在晶种的基础上直接培育尘构，这一过程费时费力，而且会浪费大量的材料。但这也是最不要求技术水平的办法。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_InitialCrystalCluster</ThingDef>
+            <ThingDef>Celes_CrystallineMaterial</ThingDef>
+            <ThingDef>Celes_NanoMachine</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>Celes_InitialCrystalCluster</uiIconThing>
+        <jobString>正在输入复制指令</jobString>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>4000</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <workSkillLearnFactor>0</workSkillLearnFactor>
+        <skillRequirements>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_I</li>
+        </researchPrerequisites>
+        <unfinishedThingDef>Celes_UnfinishedCrystal</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>5</count>
             </li>
             <li>
                 <filter>
@@ -47,32 +108,31 @@
             <categories>
                 <li>StoneChunks</li>
             </categories>
-            <thingDefs>
-                <li>Celes_InitialCrystalCluster</li>
-            </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <Celes_CrystallineMaterial>1</Celes_CrystallineMaterial>
+            <Celes_NanoMachine>1</Celes_NanoMachine>
+            <Celes_InitialCrystalCluster>1</Celes_InitialCrystalCluster>
         </products>
         <displayPriority>1005</displayPriority>
     </RecipeDef>
-
+    
     <RecipeDef>
         <defName>Celes_MakeNanoMachine</defName><!-- 复制指令：调频 --><!-- 暂未完成 -->
-        <label>复制指令：调频</label>
-        <description>通过手动调频对尘构执行复制指令。</description>
+        <label>复制指令：相变</label>
+        <description>基于已有的尘晶碎片，稍加诱导转变为基准态尘构。这一过程依赖特定的酶制剂催化就能极快的完成，但仍会损耗其中相当一部分原料。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_CrystallineMaterial</ThingDef>
             <ThingDef>Celes_BioGel</ThingDef>
             <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>Celes_NanoMachine</uiIconThing>
-        <jobString>正在复制尘构</jobString>
+        <uiIconThing>Celes_CrystallineMaterial</uiIconThing>
+        <jobString>正在输入复制指令</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
+        <workAmount>750</workAmount>
         <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
         <workSkill>Intellectual</workSkill>
+        <workSkillLearnFactor>0</workSkillLearnFactor>
         <recipeUsers>
             <li>Celes_LabNanoForge</li>
         </recipeUsers>
@@ -86,7 +146,7 @@
                         <li>Celes_CrystallineMaterial</li>
                     </thingDefs>
                 </filter>
-                <count>4</count>
+                <count>2</count>
             </li>
             <li>
                 <filter>
@@ -94,26 +154,18 @@
                         <li>Celes_BioGel</li>
                     </thingDefs>
                 </filter>
-                <count>4</count>
+                <count>10</count>
             </li>
         </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>Celes_CrystallineMaterial</li>
-                <li>Celes_BioGel</li>
-            </thingDefs>
-        </fixedIngredientFilter>
         <products>
             <Celes_NanoMachine>1</Celes_NanoMachine>
         </products>
         <displayPriority>1010</displayPriority>
     </RecipeDef>
-
-    <!-- ========== 锻造指令 ========== -->
-
+    
     <RecipeDef>
-        <defName>Celes_ForgeCommand_Alloy</defName><!-- 锻造指令：淬铃合金 --><!-- 暂未完成 -->
-        <label>锻造指令：淬铃合金</label>
+        <defName>Celes_ForgeCommand_Alloy</defName><!-- 锻造指令集：淬铃 --><!-- 暂未完成 -->
+        <label>锻造指令集：淬铃</label>
         <description>控制尘构用于处理优化碳铁合金，需要引入银作为催化。</description>
         <descriptionHyperlinks>
             <ThingDef>Steel</ThingDef>
@@ -122,17 +174,17 @@
             <ThingDef>CelesAlloy</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>CelesAlloy</uiIconThing>
-        <jobString>正在锻造合金</jobString>
+        <jobString>正在输入锻造指令</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>5000</workAmount>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <workAmount>2000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
         <recipeUsers>
             <li>Celes_LabNanoForge</li>
         </recipeUsers>
         <researchPrerequisites>
-            <li>Celes_MainTech_II</li>
+            <li>Celes_MainTech_I</li>
         </researchPrerequisites>
         <ingredients>
             <li>
@@ -149,7 +201,7 @@
                         <li>Silver</li>
                     </thingDefs>
                 </filter>
-                <count>10</count>
+                <count>1</count>
             </li>
             <li>
                 <filter>
@@ -166,22 +218,29 @@
         <displayPriority>2015</displayPriority>
     </RecipeDef>
 
+    <!-- ========== 材料自感知 ========== -->
+    
     <RecipeDef>
-        <defName>Celes_ForgeCommand_ChipComponent</defName><!-- 锻造指令：尘构机械单元 --><!-- 暂未完成 -->
-        <label>锻造指令：尘构机械单元</label>
-        <description>利用尘构物质制造新式通用零部件，总之就是这样那样。</description>
+        <defName>Celes_ForgeCommand_NanoComponent</defName><!-- 锻造指令集：感测改造 -->
+        <label>锻造指令集：感测改造</label>
+        <description>利用尘构物质改造现有零部件，总之就是这样那样。</description>
         <descriptionHyperlinks>
-            <ThingDef>Steel</ThingDef>
+            <ThingDef>ComponentIndustrial</ThingDef>
+            <ThingDef>CelesAlloy</ThingDef>
             <ThingDef>Celes_NanoMachine</ThingDef>
             <ThingDef>Celes_NanoComponent</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_NanoComponent</uiIconThing>
-        <jobString>正在锻造尘构机械单元</jobString>
+        <jobString>正在输入锻造指令</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>5000</workAmount>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <workAmount>6000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>Celes_LabNanoForge</li>
         </recipeUsers>
@@ -192,10 +251,18 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Steel</li>
+                        <li>ComponentIndustrial</li>
                     </thingDefs>
                 </filter>
-                <count>10</count>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesAlloy</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
             </li>
             <li>
                 <filter>
@@ -203,30 +270,32 @@
                         <li>Celes_NanoMachine</li>
                     </thingDefs>
                 </filter>
-                <count>2</count>
+                <count>1</count>
             </li>
         </ingredients>
         <products>
-            <Celes_NanoComponent>2</Celes_NanoComponent>
+            <Celes_NanoComponent>1</Celes_NanoComponent>
         </products>
         <displayPriority>2020</displayPriority>
     </RecipeDef>
-
+    
+    <!-- ========== 编织指令 ========== -->
+    
     <RecipeDef>
-        <defName>Celes_WeaveCommand_Cloth</defName><!-- 编织再纺棉纱 --><!-- 暂未完成 -->
-        <label>编织再纺棉纱</label>
-        <description>从介质凝胶或棉布中合成再纺棉纱。</description>
+        <defName>Celes_WeaveCommand_Cloth</defName><!-- 编织指令：再纺棉纱 --><!-- 暂未完成 -->
+        <label>编织指令：成丝</label>
+        <description>从介质凝胶中合成再纺棉纱。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_BioGel</ThingDef>
-            <ThingDef>Cloth</ThingDef>
             <ThingDef>Plasteel</ThingDef>
+            <ThingDef>Celes_NanoMachine</ThingDef>
             <ThingDef>Celes_Cloth</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_Cloth</uiIconThing>
-        <jobString>正在编织再纺棉纱</jobString>
+        <jobString>正在输入编织指令</jobString>
         <effectWorking>Tailor</effectWorking>
         <soundWorking>Recipe_Tailor</soundWorking>
-        <workAmount>500</workAmount>
+        <workAmount>1500</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
         <recipeUsers>
@@ -240,10 +309,9 @@
                 <filter>
                     <thingDefs>
                         <li>Celes_BioGel</li>
-                        <li>Cloth</li>
                     </thingDefs>
                 </filter>
-                <count>40</count>
+                <count>30</count>
             </li>
             <li>
                 <filter>
@@ -253,28 +321,91 @@
                 </filter>
                 <count>3</count>
             </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
         </ingredients>
-        <fixedIngredientFilter>
+        <!--<fixedIngredientFilter>
             <thingDefs>
                 <li>Celes_BioGel</li>
                 <li>Cloth</li>
             </thingDefs>
-        </fixedIngredientFilter>
+        </fixedIngredientFilter>-->
         <products>
             <Celes_Cloth>50</Celes_Cloth>
         </products>
         <displayPriority>1505</displayPriority>
     </RecipeDef>
+    
+    <RecipeDef>
+        <defName>Celes_WeaveCommand_ClothByCloth</defName><!-- 编织指令：再纺棉纱 --><!-- 暂未完成 -->
+        <label>编织指令：再纺</label>
+        <description>从棉布中合成再纺棉纱。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Cloth</ThingDef>
+            <ThingDef>Plasteel</ThingDef>
+            <ThingDef>Celes_NanoMachine</ThingDef>
+            <ThingDef>Celes_Cloth</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>Celes_Cloth</uiIconThing>
+        <jobString>正在输入编织指令</jobString>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <workAmount>2500</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_Bio_I</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <Celes_Cloth>50</Celes_Cloth>
+        </products>
+        <displayPriority>1506</displayPriority>
+    </RecipeDef>
 
     <RecipeDef>
-        <defName>Celes_MakeReplicationMaterial</defName><!-- 提取尘构复制基质 --><!-- 暂未完成 -->
-        <label>提取尘构复制基质</label>
-        <description>提取尘构复制基质。</description>
+        <defName>Celes_MakeReplicationMaterial</defName><!-- 提取尘晶培养底料 --><!-- 暂未完成 -->
+        <label>提取尘晶培养底料</label>
+        <description>提取尘晶培养底料。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_ReplicationMaterial</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_ReplicationMaterial</uiIconThing>
-        <jobString>正在提取尘构复制基质</jobString>
+        <jobString>正在提取尘晶培养底料</jobString>
         <effectWorking>CutStone</effectWorking>
         <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
         <workAmount>1200</workAmount>
@@ -285,7 +416,7 @@
             <li>TableStonecutter</li>
         </recipeUsers>
         <researchPrerequisites>
-            <li>Celes_MainTech_I</li>
+            <li>Celes_Bio_I</li>
         </researchPrerequisites>
         <ingredients>
             <li>
@@ -309,32 +440,77 @@
     </RecipeDef>
 
     <RecipeDef>
-        <defName>Celes_MakeFleshReplicationMaterial</defName><!-- 提取尘构复制基质 --><!-- 暂未完成 -->
-        <label>提取尘构复制基质（生物质）</label>
-        <description>从生物质提取尘构复制基质。</description>
+        <defName>Celes_MakeReplicationMaterialByBlocks</defName><!-- 提取尘晶培养底料 --><!-- 暂未完成 -->
+        <label>提取尘晶培养底料（石砖）</label>
+        <description>从石砖提取尘晶培养底料。</description>
         <descriptionHyperlinks>
-            <ThingDef>Celes_FleshReplicationMaterial</ThingDef>
+            <ThingDef>Celes_ReplicationMaterial</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>Celes_FleshReplicationMaterial</uiIconThing>
-        <jobString>正在提取尘构复制基质</jobString>
+        <uiIconThing>Celes_ReplicationMaterial</uiIconThing>
+        <jobString>正在提取尘晶培养底料</jobString>
+        <effectWorking>CutStone</effectWorking>
+        <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+        <workAmount>200</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+            <li>TableStonecutter</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_Bio_I</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <Celes_ReplicationMaterial>1</Celes_ReplicationMaterial>
+        </products>
+        <displayPriority>1002</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_MakeFleshReplicationMaterial</defName><!-- 提取尘晶培养底料 --><!-- 暂未完成 -->
+        <label>提取尘晶培养底料（生物质）</label>
+        <description>从生物质提取尘晶培养底料。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_ReplicationMaterialFlesh</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>Celes_ReplicationMaterialFlesh</uiIconThing>
+        <jobString>正在提取尘晶培养底料</jobString>
         <effectWorking>ButcherFlesh</effectWorking>
         <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
         <workAmount>1600</workAmount>
         <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
         <workSkill>Cooking</workSkill>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
         <recipeUsers>
             <li>Celes_LabNanoForge</li>
             <li>TableButcher</li>
         </recipeUsers>
         <researchPrerequisites>
-            <li>Celes_MainTech_I</li>
+            <li>Celes_Bio_I</li>
         </researchPrerequisites>
         <ingredients>
             <li>
                 <filter>
                     <customSummary>protein</customSummary>
                     <categories>
-                    <li>MeatRaw</li>
+                        <li>MeatRaw</li>
+                        <li>AnimalProductRaw</li>
                     </categories>
                 </filter>
                 <count>7</count>
@@ -343,12 +519,207 @@
         <fixedIngredientFilter>
             <categories>
                 <li>MeatRaw</li>
+                <li>AnimalProductRaw</li>
             </categories>
         </fixedIngredientFilter>
         <products>
-            <Celes_FleshReplicationMaterial>1</Celes_FleshReplicationMaterial>
+            <Celes_ReplicationMaterialFlesh>1</Celes_ReplicationMaterialFlesh>
         </products>
         <displayPriority>1003</displayPriority>
+    </RecipeDef>
+
+    <!-- ========== 高级资源 ========== -->
+    
+    <RecipeDef>
+        <defName>Celes_ForgeCommand_Substrate</defName><!-- 复制指令：尘构基质 --><!-- 暂未完成 -->
+        <label>复制指令：尘构基质</label>
+        <description>利用尘构物质制造尘构基质，总之就是这样那样。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_NanoMachine</ThingDef>
+            <ThingDef>Gold</ThingDef>
+            <ThingDef>CelesAlloy</ThingDef>
+            <ThingDef>Celes_Cloth</ThingDef>
+            <ThingDef>Celes_Substrate</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>Celes_Substrate</uiIconThing>
+        <jobString>正在输入复制指令</jobString>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>8000</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_III</li>
+        </researchPrerequisites>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesAlloy</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_BioGel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+        </ingredients>
+        <products>
+            <Celes_Substrate>10</Celes_Substrate>
+        </products>
+        <displayPriority>1025</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_ForgeCommand_AdvancedComponent</defName><!-- 锻造指令：晶格运算元件 --><!-- 暂未完成 -->
+        <label>锻造指令：晶格运算元件</label>
+        <description>利用尘构物质制造尘构基质，总之就是这样那样。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_NanoMachine</ThingDef>
+            <ThingDef>Gold</ThingDef>
+            <ThingDef>CelesAlloy</ThingDef>
+            <ThingDef>Celes_Cloth</ThingDef>
+            <ThingDef>Celes_AdvancedComponent</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>Celes_AdvancedComponent</uiIconThing>
+        <jobString>正在输入锻造指令</jobString>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>12000</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_IV</li>
+        </researchPrerequisites>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>0.4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoComponent</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </ingredients>
+        <products>
+            <Celes_AdvancedComponent>1</Celes_AdvancedComponent>
+        </products>
+        <displayPriority>1025</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_ResortCommand_AdvanceCloth</defName><!-- 重序指令：尘化丝绸 --><!-- 暂未完成 -->
+        <label>重序指令：尘化丝绸</label>
+        <description>在恶魔菇产生的纤维基础上利用尘构物质重新排序纤维结构构建尘化丝绸。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_Cloth</ThingDef>
+            <ThingDef>DevilstrandCloth</ThingDef>
+            <ThingDef>Celes_AdvancedCloth</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>Celes_AdvancedCloth</uiIconThing>
+        <jobString>正在重序尘化丝绸</jobString>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <workAmount>6000</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_Bio_III</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoMachine</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DevilstrandCloth</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <products>
+            <Celes_AdvancedCloth>50</Celes_AdvancedCloth>
+        </products>
+        <displayPriority>1705</displayPriority>
     </RecipeDef>
 
 </Defs>

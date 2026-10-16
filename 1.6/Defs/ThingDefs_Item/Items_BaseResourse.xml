@@ -20,7 +20,7 @@
         <statBases>
             <MaxHitPoints>75</MaxHitPoints>
             <MarketValue>1.9</MarketValue>
-            <Mass>0.02</Mass>
+            <Mass>0.03</Mass>
             <Flammability>0.7</Flammability>
             <DeteriorationRate>1.0</DeteriorationRate>
         </statBases>
@@ -34,13 +34,14 @@
 
     <!-- ========== 尘构材料 ========== -->
 
-    <ThingDef ParentName="ResourceBase"><!-- 初始晶簇 --><!-- 贴图未更新 -->
+    <ThingDef ParentName="ResourceBase"><!-- 尘晶晶种 --><!-- 贴图未更新 -->
         <defName>Celes_InitialCrystalCluster</defName>
-        <label>初始晶簇</label>
-        <description>初始晶簇是包含惰性尘构复制单元的晶体块，它就像是一块种子，被大量的晶态材料包裹着。在接受外部模板或指令前，保持类似干细胞那样的多功能分化潜能。</description>
+        <label>尘晶晶种</label>
+        <description>尘晶母岩核心的活性复制单元，几乎只能通过开采尘晶母岩获取。\n\n物理破坏（通常是采集）会使它自发进入惰性。可以基于晶种利用原料直接复制尘构，或者搭建一个受控环境让它富集岩石圈内的矿物质催生尘晶晶簇。在这种环境下应该可以限制晶体孢子的扩散和毒性危害。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_CrystallineMaterial</ThingDef>
             <ThingDef>Celes_CrystalInitialSeed</ThingDef>
+            <ThingDef>Celes_CrystalSeeder</ThingDef>
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Celes/Item/DustMech/InitialCrystalCluster</texPath>
@@ -60,10 +61,10 @@
         </thingCategories>
     </ThingDef>
 
-    <ThingDef ParentName="ResourceBase"><!-- 初始晶态材料 --><!-- 贴图未更新 -->
+    <ThingDef ParentName="ResourceBase"><!-- 尘晶碎片 --><!-- 贴图未更新 -->
         <defName>Celes_CrystallineMaterial</defName>
-        <label>初始晶态材料</label>
-        <description>初始晶态材料是一系列结构化排布的晶体，本身也能归类为尘构，但通常作为其他尘构单元的简单复制原料。是尘构物质的通用前体储备。</description>
+        <label>尘晶碎片</label>
+        <description>尘晶碎片是破碎尘晶后得到的结构化晶态物质，本身也能归类为尘构，但通常作为其他尘构单元的复制原料。储存了大量复制尘构物质所需的前体物质。\n\n对尘晶碎片微观结构的解析是开启尘构技术研究的关键一步。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_InitialCrystalCluster</ThingDef>
         </descriptionHyperlinks>
@@ -93,19 +94,19 @@
 
                 <analysisDurationHours>0.5</analysisDurationHours>
                 <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
-                <completedLetterLabel>Signal chip studied: {RESEARCH} unlocked</completedLetterLabel>
-                <completedLetter>By studying the signal chip, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+                <completedLetterLabel>尘晶解析完毕:解锁{RESEARCH}</completedLetterLabel>
+                <completedLetter>通过解析尘晶碎片的微观结构, {PAWN_labelShort}获得了研究{RESEARCH}所必须的知识。\n\n你的研究者现在可以使用研究台开始学习如何实际应用这项科技。</completedLetter>
                 <completedLetterDef>PositiveEvent</completedLetterDef>
 
                 <!-- Interactable -->
 
                 <activateTexPath>UI/Icons/Study</activateTexPath>
 
-                <activateLabelString>Analyze...</activateLabelString>
-                <activateDescString>Analyze the signal chip.</activateDescString>
-                <jobString>Analyze signal chip</jobString>
-                <guiLabelString>Choose who should analyze this</guiLabelString>
-                <inspectString>Can be analyzed by a colonist.</inspectString>
+                <activateLabelString>解析中...</activateLabelString>
+                <activateDescString>正在解析尘晶碎片.</activateDescString>
+                <jobString>解析尘晶碎片</jobString>
+                <guiLabelString>选择一位殖民者解析尘晶</guiLabelString>
+                <inspectString>可以被殖民者解析.</inspectString>
 
                 <targetingParameters>
                     <canTargetBuildings>false</canTargetBuildings>
@@ -116,11 +117,26 @@
             </li>
         </comps>
     </ThingDef>
-
+    
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>Celes_UnfinishedCrystal</defName>
+        <label>复制中的尘构</label>
+        <description>一块复制中的尘构</description>
+        <statBases>
+            <Flammability>0</Flammability>
+        </statBases>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/NanoMachineCrystal</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <stuffCategories Inherit="false" />
+    </ThingDef>
+    
     <ThingDef ParentName="ResourceBase"><!-- 晶化尘构单元 -->
         <defName>Celes_NanoMachine</defName>
-        <label>晶化尘构单元</label>
-        <description>名为尘构的基准分子机械，本质是一种模块化，受限再编程性的纳米级工具组。晶化形态为便于通过外源场控注入预设指令的，处于自然稳态的高密度排布结构。可以简单理解为无线编码的硅-碳基ASIC单元。功能包括物质重构、有限的自组装、分布式传感器、信息转译、组织修复和靶向药物输送。</description>
+        <label>晶态尘构单元</label>
+        <description>处于基准态的，名为尘构的分子机械。\n\n本质是一种模块化，受限再编程性的纳米级工具组。晶化基准形态为尘构组成的便于输运的长程有序结构，使用时通过外源场控注入预设指令。尘构物质可以简单理解为外源编码的硅-碳基FPGA单元。基础功能包括但不限于靶向物质输送、分子级物质排列、组装与修复（包括有限的自组装）、分布式传感器和信息转译。</description>
         <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Celes/Item/DustMech/NanoMachine</texPath>
@@ -150,7 +166,7 @@
     <ThingDef ParentName="ResourceBase"><!-- 淬铃合金 -->
         <defName>CelesAlloy</defName>
         <label>淬铃合金</label>
-        <description>淬铃合金是藉由尘构锻造的三相共晶复合钢材，对于星铃是准军规合金材料。因其在撞击时发出的声音而得名。\n\n这种轻质合金极易加工，且高度耐用，但晶格结构影响了这种材料的抗剪拉性能。常被用于制造各种星铃器械。尽管在母星系统中并不受青睐，但其廉价泛用的特性使其在边缘世界的星铃拓荒者手中大受欢迎。</description>
+        <description>淬铃合金是藉由尘构锻造的三相共晶复合钢材，对于星铃是准军规合金材料。因其在撞击时发出的声音而得名。\n\n这种轻质合金极易加工，且高度耐用，但晶格结构决定了这种材料的抗剪拉性能上限。常被用于制造各种星铃器械。尽管在母星系统中并不受青睐，但其廉价泛用的特性使其在边缘世界的星铃拓荒者手中大受欢迎。</description>
         <graphicData>
             <texPath>Celes/Item/BaseResource/Alloy</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -212,10 +228,10 @@
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>
     
-    <ThingDef ParentName="ResourceBase"><!-- 尘构机械单元 -->
+    <ThingDef ParentName="ResourceBase"><!-- 感测机械零件 -->
         <defName>Celes_NanoComponent</defName>
-        <label>尘构机械单元</label>
-        <description>尘构机械单元以定制尘构单元取代通用零部件的局部机械结构，是一种被设计为在机械结构中携带分子信息索引的新型零部件，让零部件的材料本身可以对外部环境做出反应，从自我修复到信号激发。换而言之，让零部件本身作为一种可以反馈数据的传感器。</description>
+        <label>感测机械零件</label>
+        <description>感测机械零件以定制尘构单元和微型电子元件嵌入为通用机械零部件的功能组件，被设计为藉由分子信号与微电信号，让零部件的材料本身可以感知并响应外部环境与相邻组件，执行从信号感测、自我修复到状态回读的任务，实现传感器和材料的通用一体化。</description>
         <possessionCount>2</possessionCount>
         <graphicData>
             <texPath>Celes/Item/BaseResource/NanoComponent</texPath>
@@ -227,7 +243,7 @@
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
             <MaxHitPoints>70</MaxHitPoints>
-            <MarketValue>55</MarketValue>
+            <MarketValue>70</MarketValue>
             <Mass>0.9</Mass>
             <Flammability>0</Flammability>
             <DeteriorationRate>2.0</DeteriorationRate>
@@ -253,7 +269,7 @@
         <statBases>
             <MaxHitPoints>80</MaxHitPoints>
             <MarketValue>2.2</MarketValue>
-            <Mass>0.03</Mass>
+            <Mass>0.01</Mass>
             <StuffPower_Armor_Sharp>0.46</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>0.10</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>0.22</StuffPower_Armor_Heat>
@@ -288,10 +304,10 @@
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>
 
-    <ThingDef ParentName="ResourceBase" Name="ReplicationMaterial"><!-- 尘构复制基质 -->
+    <ThingDef ParentName="ResourceBase" Name="ReplicationMaterial"><!-- 尘晶培养底料 -->
         <defName>Celes_ReplicationMaterial</defName>
-        <label>尘构复制基质</label>
-        <description>尘构复制基质，晶体培育器的基本燃料。</description>
+        <label>尘晶培养底料</label>
+        <description>尘晶培养底料，晶体培育器的基本燃料。</description>
         <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Celes/Item/BaseResource/ReplicationMaterial</texPath>
@@ -302,7 +318,7 @@
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
             <MaxHitPoints>300</MaxHitPoints>
-            <MarketValue>0.9</MarketValue>
+            <MarketValue>15.0</MarketValue>
             <Flammability>0</Flammability>
             <Beauty>-8</Beauty>
             <BeautyOutdoors>0</BeautyOutdoors>
@@ -318,86 +334,133 @@
         </tradeTags>
     </ThingDef>
 
-    <ThingDef ParentName="ReplicationMaterial"><!-- 生物质尘构复制基质 -->
-        <defName>Celes_FleshReplicationMaterial</defName>
-        <label>生物质尘构复制基质</label>
-        <description>尘构复制基质，晶体培育器的基本燃料。这份由生物质制造。</description>
+    <ThingDef ParentName="ReplicationMaterial"><!-- 尘晶培养底料(生物质) -->
+        <defName>Celes_ReplicationMaterialFlesh</defName>
+        <label>尘晶培养底料(生物质)</label>
+        <description>尘晶培养底料，晶体培育器的基本燃料。这份由生物质制造。</description>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Celes/Item/BaseResource/FleshReplicationMaterial</texPath>
+            <texPath>Celes/Item/BaseResource/ReplicationMaterialFlesh</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.85</drawSize>
         </graphicData>
-    </ThingDef>
-    
-    <!--<ThingDef ParentName="ResourceBase">
-        <defName>CelesNanoManifold</defName>
-        <label>the Dust-Mech Manifold</label>
-        <description>A powerful and highly controllable programmable nanomachine, one of the roots of Celestia's civilisation, used extensively. But in places like the Rimworld, where supplies are scarce, Dust-Mech matter does not shape the world as it pleases.</description>
-        <possessionCount>5</possessionCount>
-        <tickerType>Normal</tickerType>
-        <graphicData>
-            <texPath>Celes/Item/BaseResource/NanoManifold</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.85</drawSize>
-        </graphicData>
-        <stackLimit>60</stackLimit>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <intricate>true</intricate>
         <statBases>
-            <MaxHitPoints>50</MaxHitPoints>
-            <MarketValue>12</MarketValue>
-            <Mass>0.001</Mass>
-            <Flammability>0</Flammability>
+            <MarketValue>250.0</MarketValue>
         </statBases>
+    </ThingDef>
+
+    <!-- ========== 先进资源 ========== -->
+
+    <ThingDef ParentName="ResourceBase"><!-- 尘构基质 -->
+        <defName>Celes_Substrate</defName>
+        <label>尘构基质</label>
+        <description>准工程态多能尘构基质，通称“尘构基质”，是基于基准尘构加入充足的元素供应进而诱导形成的高分化潜能状态，能够构造更复杂的纳米级工具组。在提供准确的蓝图数据，充沛的能量来源，以及足够的元素供应的情况下，尘构基质几乎可以制造出人类工程边界内的一切造物。</description>
+        <graphicData>
+            <texPath>Celes/Item/AdvancedResource/NanoManifold</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>17</MarketValue>
+            <Mass>0.01</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
         <thingCategories>
             <li>Celes_Manufactured</li>
         </thingCategories>
-        <allowedArchonexusCount>20</allowedArchonexusCount>
-    </ThingDef>
-    
-    
-     ========== 纳米化素材 ========== 
-
-    <ThingDef ParentName="UnfinishedBase">
-        <defName>Celes_UnfinishedCrystal</defName>
-        <label>uncrystallised stone</label>
-        <description>An uncrystallised stone.</description>
-        <statBases>
-            <Flammability>0</Flammability>
-        </statBases>
-        <graphicData>
-            <texPath>Celes/Item/BaseResource/NanoMachineCrystal</texPath>
-            <graphicClass>Graphic_Random</graphicClass>
-            <drawSize>1.0</drawSize>
-        </graphicData>
-        <stuffCategories Inherit="false" />
+        <tradeTags>
+            <li>Celes_TradeBase</li>
+        </tradeTags>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>Celes_NanoMachineCrystal</defName>
-        <label>CelesNanoMachineCrystal</label>
-        <description>CelesNanoMachineCrystal.</description>
-        <tickerType>Normal</tickerType>
+        <defName>Celes_AdvancedComponent</defName>
+        <label>晶格运算元件</label>
+        <description>晶格运算元件是基于尘构本身的图灵完备性构建的神经形态计算单元。通过三维堆叠的仿神经元的仿生构造，这种运算-存储一体的元件可以通过低压电流、化学信号与尘构本身，在尘构物质构成的晶格框架内执行计算，并自主动态构建和修正连接关系。其硬件结构的涌现潜力使得随着并联的数量增加，这种元件的算力呈现超线性-线性增长，有着明显的成本和功耗优势。考虑到边缘世界的工业情况，其在性价比的角度上是相当完美的算力来源。</description>
+        <possessionCount>2</possessionCount>
         <graphicData>
-            <texPath>Celes/Item/BaseResource/NanoMachineCrystal</texPath>
-            <graphicClass>Graphic_Random</graphicClass>
-            <drawSize>1.0</drawSize>
+            <texPath>Celes/Item/AdvancedResource/AdvancedComponent/AdvancedComponent</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <stackLimit>1</stackLimit>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>
-        <intricate>true</intricate>
         <statBases>
-            <MaxHitPoints>300</MaxHitPoints>
-            <MarketValue>120</MarketValue>
-            <Mass>20</Mass>
-            <Beauty>-8</Beauty>
-            <Flammability>0</Flammability>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>300</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0.6</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+            <WorkToMake>3000</WorkToMake>
         </statBases>
+        <intricate>true</intricate>
         <thingCategories>
-            <li>Manufactured</li>
+            <li>Celes_Manufactured</li>
         </thingCategories>
-    </ThingDef>-->
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase"><!-- 尘化丝绸 --><!-- 待平衡 & 待修正贴图 -->
+        <defName>Celes_AdvancedCloth</defName>
+        <label>尘化丝绸</label>
+        <description>一种先进的高生物相容性特种纺织面料，在可接受的成本内几乎完美的兼顾了强度和性能。但在边缘世界，可行性最高的复现方案几乎必须在恶魔菇产生的纤维基础上利用尘构物质重新排序纤维结构。\n\nA high-strength fabric made using Dust-Mech to reconfigure microscopic fibre structures. The formula is adapted to the environment of the Rimworld and is used to make all types of Celestia advanced clothing.</description>
+        <graphicData>
+            <texPath>Celes/Item/AdvancedResource/AdvanceCloth</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <MarketValue>8.0</MarketValue>
+            <Mass>0.03</Mass>
+            <StuffPower_Armor_Sharp>1.30</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.50</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>2.5</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+            <Flammability>0.4</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>400</WorkToMake>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>30</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Flammability>0.4</Flammability>
+                <MaxHitPoints>1.3</MaxHitPoints>
+                <Beauty>3.5</Beauty>
+            </statFactors>
+            <categories>
+                <li>Fabric</li>
+            </categories>
+            <color>(180,220,240)</color>
+            <commonality>0.2</commonality>
+            <allowColorGenerators>true</allowColorGenerators>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <thingCategories>
+            <li>Textiles</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Celes_Need</li>
+        </tradeTags>
+        <!--<costList>
+            <Cloth>20</Cloth>
+            <Plasteel>2</Plasteel>
+            <Celes_NanoMachine>1</Celes_NanoMachine>
+        </costList>-->
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+
+    <!-- ========== 纳米化素材 ========== -->
 
     <ThingDef ParentName="ResourceBase">
         <defName>Celes_NanoCrystallisedCorpse</defName>

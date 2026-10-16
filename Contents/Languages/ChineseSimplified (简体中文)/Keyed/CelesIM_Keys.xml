@@ -66,16 +66,14 @@
     <CelesIM_Keyed_NoFaultResource>缺少中枢故障维修资源</CelesIM_Keyed_NoFaultResource>
 
     <!-- ── 晶体系（第一轮代码补 Keyed）── -->
-    <CelesIM_Keyed_CrystalLevel>晶体等级: {0}</CelesIM_Keyed_CrystalLevel>
+    <!-- F5（用户裁决 2026-10-16）：不显示等级，仅总生长值＋预期产出；{2}=产出物品名 -->
+    <CelesIM_Keyed_CrystalLevel>生长值:{0}\n预期产出:{1}{2}</CelesIM_Keyed_CrystalLevel>
     <CelesIM_Keyed_BlightRadius>枯萎半径: {0} (+{1}/天)</CelesIM_Keyed_BlightRadius>
     <CelesIM_Keyed_CrystalSeedStatus>状态: {0}</CelesIM_Keyed_CrystalSeedStatus>
     <CelesIM_Keyed_CrystalSeedActive>活性</CelesIM_Keyed_CrystalSeedActive>
     <CelesIM_Keyed_CrystalSeedInactive>失活</CelesIM_Keyed_CrystalSeedInactive>
     <CelesIM_Keyed_AutoMarkLabel>自动标记开采</CelesIM_Keyed_AutoMarkLabel>
     <CelesIM_Keyed_AutoMarkDesc>开启后每次生长检测自动为已达最高等级的晶簇标记开采指令。</CelesIM_Keyed_AutoMarkDesc>
-    <CelesIM_Keyed_AutoMarkStatus>自动标记开采: {0}</CelesIM_Keyed_AutoMarkStatus>
-    <CelesIM_Keyed_On>开</CelesIM_Keyed_On>
-    <CelesIM_Keyed_Off>关</CelesIM_Keyed_Off>
 
     <!-- ── 批 5 二类生产（品质闸 D1——黄字 Log.Warning 消费，{0}=产物标签）── -->
     <CelesIM_Keyed_QualityForced>自动生产线不支持品质产物：{0} 已强制为普通品质</CelesIM_Keyed_QualityForced>
@@ -96,7 +94,7 @@
     <CelesIM_Keyed_ForgedMech>已锻造{0}（需要{1}来完成）</CelesIM_Keyed_ForgedMech>
 
     <!-- ── 批 6 D36（星铃调频——尘构机效率 InfoCard 分解行；{0}=乘数百分比，C# 预格式化）── -->
-    <CelesIM_Keyed_StarlinkTuning>星铃调频 ×{0}</CelesIM_Keyed_StarlinkTuning>
+    <CelesIM_Keyed_CelestiaSync>星铃调频 ×{0}</CelesIM_Keyed_CelestiaSync>
 
     <!-- ── 批 6 C（超频 Toggle+效率分解行；{0}=乘数百分比，C# 预格式化）── -->
     <CelesIM_Keyed_OverclockLabel>超频</CelesIM_Keyed_OverclockLabel>

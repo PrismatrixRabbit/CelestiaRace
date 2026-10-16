@@ -49,14 +49,6 @@
                 </filter>
                 <count>3</count>
             </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Celes_NanoMachine</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
@@ -115,14 +107,6 @@
                     </thingDefs>
                 </filter>
                 <count>12</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Celes_NanoMachine</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>

@@ -158,7 +158,7 @@
         <defName>Celes_Backstory_Outlander10</defName>
         <title>星铃 矿物勘探员</title>
         <titleShort>勘探员</titleShort>
-        <description>[PAWN_nameDef]为星铃拓荒队搜寻野外矿床痕迹，[PAWN_pronoun]有时会跟随商队一同远行，也有时独身一人前往尚待勘探的区域。一些人相信星铃们会继续生存下去，而[PAWN_pronoun]相信星铃们会将这里建设成另一个闪耀世界。重新发掘出这颗星球潜藏的资源，便是建设这里所需迈出的第一步。</description>
+        <description>[PAWN_nameDef]为星铃科考队搜寻野外矿床痕迹，[PAWN_pronoun]有时会跟随商队一同远行，也有时独身一人前往尚待勘探的区域。一些人相信星铃们会继续生存下去，而[PAWN_pronoun]相信星铃们会将这里建设成另一个闪耀世界。重新发掘出这颗星球潜藏的资源，便是建设这里所需迈出的第一步。</description>
         <slot>Adulthood</slot>
         <skillGains>
             <Mining>4</Mining>
@@ -222,7 +222,7 @@
         <defName>Celes_Backstory_Outlander14</defName>
         <title>星铃 前哨站医生</title>
         <titleShort>医生</titleShort>
-        <description>[PAWN_nameDef]在星铃的某个前哨站开了一家小诊所，专门医治那些得了大小疾病的拓荒队员和路过的商队，虽然收钱。据[PAWN_pronoun]所说，这些医术都是承袭自家中前辈的“小技巧”，不过也没人知道[PAWN_pronoun]家里究竟有没有这个前辈。</description>
+        <description>[PAWN_nameDef]在星铃的某个前哨站开了一家小诊所，专门医治那些得了大小疾病的科考队员和路过的商队，虽然收钱。据[PAWN_pronoun]所说，这些医术都是承袭自家中前辈的“小技巧”，不过也没人知道[PAWN_pronoun]家里究竟有没有这个前辈。</description>
         <slot>Adulthood</slot>
         <skillGains>
             <Medicine>5</Medicine>

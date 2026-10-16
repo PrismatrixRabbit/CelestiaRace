@@ -49,11 +49,10 @@
         </ingestible>
         <recipeMaker>
             <label>编织指令：NS-90</label>
-            <researchPrerequisite>Celes_Bio_I</researchPrerequisite>
+            <researchPrerequisite>Celes_Medicine_I</researchPrerequisite>
             <displayPriority>1530</displayPriority>
         </recipeMaker>
         <costList>
-            <Celes_NanoMachine>1</Celes_NanoMachine>
             <Celes_BioGel>8</Celes_BioGel>
         </costList>
         <comps>

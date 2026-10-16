@@ -14,10 +14,10 @@
         <defName>Celes_Plant_I</defName><!-- 莹尘防风草 -->
         <label>莹尘防风草</label>
         <description>解锁种植「莹尘防风草」。一种基因改造作物，其肉质根中富集了大量化工前体物质，可以轻易的被提取出使用。</description>
-        <baseCost>300</baseCost>
+        <baseCost>200</baseCost>
         <techLevel>Medieval</techLevel>
         <researchViewX>0</researchViewX>
-        <researchViewY>3.0</researchViewY>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
             <li>Celes_ClassicStart</li>
@@ -27,47 +27,43 @@
     <!-- ========== 主要科技 ========== -->
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_I</defName><!-- 复制指令 -->
-        <label>复制指令</label>
-        <description>通过破译尘构指令符号集，初步理解如何利用电场诱导尘构自我复制。\n\n对于边缘世界，最大的难点或许是……怎么搞到一些初始晶态物质用于研究。</description>
-        <baseCost>700</baseCost>
+        <defName>Celes_MainTech_I</defName><!-- 指令解译 -->
+        <label>指令解译</label>
+        <description>基于对尘构内的自维持的信号的解译，理解如何使用尘构作为工具并用于加工材料，解锁基础的「编译线程」生产和传输设备，如「中枢计算塔」和「转发单元」。并解锁基础的尘构生产手段，「淬铃合金」的制造以及星铃特有的工作台「实验室纳米锻炉」。\n\n把一段尘构所需的指令编辑成可以被程序运行的自动过程后，特化的尘构单元可以用于辅助材料的分子级加工。虽然当前的精度和加工速度都受限于我们对星铃蓝图的获取与解析能力以及纳米锻炉本身的构造，但足以在一定程度上解决边缘世界"野生"钢铁材料的晶格缺陷问题。</description>
+        <baseCost>300</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Electricity</li>
         </prerequisites>
-        <requiredAnalyzed>
-            <li>Celes_CrystallineMaterial</li>
-        </requiredAnalyzed>
         <researchViewX>0</researchViewX>
-        <researchViewY>2.4</researchViewY>
+        <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
+            <li>Celes_ClassicStart</li>
         </tags>
-        <discoveredLetterTitle>关于：尘构复制</discoveredLetterTitle>
-        <discoveredLetterText>你的研究人员向你解释了尘构的增殖原理：\n\n总的来说，需要先获得一个自增殖源。初始晶态材料已经丧失了这种多能分化能力，有限的消息指向了一种物品，“初始晶簇”。在这之后，就可以利用星铃的纳米锻炉手动复制少量的尘构，或者搭建一个培育器并配置人工生长环境让其自然增殖。</discoveredLetterText>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_II</defName><!-- 锻造指令 -->
-        <label>锻造指令</label>
-        <description>尘构单元可以自然的用于材料的分子级加工。虽然当前的精度和加工速度都受限于我们对复杂尘构指令集编译的理解能力，但足以在一定程度上解决边缘世界"野生"钢铁材料的晶格缺陷问题。</description>
-        <baseCost>700</baseCost>
+        <defName>Celes_MainTech_II</defName><!-- 材料自感知 --><!-- 也解锁「早期线程阵列」 -->
+        <label>材料自感知</label>
+        <description>改良最基础的尘构锻造技术，并通过往零部件内嵌入响应材料与尘构本身来构造下一代机械零件，解锁制造「感测机械零件」，同时解锁建造「"塑造"纳米锻炉」。这一系列自动化纳米锻炉均需要占用「编译线程」。\n\n通过系统性的优化尘构的指令逻辑，自感知材料的加工成本可以被降低到足以被负担的程度。如果材料不再是被动被处理的载体，而是紧密集成传感、致动甚至计算的元件……</description>
+        <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_MainTech_I</li>
         </prerequisites>
         <researchViewX>1</researchViewX>
-        <researchViewY>2.4</researchViewY>
+        <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_III</defName><!-- 复杂指令集编译 -->
-        <label>复杂指令集编译</label>
-        <description>我们终于知晓了这些奇异晶体的构成，尘构物质。\n\n破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。\n\n&lt;color=#87cefa&gt;＂尘构，学名适应性纳米校正系统(Adaptive Nano Calibration System)，即ANCS。是由星铃文明研发的，基于控制论的增强纳米机械。尘构能够融合不同的生物与生物，生物与机械，并且充当媒介在其中获取，传递，并处理信息流，在与智能结合的情况下，具有高度的适应性。＂————解析自星铃自译解技术核心&lt;/color&gt;</description>
-        <baseCost>3000</baseCost>
+        <defName>Celes_MainTech_III</defName><!-- 通用工程基质 --><!-- 也解锁「线程节点」 -->
+        <label>通用工程基质</label>
+        <description>理解使用更精密的尘构工具，解锁制造「尘构基质」。这是一种准工程用途尘构，接近星铃天体工程部所使用的类型。\n\n&lt;color=#87cefa&gt;＂尘构，正式名称为纳米工程响应无人机(Nanotic Engineered Response Drones)，即N.E.R.D.。是一类基于控制论的增强纳米机械，能够在极端环境下自主运作，在指令约束下调整、构造与分解宏观物质。并能充当生物与机械系统之间的通用接口，感知、传递并处理多源信息流。这两者结合，让尘构可以进一步将这些指令信息具象为物理世界的操作。＂————解析自星铃自译解技术核心&lt;/color&gt;</description>
+        <baseCost>2000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
@@ -78,14 +74,14 @@
             <li>Celes_STC_MainTech_III</li>
         </requiredAnalyzed>
         <researchViewX>3</researchViewX>
-        <researchViewY>2.4</researchViewY>
+        <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_MainTech_IV</defName><!-- 适应性信息流 -->
-        <label>尘构重编程(正在制作)</label>
-        <description>在星铃的理论体系，物质世界由且仅由三部分组成：物质，能量，信息。星铃早已知晓物质与能量是如何实现统一，而通过尘构物质，星铃实现了物质与信息的统一。通过给予尘构现有方法的重编程，我们或许可以无穷逼近将一切归于索拉里斯之海的可能性。</description>
+        <defName>Celes_MainTech_IV</defName><!-- 可塑信号结构 --><!-- 也解锁「集群线程阵列」 -->
+        <label>可塑信号结构</label>
+        <description>理解如何利用尘构本身的图灵完备性搭建结构可塑的运算元件，解锁制造「晶格运算元件」。\n\n晶格运算元件被广泛的作为量子计算元件的下位替代，而相较传统晶体管元件，在等体积下，这种元件的功耗和算力都更加美好。这种元件，或者说，材料，已经相当接近诺依曼物质的设想……</description>
         <baseCost>4000</baseCost>
         <techLevel>Ultra</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -95,8 +91,8 @@
         <prerequisites>
             <li>Celes_MainTech_III</li>
         </prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>2.4</researchViewY>
+        <researchViewX>4</researchViewX>
+        <researchViewY>3.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -115,20 +111,21 @@
         <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
+            <li>Celes_ClassicStart</li>
         </tags>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Weapon_II</defName><!-- 星铃古典武器 -->
+        <defName>Celes_Weapon_II</defName><!-- 高能储能模式 --><!-- 使用电点火，ONC发射药，磁重接加速/需求大容量电池 -->
         <label>高能储能模式</label>
-        <description>解锁制作依赖高能储能模式的枪械，如试制加速步枪和焊接工具。\n\n尘构物质突破了对传统储能物质的设计和制造方法。通过分子级装配，我们可以合成组装远超前人想象的极高能物质。例如使用电点火，ONC发射药，磁重接加速的实验性亚音速步枪「试制加速步枪」，与喷射定向等离子体束流的「科考队焊接工具」。另外，这套加工技术的副产物：加工精度，也能顺带用于锻造科考队使用的军刀。</description>
+        <description>解锁制作依赖高能储能技术的枪械，如「GU-8E试制加速步枪」和「科考队焊接工具」。这些尘构锻造的产物没有品质差异。\n\n尘构物质突破了对传统储能物质的设计和制造方法。通过分子级装配，我们可以合成组装稳定的高能化学物质。例如实验性亚音速微声步枪「CU-8E试制加速步枪」，与近距离喷射定向等离子体束流的「科考队焊接工具」。另外，这套加工技术的副产物：加工精度，也能顺带用于锻造科考队使用的「科考队军刀」。</description>
         <baseCost>700</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
-            <li>Celes_MainTech_I</li>
+            <li>Celes_MainTech_II</li>
         </prerequisites>
-        <researchViewX>1</researchViewX>
+        <researchViewX>2</researchViewX>
         <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -136,20 +133,16 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Weapon_III</defName><!-- 星铃制式武器 --><!-- 待编辑 -->
-        <label>星铃制式武器</label>
-        <description>解锁制作发射高能极化粒子束的星铃制式枪械，这些武器附带的高能辐射会对目标体表严重烧伤，并干扰机械体的运作。并允许制作制式单分子军刀等武器。\n\n这些武器曾被星铃海军淘汰百年有余，但基于边缘世界的工业暂不支持海军军规武器生产的现状，于是这些差强人意的粒子束武器便也成为拓荒队的标配。</description>
-        <baseCost>3000</baseCost>
-        <techLevel>Spacer</techLevel>
+        <defName>Celes_Weapon_III</defName><!-- 模拟火控组件 --><!-- 使用一套磁流变液系统作为核心的后坐力控制系统，配合毫秒级反馈控制和自修复枪管衬层大大提高了火力投射量的同时大幅降低了结构复杂性对维护的需求/ -->
+        <label>模拟火控组件</label>
+        <description>解锁依赖精确后座控制与结构原位修复的枪械，如「GZ-5E试制突击步枪」和「"魔杖"」。\n\n在尘构物质的帮助下，我们可以在材料本身内集成一套传感-修复-致动一体的机械式组件来控制而无需经由精密电子电路。\n基于上一代加速步枪，实验性的「GZ-5E试制突击步枪」侧重于通用性，两种不同的射击模式分别侧重于压制和杀伤。\n「"魔杖"」则是对“科考队泛用维护手杖”的昵称，这是一种杖状的等离子体约束装置，通常用于远程排除故障因素。</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
         <prerequisites>
-            <li>Celes_MainTech_III</li>
             <li>Celes_Weapon_II</li>
         </prerequisites>
-        <researchViewX>4</researchViewX>
+        <researchViewX>3</researchViewX>
         <researchViewY>1.8</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
@@ -157,9 +150,9 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>Celes_Weapon_IV</defName><!-- 试验性改造 --><!-- 待编辑 -->
-        <label>试验性改造武器(正在制作)</label>
-        <description>允许制造磁重联加速器与放射性高能等离子发射器，这种武器源于对旧时代飞船维修工具的试验性改造，但能爆发出夸张的杀伤力。</description>
+        <defName>Celes_Weapon_IV</defName><!-- 实时平衡重建 --><!-- 基于对一整套加速步枪技术的系统性优化和集成而开发出的次时代武器，最核心的突破在能量回收和热处理管理，兼用连续射击的磁重联过程射出与装填弹药以提高效率并回收能量/通过在局部扭曲场来制造吸引力 -->
+        <label>实时平衡重建</label>
+        <description>解锁依赖复杂场平衡与稳定技术的枪械，如「GI-22通用机枪」和「"重力锤"」。\n\n从测量到的边界数据反解出源数据需求，再据此控制修正不断逼近，通过晶态运算元件的辅助，在武器上应用这种控制系统已经不是天方夜谭。\n我们先进的「GI-22通用机枪」拥有相当高的射速和杀伤能力，已经远远超越了老旧的电荷冲击炮，并能装填特种高爆弹药。\n「"重力锤"」则是一种通过在局部扭曲场来制造引力/斥力的近战武器，作战距离有限但发挥得当能有奇效。</description>
         <baseCost>3000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -168,9 +161,30 @@
         </requiredResearchFacilities>
         <prerequisites>
             <li>Celes_Weapon_III</li>
+            <li>Celes_MainTech_IV</li>
         </prerequisites>
         <researchViewX>5</researchViewX>
         <researchViewY>1.8</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Weapon_IVa</defName><!-- 尘构重构 --><!-- 待编辑 -->
+        <label>先进试制改造</label>
+        <description>利用我们已知的技术对此前的试制武器广泛改造，解锁一批基于此前试制武器的新式武器。</description>
+        <baseCost>2500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>Celes_Weapon_III</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>1.2</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -189,7 +203,6 @@
         <prerequisites>
             <li>Celes_Apparel_V</li>
             <li>Celes_Weapon_IV</li>
-            <li>Celes_MainTech_IV</li>
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
@@ -203,9 +216,9 @@
     <!-- ========== 生化科技 ========== -->
 
     <ResearchProjectDef>
-        <defName>Celes_Bio_I</defName><!-- 编织指令 -->
-        <label>编织指令</label>
-        <description>尘构的指令集之中已经包含了对常见有机大分子的处理模型。借助这些精密的分子探针和人造酶，我们可以进一步优化我们的制药和材料技术。</description>
+        <defName>Celes_Bio_I</defName><!-- 受控有机交互 -->
+        <label>受控有机交互</label>
+        <description>通过给尘构设置明确的本地指令终止符限制其行为，解锁建造「晶体培育器」并解锁制造「再纺棉纱」。这种设备需要占用「编译线程」，并需要自行铺设「人工晶态表面」才能生长尘晶晶簇，但是不会像野外的尘晶柱一样毒害动植物。\n\n星铃——通常来说——会把复杂有机大分子，比如角质蛋白，和特定宏观结构模式，比如土壤或者规则人造物，都设置为尘构复制以及其他行为的终止指令符。事实上尘构也正常的运行在星铃体内。但不知道为什么，这一系列指令符没有在这个边缘世界的其他人类亚种或者自然环境内正常工作……\n总不能是因为这里的大气充斥着其他纳米机器并且还有复数个超凡非人知性实体在干扰而且其实有些"人类亚种"也是非人生命吧……？</description>
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
@@ -215,9 +228,14 @@
         </prerequisites>
         <hiddenPrerequisites>
         </hiddenPrerequisites>
+        <requiredAnalyzed>
+            <li>Celes_CrystallineMaterial</li>
+        </requiredAnalyzed>
         <researchViewX>1</researchViewX>
-        <researchViewY>3.0</researchViewY>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
+        <discoveredLetterTitle>关于：尘构复制</discoveredLetterTitle>
+        <discoveredLetterText>你的研究人员向你概述了尘构扩增的方向：\n\n具备自主适应和主动同化能力的尘构技术被星铃高度保密，如果只使用基础的尘构自增指令，我们的尘构获取会高度受限。尘晶碎片虽然可以转化为尘构，但无法主动转化其他物质。有限的消息指向了一种物品，「尘晶晶种」。\n尘晶晶种可以用于建造「晶体培育器」，这种设备会在周围被规定的「人工晶态表面」上，类似尘晶柱的生长尘晶晶簇。而且没有毒害殖民者和动植物的风险。</discoveredLetterText>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -231,7 +249,7 @@
             <li>Celes_Bio_I</li>
         </prerequisites>
         <researchViewX>3</researchViewX>
-        <researchViewY>3.0</researchViewY>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -252,7 +270,7 @@
         <!--<hiddenPrerequisites>
         </hiddenPrerequisites>-->
         <researchViewX>4</researchViewX>
-        <researchViewY>3.0</researchViewY>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -270,14 +288,14 @@
             <li>Celes_Bio_III</li>
         </prerequisites>
         <researchViewX>5</researchViewX>
-        <researchViewY>3.0</researchViewY>
+        <researchViewY>3.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>Celes_Medicine_I</defName><!-- 替代性制药 -->
         <label>替代性制药</label>
-        <description>效率稍低但自给性极高，以介质凝胶为原料替代制药过程中的中性胺。</description>
+        <description>以介质凝胶为原料替代制药过程中的中性胺，解锁以星铃的模式制造「医药」，以及「IAS-2免疫增强剂」和「NS-90神经兴奋剂」。\n\n尘构的指令集之中已经包含了对常见有机大分子的处理模型。借助这些精密的分子探针和人造酶，我们可以进一步优化我们的制药和材料技术。</description>
         <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -285,7 +303,7 @@
             <li>Celes_Bio_I</li>
         </prerequisites>
         <researchViewX>2</researchViewX>
-        <researchViewY>2.8</researchViewY>
+        <researchViewY>3.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -301,7 +319,7 @@
             <li>Celes_Bio_I</li>
         </prerequisites>
         <researchViewX>2</researchViewX>
-        <researchViewY>3.6</researchViewY>
+        <researchViewY>4.2</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <discoveredLetterTitle>关于：尘构重激活</discoveredLetterTitle>
         <discoveredLetterText>你的研究人员大致解译了这项星铃的全新技术：\n\n现在，你可以通过自复制晶体，为尘构节律失活的个体或者新生儿重建尘构节律，又或者用其调整星铃体内尘构节律的活性，活性尘构节律可以在短期内全面提高星铃的工作能力并带有短暂的疲劳副作用。\n\n而对于未开化物种，由于某种保护性限制，这一技术会无法使用。但对于并非星铃又并非未开化物种的个体……尚且缺乏记录。</discoveredLetterText>
@@ -321,7 +339,7 @@
         <hiddenPrerequisites>
         </hiddenPrerequisites>
         <researchViewX>3</researchViewX>
-        <researchViewY>4.0</researchViewY>
+        <researchViewY>4.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -343,7 +361,7 @@
         <hiddenPrerequisites>
         </hiddenPrerequisites>
         <researchViewX>4</researchViewX>
-        <researchViewY>3.6</researchViewY>
+        <researchViewY>4.2</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -363,7 +381,7 @@
         <hiddenPrerequisites>
         </hiddenPrerequisites>
         <researchViewX>5</researchViewX>
-        <researchViewY>3.6</researchViewY>
+        <researchViewY>4.2</researchViewY>
         <tab>Celes_ResearchTab</tab>
     </ResearchProjectDef>
 
@@ -371,7 +389,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Mech_I</defName><!-- 星铃信息论基础 --><!-- 待编辑 -->
-        <label>星铃信息论基础</label>
+        <label>人机指令程序</label>
         <description>Celes_Mech_I</description>
         <!-- 机械体培育器 机械体充电桩 旋翼工作无人机 四轮工作无人机 机控装备 -->
         <baseCost>300</baseCost>
@@ -380,17 +398,15 @@
             <li>Electricity</li>
         </prerequisites>
         <researchViewX>0</researchViewX>
-        <researchViewY>4.8</researchViewY>
+        <researchViewY>5.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
-        <discoveredLetterTitle>新信息破译</discoveredLetterTitle>
-        <discoveredLetterText>你的研究人员新近破译到一段来自星铃的讯息：\n\n“这里是星铃拓荒队，这条消息向所有能够接受到本消息的个人/团体/组织/政治实体通告：\n\n星铃拓荒队已经开放外勤部门信道，任何对星铃拓荒队做出贡献的个人/团体/组织/政治实体，现在可以凭借贡献兑换密钥，进而兑换来自星铃的支援。这条消息会周期性重复。\n\n对于听不懂这些东西的聪明蛋，你只需要知道现在呼叫星铃，给星铃办事，好处很多。消息结束。”</discoveredLetterText>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>Celes_Mech_II</defName><!-- 机械神经模式 -->
-        <label>机械神经模式</label>
+        <label>意图转拟机械</label>
         <description>Celes_Mech_II</description>
         <!-- 犬形辅助仿生机械 改良机控装备 -->
         <baseCost>300</baseCost>
@@ -400,9 +416,10 @@
         </prerequisites>
         <hiddenPrerequisites>
             <li>Celes_MainTech_II</li>
+            <li>Celes_Manufactory_I</li>
         </hiddenPrerequisites>
         <researchViewX>2</researchViewX>
-        <researchViewY>4.8</researchViewY>
+        <researchViewY>5.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -410,7 +427,7 @@
 
     <ResearchProjectDef>
         <defName>Celes_Mech_III</defName><!-- 晶体拟电突触 --><!-- 待编辑 -->
-        <label>晶体拟电突触</label>
+        <label>神经拟合同步</label>
         <description>Celes_Mech_III</description>
         <!-- 犬形辅助仿生机械 改良机控装备 -->
         <baseCost>300</baseCost>
@@ -422,7 +439,7 @@
         <hiddenPrerequisites>
         </hiddenPrerequisites>
         <researchViewX>3</researchViewX>
-        <researchViewY>4.8</researchViewY>
+        <researchViewY>5.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -430,19 +447,21 @@
 
     <ResearchProjectDef>
         <defName>Celes_Mech_IV</defName><!-- 融合思维理论 --><!-- 待编辑 -->
-        <label>融合思维理论</label>
+        <label>同调缓冲系统</label>
         <description>Celes_Mech_IV</description>
         <!-- 犬形辅助仿生机械 改良机控装备 -->
         <baseCost>300</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_Mech_III</li>
+            <li>Celes_MainTech_IV</li>
             <li>Celes_Prosthesis_I</li>
         </prerequisites>
         <hiddenPrerequisites>
+            <li>Celes_Manufactory_III</li>
         </hiddenPrerequisites>
         <researchViewX>5</researchViewX>
-        <researchViewY>4.8</researchViewY>
+        <researchViewY>5.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -450,18 +469,17 @@
 
     <ResearchProjectDef>
         <defName>Celes_Mech_V</defName><!-- 欧米伽心智 --><!-- 待编辑 -->
-        <label>欧米伽心智</label>
+        <label>感知融合理论</label>
         <description>Celes_Mech_V</description>
         <!-- 犬形辅助仿生机械 改良机控装备 -->
         <baseCost>300</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Celes_Mech_IV</li>
-            <li>Celes_MainTech_IV</li>
             <li>Celes_Prosthesis_II</li>
         </prerequisites>
         <researchViewX>6</researchViewX>
-        <researchViewY>4.8</researchViewY>
+        <researchViewY>5.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -470,9 +488,9 @@
     <!-- ========== 生产科技 ========== -->
 
     <ResearchProjectDef>
-        <defName>Celes_Manufactory_I</defName><!-- 模式化锻造理论 --><!-- 待编辑 -->
-        <label>晶体场控锻造</label>
-        <description>Celes_Manufactory_I</description>
+        <defName>Celes_Manufactory_I</defName><!-- 模式化信息传输 --><!-- 也解锁「锻炉工具柜」 -->
+        <label>模式化信息传输</label>
+        <description>通过对输入信息的模式化允许更高自动化程度的信号传输与尘构生产，解锁建造「"铸造"纳米锻炉」与「束流转发塔」。</description>
         <!-- 纳米离心机 纳米纤维织机 -->
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
@@ -482,7 +500,7 @@
         <hiddenPrerequisites>
         </hiddenPrerequisites>
         <researchViewX>2</researchViewX>
-        <researchViewY>2.2</researchViewY>
+        <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -490,8 +508,8 @@
 
     <ResearchProjectDef>
         <defName>Celes_Manufactory_II</defName><!-- 大规模生产理论 --><!-- 待编辑 -->
-        <label>尘构纳米锻造</label>
-        <description>Celes_Manufactory_II</description>
+        <label>安全协议超驰</label>
+        <description>抵近尘构的真正安全边界绕过某些"仪式性条款"，解锁建造「安全协议覆写器」。</description>
         <!-- 纳米离心机 纳米纤维织机 -->
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
@@ -502,7 +520,27 @@
         <hiddenPrerequisites>
         </hiddenPrerequisites>
         <researchViewX>4</researchViewX>
-        <researchViewY>2.2</researchViewY>
+        <researchViewY>2.4</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Celes_Manufactory_III</defName><!-- 大规模生产理论 --><!-- 待编辑 -->
+        <label>尘构蓝图模型</label>
+        <description>理解对物质构成建模与尘构指令叙述的同一性，解锁建造「"构造"纳米锻炉」。</description>
+        <!-- 纳米离心机 纳米纤维织机 -->
+        <baseCost>500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Manufactory_II</li>
+            <li>Celes_MainTech_IV</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+        </hiddenPrerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>2.4</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>
@@ -522,6 +560,9 @@
         <researchViewX>0</researchViewX>
         <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
+        <tags>
+            <li>Celes_ClassicStart</li>
+        </tags>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -537,6 +578,7 @@
         <researchViewY>0.6</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
+            <li>Celes_ClassicStart</li>
         </tags>
     </ResearchProjectDef>
 
@@ -619,7 +661,7 @@
     <ResearchProjectDef>
         <defName>Celes_Apparel_V</defName><!-- 北冕座项目 -->
         <label>北冕座项目(即将推出)</label>
-        <description>北冕座项目是星铃拓荒队自行研发的新一代动力装甲，这些装备上还能看见来自星铃母星系的一些余影。</description>
+        <description>北冕座项目是星铃科考队自行研发的新一代动力装甲，这些装备上还能看见来自星铃母星系的一些余影。</description>
         <baseCost>10000</baseCost>
         <techLevel>Ultra</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -656,15 +698,68 @@
         </tags>
     </ResearchProjectDef>
 
+    <!-- ========== 特殊科技 ========== -->
 
     <ResearchProjectDef>
         <defName>Celes_CelestiaFreqDecrypt</defName>
         <label>破译星铃频段</label>
-        <description>对坠落晶簇中蕴含的信号结构进行逆向分析，破译星铃外勤部的通讯频段编码，从而建造兼容的通讯发信器。</description>
+        <description>破译星铃外勤部的通讯频段编码，解锁「外勤部发信器」以及兼容的货运设备。</description>
         <baseCost>5000</baseCost>
         <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
         <researchViewX>0</researchViewX>
-        <researchViewY>5.4</researchViewY>
+        <researchViewY>6.0</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef>
+        <defName>Celes_Cargo_I</defName>
+        <label>基础外勤部货组</label>
+        <description>解锁制作基础的外勤部货组。</description>
+        <baseCost>200</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_CelestiaFreqDecrypt</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>6.0</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef>
+        <defName>Celes_Cargo_II</defName>
+        <label>标准外勤部货组</label>
+        <description>解锁制作标准的外勤部货组。</description>
+        <baseCost>400</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Cargo_I</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>6.0</researchViewY>
+        <tab>Celes_ResearchTab</tab>
+        <tags>
+        </tags>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef>
+        <defName>Celes_Cargo_III</defName>
+        <label>高标准外勤部货组</label>
+        <description>解锁制作高标准的外勤部货组。</description>
+        <baseCost>750</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Celes_Cargo_II</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>6.0</researchViewY>
         <tab>Celes_ResearchTab</tab>
         <tags>
         </tags>

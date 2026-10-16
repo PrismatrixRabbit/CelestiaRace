@@ -14,6 +14,8 @@
         </comps>-->
     </ThingDef>
 
+    <!-- ========== 空箱 T1 ========== -->
+
     <ThingDef ParentName="Celes_CargoBase">
         <defName>Celes_CargoEmpty</defName>
         <label>空货组箱子</label>
@@ -35,6 +37,8 @@
         </statBases>
         <!-- 3白银 -->
     </ThingDef>
+
+    <!-- ========== 建材/布料 T1 零件/日用 T2 ========== -->
 
     <ThingDef ParentName="Celes_CargoBase">
         <defName>Celes_CargoMaterial</defName>
@@ -86,6 +90,7 @@
             <li>Fabric</li>
             <li>Leathery</li>
         </stuffCategories>
+        <!-- 布料：228白银 普通皮革：318白银 -->
     </ThingDef>
 
     <ThingDef ParentName="Celes_CargoBase">
@@ -100,7 +105,7 @@
         </graphicData>
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
-            <MarketValue>250</MarketValue>
+            <MarketValue>220</MarketValue>
             <MaxHitPoints>70</MaxHitPoints>
             <Mass>13</Mass>
             <Flammability>0.5</Flammability>
@@ -111,12 +116,36 @@
             <ComponentIndustrial>5</ComponentIndustrial>
             <Steel>20</Steel>
         </costList>
-        <!-- 市价=细算201上浮至250（零部件稀缺面板溢价，用户裁决）；Mass=钢10+零部件3+箱0.5 -->
+        <!-- 201白银 -->
     </ThingDef>
 
     <ThingDef ParentName="Celes_CargoBase">
+        <defName>Celes_CargoDaily</defName>
+        <label>日用物品货组</label>
+        <description>文案之后写！</description>
+        <graphicData>
+            <texPath>Celes/Item/Cargo/Cargo_Daily</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>250</MarketValue>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>20</Mass>
+            <Flammability>2.0</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <WorkToMake>3200</WorkToMake>
+        </statBases>
+        <!-- 215.5~240白银 -->
+    </ThingDef>
+
+    <!-- ========== 速冻加工 T1 ========== -->
+
+    <ThingDef ParentName="Celes_CargoBase">
         <defName>Celes_CargoFood</defName>
-        <label>预制食品货组</label>
+        <label>速冻加工货组</label>
         <description>文案之后写！</description>
         <graphicData>
             <texPath>Celes/Item/Cargo/Cargo_Food</texPath>
@@ -125,47 +154,161 @@
             <drawSize>1.4</drawSize>
         </graphicData>
         <healthAffectsPrice>false</healthAffectsPrice>
+        <tickerType>Rare</tickerType>
         <statBases>
-            <MarketValue>210</MarketValue>
+            <MarketValue>180</MarketValue>
             <MaxHitPoints>50</MaxHitPoints>
             <Mass>4.5</Mass>
             <Flammability>0.5</Flammability>
             <DeteriorationRate>0.25</DeteriorationRate>
             <WorkToMake>4500</WorkToMake>
         </statBases>
-        <!-- 市价=10份精致餐(20)上浮（用户裁决210）；Deter/HP对位包装生存食品实测(0.25/50)；Mass按最大配方6.75营养=135块×0.03+箱 -->
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>4</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <!-- 140~272白银 -->
     </ThingDef>
 
+    <!-- ========== 杂项 T2 ========== -->
+
     <ThingDef ParentName="Celes_CargoBase">
-        <defName>Celes_CargoFoodSp</defName>
-        <label>油边烤肉货组</label>
+        <defName>Celes_CargoColour</defName>
+        <label>演训彩弹货组</label>
         <description>文案之后写！</description>
         <graphicData>
-            <texPath>Celes/Item/Cargo/Cargo_FoodSp</texPath>
+            <texPath>Celes/Item/Cargo/Cargo_Colour</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.4</drawSize>
         </graphicData>
         <healthAffectsPrice>false</healthAffectsPrice>
-        <tickerType>Rare</tickerType>
         <statBases>
-            <MarketValue>300</MarketValue>
+            <MarketValue>120</MarketValue>
             <MaxHitPoints>50</MaxHitPoints>
-            <Mass>3</Mass>
-            <Flammability>2.0</Flammability>
-            <DeteriorationRate>6</DeteriorationRate>
-            <WorkToMake>3200</WorkToMake>
+            <Mass>15</Mass>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <WorkToMake>700</WorkToMake>
         </statBases>
-        <comps>
-            <li Class="CompProperties_Rottable">
-                <daysToRotStart>2</daysToRotStart>
-                <rotDestroys>true</rotDestroys>
-            </li>
-        </comps>
-        <!-- 生鲜货组：Rottable三件套对位肉族（2天起腐/腐烂销毁/Rare tick）；市价=肉奢侈160+辅料61=231→溢价300（用户裁决） -->
+        <costList>
+            <Dye>40</Dye>
+            <Steel>5</Steel>
+        </costList>
+        <!-- 120白银 -->
     </ThingDef>
 
     <ThingDef ParentName="Celes_CargoBase">
+        <defName>Celes_CargoTeaAndWine</defName>
+        <label>代号3301货组</label>
+        <description>文案之后写！</description>
+        <graphicData>
+            <texPath>Celes/Item/Cargo/Cargo_TeaAndWine</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>310</MarketValue>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>8</Mass>
+            <Flammability>1.3</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <costList>
+            <PsychiteTea>25</PsychiteTea>
+        </costList>
+        <!-- 茶：252白银 酒：302白银 -->
+    </ThingDef>
+
+    <ThingDef ParentName="Celes_CargoBase">
+        <defName>Celes_CargoMedicine</defName>
+        <label>复合医药货组</label>
+        <description>文案之后写！</description>
+        <graphicData>
+            <texPath>Celes/Item/Cargo/Cargo_Medicine</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>90</MarketValue>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>2</Mass>
+            <Flammability>1.3</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <WorkToMake>3200</WorkToMake>
+        </statBases>
+        <costList>
+            <MedicineHerbal>3</MedicineHerbal>
+            <Cloth>12</Cloth>
+            <Neutroamine>2</Neutroamine>
+            <Celes_BioGel>2</Celes_BioGel>
+        </costList>
+        <!-- 75白银 -->
+    </ThingDef>
+
+    <!-- ========== 高标准 T3 ========== -->
+
+    <ThingDef ParentName="Celes_CargoBase">
+        <defName>Celes_CargoRabbitSculpture</defName>
+        <label>纪念雕像货组</label>
+        <description>文案之后写！</description>
+        <graphicData>
+            <texPath>Celes/Item/Cargo/Cargo_RabbitSculpture</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>126</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <WorkToMake>30000</WorkToMake>
+        </statBases>
+        <costStuffCount>100</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <!-- 石砖：198白银 玉：608白银 铀：708白银 银：1108白银 金：10110白银 -->
+    </ThingDef>
+
+    <ThingDef ParentName="Celes_CargoBase">
+        <defName>Celes_CargoRabbitDoll</defName>
+        <label>☆超可爱☆星铃玩偶♥~™ 货组</label>
+        <description>文案之后写！</description>
+        <graphicData>
+            <texPath>Celes/Item/Cargo/Cargo_RabbitDoll</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>175</MarketValue>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>3</Mass>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <WorkToMake>15000</WorkToMake>
+        </statBases>
+        <costList>
+            <Cloth>100</Cloth>
+        </costList>
+        <!-- 175白银 -->
+    </ThingDef>
+
+    <!-- ========== 废案 ========== -->
+
+    <!-- <ThingDef ParentName="Celes_CargoBase">
         <defName>Celes_CargoFuel</defName>
         <label>涡轮燃油货组</label>
         <description>文案之后写！</description>
@@ -203,136 +346,6 @@
                 <wickTicks>70~150</wickTicks>
             </li>
         </comps>
-        <!-- 危险品：爆炸comp全套对位原版化合燃料（受创引信70~150tick后爆燃，堆叠扩半径） -->
-    </ThingDef>
+    </ThingDef> -->
 
-    <ThingDef ParentName="Celes_CargoBase">
-        <defName>Celes_CargoColour</defName>
-        <label>演训彩弹货组</label>
-        <description>文案之后写！</description>
-        <graphicData>
-            <texPath>Celes/Item/Cargo/Cargo_Colour</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>1.4</drawSize>
-        </graphicData>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <statBases>
-            <MarketValue>120</MarketValue>
-            <MaxHitPoints>50</MaxHitPoints>
-            <Mass>15</Mass>
-            <Flammability>0.5</Flammability>
-            <DeteriorationRate>1</DeteriorationRate>
-            <WorkToMake>700</WorkToMake>
-        </statBases>
-        <costList>
-            <Dye>40</Dye>
-            <Steel>5</Steel>
-        </costList>
-        <!-- 市价120暂定（染料无成熟经济参照，用户拍板）；Mass=染料12+钢2.5+箱0.5 -->
-    </ThingDef>
-
-    <ThingDef ParentName="Celes_CargoBase">
-        <defName>Celes_CargoTeaAndWine</defName>
-        <label>代号3301货组</label>
-        <description>文案之后写！</description>
-        <graphicData>
-            <texPath>Celes/Item/Cargo/Cargo_TeaAndWine</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>1.4</drawSize>
-        </graphicData>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <statBases>
-            <MarketValue>302</MarketValue>
-            <MaxHitPoints>50</MaxHitPoints>
-            <Mass>8</Mass>
-            <Flammability>1.3</Flammability>
-            <DeteriorationRate>2</DeteriorationRate>
-            <WorkToMake>700</WorkToMake>
-        </statBases>
-        <costList>
-            <PsychiteTea>25</PsychiteTea>
-        </costList>
-        <!-- 市价取高者（酒版25×12+2.5→302，成瘾品/奢侈溢价）；Mass按酒版最重7.5+箱0.5 -->
-    </ThingDef>
-
-    <ThingDef ParentName="Celes_CargoBase">
-        <defName>Celes_CargoMedicine</defName>
-        <label>复合医药货组</label>
-        <description>文案之后写！</description>
-        <graphicData>
-            <texPath>Celes/Item/Cargo/Cargo_Medicine</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>1.4</drawSize>
-        </graphicData>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <statBases>
-            <MarketValue>90</MarketValue>
-            <MaxHitPoints>50</MaxHitPoints>
-            <Mass>2</Mass>
-            <Flammability>1.3</Flammability>
-            <DeteriorationRate>2</DeteriorationRate>
-            <WorkToMake>3200</WorkToMake>
-        </statBases>
-        <costList>
-            <MedicineHerbal>3</MedicineHerbal>
-            <Cloth>12</Cloth>
-            <Neutroamine>2</Neutroamine>
-            <Celes_BioGel>2</Celes_BioGel>
-        </costList>
-        <!-- 市价=5×工业药(18)锚；work=5×700基准打折（用户裁决3200）；Mass=成分1.44+箱0.5 -->
-    </ThingDef>
-
-    <ThingDef ParentName="Celes_CargoBase">
-        <defName>Celes_CargoRabbitSculpture</defName>
-        <label>纪念雕像货组</label>
-        <description>文案之后写！</description>
-        <graphicData>
-            <texPath>Celes/Item/Cargo/Cargo_RabbitSculpture</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>1.4</drawSize>
-        </graphicData>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <statBases>
-            <MaxHitPoints>150</MaxHitPoints>
-            <Mass>126</Mass>
-            <Flammability>0</Flammability>
-            <DeteriorationRate>1</DeteriorationRate>
-            <WorkToMake>30000</WorkToMake>
-        </statBases>
-        <costStuffCount>100</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Stony</li>
-        </stuffCategories>
-        <!-- 枚举域（配方层）：金/银/玉/铀+石砖（无玻璃钢/钢/木，用户裁决）；HP/Mass对位中雕塑150/最重石砖125+箱；市价推导预期：石砖198(=中雕塑标准)/银208/玉608/铀708/金1108 -->
-    </ThingDef>
-
-    <ThingDef ParentName="Celes_CargoBase">
-        <defName>Celes_CargoRabbitDoll</defName>
-        <label>☆超可爱☆星铃玩偶♥~™ 货组</label>
-        <description>文案之后写！</description>
-        <graphicData>
-            <texPath>Celes/Item/Cargo/Cargo_RabbitDoll</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>1.4</drawSize>
-        </graphicData>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <statBases>
-            <MarketValue>175</MarketValue>
-            <MaxHitPoints>80</MaxHitPoints>
-            <Mass>3</Mass>
-            <Flammability>0.5</Flammability>
-            <DeteriorationRate>2</DeteriorationRate>
-            <WorkToMake>10000</WorkToMake>
-        </statBases>
-        <costList>
-            <Cloth>100</Cloth>
-        </costList>
-        <!-- 市价=用户定标尺175（介于小雕塑110与中雕塑198之间）；Mass=布2.6+箱0.5 -->
-    </ThingDef>
 </Defs>

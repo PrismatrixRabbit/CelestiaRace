@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!-- ═══ 批 5 视觉修订批：锻造流光 mote 族（2026-09-30）
-         母本=裂解扫描仪 SubcoreRipscanner（Mote_Visual.xml:405-485 + Building_SubcoreScanner.cs:389-393）：
+    <!-- ═══ 批 5 视觉修订批：锻造流光 mote 族（2026-09-30）＋三炉分置（2026-10-16）
+         母本=裂解扫描仪 SubcoreRipscanner（Mote_Visual.xml + Building_SubcoreScanner.cs:407-411）：
          · MoteAttached 附着 + needsMaintenance 生命周期（断维持 0.35s 自动淡出=冻结淡出）
          · 流光本体=MoteSoftScannerGlow shader 扫描线（_ScanSpeed/_ScanPow 参数化，非贴图序列；值占位实测调）
+         · 扫描轴与方向由贴图红通道梯度烘焙（横扫/纵扫=各自贴图），本文件仅按炉分置 texPath/drawSize
          · altitudeLayer 自母本的 MoteOverhead 下调至 BuildingOnTop——为内容物（MoteOverhead）让位（三层裁决）
          · 蓝色 tint=线程网络主题色（0.4,0.7,1.0——Consumer markColorActive 同值先例）
          · 单南向起步（建筑 Graphic_Single 不旋转）——建筑转 Multi 时补 east/west/north 同族+per-rotation 字典
-         · drawSize (5,5)=与建筑同画布同规格（640x640，实测校准） ═══ -->
+         · drawSize 与各炉画布 1:1（384²=3×3 / 640²=5×5 / 896×640=7×5，实测校准）
+         · 每建筑经 CelesIM_CompProperties_ForgeGlow 直配自身 mote（2026-10-16 解耦） ═══ -->
     <ThingDef Name="Celes_ForgeMoteBase" ParentName="MoteBase" Abstract="True">
         <thingClass>MoteAttached</thingClass>
         <altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -29,10 +31,24 @@
         </graphicData>
     </ThingDef>
     <ThingDef ParentName="Celes_ForgeMoteBase">
-        <defName>Celes_Mote_ForgeGlow_South</defName>
+        <defName>Celes_Mote_NanoForgeShaperGlow_South</defName>
         <graphicData>
-            <texPath>Celes/Building/ShaperNanoForge/ShaperNanoForge_Glow_south</texPath>
+            <texPath>Celes/Building/NanoForgeShaper/NanoForgeShaper_Glow_south</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="Celes_ForgeMoteBase">
+        <defName>Celes_Mote_NanoForgeForgerGlow_South</defName>
+        <graphicData>
+            <texPath>Celes/Building/NanoForgeForger/NanoForgeForger_Glow_south</texPath>
             <drawSize>(5,5)</drawSize>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="Celes_ForgeMoteBase">
+        <defName>Celes_Mote_NanoForgeConstructorGlow_South</defName>
+        <graphicData>
+            <texPath>Celes/Building/NanoForgeConstructor/NanoForgeConstructor_Glow_south</texPath>
+            <drawSize>(7,5)</drawSize>
         </graphicData>
     </ThingDef>
 </Defs>

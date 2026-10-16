@@ -48,7 +48,7 @@
     <ThingDef ParentName="MealBase">
         <defName>CelesMRE</defName>
         <label>星铃MRE</label>
-        <description>一份极高品质的单兵口粮，可能来自遥远的星铃母星，使用某种边缘世界未知的技术加工和封装，不会腐坏且口味尚佳。原本计划广泛的用于星铃拓荒队，用于长期的拓荒，但不知为何如今较为少见。</description>
+        <description>一份极高品质的单兵口粮，可能来自遥远的星铃母星，使用某种边缘世界未知的技术加工和封装，不会腐坏且口味尚佳。原本计划广泛的用于星铃科考队，用于长期的拓荒，但不知为何如今较为少见。</description>
         <graphicData>
             <texPath>Celes/Item/Utility/MRE</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -71,7 +71,7 @@
         <allowedArchonexusCount>40</allowedArchonexusCount>
     </ThingDef>
     
-    <ThingDef ParentName="ResourceBase">
+    <!--<ThingDef ParentName="ResourceBase">
         <defName>CelesKeyCard</defName>
         <label>拓荒队密钥</label>
         <description>由星铃拓荒队授权的一次性量子密钥，为了便于理解做成了小卡片的形式，采用不记名的形式分发。这张卡片意味着持有者对星铃拓荒队的贡献．而只有星铃拓荒队的朋友才能将其兑换为有效的支援。</description>
@@ -95,6 +95,36 @@
             <li>Manufactured</li>
         </thingCategories>
         <allowedArchonexusCount>10</allowedArchonexusCount>
+    </ThingDef>-->
+
+    <!-- RTPV 换能组件（RTG）：FD 专属获取、消耗即固化——无制造配方、不可拆解；
+         仅作为同位素发电机建造材料 -->
+    <ThingDef ParentName="ResourceBase">
+        <defName>Celes_RTPVTransducer</defName>
+        <label>外勤部RTPV换能组件</label>
+        <description>来自星铃外勤部的RTPV换能组件。\n\n热光伏同位素电池(Radioisotope Thermophotovoltaic，RTPV)是一种核电池。用放射性同位素衰变产生的热量作热源，通过热辐射光伏电池的方式把热能直接转换成电能。</description>
+        <possessionCount>2</possessionCount>
+        <graphicData>
+            <!-- TODO:贴图待填（现用晶格运算元件图占位） -->
+            <texPath>Celes/Item/Utility/RTPVTransducer/RTPVTransducer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <!-- TODO:堆叠上限占位（实测定稿） -->
+        <stackLimit>1</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <MarketValue>1600</MarketValue>
+            <Mass>15</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
     </ThingDef>
 
     <!-- ========== 星铃机控 ========== -->
@@ -185,7 +215,7 @@
 	<ThingDef ParentName="Celes_STCResourceBase">
 		<defName>Celes_STCLock</defName>
 		<label>未解析的自译解技术核心</label>
-		<description>这是一个尚未解析的自译解技术核心，需要解析为特定项目才能使用。\n\n一种被称为＂自译解技术核心＂的，来自星铃＂领航计划＂的极端先进技术教学装置，形态多变，但大多有多种明显的接口。在边缘世界极其少见，似乎大多数都被星铃拓荒队严加保管。\n\n从大脑链接到全息投影，这一装置旨在向任何具有智能的生物个体解释星铃的科技并指导他将其付诸实践。而奇怪的，部分蜂群思维式生物无法使用和理解这一设备教导的知识。尚不清楚星铃出于什么理由制造了这一装置，但它确实有助于使用者解锁进一步的星铃科技。</description>
+		<description>这是一个尚未解析的自译解技术核心，需要解析为特定项目才能使用。\n\n一种被称为＂自译解技术核心＂的，来自星铃＂领航计划＂的极端先进技术教学装置，形态多变，但大多有多种明显的接口。在边缘世界极其少见，似乎大多数都被星铃科考队严加保管。\n\n从大脑链接到全息投影，这一装置旨在向任何具有智能的生物个体解释星铃的科技并指导他将其付诸实践。而奇怪的，部分蜂群思维式生物无法使用和理解这一设备教导的知识。尚不清楚星铃出于什么理由制造了这一装置，但它确实有助于使用者解锁进一步的星铃科技。</description>
 		<descriptionHyperlinks>
 			<ThingDef>Celes_STC_MainTech_III</ThingDef>
 			<RecipeDef>Parse_CelesSTC_MainTech_III</RecipeDef>
@@ -244,7 +274,7 @@
 	<ThingDef ParentName="Celes_STCResourceBase">
         <defName>Celes_STC_MainTech_III</defName>
         <label>自译解技术核心（尘构技术解译）</label>
-        <description>这是关于星铃研究项目＂尘构技术解译＂的自译解技术核心。\n\n一种被称为＂自译解技术核心＂的，来自星铃＂领航计划＂的极端先进技术教学装置，形态多变，但大多有多种明显的接口。在边缘世界极其少见，似乎大多数都被星铃拓荒队严加保管。\n\n从大脑链接到全息投影，这一装置旨在向任何具有智能的生物个体解释星铃的科技并指导他将其付诸实践。而奇怪的，部分蜂群思维式生物无法使用和理解这一设备教导的知识。尚不清楚星铃出于什么理由制造了这一装置，但它确实有助于使用者解锁进一步的星铃科技。\n\n尘构技术解译\n\n破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。</description>
+        <description>这是关于星铃研究项目＂尘构技术解译＂的自译解技术核心。\n\n一种被称为＂自译解技术核心＂的，来自星铃＂领航计划＂的极端先进技术教学装置，形态多变，但大多有多种明显的接口。在边缘世界极其少见，似乎大多数都被星铃科考队严加保管。\n\n从大脑链接到全息投影，这一装置旨在向任何具有智能的生物个体解释星铃的科技并指导他将其付诸实践。而奇怪的，部分蜂群思维式生物无法使用和理解这一设备教导的知识。尚不清楚星铃出于什么理由制造了这一装置，但它确实有助于使用者解锁进一步的星铃科技。\n\n尘构技术解译\n\n破译并研究星铃的独特技术之一——尘构技术，一种基于控制论的可编程增强纳米机械。解锁适用于边缘世界的尘构应急生产方式，并开启真正的标准星铃技术。</description>
 		<descriptionHyperlinks>
 			<ThingDef>Celes_STCLock</ThingDef>
 			<RecipeDef>Parse_CelesSTC_MainTech_III</RecipeDef>

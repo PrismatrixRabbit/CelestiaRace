@@ -5,7 +5,7 @@
     <ThingDef ParentName="Celes_MakeableDrugBase">
         <defName>Celes_CS12M</defName>
         <label>CS-12作战止血剂</label>
-        <description>一种合成化学制剂，用于短暂抑制使用者的痛觉神经，激活机体愈合机制，并通过多途径抑制出血。注意，CS-12通过过载细胞活性实现机体增强，其后效有一定致命性。\n\n过量使用CS-12的风险巨大，以至于星铃拓荒队使用的合成配方从根本上难以合成高浓度的CS-12。但即使如此，连续注射CS-12仍然具有不低的风险。</description>
+        <description>一种合成化学制剂，用于短暂抑制使用者的痛觉神经，激活机体愈合机制，并通过多途径抑制出血。注意，CS-12通过过载细胞活性实现机体增强，其后效有一定致命性。\n\n过量使用CS-12的风险巨大，以至于星铃科考队使用的合成配方从根本上难以合成高浓度的CS-12。但即使如此，连续注射CS-12仍然具有不低的风险。</description>
         <descriptionHyperlinks>
             <HediffDef>Celes_CS12_HighSample</HediffDef>
             <HediffDef>Celes_CS12_After</HediffDef>

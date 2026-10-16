@@ -59,4 +59,7 @@
     当前效率乘数：{2}%\n
     点击来设置维护阈值。\n\n</Celes_Keyed_Maintenance_Tooltip>
 
+  <!-- ── Crystal system (00M F5): total growth points + expected yield; {2}=drop item label ── -->
+  <CelesIM_Keyed_CrystalLevel>Growth: {0}\nYield: {1} {2}</CelesIM_Keyed_CrystalLevel>
+
 </LanguageData>

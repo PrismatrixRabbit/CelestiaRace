@@ -40,9 +40,7 @@
 		<defName>CelesFaction_Namer</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->星铃第七舰队拓荒队</li>
-				<li>r_name->“提灯”联合拓荒队</li>
-				<li>r_name->星铃第七舰队前哨</li>
+				<li>r_name->星铃外勤部</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
