@@ -13,57 +13,15 @@
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_OnSkin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_OnSkin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Shell.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Apparel/Apparel_Shell.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/BackstoryDefs/Backstory_CelesAdult_Outlander.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/BackstoryDefs/Backstory_CelesAdult_Outlander.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Drugs/CS-12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Drugs/CS-12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Drugs/IAS-2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Drugs/IAS-2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Drugs/NS-90.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Drugs/NS-90.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Effects/Mote_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Effects/Mote_IndustryModule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_Intro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_Intro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_AdvancedResource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_AdvancedResource.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_BaseResourse.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_Cargo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_Cargo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_Utility.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_Utility.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ResearchProjectDefs/CelesResearchProjects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ResearchProjectDefs/CelesResearchProjects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/RulePacks/RulePacksNamers_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RulePacks/RulePacksNamers_Celes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Stats/Stats_Building.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Stats/Stats_Building.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/Surgery/Surgery_implant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Surgery/Surgery_implant.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/TerrainDefs/Terrain_Crystal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/TerrainDefs/Terrain_Crystal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Crystal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Crystal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_CrystalCluster.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_OrbitDrop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_OrbitDrop.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Production.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Production.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_SupportBeacon.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_AdvancedResource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_AdvancedResource.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_BaseResourse.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Cargo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Cargo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Utility.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Utility.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_Special.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_Special.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/TraderKindDefs/Celes_TraderKinds_Caravan_Pioneer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/TraderKindDefs/Celes_TraderKinds_Caravan_Pioneer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/CelesIM_WorkGivers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/WorkGiverDefs/CelesIM_WorkGivers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6_Biotech/Patches/Biotech_Recipes_Link.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6_Biotech/Patches/Biotech_Recipes_Link.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About/About.xml" beforeDir="false" afterPath="$PROJECT_DIR$/About/About.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesIM_Keys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesIM_Keys.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Languages/English/Keyed/Key.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/English/Keyed/Key.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/Celes_Indicator_ThreadLine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/Celes_Indicator_ThreadLineRelay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/LegacyElectroicComputer/LegacyElectroicComputer_east.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/LegacyElectroicComputer/LegacyElectroicComputer_south.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/ShaperNanoForge/ShaperNanoForge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/ShaperNanoForge/ShaperNanoForge_Content.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/ShaperNanoForge/ShaperNanoForge_Glow_south.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/ShaperNanoForge/ShaperNanoForge_Light_south.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/SimplifiedControlTower/SimplifiedControlTower.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Building/TransformTerminal/TransformTerminal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Item/BaseResource/FleshReplicationMaterial/FleshReplicationMaterial.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Pawn/Mechanoid/Celes_MechTest_south.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Textures/Celes/Pawn/Mechanoid/Celes_MechTest_south.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoadFolders.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LoadFolders.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Item/Misc/NanoManifold_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Item/Misc/NanoManifold_B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Item/Misc/NanoManifold_C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/UI/CelesFD_Icons/Y_Test.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Textures/Celes/UI/CelesFD_Icons/Y_Test.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,7 +291,9 @@
       <workItem from="1791835415313" duration="3558000" />
       <workItem from="1791919454843" duration="42325000" />
       <workItem from="1792078296415" duration="4200000" />
-      <workItem from="1792100857088" duration="31883000" />
+      <workItem from="1792100857088" duration="32050000" />
+      <workItem from="1792220746459" duration="4143000" />
+      <workItem from="1792290321057" duration="3316000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -623,7 +583,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791661720619</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="拓荒武器+工业测试！">
+      <option name="closed" value="true" />
+      <created>1792181616115</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1792181616115</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +612,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="自动生产设施" />
     <MESSAGE value="适配1.6" />
     <MESSAGE value="1.6适配，发布更新，自动化建筑测试" />
     <MESSAGE value="修正建筑类别" />
@@ -669,7 +636,8 @@
     <MESSAGE value="超绝大辅助建筑" />
     <MESSAGE value="工业系统完工！" />
     <MESSAGE value="工业武器重构" />
-    <option name="LAST_COMMIT_MESSAGE" value="工业武器重构" />
+    <MESSAGE value="拓荒武器+工业测试！" />
+    <option name="LAST_COMMIT_MESSAGE" value="拓荒武器+工业测试！" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

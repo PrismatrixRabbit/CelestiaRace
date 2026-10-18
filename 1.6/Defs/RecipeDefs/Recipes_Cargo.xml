@@ -608,6 +608,7 @@
         </recipeUsers>
         <researchPrerequisites>
             <li>Celes_Cargo_II</li>
+            <li>MedicineProduction</li>
         </researchPrerequisites>
         <productHasIngredientStuff>false</productHasIngredientStuff>
         <ingredients>
@@ -747,6 +748,7 @@
         </recipeUsers>
         <researchPrerequisites>
             <li>Celes_Cargo_III</li>
+            <li>ComplexClothing</li>
         </researchPrerequisites>
         <productHasIngredientStuff>false</productHasIngredientStuff>
         <ingredients>

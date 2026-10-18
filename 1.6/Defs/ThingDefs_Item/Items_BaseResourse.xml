@@ -34,6 +34,36 @@
 
     <!-- ========== 尘构材料 ========== -->
 
+    <ThingDef ParentName="ResourceBase"><!-- 晶化尘构单元 -->
+        <defName>Celes_NanoMachine</defName>
+        <label>晶态尘构单元</label>
+        <description>处于基准态的，名为尘构的分子机械。\n\n本质是一种模块化，受限再编程性的纳米级工具组。晶化基准形态为尘构组成的便于输运的长程有序结构，使用时通过外源场控注入预设指令。尘构物质可以简单理解为外源编码的硅-碳基FPGA单元。基础功能包括但不限于靶向物质输送、分子级物质排列、组装与修复（包括有限的自组装）、分布式传感器和信息转译。</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/DustMech/NanoMachine</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>75</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>42</MarketValue>
+            <Mass>0.01</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0.1</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate> <!-- Not returned to player when product made of this is smelted. -->
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Celes_TradeBase</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- ========== 尘构加工 ========== -->
+
     <ThingDef ParentName="ResourceBase"><!-- 尘晶晶种 --><!-- 贴图未更新 -->
         <defName>Celes_InitialCrystalCluster</defName>
         <label>尘晶晶种</label>
@@ -84,7 +114,7 @@
         <thingCategories>
             <li>Celes_Manufactured</li>
         </thingCategories>
-        
+
         <comps>
             <li Class="CompProperties_CompAnalyzableUnlockResearch">
                 <analysisID>356174224</analysisID>
@@ -117,7 +147,7 @@
             </li>
         </comps>
     </ThingDef>
-    
+
     <ThingDef ParentName="UnfinishedBase">
         <defName>Celes_UnfinishedCrystal</defName>
         <label>复制中的尘构</label>
@@ -132,33 +162,62 @@
         </graphicData>
         <stuffCategories Inherit="false" />
     </ThingDef>
-    
-    <ThingDef ParentName="ResourceBase"><!-- 晶化尘构单元 -->
-        <defName>Celes_NanoMachine</defName>
-        <label>晶态尘构单元</label>
-        <description>处于基准态的，名为尘构的分子机械。\n\n本质是一种模块化，受限再编程性的纳米级工具组。晶化基准形态为尘构组成的便于输运的长程有序结构，使用时通过外源场控注入预设指令。尘构物质可以简单理解为外源编码的硅-碳基FPGA单元。基础功能包括但不限于靶向物质输送、分子级物质排列、组装与修复（包括有限的自组装）、分布式传感器和信息转译。</description>
+
+    <ThingDef>
+        <defName>Celes_LayeredCrystal</defName>
+        <label>解理晶片</label>
+        <description>解理晶片</description>
+    </ThingDef>
+
+    <ThingDef>
+        <defName>Celes_CrystalSlurry</defName>
+        <label>尘晶浊液</label>
+        <description>尘晶浊液</description>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase" Name="ReplicationMaterial"><!-- 尘晶培养底料 -->
+        <defName>Celes_ReplicationMaterial</defName>
+        <label>尘晶培养底料</label>
+        <description>尘晶培养底料，晶体培育器的基本燃料。</description>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Celes/Item/DustMech/NanoMachine</texPath>
+            <texPath>Celes/Item/BaseResource/ReplicationMaterial</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.85</drawSize>
         </graphicData>
-        <stackLimit>75</stackLimit>
+        <stackLimit>25</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
-            <MaxHitPoints>50</MaxHitPoints>
-            <MarketValue>42</MarketValue>
-            <Mass>0.01</Mass>
+            <MaxHitPoints>300</MaxHitPoints>
+            <MarketValue>15.0</MarketValue>
             <Flammability>0</Flammability>
-            <DeteriorationRate>0.1</DeteriorationRate>
+            <Beauty>-8</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-2</Cleanliness>
+            <Mass>1</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
         </statBases>
-        <intricate>true</intricate> <!-- Not returned to player when product made of this is smelted. -->
         <thingCategories>
             <li>Celes_Manufactured</li>
         </thingCategories>
         <tradeTags>
             <li>Celes_TradeBase</li>
         </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ReplicationMaterial"><!-- 尘晶培养底料(生物质) -->
+        <defName>Celes_ReplicationMaterialFlesh</defName>
+        <label>尘晶培养底料(生物质)</label>
+        <description>尘晶培养底料，晶体培育器的基本燃料。这份由生物质制造。</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Celes/Item/BaseResource/ReplicationMaterialFlesh</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>250.0</MarketValue>
+        </statBases>
     </ThingDef>
 
     <!-- ========== 基础资源 ========== -->
@@ -302,51 +361,6 @@
             <li>Celes_TradeBase</li>
         </tradeTags>
         <allowedArchonexusCount>80</allowedArchonexusCount>
-    </ThingDef>
-
-    <ThingDef ParentName="ResourceBase" Name="ReplicationMaterial"><!-- 尘晶培养底料 -->
-        <defName>Celes_ReplicationMaterial</defName>
-        <label>尘晶培养底料</label>
-        <description>尘晶培养底料，晶体培育器的基本燃料。</description>
-        <tickerType>Normal</tickerType>
-        <graphicData>
-            <texPath>Celes/Item/BaseResource/ReplicationMaterial</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.85</drawSize>
-        </graphicData>
-        <stackLimit>25</stackLimit>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <statBases>
-            <MaxHitPoints>300</MaxHitPoints>
-            <MarketValue>15.0</MarketValue>
-            <Flammability>0</Flammability>
-            <Beauty>-8</Beauty>
-            <BeautyOutdoors>0</BeautyOutdoors>
-            <Cleanliness>-2</Cleanliness>
-            <Mass>1</Mass>
-            <DeteriorationRate>0</DeteriorationRate>
-        </statBases>
-        <thingCategories>
-            <li>Celes_Manufactured</li>
-        </thingCategories>
-        <tradeTags>
-            <li>Celes_TradeBase</li>
-        </tradeTags>
-    </ThingDef>
-
-    <ThingDef ParentName="ReplicationMaterial"><!-- 尘晶培养底料(生物质) -->
-        <defName>Celes_ReplicationMaterialFlesh</defName>
-        <label>尘晶培养底料(生物质)</label>
-        <description>尘晶培养底料，晶体培育器的基本燃料。这份由生物质制造。</description>
-        <tickerType>Normal</tickerType>
-        <graphicData>
-            <texPath>Celes/Item/BaseResource/ReplicationMaterialFlesh</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.85</drawSize>
-        </graphicData>
-        <statBases>
-            <MarketValue>250.0</MarketValue>
-        </statBases>
     </ThingDef>
 
     <!-- ========== 先进资源 ========== -->

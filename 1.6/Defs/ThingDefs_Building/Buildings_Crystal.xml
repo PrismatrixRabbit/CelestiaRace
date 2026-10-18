@@ -22,16 +22,20 @@
                               越小 → 判定次数越多（链越长）；必须 > 0（否则死循环）。
    perDecreaseChance（0.15）—— 每个非最高级晶簇对总概率的削减量。密度自限核心：
                               范围内晶簇越多，下次检测的总概率越低，饱和后自然停止扩散。
-   minGrowChance（0.05）   —— 保底下限。削减导致 C ≤ 0 时仍保留一次低概率判定，
+   minGrowChance（0.01）   —— 保底下限。削减导致 C ≤ 0 时仍保留一次低概率判定，
                               保证高密度环境下不会完全停摆（仍有少量新簇机会）。
-   chanceToGrow（0.33）    —— 晶簇个体生长值积累概率。每次检测每晶簇独立掷骰，
+                              [2026-10-17 v2] 0.05→0.01：保底吸引子修复（floor/μ>G/d 时
+                              吞吐=24×floor×Y 与阈值无关，t4>100 即触发——0.01 触发线 t4>500）。
+   chanceToGrow（0.5）     —— 晶簇个体生长值积累概率。每次检测每晶簇独立掷骰，
                               命中则生长值 +1（升级阈值见 pointToGrow）。
+                              [2026-10-17 v2] 0.33→0.5（浓缩重参数化，检测周期 4h→1h 配套）：
+                              均值/稳态/吞吐严格不变，t3 时长 sd 1.09→0.33 天。
 
  示例（total=1.5 / max=0.8 / step=0.5 / 无晶簇时）：
    轮1：C=1.5，判定概率=min(1.5,0.8)=0.8，判定后 C=1.0
    轮2：C=1.0，判定概率=0.8，判定后 C=0.5
    轮3：C=0.5，判定概率=0.5，判定后 C=0 → 链结束（最多 3 次判定）
-   密度自限示例（20 个晶簇）：C = 1.5 − 20×0.15 = −1.5 → 保底 0.05 → 仅 1 次判定
+   密度自限示例（20 个晶簇）：C = 1.5 − 20×0.15 = −1.5 → 保底 0.01 → 仅 1 次判定
  ============================================ -->
 
   <!-- 尘构晶簇：Mineable 建筑，原版开采系统零改动接入 -->
@@ -88,16 +92,16 @@
         <!-- dev 直接生成时的默认参数（培育器/晶种生成时由 InitGrowth 覆盖） -->
         <pointToGrow>
           <li>0</li>
-          <li>2</li>
-          <li>5</li>
-          <li>10</li>
+          <li>12</li>
+          <li>30</li>
+          <li>165</li>
         </pointToGrow>
-        <!-- 各等级开采产出 1/2/4/16 -->
+        <!-- 各等级开采产出 1/2/8/32（L4 封顶；软边际超限生长仅供 B′ 蓄晶——主轴台账 v2 裁决 2026-10-17） -->
         <yieldByLevel>
           <li>1</li>
           <li>2</li>
-          <li>4</li>
-          <li>16</li>
+          <li>8</li>
+          <li>32</li>
         </yieldByLevel>
         <!-- dev 兜底参数（培育器/晶种生成时由 InitGrowth 覆盖）：两晶态地板 -->
         <terrainToGrow>
@@ -191,13 +195,13 @@
         <linkHeight>1.7</linkHeight>
       </li>
       <li Class="CelesFeature.CelesIM_CompProperties_CrystalSeeder">
-        <ticksToGrow>10000</ticksToGrow>
+        <ticksToGrow>2500</ticksToGrow>
         <growRadius>9.9</growRadius>
         <totalGrowChance>1.5</totalGrowChance>
         <maxGrowChance>0.8</maxGrowChance>
         <growStepDecrement>0.5</growStepDecrement>
         <perDecreaseChance>0.15</perDecreaseChance>
-        <minGrowChance>0.05</minGrowChance>
+        <minGrowChance>0.01</minGrowChance>
         <baseGrowDef>Celes_CrystalCluster</baseGrowDef>
         <!-- 可生长地板：人工晶态表面 + 晶化表面（两地板均配） -->
         <terrainToGrow>
@@ -208,11 +212,11 @@
         <spawnTerrain>Celes_CrystalSurface</spawnTerrain>
         <pointToGrow>
           <li>0</li>
-          <li>2</li>
-          <li>5</li>
-          <li>10</li>
+          <li>12</li>
+          <li>30</li>
+          <li>165</li>
         </pointToGrow>
-        <chanceToGrow>0.33</chanceToGrow>
+        <chanceToGrow>0.5</chanceToGrow>
       </li>
       <!--
       <li Class="CelesFeature.CelesIM_CompProperties_CorpseFuel">
@@ -230,7 +234,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Celes_CrystalSeed</defName>
     <label>尘晶柱</label>
-    <description>柱状的尘晶，会在周围催生更小型的尘晶晶簇，本身也可以开采出尘晶碎片。因为不明原因的突变对周围的植物和动物会有毒害作用，好在物理破坏可以摧毁其活性。\n\n尘晶柱会提取和富集地下的特定矿物质，往周围生产和释放微小的晶体孢子，这些孢子在接触到固态表面后就会开始形成尘晶晶簇。正常来说不应该在有机物上生长……但好在大多数情况下晶簇是打不过免疫系统的，但是植物就不好说了。</description>
+    <description>柱状的尘晶，会在周围催生更小型的尘晶晶簇，本身也可以开采出尘晶碎片。因为不明原因的突变对周围的植物和动物会有毒害作用，防毒面具可以有效防护，物理破坏也可以摧毁其活性。\n\n尘晶柱会提取和富集地下的特定矿物质，往周围生产和释放微小的晶体孢子，这些孢子在接触到固态表面后就会开始形成尘晶晶簇。正常来说不应该在有机物上生长……但好在大多数情况下晶簇是打不过免疫系统的，但是植物就不好说了。</description>
     <descriptionHyperlinks>
       <ThingDef>Celes_CrystallineMaterial</ThingDef>
     </descriptionHyperlinks>
@@ -263,14 +267,14 @@
     </costList>
     <comps>
       <li Class="CelesFeature.CelesIM_CompProperties_CrystalSeed">
-        <attemptsLimit>45</attemptsLimit>
+        <attemptsLimit>168</attemptsLimit>
         <ticksToGrow>2500</ticksToGrow>
         <growRadius>9.9</growRadius>
         <totalGrowChance>0.8</totalGrowChance>
         <maxGrowChance>0.8</maxGrowChance>
         <growStepDecrement>0.4</growStepDecrement>
         <perDecreaseChance>0.10</perDecreaseChance>
-        <minGrowChance>0.05</minGrowChance>
+        <minGrowChance>0.01</minGrowChance>
         <baseGrowDef>Celes_CrystalCluster</baseGrowDef>
         <!-- 生长表面 = 任意 Medium 支撑（Affordance 模式，用户裁决：不限于晶态地板）；terrainToGrow 保留备用 -->
         <terrainCheckMode>Affordance</terrainCheckMode>
@@ -282,20 +286,20 @@
         <spawnTerrain>Celes_CrystalSurface</spawnTerrain>
         <pointToGrow>
           <li>0</li>
-          <li>2</li>
-          <li>5</li>
-          <li>10</li>
+          <li>12</li>
+          <li>30</li>
+          <li>165</li>
         </pointToGrow>
-        <chanceToGrow>0.33</chanceToGrow>
+        <chanceToGrow>0.5</chanceToGrow>
         <activeGraphicData>
           <texPath>Celes/Building/CrystalSeeder/CrystalSeed_Active</texPath>
           <graphicClass>Graphic_Single</graphicClass>
         </activeGraphicData>
       </li>
-      <!-- 数值：45 次判定 × 0.25 = +11.25 → 最终半径 22.15（10.9 + 11.25）；硬上限 125 -->
+      <!-- 数值：168 次判定 × 0.067 = +11.26 → 最终半径 ≈22.15（10.9 + 11.26；环量级保持=裁决②——寿命 45→168 次联动缩放 0.25→0.067，2026-10-17）；硬上限 125 -->
       <li Class="CelesFeature.CelesIM_CompProperties_CrystalBlight">
         <startRadius>10.9</startRadius>
-        <radiusGrowPerCheck>0.25</radiusGrowPerCheck>
+        <radiusGrowPerCheck>0.067</radiusGrowPerCheck>
         <expandCheckTicks>2500</expandCheckTicks>
         <maxRadius>125</maxRadius>
         <pawnHediff>Celes_DustMechInfection</pawnHediff>
@@ -322,7 +326,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Celes_CrystalInitialSeed</defName>
     <label>尘晶母岩</label>
-    <description>大型而特殊的尘晶柱，有着比其他尘晶柱更高的活性，可以拆解出特殊的尘晶晶种。尘晶晶种对于星铃的材料生产有着特殊的意义。\n尘晶母岩会在周围催生更小型的尘晶晶簇。因为不明原因的突变对周围的植物和动物会有毒害作用，好在物理破坏可以摧毁其活性。\n\n尘晶母岩会提取和富集地下的特定矿物质，往周围生产和释放微小的晶体孢子，这些孢子在接触到固态表面后就会开始形成尘晶晶簇。正常来说不应该在有机物上生长……但好在大多数情况下晶簇是打不过免疫系统的，但是植物就不好说了。</description>
+    <description>大型而特殊的尘晶柱，有着比其他尘晶柱更高的活性，可以拆解出特殊的尘晶晶种。尘晶晶种对于星铃的材料生产有着特殊的意义。\n尘晶母岩会在周围催生更小型的尘晶晶簇。因为不明原因的突变对周围的植物和动物会有毒害作用，防毒面具可以有效防护，物理破坏也可以摧毁其活性。。\n\n尘晶母岩会提取和富集地下的特定矿物质，往周围生产和释放微小的晶体孢子，这些孢子在接触到固态表面后就会开始形成尘晶晶簇。正常来说不应该在有机物上生长……但好在大多数情况下晶簇是打不过免疫系统的，但是植物就不好说了。</description>
     <descriptionHyperlinks>
       <ThingDef>Celes_InitialCrystalCluster</ThingDef>
     </descriptionHyperlinks>
@@ -356,13 +360,13 @@
     <comps>
       <li Class="CelesFeature.CelesIM_CompProperties_CrystalSeed">
         <attemptsLimit>99999</attemptsLimit>
-        <ticksToGrow>10000</ticksToGrow>
+        <ticksToGrow>2500</ticksToGrow>
         <growRadius>9.9</growRadius>
         <totalGrowChance>1.5</totalGrowChance>
         <maxGrowChance>0.8</maxGrowChance>
         <growStepDecrement>0.5</growStepDecrement>
         <perDecreaseChance>0.15</perDecreaseChance>
-        <minGrowChance>0.05</minGrowChance>
+        <minGrowChance>0.01</minGrowChance>
         <baseGrowDef>Celes_CrystalCluster</baseGrowDef>
         <!-- 生长表面 = 任意 Medium 支撑（Affordance 模式）；terrainToGrow 保留备用 -->
         <terrainCheckMode>Affordance</terrainCheckMode>
@@ -374,11 +378,11 @@
         <spawnTerrain>Celes_CrystalSurface</spawnTerrain>
         <pointToGrow>
           <li>0</li>
-          <li>2</li>
-          <li>5</li>
-          <li>10</li>
+          <li>12</li>
+          <li>30</li>
+          <li>165</li>
         </pointToGrow>
-        <chanceToGrow>0.33</chanceToGrow>
+        <chanceToGrow>0.5</chanceToGrow>
         <activeGraphicData>
           <texPath>Celes/Building/CrystalSeeder/CrystalInitialSeed_Active</texPath>
           <graphicClass>Graphic_Single</graphicClass>

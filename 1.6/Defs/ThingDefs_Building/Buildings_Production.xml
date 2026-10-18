@@ -35,7 +35,7 @@
             <WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
             
             <Celes_WarmUpDuration>12500</Celes_WarmUpDuration>
-            <Celes_UnconnectedEfficiency>0.35</Celes_UnconnectedEfficiency>
+            <Celes_UnconnectedEfficiency>0.6</Celes_UnconnectedEfficiency>
         </statBases>
         <size>(3,1)</size>
         <designationCategory>Celes_SpecialBuildings</designationCategory>

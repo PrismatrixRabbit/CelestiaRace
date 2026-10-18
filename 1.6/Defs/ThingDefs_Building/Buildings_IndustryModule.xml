@@ -38,6 +38,9 @@
             <Flammability>1.0</Flammability>
         </statBases>
         <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>Celes_MainTech_I</li>
+        </researchPrerequisites>
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
@@ -75,7 +78,7 @@
 
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_RelayNode</defName>
-        <label>中继信号塔</label>
+        <label>转发单元</label>
         <description>扩展编译线程连接范围的中继设备。</description>
         <thingClass>Building</thingClass>
         <graphicData>
@@ -107,6 +110,9 @@
             <Flammability>1.0</Flammability>
             <Mass>8</Mass>
         </statBases>
+        <researchPrerequisites>
+            <li>Celes_MainTech_I</li>
+        </researchPrerequisites>
         <comps>
             <!-- 7 连接数 / 范围 4.9 -->
             <li Class="CelesFeature.CelesIM_CompProperties_ThreadRelay">
@@ -131,7 +137,7 @@
     <!-- 高级中继信号塔——低连接数、超远范围（3 / 16.9） -->
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_RelayNodeAdvanced</defName>
-        <label>高级中继信号塔</label>
+        <label>束流转发塔</label>
         <description>扩展编译线程连接范围的高级中继设备：连接数低，但范围极远。</description>
         <thingClass>Building</thingClass>
         <graphicData>
@@ -162,6 +168,9 @@
             <Flammability>1.0</Flammability>
             <Mass>8</Mass>
         </statBases>
+        <researchPrerequisites>
+            <li>Celes_Manufactory_I</li>
+        </researchPrerequisites>
         <comps>
             <li Class="CelesFeature.CelesIM_CompProperties_ThreadRelay">
                 <connectionLimit>3</connectionLimit>
@@ -287,7 +296,7 @@
             <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
             <barDrawData>
                 <north>
-                    <preRotationOffset>(-1.04, -1.05)</preRotationOffset>
+                    <preRotationOffset>(-0.84, -0.55)</preRotationOffset>
                     <size>(0.7, 0.13)</size>
                 </north>
                 <south>
@@ -537,7 +546,7 @@
             <!-- TODO:进度条位置为按 5×3 体型的预估占位，随正式贴图校准 -->
             <barDrawData>
                 <north>
-                    <preRotationOffset>(-1.54, -1.55)</preRotationOffset>
+                    <preRotationOffset>(-1.04, -1.05)</preRotationOffset>
                     <size>(1.7, 0.13)</size>
                 </north>
                 <south>
@@ -624,7 +633,7 @@
          与锻炉严格一对一；自身零耗电、零线程占用 -->
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_Overclocker</defName>
-        <label>超频器</label>
+        <label>安全协议覆写器</label>
         <description>链接锻炉后解锁锻炉的超频开关：以额外的线程占用换取尘构机效率提升。仅在超频开启时，其解锁标签生效（锁定配方可见并接受挂单）。与锻炉严格一对一链接。自身零耗电。</description>
         <thingClass>Building</thingClass>
         <graphicData>
@@ -657,9 +666,8 @@
             <Mass>10</Mass>
         </statBases>
         <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-        <!-- TODO:研究门为提案档（通用工程基质），与超频配方时序的匹配待裁，如需调整改此列表 -->
         <researchPrerequisites>
-            <li>Celes_MainTech_III</li>
+            <li>Celes_Manufactory_II</li>
         </researchPrerequisites>
         <comps>
             <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
@@ -692,7 +700,7 @@
     <!-- 初级增幅器：+3 线程 / +700W 中枢负载（电力+空间双低效参考锚） -->
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_AmplifierBasic</defName>
-        <label>初级增幅器</label>
+        <label>早期线程阵列</label>
         <description>链接中枢的增益设施：提升中枢的编译线程产出 +3，同时增加中枢 700W 电力负载。必须直连中枢或经中枢协调器托管。</description>
         <thingClass>Building</thingClass>
         <graphicData>
@@ -724,7 +732,9 @@
             <Mass>25</Mass>
         </statBases>
         <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-        <!-- TODO:研究门待定档（现行测试资产无门，候选见交付报告） -->
+        <researchPrerequisites>
+            <li>Celes_MainTech_II</li>
+        </researchPrerequisites>
         <comps>
             <!-- 开关+CanBeActive 单门；maxDistance 6.9＝中枢连接半径 -->
             <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
@@ -754,7 +764,7 @@
     <!-- 节点增幅器：+1.75 线程 / +260W（填充件：小空间、不能当主力） -->
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_AmplifierNode</defName>
-        <label>节点增幅器</label>
+        <label>线程节点</label>
         <description>链接中枢的小型增益设施：提升中枢的编译线程产出，占地小，适合填补空余角落。必须直连中枢或经中枢协调器托管。</description>
         <thingClass>Building</thingClass>
         <graphicData>
@@ -786,7 +796,9 @@
             <Mass>8</Mass>
         </statBases>
         <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-        <!-- TODO:研究门待定档（现行测试资产无门，候选见交付报告） -->
+        <researchPrerequisites>
+            <li>Celes_MainTech_III</li>
+        </researchPrerequisites>
         <comps>
             <!-- TODO:maxSimultaneous 占位（照增幅器现值 4，实测定稿） -->
             <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
@@ -816,7 +828,7 @@
     <!-- 高级增幅器：+20 线程 / +4000W 中枢负载（主力件·电老虎·空间优势显著） -->
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_AmplifierAdvanced</defName>
-        <label>高级增幅器</label>
+        <label>集群线程阵列</label>
         <description>链接中枢的高级增益设施：提升中枢的编译线程产出 +20，同时增加中枢 4000W 电力负载。必须直连中枢或经中枢协调器托管。</description>
         <thingClass>Building</thingClass>
         <graphicData>
@@ -850,7 +862,9 @@
             <Mass>10</Mass>
         </statBases>
         <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
-        <!-- TODO:研究门待定档（现行测试资产无门，候选见交付报告） -->
+        <researchPrerequisites>
+            <li>Celes_MainTech_IV</li>
+        </researchPrerequisites>
         <comps>
             <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
                 <compClass>CelesFeature.CelesIM_CompFacility_ProducerDevice</compClass>
@@ -915,7 +929,9 @@
             <Mass>10</Mass>
         </statBases>
         <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-        <!-- TODO:研究门待定档（现行测试资产无门，候选见交付报告） -->
+        <researchPrerequisites>
+            <li>Celes_Manufactory_II</li>
+        </researchPrerequisites>
         <comps>
             <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
                 <compClass>CelesFeature.CelesIM_CompFacility_ProducerDevice</compClass>
@@ -984,7 +1000,9 @@
             <Mass>10</Mass>
         </statBases>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-        <!-- TODO:研究门待定档（现行测试资产无门，候选见交付报告） -->
+        <researchPrerequisites>
+            <li>Celes_MainTech_IV</li>
+        </researchPrerequisites>
         <comps>
             <!-- 对上：中枢设施——紧贴中枢（斜角相邻最小中心距 2.5）；中枢侧接纳 ≤2 台 -->
             <li Class="CelesFeature.CelesIM_CompProperties_AmplifierFacility">
