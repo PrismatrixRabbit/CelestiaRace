@@ -5,9 +5,16 @@
 
     <RecipeDef>
         <defName>Celes_MakeMedicineAlternative</defName>
-        <label>编织指令：医药</label>
-        <description>编织指令：医药</description>
-        <jobString>正在编织医药</jobString>
+        <label>替代性制药</label>
+        <description>以介质凝胶取代中性胺作为化工前体制作工业药物，受限于原始用途不同，这一配方需要更多的草药来弥补中性胺的价值。</description>
+        <descriptionHyperlinks>
+            <ThingDef>MedicineHerbal</ThingDef>
+            <ThingDef>Celes_BioGel</ThingDef>
+            <ThingDef>Cloth</ThingDef>
+            <ThingDef>Celes_Cloth</ThingDef>
+            <ThingDef>MedicineIndustrial</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>正在以替代性方法制药</jobString>
         <workAmount>720</workAmount>
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
@@ -64,9 +71,16 @@
 
     <RecipeDef>
         <defName>Celes_MakeMedicineAlternative_x4</defName>
-        <label>编织指令：医药 x4</label>
-        <description>编织指令：医药</description>
-        <jobString>正在编织医药</jobString>
+        <label>替代性制药 x4</label>
+        <description>以介质凝胶取代中性胺作为化工前体制作工业药物，受限于原始用途不同，这一配方需要更多的草药来弥补中性胺的价值。</description>
+        <descriptionHyperlinks>
+            <ThingDef>MedicineHerbal</ThingDef>
+            <ThingDef>Celes_BioGel</ThingDef>
+            <ThingDef>Cloth</ThingDef>
+            <ThingDef>Celes_Cloth</ThingDef>
+            <ThingDef>MedicineIndustrial</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>正在以替代性方法制药</jobString>
         <workAmount>2800</workAmount>
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>

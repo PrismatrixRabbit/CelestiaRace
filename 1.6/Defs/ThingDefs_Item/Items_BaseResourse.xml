@@ -6,7 +6,7 @@
     <ThingDef ParentName="ResourceBase"><!-- 介质凝胶 -->
         <defName>Celes_BioGel</defName>
         <label>介质凝胶</label>
-        <description>一种从植物中提取的凝胶状物质，富集了大量有效化学前体物质，其中的某些物质也能在特定环境下被催化成丝。</description>
+        <description>一种主要从基因改造植物中提取的凝胶状物质，富集了大量有效化学前体物质，其中的某些物质也能在特定环境下被催化成丝。</description>
         <descriptionHyperlinks>
             <ThingDef>Plant_CelesParsnip</ThingDef>
         </descriptionHyperlinks>
@@ -108,7 +108,7 @@
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
             <MarketValue>3</MarketValue>
-            <Mass>0.5</Mass>
+            <Mass>0.5</Mass><!-- 可能要取16mass -->
             <Flammability>0</Flammability>
         </statBases>
         <thingCategories>
@@ -163,16 +163,195 @@
         <stuffCategories Inherit="false" />
     </ThingDef>
 
-    <ThingDef>
+    <ThingDef ParentName="ResourceBase"><!-- 解理晶片：自动产线中间品（隐含定价——无显式 MarketValue） -->
         <defName>Celes_LayeredCrystal</defName>
         <label>解理晶片</label>
-        <description>解理晶片</description>
+        <description>沿着尘晶自然生长的晶界纹理拆解原始尘构材料为独立的分化单元并粗处理后得到的产物，可以相当程度提高尘晶的有效转化。</description>
+        <graphicData>
+            <texPath>Celes/Item/DustMech/LayeredCrystal</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <!-- TODO:Mass/堆叠上限占位（实测定稿） -->
+        <stackLimit>150</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Mass>0.1</Mass>
+            <DeteriorationRate>0.1</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
     </ThingDef>
 
-    <ThingDef>
+    <ThingDef ParentName="ResourceBase"><!-- 尘晶浊液：自动产线中间品（配平定价 6.5） -->
         <defName>Celes_CrystalSlurry</defName>
         <label>尘晶浊液</label>
-        <description>尘晶浊液</description>
+        <description>将初始分化的基准尘构以微型晶格细胞的模式培养在有机介质中，可以最大化尘晶的有效转化率。</description>
+        <graphicData>
+            <texPath>Celes/Item/DustMech/CrystalSlurry</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <!-- TODO:Mass/堆叠上限占位（实测定稿） -->
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>6.5</MarketValue>
+            <Flammability>0</Flammability>
+            <Mass>0.5</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase"><!-- 尘晶浊液（惰性）：自动产线循环工质（隐含定价——无显式 MarketValue） -->
+        <defName>Celes_CrystalSlurryInert</defName>
+        <label>尘晶浊液（惰性）</label>
+        <description>尘晶浊液（惰性）</description>
+        <graphicData>
+            <texPath>Celes/Item/DustMech/CrystalSlurryInert</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <!-- TODO:Mass/堆叠上限占位（实测定稿） -->
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Mass>0.5</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <!-- ═══ 元素族（T3/T4 元素经济·自动产线原料）═══ -->
+
+    <ThingDef ParentName="ResourceBase"><!-- 硅质 -->
+        <defName>Celes_ElementSilicon</defName>
+        <label>硅质基准材料</label>
+        <description>以尘构手段从石料中提纯的元素，通常为高纯硅。\n\n这种原料是星铃方舟科考队天体工程部使用的标准模式，通常提取自大天体地壳或S类小行星。</description>
+        <graphicData>
+            <texPath>Celes/Item/AdvancedResource/ElementSilicon</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <!-- TODO:堆叠上限占位（实测定稿） -->
+        <stackLimit>150</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>1</MarketValue>
+            <Flammability>0</Flammability>
+            <Mass>1</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase"><!-- 碳质 -->
+        <defName>Celes_ElementCarbon</defName>
+        <label>碳质基准材料</label>
+        <description>以尘构手段从石料或有机质中提纯的元素，通常为高纯石墨。\n\n这种原料是星铃方舟科考队天体工程部使用的标准模式，通常提取自大天体大气或C类小行星。</description>
+        <graphicData>
+            <texPath>Celes/Item/AdvancedResource/ElementCarbon</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <!-- TODO:堆叠上限占位（实测定稿） -->
+        <stackLimit>150</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>1</MarketValue>
+            <Flammability>0</Flammability>
+            <Mass>1</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase"><!-- 铁质 -->
+        <defName>Celes_ElementIron</defName>
+        <label>金属基准材料</label>
+        <description>以尘构手段从矿床中提纯的元素，通常为高纯铁、镍、铝、钛或者铂族金属。\n\n这种原料是星铃方舟科考队天体工程部使用的标准模式，通常提取自大天体矿床、地幔甚至地核或M类小行星。</description>
+        <graphicData>
+            <texPath>Celes/Item/AdvancedResource/ElementIron</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <!-- TODO:堆叠上限占位（实测定稿） -->
+        <stackLimit>150</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>4</MarketValue>
+            <Flammability>0</Flammability>
+            <Mass>1</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase"><!-- 氢质 -->
+        <defName>Celes_ElementHydrogen</defName>
+        <label>挥发基准材料</label>
+        <description>以尘构手段从大气或海洋中提纯的元素，通常在常温下是高纯气体，典型的包括氢、氦、氧、氮甚至氯与氟。\n\n这种原料是星铃方舟科考队天体工程部使用的标准模式，通常提取自大天体表土、大气、海洋与高纬度地区；以及高偏心率彗星或远恒星天体（例如D类小行星）。当然，在边缘世界，更大可能来自于有机质。</description>
+        <graphicData>
+            <texPath>Celes/Item/AdvancedResource/ElementHydrogen</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <!-- TODO:堆叠上限占位（实测定稿） -->
+        <stackLimit>150</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>25</MarketValue>
+            <Flammability>0</Flammability>
+            <Mass>1</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase"><!-- 稀有质 -->
+        <defName>Celes_ElementRare</defName>
+        <label>稀有基准材料</label>
+        <description>以尘构手段提纯的各类稀有元素，通常只能靠标识和色泽区分，包括但不限于锂、铍、硼这类低丰度元素、镧系元素、超重元素甚至无法归类的超凡造物。\n\n这种原料是星铃方舟科考队天体工程部使用的标准模式，通常提取自各式各样的场景。考虑到金和银的化学性质，以及铀为主的放射性重元素在边缘世界意外地常见，这三种/类元素反倒不必特殊标注和储存。</description>
+        <graphicData>
+            <texPath>Celes/Item/AdvancedResource/ElementRare</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>500</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>18.5</MarketValue>
+            <Flammability>0</Flammability>
+            <Mass>0.025</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Celes_Manufactured</li>
+        </thingCategories>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase" Name="ReplicationMaterial"><!-- 尘晶培养底料 -->
@@ -425,7 +604,7 @@
     <ThingDef ParentName="ResourceBase"><!-- 尘化丝绸 --><!-- 待平衡 & 待修正贴图 -->
         <defName>Celes_AdvancedCloth</defName>
         <label>尘化丝绸</label>
-        <description>一种先进的高生物相容性特种纺织面料，在可接受的成本内几乎完美的兼顾了强度和性能。但在边缘世界，可行性最高的复现方案几乎必须在恶魔菇产生的纤维基础上利用尘构物质重新排序纤维结构。\n\nA high-strength fabric made using Dust-Mech to reconfigure microscopic fibre structures. The formula is adapted to the environment of the Rimworld and is used to make all types of Celestia advanced clothing.</description>
+        <description>一种先进的高生物相容性特种纺织面料，在可接受的成本内几乎完美的兼顾了强度和性能。但在边缘世界，可行性最高的复现方案几乎必须在恶魔菇产生的纤维基础上利用尘构物质重新排序纤维结构。</description>
         <graphicData>
             <texPath>Celes/Item/AdvancedResource/AdvanceCloth</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>

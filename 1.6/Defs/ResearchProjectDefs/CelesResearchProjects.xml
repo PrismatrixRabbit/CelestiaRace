@@ -62,7 +62,7 @@
     <ResearchProjectDef>
         <defName>Celes_MainTech_III</defName><!-- 通用工程基质 --><!-- 也解锁「线程节点」 -->
         <label>通用工程基质</label>
-        <description>理解使用更精密的尘构工具，解锁制造「尘构基质」。这是一种准工程用途尘构，接近星铃天体工程部所使用的类型。\n\n&lt;color=#87cefa&gt;＂尘构，正式名称为纳米工程响应无人机(Nanotic Engineered Response Drones)，即N.E.R.D.。是一类基于控制论的增强纳米机械，能够在极端环境下自主运作，在指令约束下调整、构造与分解宏观物质。并能充当生物与机械系统之间的通用接口，感知、传递并处理多源信息流。这两者结合，让尘构可以进一步将这些指令信息具象为物理世界的操作。＂————解析自星铃自译解技术核心&lt;/color&gt;</description>
+        <description>理解使用更精密的尘构工具，解锁制造「尘构基质」。这是一种准工程用途尘构，接近星铃天体工程部所使用的类型。\n\n&lt;color=#87cefa&gt;＂尘构，正式名称为纳米工程响应无人机(Nanotic Engineered Response Drones)，即N.E.R.D.。是一类基于控制论的增强分子机械，能够在极端环境下自主运作，在指令约束下调整、构造与分解宏观物质。并能充当生物与机械系统之间的通用接口，感知、传递并处理多源信息流。这两者结合，让尘构可以进一步将这些指令信息具象为物理世界的操作。＂————解析自星铃自译解技术核心&lt;/color&gt;</description>
         <baseCost>2000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -298,7 +298,6 @@
         <description>以介质凝胶为原料替代制药过程中的中性胺，解锁以星铃的模式制造「医药」，以及「IAS-2免疫增强剂」和「NS-90神经兴奋剂」。\n\n尘构的指令集之中已经包含了对常见有机大分子的处理模型。借助这些精密的分子探针和人造酶，我们可以进一步优化我们的制药和材料技术。</description>
         <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
             <li>Celes_Bio_I</li>
         </prerequisites>
@@ -494,6 +493,7 @@
         <!-- 纳米离心机 纳米纤维织机 -->
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <prerequisites>
             <li>Celes_MainTech_II</li>
         </prerequisites>
@@ -511,8 +511,12 @@
         <label>安全协议超驰</label>
         <description>抵近尘构的真正安全边界绕过某些"仪式性条款"，解锁建造「安全协议覆写器」。</description>
         <!-- 纳米离心机 纳米纤维织机 -->
-        <baseCost>500</baseCost>
+        <baseCost>1500</baseCost>
         <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
         <prerequisites>
             <li>Celes_Manufactory_I</li>
             <li>Celes_MainTech_III</li>
@@ -531,8 +535,12 @@
         <label>尘构蓝图模型</label>
         <description>理解对物质构成建模与尘构指令叙述的同一性，解锁建造「"构造"纳米锻炉」。</description>
         <!-- 纳米离心机 纳米纤维织机 -->
-        <baseCost>500</baseCost>
+        <baseCost>3000</baseCost>
         <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
         <prerequisites>
             <li>Celes_Manufactory_II</li>
             <li>Celes_MainTech_IV</li>

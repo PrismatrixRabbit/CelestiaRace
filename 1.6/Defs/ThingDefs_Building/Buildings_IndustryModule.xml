@@ -6,7 +6,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_CentralControlTower</defName>
         <label>中枢计算塔</label>
-        <description>星铃局域尘构控制系统的核心组件，主要负责协调大批数据的统筹处理，也能少量的提供「编译线程」。</description>
+        <description>「域(DOMAIN)」的中枢设备和核心组件，可以负责协调大批数据的统筹处理，其数据处理能力被主要特化为执行尘构的编译与控制运算。也能少量的提供「编译线程」并在有限的信号范围内支持尘构编译运算。\n\n作为星铃尘构作业管理与自主接口节点(Dust-mech Operation Management and Autonomous Interface Node, D.O.M.A.I.N.)的核心组件，事实上，中枢计算塔也承担能量整流和无线输电的功能，因此「域」内的几乎所有的终端设备都不需要消耗电力，但中枢计算塔会随着「编译线程」上限的提升大幅增加耗电量。这不取决于使用的「编译线程」，而仅仅取决于「编译线程」的上限。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Celes/Building/CentralControlTower/CentralControlTower</texPath>
@@ -79,7 +79,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_RelayNode</defName>
         <label>转发单元</label>
-        <description>扩展编译线程连接范围的中继设备。</description>
+        <description>扩展中枢设备编译线程信号覆盖范围的中继设备，只能连接有限数量的其他设备。在禁用终端设备连接后，能优化传输协议而增加信号范围。中继设备不占用「编译线程」。\n\n依靠这种外部配置的传输协议模式，转发单元能兼顾连接数量和连接距离。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Celes/Building/RelayNode/RelayNode</texPath>
@@ -138,7 +138,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_RelayNodeAdvanced</defName>
         <label>束流转发塔</label>
-        <description>扩展编译线程连接范围的高级中继设备：连接数低，但范围极远。</description>
+        <description>扩展中枢设备编译线程信号覆盖范围的塔状中继设备，只能连接极其有限数量的其他设备。在禁用终端设备连接后，能优化传输协议而大幅增加信号范围。\n\n这种转发单元为了扩大信号传输距离而削减了可用频段数量，因而只能连接更少的其他设备。但这提供了极其巨大的信号传输范围，加上传输协议的优化模式，适合用作长距离中继而非局域连接。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Celes/Building/RelayNodeAdvanced/RelayNodeAdvanced</texPath>
@@ -196,7 +196,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_NanoForgeShaper</defName>
         <label>「塑造」纳米锻炉</label>
-        <description>一级自动化纳米锻炉。占用「编译线程」，自主执行锻造配方：效率不及手工锻炉，胜在无需人员值守。必须连接线程网络才能工作。</description>
+        <description>基础型号的自动化纳米锻炉，无需人力工作持续编译，但需要占用「编译线程」以编译和控制尘构自主执行配方。\n\n这种纳米锻炉的效率不及熟练工匠，但全天候可用加之「域」内的无线输电模式使其完全可作为具有竞争力的加工设备。</description>
         <thingClass>CelesFeature.CelesIM_Building_AutoProducer</thingClass>
         <graphicData>
             <texPath>Celes/Building/NanoForgeShaper/NanoForgeShaper</texPath>
@@ -245,6 +245,15 @@
             <li>Celes_MainTech_II</li>
         </researchPrerequisites>
         <recipes>
+            <li>Celes_AutoRecipe_NanoMachineDirect</li>
+            <li>Celes_AutoRecipe_LayeredCrystal</li>
+            <li>Celes_AutoRecipe_NanoMachineByChip</li>
+            <li>Celes_AutoRecipe_Alloy</li>
+            <li>Celes_AutoRecipe_NanoComponent</li>
+            <li>Celes_AutoRecipe_Component</li>
+            <li>Celes_AutoRecipe_Cloth</li>
+            <li>Celes_AutoRecipe_ClothByCloth</li>
+            <li>Celes_AutoRecipe_GelFromFood</li>
         </recipes>
         <comps>
             <!-- Inspect 工作速度系数行（工作台族惯例置首位） -->
@@ -321,7 +330,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_NanoForgeForger</defName>
         <label>「铸造」纳米锻炉</label>
-        <description>二级自动化纳米锻炉。占用编译线程自主执行锻造配方，效率已超越手工锻炉。必须连接线程网络才能工作。</description>
+        <description>高级型号的自动化纳米锻炉，无需人力工作持续编译，但需要占用「编译线程」以编译和控制尘构自主执行配方。\n\n这种纳米锻炉在精度和尺度上比起前代有显著优势，已经完全可以制造极其精密的组件，亦可组装各型机械体。</description>
         <thingClass>CelesFeature.CelesIM_Building_AutoProducer</thingClass>
         <graphicData>
             <!-- TODO:贴图待填（现用「塑造」锻炉图占位，尺寸随正式美术调整） -->
@@ -371,6 +380,14 @@
             <li>Celes_Manufactory_I</li>
         </researchPrerequisites>
         <recipes>
+            <li>Celes_AutoRecipe_CrystalSlurry</li>
+            <li>Celes_AutoRecipe_NanoMachineBySlurry</li>
+            <li>Celes_AutoRecipe_Substrate</li>
+            <li>Celes_AutoRecipe_SubstrateEfficient</li>
+            <li>Celes_AutoRecipe_AdvanceCloth</li>
+            <li>Celes_AutoRecipe_AdvanceClothByGel</li>
+            <li>Celes_AutoRecipe_AdvancedComponent</li>
+            <li>Celes_AutoRecipe_ComponentSpacer</li>
         </recipes>
         <comps>
             <!-- Inspect 工作速度系数行（工作台族惯例置首位） -->
@@ -446,7 +463,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_NanoForgeConstructor</defName>
         <label>「构造」纳米锻炉</label>
-        <description>三级自动化纳米锻炉。占用编译线程自主执行锻造配方，效率数倍于手工锻炉，是后期的生产主力。必须连接线程网络才能工作。</description>
+        <description>边缘世界可以获取到的最精密的自动化纳米锻炉，无需人力工作持续编译，但需要占用「编译线程」以编译和控制尘构自主执行配方。\n\n这种纳米锻炉的处理精度已经抵达了相当夸张的程度，能够使用星铃通用的高纯基准材料加工各式资源，是被允许在边缘世界流通的最高档次设备。</description>
         <thingClass>CelesFeature.CelesIM_Building_AutoProducer</thingClass>
         <graphicData>
             <!-- TODO:贴图待填（现用「塑造」锻炉图占位，尺寸随正式美术调整） -->
@@ -495,6 +512,28 @@
             <li>Celes_Manufactory_III</li>
         </researchPrerequisites>
         <recipes>
+            <li>Celes_AutoRecipe_SiliconFromStone</li>
+            <li>Celes_AutoRecipe_CarbonFromStone</li>
+            <li>Celes_AutoRecipe_ElementFromFood</li>
+            <li>Celes_AutoRecipe_ElementFromSteel</li>
+            <li>Celes_AutoRecipe_ElementFromPlasteel</li>
+            <li>Celes_AutoRecipe_RareFromStone</li>
+            <li>Celes_AutoRecipe_RareFromJade</li>
+            <li>Celes_AutoRecipe_RareFromVacstone</li>
+            <li>Celes_AutoRecipe_HydrogenSynth</li>
+            <li>Celes_AutoRecipe_ElementFromBioferrite</li>
+            <li>Celes_AutoRecipe_ElementFromGel</li>
+            <li>Celes_AutoRecipe_GelFromElement</li>
+            <li>Celes_AutoRecipe_SteelRebuild</li>
+            <li>Celes_AutoRecipe_PlasteelRebuild</li>
+            <li>Celes_AutoRecipe_AlloyT3</li>
+            <li>Celes_AutoRecipe_ClothT4</li>
+            <li>Celes_AutoRecipe_NanoComponentT3</li>
+            <li>Celes_AutoRecipe_ComponentT3</li>
+            <li>Celes_AutoRecipe_NanoMachineT4</li>
+            <li>Celes_AutoRecipe_SubstrateT4</li>
+            <li>Celes_AutoRecipe_AdvanceClothT4</li>
+            <li>Celes_AutoRecipe_AdvancedComponentT4</li>
         </recipes>
         <comps>
             <!-- Inspect 工作速度系数行（工作台族惯例置首位） -->
@@ -573,7 +612,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_NanoForgeCabinet</defName>
         <label>锻炉工具柜</label>
-        <description>链接锻炉的增益设施：提升锻炉的尘构机效率。不耗电、不占用线程。可拆除搬运到别处重新链接。</description>
+        <description>链接锻炉的增益设施，包含一整套辅助设备，能够有效提升各式锻炉的工作效率。不消耗电力与「编译线程」，但每台锻炉至多只能连接六个工具柜。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <!-- TODO:贴图待填（现用增幅器图占位，尺寸随正式美术调整） -->
@@ -634,7 +673,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_Overclocker</defName>
         <label>安全协议覆写器</label>
-        <description>链接锻炉后解锁锻炉的超频开关：以额外的线程占用换取尘构机效率提升。仅在超频开启时，其解锁标签生效（锁定配方可见并接受挂单）。与锻炉严格一对一链接。自身零耗电。</description>
+        <description>通过覆写部分无关紧要的安全协议，允许锻炉启动「超频」。在「超频」下，锻炉会大幅提高工作效率并允许生产一些不那么“安全”的配方，但这一行为会翻倍它的「编译线程」占用。安全协议覆写器本身不消耗电力与「编译线程」，但每台锻炉至多只能连接一个安全协议覆写器。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Celes/Building/Overclocker/Overclocker</texPath>
@@ -678,7 +717,6 @@
         <modExtensions>
             <li Class="CelesFeature.CelesIM_AmplifierExt">
                 <unlockOverclock>true</unlockOverclock>
-                <!-- TODO:解锁标签暂无配方消费者，待特权配方定档时联动 -->
                 <unlockRecipeTags>
                     <li>Celes_OverclockRecipeLock</li>
                 </unlockRecipeTags>
@@ -701,7 +739,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_AmplifierBasic</defName>
         <label>早期线程阵列</label>
-        <description>链接中枢的增益设施：提升中枢的编译线程产出 +3，同时增加中枢 700W 电力负载。必须直连中枢或经中枢协调器托管。</description>
+        <description>一台早期的电子通用计算机，用于为中枢计算塔提供算力以增加「编译线程」产出，通过「域」内的无线输电供电。必须直连中枢或经中枢协调器托管。\n\n这种老式计算机体积庞大而相对耗电巨大，通常只能作为权宜之计。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Celes/Building/AmplifierBasic/AmplifierBasic</texPath>
@@ -765,7 +803,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_AmplifierNode</defName>
         <label>线程节点</label>
-        <description>链接中枢的小型增益设施：提升中枢的编译线程产出，占地小，适合填补空余角落。必须直连中枢或经中枢协调器托管。</description>
+        <description>一台集成的计算单元，用于为中枢计算塔提供算力以增加少量「编译线程」产出，通过「域」内的无线输电供电。必须直连中枢或经中枢协调器托管。\n\n这种小型计算单元并没有效率上的显著优势，但胜在部署的灵活性以及生产条件需求相对较低。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <!-- TODO:贴图待填（现用增幅器图占位，尺寸随正式美术调整） -->
@@ -810,7 +848,7 @@
         </comps>
         <modExtensions>
             <li Class="CelesFeature.CelesIM_AmplifierExt">
-                <boostPerUnit>1.75</boostPerUnit>
+                <boostPerUnit>2</boostPerUnit>
                 <producerPowerOffset>260</producerPowerOffset>
             </li>
         </modExtensions>
@@ -829,7 +867,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_AmplifierAdvanced</defName>
         <label>集群线程阵列</label>
-        <description>链接中枢的高级增益设施：提升中枢的编译线程产出 +20，同时增加中枢 4000W 电力负载。必须直连中枢或经中枢协调器托管。</description>
+        <description>一台大型水冷计算单元，用于为中枢计算塔提供算力以增加大量「编译线程」产出，通过「域」内的无线输电供电。必须直连中枢或经中枢协调器托管。\n\n这种大型计算单元几乎一台就可以满足一个小型工业前哨的全部「编译线程」需求，但对应的是恐怖的耗电量和原料需求。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <!-- TODO:贴图待填（现用增幅器图占位，尺寸随正式美术调整） -->
@@ -894,7 +932,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_Balancer</defName>
         <label>平衡器</label>
-        <description>链接中枢的调节设施：降低中枢 1000W 电力负载，同时占用 2 编译线程。必须直连中枢或经中枢协调器托管；断线程即失效。</description>
+        <description>基于对安全协议覆写的反向利用，我们可以稍稍占用一些「编译线程」来大幅提高中枢计算塔的供电效率以降低中枢电力消耗。必须直连中枢或经中枢协调器托管；断线程即失效。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <!-- TODO:贴图待填（现用增幅器图占位，尺寸随正式美术调整） -->
@@ -965,7 +1003,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Celes_Coordinator</defName>
         <label>协调器</label>
-        <description>中枢的扩容枢纽：可像中枢一样托管增幅器/平衡器/高级增幅器（加成回流至其直连中枢），并将中枢电力负载乘以 2。必须紧贴中枢放置；协调器之间不可互相连接。</description>
+        <description>协调器会在连接时无条件增加中枢的电力负载，但可像中枢一样连接各型增幅器，并将加成反馈至直连中枢。协调器之间不可互相连接，中枢至多连接两台协调器。\n\n中枢的「编译线程」输入数据流相较于输出数据流通常更为混乱而大量，这些混杂的算力未经过计算、协调与处理，通常的中继器无法承担这种数据传输任务。协调器基于对中枢的增幅扩容的需求应运而生，并可以将这些数据流和电力直接在增幅器与中枢间传输，唯一的问题是，协调器本身会指数级的增加中枢的耗电。</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <!-- TODO:贴图待填（现用增幅器图占位，尺寸随正式美术调整） -->
@@ -1009,7 +1047,7 @@
                 <compClass>CelesFeature.CelesIM_CompFacility_ProducerDevice</compClass>
                 <maxSimultaneous>2</maxSimultaneous>
                 <maxLinkedTargets>1</maxLinkedTargets>
-                <maxDistance>2.5</maxDistance>
+                <maxDistance>6.9</maxDistance>
             </li>
             <!-- 对下：受影响侧宿主（被视作中枢）——托管增幅器族 -->
             <li Class="CompProperties_AffectedByFacilities">
@@ -1023,7 +1061,7 @@
         </comps>
         <modExtensions>
             <li Class="CelesFeature.CelesIM_AmplifierExt">
-                <producerPowerFactor>2</producerPowerFactor>
+                <producerPowerFactor>1.5</producerPowerFactor>
             </li>
         </modExtensions>
         <placeWorkers>

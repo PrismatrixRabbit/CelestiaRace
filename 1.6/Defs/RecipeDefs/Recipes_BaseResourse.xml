@@ -6,12 +6,12 @@
     <RecipeDef>
         <defName>Celes_CopyCommand_Neumann</defName><!-- 复制指令：Neumann -->
         <label>复制指令集：自增</label>
-        <description>逐条输入指令，以利用尘构自身的冯诺依曼机特性自我复制，这一过程极其耗时耗力，而且会浪费大量的材料，但好歹能生产一些尘构。</description>
+        <description>逐条编译复制指令集，驱使尘构以冯诺依曼机的方式自我复制。每一轮都要把石料拆成可用的物质，再按模板写入新的指令核心；工序极其漫长，投入的石料大部分会成为废渣，但这是在没有晶种时把尘构数量翻倍的最直接办法。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_NanoMachine</uiIconThing>
-        <jobString>正在输入复制指令</jobString>
+        <jobString>正在编译复制指令</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>23000</workAmount>
@@ -55,20 +55,19 @@
         <products>
             <Celes_NanoMachine>2</Celes_NanoMachine>
         </products>
-        <displayPriority>1004</displayPriority>
+        <displayPriority>1005</displayPriority>
     </RecipeDef>
     
     <RecipeDef>
         <defName>Celes_CopyCommand_Culture</defName><!-- 复制指令集：培育 -->
         <label>复制指令集：增殖</label>
-        <description>在晶种的基础上直接培育尘构，这一过程费时费力，而且会浪费大量的材料。但这也是最不要求技术水平的办法。</description>
+        <description>以尘晶晶种为模板，在石料提供的原料中直接培育新的尘构。晶种会不断复制自身的指令核心，把周围物质转化为基准态尘构；这一过程费时费力，大量原料会被晶种吸收或排出为废料，但它是所有复制路线里对操作者技术要求最低的一种。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_InitialCrystalCluster</ThingDef>
-            <ThingDef>Celes_CrystallineMaterial</ThingDef>
             <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_InitialCrystalCluster</uiIconThing>
-        <jobString>正在输入复制指令</jobString>
+        <jobString>正在编译复制指令</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>4000</workAmount>
@@ -113,20 +112,20 @@
             <Celes_NanoMachine>1</Celes_NanoMachine>
             <Celes_InitialCrystalCluster>1</Celes_InitialCrystalCluster>
         </products>
-        <displayPriority>1005</displayPriority>
+        <displayPriority>1006</displayPriority>
     </RecipeDef>
     
     <RecipeDef>
         <defName>Celes_MakeNanoMachine</defName><!-- 复制指令：调频 --><!-- 暂未完成 -->
         <label>复制指令：相变</label>
-        <description>基于已有的尘晶碎片，稍加诱导转变为基准态尘构。这一过程依赖特定的酶制剂催化就能极快的完成，但仍会损耗其中相当一部分原料。</description>
+        <description>把尘晶碎片浸入介质凝胶，借凝胶中的酶系把碎片里已经分化的尘构单元重新诱导回基准态。酶制剂本身会带走相当一部分原料，最终只能收回少量完整的晶态尘构单元。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_CrystallineMaterial</ThingDef>
             <ThingDef>Celes_BioGel</ThingDef>
             <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_CrystallineMaterial</uiIconThing>
-        <jobString>正在输入复制指令</jobString>
+        <jobString>正在编译复制指令</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>750</workAmount>
@@ -166,7 +165,7 @@
     <RecipeDef>
         <defName>Celes_ForgeCommand_Alloy</defName><!-- 锻造指令集：淬铃 --><!-- 暂未完成 -->
         <label>锻造指令集：淬铃</label>
-        <description>控制尘构用于处理优化碳铁合金，需要引入银作为催化。</description>
+        <description>控制尘构引导高温钢材逐层重排晶格，利用微应力和催化反应把普通碳铁合金转化为三相共晶的淬铃合金。银作为部分特定尘构单元的催化相参与共晶形成，其结构失活后随尘构废弃无法回收。</description>
         <descriptionHyperlinks>
             <ThingDef>Steel</ThingDef>
             <ThingDef>Silver</ThingDef>
@@ -174,7 +173,7 @@
             <ThingDef>CelesAlloy</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>CelesAlloy</uiIconThing>
-        <jobString>正在输入锻造指令</jobString>
+        <jobString>正在编译锻造指令</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>2000</workAmount>
@@ -223,7 +222,7 @@
     <RecipeDef>
         <defName>Celes_ForgeCommand_NanoComponent</defName><!-- 锻造指令集：感测改造 -->
         <label>锻造指令集：感测改造</label>
-        <description>利用尘构物质改造现有零部件，总之就是这样那样。</description>
+        <description>拆解一组现成的通用零部件，以高强度合金改造部分外壳与触点结构，并利用尘构物质在材料内部织入复合传导材料制成的分子信号网络。代价是工时远高于普通零部件。</description>
         <descriptionHyperlinks>
             <ThingDef>ComponentIndustrial</ThingDef>
             <ThingDef>CelesAlloy</ThingDef>
@@ -231,7 +230,7 @@
             <ThingDef>Celes_NanoComponent</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_NanoComponent</uiIconThing>
-        <jobString>正在输入锻造指令</jobString>
+        <jobString>正在编译锻造指令</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>6000</workAmount>
@@ -284,7 +283,7 @@
     <RecipeDef>
         <defName>Celes_WeaveCommand_Cloth</defName><!-- 编织指令：再纺棉纱 --><!-- 暂未完成 -->
         <label>编织指令：成丝</label>
-        <description>从介质凝胶中合成再纺棉纱。</description>
+        <description>把介质凝胶里的化学前体抽成细丝，再掺入玻璃钢纤维提高强度。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_BioGel</ThingDef>
             <ThingDef>Plasteel</ThingDef>
@@ -292,7 +291,7 @@
             <ThingDef>Celes_Cloth</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_Cloth</uiIconThing>
-        <jobString>正在输入编织指令</jobString>
+        <jobString>正在编译编织指令</jobString>
         <effectWorking>Tailor</effectWorking>
         <soundWorking>Recipe_Tailor</soundWorking>
         <workAmount>1500</workAmount>
@@ -345,7 +344,7 @@
     <RecipeDef>
         <defName>Celes_WeaveCommand_ClothByCloth</defName><!-- 编织指令：再纺棉纱 --><!-- 暂未完成 -->
         <label>编织指令：再纺</label>
-        <description>从棉布中合成再纺棉纱。</description>
+        <description>把布料拆回纤维，重新梳理、捻接并掺入玻璃钢纤维提高强度。</description>
         <descriptionHyperlinks>
             <ThingDef>Cloth</ThingDef>
             <ThingDef>Plasteel</ThingDef>
@@ -353,7 +352,7 @@
             <ThingDef>Celes_Cloth</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_Cloth</uiIconThing>
-        <jobString>正在输入编织指令</jobString>
+        <jobString>正在编译编织指令</jobString>
         <effectWorking>Tailor</effectWorking>
         <soundWorking>Recipe_Tailor</soundWorking>
         <workAmount>2500</workAmount>
@@ -441,7 +440,7 @@
 
     <RecipeDef>
         <defName>Celes_MakeReplicationMaterialByBlocks</defName><!-- 提取尘晶培养底料 --><!-- 暂未完成 -->
-        <label>提取尘晶培养底料（石砖）</label>
+        <label>提取尘晶培养底料</label>
         <description>从石砖提取尘晶培养底料。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_ReplicationMaterial</ThingDef>
@@ -478,12 +477,12 @@
         <products>
             <Celes_ReplicationMaterial>1</Celes_ReplicationMaterial>
         </products>
-        <displayPriority>1002</displayPriority>
+        <displayPriority>1003</displayPriority>
     </RecipeDef>
 
     <RecipeDef>
         <defName>Celes_MakeFleshReplicationMaterial</defName><!-- 提取尘晶培养底料 --><!-- 暂未完成 -->
-        <label>提取尘晶培养底料（生物质）</label>
+        <label>提取尘晶培养底料</label>
         <description>从生物质提取尘晶培养底料。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_ReplicationMaterialFlesh</ThingDef>
@@ -525,24 +524,24 @@
         <products>
             <Celes_ReplicationMaterialFlesh>1</Celes_ReplicationMaterialFlesh>
         </products>
-        <displayPriority>1003</displayPriority>
+        <displayPriority>1004</displayPriority>
     </RecipeDef>
 
     <!-- ========== 高级资源 ========== -->
     
     <RecipeDef>
         <defName>Celes_ForgeCommand_Substrate</defName><!-- 复制指令：尘构基质 --><!-- 暂未完成 -->
-        <label>复制指令：尘构基质</label>
-        <description>利用尘构物质制造尘构基质，总之就是这样那样。</description>
+        <label>重构指令：尘构基质</label>
+        <description>把基准态尘构与裂变源、金属质和有机质一同送入锻炉，让尘构在元素供应充足的环境里诱导进入准工程态。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_NanoMachine</ThingDef>
-            <ThingDef>Gold</ThingDef>
+            <ThingDef>Uranium</ThingDef>
             <ThingDef>CelesAlloy</ThingDef>
-            <ThingDef>Celes_Cloth</ThingDef>
+            <ThingDef>Celes_BioGel</ThingDef>
             <ThingDef>Celes_Substrate</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_Substrate</uiIconThing>
-        <jobString>正在输入复制指令</jobString>
+        <jobString>正在编译重构指令</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>8000</workAmount>
@@ -597,17 +596,17 @@
 
     <RecipeDef>
         <defName>Celes_ForgeCommand_AdvancedComponent</defName><!-- 锻造指令：晶格运算元件 --><!-- 暂未完成 -->
-        <label>锻造指令：晶格运算元件</label>
-        <description>利用尘构物质制造尘构基质，总之就是这样那样。</description>
+        <label>构造指令：晶格运算元件</label>
+        <description>将尘构逐层构造成晶格运算细胞，并掺入导体与有机质分别作为电与化学信号的触点，需要多种精制原料和漫长的构造加工。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_NanoMachine</ThingDef>
             <ThingDef>Gold</ThingDef>
-            <ThingDef>CelesAlloy</ThingDef>
+            <ThingDef>Celes_NanoComponent</ThingDef>
             <ThingDef>Celes_Cloth</ThingDef>
             <ThingDef>Celes_AdvancedComponent</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_AdvancedComponent</uiIconThing>
-        <jobString>正在输入锻造指令</jobString>
+        <jobString>正在编译构造指令</jobString>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>12000</workAmount>
@@ -657,20 +656,22 @@
         <products>
             <Celes_AdvancedComponent>1</Celes_AdvancedComponent>
         </products>
-        <displayPriority>1025</displayPriority>
+        <displayPriority>1028</displayPriority>
     </RecipeDef>
 
     <RecipeDef>
-        <defName>Celes_ResortCommand_AdvanceCloth</defName><!-- 重序指令：尘化丝绸 --><!-- 暂未完成 -->
-        <label>重序指令：尘化丝绸</label>
-        <description>在恶魔菇产生的纤维基础上利用尘构物质重新排序纤维结构构建尘化丝绸。</description>
+        <defName>Celes_ResortCommand_AdvanceCloth</defName><!-- 构造指令：尘化丝绸 --><!-- 暂未完成 -->
+        <label>构造指令：尘化丝绸</label>
+        <description>以恶魔菇纤维为骨架，把再纺棉纱和玻璃钢纤维按尘构重排后的结构织进去。尘构只调整纤维的排列方式，让面料在保持柔软的同时获得接近装甲纤维的强度。难点在于纤维本身的性能要求极高，因此对原料的挑剔程度远高于普通纺织。</description>
         <descriptionHyperlinks>
+            <ThingDef>Celes_NanoMachine</ThingDef>
+            <ThingDef>Plasteel</ThingDef>
             <ThingDef>Celes_Cloth</ThingDef>
             <ThingDef>DevilstrandCloth</ThingDef>
             <ThingDef>Celes_AdvancedCloth</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_AdvancedCloth</uiIconThing>
-        <jobString>正在重序尘化丝绸</jobString>
+        <jobString>正在编译构造指令</jobString>
         <effectWorking>Tailor</effectWorking>
         <soundWorking>Recipe_Tailor</soundWorking>
         <workAmount>6000</workAmount>

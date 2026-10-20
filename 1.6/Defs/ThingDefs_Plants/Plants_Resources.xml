@@ -3,7 +3,7 @@
     <ThingDef ParentName="PlantBase">
 		<defName>Plant_CelesParsnip</defName>
         <label>荧尘防风草</label>
-        <description>Crystal Orchid, scientific name Dust-Mech Regeneration Plant. A genetically modified plant that is highly symbiotic with Dust-Mech for the production of Dust-Mech substances, its seed packets are placed into almost all Celestia emergency survival kits as one of the sources of Dust-Mech substances for extreme situations, and possibly the only source of Dust-Mech for those who do not want to risk serious blood loss. \n\nIts special and interesting life cycle and extremely high mineral requirements make it require a long growing time and a very high fertility requirement for the land, almost exclusively in hydroponic tanks and fertile soil. Please be careful not to let the cold snap destroy these crops.</description>
+        <description>荧尘防风草是一种被高度基因改造的植物，可以收获「介质凝胶」。\n\n这种植物结合了多种截然不同的生物的基因片段，甚至有些并不来自于古地球，因此无法有效的归类入现存的生物分类体系。其光合组织有着极高的光合效率，容许荧尘防风草有充足的能量自发固氮并从土壤和大气中富集各种物质，在不同的器官合成为复杂的化学前体物质，并最终输送到其肉质根中储存。因此在肥沃的土壤中，它的生长速度会大大加快、</description>
 		<descriptionHyperlinks>
 			<ThingDef>Celes_BioGel</ThingDef>
 		</descriptionHyperlinks>
