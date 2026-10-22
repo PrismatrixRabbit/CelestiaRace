@@ -1314,10 +1314,12 @@
 
     <HediffDef ParentName="Celes_DustMechRhythmBase">
         <defName>Celes_DustMechInfection</defName>
-        <label>尘构机械感染</label>
-        <description>.</description>
+        <label>恶性尘晶孢子感染</label>
+        <description>存在于全身的分子机械感染，它会引起剧烈的疼痛，内出血，甚至免疫因子风暴。其感染源可以被防毒面具有效防护，不暴露在感染源的情况下会自然恢复。这源于尘晶孢子的错误突变。</description>
         <canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
         <makesSickThought>true</makesSickThought>
+        <isBad>true</isBad>
+        <lethalSeverity>1.0</lethalSeverity>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
                 <severityPerDay>-0.1</severityPerDay>
@@ -1334,11 +1336,11 @@
         </comps>
         <stages>
             <li>
-                <label>initial</label>
+                <label>轻微</label>
                 <becomeVisible>false</becomeVisible>
             </li>
             <li>
-                <label>initial</label>
+                <label>轻微</label>
                 <minSeverity>0.04</minSeverity>
                 <capMods>
                     <li>
@@ -1348,7 +1350,7 @@
                 </capMods>
             </li>
             <li>
-                <label>minor</label>
+                <label>较轻</label>
                 <minSeverity>0.2</minSeverity>
                 <capMods>
                     <li>
@@ -1358,7 +1360,7 @@
                 </capMods>
             </li>
             <li>
-                <label>moderate</label>
+                <label>中等</label>
                 <minSeverity>0.40</minSeverity>
                 <vomitMtbDays>5</vomitMtbDays>
                 <painOffset>0.25</painOffset>
@@ -1371,7 +1373,7 @@
                 <hediffGivers>
                     <li Class="HediffGiver_Random">
                         <hediff>Dementia</hediff>
-                        <mtbDays>146</mtbDays>
+                        <mtbDays>32</mtbDays>
                         <partsToAffect>
                             <li>Brain</li>
                         </partsToAffect>
@@ -1379,7 +1381,7 @@
                 </hediffGivers>
             </li>
             <li>
-                <label>serious</label>
+                <label>严重</label>
                 <minSeverity>0.60</minSeverity>
                 <vomitMtbDays>1</vomitMtbDays>
                 <painOffset>0.60</painOffset>
@@ -1399,7 +1401,7 @@
                 <hediffGivers>
                     <li Class="HediffGiver_Random">
                         <hediff>Dementia</hediff>
-                        <mtbDays>37</mtbDays>
+                        <mtbDays>6</mtbDays>
                         <partsToAffect>
                             <li>Brain</li>
                         </partsToAffect>
@@ -1407,7 +1409,7 @@
                 </hediffGivers>
             </li>
             <li>
-                <label>Working</label>
+                <label>极重</label>
                 <minSeverity>0.80</minSeverity>
                 <vomitMtbDays>0.5</vomitMtbDays>
                 <painOffset>0.80</painOffset>
@@ -1444,7 +1446,7 @@
                     </li>
                     <li Class="HediffGiver_Random">
                         <hediff>Dementia</hediff>
-                        <mtbDays>12</mtbDays>
+                        <mtbDays>2</mtbDays>
                         <partsToAffect>
                             <li>Brain</li>
                         </partsToAffect>
