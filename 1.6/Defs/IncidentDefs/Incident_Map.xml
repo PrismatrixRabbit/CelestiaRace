@@ -96,15 +96,18 @@
         <letterText>你发现信标站改变了坐标：{STATION} 已不再能追踪到星铃活动。星铃外勤部已将信标站重新部署。</letterText>
     </IncidentDef>
 
-    <!-- M6-6 突发订单（v4.3 B1：Incident 体系；触发 = 叙事者 SingleMTB 随机——Storyteller.xml Patch，mtbDays=20；
-         Worker 生成已接取突发单实例；baseChance=0 不进随机池，仅本 Comp 触发）。
-         FD-G31（2026-09-02，玩家反馈 17 天 3 连发）：minRefireDays=3 重发下限——StorytellerComp_SingleMTB 自身
-         无防重发（每 1000 tick MTB 检查，StorytellerComp_SingleMTB.cs 实证），唯一拦截 = IncidentWorker.cs:158-169
-         的 def.minRefireDays 天数比较；未配置时理论上可连发 -->
+    <!-- M6-6 突发订单（v4.3 B1：Incident 体系）。
+         2026-10-24 裁决（与叙事者解耦，回归原版标准事件模式）：删除 Storyteller.xml 的 SingleMTB 旁路——
+         改走原版随机池：category=Misc / baseChance=2.0 / minRefireDays=20（最短间隔硬下限）。
+         频率换算：原版 Misc 抽取 ≈3.56 天/次、池 ΣbaseChance≈16.9 → 2.0/(16.9+2.0) ≈ 10.6% → ≈34 天一次；
+         minRefireDays=20 保证不短于 20 天；Misc 类别参与原版最近选择抑制（触发后短窗内权重 ×0.01）。
+         等级门禁见 UnlockLevelDef.allowUrgentOrders（L0/L1=false，L2+ 默认 true）。
+         历史：FD-G31（2026-09-02，玩家反馈 17 天 3 连发）：SingleMTB 自身无防重发（每 1000 tick MTB 检查，
+         StorytellerComp_SingleMTB.cs 实证），旁路期间唯一拦截 = IncidentWorker.cs:156-176 的 def.minRefireDays -->
     <IncidentDef>
         <defName>CelesFD_UrgentOrderSignal</defName>
         <workerClass>CelesFeature.CelesFD_IncidentWorker_UrgentOrder</workerClass>
-        <category>Special</category>
+        <category>Misc</category>
         <!-- FD-G33 修正版（2026-09-02）：targetTags 改为纯 Map_PlayerHome（晶体坠落 CelesFD_InitialCrystalOrbitDrop
              同款模式）。首版"World+Map_PlayerHome 并存"违反原版约束（IncidentDef.cs:223-225：World 目标必须独占——
              Config error "allows world target type along with other targets"）。纯地图标签后：常规 dev（地图视图，
@@ -114,8 +117,8 @@
         <targetTags>
             <li>Map_PlayerHome</li>
         </targetTags>
-        <baseChance>0</baseChance>
-        <minRefireDays>3</minRefireDays>
+        <baseChance>2.0</baseChance>
+        <minRefireDays>20</minRefireDays>
         <letterDef>NeutralEvent</letterDef>
         <letterLabel>紧急市场需求</letterLabel>
         <letterText>这是星铃外勤部对全市场的紧急需求。高优先级重要订单，已自动接取，请尽快装载交付。超时未介入的订单将自动作废，无端运力占用将违背合同约定。</letterText>

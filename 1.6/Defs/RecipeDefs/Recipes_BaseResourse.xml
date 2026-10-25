@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- ========== 指令解译 ========== -->
+    <!-- ========== 复制指令 ========== -->
 
     <RecipeDef>
         <defName>Celes_CopyCommand_Neumann</defName><!-- 复制指令：Neumann -->
@@ -161,7 +161,9 @@
         </products>
         <displayPriority>1010</displayPriority>
     </RecipeDef>
-    
+
+    <!-- ========== 锻造指令 ========== -->
+
     <RecipeDef>
         <defName>Celes_ForgeCommand_Alloy</defName><!-- 锻造指令集：淬铃 --><!-- 暂未完成 -->
         <label>锻造指令集：淬铃</label>
@@ -217,8 +219,6 @@
         <displayPriority>2015</displayPriority>
     </RecipeDef>
 
-    <!-- ========== 材料自感知 ========== -->
-    
     <RecipeDef>
         <defName>Celes_ForgeCommand_NanoComponent</defName><!-- 锻造指令集：感测改造 -->
         <label>锻造指令集：感测改造</label>
@@ -396,6 +396,8 @@
         <displayPriority>1506</displayPriority>
     </RecipeDef>
 
+    <!-- ========== 尘晶培养底料 ========== -->
+
     <RecipeDef>
         <defName>Celes_MakeReplicationMaterial</defName><!-- 提取尘晶培养底料 --><!-- 暂未完成 -->
         <label>提取尘晶培养底料</label>
@@ -403,7 +405,7 @@
         <descriptionHyperlinks>
             <ThingDef>Celes_ReplicationMaterial</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>Celes_ReplicationMaterial</uiIconThing>
+        <uiIconThing>ChunkSandstone</uiIconThing>
         <jobString>正在提取尘晶培养底料</jobString>
         <effectWorking>CutStone</effectWorking>
         <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
@@ -440,12 +442,12 @@
 
     <RecipeDef>
         <defName>Celes_MakeReplicationMaterialByBlocks</defName><!-- 提取尘晶培养底料 --><!-- 暂未完成 -->
-        <label>提取尘晶培养底料</label>
+        <label>提取尘晶培养底料(石砖)</label>
         <description>从石砖提取尘晶培养底料。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_ReplicationMaterial</ThingDef>
         </descriptionHyperlinks>
-        <uiIconThing>Celes_ReplicationMaterial</uiIconThing>
+        <uiIconThing>BlocksSandstone</uiIconThing>
         <jobString>正在提取尘晶培养底料</jobString>
         <effectWorking>CutStone</effectWorking>
         <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
@@ -482,7 +484,7 @@
 
     <RecipeDef>
         <defName>Celes_MakeFleshReplicationMaterial</defName><!-- 提取尘晶培养底料 --><!-- 暂未完成 -->
-        <label>提取尘晶培养底料</label>
+        <label>提取尘晶培养底料(生物质)</label>
         <description>从生物质提取尘晶培养底料。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_ReplicationMaterialFlesh</ThingDef>
@@ -531,7 +533,7 @@
     
     <RecipeDef>
         <defName>Celes_ForgeCommand_Substrate</defName><!-- 复制指令：尘构基质 --><!-- 暂未完成 -->
-        <label>重构指令：尘构基质</label>
+        <label>复制指令：尘构基质</label>
         <description>把基准态尘构与裂变源、金属质和有机质一同送入锻炉，让尘构在元素供应充足的环境里诱导进入准工程态。</description>
         <descriptionHyperlinks>
             <ThingDef>Celes_NanoMachine</ThingDef>
@@ -721,6 +723,156 @@
             <Celes_AdvancedCloth>50</Celes_AdvancedCloth>
         </products>
         <displayPriority>1705</displayPriority>
+    </RecipeDef>
+
+    <!-- ========== 低级材料再造 ========== -->
+    
+    <RecipeDef>
+        <defName>Celes_MakeSteelFromAlloy</defName>
+        <label>淬铃钝化</label>
+        <description>通过钝化处理将淬铃合金重新锻造为边缘世界常见的钢铁。损耗率相当高，通常仅用于某些不能使用淬铃合金的特殊场合。</description>
+        <descriptionHyperlinks>
+            <ThingDef>CelesAlloy</ThingDef>
+            <ThingDef>Steel</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>Steel</uiIconThing>
+        <jobString>正在钝化淬铃合金</jobString>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workAmount>1000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_I</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CelesAlloy</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CelesAlloy</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Steel>6</Steel>
+        </products>
+        <displayPriority>2016</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_MakeComponentFromSensing</defName>
+        <label>感测拆解</label>
+        <description>将感测机械零件中的定制尘构单元与微型电子元件剥离，重新构造为通用机械零部件。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_NanoComponent</ThingDef>
+            <ThingDef>ComponentIndustrial</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>ComponentIndustrial</uiIconThing>
+        <jobString>正在拆解感测机械零件</jobString>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>2000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_II</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_NanoComponent</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Celes_NanoComponent</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </products>
+        <displayPriority>2021</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Celes_MakeSpacerFromLattice</defName>
+        <label>晶格改造</label>
+        <description>以晶格运算元件为核心，辅以少量钢材与玻璃钢，重新构造为边缘世界常见的高级零部件模式。</description>
+        <descriptionHyperlinks>
+            <ThingDef>Celes_AdvancedComponent</ThingDef>
+            <ThingDef>Steel</ThingDef>
+            <ThingDef>Plasteel</ThingDef>
+            <ThingDef>ComponentSpacer</ThingDef>
+        </descriptionHyperlinks>
+        <uiIconThing>ComponentSpacer</uiIconThing>
+        <jobString>正在改造晶格运算元件</jobString>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>3000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>Celes_LabNanoForge</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>Celes_MainTech_IV</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Celes_AdvancedComponent</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Celes_AdvancedComponent</li>
+                <li>Steel</li>
+<li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentSpacer>1</ComponentSpacer>
+        </products>
+        <displayPriority>1029</displayPriority>
     </RecipeDef>
 
 </Defs>

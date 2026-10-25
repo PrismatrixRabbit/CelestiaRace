@@ -254,6 +254,8 @@
             <li>Celes_AutoRecipe_Cloth</li>
             <li>Celes_AutoRecipe_ClothByCloth</li>
             <li>Celes_AutoRecipe_GelFromFood</li>
+            <li>Celes_AutoRecipe_SteelFromAlloy</li>
+            <li>Celes_AutoRecipe_ComponentFromSensing</li>
         </recipes>
         <comps>
             <!-- Inspect 工作速度系数行（工作台族惯例置首位） -->
@@ -388,6 +390,7 @@
             <li>Celes_AutoRecipe_AdvanceClothByGel</li>
             <li>Celes_AutoRecipe_AdvancedComponent</li>
             <li>Celes_AutoRecipe_ComponentSpacer</li>
+            <li>Celes_AutoRecipe_SpacerFromLattice</li>
         </recipes>
         <comps>
             <!-- Inspect 工作速度系数行（工作台族惯例置首位） -->

@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!-- 晶化源共享父 def：继承 BuildingBase 的通用建筑默认值；开花树在子 def 覆盖为 Plant。
+       三个源的公共字段与 spread comp 只在这里写一次；子 def 的 <comps> 默认追加父 comps。 -->
+  <ThingDef Name="Celes_CrystalSourceBase" ParentName="BuildingBase" Abstract="True">
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <tickerType>Rare</tickerType>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CelesFeature.CelesIM_CompProperties_CrystalTerrainSpread">
+        <spreadTerrain>Celes_CrystalSurface</spreadTerrain>
+        <spreadPerCheck>3</spreadPerCheck>
+        <checkIntervalTicks>2500</checkIntervalTicks>
+        <pExtend>0.5</pExtend>
+        <fillThreshold>3</fillThreshold>
+        <fillMinAge>15</fillMinAge>
+        <tipSpacing>24</tipSpacing>
+        <minTipsTarget>4</minTipsTarget>
+        <initialTips>4</initialTips>
+        <spawnPerCycle>3</spawnPerCycle>
+        <maxTipLen>36</maxTipLen>
+        <turnChance>0.1</turnChance>
+        <branchChance>0.08</branchChance>
+        <maxTips>120</maxTips>
+        <ageWeight>0.5</ageWeight>
+        <ageNormScale>10</ageNormScale>
+        <concavityWeight>0.5</concavityWeight>
+        <fillWeightBase>1</fillWeightBase>
+        <frozenAttractionK>3</frozenAttractionK>
+        <neededAffordance>Light</neededAffordance>
+        <protectedTerrains>
+          <li>Celes_CrystalFloor</li>
+        </protectedTerrains>
+        <canSpawnCrystalTrees>true</canSpawnCrystalTrees>
+        <crystalTreeDef>Celes_CrystalTree</crystalTreeDef>
+        <treeConvertChance>0.003</treeConvertChance>
+        <treeDensityRadius>2</treeDensityRadius>
+        <treeDensityFullCount>6</treeDensityFullCount>
+        <treeDensityWeight>1</treeDensityWeight>
+        <treeConvertRadius>3</treeConvertRadius>
+        <treeMinOpenNeighbors>1</treeMinOpenNeighbors>
+        <treeConvertMaxPerCheck>1</treeConvertMaxPerCheck>
+        <maxCrystalTreesOnMap>125</maxCrystalTreesOnMap>
+        <ignoreSuperTrees>true</ignoreSuperTrees>
+        <treeBlacklist>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+        </treeBlacklist>
+        <!-- 旧算法字段：保留兼容，新算法不使用 -->
+        <minTips>3</minTips>
+        <thickenChance>0.6</thickenChance>
+      </li>
+    </comps>
+  </ThingDef>
+
   <!-- ============ 生长判定链参数阐释 ============
  判定链算法（每次检测周期执行一次，培育器/晶种共用）：
    1. 初始概率 C = totalGrowChance − perDecreaseChance × 范围内非最高级晶簇数
@@ -231,7 +290,7 @@
   </ThingDef>
 
   <!-- 尘晶柱：自然生长源，次数上限自限，无燃料无电力 -->
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="Celes_CrystalSourceBase">
     <defName>Celes_CrystalSeed</defName>
     <label>尘晶柱</label>
     <description>柱状的尘晶，会在周围催生更小型的尘晶晶簇，本身也可以开采出尘晶碎片。因为不明原因的突变对周围的植物和动物会有毒害作用，防毒面具可以有效防护，物理破坏也可以摧毁其活性。\n\n尘晶柱会提取和富集地下的特定矿物质，往周围生产和释放微小的晶体孢子，这些孢子在接触到固态表面后就会开始形成尘晶晶簇。正常来说不应该在有机物上生长……但好在大多数情况下晶簇是打不过免疫系统的，但是植物就不好说了。</description>
@@ -239,31 +298,30 @@
       <ThingDef>Celes_CrystallineMaterial</ThingDef>
     </descriptionHyperlinks>
     <thingClass>CelesFeature.Celes_CrystalSeedThing</thingClass>
+    <mineable>true</mineable>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <building>
       <expandHomeArea>false</expandHomeArea>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <mineableThing>Celes_CrystallineMaterial</mineableThing>
+      <mineableYield>24</mineableYield>
+      <mineableDropChance>1</mineableDropChance>
+      <mineableYieldWasteable>false</mineableYieldWasteable>
     </building>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <graphicData>
       <texPath>Celes/Building/CrystalSeeder/CrystalSeed_Inactive</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2.0,2.0)</drawSize>
-      <drawOffset>(0,0,0.4)</drawOffset>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
-    <size>(1,1)</size>
     <passability>Impassable</passability>
-    <tickerType>Rare</tickerType>
     <placeWorkers>
       <li>CelesFeature.CelesIM_PlaceWorker_CrystalGrowRadius</li>
     </placeWorkers>
-    <rotatable>false</rotatable>
     <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
       <WorkToBuild>2000</WorkToBuild>
-      <MaxHitPoints>75</MaxHitPoints>
-      <Flammability>0</Flammability>
     </statBases>
-    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
     <costList>
       <Celes_CrystallineMaterial>24</Celes_CrystallineMaterial>
     </costList>
@@ -276,7 +334,7 @@
         <maxGrowChance>0.8</maxGrowChance>
         <growStepDecrement>0.4</growStepDecrement>
         <perDecreaseChance>0.10</perDecreaseChance>
-        <minGrowChance>0.01</minGrowChance>
+        <minGrowChance>0.05</minGrowChance>
         <baseGrowDef>Celes_CrystalCluster</baseGrowDef>
         <!-- 生长表面 = 任意 Medium 支撑（Affordance 模式，用户裁决：不限于晶态地板）；terrainToGrow 保留备用 -->
         <terrainCheckMode>Affordance</terrainCheckMode>
@@ -294,6 +352,7 @@
         </pointToGrow>
         <chanceToGrow>0.5</chanceToGrow>
         <consumeEnabled>true</consumeEnabled>
+        <consumeRadiusMode>BlightRadius</consumeRadiusMode>
         <consumeChance>0.1</consumeChance>
         <stoneChunkCategory>StoneChunks</stoneChunkCategory>
         <stoneChunkGain>15</stoneChunkGain>
@@ -308,8 +367,6 @@
         <activeGraphicData>
           <texPath>Celes/Building/CrystalSeeder/CrystalSeed_Active</texPath>
           <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>(2.0,2.0)</drawSize>
-          <drawOffset>(0,0,0.4)</drawOffset>
         </activeGraphicData>
       </li>
       <!-- 数值：168 次判定 × 0.067 = +11.26 → 最终半径 ≈22.15（10.9 + 11.26；环量级保持=裁决②——寿命 45→168 次联动缩放 0.25→0.067，2026-10-17）；硬上限 125 -->
@@ -317,7 +374,7 @@
         <startRadius>10.9</startRadius>
         <radiusGrowPerCheck>0.067</radiusGrowPerCheck>
         <expandCheckTicks>2500</expandCheckTicks>
-        <maxRadius>125</maxRadius>
+        <maxRadius>50</maxRadius>
         <pawnHediff>Celes_DustMechInfection</pawnHediff>
         <hediffSeverityPerDay>1.0</hediffSeverityPerDay>
         <plantHarmFrequencyPerArea>0.011</plantHarmFrequencyPerArea>
@@ -325,88 +382,47 @@
         <ignoreSpecialTrees>true</ignoreSpecialTrees>
         <messageOnCropDeath>true</messageOnCropDeath>
       </li>
-      <!-- 晶化表面扩散（sparse24_th3_age15 细胞级晶域；失活即停；仅晶种系挂载） -->
-      <li Class="CelesFeature.CelesIM_CompProperties_CrystalTerrainSpread">
-        <spreadTerrain>Celes_CrystalSurface</spreadTerrain>
-        <spreadPerCheck>3</spreadPerCheck>
-        <checkIntervalTicks>2500</checkIntervalTicks>
-        <pExtend>0.5</pExtend>
-        <fillThreshold>3</fillThreshold>
-        <fillMinAge>15</fillMinAge>
-        <tipSpacing>24</tipSpacing>
-        <minTipsTarget>4</minTipsTarget>
-        <initialTips>4</initialTips>
-        <spawnPerCycle>3</spawnPerCycle>
-        <maxTipLen>36</maxTipLen>
-        <turnChance>0.1</turnChance>
-        <branchChance>0.08</branchChance>
-        <maxTips>120</maxTips>
-        <ageWeight>0.5</ageWeight>
-        <ageNormScale>10</ageNormScale>
-        <concavityWeight>0.5</concavityWeight>
-        <fillWeightBase>1</fillWeightBase>
-        <frozenAttractionK>3</frozenAttractionK>
-        <neededAffordance>Light</neededAffordance>
-        <protectedTerrains>
-          <li>Celes_CrystalFloor</li>
-        </protectedTerrains>
-        <canSpawnCrystalTrees>true</canSpawnCrystalTrees>
-        <crystalTreeDef>Celes_CrystalTree</crystalTreeDef>
-        <treeConvertChance>0.003</treeConvertChance>
-        <treeDensityRadius>2</treeDensityRadius>
-        <treeDensityFullCount>6</treeDensityFullCount>
-        <treeDensityWeight>1</treeDensityWeight>
-        <treeConvertRadius>3</treeConvertRadius>
-        <treeMinOpenNeighbors>1</treeMinOpenNeighbors>
-        <treeConvertMaxPerCheck>1</treeConvertMaxPerCheck>
-        <maxCrystalTreesOnMap>50</maxCrystalTreesOnMap>
-        <ignoreSuperTrees>true</ignoreSuperTrees>
-        <treeBlacklist>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
-          <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
-          <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
-        </treeBlacklist>
-        <!-- 旧算法字段：保留兼容，新算法不使用 -->
-        <minTips>3</minTips>
-        <thickenChance>0.6</thickenChance>
-      </li>
     </comps>
   </ThingDef>
 
   <!-- 尘晶母岩：大型自然生长源，次数上限自限，无燃料无电力 -->
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="Celes_CrystalSourceBase">
     <defName>Celes_CrystalInitialSeed</defName>
     <label>尘晶母岩</label>
-    <description>大型而特殊的尘晶柱，有着比其他尘晶柱更高的活性，可以拆解出特殊的尘晶晶种。尘晶晶种对于星铃的材料生产有着特殊的意义。\n尘晶母岩会在周围催生更小型的尘晶晶簇。因为不明原因的突变对周围的植物和动物会有毒害作用，防毒面具可以有效防护，物理破坏也可以摧毁其活性。\n\n尘晶母岩会提取和富集地下的特定矿物质，往周围生产和释放微小的晶体孢子，这些孢子在接触到固态表面后就会开始形成尘晶晶簇。正常来说不应该在有机物上生长……但好在大多数情况下晶簇是打不过免疫系统的，但是植物就不好说了。</description>
+    <description>大型而特殊的尘晶柱，有着比其他尘晶柱更高的活性，可以开采出特殊的尘晶晶种。尘晶晶种对于星铃的材料生产有着特殊的意义。\n尘晶母岩会在周围催生更小型的尘晶晶簇。因为不明原因的突变对周围的植物和动物会有毒害作用，防毒面具可以有效防护，物理破坏也可以摧毁其活性。\n\n尘晶母岩会提取和富集地下的特定矿物质，往周围生产和释放微小的晶体孢子，这些孢子在接触到固态表面后就会开始形成尘晶晶簇。正常来说不应该在有机物上生长……但好在大多数情况下晶簇是打不过免疫系统的，但是植物就不好说了。</description>
     <descriptionHyperlinks>
       <ThingDef>Celes_InitialCrystalCluster</ThingDef>
     </descriptionHyperlinks>
     <thingClass>CelesFeature.Celes_CrystalSeedThing</thingClass>
+    <mineable>true</mineable>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <building>
       <expandHomeArea>false</expandHomeArea>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <mineableThing>Celes_InitialCrystalCluster</mineableThing>
+      <mineableYield>1</mineableYield>
+      <mineableDropChance>1</mineableDropChance>
+      <mineableYieldWasteable>false</mineableYieldWasteable>
     </building>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <graphicData>
       <texPath>Celes/Building/CrystalSeeder/CrystalInitialSeed_Inactive</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.0,2.0)</drawSize>
+      <drawOffset>(0,0,0.4)</drawOffset>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
-    <size>(1,1)</size>
     <passability>Impassable</passability>
-    <tickerType>Rare</tickerType>
     <placeWorkers>
       <li>CelesFeature.CelesIM_PlaceWorker_CrystalGrowRadius</li>
     </placeWorkers>
-    <rotatable>false</rotatable>
     <statBases>
+      <MaxHitPoints>2500</MaxHitPoints>
       <WorkToBuild>2000</WorkToBuild>
-      <MaxHitPoints>75</MaxHitPoints>
-      <Flammability>0</Flammability>
     </statBases>
-    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
     <costList>
       <Celes_InitialCrystalCluster>1</Celes_InitialCrystalCluster>
+      <Celes_CrystallineMaterial>32</Celes_CrystallineMaterial>
     </costList>
     <comps>
       <li Class="CelesFeature.CelesIM_CompProperties_CrystalSeed">
@@ -417,7 +433,7 @@
         <maxGrowChance>0.8</maxGrowChance>
         <growStepDecrement>0.5</growStepDecrement>
         <perDecreaseChance>0.15</perDecreaseChance>
-        <minGrowChance>0.01</minGrowChance>
+        <minGrowChance>0.05</minGrowChance>
         <baseGrowDef>Celes_CrystalCluster</baseGrowDef>
         <!-- 生长表面 = 任意 Medium 支撑（Affordance 模式）；terrainToGrow 保留备用 -->
         <terrainCheckMode>Affordance</terrainCheckMode>
@@ -437,13 +453,15 @@
         <activeGraphicData>
           <texPath>Celes/Building/CrystalSeeder/CrystalInitialSeed_Active</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(2.0,2.0)</drawSize>
+          <drawOffset>(0,0,0.4)</drawOffset>
         </activeGraphicData>
       </li>
       <li Class="CelesFeature.CelesIM_CompProperties_CrystalBlight">
         <startRadius>10.9</startRadius>
         <radiusGrowPerCheck>0.01</radiusGrowPerCheck>
         <expandCheckTicks>2500</expandCheckTicks>
-        <maxRadius>125</maxRadius>
+        <maxRadius>50</maxRadius>
         <pawnHediff>Celes_DustMechInfection</pawnHediff>
         <hediffSeverityPerDay>1.0</hediffSeverityPerDay>
         <plantHarmFrequencyPerArea>0.011</plantHarmFrequencyPerArea>
@@ -451,103 +469,65 @@
         <ignoreSpecialTrees>true</ignoreSpecialTrees>
         <messageOnCropDeath>true</messageOnCropDeath>
       </li>
-      <!-- 晶化表面扩散（sparse24_th3_age15 细胞级晶域；失活即停） -->
-      <li Class="CelesFeature.CelesIM_CompProperties_CrystalTerrainSpread">
-        <spreadTerrain>Celes_CrystalSurface</spreadTerrain>
-        <spreadPerCheck>3</spreadPerCheck>
-        <checkIntervalTicks>2500</checkIntervalTicks>
-        <pExtend>0.5</pExtend>
-        <fillThreshold>3</fillThreshold>
-        <fillMinAge>15</fillMinAge>
-        <tipSpacing>24</tipSpacing>
-        <minTipsTarget>4</minTipsTarget>
-        <initialTips>4</initialTips>
-        <spawnPerCycle>3</spawnPerCycle>
-        <maxTipLen>36</maxTipLen>
-        <turnChance>0.1</turnChance>
-        <branchChance>0.08</branchChance>
-        <maxTips>120</maxTips>
-        <ageWeight>0.5</ageWeight>
-        <ageNormScale>10</ageNormScale>
-        <concavityWeight>0.5</concavityWeight>
-        <fillWeightBase>1</fillWeightBase>
-        <frozenAttractionK>3</frozenAttractionK>
-        <neededAffordance>Light</neededAffordance>
-        <protectedTerrains>
-          <li>Celes_CrystalFloor</li>
-        </protectedTerrains>
-        <canSpawnCrystalTrees>true</canSpawnCrystalTrees>
-        <crystalTreeDef>Celes_CrystalTree</crystalTreeDef>
-        <treeConvertChance>0.003</treeConvertChance>
-        <treeDensityRadius>2</treeDensityRadius>
-        <treeDensityFullCount>6</treeDensityFullCount>
-        <treeDensityWeight>1</treeDensityWeight>
-        <treeConvertRadius>3</treeConvertRadius>
-        <treeMinOpenNeighbors>1</treeMinOpenNeighbors>
-        <treeConvertMaxPerCheck>1</treeConvertMaxPerCheck>
-        <maxCrystalTreesOnMap>50</maxCrystalTreesOnMap>
-        <ignoreSuperTrees>true</ignoreSuperTrees>
-        <treeBlacklist>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
-          <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
-          <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
-        </treeBlacklist>
-        <!-- 旧算法字段：保留兼容，新算法不使用 -->
-        <minTips>3</minTips>
-        <thickenChance>0.6</thickenChance>
-      </li>
     </comps>
   </ThingDef>
 
-  <!-- 开晶树：由晶化扩散转化边界树木生成的小型晶化源；判定次数为尘晶柱一半 -->
-  <ThingDef ParentName="BuildingBase">
+  <!-- 开花树：由晶化扩散转化边界树木生成的小型晶化源；判定次数为尘晶柱一半 -->
+  <ThingDef ParentName="Celes_CrystalSourceBase">
     <defName>Celes_CrystalTree</defName>
-    <label>开晶树</label>
-    <description>被晶化扩散吞没的树木，晶体沿着枝干生长，形成了仍在缓慢活化的开晶树。它像尘晶柱一样向周围释放孢子并催生尘晶晶簇，但活性只有尘晶柱的一半；毒性与植物杀伤仍会持续。拆除后可回收一半的尘晶材料。</description>
+    <label>开花树</label>
+    <description>被尘晶改造的树木，会在周围催生更小型的尘晶晶簇，需要尽快摧毁。因为不明原因的突变对周围的植物和动物会有毒害作用，防毒面具可以有效防护，物理破坏也可以摧毁其活性。\n\n基于对外部客体识别的失效，一部分尘晶孢子和树木共生而非拆解杀死它们，形成了仍在缓慢活化的开晶树。它像尘晶柱一样向周围释放孢子并催生尘晶晶簇，但活性弱于尘晶柱。一旦出现在丛林中会形成相当可怕的链式扩散。</description>
     <descriptionHyperlinks>
       <ThingDef>Celes_CrystallineMaterial</ThingDef>
     </descriptionHyperlinks>
-    <thingClass>CelesFeature.Celes_CrystalSeedThing</thingClass>
-    <building>
-      <expandHomeArea>false</expandHomeArea>
-      <deconstructible>true</deconstructible>
-    </building>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingClass>CelesFeature.Celes_CrystalTreeThing</thingClass>
+    <category>Plant</category>
     <graphicData>
       <texPath>Celes/Building/CrystalSeeder/CrystalTree_Inactive</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2.0,2.0)</drawSize>
       <drawOffset>(0,0,0.4)</drawOffset>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.25</fillPercent>
     <uiIconScale>0.5</uiIconScale>
     <uiIconOffset>(0, 0)</uiIconOffset>
-    <size>(1,1)</size>
     <passability>PassThroughOnly</passability>
-    <tickerType>Rare</tickerType>
-    <rotatable>false</rotatable>
     <castEdgeShadows>true</castEdgeShadows>
     <blockWind>true</blockWind>
-    <statBases>
-      <WorkToBuild>1000</WorkToBuild>
-      <MaxHitPoints>75</MaxHitPoints>
-      <Flammability>0</Flammability>
-    </statBases>
-    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
-    <costList>
-      <Celes_CrystallineMaterial>12</Celes_CrystallineMaterial>
-    </costList>
+    <plant>
+      <growDays>30</growDays>
+      <fertilityMin>0</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+      <completelyIgnoreFertility>true</completelyIgnoreFertility>
+      <harvestWork>1000</harvestWork>
+      <harvestedThingDef>Celes_CrystallineMaterial</harvestedThingDef>
+      <harvestYield>12</harvestYield>
+      <harvestTag>Wood</harvestTag>
+      <harvestAfterGrowth>0</harvestAfterGrowth>
+      <harvestFailable>false</harvestFailable>
+      <soundHarvesting>Harvest_Tree</soundHarvesting>
+      <soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+      <treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+      <treeCategory>Super</treeCategory>
+      <neverBlightable>true</neverBlightable>
+      <pollution>Any</pollution>
+      <dieIfLeafless>false</dieIfLeafless>
+      <dieIfNoSunlight>false</dieIfNoSunlight>
+      <dieFromToxicFallout>false</dieFromToxicFallout>
+      <lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+      <sowTags Inherit="False" />
+      <choppedThingDef IsNull="True" />
+    </plant>
     <comps>
       <li Class="CelesFeature.CelesIM_CompProperties_CrystalSeed">
         <attemptsLimit>84</attemptsLimit>
         <ticksToGrow>2500</ticksToGrow>
         <growRadius>9.9</growRadius>
-        <totalGrowChance>0.8</totalGrowChance>
+        <totalGrowChance>1.2</totalGrowChance>
         <maxGrowChance>0.8</maxGrowChance>
         <growStepDecrement>0.4</growStepDecrement>
         <perDecreaseChance>0.10</perDecreaseChance>
-        <minGrowChance>0.01</minGrowChance>
+        <minGrowChance>0.05</minGrowChance>
         <baseGrowDef>Celes_CrystalCluster</baseGrowDef>
         <terrainCheckMode>Affordance</terrainCheckMode>
         <terrainToGrow>
@@ -563,11 +543,12 @@
         </pointToGrow>
         <chanceToGrow>0.5</chanceToGrow>
         <consumeEnabled>true</consumeEnabled>
+        <consumeRadiusMode>BlightRadius</consumeRadiusMode>
         <consumeChance>0.1</consumeChance>
         <stoneChunkCategory>StoneChunks</stoneChunkCategory>
         <stoneChunkGain>15</stoneChunkGain>
-        <freshCorpseGain>125</freshCorpseGain>
-        <rottingCorpseGain>75</rottingCorpseGain>
+        <freshCorpseGain>100</freshCorpseGain>
+        <rottingCorpseGain>50</rottingCorpseGain>
         <dessicatedCorpseGain>15</dessicatedCorpseGain>
         <mechanoidCorpseGain>15</mechanoidCorpseGain>
         <filthGain>1</filthGain>
@@ -585,7 +566,7 @@
         <startRadius>10.9</startRadius>
         <radiusGrowPerCheck>0.067</radiusGrowPerCheck>
         <expandCheckTicks>2500</expandCheckTicks>
-        <maxRadius>125</maxRadius>
+        <maxRadius>50</maxRadius>
         <pawnHediff>Celes_DustMechInfection</pawnHediff>
         <hediffSeverityPerDay>1.0</hediffSeverityPerDay>
         <plantHarmFrequencyPerArea>0.011</plantHarmFrequencyPerArea>
@@ -593,49 +574,9 @@
         <ignoreSpecialTrees>true</ignoreSpecialTrees>
         <messageOnCropDeath>true</messageOnCropDeath>
       </li>
-      <!-- 开晶树自身也允许链式转化（canSpawnCrystalTrees=true）；地图上限 20 兜底 -->
-      <li Class="CelesFeature.CelesIM_CompProperties_CrystalTerrainSpread">
-        <spreadTerrain>Celes_CrystalSurface</spreadTerrain>
-        <spreadPerCheck>3</spreadPerCheck>
-        <checkIntervalTicks>2500</checkIntervalTicks>
-        <pExtend>0.5</pExtend>
-        <fillThreshold>3</fillThreshold>
-        <fillMinAge>15</fillMinAge>
-        <tipSpacing>24</tipSpacing>
-        <minTipsTarget>4</minTipsTarget>
-        <initialTips>4</initialTips>
-        <spawnPerCycle>3</spawnPerCycle>
-        <maxTipLen>36</maxTipLen>
-        <turnChance>0.1</turnChance>
-        <branchChance>0.08</branchChance>
-        <maxTips>120</maxTips>
-        <ageWeight>0.5</ageWeight>
-        <ageNormScale>10</ageNormScale>
-        <concavityWeight>0.5</concavityWeight>
-        <fillWeightBase>1</fillWeightBase>
-        <frozenAttractionK>3</frozenAttractionK>
-        <neededAffordance>Light</neededAffordance>
-        <protectedTerrains>
-          <li>Celes_CrystalFloor</li>
-        </protectedTerrains>
-        <canSpawnCrystalTrees>true</canSpawnCrystalTrees>
-        <crystalTreeDef>Celes_CrystalTree</crystalTreeDef>
-        <treeConvertChance>0.003</treeConvertChance>
-        <treeDensityRadius>2</treeDensityRadius>
-        <treeDensityFullCount>6</treeDensityFullCount>
-        <treeDensityWeight>1</treeDensityWeight>
-        <treeConvertRadius>3</treeConvertRadius>
-        <treeMinOpenNeighbors>1</treeMinOpenNeighbors>
-        <treeConvertMaxPerCheck>1</treeConvertMaxPerCheck>
-        <maxCrystalTreesOnMap>50</maxCrystalTreesOnMap>
-        <ignoreSuperTrees>true</ignoreSuperTrees>
-        <treeBlacklist>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
-          <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
-          <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
-        </treeBlacklist>
-        <minTips>3</minTips>
-        <thickenChance>0.6</thickenChance>
+      <li Class="CelesFeature.CelesIM_CompProperties_CrystalHarvestExtra">
+        <extraYieldDef>WoodLog</extraYieldDef>
+        <extraYieldCount>25</extraYieldCount>
       </li>
     </comps>
   </ThingDef>

@@ -92,8 +92,6 @@
     <CelesFD_Keyed_TradeFilterPrecious>珍</CelesFD_Keyed_TradeFilterPrecious>
     <CelesFD_Keyed_TradeFilterEasterEgg>彩</CelesFD_Keyed_TradeFilterEasterEgg>
     <CelesFD_Keyed_TradeFilterUrgent>突</CelesFD_Keyed_TradeFilterUrgent>
-    <CelesFD_Keyed_TradeFilterScattered>散</CelesFD_Keyed_TradeFilterScattered>
-    <CelesFD_Keyed_TradeFilterBulk>批</CelesFD_Keyed_TradeFilterBulk>
     <CelesFD_Keyed_TradeFilterBuy>收</CelesFD_Keyed_TradeFilterBuy>
     <CelesFD_Keyed_TradeFilterSell>售</CelesFD_Keyed_TradeFilterSell>
     <CelesFD_Keyed_DirBuy>收购</CelesFD_Keyed_DirBuy>
@@ -118,6 +116,7 @@
     <CelesFD_Keyed_PenaltyExtraDesc>由于您的连续违约记录（惩罚等级 {0}），外勤部对本次违约追加重罚：声望 -{1}，信用额 -{2}。</CelesFD_Keyed_PenaltyExtraDesc>
     <CelesFD_Keyed_OrderSuccessTitle>订单完成</CelesFD_Keyed_OrderSuccessTitle>
     <CelesFD_Keyed_OrderSuccessDesc>订单「{0}」已交付完成。报酬已入账：声望 +{1}，信用额 +{2}{3}。</CelesFD_Keyed_OrderSuccessDesc>
+    <CelesFD_Keyed_KeyRewardSuffix>，密钥 +{0}</CelesFD_Keyed_KeyRewardSuffix>
     <CelesFD_Keyed_AlertOrderDeadline>订单即将到期</CelesFD_Keyed_AlertOrderDeadline>
     <CelesFD_Keyed_AlertOrderDeadlinePlural>订单到期（{0} 份）</CelesFD_Keyed_AlertOrderDeadlinePlural>
     <CelesFD_Keyed_AlertOrderDeadlineDesc>您有 {0} 份已接取订单将在不足一天内到期，请尽快装载并发射交付。</CelesFD_Keyed_AlertOrderDeadlineDesc>
@@ -127,6 +126,7 @@
     <CelesFD_Keyed_AlertInTransitDesc>您有 {0} 单在途货物，正在运往您的殖民地。</CelesFD_Keyed_AlertInTransitDesc>
     <CelesFD_Keyed_NoCreditOrder>信用额不足，无法下单（需 {0} 信用额）</CelesFD_Keyed_NoCreditOrder>
     <CelesFD_Keyed_NoKeyOrder>密钥不足，无法下单（需 {0} 密钥）</CelesFD_Keyed_NoKeyOrder>
+    <CelesFD_Keyed_MarketPurchaseLimit>「{0}」限购 {1} 次，已达上限</CelesFD_Keyed_MarketPurchaseLimit>
     <CelesFD_Keyed_OrderPlacedTitle>订单已下单</CelesFD_Keyed_OrderPlacedTitle>
     <CelesFD_Keyed_OrderPlacedDesc>您的订单已确认，星铃空投将在 {0} 后抵达。</CelesFD_Keyed_OrderPlacedDesc>
     <CelesFD_Keyed_OrderArrivedTitle>货物已抵达</CelesFD_Keyed_OrderArrivedTitle>

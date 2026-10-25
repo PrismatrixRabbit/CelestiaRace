@@ -5,7 +5,6 @@
         <defName>CelesFD_L1Buy_CargoBuildingMaterial</defName>
         <title>L1预制建材货组收购</title>
         <category>Open</category>
-        <form>Bulk</form>
         <isBuy>true</isBuy>
         <fameReward>5</fameReward>
         <orderDurationInQuadrums>0.5</orderDurationInQuadrums>
@@ -50,7 +49,6 @@
         <defName>CelesFD_L1Buy_CargoBuildingMaterialSteel</defName>
         <title>L1预制建材货组收购钢铁差分</title>
         <category>Open</category>
-        <form>Bulk</form>
         <isBuy>true</isBuy>
         <fameReward>7</fameReward>
         <orderDurationInQuadrums>0.5</orderDurationInQuadrums>
@@ -76,5 +74,87 @@
             </li>
         </includeThings>
     </CelesFeature.CelesFD_MarketClassDef>
-    
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         使用例：限购 / 保底（仅注释参考，不加载；复制时去掉本注释包裹）
+         2026-10-24 市场 C# 机制批（purchaseLimit / isGuaranteed / guaranteedItemCount）
+
+         字段速查：
+         purchaseLimit：0/缺省=不限；1=本存档一次；N=本存档 N 次。
+           计数时机：出售单=购物车成功付款后；收购单=交付完成后；
+           接取/放弃/逾期/失败付款不计。
+           生成侧按“已成交 + 清单内在途/锁定单”扣剩余名额；达到上限后该 Def 不再生成。
+         isGuaranteed：保底单，不占槽位；该 Def 清单内还有单（锁定存活/已接取）→ 本轮不补。
+         guaranteedItemCount：保底每次刷新生成份数，缺省 1；超过 entry 数会 Warning 并钳制。
+           多 entry 保底想全出时需显式写（如 2~3）；单 entry 不要写 2~3，否则每次刷新 Warning。
+         validLevel：保底 def 可留空=全等级；非保底 def 必须显式列等级（否则 ConfigError）。
+
+         例 1：保底 + 限购一次（默认 1 份；validLevel 留空=全等级）
+         <CelesFeature.CelesFD_MarketClassDef>
+             <defName>CelesFD_Example_GuaranteedLimit</defName>
+             <title>示例：保底+限购一次</title>
+             <category>Open</category>
+             <isBuy>true</isBuy>
+             <isGuaranteed>true</isGuaranteed>
+             <purchaseLimit>1</purchaseLimit>
+             <fameReward>1</fameReward>
+             <orderDurationInQuadrums>1</orderDurationInQuadrums>
+             <includeThings>
+                 <li>
+                     <filter><thingDefs><li>Steel</li></thingDefs></filter>
+                     <thingAmount>1~2</thingAmount>
+                     <thingPriceCredit>1</thingPriceCredit>
+                 </li>
+             </includeThings>
+         </CelesFeature.CelesFD_MarketClassDef>
+
+         例 2：普通收购 + 限购一次（validLevel 必须非空）
+         <CelesFeature.CelesFD_MarketClassDef>
+             <defName>CelesFD_Example_NormalLimit</defName>
+             <title>示例：普通+限购一次</title>
+             <category>Open</category>
+             <isBuy>true</isBuy>
+             <purchaseLimit>1</purchaseLimit>
+             <fameReward>1</fameReward>
+             <orderDurationInQuadrums>1</orderDurationInQuadrums>
+             <validLevel>
+                 <li>CelesFD_Level_L0</li>
+                 <li>CelesFD_Level_L1</li>
+                 <li>CelesFD_Level_L2</li>
+             </validLevel>
+             <includeThings>
+                 <li>
+                     <filter><thingDefs><li>Steel</li></thingDefs></filter>
+                     <thingAmount>1~2</thingAmount>
+                     <thingPriceCredit>1</thingPriceCredit>
+                 </li>
+             </includeThings>
+         </CelesFeature.CelesFD_MarketClassDef>
+
+         例 3：出售 + 限购一次（isBuy=false；购物车付款后计数）
+         <CelesFeature.CelesFD_MarketClassDef>
+             <defName>CelesFD_Example_SellLimit</defName>
+             <title>示例：出售+限购一次</title>
+             <category>Open</category>
+             <isBuy>false</isBuy>
+             <purchaseLimit>1</purchaseLimit>
+             <fameReward>1</fameReward>
+             <orderDurationInQuadrums>1</orderDurationInQuadrums>
+             <validLevel>
+                 <li>CelesFD_Level_L0</li>
+                 <li>CelesFD_Level_L1</li>
+                 <li>CelesFD_Level_L2</li>
+             </validLevel>
+             <includeThings>
+                 <li>
+                     <filter><thingDefs><li>Steel</li></thingDefs></filter>
+                     <thingAmount>1~1</thingAmount>
+                     <thingPriceCredit>1</thingPriceCredit>
+                 </li>
+             </includeThings>
+         </CelesFeature.CelesFD_MarketClassDef>
+
+         注意：示例价格/数量为测试值，不是经济数值；正式内容按 10a/09s 的定价纪律重定。
+         ═══════════════════════════════════════════════════════════════════ -->
+
 </Defs>

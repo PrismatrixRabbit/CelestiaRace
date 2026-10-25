@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   
+  <!-- 轨道垃圾箱事件族（2026-10-24 裁决）：5 事件共享 refireCheckTags=CelesOrbitDropTrash——
+       家族内任一触发 → minRefireDays=30 天内全族被 FiredTooRecently 拦截（退出候选池，同时消除池收缩放大）。
+       baseChance 总预算 1.0（本次等比缩放合计 0.8：原 0.8/0.5/0.5/0.1/0.3 → 0.29/0.18/0.18/0.04/0.11）。
+       调整时保持等比缩放，勿单点调高。 -->
   <!-- 事件：普通（同原版货舱坠毁 ResourcePodCrash baseChance=1.0，概率略低 20%） -->
   <IncidentDef>
     <defName>CelesFD_NormalOrbitDropTrash</defName>
@@ -10,7 +14,14 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
-    <baseChance>0.8</baseChance>
+    <baseChance>0.29</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <tags>
+      <li>CelesOrbitDropTrash</li>
+    </tags>
+    <refireCheckTags>
+      <li>CelesOrbitDropTrash</li>
+    </refireCheckTags>
     <letterDef>NeutralEvent</letterDef>
     <letterLabel>星铃轨道垃圾箱坠落</letterLabel>
     <letterText>星铃轨道垃圾箱坠落在您的殖民地附近。其中或许有些有用的物资。</letterText>
@@ -40,7 +51,14 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
-    <baseChance>0.5</baseChance>
+    <baseChance>0.18</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <tags>
+      <li>CelesOrbitDropTrash</li>
+    </tags>
+    <refireCheckTags>
+      <li>CelesOrbitDropTrash</li>
+    </refireCheckTags>
     <letterDef>PositiveEvent</letterDef>
     <letterLabel>星铃轨道垃圾箱坠落</letterLabel>
     <letterText>大量星铃轨道垃圾箱坠落在您的殖民地附近。其中或许有些有用的物资。</letterText>
@@ -70,7 +88,14 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
-    <baseChance>0.5</baseChance>
+    <baseChance>0.18</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <tags>
+      <li>CelesOrbitDropTrash</li>
+    </tags>
+    <refireCheckTags>
+      <li>CelesOrbitDropTrash</li>
+    </refireCheckTags>
     <letterDef>NeutralEvent</letterDef>
     <letterLabel>星铃轨道垃圾箱坠落</letterLabel>
     <letterText>星铃轨道垃圾箱坠落在您的殖民地附近。请谨慎处理其中的内容物。</letterText>
@@ -104,7 +129,14 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
-    <baseChance>0.1</baseChance>
+    <baseChance>0.04</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <tags>
+      <li>CelesOrbitDropTrash</li>
+    </tags>
+    <refireCheckTags>
+      <li>CelesOrbitDropTrash</li>
+    </refireCheckTags>
     <letterDef>NegativeEvent</letterDef>
     <letterLabel>星铃轨道垃圾箱坠落</letterLabel>
     <letterText>星铃轨道垃圾箱坠落在您的殖民地附近。氛围不对……</letterText>
@@ -142,7 +174,14 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>CelesFeature.CelesFD_IncidentWorker_OrbitDrop</workerClass>
-    <baseChance>0.3</baseChance>
+    <baseChance>0.11</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <tags>
+      <li>CelesOrbitDropTrash</li>
+    </tags>
+    <refireCheckTags>
+      <li>CelesOrbitDropTrash</li>
+    </refireCheckTags>
     <letterDef>NegativeEvent</letterDef>
     <letterLabel>星铃轨道垃圾箱坠落（晶体）</letterLabel>
     <letterText>检测到星铃轨道晶体坠落的信号。这些晶体对星铃外勤部而言有着特殊价值。</letterText>

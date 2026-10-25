@@ -36,6 +36,7 @@
         <marketPreciousChance>0</marketPreciousChance>
         <maxTradeOrder>2</maxTradeOrder>
         <weaponQuotaPerQuadrum>4</weaponQuotaPerQuadrum>
+        <allowUrgentOrders>false</allowUrgentOrders>
     </CelesFeature.CelesFD_UnlockLevelDef>
 
     <CelesFeature.CelesFD_UnlockLevelDef>
@@ -60,6 +61,7 @@
         <marketPreciousChance>0</marketPreciousChance>
         <maxTradeOrder>2</maxTradeOrder>
         <weaponQuotaPerQuadrum>4</weaponQuotaPerQuadrum>
+        <allowUrgentOrders>false</allowUrgentOrders>
     </CelesFeature.CelesFD_UnlockLevelDef>
 
     <CelesFeature.CelesFD_UnlockLevelDef>

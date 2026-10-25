@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- ═══ ① 道歉树 B（星铃剧本：极光号科考队） ═══ -->
+    <!-- ========== 星铃引入树 ========== -->
+    
     <CelesFeature.CelesFD_DialogueTreeDef>
         <defName>RootTree_ApologyB</defName>
         <startNode>N_ApologyB_Intro</startNode>
@@ -14,7 +15,7 @@
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_ApologyB_Intro</defName>
-        <nodeText>[占位]（星铃同胞叙事：极光号科考队致意，北极星号失联，请求尽快联系。进入即发放补偿 15 声望 + 750 信用额。）</nodeText>
+        <nodeText>我谨代表星铃“极光”号方舟与第七舰队联合科学考察队外勤部向领航者致意。同胞，终于联系上你们了。\n此前晶体错误投放的补偿已经发放到你们当前使用的账户上，包含750信用点和15声望点数，你们可以在这个系统内合规的购买你们所需的物资。很抱歉，基于本地文明干涉条例，我们不能直接向你们无偿发送资源……嗯，但是注意偶尔会有的“垃圾箱”。\n进入正题吧。“北极星”号到底发生了什么？</nodeText>
         <entryComps>
             <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_SetVariable">
                 <varName>ApologyViewed</varName>
@@ -30,31 +31,88 @@
             </li>
         </entryComps>
         <options>
-            <li><label>那些晶体是什么？</label><next>N_ApologyB_Crystal</next></li>
-            <li><label>你们是谁？</label><next>N_ApologyB_Who</next></li>
-            <li><label>感谢（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>“北极星”号……？那是什么……？（一无所知）</label><next>N_ApologyB_Intro_A</next></li>
+            <li><label>我们只记得坠毁之后的事情……（大致了解）</label><next>N_ApologyB_Intro_B</next></li>
+            <li><label>寂静协议。</label><next>N_ApologyB_Intro_C</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_ApologyB_Intro_A</defName>
+        <nodeText>……？你们集体退行性失忆了……？这……我了解了……</nodeText>
+        <options>
+            <li><label>所以你能不能告诉我们……那些晶体是什么？</label><next>N_ApologyB_Crystal</next></li>
+            <li><label>所以你们是谁？</label><next>N_ApologyB_Who</next></li>
+            <li><label>感谢你的帮助，这样就可以了。（结束对话）</label><next>N_ApologyB_Intro</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_ApologyB_Intro_B</defName>
+        <nodeText>我理解了……很抱歉。有什么我还帮得上忙的？</nodeText>
+        <options>
+            <li><label>所以你能不能告诉我们……那些尘晶怎么了？</label><next>N_ApologyB_Crystal</next></li>
+            <li><label>所以为什么“极光”号会出现在这里？</label><next>N_ApologyB_Who</next></li>
+            <li><label>感谢你的帮助，这样就可以了。（结束对话）</label><next>N_ApologyB_HangUp</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_ApologyB_Intro_C</defName>
+        <nodeText>你认真的……？</nodeText>
+        <options>
+            <li><label>呃……我只是想到这个词……我不知道这是什么意思……</label><next>N_ApologyB_Intro_Ca</next></li>
+            <li><label>哈哈开个玩笑……</label><next>N_ApologyB_Intro_Ca</next></li>
+            <li><label>我认真的。代码FLOOD，情境叁，寂静协议。</label><next>N_ApologyB_Intro_Cb</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_ApologyB_Intro_Ca</defName>
+        <nodeText>别开这种玩笑……有什么我还帮得上忙的？</nodeText>
+        <options>
+            <li><label>所以你能不能告诉我们……那些尘晶怎么了？</label><next>N_ApologyB_Crystal</next></li>
+            <li><label>所以为什么“极光”号会出现在这里？</label><next>N_ApologyB_Who</next></li>
+            <li><label>感谢你的帮助，这样就可以了。（结束对话）</label><next>N_ApologyB_HangUp</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_ApologyB_Intro_Cb</defName>
+        <nodeText>代码FLOOD，情境叁，寂静协议。收到，最高戒备，再次向您致意。</nodeText>
+        <options>
+            <li><label>感谢你的帮助，这样就可以了。（结束对话）</label><next>N_ApologyB_HangUp</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_ApologyB_Crystal</defName>
-        <nodeText>[占位]（星铃技术介绍：尘构晶簇的来历与用途。语气信息深度高于 A 树。）</nodeText>
+        <nodeText>那些晶体……尘晶……嗯……你知道的，正常来说它们是星铃用于快速提取尘构原料的有限自增冯诺依曼机械，但不知道为什么，它们坠落在了你们的殖民地，真奇怪啊不是吗。\n如果你不知道的话，那块母岩可以作为人工约束尘构增殖的核心，那些开采出的尘晶碎片也会在尘构制造上很有用，只是当心一下，如果有生物尸体，大量树木或者岩块的话，增殖可能失控。我个人建议尽快拆除它们，然后回收尘晶晶种。</nodeText>
         <options>
-            <li><label>继续了解</label><next>N_ApologyB_Who</next></li>
-            <li><label>这就够了（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>那么你们……？</label><next>N_ApologyB_Who</next></li>
+            <li><label>这就够了。（结束对话）</label><next>N_ApologyB_HangUp</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_ApologyB_Who</defName>
-        <nodeText>[占位]（星铃背景故事介绍：极光号、北极星号与科考队。语气信息深度高于 A 树。）</nodeText>
+        <nodeText>正如之前所说，我们是星铃“极光”号方舟与第七舰队联合科学考察队外勤部。我们的按照领航计划的惯例执行本星系的开采任务，以及执行和“北极星”号的航路汇合……然后，我们只看见你们这样的幸存者。你们随时可以向我们申请交易或支援。</nodeText>
         <options>
-            <li><label>回到晶体话题</label><next>N_ApologyB_Crystal</next></li>
-            <li><label>这就够了（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>那么晶体……？</label><next>N_ApologyB_Crystal</next></li>
+            <li><label>这就够了。（结束对话）</label><next>N_ApologyB_HangUp</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <!-- ═══ ② 道歉树 C（过期：道歉触发 2 象后才联系） ═══ -->
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_ApologyB_HangUp</defName>
+        <nodeText>好。那么，有任何需要，仍然是这个频道。</nodeText>
+        <options>
+            <li><label>之后再说。</label><next>N_Main_HangUp</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <!-- ========== 道歉过期树 ========== -->
+    
     <CelesFeature.CelesFD_DialogueTreeDef>
         <defName>RootTree_ApologyC</defName>
         <startNode>N_ApologyC_Intro</startNode>
@@ -68,24 +126,17 @@
         </conditions>
     </CelesFeature.CelesFD_DialogueTreeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
         <defName>N_ApologyC_Intro</defName>
-        <nodeText>[占位]（伪常态问候——不发放补偿；"索要赔偿"外所有选项导向主树对应节点，无法返回。）</nodeText>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_options}</nodeText>
         <options>
-            <li><label>索要赔偿</label><next>N_ApologyC_Claim</next></li>
-            <li>
-                <label>挂断</label>
-                <sets>
-                    <li><varName>ApologyViewed</varName><Set>1</Set></li>
-                </sets>
-                <next>N_Main_Intro</next>
-            </li>
+            <li><label>索要赔偿！！！</label><next>N_ApologyC_Claim</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_ApologyC_Claim</defName>
-        <nodeText>[占位]（"正在查阅过往资料，请玩家等待。"）</nodeText>
+        <nodeText>赔偿……？请你等我查询一下……</nodeText>
         <options>
             <li><label>等待</label><next>N_ApologyC_Reply</next></li>
         </options>
@@ -93,7 +144,7 @@
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_ApologyC_Reply</defName>
-        <nodeText>[占位]（"如果你们再不问的话，我们马上就要归档那次事件了……" + 道歉信正文梗概。进入即发放补偿 0 声望 + 300 信用额。）</nodeText>
+        <nodeText>如果你们再不问的话，我们马上就要归档那次事件了……好吧，让我看看……晶体错误投放……嗯，300信用额补偿款已经发放了。还有什么事情吗？</nodeText>
         <entryComps>
             <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_SetVariable">
                 <varName>ApologyViewed</varName>
@@ -107,29 +158,30 @@
         <options>
             <li><label>那些晶体是什么？</label><next>N_ApologyC_Crystal</next></li>
             <li><label>你们是谁？</label><next>N_ApologyC_Who</next></li>
-            <li><label>感谢（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>没有了。（结束对话）</label><next>N_Main_Intro</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_ApologyC_Crystal</defName>
-        <nodeText>[占位]（星铃技术介绍——过期版，语气冷淡。）</nodeText>
+        <nodeText>那些是出于错误原因被错误投放的错误晶体，对你们有毒，最好做好毒性防护然后尽快拆除……不过过了这么久，你们要么解决了，要么已经搬家了吧？</nodeText>
         <options>
-            <li><label>继续了解</label><next>N_ApologyC_Who</next></li>
-            <li><label>这就够了（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>那么你们……？</label><next>N_ApologyC_Who</next></li>
+            <li><label>这就够了。（结束对话）</label><next>N_Main_Intro</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_ApologyC_Who</defName>
-        <nodeText>[占位]（星铃背景介绍——过期版，语气冷淡。）</nodeText>
+        <nodeText>我们是星铃“极光”号方舟与第七舰队联合科学考察队外勤部，你们可以和我们交易物资，申请支援。</nodeText>
         <options>
-            <li><label>回到晶体话题</label><next>N_ApologyC_Crystal</next></li>
-            <li><label>这就够了（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>那么晶体……？</label><next>N_ApologyC_Crystal</next></li>
+            <li><label>这就够了。（结束对话）</label><next>N_Main_Intro</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <!-- ═══ ③ 道歉树 A（常态） ═══ -->
+    <!-- ========== 道歉常态树 ========== -->
+
     <CelesFeature.CelesFD_DialogueTreeDef>
         <defName>RootTree_ApologyA</defName>
         <startNode>N_ApologyA_Intro</startNode>
@@ -145,7 +197,7 @@
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_ApologyA_Intro</defName>
-        <nodeText>[占位]（道歉信正文梗概——"尘构晶簇的所有权已完全转交给你方……"。进入即发放补偿 5 声望 + 300 信用额。）</nodeText>
+        <nodeText>很抱歉此前晶体错误投放的到您的殖民地区域，补偿已经发放到你们当前使用的账户上，包含300信用点和5声望点数，你们可以在这个系统内合规的购买你们所需的物资。还有什么事情吗？</nodeText>
         <entryComps>
             <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_SetVariable">
                 <varName>ApologyViewed</varName>
@@ -163,29 +215,52 @@
         <options>
             <li><label>那些晶体是什么？</label><next>N_ApologyA_Crystal</next></li>
             <li><label>你们是谁？</label><next>N_ApologyA_Who</next></li>
-            <li><label>感谢（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>没有了。（结束对话）</label><next>N_Main_Intro</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_ApologyA_Crystal</defName>
-        <nodeText>[占位]（星铃技术介绍：尘构晶簇的来历与用途。）</nodeText>
+        <nodeText>那些是出于错误原因被错误投放的错误晶体，对你们有毒，最好做好毒性防护然后尽快拆除……不知道为什么，它们坠落在了你们的殖民地，真奇怪啊不是吗。</nodeText>
         <options>
-            <li><label>继续了解</label><next>N_ApologyA_Who</next></li>
-            <li><label>这就够了（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>那么你们……？</label><next>N_ApologyA_Who</next></li>
+            <li><label>这就够了。（结束对话）</label><next>N_Main_Intro</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_ApologyA_Who</defName>
-        <nodeText>[占位]（星铃背景故事介绍。）</nodeText>
+        <nodeText>我们是星铃“极光”号方舟与第七舰队联合科学考察队外勤部，你们可以和我们交易物资，申请支援。</nodeText>
         <options>
-            <li><label>回到晶体话题</label><next>N_ApologyA_Crystal</next></li>
-            <li><label>这就够了（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>那么晶体……？</label><next>N_ApologyA_Crystal</next></li>
+            <li><label>这就够了。（结束对话）</label><next>N_Main_Intro</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <!-- ═══ ④ 主树（等级 0/1 × 关系 敌/中/盟 6 差分文本；含信标站管理入口） ═══ -->
+    <!-- ========== 彩蛋树 ========== -->
+
+    <CelesFeature.CelesFD_DialogueTreeDef>
+        <defName>RootTree_EasterEgg</defName>
+        <startNode>N_EasterEgg_Intro</startNode>
+        <isRoot>true</isRoot>
+    </CelesFeature.CelesFD_DialogueTreeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef>
+        <defName>N_EasterEgg_Intro</defName>
+        <nodeText>你是怎么黑入这个频段的……？！</nodeText>
+        <options>
+            <li>
+                <label>说明来意</label>
+                <sets>
+                    <li><varName>EasterEggDone</varName><Set>1</Set></li>
+                </sets>
+                <next>N_Main_Intro</next>
+            </li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <!-- ========== 主对话树 ========== -->
+
     <CelesFeature.CelesFD_DialogueTreeDef>
         <defName>RootTree_Main</defName>
         <startNode>N_Main_Intro</startNode>
@@ -197,9 +272,9 @@
         </conditions>
     </CelesFeature.CelesFD_DialogueTreeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef><!-- 初始进入点 -->
         <defName>N_Main_Intro</defName>
-        <nodeText>[占位]（通讯连接已建立。）</nodeText>
+        <nodeText>……正在与星铃外勤部系统建立连接……\n……请登陆……</nodeText>
         <options>
             <li>
                 <isBranch>true</isBranch>
@@ -209,7 +284,7 @@
                             <li><varName>Level</varName><Equal>0</Equal></li>
                             <li><varName>Relation</varName><Equal>0</Equal></li>
                         </conditions>
-                        <label>继续</label>
+                        <label>登陆</label>
                         <next>N_Main_Txt_L0Hostile</next>
                     </li>
                     <li>
@@ -217,7 +292,7 @@
                             <li><varName>Level</varName><Equal>0</Equal></li>
                             <li><varName>Relation</varName><Equal>1</Equal></li>
                         </conditions>
-                        <label>继续</label>
+                        <label>登陆</label>
                         <next>N_Main_Txt_L0Neutral</next>
                     </li>
                     <li>
@@ -225,7 +300,7 @@
                             <li><varName>Level</varName><Equal>0</Equal></li>
                             <li><varName>Relation</varName><Equal>2</Equal></li>
                         </conditions>
-                        <label>继续</label>
+                        <label>登陆</label>
                         <next>N_Main_Txt_L0Ally</next>
                     </li>
                     <li>
@@ -233,7 +308,7 @@
                             <li><varName>Level</varName><Equal>1</Equal></li>
                             <li><varName>Relation</varName><Equal>0</Equal></li>
                         </conditions>
-                        <label>继续</label>
+                        <label>登陆</label>
                         <next>N_Main_Txt_L1Hostile</next>
                     </li>
                     <li>
@@ -241,7 +316,7 @@
                             <li><varName>Level</varName><Equal>1</Equal></li>
                             <li><varName>Relation</varName><Equal>1</Equal></li>
                         </conditions>
-                        <label>继续</label>
+                        <label>登陆</label>
                         <next>N_Main_Txt_L1Neutral</next>
                     </li>
                     <li>
@@ -249,68 +324,155 @@
                             <li><varName>Level</varName><Equal>1</Equal></li>
                             <li><varName>Relation</varName><Equal>2</Equal></li>
                         </conditions>
-                        <label>继续</label>
+                        <label>登陆</label>
                         <next>N_Main_Txt_L1Ally</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>Level</varName><Gte>2</Gte></li>
+                        </conditions>
+                        <label>登陆</label>
+                        <next>N_Main_Txt_L2Test</next>
                     </li>
                 </branches>
             </li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef Name="N_Main_Txt" Abstract="true"><!-- 初始节点基类 -->
+        <options>
+            <li>
+                <isBranch>true</isBranch>
+                <li>
+                    <conditions>
+                        <li><varName>Relation</varName><Equal>0</Equal></li>
+                    </conditions>
+                    <label>向接线员问好</label>
+                    <next>N_Main_Greet_Hostile</next>
+                </li>
+                <li>
+                    <conditions>
+                        <li><varName>Relation</varName><Equal>1</Equal></li>
+                    </conditions>
+                    <label>向接线员问好</label>
+                    <next>N_Main_Greet_Neutral</next>
+                </li>
+                <li>
+                    <conditions>
+                        <li><varName>Relation</varName><Equal>2</Equal></li>
+                    </conditions>
+                    <label>向接线员问好</label>
+                    <next>N_Main_Greet_Ally</next>
+                </li>
+            </li>
+            <li>
+                <isBranch>true</isBranch>
+                <li>
+                    <conditions>
+                        <li><varName>Relation</varName><Equal>0</Equal></li>
+                    </conditions>
+                    <label>问问外勤部近况</label>
+                    <next>N_Main_News_Hostile</next>
+                </li>
+                <li>
+                    <conditions>
+                        <li><varName>Relation</varName><Gte>1</Gte></li>
+                    </conditions>
+                    <label>问问外勤部近况</label>
+                    <next>N_Main_News_Neutral</next>
+                </li>
+            </li>
+            <li><label>问问这个系统</label><next>N_Main_System</next></li>
+            <li>
+                <isBranch>true</isBranch>
+                <li>
+                    <conditions>
+                        <li><varName>Relation</varName><Equal>0</Equal></li>
+                    </conditions>
+                    <label>问问星铃相关信息</label>
+                    <next>N_Main_Celestia_Hostile</next>
+                </li>
+                <li>
+                    <conditions>
+                        <li><varName>Relation</varName><Gte>1</Gte></li>
+                    </conditions>
+                    <label>问问星铃相关信息</label>
+                    <next>N_Main_Celestia_Neutral</next>
+                </li>
+            </li>
+            <li>
+                <label>问问有什么能说的秘密</label>
+                <conditions>
+                    <li><varName>Level</varName><Gte>1</Gte></li>
+                    <li><varName>Relation</varName><Equal>2</Equal></li>
+                </conditions>
+                <next>N_Main_Secret</next>
+            </li>
+            <li><label>信标站管理</label><next>N_Beacon_Main</next></li>
+            <li><label>挂断</label><next>N_Main_HangUp</next></li>
+        </options>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
+        <defName>N_Main_Options</defName>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_options}</nodeText>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
         <defName>N_Main_Txt_L0Hostile</defName>
         <nodeText>有何贵干？各信标站可能不太愿意和你们交易哦。</nodeText>
-        <options>
-            <li><label>继续</label><next>N_Main_Options</next></li>
-        </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
         <defName>N_Main_Txt_L0Neutral</defName>
         <nodeText>这里是星铃外勤部，{playerLevelWord}{playerFactionName}，请表明来意。</nodeText>
-        <options>
-            <li><label>继续</label><next>N_Main_Options</next></li>
-        </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
         <defName>N_Main_Txt_L0Ally</defName>
         <nodeText>欢迎，{playerLevelWord}{playerFactionName}，今天有什么想要交易的？</nodeText>
-        <options>
-            <li><label>继续</label><next>N_Main_Options</next></li>
-        </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
         <defName>N_Main_Txt_L1Hostile</defName>
         <nodeText>{playerLevelWord}{playerFactionName}。我们得通知您，由于您近期的表现，各信标站可能会主动断开和你们的通讯。</nodeText>
-        <options>
-            <li><label>继续</label><next>N_Main_Options</next></li>
-        </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
         <defName>N_Main_Txt_L1Neutral</defName>
         <nodeText>这里是星铃外勤部，{playerLevelWord}{playerFactionName}，请表明来意。</nodeText>
-        <options>
-            <li><label>继续</label><next>N_Main_Options</next></li>
-        </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
         <defName>N_Main_Txt_L1Ally</defName>
         <nodeText>欢迎，{playerLevelWord}{playerFactionName}，今天有什么想要交易的？</nodeText>
-        <options>
-            <li><label>继续</label><next>N_Main_Options</next></li>
-        </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
-        <defName>N_Main_Options</defName>
-        <nodeText>[占位]（您想聊些什么？）</nodeText>
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
+        <defName>N_Main_Txt_L2Test</defName>
+        <nodeText>这里是星铃外勤部，{playerLevelWord}{playerFactionName}，请表明来意。</nodeText>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    
+    <CelesFeature.CelesFD_DialogueNodeDef Name="N_Main_Greet" Abstract="true"><!-- 问好节点基类 -->
         <options>
-            <li><label>问好</label><next>N_Main_Greet</next></li>
-            <li><label>问问近况</label><next>N_Main_News</next></li>
+            <li><label>再次向接线员问好</label><next>N_Main_Greet_Again</next></li>
+            <li>
+                <isBranch>true</isBranch>
+                <li>
+                    <conditions>
+                        <li><varName>Relation</varName><Equal>0</Equal></li>
+                    </conditions>
+                    <label>问问外勤部近况</label>
+                    <next>N_Main_News_Hostile</next>
+                </li>
+                <li>
+                    <conditions>
+                        <li><varName>Relation</varName><Gte>1</Gte></li>
+                    </conditions>
+                    <label>问问外勤部近况</label>
+                    <next>N_Main_News_Neutral</next>
+                </li>
+            </li>
             <li><label>问问本系统介绍</label><next>N_Main_System</next></li>
             <li><label>问问星铃相关信息</label><next>N_Main_Celestia</next></li>
             <li>
@@ -325,53 +487,66 @@
             <li><label>挂断</label><next>N_Main_HangUp</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
-
-    <CelesFeature.CelesFD_DialogueNodeDef>
-        <defName>N_Main_Greet</defName>
-        <nodeText>[占位]（问候回应。）</nodeText>
-        <options>
-            <li><label>返回</label><next>N_Main_Options</next></li>
-        </options>
+    
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Greet">
+        <defName>N_Main_Greet_Hostile</defName>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_greet_hostile}</nodeText>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
-        <defName>N_Main_News</defName>
-        <nodeText>[占位]（近况回应。）</nodeText>
-        <options>
-            <li><label>返回</label><next>N_Main_Options</next></li>
-        </options>
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Greet">
+        <defName>N_Main_Greet_Neutral</defName>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_greet_neutral}</nodeText>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Greet">
+        <defName>N_Main_Greet_Ally</defName>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_greet_ally}</nodeText>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Greet">
+        <defName>N_Main_Greet_Again</defName>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_greet_again}</nodeText>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    
+    <!-- 近况节点 -->
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
+        <defName>N_Main_News_Hostile</defName>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_greet_hostile}</nodeText>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
+        <defName>N_Main_News_Neutral</defName>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_greet_neutral}</nodeText>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+
+    <!-- 系统节点 -->
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
         <defName>N_Main_System</defName>
-        <nodeText>[占位]（本系统介绍。）</nodeText>
-        <options>
-            <li><label>返回</label><next>N_Main_Options</next></li>
-        </options>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_system}</nodeText>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
-        <defName>N_Main_Celestia</defName>
-        <nodeText>[占位]（星铃相关信息。）</nodeText>
-        <options>
-            <li><label>返回</label><next>N_Main_Options</next></li>
-        </options>
+    <!-- 星铃信息节点 -->
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
+        <defName>N_Main_Celestia_Hostile</defName>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_celestia_hostile}</nodeText>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
+        <defName>N_Main_Celestia_Neutral</defName>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_celestia_neutral}</nodeText>
+    </CelesFeature.CelesFD_DialogueNodeDef>
+    
+    <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
         <defName>N_Main_Secret</defName>
-        <nodeText>[占位]（星铃隐秘信息——仅等级 1 + 盟友可见。）</nodeText>
-        <options>
-            <li><label>返回</label><next>N_Main_Options</next></li>
-        </options>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_secret}</nodeText>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Main_HangUp</defName>
-        <nodeText>通讯已挂断。</nodeText>
+        <nodeText>……通讯已挂断……</nodeText>
         <options>
             <li>
-                <label>结束</label>
+                <label>登出</label>
                 <comps>
                     <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_CloseWindow" />
                 </comps>
@@ -381,33 +556,11 @@
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
-    <!-- ═══ ⑤ 彩蛋树（道歉信未触发时黑入频段——"你是怎么黑入这个频段的……？！"；结束进主树） ═══ -->
-    <CelesFeature.CelesFD_DialogueTreeDef>
-        <defName>RootTree_EasterEgg</defName>
-        <startNode>N_EasterEgg_Intro</startNode>
-        <isRoot>true</isRoot>
-    </CelesFeature.CelesFD_DialogueTreeDef>
+    <!-- ========== 信标站管理对话树 ========== -->
 
-    <CelesFeature.CelesFD_DialogueNodeDef>
-        <defName>N_EasterEgg_Intro</defName>
-        <nodeText>你是怎么黑入这个频段的……？！[占位]（展开文本待补充。）</nodeText>
-        <options>
-            <li>
-                <label>说明来意</label>
-                <sets>
-                    <li><varName>EasterEggDone</varName><Set>1</Set></li>
-                </sets>
-                <next>N_Main_Intro</next>
-            </li>
-            <li><label>[占位]（继续询问）</label><next>N_EasterEgg_Intro</next></li>
-        </options>
-    </CelesFeature.CelesFD_DialogueNodeDef>
-
-
-    <!-- ═══ 信标站管理树（查看/申请/放弃） ═══ -->
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Beacon_Main</defName>
-        <nodeText>信标站管理。您可以查看现有信标站或申请新信标站。</nodeText>
+        <nodeText>【系统消息】这里是信标站管理。您可以查看现有信标站或申请新信标站。</nodeText>
         <options>
             <li>
                 <label>查看信标站 / 申请放弃</label>
@@ -424,7 +577,7 @@
                 <failNode>N_Beacon_RequestFail</failNode>
             </li>
             <li>
-                <label>返回主菜单</label>
+                <label>返回通讯</label>
                 <next>N_Main_Options</next>
             </li>
         </options>
@@ -432,18 +585,18 @@
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Beacon_List</defName>
-        <nodeText>当前 {beaconCount}/3 个信标站。本清单列出所有信标站，选中特定信标站申请放弃。</nodeText>
+        <nodeText>【系统消息】当前 {beaconCount}/3 个信标站。本清单列出所有信标站，选中特定信标站申请放弃。</nodeText>
         <entryComps>
             <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_BeaconList" />
         </entryComps>
         <options>
-            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
+            <li><label>返回上级</label><next>N_Beacon_Main</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Beacon_Confirm</defName>
-        <nodeText>确认放弃 {beaconTargetName}？</nodeText>
+        <nodeText>【系统消息】确认放弃 {beaconTargetName}？</nodeText>
         <entryComps>
             <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_BeaconConfirmEntry" />
         </entryComps>
@@ -456,31 +609,31 @@
                 <next>N_Beacon_AbandonOK</next>
                 <failNode>N_Beacon_List</failNode>
             </li>
-            <li><label>返回清单</label><next>N_Beacon_List</next></li>
+            <li><label>返回上级</label><next>N_Beacon_List</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Beacon_RequestOK</defName>
-        <nodeText>申请成功，星铃外勤部已在远处建立新信标站。</nodeText>
+        <nodeText>【系统消息】申请成功，星铃外勤部已在远处建立新信标站。</nodeText>
         <options>
-            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
+            <li><label>返回上级</label><next>N_Beacon_Main</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Beacon_RequestFail</defName>
-        <nodeText>申请被拒绝：信用额不足、名额已满或无法找到合适位置。</nodeText>
+        <nodeText>【系统消息】申请被拒绝：信用额不足、名额已满或无法找到合适位置。</nodeText>
         <options>
-            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
+            <li><label>返回上级</label><next>N_Beacon_Main</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_Beacon_AbandonOK</defName>
-        <nodeText>信标站已被放弃。</nodeText>
+        <nodeText>【系统消息】信标站已被放弃。</nodeText>
         <options>
-            <li><label>返回主菜单</label><next>N_Beacon_Main</next></li>
+            <li><label>返回上级</label><next>N_Beacon_Main</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
     

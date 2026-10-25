@@ -2,7 +2,6 @@
 <Defs>
     <RulePackDef>
         <defName>CelesFD_L1Buy_CargoBuildingMaterialFlavor</defName>
-        <!-- ═══ L1预制建材货组收购 ═══ -->
         <label>L1预制建材货组收购</label>
         <rulePack>
             <rulesStrings>

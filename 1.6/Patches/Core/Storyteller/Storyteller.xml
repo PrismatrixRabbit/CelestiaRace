@@ -14,16 +14,8 @@
                     <li>Map_PlayerHome</li>
                 </allowedTargetTags>
             </li>
-            <li Class="StorytellerCompProperties_SingleMTB">
-                <!-- M6-6 突发订单：mtbDays=20 时间随机触发（天然兼容 dev 快进；Worker 内防重复/上限判定；mtbDays 建议值可调）。
-                     FD-G33 修正版（2026-09-02）：allowedTargetTags 同步 World→Map_PlayerHome（与 IncidentDef targetTags
-                     配对，晶体坠落同款模式；Def 侧 World 标签违反独占约束已移除） -->
-                <mtbDays>20</mtbDays>
-                <incident>CelesFD_UrgentOrderSignal</incident>
-                <allowedTargetTags>
-                    <li>Map_PlayerHome</li>
-                </allowedTargetTags>
-            </li>
+            <!-- 2026-10-24：突发订单 CelesFD_UrgentOrderSignal 与叙事者解耦——原 SingleMTB 旁路已删除，
+                 改走原版随机池（IncidentDef：category=Misc / baseChance=2.0 / minRefireDays=20） -->
         </value>
     </Operation>
 </Patch>

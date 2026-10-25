@@ -7,6 +7,7 @@
 		<descriptionHyperlinks>
 			<ThingDef>Celes_BioGel</ThingDef>
 		</descriptionHyperlinks>
+		<thingClass>CelesFeature.CelesIM_LeaflessImmunePlant</thingClass>
         <statBases>
 			<Beauty>2</Beauty>
 			<BeautyOutdoors>2</BeautyOutdoors>
@@ -26,7 +27,7 @@
 			<fertilitySensitivity>1.2</fertilitySensitivity>
 			<growDays>5</growDays>
 			<sowWork>540</sowWork>
-			<dieIfLeafless>true</dieIfLeafless>
+			<dieIfLeafless>false</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>Celes_BioGel</harvestedThingDef>
 			<harvestYield>9</harvestYield>
