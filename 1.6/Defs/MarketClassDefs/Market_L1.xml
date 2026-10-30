@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
+    <!-- ===================== L1 开放市场 · 收购 ===================== -->
+
     <CelesFeature.CelesFD_MarketClassDef>
-        <defName>CelesFD_L1Buy_CargoBuildingMaterial</defName>
-        <title>L1预制建材货组收购</title>
+        <defName>CelesFD_L1Buy_CargoBuildingMaterialSmall</defName>
+        <title>L1建材货组收购（极少量）</title>
         <category>Open</category>
         <isBuy>true</isBuy>
         <fameReward>5</fameReward>
@@ -14,43 +16,155 @@
         </validLevel>
         <includeThings>
             <li>
-                <filter>
-                    <thingDefs>
-                        <li>Celes_CargoMaterial</li>
-                    </thingDefs>
-                </filter>
-                <stuffCategoriesToAllow>
-                    <li>Woody</li>
-                </stuffCategoriesToAllow>
-                <thingAmount>3~7</thingAmount>
+                <filter><thingDefs><li>Celes_CargoMaterial</li></thingDefs></filter>
+                <stuffCategoriesToAllow><li>Woody</li></stuffCategoriesToAllow>
+                <thingAmount>1~2</thingAmount>
                 <thingPriceCredit>7</thingPriceCredit>
                 <thingWeight>1</thingWeight>
                 <label>木预制建材货组</label>
                 <description>{RULEPACK:CelesFD_L1Buy_CargoBuildingMaterialFlavor:r_cargo_building_wood}</description>
             </li>
             <li>
-                <filter>
-                    <thingDefs>
-                        <li>Celes_CargoMaterial</li>
-                    </thingDefs>
-                </filter>
-                <stuffCategoriesToAllow>
-                    <li>Stony</li>
-                </stuffCategoriesToAllow>
-                <thingAmount>3~7</thingAmount>
+                <filter><thingDefs><li>Celes_CargoMaterial</li></thingDefs></filter>
+                <stuffCategoriesToAllow><li>Stony</li></stuffCategoriesToAllow>
+                <thingAmount>1~3</thingAmount>
                 <thingPriceCredit>5</thingPriceCredit>
+                <thingWeight>1</thingWeight>
                 <label>石质预制建材货组</label>
                 <description>{RULEPACK:CelesFD_L1Buy_CargoBuildingMaterialFlavor:r_cargo_building_stony}</description>
             </li>
+            <li>
+                <filter><thingDefs><li>Celes_CargoMaterial</li></thingDefs></filter>
+                <stuffDefsToAllow><li>Steel</li></stuffDefsToAllow>
+                <thingAmount>1</thingAmount>
+                <thingPriceCredit>14</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <thingExtraFameFactor>1.4</thingExtraFameFactor>
+                <label>钢铁预制建材货组</label>
+                <description>{RULEPACK:CelesFD_L1Buy_CargoBuildingMaterialFlavor:r_cargo_building_steel}</description>
+            </li>
+            <li>
+                <filter><thingDefs><li>MedicineHerbal</li></thingDefs></filter>
+                <thingAmount>4~10</thingAmount>
+                <thingPriceCredit>1</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <thingExtraFameFactor>1.8</thingExtraFameFactor>
+                <label>草药</label>
+            </li>
         </includeThings>
     </CelesFeature.CelesFD_MarketClassDef>
-    
+
     <CelesFeature.CelesFD_MarketClassDef>
-        <defName>CelesFD_L1Buy_CargoBuildingMaterialSteel</defName>
-        <title>L1预制建材货组收购钢铁差分</title>
+        <defName>CelesFD_L1Buy_CargoBuildingMaterial</defName>
+        <title>L1基础收购</title>
         <category>Open</category>
         <isBuy>true</isBuy>
-        <fameReward>7</fameReward>
+        <fameReward>5</fameReward>
+        <orderDurationInQuadrums>0.5</orderDurationInQuadrums>
+        <validLevel>
+            <li>CelesFD_Level_L0</li>
+            <li>CelesFD_Level_L1</li>
+            <li>CelesFD_Level_L2</li>
+        </validLevel>
+        <includeThings>
+            <li>
+                <filter><thingDefs><li>Celes_CargoMaterial</li></thingDefs></filter>
+                <stuffCategoriesToAllow><li>Woody</li></stuffCategoriesToAllow>
+                <thingAmount>3~5</thingAmount>
+                <thingPriceCredit>7</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>木预制建材货组</label>
+                <description>{RULEPACK:CelesFD_L1Buy_CargoBuildingMaterialFlavor:r_cargo_building_wood}</description>
+            </li>
+            <li>
+                <filter><thingDefs><li>Celes_CargoMaterial</li></thingDefs></filter>
+                <stuffCategoriesToAllow><li>Stony</li></stuffCategoriesToAllow>
+                <thingAmount>4~6</thingAmount>
+                <thingPriceCredit>5</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>石质预制建材货组</label>
+                <description>{RULEPACK:CelesFD_L1Buy_CargoBuildingMaterialFlavor:r_cargo_building_stony}</description>
+            </li>
+            <li>
+                <filter><thingDefs><li>Celes_CargoMaterial</li></thingDefs></filter>
+                <stuffDefsToAllow><li>Steel</li></stuffDefsToAllow>
+                <thingAmount>2~3</thingAmount>
+                <thingPriceCredit>14</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <thingExtraFameFactor>1.4</thingExtraFameFactor>
+                <label>钢铁预制建材货组</label>
+                <description>{RULEPACK:CelesFD_L1Buy_CargoBuildingMaterialFlavor:r_cargo_building_steel}</description>
+            </li>
+            <li>
+                <filter><thingDefs><li>Celes_CargoFabricMaterial</li></thingDefs></filter>
+                <stuffCategoriesToAllow><li>Fabric</li></stuffCategoriesToAllow>
+                <thingAmount>1~2</thingAmount>
+                <thingPriceCredit>22</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>织物荒地营宿货组</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>Celes_CargoFabricMaterial</li></thingDefs></filter>
+                <stuffCategoriesToAllow><li>Leathery</li></stuffCategoriesToAllow>
+                <thingAmount>1~2</thingAmount>
+                <thingPriceCredit>30</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>皮革荒地营宿货组</label>
+            </li>
+            <li>
+                <filter><categories><li>Apparel</li></categories><allowedQualities>Normal~Legendary</allowedQualities></filter>
+                <stuffCategoriesToAllow><li>Fabric</li></stuffCategoriesToAllow>
+                <thingAmount>2~4</thingAmount>
+                <thingPriceCredit>8</thingPriceCredit>
+                <thingWeight>0.5</thingWeight>
+                <label>织物衣物（一般以上）</label>
+            </li>
+            <li>
+                <filter><categories><li>Apparel</li></categories><allowedQualities>Normal~Legendary</allowedQualities></filter>
+                <stuffCategoriesToAllow><li>Leathery</li></stuffCategoriesToAllow>
+                <thingAmount>2~4</thingAmount>
+                <thingPriceCredit>8</thingPriceCredit>
+                <thingWeight>0.5</thingWeight>
+                <label>皮革衣物（一般以上）</label>
+            </li>
+            <li>
+                <filter><categories><li>Apparel</li></categories></filter>
+                <thingAmount>2~4</thingAmount>
+                <thingPriceCredit>5</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>任意衣物</label>
+            </li>
+            <li>
+                <filter><categories><li>Weapons</li></categories><allowedQualities>Good~Legendary</allowedQualities></filter>
+                <thingAmount>1</thingAmount>
+                <thingPriceCredit>8</thingPriceCredit>
+                <thingWeight>0.8</thingWeight>
+                <label>武器（良好以上）</label>
+            </li>
+            <li>
+                <filter><categories><li>Weapons</li></categories></filter>
+                <thingAmount>1~2</thingAmount>
+                <thingPriceCredit>5</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>任意武器</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>MedicineHerbal</li></thingDefs></filter>
+                <thingAmount>8~25</thingAmount>
+                <thingPriceCredit>1</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <thingExtraFameFactor>1.8</thingExtraFameFactor>
+                <label>草药</label>
+            </li>
+        </includeThings>
+    </CelesFeature.CelesFD_MarketClassDef>
+
+    <CelesFeature.CelesFD_MarketClassDef>
+        <defName>CelesFD_L1Buy_Silver</defName>
+        <title>L1信用额换购</title>
+        <category>Open</category>
+        <isBuy>true</isBuy>
+        <fameReward>0</fameReward>
         <orderDurationInQuadrums>0.5</orderDurationInQuadrums>
         <validLevel>
             <li>CelesFD_Level_L0</li>
@@ -58,19 +172,310 @@
         </validLevel>
         <includeThings>
             <li>
+                <filter><thingDefs><li>Silver</li></thingDefs></filter>
+                <thingAmount>110</thingAmount>
+                <orderTotalPriceCredit>10</orderTotalPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>10信用额换购</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>Silver</li></thingDefs></filter>
+                <thingAmount>550</thingAmount>
+                <orderTotalPriceCredit>50</orderTotalPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>50信用额换购</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>Silver</li></thingDefs></filter>
+                <thingAmount>1100</thingAmount>
+                <orderTotalPriceCredit>100</orderTotalPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>100信用额换购</label>
+            </li>
+        </includeThings>
+    </CelesFeature.CelesFD_MarketClassDef>
+
+    <!-- ===================== L1 开放市场 · 出售 ===================== -->
+
+    <CelesFeature.CelesFD_MarketClassDef>
+        <defName>CelesFD_L1Sell_Steel</defName>
+        <title>L1基础出售</title>
+        <category>Open</category>
+        <isBuy>false</isBuy>
+        <fameReward>0</fameReward>
+        <validLevel>
+            <li>CelesFD_Level_L0</li>
+            <li>CelesFD_Level_L1</li>
+            <li>CelesFD_Level_L2</li>
+            <li>CelesFD_Level_L3</li>
+        </validLevel>
+        <includeThings>
+            <li>
+                <filter><thingDefs><li>Steel</li></thingDefs></filter>
+                <thingAmount>150~300</thingAmount>
+                <thingPriceCredit>0.2</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>钢铁</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>WoodLog</li></thingDefs></filter>
+                <thingAmount>150~300</thingAmount>
+                <thingPriceCredit>0.2</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>木材</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>BlocksMarble</li></thingDefs></filter>
+                <thingAmount>150~300</thingAmount>
+                <thingPriceCredit>0.1</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>大理石砖</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>BlocksGranite</li></thingDefs></filter>
+                <thingAmount>150~300</thingAmount>
+                <thingPriceCredit>0.1</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>花岗岩砖</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>Celes_CrystallineMaterial</li></thingDefs></filter>
+                <thingAmount>10~25</thingAmount>
+                <thingPriceCredit>1</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>尘晶碎片</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+                <thingAmount>5~12</thingAmount>
+                <thingPriceCredit>3.5</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>零部件</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>MedicineIndustrial</li></thingDefs></filter>
+                <thingAmount>5~12</thingAmount>
+                <thingPriceCredit>2</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>医药</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>MealSurvivalPack</li></thingDefs></filter>
+                <thingAmount>5~12</thingAmount>
+                <thingPriceCredit>2</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>包装生存食物</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>Cloth</li></thingDefs></filter>
+                <thingAmount>150~300</thingAmount>
+                <thingPriceCredit>0.2</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>布料</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>Leather_Plain</li></thingDefs></filter>
+                <thingAmount>150~300</thingAmount>
+                <thingPriceCredit>0.2</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>普通皮革</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>Neutroamine</li></thingDefs></filter>
+                <thingAmount>20~50</thingAmount>
+                <thingPriceCredit>1</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>中性胺</label>
+            </li>
+        </includeThings>
+    </CelesFeature.CelesFD_MarketClassDef>
+
+    <CelesFeature.CelesFD_MarketClassDef>
+        <defName>CelesFD_L1Sell_PioneerWeapons</defName>
+        <title>L1星铃拓荒武器出售</title>
+        <category>Open</category>
+        <isBuy>false</isBuy>
+        <fameReward>0</fameReward>
+        <orderDurationInQuadrums>0.5</orderDurationInQuadrums>
+        <validLevelWeightFactor>0.5</validLevelWeightFactor>
+        <validLevel>
+            <li>CelesFD_Level_L0</li>
+            <li>CelesFD_Level_L1</li>
+            <li>CelesFD_Level_L2</li>
+            <li>CelesFD_Level_L3</li>
+        </validLevel>
+        <includeThings>
+            <li>
                 <filter>
-                    <thingDefs>
-                        <li>Celes_CargoMaterial</li>
-                    </thingDefs>
+                    <thingDefs><li>Celes_Hatchet</li></thingDefs>
+                    <allowedQualities>Normal~Normal</allowedQualities>
                 </filter>
-                <stuffDefsToAllow>
-                    <li>Steel</li>
-                </stuffDefsToAllow>
-                <thingAmount>2~5</thingAmount>
+                <thingAmount>1</thingAmount>
                 <thingPriceCredit>14</thingPriceCredit>
                 <thingWeight>1</thingWeight>
-                <label>钢铁预制建材货组</label>
-                <description>{RULEPACK:CelesFD_L1Buy_CargoBuildingMaterialFlavor:r_cargo_building_steel}</description>
+                <label>星铃拓荒型手斧</label>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs><li>Celes_GeologyHammer</li></thingDefs>
+                    <allowedQualities>Normal~Normal</allowedQualities>
+                </filter>
+                <thingAmount>1</thingAmount>
+                <thingPriceCredit>14</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>星铃拓荒型地质锤</label>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs><li>CelesSaberIndustrial</li></thingDefs>
+                    <allowedQualities>Normal~Normal</allowedQualities>
+                </filter>
+                <thingAmount>1</thingAmount>
+                <thingPriceCredit>29</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>星铃拓荒军刀</label>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs><li>CelesDagger</li></thingDefs>
+                    <allowedQualities>Normal~Normal</allowedQualities>
+                </filter>
+                <thingAmount>1</thingAmount>
+                <thingPriceCredit>13</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>星铃拓荒匕首</label>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs><li>Celes_IndustryRevolver</li></thingDefs>
+                    <allowedQualities>Normal~Normal</allowedQualities>
+                </filter>
+                <thingAmount>1</thingAmount>
+                <thingPriceCredit>29</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>星铃拓荒型转轮手枪</label>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs><li>Celes_IndustryRifle</li></thingDefs>
+                    <allowedQualities>Normal~Normal</allowedQualities>
+                </filter>
+                <thingAmount>1</thingAmount>
+                <thingPriceCredit>33</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>星铃拓荒型精确步枪</label>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs><li>Celes_IndustryShotgun</li></thingDefs>
+                    <allowedQualities>Normal~Normal</allowedQualities>
+                </filter>
+                <thingAmount>1</thingAmount>
+                <thingPriceCredit>43</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>星铃拓荒型霰弹枪</label>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs><li>Celes_IndustrySMG</li></thingDefs>
+                    <allowedQualities>Normal~Normal</allowedQualities>
+                </filter>
+                <thingAmount>1</thingAmount>
+                <thingPriceCredit>40</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>星铃拓荒型冲锋枪</label>
+            </li>
+        </includeThings>
+    </CelesFeature.CelesFD_MarketClassDef>
+
+    <CelesFeature.CelesFD_MarketClassDef>
+        <defName>CelesFD_L1Sell_Silver</defName>
+        <title>L1白银换购</title>
+        <category>Open</category>
+        <isBuy>false</isBuy>
+        <fameReward>0</fameReward>
+        <validLevel>
+            <li>CelesFD_Level_L0</li>
+            <li>CelesFD_Level_L1</li>
+        </validLevel>
+        <includeThings>
+            <li>
+                <filter><thingDefs><li>Silver</li></thingDefs></filter>
+                <thingAmount>100</thingAmount>
+                <orderTotalPriceCredit>13</orderTotalPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>100白银换购</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>Silver</li></thingDefs></filter>
+                <thingAmount>500</thingAmount>
+                <orderTotalPriceCredit>63</orderTotalPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>500白银换购</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>Silver</li></thingDefs></filter>
+                <thingAmount>1000</thingAmount>
+                <orderTotalPriceCredit>125</orderTotalPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>1000白银换购</label>
+            </li>
+        </includeThings>
+    </CelesFeature.CelesFD_MarketClassDef>
+
+    <!-- ===================== L1 加急收购 ===================== -->
+    <!-- 2026-10-28 O1 两步加权：entry thingWeight = 肉 1.0 / 医药 0.6 / 化合燃料 0.6 / 零部件 0.5 / 空箱 0.2 -->
+
+    <CelesFeature.CelesFD_MarketClassDef>
+        <defName>CelesFD_L1Urgent_HoardedGoods</defName>
+        <title>L1加急收购</title>
+        <category>Urgent</category>
+        <isBuy>true</isBuy>
+        <fameReward>10</fameReward>
+        <validLevel>
+            <li>CelesFD_Level_L0</li>
+            <li>CelesFD_Level_L1</li>
+            <li>CelesFD_Level_L2</li>
+        </validLevel>
+        <includeThings>
+            <li>
+                <filter><categories><li>MeatRaw</li></categories></filter>
+                <thingAmount>100~350</thingAmount>
+                <thingPriceCredit>0.3</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>任意肉</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>MedicineIndustrial</li></thingDefs></filter>
+                <thingAmount>5~15</thingAmount>
+                <thingPriceCredit>3</thingPriceCredit>
+                <thingWeight>0.6</thingWeight>
+                <thingExtraFameFactor>1.5</thingExtraFameFactor>
+                <label>医药</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>Chemfuel</li></thingDefs></filter>
+                <thingAmount>50~200</thingAmount>
+                <thingPriceCredit>0.3</thingPriceCredit>
+                <thingWeight>0.6</thingWeight>
+                <thingExtraFameFactor>1.5</thingExtraFameFactor>
+                <label>化合燃料</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+                <thingAmount>5~15</thingAmount>
+                <thingPriceCredit>5</thingPriceCredit>
+                <thingWeight>0.5</thingWeight>
+                <thingExtraFameFactor>1.2</thingExtraFameFactor>
+                <label>零部件</label>
+            </li>
+            <li>
+                <filter><thingDefs><li>Celes_CargoEmpty</li></thingDefs></filter>
+                <thingAmount>50~300</thingAmount>
+                <thingPriceCredit>0.1</thingPriceCredit>
+                <thingWeight>0.2</thingWeight>
+                <thingExtraFameFactor>0.5</thingExtraFameFactor>
+                <label>空箱</label>
             </li>
         </includeThings>
     </CelesFeature.CelesFD_MarketClassDef>

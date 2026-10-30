@@ -66,7 +66,7 @@
         <pawnSingular>星铃</pawnSingular>
         <pawnsPlural>星铃们</pawnsPlural>
         <techLevel>Spacer</techLevel>
-        <factionIconPath>Celes/Faction/CelesFaction_Icon</factionIconPath>
+        <factionIconPath>Celes/Faction/CelesBeaconFaction_Icon</factionIconPath>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation><!-- 进 ConfigurableFactions → info.factions，太空剧本也生成 B（同 Celes_Faction） -->
         <!-- 不设 hidden（非隐藏，可外交）｜不设 settlementGenerationWeight（默认 0，无自动据点） -->

@@ -44,12 +44,12 @@
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <designationCategory>Celes_SpecialBuildings</designationCategory>
         <comps>
-            <li Class="CompProperties_Power">
+            <!--<li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <shortCircuitInRain>false</shortCircuitInRain>
                 <basePowerConsumption>200</basePowerConsumption>
             </li>
-            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Flickable" />-->
         </comps>
         <researchPrerequisites>
             <li>Celes_CelestiaFreqDecrypt</li>

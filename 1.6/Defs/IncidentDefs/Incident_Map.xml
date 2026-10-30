@@ -54,7 +54,7 @@
         <targetTags>
             <li>World</li>
         </targetTags>
-        <letterDef>CelesFD_RelocationOffer</letterDef>
+        <letterDef>NeutralEvent</letterDef>
         <letterLabel>星铃外勤部：基地搬迁协议</letterLabel>
         <letterText>检测到您的殖民地已经迁移。星铃信标站是固定坐标设施，不随殖民地移动。\n是否接受星铃为您提供新的信标站坐标？我们将回收旧站并就近定位一个新站。\n\n当前旧站：{OLDSTATION}</letterText>
     </IncidentDef>

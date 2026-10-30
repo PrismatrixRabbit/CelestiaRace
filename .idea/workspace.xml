@@ -15,20 +15,14 @@
       <change beforePath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_IntroTrees.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_IntroTrees.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_testMarketDefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_testMarketDefs.xml.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/HediffDefs/Hediffs_DustMechRhythm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/HediffDefs/Hediffs_DustMechRhythm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_DropPod.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_DropPod.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_Intro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_Intro.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_Map.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_Map.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/Market_L1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/Market_L1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/UnlockLevelDef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/UnlockLevelDef.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_BaseResourse.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/RulePacks/RulePacks_Market.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RulePacks/RulePacks_Market.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Crystal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Crystal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_IndustryModule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Plants/Plants_Resources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Plants/Plants_Resources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Patches/Core/Storyteller/Storyteller.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Patches/Core/Storyteller/Storyteller.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ResearchProjectDefs/CelesResearchProjects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ResearchProjectDefs/CelesResearchProjects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_StandardRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_StandardRange.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Terrain/CrystalFloor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Textures/Celes/Terrain/CrystalFloor.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,7 +300,13 @@
       <workItem from="1792502472495" duration="13251000" />
       <workItem from="1792519419222" duration="2323000" />
       <workItem from="1792631929179" duration="10446000" />
-      <workItem from="1792739938813" duration="46628000" />
+      <workItem from="1792739938813" duration="54949000" />
+      <workItem from="1792987751811" duration="12949000" />
+      <workItem from="1793076745603" duration="676000" />
+      <workItem from="1793101379867" duration="599000" />
+      <workItem from="1793144132313" duration="11619000" />
+      <workItem from="1793300709829" duration="2840000" />
+      <workItem from="1793315035278" duration="1150000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -628,7 +628,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792695554857</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="哈哈开花树哈哈！还有交易IntroTree文案修正。">
+      <option name="closed" value="true" />
+      <created>1792917339589</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1792917339589</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,7 +657,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="加衣服，修bug" />
     <MESSAGE value="修bug" />
     <MESSAGE value="建筑修bug，ui调整，派系bug，各种bug" />
     <MESSAGE value="修兔子荣家湾生科兼容bug，建筑和工业科技树beta" />
@@ -674,7 +681,8 @@
     <MESSAGE value="晶体修正测试" />
     <MESSAGE value="物品+建筑+配方修正精校" />
     <MESSAGE value="哈哈超级泰伯利亚哈哈！" />
-    <option name="LAST_COMMIT_MESSAGE" value="哈哈超级泰伯利亚哈哈！" />
+    <MESSAGE value="哈哈开花树哈哈！还有交易IntroTree文案修正。" />
+    <option name="LAST_COMMIT_MESSAGE" value="哈哈开花树哈哈！还有交易IntroTree文案修正。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

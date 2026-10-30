@@ -43,7 +43,7 @@
         <options>
             <li><label>所以你能不能告诉我们……那些晶体是什么？</label><next>N_ApologyB_Crystal</next></li>
             <li><label>所以你们是谁？</label><next>N_ApologyB_Who</next></li>
-            <li><label>感谢你的帮助，这样就可以了。（结束对话）</label><next>N_ApologyB_Intro</next></li>
+            <li><label>感谢你的帮助，这样就可以了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -53,7 +53,7 @@
         <options>
             <li><label>所以你能不能告诉我们……那些尘晶怎么了？</label><next>N_ApologyB_Crystal</next></li>
             <li><label>所以为什么“极光”号会出现在这里？</label><next>N_ApologyB_Who</next></li>
-            <li><label>感谢你的帮助，这样就可以了。（结束对话）</label><next>N_ApologyB_HangUp</next></li>
+            <li><label>感谢你的帮助，这样就可以了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -73,7 +73,7 @@
         <options>
             <li><label>所以你能不能告诉我们……那些尘晶怎么了？</label><next>N_ApologyB_Crystal</next></li>
             <li><label>所以为什么“极光”号会出现在这里？</label><next>N_ApologyB_Who</next></li>
-            <li><label>感谢你的帮助，这样就可以了。（结束对话）</label><next>N_ApologyB_HangUp</next></li>
+            <li><label>感谢你的帮助，这样就可以了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -81,7 +81,7 @@
         <defName>N_ApologyB_Intro_Cb</defName>
         <nodeText>代码FLOOD，情境叁，寂静协议。收到，最高戒备，再次向您致意。</nodeText>
         <options>
-            <li><label>感谢你的帮助，这样就可以了。（结束对话）</label><next>N_ApologyB_HangUp</next></li>
+            <li><label>感谢你的帮助，这样就可以了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -90,7 +90,7 @@
         <nodeText>那些晶体……尘晶……嗯……你知道的，正常来说它们是星铃用于快速提取尘构原料的有限自增冯诺依曼机械，但不知道为什么，它们坠落在了你们的殖民地，真奇怪啊不是吗。\n如果你不知道的话，那块母岩可以作为人工约束尘构增殖的核心，那些开采出的尘晶碎片也会在尘构制造上很有用，只是当心一下，如果有生物尸体，大量树木或者岩块的话，增殖可能失控。我个人建议尽快拆除它们，然后回收尘晶晶种。</nodeText>
         <options>
             <li><label>那么你们……？</label><next>N_ApologyB_Who</next></li>
-            <li><label>这就够了。（结束对话）</label><next>N_ApologyB_HangUp</next></li>
+            <li><label>这就够了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -99,7 +99,7 @@
         <nodeText>正如之前所说，我们是星铃“极光”号方舟与第七舰队联合科学考察队外勤部。我们的按照领航计划的惯例执行本星系的开采任务，以及执行和“北极星”号的航路汇合……然后，我们只看见你们这样的幸存者。你们随时可以向我们申请交易或支援。</nodeText>
         <options>
             <li><label>那么晶体……？</label><next>N_ApologyB_Crystal</next></li>
-            <li><label>这就够了。（结束对话）</label><next>N_ApologyB_HangUp</next></li>
+            <li><label>这就够了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -158,7 +158,7 @@
         <options>
             <li><label>那些晶体是什么？</label><next>N_ApologyC_Crystal</next></li>
             <li><label>你们是谁？</label><next>N_ApologyC_Who</next></li>
-            <li><label>没有了。（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>没有了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -167,7 +167,7 @@
         <nodeText>那些是出于错误原因被错误投放的错误晶体，对你们有毒，最好做好毒性防护然后尽快拆除……不过过了这么久，你们要么解决了，要么已经搬家了吧？</nodeText>
         <options>
             <li><label>那么你们……？</label><next>N_ApologyC_Who</next></li>
-            <li><label>这就够了。（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>这就够了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -176,7 +176,7 @@
         <nodeText>我们是星铃“极光”号方舟与第七舰队联合科学考察队外勤部，你们可以和我们交易物资，申请支援。</nodeText>
         <options>
             <li><label>那么晶体……？</label><next>N_ApologyC_Crystal</next></li>
-            <li><label>这就够了。（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>这就够了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -215,7 +215,7 @@
         <options>
             <li><label>那些晶体是什么？</label><next>N_ApologyA_Crystal</next></li>
             <li><label>你们是谁？</label><next>N_ApologyA_Who</next></li>
-            <li><label>没有了。（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>没有了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -224,7 +224,7 @@
         <nodeText>那些是出于错误原因被错误投放的错误晶体，对你们有毒，最好做好毒性防护然后尽快拆除……不知道为什么，它们坠落在了你们的殖民地，真奇怪啊不是吗。</nodeText>
         <options>
             <li><label>那么你们……？</label><next>N_ApologyA_Who</next></li>
-            <li><label>这就够了。（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>这就够了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -233,7 +233,7 @@
         <nodeText>我们是星铃“极光”号方舟与第七舰队联合科学考察队外勤部，你们可以和我们交易物资，申请支援。</nodeText>
         <options>
             <li><label>那么晶体……？</label><next>N_ApologyA_Crystal</next></li>
-            <li><label>这就够了。（结束对话）</label><next>N_Main_Intro</next></li>
+            <li><label>这就够了。</label><next>N_Main_Options</next></li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
@@ -248,13 +248,16 @@
     <CelesFeature.CelesFD_DialogueNodeDef>
         <defName>N_EasterEgg_Intro</defName>
         <nodeText>你是怎么黑入这个频段的……？！</nodeText>
+        <entryComps>
+            <li Class="CelesFeature.CelesFD_DialogueActionCompProperties_SetVariable">
+                <varName>EasterEggDone</varName>
+                <Set>1</Set>
+            </li>
+        </entryComps>
         <options>
             <li>
-                <label>说明来意</label>
-                <sets>
-                    <li><varName>EasterEggDone</varName><Set>1</Set></li>
-                </sets>
-                <next>N_Main_Intro</next>
+                <label>呃……一点努力和汗水？</label>
+                <next>N_Main_Options</next>
             </li>
         </options>
     </CelesFeature.CelesFD_DialogueNodeDef>
@@ -343,62 +346,68 @@
         <options>
             <li>
                 <isBranch>true</isBranch>
-                <li>
-                    <conditions>
-                        <li><varName>Relation</varName><Equal>0</Equal></li>
-                    </conditions>
-                    <label>向接线员问好</label>
-                    <next>N_Main_Greet_Hostile</next>
-                </li>
-                <li>
-                    <conditions>
-                        <li><varName>Relation</varName><Equal>1</Equal></li>
-                    </conditions>
-                    <label>向接线员问好</label>
-                    <next>N_Main_Greet_Neutral</next>
-                </li>
-                <li>
-                    <conditions>
-                        <li><varName>Relation</varName><Equal>2</Equal></li>
-                    </conditions>
-                    <label>向接线员问好</label>
-                    <next>N_Main_Greet_Ally</next>
-                </li>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>Relation</varName><Equal>0</Equal></li>
+                        </conditions>
+                        <label>向接线员问好</label>
+                        <next>N_Main_Greet_Hostile</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>Relation</varName><Equal>1</Equal></li>
+                        </conditions>
+                        <label>向接线员问好</label>
+                        <next>N_Main_Greet_Neutral</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>Relation</varName><Equal>2</Equal></li>
+                        </conditions>
+                        <label>向接线员问好</label>
+                        <next>N_Main_Greet_Ally</next>
+                    </li>
+                </branches>
             </li>
             <li>
                 <isBranch>true</isBranch>
-                <li>
-                    <conditions>
-                        <li><varName>Relation</varName><Equal>0</Equal></li>
-                    </conditions>
-                    <label>问问外勤部近况</label>
-                    <next>N_Main_News_Hostile</next>
-                </li>
-                <li>
-                    <conditions>
-                        <li><varName>Relation</varName><Gte>1</Gte></li>
-                    </conditions>
-                    <label>问问外勤部近况</label>
-                    <next>N_Main_News_Neutral</next>
-                </li>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>Relation</varName><Equal>0</Equal></li>
+                        </conditions>
+                        <label>问问外勤部近况</label>
+                        <next>N_Main_News_Hostile</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>Relation</varName><Gte>1</Gte></li>
+                        </conditions>
+                        <label>问问外勤部近况</label>
+                        <next>N_Main_News_Neutral</next>
+                    </li>
+                </branches>
             </li>
             <li><label>问问这个系统</label><next>N_Main_System</next></li>
             <li>
                 <isBranch>true</isBranch>
-                <li>
-                    <conditions>
-                        <li><varName>Relation</varName><Equal>0</Equal></li>
-                    </conditions>
-                    <label>问问星铃相关信息</label>
-                    <next>N_Main_Celestia_Hostile</next>
-                </li>
-                <li>
-                    <conditions>
-                        <li><varName>Relation</varName><Gte>1</Gte></li>
-                    </conditions>
-                    <label>问问星铃相关信息</label>
-                    <next>N_Main_Celestia_Neutral</next>
-                </li>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>Relation</varName><Equal>0</Equal></li>
+                        </conditions>
+                        <label>问问星铃相关信息</label>
+                        <next>N_Main_Celestia_Hostile</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>Relation</varName><Gte>1</Gte></li>
+                        </conditions>
+                        <label>问问星铃相关信息</label>
+                        <next>N_Main_Celestia_Neutral</next>
+                    </li>
+                </branches>
             </li>
             <li>
                 <label>问问有什么能说的秘密</label>
@@ -458,23 +467,43 @@
             <li><label>再次向接线员问好</label><next>N_Main_Greet_Again</next></li>
             <li>
                 <isBranch>true</isBranch>
-                <li>
-                    <conditions>
-                        <li><varName>Relation</varName><Equal>0</Equal></li>
-                    </conditions>
-                    <label>问问外勤部近况</label>
-                    <next>N_Main_News_Hostile</next>
-                </li>
-                <li>
-                    <conditions>
-                        <li><varName>Relation</varName><Gte>1</Gte></li>
-                    </conditions>
-                    <label>问问外勤部近况</label>
-                    <next>N_Main_News_Neutral</next>
-                </li>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>Relation</varName><Equal>0</Equal></li>
+                        </conditions>
+                        <label>问问外勤部近况</label>
+                        <next>N_Main_News_Hostile</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>Relation</varName><Gte>1</Gte></li>
+                        </conditions>
+                        <label>问问外勤部近况</label>
+                        <next>N_Main_News_Neutral</next>
+                    </li>
+                </branches>
             </li>
             <li><label>问问本系统介绍</label><next>N_Main_System</next></li>
-            <li><label>问问星铃相关信息</label><next>N_Main_Celestia</next></li>
+            <li>
+                <isBranch>true</isBranch>
+                <branches>
+                    <li>
+                        <conditions>
+                            <li><varName>Relation</varName><Equal>0</Equal></li>
+                        </conditions>
+                        <label>问问星铃相关信息</label>
+                        <next>N_Main_Celestia_Hostile</next>
+                    </li>
+                    <li>
+                        <conditions>
+                            <li><varName>Relation</varName><Gte>1</Gte></li>
+                        </conditions>
+                        <label>问问星铃相关信息</label>
+                        <next>N_Main_Celestia_Neutral</next>
+                    </li>
+                </branches>
+            </li>
             <li>
                 <label>问问星铃隐秘信息</label>
                 <conditions>
@@ -511,12 +540,12 @@
     <!-- 近况节点 -->
     <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
         <defName>N_Main_News_Hostile</defName>
-        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_greet_hostile}</nodeText>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_news_hostile}</nodeText>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <CelesFeature.CelesFD_DialogueNodeDef ParentName="N_Main_Txt">
         <defName>N_Main_News_Neutral</defName>
-        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_greet_neutral}</nodeText>
+        <nodeText>{RULEPACK:CelesFD_IntroTree:r_main_news_neutral}</nodeText>
     </CelesFeature.CelesFD_DialogueNodeDef>
 
     <!-- 系统节点 -->

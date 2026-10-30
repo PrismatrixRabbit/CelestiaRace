@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RulePackDef>
+        <defName>CelesFD_IntroTree</defName>
+        <label>主菜单接线员随机词</label>
+        <rulePack>
+            <rulesStrings>
+                <!-- ═══ 主界面返回默认 ═══ -->
+                <li>r_main_options->那么……这里是星铃外勤部接线员，很高兴为您服务</li>
+                <li>r_main_options->那么……这里是星铃外勤部接线员，很不高兴为您服务</li>
+                <li>r_main_options->那么……这里是星铃外勤部接线员，很高兴不为您服务</li>
+                <!-- ═══ 问好-敌意 ═══ -->
+                <li>r_main_greet_hostile->不好。说话。</li>
+                <li>r_main_greet_hostile->有事？</li>
+                <li>r_main_greet_hostile->没事去打部落老哥，别占着线好吗？</li>
+                <li>r_main_greet_hostile->这里是星铃外勤部接线员，很不高兴为您服务</li>
+                <li>r_main_greet_hostile->这里是星铃外勤部接线员，很高兴不为您服务</li>
+                <!-- ═══ 问好-中立 ═══ -->
+                <li>r_main_greet_neutral->嗯嗯，你也好你也好……所以什么事情？</li>
+                <li>r_main_greet_neutral->祝你也好。</li>
+                <li>r_main_greet_neutral->虽然不知道你的时区但是早中晚好哦。</li>
+                <!-- ═══ 问好-友善 ═══ -->
+                <li>r_main_greet_ally->你好呀你好呀，今天有什么可以帮到你的？</li>
+                <li>r_main_greet_ally->早上好！如果不是早上的话，就再祝你早安、午安、晚安！</li>
+                <li>r_main_greet_ally->叭叭叭这里是星铃外勤部，很高兴能为您服务！</li>
+                <!-- ═══ 问好-重复 ═══ -->
+                <li>r_main_greet_again->……？</li>
+                <li>r_main_greet_again->我卡了……？</li>
+                <li>r_main_greet_again->喂喂喂……？</li>
+                <li>r_main_greet_again->喂喂……？</li>
+                <li>r_main_greet_again->喂……？</li>
+                <li>r_main_greet_again->机器人……？</li>
+                <li>r_main_greet_again->哈……？</li>
+                <!-- ═══ 近况-敌意 ═══ -->
+                <li>r_main_news_hostile->星铃外勤部近期……笨蛋，你真的觉得我会和敌人分享情报？</li>
+                <li>r_main_news_hostile->星铃外勤部近期……咳咳，有了，星铃外勤部规劝{playerFactionName}不要在歧路上越走越远。</li>
+                <li>r_main_news_hostile->{playerFactionName}能连线的唯一原因是我们认为你还有回头的可能性。</li>
+                <li>r_main_news_hostile->星铃外勤部知名接线员建议{playerFactionName}向星铃外勤部奉上十万黄金作为赔礼。</li>
+                <li>r_main_news_hostile->你知道我对你出言不逊不会被惩罚吗？傻瓜。</li>
+                <li>r_main_news_hostile->你这样，下面有个“挂断”，你点一下。</li>
+                <!-- ═══ 近况-中立 ═══ -->
+                <li>r_main_news_neutral->近况……听说有无礼之徒试图劫掠袭击其他外勤部信标站，他们真的知道他们在干什么吗？</li>
+                <li>r_main_news_neutral->我想想，我今天中午吃了小炒牛肉？这个算吗？</li>
+                <li>r_main_news_neutral->我想吃甜品了？</li>
+                <li>r_main_news_neutral->我困了？</li>
+                <li>r_main_news_neutral->震惊！你唯一而伟大外勤部接线员小姐是不会长胖的。</li>
+                <li>r_main_news_neutral->震惊！星铃的男性都不露面，背后的原因竟然是……</li>
+                <li>r_main_news_neutral->惊天秘密！如此这般这般如此</li>
+                <li>r_main_news_neutral->告诉你一个秘密，天体工程部好像在琢磨行星黑洞化。</li>
+                <li>r_main_news_neutral->最近你这边日食概率可能会增加……因为天体工程部的一个工程模块的本影恰好会盖住你的殖民地区域，嗯，不是因为卫星哦。</li>
+                <li>r_main_news_neutral->你注意到恒星光度有下降吗？哼哼，要不要猜猜天体工程部最近又干了什么大事。</li>
+                <li>r_main_news_neutral->我发内部邮件劝过……但是好像天体地质部想要研究一下火山冬天的触发模式……</li>
+                <li>r_main_news_neutral->让我看看内部报哦……这条不能读给你，这条也不行，啊，那算了。</li>
+                <li>r_main_news_neutral->外勤部？不不，你知道你的殖民地在一个很“有趣”的位置上吗？</li>
+                <li>r_main_news_neutral->异象部最近抓到了一个……哦，我不能多说……</li>
+                <li>r_main_news_neutral->人类与文化部觉得你的殖民地很有研究价值，也许过去、现在或者未来的什么时候你会看见他们想要收购你们的工艺品？</li>
+                <li>r_main_news_neutral->热知识！外勤部文职的命不算命！</li>
+                <li>r_main_news_neutral->最新消息：我在加班！劳动条例何在！</li>
+                <!-- ═══ 系统 ═══ -->
+                <li>r_main_system->【系统消息】星铃外勤部“鹊”系统、相关产品（例如立式、手持式或义体式外勤部发信器终端）及服务由星铃“极光”号方舟与第七舰队联合科学考察队外勤部所有与运营。“鹊”系统提供外勤部之全部市场交易、物流交付与支援服务，主要通过“信用额”与“密钥”结算。您在外勤部使用服务均会积攒或损失“声望”。声望指用户之合作信用，主要通过履约行为累积。我们据此评估您的权限等级……</li>
+                <li>r_main_system->你有两个选择，我给你放系统消息，或者你自己看用户协议，喏，应该在你的页面的右上角那块，可能你那边显示的是“市场”？“交易”？我忘了……反正点进去有一个问号，就是那儿能看。</li>
+                <!-- ═══ 星铃-敌意 ═══ -->
+                <li>r_main_celestia_hostile->无可奉告。</li>
+                <li>r_main_celestia_hostile->星铃对敌人很宽容。</li>
+                <li>r_main_celestia_hostile->星铃不会随意攻击别人。</li>
+                <li>r_main_celestia_hostile->星铃懂得道歉。</li>
+                <li>r_main_celestia_hostile->星铃会赔礼。</li>
+                <li>r_main_celestia_hostile->星铃……总之星铃比{playerFactionName}聪明。</li>
+                <!-- ═══ 星铃-中立 ═══ -->
+                <li>r_main_celestia_neutral->我们？我们只是一群在这个星系短暂停留的旅客。</li>
+                <li>r_main_celestia_neutral->你应该知道我们的全称？星铃“极光”号方舟与第七舰队联合科学考察队外勤部。</li>
+                <li>r_main_celestia_neutral->外勤部只是科考队最小、分配资源也最少的对文明对接部门……外勤部只是无能的妻……啊不是……无能的部门……星铃内部，基本上认为外勤部不太可能获取到足够的成本收益比。</li>
+                <li>r_main_celestia_neutral->我们，也就是方舟科考队，有一个核心任务，但是我不太确定能不能和你说。</li>
+                <li>r_main_celestia_neutral->是的……！我们只是星铃这个文明的一个方舟的一个科学考察队的一个部门而已！</li>
+                <li>r_main_celestia_neutral->科考队还有其他几个部门，你应该迟早会认识他们，我不确定我和你介绍他们合不合规……嗯……不是因为我懒在找借口。</li>
+                <li>r_main_celestia_neutral->星铃和你们一样在生物学分类上属于人类亚种……呃，你们是人类对吧？</li>
+                <li>r_main_celestia_neutral->星铃是什么？人属下的唯一现存物种的一个还没有形成生殖隔离的亚种？你想听这个？</li>
+                <!-- ═══ 秘密 ═══ -->
+                <li>r_main_secret->我们……好吧……悄悄告诉你也无所谓，包括我在内的一些星铃认为可以在这颗边缘世界找到真正的超光速技术。然后我们就能突破类时观测者的极限……我们可以打破因……呃啊，我说多了……</li>
+                <li>r_main_secret->大多数星铃对行星表面的资源毫无兴趣……我是说，从资源角度的资源。</li>
+                <li>r_main_secret->你可能猜到了……对的，我们来自闪耀世界。</li>
+                <li>r_main_secret->为什么我们要来到边缘世界？呃，我们的目标不是边缘世界……我们的目标是……嗯……只是你们刚好绕着我们的目标，这样可以理解吗？</li>
+                <li>r_main_secret->其实我很讨厌说话说一半的人……哦你问秘密？第一，星铃没有秘密。第二，</li>
+                <li>r_main_secret->第一，军团没有秘密。第二，帝国……</li>
+                <li>r_main_secret->你不会想知道我的三围吧……？</li>
+                <li>r_main_secret->你不会想知道我的XP吧……？！？！</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

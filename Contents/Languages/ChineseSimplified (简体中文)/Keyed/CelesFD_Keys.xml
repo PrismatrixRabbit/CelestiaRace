@@ -102,7 +102,7 @@
     <CelesFD_Keyed_ConfirmAbandon>确认放弃？</CelesFD_Keyed_ConfirmAbandon>
     <CelesFD_Keyed_Buy>购买</CelesFD_Keyed_Buy>
     <CelesFD_Keyed_LockBtn>锁</CelesFD_Keyed_LockBtn>
-    <CelesFD_Keyed_LockFull>该类别槽位已满，无法锁定</CelesFD_Keyed_LockFull>
+    <CelesFD_Keyed_LockFull>总锁定上限已满（上限 {0}）</CelesFD_Keyed_LockFull>
     <CelesFD_Keyed_AcceptLimit>已达到最大承接订单数（{0}）</CelesFD_Keyed_AcceptLimit>
     <CelesFD_Keyed_OrderQty>数量：{0}</CelesFD_Keyed_OrderQty>
     <CelesFD_Keyed_Reward>报酬：{0}</CelesFD_Keyed_Reward>
@@ -160,6 +160,7 @@
     <CelesFD_Keyed_ConfirmRefresh>花费 {0} 刷新市场？</CelesFD_Keyed_ConfirmRefresh>
     <CelesFD_Keyed_RefreshRejected>刷新被拒绝（冷却或资源不足）</CelesFD_Keyed_RefreshRejected>
     <CelesFD_Keyed_Cart>购物车</CelesFD_Keyed_Cart>
+    <CelesFD_Keyed_InvalidCartItem>失效订单（定义缺失）</CelesFD_Keyed_InvalidCartItem>
     <CelesFD_Keyed_CartTotalMass>总重量：{0} kg</CelesFD_Keyed_CartTotalMass>
     <CelesFD_Keyed_CartValue>总价值：{0} 银</CelesFD_Keyed_CartValue>
     <CelesFD_Keyed_CartOverweight>超重——禁止继续添加，可超重下单</CelesFD_Keyed_CartOverweight>
@@ -206,6 +207,9 @@
     <CelesFD_Keyed_ArmoryLevelLocked>访问拒绝：等级不足</CelesFD_Keyed_ArmoryLevelLocked>
     <CelesFD_Keyed_ArmoryInsufficientFunds>余额不足</CelesFD_Keyed_ArmoryInsufficientFunds>
     <CelesFD_Keyed_ArmoryNoKeyRefresh>密钥不足（需{0}）</CelesFD_Keyed_ArmoryNoKeyRefresh>
+    <CelesFD_Keyed_ArmoryInsufficientKey>密钥不足（需 {0}）</CelesFD_Keyed_ArmoryInsufficientKey>
+    <CelesFD_Keyed_ArmoryMaxTotal>「{0}」数量已达上限 {1}</CelesFD_Keyed_ArmoryMaxTotal>
+    <CelesFD_Keyed_ArmoryInvalidDraft>申请内容无效</CelesFD_Keyed_ArmoryInvalidDraft>
     <CelesFD_Keyed_ArmoryCheckout>确认支付</CelesFD_Keyed_ArmoryCheckout>
     <CelesFD_Keyed_ArmoryTotal>总计：{0}密钥 {1}信用额</CelesFD_Keyed_ArmoryTotal>
     <CelesFD_Keyed_ArmoryDraftCleared>审批已提交</CelesFD_Keyed_ArmoryDraftCleared>
@@ -269,6 +273,8 @@
     <CelesFD_Keyed_AgreeArmory>同意《外勤部用户协议》与《外勤部支援须知》</CelesFD_Keyed_AgreeArmory>
     <CelesFD_Keyed_AgreeArmoryFirst>请先同意《外勤部用户协议》与《外勤部支援须知》</CelesFD_Keyed_AgreeArmoryFirst>
     <CelesFD_Keyed_PersonnelNotArrived>即将抵达</CelesFD_Keyed_PersonnelNotArrived>
+    <CelesFD_Keyed_PersonnelRecallInTransit>运输中（不可召回）</CelesFD_Keyed_PersonnelRecallInTransit>
+    <CelesFD_Keyed_PersonnelRecallIncoming>即将抵达（不可召回）</CelesFD_Keyed_PersonnelRecallIncoming>
     
     <!-- ？帮助三篇 -->
     <CelesFD_Keyed_InfoArmory>《外勤部支援须知》\n更新日期：5426年9月28日\n生效日期：5426年9月28日\n本须知适用于星铃“极光”号方舟与第七舰队联合科学考察队外勤部与第七舰队武装部（以下简称“我们”或“外勤部”）联合推出的一切武备支援与人员增援服务（以下简称“服务”）。本须知与《星铃外勤部用户协议》的内容存在冲突的，以本须知的规定为准。即使我们没有提示您或主动声明，本须知也适用于您使用的一切支援服务。\n一、总则\n1.1“武备支援”，或“武备”，指外勤部向您出售的一次性轨道武装火力非军事服务，按次计费，按“权限等级”开放档位。\n1.2“支援额度”指每象可使用武备支援的数量上限，随权限等级提升；额度耗尽可花费密钥刷新。\n1.3“信标”指一切您用以呼叫武备支援的装置。很荣幸告知您，计费以信标生效为准：被拦截、被护盾挡下、超出支援额度、外勤部未接收到讯号等情况不消耗次数。\n1.4“增援小队”指外勤部向您派出的人员或机械编组，费用由燃油费（按人数）、雇佣金（按停留天数）、保险预付款与额外金额构成。\n1.5“保险”指增援小队的两段制风险费用：申请时预缴，撤离时结算。\n二、武备支援\n2.1武备页左栏按权限等级展示可申请的武备支援。付款后即视作您希望使用这些武备并将申请审批提交给外勤部。\n2.2审批将侧重于审查您是否具备使用武备支援的认知能力与行为约束能力。外勤部不承诺提交审批等同于审批通过。\n2.3审批通常需要从即时至数小时不等的时间，取决于对应武备的使用难度，道德伦理风险，环境危害风险，以及可能造成的其他次生影响。\n2.4审批通过后，使用星铃支援信标呼叫器，即可在任意地点投掷信标呼叫该支援。\n2.5我们不对您将信标置于外勤部无法接收到讯号的地点的行为，以及对应的武备呼叫失败负责。无法接收到讯号的地点包括但不限于：山体内部、混凝土掩体内部、地下、异次元、地壳深部、气态行星大气内、恒星日冕层。请将信标置于您所在行星可见天空处。\n2.6您购买的支援与《星铃外勤部用户协议》5.4所述追责手段共享部分发射平台。当您购买的支援与追责手段冲突时，我们优先服务追责而非您。\n三、人员增援\n3.1武备页右栏按权限等级展示可申请的人员增援。付款后即外勤部即立刻向您发送人员增援。\n3.2增援小队按申请模式抵达：标准（24小时）、加急（1小时）、即刻。落地模式与落地位置由小队配置决定。\n3.3“驻留期”指增援小队在您处的停留时长，设有上限，通常为7天。驻留期结束前12小时您将收到撤离预警，到期小队将自行撤离。\n3.4任一增援小队在场期间无法再次申请同一类型增援小队。\n3.5您可申请提前召回，我们将按未履约天数退还雇佣金。\n3.6含机械体的小队由随队外勤部员工监管指挥。\n3.7外勤部严格遵守星铃“极光”号方舟与第七舰队联合科学考察队相关政策与法律法规，严格尊重并保护劳动者权益。因此，驻留期内的履约天数向上取整。例如，1天1秒将被视作增援小队已履约2天。\n四、保险与结算\n4.1保险于撤离简报按小队完整度结算：具体情况视小队要求，但通常，对于完整返回的，我们将全额退还您的保险预付款。对于小队完全损失的，我们将扣留您的保险预付款并额外追缴信用额。\n4.2星铃员工在完整度评估中总是比机械体更有价值。这是基于个体能力的判断，绝非出于人类中心主义。\n4.3视增援小队对您的评价（通常取决于小队完整度），我们将同步发放声望奖励或惩罚。\n4.4追缴可能使您的信用额为负，届时依照《星铃外勤部用户协议》2.3办理等级事宜。\n4.5若降落点未发现任何可支援对象，小队将自行提前撤离，费用照常计算。请确保您申请支援的位置（通常为发送申请的信标所在地）存在需要支援的对象。\n五、附则\n5.1一切解释权归星铃“极光”号方舟与第七舰队联合科学考察队外勤部所有。</CelesFD_Keyed_InfoArmory>
