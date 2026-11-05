@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
-    <!-- ===================== L1 开放市场 · 收购 ===================== -->
+    <!-- ===================== L1 开放市场 收购项 ===================== -->
 
     <CelesFeature.CelesFD_MarketClassDef>
         <defName>CelesFD_L1Buy_CargoBuildingMaterialSmall</defName>
@@ -55,7 +55,7 @@
     </CelesFeature.CelesFD_MarketClassDef>
 
     <CelesFeature.CelesFD_MarketClassDef>
-        <defName>CelesFD_L1Buy_CargoBuildingMaterial</defName>
+        <defName>CelesFD_L1Buy_Base</defName>
         <title>L1基础收购</title>
         <category>Open</category>
         <isBuy>true</isBuy>
@@ -65,6 +65,8 @@
             <li>CelesFD_Level_L0</li>
             <li>CelesFD_Level_L1</li>
             <li>CelesFD_Level_L2</li>
+            <li>CelesFD_Level_L3</li>
+            <li>CelesFD_Level_L4</li>
         </validLevel>
         <includeThings>
             <li>
@@ -112,6 +114,36 @@
                 <label>皮革荒地营宿货组</label>
             </li>
             <li>
+                <filter><categories><li>Apparel</li></categories></filter>
+                <thingAmount>2~4</thingAmount>
+                <thingPriceCredit>5</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>任意衣物</label>
+            </li>
+            <li>
+                <filter><categories><li>Weapons</li></categories></filter>
+                <thingAmount>1~2</thingAmount>
+                <thingPriceCredit>5</thingPriceCredit>
+                <thingWeight>1</thingWeight>
+                <label>任意武器</label>
+            </li>
+        </includeThings>
+    </CelesFeature.CelesFD_MarketClassDef>
+
+    <CelesFeature.CelesFD_MarketClassDef>
+        <defName>CelesFD_L1Buy_Low</defName>
+        <title>L1低层收购</title>
+        <category>Open</category>
+        <isBuy>true</isBuy>
+        <fameReward>5</fameReward>
+        <orderDurationInQuadrums>0.5</orderDurationInQuadrums>
+        <validLevel>
+            <li>CelesFD_Level_L0</li>
+            <li>CelesFD_Level_L1</li>
+            <li>CelesFD_Level_L2</li>
+        </validLevel>
+        <includeThings>
+            <li>
                 <filter><categories><li>Apparel</li></categories><allowedQualities>Normal~Legendary</allowedQualities></filter>
                 <stuffCategoriesToAllow><li>Fabric</li></stuffCategoriesToAllow>
                 <thingAmount>2~4</thingAmount>
@@ -128,25 +160,11 @@
                 <label>皮革衣物（一般以上）</label>
             </li>
             <li>
-                <filter><categories><li>Apparel</li></categories></filter>
-                <thingAmount>2~4</thingAmount>
-                <thingPriceCredit>5</thingPriceCredit>
-                <thingWeight>1</thingWeight>
-                <label>任意衣物</label>
-            </li>
-            <li>
                 <filter><categories><li>Weapons</li></categories><allowedQualities>Good~Legendary</allowedQualities></filter>
                 <thingAmount>1</thingAmount>
                 <thingPriceCredit>8</thingPriceCredit>
                 <thingWeight>0.8</thingWeight>
                 <label>武器（良好以上）</label>
-            </li>
-            <li>
-                <filter><categories><li>Weapons</li></categories></filter>
-                <thingAmount>1~2</thingAmount>
-                <thingPriceCredit>5</thingPriceCredit>
-                <thingWeight>1</thingWeight>
-                <label>任意武器</label>
             </li>
             <li>
                 <filter><thingDefs><li>MedicineHerbal</li></thingDefs></filter>
@@ -169,6 +187,9 @@
         <validLevel>
             <li>CelesFD_Level_L0</li>
             <li>CelesFD_Level_L1</li>
+            <li>CelesFD_Level_L2</li>
+            <li>CelesFD_Level_L3</li>
+            <li>CelesFD_Level_L4</li>
         </validLevel>
         <includeThings>
             <li>
@@ -195,10 +216,10 @@
         </includeThings>
     </CelesFeature.CelesFD_MarketClassDef>
 
-    <!-- ===================== L1 开放市场 · 出售 ===================== -->
+    <!-- ===================== L1 开放市场 出售项 ===================== -->
 
     <CelesFeature.CelesFD_MarketClassDef>
-        <defName>CelesFD_L1Sell_Steel</defName>
+        <defName>CelesFD_L1Sell_Base</defName>
         <title>L1基础出售</title>
         <category>Open</category>
         <isBuy>false</isBuy>
@@ -208,6 +229,7 @@
             <li>CelesFD_Level_L1</li>
             <li>CelesFD_Level_L2</li>
             <li>CelesFD_Level_L3</li>
+            <li>CelesFD_Level_L4</li>
         </validLevel>
         <includeThings>
             <li>
@@ -291,7 +313,7 @@
     </CelesFeature.CelesFD_MarketClassDef>
 
     <CelesFeature.CelesFD_MarketClassDef>
-        <defName>CelesFD_L1Sell_PioneerWeapons</defName>
+        <defName>CelesFD_L1Sell_IndustryWeapons</defName>
         <title>L1星铃拓荒武器出售</title>
         <category>Open</category>
         <isBuy>false</isBuy>
@@ -303,6 +325,7 @@
             <li>CelesFD_Level_L1</li>
             <li>CelesFD_Level_L2</li>
             <li>CelesFD_Level_L3</li>
+            <li>CelesFD_Level_L4</li>
         </validLevel>
         <includeThings>
             <li>
@@ -397,6 +420,9 @@
         <validLevel>
             <li>CelesFD_Level_L0</li>
             <li>CelesFD_Level_L1</li>
+            <li>CelesFD_Level_L2</li>
+            <li>CelesFD_Level_L3</li>
+            <li>CelesFD_Level_L4</li>
         </validLevel>
         <includeThings>
             <li>
@@ -423,11 +449,10 @@
         </includeThings>
     </CelesFeature.CelesFD_MarketClassDef>
 
-    <!-- ===================== L1 加急收购 ===================== -->
-    <!-- 2026-10-28 O1 两步加权：entry thingWeight = 肉 1.0 / 医药 0.6 / 化合燃料 0.6 / 零部件 0.5 / 空箱 0.2 -->
+    <!-- ===================== L1 开放市场 加急项 ===================== -->
 
     <CelesFeature.CelesFD_MarketClassDef>
-        <defName>CelesFD_L1Urgent_HoardedGoods</defName>
+        <defName>CelesFD_L1Urgent</defName>
         <title>L1加急收购</title>
         <category>Urgent</category>
         <isBuy>true</isBuy>
@@ -481,8 +506,7 @@
     </CelesFeature.CelesFD_MarketClassDef>
 
     <!-- ═══════════════════════════════════════════════════════════════════
-         使用例：限购 / 保底（仅注释参考，不加载；复制时去掉本注释包裹）
-         2026-10-24 市场 C# 机制批（purchaseLimit / isGuaranteed / guaranteedItemCount）
+         使用例：限购 / 保底
 
          字段速查：
          purchaseLimit：0/缺省=不限；1=本存档一次；N=本存档 N 次。

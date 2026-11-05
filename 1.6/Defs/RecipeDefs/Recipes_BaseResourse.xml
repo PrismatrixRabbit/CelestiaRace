@@ -866,7 +866,7 @@
             <thingDefs>
                 <li>Celes_AdvancedComponent</li>
                 <li>Steel</li>
-<li>Plasteel</li>
+                <li>Plasteel</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>

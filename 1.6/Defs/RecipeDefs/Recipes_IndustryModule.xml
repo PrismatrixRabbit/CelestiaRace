@@ -5,7 +5,8 @@
 
     <RecipeDef Name="Celes_AutoRecipe_Base" Abstract="True">
         <jobString>正在键入启动指令</jobString>
-        <workAmount>1800</workAmount>
+        <workAmount>800</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <soundWorking MayRequire="Ludeon.RimWorld.Biotech">MechGestatorCycle_Initiating</soundWorking>
         <modExtensions>
             <li Class="CelesFeature.CelesIM_FormingGraphicExt">
@@ -28,9 +29,7 @@
             <ThingDef>Celes_BioGel</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_BioGel</uiIconThing>
-        <formingTicks>3000</formingTicks>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
+        <formingTicks>7200</formingTicks>
         <allowMixingIngredients>true</allowMixingIngredients>
         <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
         <ingredients>
@@ -43,6 +42,11 @@
                 <count>5</count>
             </li>
         </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>FoodRaw</li>
+            </categories>
+        </fixedIngredientFilter>
         <products>
             <Celes_BioGel>100</Celes_BioGel>
         </products>
@@ -59,9 +63,7 @@
             <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_NanoMachine</uiIconThing>
-        <formingTicks>1200</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>4800</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -95,9 +97,7 @@
             <ThingDef>Celes_LayeredCrystal</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_LayeredCrystal</uiIconThing>
-        <formingTicks>500</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>3600</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -124,9 +124,7 @@
             <ThingDef>Celes_NanoMachine</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_NanoMachine</uiIconThing>
-        <formingTicks>800</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>3600</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -162,9 +160,7 @@
             <ThingDef>CelesAlloy</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>CelesAlloy</uiIconThing>
-        <formingTicks>1600</formingTicks>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
+        <formingTicks>4800</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -208,10 +204,8 @@
             <ThingDef>Celes_NanoComponent</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_NanoComponent</uiIconThing>
-        <formingTicks>2400</formingTicks>
+        <formingTicks>6000</formingTicks>
         <gestationCycles>2</gestationCycles>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
         <ingredients>
             <li>
                 <filter>
@@ -254,8 +248,6 @@
         </descriptionHyperlinks>
         <uiIconThing>ComponentIndustrial</uiIconThing>
         <formingTicks>4000</formingTicks>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
         <ingredients>
             <li>
                 <filter>
@@ -283,9 +275,7 @@
             <ThingDef>Celes_Cloth</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_Cloth</uiIconThing>
-        <formingTicks>1200</formingTicks>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
+        <formingTicks>4800</formingTicks>
         <researchPrerequisites>
             <li>Celes_Bio_I</li>
         </researchPrerequisites>
@@ -332,9 +322,7 @@
             <ThingDef>Celes_Cloth</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_Cloth</uiIconThing>
-        <formingTicks>2000</formingTicks>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
+        <formingTicks>6000</formingTicks>
         <researchPrerequisites>
             <li>Celes_Bio_I</li>
         </researchPrerequisites>
@@ -384,9 +372,7 @@
             <ThingDef>BlocksSandstone</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_CrystalSlurry</uiIconThing>
-        <formingTicks>400</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>3600</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -431,9 +417,7 @@
             <ThingDef>Neutroamine</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_NanoMachine</uiIconThing>
-        <formingTicks>800</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>3600</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -473,8 +457,6 @@
         <uiIconThing>Celes_Substrate</uiIconThing>
         <formingTicks>6000</formingTicks>
         <gestationCycles>2</gestationCycles>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <researchPrerequisites>
             <li>Celes_MainTech_III</li>
         </researchPrerequisites>
@@ -533,8 +515,6 @@
         <uiIconThing>Celes_Substrate</uiIconThing>
         <formingTicks>8000</formingTicks>
         <gestationCycles>2</gestationCycles>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <researchPrerequisites>
             <li>Celes_MainTech_III</li>
         </researchPrerequisites>
@@ -593,8 +573,6 @@
         <uiIconThing>Celes_AdvancedCloth</uiIconThing>
         <formingTicks>4500</formingTicks>
         <gestationCycles>3</gestationCycles>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <researchPrerequisites>
             <li>Celes_MainTech_IV</li>
         </researchPrerequisites>
@@ -652,8 +630,6 @@
         <uiIconThing>Celes_AdvancedCloth</uiIconThing>
         <formingTicks>6000</formingTicks>
         <gestationCycles>3</gestationCycles>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <researchPrerequisites>
             <li>Celes_MainTech_IV</li>
         </researchPrerequisites>
@@ -711,8 +687,6 @@
         <uiIconThing>Celes_AdvancedComponent</uiIconThing>
         <formingTicks>12000</formingTicks>
         <gestationCycles>4</gestationCycles>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <workerClass>CelesFeature.CelesIM_RecipeWorker_Locked</workerClass>
         <modExtensions>
             <li Class="CelesFeature.CelesIM_RecipeLockExt">
@@ -778,8 +752,6 @@
         <uiIconThing>ComponentSpacer</uiIconThing>
         <formingTicks>6000</formingTicks>
         <gestationCycles>2</gestationCycles>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
         <workerClass>CelesFeature.CelesIM_RecipeWorker_Locked</workerClass>
         <modExtensions>
             <li Class="CelesFeature.CelesIM_RecipeLockExt">
@@ -838,9 +810,7 @@
             <ThingDef>Celes_ElementSilicon</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_ElementSilicon</uiIconThing>
-        <formingTicks>800</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>3600</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -879,9 +849,7 @@
             <ThingDef>Celes_ElementCarbon</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_ElementCarbon</uiIconThing>
-        <formingTicks>800</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>3600</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -916,9 +884,7 @@
             <ThingDef>Celes_ElementHydrogen</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_ElementCarbon</uiIconThing>
-        <formingTicks>1000</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>4800</formingTicks>
         <allowMixingIngredients>true</allowMixingIngredients>
         <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
         <ingredients>
@@ -956,9 +922,7 @@
             <ThingDef>Celes_ElementCarbon</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_ElementIron</uiIconThing>
-        <formingTicks>1600</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>4800</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -996,9 +960,7 @@
             <ThingDef>Celes_ElementRare</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_ElementRare</uiIconThing>
-        <formingTicks>3200</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>7200</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -1035,8 +997,6 @@
         </descriptionHyperlinks>
         <uiIconThing>Celes_ElementRare</uiIconThing>
         <formingTicks>6000</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <ingredients>
             <li>
                 <filter>
@@ -1073,9 +1033,7 @@
             <ThingDef>Celes_ElementRare</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_ElementRare</uiIconThing>
-        <formingTicks>2400</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>6000</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -1110,8 +1068,6 @@
         </descriptionHyperlinks>
         <uiIconThing>Celes_ElementRare</uiIconThing>
         <formingTicks>4000</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <ingredients>
             <li>
                 <filter>
@@ -1145,9 +1101,7 @@
             <ThingDef>Celes_ElementHydrogen</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_ElementHydrogen</uiIconThing>
-        <formingTicks>2000</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>6000</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -1179,8 +1133,6 @@
         <uiIconThing>Celes_ElementRare</uiIconThing>
         <formingTicks>6000</formingTicks>
         <gestationCycles>2</gestationCycles>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <ingredients>
             <li>
                 <filter>
@@ -1219,9 +1171,7 @@
             <ThingDef>Celes_ElementHydrogen</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Celes_ElementCarbon</uiIconThing>
-        <formingTicks>800</formingTicks>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
+        <formingTicks>3600</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -1260,8 +1210,6 @@
         </descriptionHyperlinks>
         <uiIconThing>Celes_BioGel</uiIconThing>
         <formingTicks>4000</formingTicks>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
         <ingredients>
             <li>
                 <filter>
@@ -1305,9 +1253,7 @@
             <ThingDef>Steel</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Steel</uiIconThing>
-        <formingTicks>2000</formingTicks>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
+        <formingTicks>6000</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -1353,9 +1299,7 @@
             <ThingDef>Plasteel</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Plasteel</uiIconThing>
-        <formingTicks>2000</formingTicks>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
+        <formingTicks>6000</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -1418,8 +1362,6 @@
         <uiIconThing>CelesAlloy</uiIconThing>
         <formingTicks>7000</formingTicks>
         <gestationCycles>2</gestationCycles>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
         <ingredients>
             <li>
                 <filter>
@@ -1474,8 +1416,6 @@
         <uiIconThing>Celes_Cloth</uiIconThing>
         <formingTicks>12000</formingTicks>
         <gestationCycles>3</gestationCycles>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
         <ingredients>
             <li>
                 <filter>
@@ -1530,8 +1470,6 @@
         <uiIconThing>Celes_NanoComponent</uiIconThing>
         <formingTicks>17500</formingTicks>
         <gestationCycles>3</gestationCycles>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
         <ingredients>
             <li>
                 <filter>
@@ -1585,8 +1523,6 @@
         <uiIconThing>ComponentIndustrial</uiIconThing>
         <formingTicks>15000</formingTicks>
         <gestationCycles>2</gestationCycles>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
         <ingredients>
             <li>
                 <filter>
@@ -1633,8 +1569,6 @@
         <uiIconThing>Celes_NanoMachine</uiIconThing>
         <formingTicks>15000</formingTicks>
         <gestationCycles>1</gestationCycles>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <workerClass>CelesFeature.CelesIM_RecipeWorker_Locked</workerClass>
         <modExtensions>
             <li Class="CelesFeature.CelesIM_RecipeLockExt">
@@ -1683,8 +1617,6 @@
         <uiIconThing>Celes_Substrate</uiIconThing>
         <formingTicks>48000</formingTicks>
         <gestationCycles>3</gestationCycles>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <workerClass>CelesFeature.CelesIM_RecipeWorker_Locked</workerClass>
         <modExtensions>
             <li Class="CelesFeature.CelesIM_RecipeLockExt">
@@ -1773,8 +1705,6 @@
         <uiIconThing>Celes_AdvancedCloth</uiIconThing>
         <formingTicks>63000</formingTicks>
         <gestationCycles>2</gestationCycles>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <workerClass>CelesFeature.CelesIM_RecipeWorker_Locked</workerClass>
         <modExtensions>
             <li Class="CelesFeature.CelesIM_RecipeLockExt">
@@ -1856,8 +1786,6 @@
         <uiIconThing>Celes_AdvancedComponent</uiIconThing>
         <formingTicks>62500</formingTicks>
         <gestationCycles>4</gestationCycles>
-        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-        <workSkill>Intellectual</workSkill>
         <workerClass>CelesFeature.CelesIM_RecipeWorker_Locked</workerClass>
         <modExtensions>
             <li Class="CelesFeature.CelesIM_RecipeLockExt">
@@ -1941,9 +1869,7 @@
             <ThingDef>Steel</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>Steel</uiIconThing>
-        <formingTicks>1000</formingTicks>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
+        <formingTicks>4800</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -1969,9 +1895,7 @@
             <ThingDef>ComponentIndustrial</ThingDef>
         </descriptionHyperlinks>
         <uiIconThing>ComponentIndustrial</uiIconThing>
-        <formingTicks>1600</formingTicks>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
+        <formingTicks>4800</formingTicks>
         <ingredients>
             <li>
                 <filter>
@@ -2000,8 +1924,6 @@
         </descriptionHyperlinks>
         <uiIconThing>ComponentSpacer</uiIconThing>
         <formingTicks>4500</formingTicks>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
         <researchPrerequisites>
             <li>Celes_MainTech_IV</li>
         </researchPrerequisites>

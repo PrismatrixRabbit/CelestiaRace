@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- ═══════════════════════════════════════════════════════════════
+         A 批：把模式精度偏移 StatPart 挂到原版 AccuracyBase.parts。
+         · order=Prepend：插在 StatPart_Quality 之前
+           （PatchOperationAdd 的 order 默认 Append，必须显式写 Prepend）；
+         · AccuracyTouch/Short/Medium/Long 均 ParentName=AccuracyBase，
+           补丁在 XmlInheritance.Resolve 之前执行，四个子 Def 继承该 li；
+         · 在 StatPart_Quality 之前 ⇒ 最终值 = (base + offset) × quality
+           （offset 与 XML 同号：正值提高、负值降低；惩罚随品质乘数缩放）。
+         · 无 comp 的 Thing 由 StatPart 内部 TryGetComp 门控，no-op。
+         ═══════════════════════════════════════════════════════════════ -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/StatDef[@Name="AccuracyBase"]/parts</xpath>
+        <order>Prepend</order>
+        <value>
+            <li Class="CelesFeature.Celes_StatPart_MultiVerbAccuracy"/>
+        </value>
+    </Operation>
+</Patch>

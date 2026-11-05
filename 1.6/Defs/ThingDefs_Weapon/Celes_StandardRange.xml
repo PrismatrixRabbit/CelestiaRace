@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!--==================================== 星铃拓荒型精确步枪 ====================================-->
+    <!--==================================== GU8E「步槊」 ====================================-->
 
     <ThingDef ParentName="Celes_BaseHumanMakeableGun">
         <defName>Celes_StandardSniperRifle</defName>
-        <label>GU8E试制加速步枪</label>
+        <label>GU8E「步槊」</label>
         <description>基于星铃技术的实验性微声狙击步枪，使用星铃制式8.5mm子弹，有较低的枪口火光与噪声。\n\n使用电点火ONC发射药提供初始速度，并以磁重接加速子弹。主要被不希望引人注意的星铃科考队员使用。</description>
         <graphicData>
             <texPath>Celes/Weapon/Standard/StandardSniperRifle</texPath>
@@ -15,39 +15,310 @@
         <uiIconScale>1.0</uiIconScale>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <WorkToMake>15000</WorkToMake>
-            <Mass>4.0</Mass>
-            <AccuracyTouch>0.55</AccuracyTouch>
-            <AccuracyShort>0.85</AccuracyShort>
+            <WorkToMake>40000</WorkToMake>
+            <Mass>3.6</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
             <AccuracyMedium>0.90</AccuracyMedium>
-            <AccuracyLong>0.85</AccuracyLong>
-            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+            <AccuracyLong>0.80</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
             <HuntingStealth>2.0</HuntingStealth>
         </equippedStatOffsets>
         <costList>
-            <Steel>60</Steel>
-            <ComponentIndustrial>4</ComponentIndustrial>
+            <CelesAlloy>45</CelesAlloy>
+            <Celes_NanoMachine>1</Celes_NanoMachine>
+            <Celes_NanoComponent>1</Celes_NanoComponent>
+            <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <label>锻造指令：GU8E「步槊」</label>
             <researchPrerequisites>
-                <li>Celes_Weapon_I</li>
+                <li>Celes_Weapon_II</li>
             </researchPrerequisites>
             <skillRequirements>
-                <Crafting>5</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
-            <displayPriority>5510</displayPriority>
+            <displayPriority>5520</displayPriority>
         </recipeMaker>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Celes_BulletIndustryM</defaultProjectile>
-                <warmupTime>1.5</warmupTime>
-                <range>36.9</range>
-                <soundCast>Shot_BoltActionRifle</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <defaultProjectile>Celes_BulletStandardM</defaultProjectile>
+                <warmupTime>2.0</warmupTime>
+                <range>38.9</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>枪托</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>枪管</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+
+        <weaponClasses>
+            <li>LongShots</li>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>Celes_StandardRangeSniper</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_StandardRange</li>
+        </tradeTags>
+    </ThingDef>
+    
+    <ThingDef ParentName="BaseBullet">
+        <defName>Celes_BulletStandardM</defName>
+        <label>星铃制式8.5mm子弹</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.3</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+            <speed>55</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+    <!--==================================== 科考队切割枪 ====================================-->
+    
+    <ThingDef ParentName="Celes_BaseHumanMakeableGun">
+        <defName>Celes_StandardCutter</defName>
+        <label>科考队切割枪</label>
+        <description>喷射定向等离子体束流的切割工具，对墙体与生物肢段有额外的破坏性能，并附带高热。\n\n泛用性相当高的切割工具，可以很便捷的切割板材或者墙体，但作用范围受限在等离子体的自约束极限之内。对生物的切割在其设计范畴之内。</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Standard/StandardCutter</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.9</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>2.6</Mass>
+            <AccuracyTouch>0.85</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <CelesAlloy>30</CelesAlloy>
+            <Celes_NanoMachine>1</Celes_NanoMachine>
+            <Celes_NanoComponent>1</Celes_NanoComponent>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <label>锻造指令：科考队切割枪</label>
+            <researchPrerequisites>
+                <li>Celes_Weapon_II</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>5521</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Celes_StandardCutterBullet</defaultProjectile>
+                <warmupTime>0.5</warmupTime>
+                <range>14.9</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>4</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>枪托</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>发射腔</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+
+        <weaponClasses>
+            <li>ShortShots</li>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>Celes_StandardRangeClose</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_StandardRange</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Celes_StandardCutterBullet</defName>
+        <label>切割等离子体</label>
+        <projectile>
+            <damageDef>Celes_StandardCutterDamage</damageDef>
+            <damageAmountBase>28</damageAmountBase>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
+            <stoppingPower>1.0</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Charge_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+    <DamageDef ParentName="Bullet">
+        <defName>Celes_StandardCutterDamage</defName>
+        <workerClass>CelesFeature.Celes_DamageWorker_Cutting</workerClass>
+        <label>等离子切割</label>
+        <deathMessage>{0}被等离子流切开了。</deathMessage>
+        <hediff>Cut</hediff>
+        <hediffSkin>Cut</hediffSkin>
+        <hediffSolid>Crack</hediffSolid>
+        <impactSoundType>Slice</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+        <buildingDamageFactor>3</buildingDamageFactor>
+        <buildingDamageFactorPassable>1.5</buildingDamageFactorPassable>
+        <buildingDamageFactorImpassable>3</buildingDamageFactorImpassable>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_BodyPartTagDamageMultiplierExtension">
+                <entries>
+                    <li>
+                        <tag>ManipulationLimbCore</tag>
+                        <multiplier>1.5</multiplier>
+                    </li>
+                    <li>
+                        <tag>ManipulationLimbSegment</tag>
+                        <multiplier>1.5</multiplier>
+                    </li>
+                    <li>
+                        <tag>ManipulationLimbDigit</tag>
+                        <multiplier>1.5</multiplier>
+                    </li>
+                    <li>
+                        <tag>MovingLimbCore</tag>
+                        <multiplier>1.5</multiplier>
+                    </li>
+                    <li>
+                        <tag>MovingLimbSegment</tag>
+                        <multiplier>1.5</multiplier>
+                    </li>
+                    <li>
+                        <tag>MovingLimbDigit</tag>
+                        <multiplier>1.5</multiplier>
+                    </li>
+                </entries>
+            </li>
+            <li Class="CelesFeature.Celes_DamageExtension_ExtraDamages">
+                <extraDamages>
+                    <li>
+                        <def>Burn</def>
+                        <amount>4</amount>
+                        <chance>1.0</chance>
+                    </li>
+                </extraDamages>
+            </li>
+        </modExtensions>
+    </DamageDef>
+
+    <!--==================================== GZ5E「戟」 ====================================-->
+    
+    <ThingDef ParentName="Celes_BaseHumanMakeableGun">
+        <defName>Celes_StandardAutoRifle</defName>
+        <label>GZ5E「戟」</label>
+        <description>基于星铃技术的实验性自动突击步枪，使用星铃制式5.7mm子弹，具有可变弹速的两种射击模式。\n\n依赖可变磁场线圈和磁流变液系统的改进的全自动磁重接武器，复杂机械的制造和维护成本都能通过尘构大幅降低而在科考队内量产，基本可以覆盖科考队在边缘世界非军事力量的自我防卫需求。</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Standard/StandardRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+            <WorkToMake>45000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.60</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.65</AccuracyMedium>
+            <AccuracyLong>0.55</AccuracyLong>
+            <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <CelesAlloy>70</CelesAlloy>
+            <Celes_Substrate>10</Celes_Substrate>
+            <Celes_NanoComponent>2</Celes_NanoComponent>
+        </costList>
+        <recipeMaker>
+            <label>锻造指令：GZ5E「戟」</label>
+            <researchPrerequisites>
+                <li>Celes_Weapon_III</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <displayPriority>5523</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Celes_BulletStandardS</defaultProjectile>
+                <warmupTime>1.0</warmupTime>
+                <range>33.9</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>7</muzzleFlashScale>
+            </li>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Celes_BulletStandardS</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <range>29.9</range>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
@@ -70,23 +341,772 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
-        <comps Inherit="False">
-            <li Class="CompProperties_Biocodable"/>
-            <li Class="CompProperties_Forbiddable"/>
-            <li Class="CompProperties_EquippableAbility">
-                <abilityDef>Celes_Ability_IndustryRifle</abilityDef>
+        <comps>
+            <li Class="CelesFeature.Celes_CompProperties_MultiVerb">
+                <verbInfos>
+                    <li>
+                        <iconPath>UI/Abilities/FireSpew</iconPath>
+                        <defaultLabel>三连发</defaultLabel>
+                        <defaultDesc>战术性的三连发精确模式，更精确可靠。</defaultDesc>
+                        <accuracyOffset>0</accuracyOffset>
+                    </li>
+                    <li>
+                        <iconPath>UI/Abilities/FireBurst</iconPath>
+                        <defaultLabel>全自动</defaultLabel>
+                        <defaultDesc>全自动射击压制射击，损失精度来提供压制性火力。</defaultDesc>
+                        <accuracyOffset>-0.42</accuracyOffset>
+                    </li>
+                </verbInfos>
             </li>
         </comps>
 
+        <weaponClasses>
+            <li>ShortShots</li>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>Celes_StandardRangeAR</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_StandardRange</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Celes_BulletStandardS</defName>
+        <label>星铃制式5.7mm子弹</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>13</damageAmountBase>
+            <armorPenetrationBase>0.28</armorPenetrationBase>
+            <stoppingPower>0.5</stoppingPower>
+            <speed>70</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+    <!--==================================== 「魔杖」终端 ====================================-->
+    <ThingDef ParentName="Celes_BaseHumanMakeableGun">
+        <defName>Celes_StandardStaff</defName>
+        <label>「魔杖」终端</label>
+        <description>杖状便携式尘构编译与指令终端，代号「魔杖」，其发射的弹丸可以搭载不同种类的尘构，常态分为用于维护机械和结构的维护模式和用于维护调试电子设备的电磁模式。\n\n通常被科考队的技术人员作为维护工具使用，虽然大多数情况下没有杀伤性能，但在作战超频时，维护模式可以维修和增强机械体性能，而电磁模式提供定点的减速与削弱能力。</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Standard/StandardStaff</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.9</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+            <WorkToMake>30000</WorkToMake>
+            <Mass>2.5</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.60</AccuracyMedium>
+            <AccuracyLong>0.50</AccuracyLong>
+            <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <CelesAlloy>50</CelesAlloy>
+            <Celes_Substrate>8</Celes_Substrate>
+            <Celes_NanoComponent>4</Celes_NanoComponent>
+        </costList>
+        <recipeMaker>
+            <label>锻造指令：「魔杖」终端</label>
+            <researchPrerequisites>
+                <li>Celes_Weapon_III</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <displayPriority>5524</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Celes_BulletStandardStaff</defaultProjectile>
+                <warmupTime>0.8</warmupTime>
+                <range>25.9</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>3</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>杖头</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15.7</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CelesFeature.Celes_CompProperties_EquippableHediff">
+                <hediffDef>Celes_Hediff_TerminalAbilities</hediffDef>
+            </li>
+        </comps>
+
+        <weaponClasses>
+            <li>ShortShots</li>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>Celes_StandardRangeSupport</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_StandardRange</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Celes_BulletStandardStaff</defName>
+        <label>编程尘构弹丸</label>
+        <projectile>
+            <damageDef>Celes_StandardStaffDamage</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <armorPenetrationBase>0</armorPenetrationBase>
+            <stoppingPower>2.0</stoppingPower>
+            <speed>60</speed>
+            <extraDamages>
+                <li>
+                    <def>Stun</def>
+                    <amount>4</amount>
+                    <chance>1</chance>
+                </li>
+            </extraDamages>
+        </projectile>
+        <graphicData>
+            <texPath>Celes/Weapon/Spacer/energy_bullet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+    <DamageDef ParentName="Bullet">
+        <defName>Celes_StandardStaffDamage</defName>
+        <label>枪伤</label>
+        <deathMessage>{0}被枪射杀了。</deathMessage>
+        <additionalHediffs>
+            <li>
+                <hediff>Celes_Hediff_EMSuppression</hediff>
+                <severityFixed>0.4</severityFixed>
+            </li>
+        </additionalHediffs>
+    </DamageDef>
+
+    <!--==================================== 魔杖终端 · 云 / 技能 / Hediff ====================================-->
+
+    <ThingDef>
+        <defName>Celes_NanoCloud_Maintenance</defName>
+        <label>维护纳米云</label>
+        <description>弥散的维护型尘构云团，持续修补范围内的结构并维持生物与机械的修复场。</description>
+        <thingClass>CelesFeature.Celes_NanoCloud</thingClass>
+        <category>None</category>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>Gas</altitudeLayer>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <selectable>false</selectable>
+        <useHitPoints>false</useHitPoints>
+        <destroyable>true</destroyable>
+        <rotatable>false</rotatable>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <neverMultiSelect>true</neverMultiSelect>
+        <graphicData>
+            <texPath>Things/Mote/Smoke</texPath>
+            <graphicClass>Graphic_Gas</graphicClass>
+            <shaderType>Transparent</shaderType>
+            <!-- 视觉浓度：alpha 0.5 在 5.8×5.8 单层上过淡；提高到 0.8 并加深主色。
+                 逻辑半径仍是 comp 的 radius=2.9，drawSize 只影响观感。 -->
+            <color>(0.42,0.92,0.78,0.8)</color>
+            <drawSize>5.8</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="CelesFeature.Celes_CompProperties_NanoCloud">
+                <radius>2.9</radius>
+                <durationTicks>2500</durationTicks>
+                <tickInterval>60</tickInterval>
+                <buildingRepairPerDay>3000</buildingRepairPerDay>
+                <buildingRepairOnlyFriendly>true</buildingRepairOnlyFriendly>
+                <hediffEntries>
+                    <!-- 友方非机械体：自我恢复（止血/慢愈默认开，三开关见 HediffDef） -->
+                    <li>
+                        <hediffDef>Celes_Hediff_SelfRecovery</hediffDef>
+                        <severityPerDayInCloud>1000</severityPerDayInCloud>
+                        <maxSeverity>1</maxSeverity>
+                        <requireFriendly>true</requireFriendly>
+                        <requireNonMechanoid>true</requireNonMechanoid>
+                    </li>
+                    <!-- 友方机械体：机械修复 -->
+                    <li>
+                        <hediffDef>Celes_Hediff_MechRecovery</hediffDef>
+                        <severityPerDayInCloud>1000</severityPerDayInCloud>
+                        <maxSeverity>1</maxSeverity>
+                        <requireFriendly>true</requireFriendly>
+                        <requireMechanoid>true</requireMechanoid>
+                    </li>
+                    <!-- 友方机械体：机械增幅 -->
+                    <li>
+                        <hediffDef>Celes_Hediff_MechAssist</hediffDef>
+                        <severityPerDayInCloud>1000</severityPerDayInCloud>
+                        <maxSeverity>1</maxSeverity>
+                        <requireFriendly>true</requireFriendly>
+                        <requireMechanoid>true</requireMechanoid>
+                    </li>
+                </hediffEntries>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef>
+        <defName>Celes_NanoCloud_EM</defName>
+        <label>电磁纳米云</label>
+        <description>弥散的电磁型尘构云团，持续干扰范围内的护甲系统与伺服机构。</description>
+        <thingClass>CelesFeature.Celes_NanoCloud</thingClass>
+        <category>None</category>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>Gas</altitudeLayer>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <selectable>false</selectable>
+        <useHitPoints>false</useHitPoints>
+        <destroyable>true</destroyable>
+        <rotatable>false</rotatable>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <neverMultiSelect>true</neverMultiSelect>
+        <graphicData>
+            <texPath>Things/Mote/Smoke</texPath>
+            <graphicClass>Graphic_Gas</graphicClass>
+            <shaderType>Transparent</shaderType>
+            <!-- 与维护云同口径：提高不透明度/主色浓度，避免 7.8×7.8 单层平面过淡。 -->
+            <color>(0.52,0.68,1,0.8)</color>
+            <drawSize>7.8</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="CelesFeature.Celes_CompProperties_NanoCloud">
+                <radius>3.9</radius>
+                <durationTicks>7500</durationTicks>
+                <tickInterval>60</tickInterval>
+                <buildingRepairPerDay>0</buildingRepairPerDay>
+                <buildingRepairOnlyFriendly>true</buildingRepairOnlyFriendly>
+                <hediffEntries>
+                    <!-- 敌对目标：电磁压制（isBad=true，四阶段） -->
+                    <li>
+                        <hediffDef>Celes_Hediff_EMSuppression</hediffDef>
+                        <severityPerDayInCloud>50</severityPerDayInCloud>
+                        <maxSeverity>6</maxSeverity>
+                        <requireHostile>true</requireHostile>
+                    </li>
+                </hediffEntries>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <AbilityDef>
+        <defName>Celes_Ability_MaintenanceCloud</defName>
+        <label>维护云</label>
+        <description>向目标位置投放一团维护型尘构云，持续修补友方建筑、维持友方生物与机械的修复场。</description>
+        <iconPath>Celes/UI/CelesFD_Icons/R_Smoke</iconPath>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>25.9</range>
+            <warmupTime>0.6</warmupTime>
+            <!-- AI 不当作武器使用（aiCanUse=false 已让 AI 完全不主动施放） -->
+            <ai_IsWeapon>false</ai_IsWeapon>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <!-- 只为让 Verb_CastAbility.DrawHighlight 画出 2.9 半径预览环；
+             必须同时 canUseAoeToGetTargets=false，否则 Ability 会把 Apply 按半径内每个 Thing 各调一次（会连放多朵云）。 -->
+        <statBases>
+            <Ability_EffectRadius>2.9</Ability_EffectRadius>
+        </statBases>
+        <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+        <comps>
+            <!-- 原版 CompProperties_AbilitySpawn：字段名就是 thingDef；sendSkipSignal=false 避免发 skip 信号 -->
+            <li Class="CelesFeature.Celes_CompProperties_AbilitySpawnCloud">
+                <thingDef>Celes_NanoCloud_Maintenance</thingDef>
+                <sendSkipSignal>false</sendSkipSignal>
+                <allowOnBuildings>true</allowOnBuildings>
+            </li>
+        </comps>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <aiCanUse>false</aiCanUse>
+        <ai_IsOffensive>false</ai_IsOffensive>
+        <!-- 维护工具：和平主义者（Violent 被禁）也应能放维护云 -->
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>Celes_Ability_EMCloud</defName>
+        <label>电磁云</label>
+        <description>向目标位置投放一团电磁型尘构云，持续削弱范围内敌对目标的护甲与机动。</description>
+        <iconPath>Celes/UI/CelesFD_Icons/R_Laser</iconPath>
+        <cooldownTicksRange>7500</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>25.9</range>
+            <warmupTime>0.6</warmupTime>
+            <!-- AI 不当作武器使用（aiCanUse=false 已让 AI 完全不主动施放） -->
+            <ai_IsWeapon>false</ai_IsWeapon>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <!-- 半径环预览用；canUseAoeToGetTargets=false 必须一起给，否则会按半径内每个 Thing 各放一朵云 -->
+        <statBases>
+            <Ability_EffectRadius>3.9</Ability_EffectRadius>
+        </statBases>
+        <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+        <comps>
+            <li Class="CelesFeature.Celes_CompProperties_AbilitySpawnCloud">
+                <thingDef>Celes_NanoCloud_EM</thingDef>
+                <sendSkipSignal>false</sendSkipSignal>
+                <allowOnBuildings>true</allowOnBuildings>
+            </li>
+        </comps>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <aiCanUse>false</aiCanUse>
+        <ai_IsOffensive>true</ai_IsOffensive>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    </AbilityDef>
+
+    <HediffDef>
+        <defName>Celes_Hediff_TerminalAbilities</defName>
+        <label>终端技能链路</label>
+        <description>便携尘构终端与使用者之间的短程指令链路。不可见，卸载终端即断开。</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <makesAlert>false</makesAlert>
+        <everCurableByItem>false</everCurableByItem>
+        <initialSeverity>0.1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+        <abilities>
+            <li>Celes_Ability_MaintenanceCloud</li>
+            <li>Celes_Ability_EMCloud</li>
+        </abilities>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Celes_Hediff_SelfRecovery</defName>
+        <label>纳米修复场</label>
+        <description>维护型尘构在体内维持的短程修复场，自动处理出血与外伤。离开维护云后逐渐失效。</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <makesAlert>false</makesAlert>
+        <everCurableByItem>false</everCurableByItem>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="CelesFeature.Celes_HediffCompProperties_NanoCloud">
+                <severityPerDayOutside>-24</severityPerDayOutside>
+                <graceTicks>60</graceTicks>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_SelfRecovery">
+                <!-- 止血：每 2500t（1 游戏小时）处理一条流血伤 -->
+                <stopBleeding>true</stopBleeding>
+                <bleedStopIntervalTicks>2500</bleedStopIntervalTicks>
+                <!-- 慢愈：每 250t 处理一条非永久外伤，每条 -1.0 severity -->
+                <healInjuries>true</healInjuries>
+                <healIntervalTicks>250</healIntervalTicks>
+                <healAmount>1.0</healAmount>
+                <!-- 三开关（默认 false；单变量验证时逐个改 true） -->
+                <healScars>false</healScars>
+                <healScarsIntervalTicks>2500</healScarsIntervalTicks>
+                <restoreMissingLimbs>false</restoreMissingLimbs>
+                <restoreMissingLimbsIntervalTicks>5000</restoreMissingLimbsIntervalTicks>
+                <removeBadHediffs>false</removeBadHediffs>
+                <badHediffIntervalTicks>2500</badHediffIntervalTicks>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Celes_Hediff_MechAssist</defName>
+        <label>纳米机械增幅</label>
+        <description>维护型尘构对机械体的临时超频增幅，提升机动与操作能力。离开维护云后逐渐失效。</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <makesAlert>false</makesAlert>
+        <everCurableByItem>false</everCurableByItem>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+                    <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="CelesFeature.Celes_HediffCompProperties_NanoCloud">
+                <severityPerDayOutside>-8</severityPerDayOutside>
+                <graceTicks>60</graceTicks>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Celes_Hediff_MechRecovery</defName>
+        <label>纳米机械修复</label>
+        <description>维护型尘构对机械体进行持续修复。离开维护云后逐渐失效。</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <makesAlert>false</makesAlert>
+        <everCurableByItem>false</everCurableByItem>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="CelesFeature.Celes_HediffCompProperties_NanoCloud">
+                <severityPerDayOutside>-24</severityPerDayOutside>
+                <graceTicks>60</graceTicks>
+            </li>
+            <li Class="CelesFeature.Celes_HediffCompProperties_SelfRecovery">
+                <stopBleeding>false</stopBleeding>
+                <healInjuries>true</healInjuries>
+                <healIntervalTicks>250</healIntervalTicks>
+                <healAmount>1.5</healAmount>
+                <healScars>false</healScars>
+                <restoreMissingLimbs>false</restoreMissingLimbs>
+                <removeBadHediffs>false</removeBadHediffs>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Celes_Hediff_EMSuppression</defName>
+        <label>电磁压制</label>
+        <description>被电磁尘构持续干扰：护甲系统降效、伺服机构迟滞。离开电磁云后逐渐恢复。</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>true</isBad>
+        <everCurableByItem>false</everCurableByItem>
+        <initialSeverity>0.5</initialSeverity>
+        <maxSeverity>6</maxSeverity>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <statFactors>
+                    <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
+                    <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+                    <ArmorRating_Heat>0.95</ArmorRating_Heat>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>2</minSeverity>
+                <statFactors>
+                    <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+                    <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+                    <ArmorRating_Heat>0.9</ArmorRating_Heat>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>4</minSeverity>
+                <statFactors>
+                    <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+                    <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+                    <ArmorRating_Heat>0.8</ArmorRating_Heat>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>6</minSeverity>
+                <statFactors>
+                    <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+                    <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+                    <ArmorRating_Heat>0.65</ArmorRating_Heat>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.35</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="CelesFeature.Celes_HediffCompProperties_NanoCloud">
+                <severityPerDayOutside>-28.8</severityPerDayOutside>
+                <graceTicks>60</graceTicks>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!--==================================== GP25E「钺」 ====================================-->
+    <ThingDef ParentName="Celes_BaseHumanMakeableGun">
+        <defName>Celes_StandardMachineGun</defName>
+        <label>GP25E「钺」</label>
+        <description>基于星铃技术的实验性加速机炮，使用星铃制式25mm炮弹，可以切换破片与穿甲弹兼顾对软硬目标的杀伤效能。\n\n整体结构压缩到了可以被单兵使用的程度，但其重量对于单兵而言还是太过夸张，没法便携的装备。</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Standard/StandardAutocannon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+            <WorkToMake>95300</WorkToMake>
+            <Mass>12.0</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.55</MoveSpeed>
+        </equippedStatOffsets>
+        <costList>
+            <CelesAlloy>40</CelesAlloy>
+            <Celes_Substrate>38</Celes_Substrate>
+            <Celes_NanoMachine>1</Celes_NanoMachine>
+            <Celes_AdvancedComponent>1</Celes_AdvancedComponent>
+        </costList>
+        <recipeMaker>
+            <label>锻造指令：GP25E「钺」</label>
+            <researchPrerequisites>
+                <li>Celes_Weapon_IV</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>5525</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Celes_BulletStandardFrag</defaultProjectile>
+                <minRange>3.9</minRange>
+                <warmupTime>2.1</warmupTime>
+                <range>35.9</range>
+                <burstShotCount>1</burstShotCount>
+                <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                <soundCast>Shot_ChargeBlaster</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Celes_BulletStandardAP</defaultProjectile>
+                <minRange>3.9</minRange>
+                <warmupTime>2.5</warmupTime>
+                <range>35.9</range>
+                <burstShotCount>1</burstShotCount>
+                <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                <soundCast>Shot_ChargeBlaster</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>炮管</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CelesFeature.Celes_CompProperties_MultiVerb">
+                <verbInfos>
+                    <li>
+                        <iconPath>UI/Abilities/FireBurst</iconPath>
+                        <defaultLabel>破片弹</defaultLabel>
+                        <defaultDesc>装填破片弹丸对大范围造成面杀伤。</defaultDesc>
+                        <accuracyOffset>0</accuracyOffset>
+                    </li>
+                    <li>
+                        <iconPath>UI/Abilities/FireSpew</iconPath>
+                        <defaultLabel>穿甲弹</defaultLabel>
+                        <defaultDesc>装填穿甲弹丸对高耐久目标造成点杀伤。</defaultDesc>
+                        <accuracyOffset>0</accuracyOffset>
+                    </li>
+                </verbInfos>
+            </li>
+        </comps>
         <weaponClasses>
             <li>LongShots</li>
             <li>RangedHeavy</li>
         </weaponClasses>
         <weaponTags>
-            <li>Celes_IndustryRangeSniper</li>
+            <li>Celes_StandardRangeHeavy</li>
         </weaponTags>
         <tradeTags>
-            <li>Celes_IndustryRange</li>
+            <li>Celes_StandardRange</li>
         </tradeTags>
     </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Celes_BulletStandardFrag</defName>
+        <label>星铃制式25mm破片弹</label>
+        <thingClass>CelesFeature.Celes_Projectile_ExplodeProj</thingClass>
+        <projectile>
+            <damageDef>Celes_StandardFragDamage</damageDef>
+            <damageAmountBase>42</damageAmountBase>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+            <speed>85</speed>
+            <explosionRadius>3.9</explosionRadius>
+            <explosionRadiusDisplayPadding>0</explosionRadiusDisplayPadding>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_FanExplosionExtension">
+                <damageDef>Celes_StandardFragExplosion</damageDef>
+                <damageAmount>48</damageAmount>
+                <armorPenetration>0.5</armorPenetration>
+                <radius>3.9</radius>
+                <halfAngleDegrees>0</halfAngleDegrees>
+                <damageFalloff>true</damageFalloff>
+                <excludePrimaryTarget>true</excludePrimaryTarget>
+                <doVisualEffects>true</doVisualEffects>
+                <doSoundEffects>true</doSoundEffects>
+                <screenShakeFactor>1</screenShakeFactor>
+                <explosionSound>Explosion_Bomb</explosionSound>
+                <propagationSpeed>1</propagationSpeed>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Celes_BulletStandardAP</defName>
+        <label>星铃制式25mm穿甲弹</label>
+        <thingClass>CelesFeature.Celes_Projectile_FanExplodeProj</thingClass>
+        <projectile>
+            <damageDef>Celes_StandardAPDamage</damageDef>
+            <damageAmountBase>48</damageAmountBase>
+            <armorPenetrationBase>1.5</armorPenetrationBase>
+            <stoppingPower>2</stoppingPower>
+            <speed>110</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_FanExplosionExtension">
+                <damageDef>Celes_StandardAPFan</damageDef>
+                <damageAmount>42</damageAmount>
+                <armorPenetration>0.8</armorPenetration>
+                <radius>4.9</radius>
+                <halfAngleDegrees>30</halfAngleDegrees>
+                <damageFalloff>true</damageFalloff>
+                <excludePrimaryTarget>true</excludePrimaryTarget>
+                <doVisualEffects>true</doVisualEffects>
+                <doSoundEffects>true</doSoundEffects>
+                <screenShakeFactor>1</screenShakeFactor>
+                <explosionSound>Explosion_Bomb</explosionSound>
+                <propagationSpeed>1</propagationSpeed>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <DamageDef ParentName="Bullet">
+        <defName>Celes_StandardFragDamage</defName>
+        <label>25mm破片直击</label>
+        <deathMessage>{0}被25mm破片击中要害而死亡。</deathMessage>
+        <buildingDamageFactor>2</buildingDamageFactor>
+        <buildingDamageFactorImpassable>1.5</buildingDamageFactorImpassable>
+        <overkillPctToDestroyPart>0~0.4</overkillPctToDestroyPart>
+    </DamageDef>
+
+    <DamageDef ParentName="Bomb">
+        <defName>Celes_StandardFragExplosion</defName>
+        <label>25mm破片</label>
+        <deathMessage>{0}被25mm破片炸死了。</deathMessage>
+        <defaultDamage>48</defaultDamage>
+        <defaultArmorPenetration>0.5</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>3</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+        <explosionColorCenter>(1, 0.6, 0.3)</explosionColorCenter>
+        <explosionColorEdge>(0.6, 0.45, 0.3)</explosionColorEdge>
+    </DamageDef>
+
+    <DamageDef ParentName="Bullet">
+        <defName>Celes_StandardAPDamage</defName>
+        <label>25mm穿甲直击</label>
+        <deathMessage>{0}被25mm穿甲弹贯穿而死亡。</deathMessage>
+        <buildingDamageFactor>2</buildingDamageFactor>
+        <buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+        <overkillPctToDestroyPart>0~0.4</overkillPctToDestroyPart>
+    </DamageDef>
+
+    <DamageDef ParentName="Bomb">
+        <defName>Celes_StandardAPFan</defName>
+        <label>25mm冲击</label>
+        <deathMessage>{0}被25mm穿甲弹的冲击炸死了。</deathMessage>
+        <defaultDamage>42</defaultDamage>
+        <defaultArmorPenetration>0.8</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>3</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+        <explosionColorCenter>(1, 0.85, 0.4)</explosionColorCenter>
+        <explosionColorEdge>(0.7, 0.55, 0.3)</explosionColorEdge>
+    </DamageDef>
+
 </Defs>

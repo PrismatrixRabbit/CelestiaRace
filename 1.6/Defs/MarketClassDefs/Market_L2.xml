@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- ===================== L2 开放市场 · 收购新增 ===================== -->
+    <!-- ===================== L1 开放市场 收购项 ===================== -->
 
     <CelesFeature.CelesFD_MarketClassDef>
-        <defName>CelesFD_L2Buy_Logistics</defName>
-        <title>L2物流物资收购</title>
+        <defName>CelesFD_L2Buy_Base</defName>
+        <title>L2基础收购</title>
         <category>Open</category>
         <isBuy>true</isBuy>
         <fameReward>8</fameReward>
         <orderDurationInQuadrums>0.5</orderDurationInQuadrums>
         <validLevel>
             <li>CelesFD_Level_L2</li>
+            <li>CelesFD_Level_L3</li>
+            <li>CelesFD_Level_L4</li>
         </validLevel>
         <includeThings>
             <li>
@@ -23,8 +25,8 @@
             </li>
             <li>
                 <filter><thingDefs><li>Celes_CargoEmpty</li></thingDefs></filter>
-                <thingAmount>3</thingAmount>
-                <orderTotalPriceCredit>1</orderTotalPriceCredit>
+                <thingAmount>30~200</thingAmount>
+                <thingPriceCredit>0.1</thingPriceCredit>
                 <thingWeight>0.5</thingWeight>
                 <thingExtraFameFactor>0.5</thingExtraFameFactor>
                 <label>空箱</label>
@@ -32,17 +34,18 @@
         </includeThings>
     </CelesFeature.CelesFD_MarketClassDef>
 
-    <!-- ===================== L2 开放市场 · 出售新增 ===================== -->
+    <!-- ===================== L2 开放市场 出售项 ===================== -->
 
     <CelesFeature.CelesFD_MarketClassDef>
-        <defName>CelesFD_L2Sell_Advanced</defName>
-        <title>L2发展物资出售</title>
+        <defName>CelesFD_L2Sell_Base</defName>
+        <title>L2基础物资</title>
         <category>Open</category>
         <isBuy>false</isBuy>
         <fameReward>0</fameReward>
         <validLevel>
             <li>CelesFD_Level_L2</li>
             <li>CelesFD_Level_L3</li>
+            <li>CelesFD_Level_L4</li>
         </validLevel>
         <includeThings>
             <li>
@@ -55,63 +58,63 @@
             <li>
                 <filter><thingDefs><li>Gold</li></thingDefs></filter>
                 <thingAmount>20~45</thingAmount>
-                <thingPriceCredit>1.1</thingPriceCredit>
+                <thingPriceCredit>1</thingPriceCredit>
                 <thingWeight>1</thingWeight>
                 <label>金</label>
             </li>
             <li>
                 <filter><thingDefs><li>Uranium</li></thingDefs></filter>
                 <thingAmount>30~75</thingAmount>
-                <thingPriceCredit>0.66</thingPriceCredit>
+                <thingPriceCredit>0.5</thingPriceCredit>
                 <thingWeight>1</thingWeight>
                 <label>铀</label>
             </li>
             <li>
                 <filter><thingDefs><li>Jade</li></thingDefs></filter>
                 <thingAmount>40~90</thingAmount>
-                <thingPriceCredit>0.55</thingPriceCredit>
+                <thingPriceCredit>0.5</thingPriceCredit>
                 <thingWeight>1</thingWeight>
                 <label>翡翠</label>
             </li>
             <li>
                 <filter><thingDefs><li>Beer</li></thingDefs></filter>
                 <thingAmount>15~37</thingAmount>
-                <thingPriceCredit>1.32</thingPriceCredit>
+                <thingPriceCredit>1</thingPriceCredit>
                 <thingWeight>1</thingWeight>
                 <label>啤酒</label>
             </li>
             <li>
                 <filter><thingDefs><li>PsychiteTea</li></thingDefs></filter>
                 <thingAmount>20~45</thingAmount>
-                <thingPriceCredit>1.1</thingPriceCredit>
+                <thingPriceCredit>1</thingPriceCredit>
                 <thingWeight>1</thingWeight>
                 <label>精神茶</label>
             </li>
             <li>
                 <filter><thingDefs><li>Celes_IAS2M</li></thingDefs></filter>
                 <thingAmount>3~15</thingAmount>
-                <thingPriceCredit>3.3</thingPriceCredit>
+                <thingPriceCredit>3</thingPriceCredit>
                 <thingWeight>1</thingWeight>
-                <label>星铃IAS-2</label>
+                <label>IAS-2</label>
             </li>
             <li>
                 <filter><thingDefs><li>Celes_NS90M</li></thingDefs></filter>
                 <thingAmount>3~12</thingAmount>
-                <thingPriceCredit>3.96</thingPriceCredit>
+                <thingPriceCredit>3</thingPriceCredit>
                 <thingWeight>1</thingWeight>
-                <label>星铃NS-90</label>
+                <label>NS-90</label>
             </li>
             <li>
                 <filter><thingDefs><li>Celes_Cloth</li></thingDefs></filter>
                 <thingAmount>100~200</thingAmount>
-                <thingPriceCredit>0.242</thingPriceCredit>
+                <thingPriceCredit>0.2</thingPriceCredit>
                 <thingWeight>1</thingWeight>
                 <label>再纺棉纱</label>
             </li>
             <li MayRequire="Ludeon.RimWorld.Odyssey">
                 <filter><thingDefs><li>BlocksVacstone</li></thingDefs></filter>
                 <thingAmount>100~200</thingAmount>
-                <thingPriceCredit>0.22</thingPriceCredit>
+                <thingPriceCredit>0.2</thingPriceCredit>
                 <thingWeight>1</thingWeight>
                 <label>真空岩砖</label>
             </li>

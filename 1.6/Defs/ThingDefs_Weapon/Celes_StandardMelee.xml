@@ -1,4 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+    <!--==================================== 科考队军刀 ====================================-->
     
+    <ThingDef ParentName="Celes_BaseMeleeWeapon">
+        <defName>Celes_StandardSaber</defName>
+        <label>科考队军刀</label>
+        <description>星铃科考队配发的防身武器，和常见的工业时代武器没有什么显著差异……但是在合适的人手里倒是挺趁手的。</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Standard/StandardSaber</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.1</drawSize>
+        </graphicData>
+        <uiIconScale>1.0</uiIconScale>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <statBases>
+            <WorkToMake>27000</WorkToMake>
+            <Mass>1.2</Mass>
+        </statBases>
+        <costList>
+            <CelesAlloy>50</CelesAlloy>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <label>锻造指令：科考队军刀</label>
+            <recipeUsers Inherit="false">
+                <li>Celes_LabNanoForge</li>
+            </recipeUsers>
+            <researchPrerequisites>
+                <li>Celes_Weapon_II</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>5522</displayPriority>
+        </recipeMaker>
+        <tools>
+            <li>
+                <label>刀刃</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>2.1</cooldownTime>
+                <armorPenetration>0.28</armorPenetration>
+            </li>
+            <li>
+                <label>刀尖</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2.1</cooldownTime>
+                <armorPenetration>0.32</armorPenetration>
+            </li>
+            <li>
+                <label>刀柄</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>0.15</armorPenetration>
+            </li>
+        </tools>
+        <weaponTags>
+            <li>Celes_StandardMelee</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_StandardMelee</li>
+        </tradeTags>
+    </ThingDef>
+    <!--==================================== 「重力锤」 ====================================-->
+    <ThingDef ParentName="Celes_BaseMeleeWeapon">
+        <defName>Celes_StandardHammer</defName>
+        <label>「重力锤」</label>
+        <description>星铃科考队使用的破坏性近战武器，代号「重力锤」，近战攻击会对范围造成伤害，注意规避友军。\n\n适用于边缘世界的近战攻坚武器，这种武器完全不是为了静默行动准备的。</description>
+        <graphicData>
+            <texPath>Celes/Weapon/Standard/StandardHammer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.1</drawSize>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <statBases>
+            <WorkToMake>42000</WorkToMake>
+            <Mass>6.0</Mass>
+        </statBases>
+        <costList>
+            <CelesAlloy>35</CelesAlloy>
+            <Celes_Substrate>42</Celes_Substrate>
+            <Celes_AdvancedComponent>1</Celes_AdvancedComponent>
+        </costList>
+        <recipeMaker>
+            <label>锻造指令：「重力锤」</label>
+            <recipeUsers Inherit="false">
+                <li>Celes_LabNanoForge</li>
+            </recipeUsers>
+            <researchPrerequisites>
+                <li>Celes_Weapon_IV</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>5526</displayPriority>
+        </recipeMaker>
+        <tools>
+            <li>
+                <label>锤头</label>
+                <capacities>
+                    <li>Celes_StandardHammerSmash</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>3.0</cooldownTime>
+                <armorPenetration>0.35</armorPenetration>
+            </li>
+            <li>
+                <label>破障头</label>
+                <capacities>
+                    <li>Demolish</li>
+                </capacities>
+                <power>7.5</power>
+                <cooldownTime>1.0</cooldownTime>
+            </li>
+            <li>
+                <label>柄</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+        </tools>
+        <weaponClasses Inherit="false">
+            <li>MeleeBlunt</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>Celes_StandardMelee</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Celes_StandardMelee</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ToolCapacityDef>
+        <defName>Celes_StandardHammerSmash</defName>
+        <label>重力锤砸击</label>
+    </ToolCapacityDef>
+
+    <ManeuverDef>
+        <defName>Celes_StandardHammerSmash</defName>
+        <requiredCapacity>Celes_StandardHammerSmash</requiredCapacity>
+        <verb>
+            <verbClass>CelesFeature.Celes_Verb_MeleeAreaDamage</verbClass>
+            <meleeDamageDef>Celes_StandardHammerDamage</meleeDamageDef>
+            <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+
+    <DamageDef ParentName="BluntBase">
+        <defName>Celes_StandardHammerDamage</defName>
+        <label>重力锤直击</label>
+        <deathMessage>{0}被重力锤砸死了。</deathMessage>
+        <defaultDamage>28</defaultDamage>
+        <defaultArmorPenetration>0.35</defaultArmorPenetration>
+        <buildingDamageFactor>3</buildingDamageFactor>
+        <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+        <modExtensions>
+            <li Class="CelesFeature.Celes_FanExplosionExtension">
+                <damageDef>Celes_StandardHammerImpact</damageDef>
+                <damageAmount>18</damageAmount>
+                <armorPenetration>0.5</armorPenetration>
+                <radius>2.9</radius>
+                <halfAngleDegrees>55</halfAngleDegrees>
+                <damageFalloff>true</damageFalloff>
+                <excludePrimaryTarget>true</excludePrimaryTarget>
+                <doVisualEffects>true</doVisualEffects>
+                <doSoundEffects>true</doSoundEffects>
+                <screenShakeFactor>1.2</screenShakeFactor>
+                <explosionSound>Explosion_Bomb</explosionSound>
+                <propagationSpeed>1</propagationSpeed>
+            </li>
+        </modExtensions>
+    </DamageDef>
+
+    <DamageDef ParentName="Bomb">
+        <defName>Celes_StandardHammerImpact</defName>
+        <label>重力冲击</label>
+        <deathMessage>{0}被重力冲击碾碎了。</deathMessage>
+        <defaultDamage>18</defaultDamage>
+        <defaultArmorPenetration>0.5</defaultArmorPenetration>
+        <buildingDamageFactor>3</buildingDamageFactor>
+        <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+        <explosionColorCenter>(0.45,0.75,1)</explosionColorCenter>
+        <explosionColorEdge>(0.3,0.45,0.8)</explosionColorEdge>
+    </DamageDef>
+
 </Defs>

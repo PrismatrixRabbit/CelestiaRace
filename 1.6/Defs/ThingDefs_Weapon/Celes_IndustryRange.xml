@@ -28,6 +28,7 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <label>锻造指令：星铃拓荒型转轮手枪</label>
             <researchPrerequisites>
                 <li>Celes_Weapon_I</li>
             </researchPrerequisites>
@@ -124,6 +125,7 @@
             <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <label>锻造指令：星铃拓荒型精确步枪</label>
             <researchPrerequisites>
                 <li>Celes_Weapon_I</li>
             </researchPrerequisites>
@@ -232,7 +234,7 @@
     <ThingDef ParentName="Celes_BaseHumanMakeableGun">
         <defName>Celes_IndustryShotgun</defName>
         <label>星铃拓荒型霰弹枪</label>
-        <description>一种大口径泵动式霰弹枪，使用星铃特种25mm子弹。在极近距离上发射威力惊人的霰弹，可以用于破门、清障或近距离防身。由于其使用了带有膛线的枪管所以理论上算是卡宾枪……？\n\n也能装填特制的闪光弹，致盲射程内的所有人。</description>
+        <description>一种大口径泵动式霰弹枪，使用星铃特种25mm霰弹。在极近距离上发射威力惊人的霰弹，可以用于破门、清障或近距离防身。由于其使用了带有膛线的枪管所以理论上算是卡宾枪……？\n\n也能装填特制的闪光弹，致盲射程内的所有人。</description>
         <graphicData>
             <texPath>Celes/Weapon/Industry/IndustryShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -255,6 +257,7 @@
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <label>锻造指令：星铃拓荒型霰弹枪</label>
             <researchPrerequisites>
                 <li>Celes_Weapon_I</li>
             </researchPrerequisites>
@@ -322,7 +325,7 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>Celes_BulletIndustryShotgun</defName>
-        <label>星铃特种25mm子弹</label>
+        <label>星铃特种25mm霰弹</label>
         <projectile>
             <damageDef>Celes_ShotgunBullet</damageDef>
             <damageAmountBase>32</damageAmountBase>
@@ -425,6 +428,7 @@
             <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <recipeMaker>
+            <label>锻造指令：星铃拓荒型冲锋枪</label>
             <researchPrerequisites>
                 <li>Celes_Weapon_I</li>
             </researchPrerequisites>

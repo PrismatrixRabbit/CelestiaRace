@@ -13,16 +13,28 @@
     <list default="true" id="cdde126f-0f27-4a5f-814f-0ac76d785662" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Assemblies/CelesFeature.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_IntroTrees.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_IntroTrees.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_testMarketDefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_testMarketDefs.xml.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/FactionDefs/Factions_Celes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_Intro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_Intro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_Map.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/IncidentDefs/Incident_Map.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_IntroTrees.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/DialogueTreeDef/CelesFD_IntroTrees.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_OldTestDefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/DialogueTreeDef/CelesFD_OldTestDefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/CelesFD_UIDefs/CelesFD_testMarketDefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/Effects/Mote_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/Effects/Mote_IndustryModule.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/Market_L1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/Market_L1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/Market_L2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/Market_L2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/Market_L3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/Market_L3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/UnlockLevelDef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/MarketClassDefs/UnlockLevelDef.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_BaseResourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_BaseResourse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/RecipeDefs/Recipes_IndustryModule.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ResearchProjectDefs/CelesResearchProjects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ResearchProjectDefs/CelesResearchProjects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Building/Buildings_Misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Cargo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Item/Items_Cargo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryMelee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryMelee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_IndustryRange.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_StandardMelee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_StandardMelee.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_StandardRange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1.6/Defs/ThingDefs_Weapon/Celes_StandardRange.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Languages/ChineseSimplified (简体中文)/Keyed/CelesFD_Keys.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Standard/画板 12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Standard/画板 15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Standard/画板 17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Standard/画板 24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Standard/画板 28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Textures/Celes/Weapon/Standard/画板 32.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,6 +319,13 @@
       <workItem from="1793144132313" duration="11619000" />
       <workItem from="1793300709829" duration="2840000" />
       <workItem from="1793315035278" duration="1150000" />
+      <workItem from="1793320638698" duration="1339000" />
+      <workItem from="1793425503232" duration="3005000" />
+      <workItem from="1793501391296" duration="1149000" />
+      <workItem from="1793581940771" duration="8363000" />
+      <workItem from="1793708999970" duration="1821000" />
+      <workItem from="1793851794621" duration="348000" />
+      <workItem from="1793856059484" duration="13591000" />
     </task>
     <task id="LOCAL-00001" summary="整体性修改，添加新贴图">
       <option name="closed" value="true" />
@@ -636,7 +655,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792917339589</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="市场小修">
+      <option name="closed" value="true" />
+      <created>1793320681350</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1793320681350</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +684,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="修bug" />
     <MESSAGE value="建筑修bug，ui调整，派系bug，各种bug" />
     <MESSAGE value="修兔子荣家湾生科兼容bug，建筑和工业科技树beta" />
     <MESSAGE value="总之提交一下" />
@@ -682,7 +708,8 @@
     <MESSAGE value="物品+建筑+配方修正精校" />
     <MESSAGE value="哈哈超级泰伯利亚哈哈！" />
     <MESSAGE value="哈哈开花树哈哈！还有交易IntroTree文案修正。" />
-    <option name="LAST_COMMIT_MESSAGE" value="哈哈开花树哈哈！还有交易IntroTree文案修正。" />
+    <MESSAGE value="市场小修" />
+    <option name="LAST_COMMIT_MESSAGE" value="市场小修" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

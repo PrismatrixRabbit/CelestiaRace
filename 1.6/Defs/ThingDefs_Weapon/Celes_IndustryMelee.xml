@@ -24,6 +24,7 @@
             <PlantWorkSpeed>0.4</PlantWorkSpeed>
         </equippedStatOffsets>
         <recipeMaker>
+            <label>锻造指令：星铃拓荒型手斧</label>
             <recipeUsers>
                 <li>FueledSmithy</li>
                 <li>ElectricSmithy</li>
@@ -98,6 +99,7 @@
             <MiningSpeed>0.4</MiningSpeed>
         </equippedStatOffsets>
         <recipeMaker>
+            <label>锻造指令：星铃拓荒型地质锤</label>
             <recipeUsers>
                 <li>FueledSmithy</li>
                 <li>ElectricSmithy</li>

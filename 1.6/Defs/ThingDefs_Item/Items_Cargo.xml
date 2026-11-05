@@ -293,7 +293,7 @@
         </graphicData>
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
-            <MarketValue>175</MarketValue>
+            <MarketValue>225</MarketValue>
             <MaxHitPoints>80</MaxHitPoints>
             <Mass>3</Mass>
             <Flammability>0.5</Flammability>
@@ -303,7 +303,7 @@
         <costList>
             <Cloth>100</Cloth>
         </costList>
-        <!-- 175白银 -->
+        <!-- 225白银 -->
     </ThingDef>
 
     <!-- ========== 废案 ========== -->

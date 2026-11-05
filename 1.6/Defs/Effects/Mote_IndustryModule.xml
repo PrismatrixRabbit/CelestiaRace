@@ -26,17 +26,23 @@
             <shaderType>MoteSoftScannerGlow</shaderType>
             <shaderParameters>
                 <_ScanSpeed>0.5</_ScanSpeed>
-                <_ScanPow>7</_ScanPow>
+                <_ScanPow>2</_ScanPow>
             </shaderParameters>
         </graphicData>
     </ThingDef>
+    
     <ThingDef ParentName="Celes_ForgeMoteBase">
         <defName>Celes_Mote_NanoForgeShaperGlow_South</defName>
         <graphicData>
             <texPath>Celes/Building/NanoForgeShaper/NanoForgeShaper_Glow_south</texPath>
             <drawSize>(3,3)</drawSize>
+            <shaderParameters>
+                <_ScanSpeed>1.0</_ScanSpeed>
+                <_ScanPow>7</_ScanPow>
+            </shaderParameters>
         </graphicData>
     </ThingDef>
+    
     <ThingDef ParentName="Celes_ForgeMoteBase">
         <defName>Celes_Mote_NanoForgeForgerGlow_South</defName>
         <graphicData>
